@@ -1,0 +1,14 @@
+{
+  "areas": 8,
+  "edgeHash": "f9643a9bc13083945ee037bd770f0020e6c5be12600a95b20a23398490ff5cfd",
+  "edges": 92,
+  "nodeHash": "a6a52c3b6427a55194c74251999a933bfeb32c5144af88d3014c431bb357aea9",
+  "nodes": 51,
+  "provenance": {
+    "declared": 143,
+    "derived": 0
+  },
+  "runId": "20260704T232800Z",
+  "schemaVersion": "spider-graph/1.0.0",
+  "source": "https://raw.githubusercontent.com/Ventusltd/globalgrid2050/88894bebe6cc42a7bf766a2b104d609fd3a1f514/index.html"
+}

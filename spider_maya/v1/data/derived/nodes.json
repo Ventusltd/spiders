@@ -1,0 +1,841 @@
+[
+  {
+    "attrs": {
+      "declaredUrl": "./33kv_uk_dap_price_estimator/",
+      "liveUrl": "https://globalgrid2050.com/33kv_uk_dap_price_estimator/",
+      "path": "33kv_uk_dap_price_estimator/"
+    },
+    "firstSeenRun": "20260704T232800Z",
+    "id": "app:globalgrid2050-33kv-uk-dap-price-estimator",
+    "kind": "app",
+    "label": "33 kV UK DAP Price Estimator",
+    "lastSeenRun": "20260704T232800Z",
+    "methodState": "areas_menu_v1",
+    "provenance": "declared",
+    "schemaVersion": "spider-graph/1.0.0",
+    "source": "AREAS menu",
+    "type": "launch_surface"
+  },
+  {
+    "attrs": {
+      "declaredUrl": "./ac_cables_knowledge/",
+      "liveUrl": "https://globalgrid2050.com/ac_cables_knowledge/",
+      "path": "ac_cables_knowledge/"
+    },
+    "firstSeenRun": "20260704T232800Z",
+    "id": "app:globalgrid2050-ac-cables-knowledge",
+    "kind": "app",
+    "label": "AC Cables Knowledge",
+    "lastSeenRun": "20260704T232800Z",
+    "methodState": "areas_menu_v1",
+    "provenance": "declared",
+    "schemaVersion": "spider-graph/1.0.0",
+    "source": "AREAS menu",
+    "type": "launch_surface"
+  },
+  {
+    "attrs": {
+      "declaredUrl": "./blog/",
+      "liveUrl": "https://globalgrid2050.com/blog/",
+      "path": "blog/"
+    },
+    "firstSeenRun": "20260704T232800Z",
+    "id": "app:globalgrid2050-blog",
+    "kind": "app",
+    "label": "Blog",
+    "lastSeenRun": "20260704T232800Z",
+    "methodState": "areas_menu_v1",
+    "provenance": "declared",
+    "schemaVersion": "spider-graph/1.0.0",
+    "source": "AREAS menu",
+    "type": "launch_surface"
+  },
+  {
+    "attrs": {
+      "declaredUrl": "./conductor_resistances/",
+      "liveUrl": "https://globalgrid2050.com/conductor_resistances/",
+      "path": "conductor_resistances/"
+    },
+    "firstSeenRun": "20260704T232800Z",
+    "id": "app:globalgrid2050-conductor-resistances",
+    "kind": "app",
+    "label": "Conductor Resistances",
+    "lastSeenRun": "20260704T232800Z",
+    "methodState": "areas_menu_v1",
+    "provenance": "declared",
+    "schemaVersion": "spider-graph/1.0.0",
+    "source": "AREAS menu",
+    "type": "launch_surface"
+  },
+  {
+    "attrs": {
+      "declaredUrl": "./copper_and_aluminium_prices_historic_trends/",
+      "liveUrl": "https://globalgrid2050.com/copper_and_aluminium_prices_historic_trends/",
+      "path": "copper_and_aluminium_prices_historic_trends/"
+    },
+    "firstSeenRun": "20260704T232800Z",
+    "id": "app:globalgrid2050-copper-and-aluminium-prices-historic-trends",
+    "kind": "app",
+    "label": "Copper and Aluminium Historic Prices & Trends",
+    "lastSeenRun": "20260704T232800Z",
+    "methodState": "areas_menu_v1",
+    "provenance": "declared",
+    "schemaVersion": "spider-graph/1.0.0",
+    "source": "AREAS menu",
+    "type": "launch_surface"
+  },
+  {
+    "attrs": {
+      "declaredUrl": "./data/grid_studies_public/",
+      "liveUrl": "https://globalgrid2050.com/data/grid_studies_public/",
+      "path": "data/grid_studies_public/"
+    },
+    "firstSeenRun": "20260704T232800Z",
+    "id": "app:globalgrid2050-data-grid-studies-public",
+    "kind": "app",
+    "label": "Grid Studies Public",
+    "lastSeenRun": "20260704T232800Z",
+    "methodState": "areas_menu_v1",
+    "provenance": "declared",
+    "schemaVersion": "spider-graph/1.0.0",
+    "source": "AREAS menu",
+    "type": "launch_surface"
+  },
+  {
+    "attrs": {
+      "declaredUrl": "./dc_cables_knowledge/",
+      "liveUrl": "https://globalgrid2050.com/dc_cables_knowledge/",
+      "path": "dc_cables_knowledge/"
+    },
+    "firstSeenRun": "20260704T232800Z",
+    "id": "app:globalgrid2050-dc-cables-knowledge",
+    "kind": "app",
+    "label": "DC Cables Knowledge",
+    "lastSeenRun": "20260704T232800Z",
+    "methodState": "areas_menu_v1",
+    "provenance": "declared",
+    "schemaVersion": "spider-graph/1.0.0",
+    "source": "AREAS menu",
+    "type": "launch_surface"
+  },
+  {
+    "attrs": {
+      "declaredUrl": "./definitions/",
+      "liveUrl": "https://globalgrid2050.com/definitions/",
+      "path": "definitions/"
+    },
+    "firstSeenRun": "20260704T232800Z",
+    "id": "app:globalgrid2050-definitions",
+    "kind": "app",
+    "label": "Definitions",
+    "lastSeenRun": "20260704T232800Z",
+    "methodState": "areas_menu_v1",
+    "provenance": "declared",
+    "schemaVersion": "spider-graph/1.0.0",
+    "source": "AREAS menu",
+    "type": "launch_surface"
+  },
+  {
+    "attrs": {
+      "declaredUrl": "./employers_requirements_BESS/",
+      "liveUrl": "https://globalgrid2050.com/employers_requirements_BESS/",
+      "path": "employers_requirements_BESS/"
+    },
+    "firstSeenRun": "20260704T232800Z",
+    "id": "app:globalgrid2050-employers-requirements-bess",
+    "kind": "app",
+    "label": "Employer Requirements BESS Notes",
+    "lastSeenRun": "20260704T232800Z",
+    "methodState": "areas_menu_v1",
+    "provenance": "declared",
+    "schemaVersion": "spider-graph/1.0.0",
+    "source": "AREAS menu",
+    "type": "launch_surface"
+  },
+  {
+    "attrs": {
+      "declaredUrl": "./employers_requirments_large_scale_solar/",
+      "liveUrl": "https://globalgrid2050.com/employers_requirments_large_scale_solar/",
+      "path": "employers_requirments_large_scale_solar/"
+    },
+    "firstSeenRun": "20260704T232800Z",
+    "id": "app:globalgrid2050-employers-requirments-large-scale-solar",
+    "kind": "app",
+    "label": "Employers Requirements Large Scale Solar",
+    "lastSeenRun": "20260704T232800Z",
+    "methodState": "areas_menu_v1",
+    "provenance": "declared",
+    "schemaVersion": "spider-graph/1.0.0",
+    "source": "AREAS menu",
+    "type": "launch_surface"
+  },
+  {
+    "attrs": {
+      "declaredUrl": "https://ventusltd.github.io/globalgrid2050-hompage/",
+      "liveUrl": "https://ventusltd.github.io/globalgrid2050-hompage/",
+      "path": "https://ventusltd.github.io/globalgrid2050-hompage/"
+    },
+    "firstSeenRun": "20260704T232800Z",
+    "id": "app:globalgrid2050-https-ventusltd-github-io-globalgrid2050-hompage",
+    "kind": "app",
+    "label": "NEW PENDING GlobalGrid2050 Homepage",
+    "lastSeenRun": "20260704T232800Z",
+    "methodState": "areas_menu_v1",
+    "provenance": "declared",
+    "schemaVersion": "spider-graph/1.0.0",
+    "source": "AREAS menu",
+    "type": "launch_surface"
+  },
+  {
+    "attrs": {
+      "declaredUrl": "./lv_ac_dc_price_estimator/",
+      "liveUrl": "https://globalgrid2050.com/lv_ac_dc_price_estimator/",
+      "path": "lv_ac_dc_price_estimator/"
+    },
+    "firstSeenRun": "20260704T232800Z",
+    "id": "app:globalgrid2050-lv-ac-dc-price-estimator",
+    "kind": "app",
+    "label": "LV AC and DC Distribution Cables Price Estimator",
+    "lastSeenRun": "20260704T232800Z",
+    "methodState": "areas_menu_v1",
+    "provenance": "declared",
+    "schemaVersion": "spider-graph/1.0.0",
+    "source": "AREAS menu",
+    "type": "launch_surface"
+  },
+  {
+    "attrs": {
+      "declaredUrl": "./marketing/earth.html",
+      "liveUrl": "https://globalgrid2050.com/marketing/earth.html",
+      "path": "marketing/earth.html"
+    },
+    "firstSeenRun": "20260704T232800Z",
+    "id": "app:globalgrid2050-marketing-earth-html",
+    "kind": "app",
+    "label": "Earth",
+    "lastSeenRun": "20260704T232800Z",
+    "methodState": "areas_menu_v1",
+    "provenance": "declared",
+    "schemaVersion": "spider-graph/1.0.0",
+    "source": "AREAS menu",
+    "type": "launch_surface"
+  },
+  {
+    "attrs": {
+      "declaredUrl": "./mv_and_hv_components/",
+      "liveUrl": "https://globalgrid2050.com/mv_and_hv_components/",
+      "path": "mv_and_hv_components/"
+    },
+    "firstSeenRun": "20260704T232800Z",
+    "id": "app:globalgrid2050-mv-and-hv-components",
+    "kind": "app",
+    "label": "MV and HV Components",
+    "lastSeenRun": "20260704T232800Z",
+    "methodState": "areas_menu_v1",
+    "provenance": "declared",
+    "schemaVersion": "spider-graph/1.0.0",
+    "source": "AREAS menu",
+    "type": "launch_surface"
+  },
+  {
+    "attrs": {
+      "declaredUrl": "./nsip_solar_farms/",
+      "liveUrl": "https://globalgrid2050.com/nsip_solar_farms/",
+      "path": "nsip_solar_farms/"
+    },
+    "firstSeenRun": "20260704T232800Z",
+    "id": "app:globalgrid2050-nsip-solar-farms",
+    "kind": "app",
+    "label": "NSIP Solar Farms",
+    "lastSeenRun": "20260704T232800Z",
+    "methodState": "areas_menu_v1",
+    "provenance": "declared",
+    "schemaVersion": "spider-graph/1.0.0",
+    "source": "AREAS menu",
+    "type": "launch_surface"
+  },
+  {
+    "attrs": {
+      "declaredUrl": "./podcast_transcripts/",
+      "liveUrl": "https://globalgrid2050.com/podcast_transcripts/",
+      "path": "podcast_transcripts/"
+    },
+    "firstSeenRun": "20260704T232800Z",
+    "id": "app:globalgrid2050-podcast-transcripts",
+    "kind": "app",
+    "label": "Podcast Transcripts",
+    "lastSeenRun": "20260704T232800Z",
+    "methodState": "areas_menu_v1",
+    "provenance": "declared",
+    "schemaVersion": "spider-graph/1.0.0",
+    "source": "AREAS menu",
+    "type": "launch_surface"
+  },
+  {
+    "attrs": {
+      "declaredUrl": "./power_systems_studies/",
+      "liveUrl": "https://globalgrid2050.com/power_systems_studies/",
+      "path": "power_systems_studies/"
+    },
+    "firstSeenRun": "20260704T232800Z",
+    "id": "app:globalgrid2050-power-systems-studies",
+    "kind": "app",
+    "label": "Power Systems Studies",
+    "lastSeenRun": "20260704T232800Z",
+    "methodState": "areas_menu_v1",
+    "provenance": "declared",
+    "schemaVersion": "spider-graph/1.0.0",
+    "source": "AREAS menu",
+    "type": "launch_surface"
+  },
+  {
+    "attrs": {
+      "declaredUrl": "./repd_grid_atlasv8/",
+      "liveUrl": "https://globalgrid2050.com/repd_grid_atlasv8/",
+      "path": "repd_grid_atlasv8/"
+    },
+    "firstSeenRun": "20260704T232800Z",
+    "id": "app:globalgrid2050-repd-grid-atlasv8",
+    "kind": "app",
+    "label": "UK Energy Atlas Grid Overlay V8",
+    "lastSeenRun": "20260704T232800Z",
+    "methodState": "areas_menu_v1",
+    "provenance": "declared",
+    "schemaVersion": "spider-graph/1.0.0",
+    "source": "AREAS menu",
+    "type": "launch_surface"
+  },
+  {
+    "attrs": {
+      "declaredUrl": "./sld_single_diagrams_diagrams_and_grids/",
+      "liveUrl": "https://globalgrid2050.com/sld_single_diagrams_diagrams_and_grids/",
+      "path": "sld_single_diagrams_diagrams_and_grids/"
+    },
+    "firstSeenRun": "20260704T232800Z",
+    "id": "app:globalgrid2050-sld-single-diagrams-diagrams-and-grids",
+    "kind": "app",
+    "label": "Single Line Diagrams And Grids",
+    "lastSeenRun": "20260704T232800Z",
+    "methodState": "areas_menu_v1",
+    "provenance": "declared",
+    "schemaVersion": "spider-graph/1.0.0",
+    "source": "AREAS menu",
+    "type": "launch_surface"
+  },
+  {
+    "attrs": {
+      "declaredUrl": "./solar-bess-topology/indexforgis-sld.html",
+      "liveUrl": "https://globalgrid2050.com/solar-bess-topology/indexforgis-sld.html",
+      "path": "solar-bess-topology/indexforgis-sld.html"
+    },
+    "firstSeenRun": "20260704T232800Z",
+    "id": "app:globalgrid2050-solar-bess-topology-indexforgis-sld-html",
+    "kind": "app",
+    "label": "GIS SLD Topology Engine And Financial Sandbox",
+    "lastSeenRun": "20260704T232800Z",
+    "methodState": "areas_menu_v1",
+    "provenance": "declared",
+    "schemaVersion": "spider-graph/1.0.0",
+    "source": "AREAS menu",
+    "type": "launch_surface"
+  },
+  {
+    "attrs": {
+      "declaredUrl": "./solar-bess-topology-v2/indexforgis-sld-v2.html",
+      "liveUrl": "https://globalgrid2050.com/solar-bess-topology-v2/indexforgis-sld-v2.html",
+      "path": "solar-bess-topology-v2/indexforgis-sld-v2.html"
+    },
+    "firstSeenRun": "20260704T232800Z",
+    "id": "app:globalgrid2050-solar-bess-topology-v2-indexforgis-sld-v2-html",
+    "kind": "app",
+    "label": "GIS SLD Financial Sandbox V2",
+    "lastSeenRun": "20260704T232800Z",
+    "methodState": "areas_menu_v1",
+    "provenance": "declared",
+    "schemaVersion": "spider-graph/1.0.0",
+    "source": "AREAS menu",
+    "type": "launch_surface"
+  },
+  {
+    "attrs": {
+      "declaredUrl": "./solar-bess-topology-v4/indexforgis-sld-v4.html",
+      "liveUrl": "https://globalgrid2050.com/solar-bess-topology-v4/indexforgis-sld-v4.html",
+      "path": "solar-bess-topology-v4/indexforgis-sld-v4.html"
+    },
+    "firstSeenRun": "20260704T232800Z",
+    "id": "app:globalgrid2050-solar-bess-topology-v4-indexforgis-sld-v4-html",
+    "kind": "app",
+    "label": "GIS SLD Financial Sandbox V4",
+    "lastSeenRun": "20260704T232800Z",
+    "methodState": "areas_menu_v1",
+    "provenance": "declared",
+    "schemaVersion": "spider-graph/1.0.0",
+    "source": "AREAS menu",
+    "type": "launch_surface"
+  },
+  {
+    "attrs": {
+      "declaredUrl": "./solar-bess-topology-v5/cable-geometry-visualiser-v5.html",
+      "liveUrl": "https://globalgrid2050.com/solar-bess-topology-v5/cable-geometry-visualiser-v5.html",
+      "path": "solar-bess-topology-v5/cable-geometry-visualiser-v5.html"
+    },
+    "firstSeenRun": "20260704T232800Z",
+    "id": "app:globalgrid2050-solar-bess-topology-v5-cable-geometry-visualiser-v5-html",
+    "kind": "app",
+    "label": "Cable Geometry Visualiser V5",
+    "lastSeenRun": "20260704T232800Z",
+    "methodState": "areas_menu_v1",
+    "provenance": "declared",
+    "schemaVersion": "spider-graph/1.0.0",
+    "source": "AREAS menu",
+    "type": "launch_surface"
+  },
+  {
+    "attrs": {
+      "declaredUrl": "./solar-bess-topology-v5/dc-ac-lv-topology-review-v5.html",
+      "liveUrl": "https://globalgrid2050.com/solar-bess-topology-v5/dc-ac-lv-topology-review-v5.html",
+      "path": "solar-bess-topology-v5/dc-ac-lv-topology-review-v5.html"
+    },
+    "firstSeenRun": "20260704T232800Z",
+    "id": "app:globalgrid2050-solar-bess-topology-v5-dc-ac-lv-topology-review-v5-html",
+    "kind": "app",
+    "label": "DC AC LV Solar PV Cable Topology Review V5",
+    "lastSeenRun": "20260704T232800Z",
+    "methodState": "areas_menu_v1",
+    "provenance": "declared",
+    "schemaVersion": "spider-graph/1.0.0",
+    "source": "AREAS menu",
+    "type": "launch_surface"
+  },
+  {
+    "attrs": {
+      "declaredUrl": "./solar-bess-topology-v5/indexforgis-sld-v5.html",
+      "liveUrl": "https://globalgrid2050.com/solar-bess-topology-v5/indexforgis-sld-v5.html",
+      "path": "solar-bess-topology-v5/indexforgis-sld-v5.html"
+    },
+    "firstSeenRun": "20260704T232800Z",
+    "id": "app:globalgrid2050-solar-bess-topology-v5-indexforgis-sld-v5-html",
+    "kind": "app",
+    "label": "GIS SLD Financial Sandbox V5",
+    "lastSeenRun": "20260704T232800Z",
+    "methodState": "areas_menu_v1",
+    "provenance": "declared",
+    "schemaVersion": "spider-graph/1.0.0",
+    "source": "AREAS menu",
+    "type": "launch_surface"
+  },
+  {
+    "attrs": {
+      "declaredUrl": "./solar-bess-topology-v5/module-layout-v5.html",
+      "liveUrl": "https://globalgrid2050.com/solar-bess-topology-v5/module-layout-v5.html",
+      "path": "solar-bess-topology-v5/module-layout-v5.html"
+    },
+    "firstSeenRun": "20260704T232800Z",
+    "id": "app:globalgrid2050-solar-bess-topology-v5-module-layout-v5-html",
+    "kind": "app",
+    "label": "Physical Solar Module Layout V5",
+    "lastSeenRun": "20260704T232800Z",
+    "methodState": "areas_menu_v1",
+    "provenance": "declared",
+    "schemaVersion": "spider-graph/1.0.0",
+    "source": "AREAS menu",
+    "type": "launch_surface"
+  },
+  {
+    "attrs": {
+      "declaredUrl": "./solar-bess-topology-v6/",
+      "liveUrl": "https://globalgrid2050.com/solar-bess-topology-v6/",
+      "path": "solar-bess-topology-v6/"
+    },
+    "firstSeenRun": "20260704T232800Z",
+    "id": "app:globalgrid2050-solar-bess-topology-v6",
+    "kind": "app",
+    "label": "Solar BESS Topology V6 Testing Phase",
+    "lastSeenRun": "20260704T232800Z",
+    "methodState": "areas_menu_v1",
+    "provenance": "declared",
+    "schemaVersion": "spider-graph/1.0.0",
+    "source": "AREAS menu",
+    "type": "launch_surface"
+  },
+  {
+    "attrs": {
+      "declaredUrl": "./solar-bess-topology-v7/",
+      "liveUrl": "https://globalgrid2050.com/solar-bess-topology-v7/",
+      "path": "solar-bess-topology-v7/"
+    },
+    "firstSeenRun": "20260704T232800Z",
+    "id": "app:globalgrid2050-solar-bess-topology-v7",
+    "kind": "app",
+    "label": "Solar BESS Topology V7 Workspace",
+    "lastSeenRun": "20260704T232800Z",
+    "methodState": "areas_menu_v1",
+    "provenance": "declared",
+    "schemaVersion": "spider-graph/1.0.0",
+    "source": "AREAS menu",
+    "type": "launch_surface"
+  },
+  {
+    "attrs": {
+      "declaredUrl": "./solar-bess-topology-v8/bess-gis-sld-financial-sandbox/index.html",
+      "devStatus": "in development",
+      "liveUrl": "https://globalgrid2050.com/solar-bess-topology-v8/bess-gis-sld-financial-sandbox/index.html",
+      "path": "solar-bess-topology-v8/bess-gis-sld-financial-sandbox/index.html"
+    },
+    "firstSeenRun": "20260704T232800Z",
+    "id": "app:globalgrid2050-solar-bess-topology-v8-bess-gis-sld-financial-sandbox-index-html",
+    "kind": "app",
+    "label": "BESS GIS SLD Financial Sandbox V8",
+    "lastSeenRun": "20260704T232800Z",
+    "methodState": "areas_menu_v1",
+    "provenance": "declared",
+    "schemaVersion": "spider-graph/1.0.0",
+    "source": "AREAS menu",
+    "type": "launch_surface"
+  },
+  {
+    "attrs": {
+      "declaredUrl": "./solar_components/",
+      "liveUrl": "https://globalgrid2050.com/solar_components/",
+      "path": "solar_components/"
+    },
+    "firstSeenRun": "20260704T232800Z",
+    "id": "app:globalgrid2050-solar-components",
+    "kind": "app",
+    "label": "Solar Components",
+    "lastSeenRun": "20260704T232800Z",
+    "methodState": "areas_menu_v1",
+    "provenance": "declared",
+    "schemaVersion": "spider-graph/1.0.0",
+    "source": "AREAS menu",
+    "type": "launch_surface"
+  },
+  {
+    "attrs": {
+      "declaredUrl": "./solar_deployment_statistics/",
+      "liveUrl": "https://globalgrid2050.com/solar_deployment_statistics/",
+      "path": "solar_deployment_statistics/"
+    },
+    "firstSeenRun": "20260704T232800Z",
+    "id": "app:globalgrid2050-solar-deployment-statistics",
+    "kind": "app",
+    "label": "Solar Deployment Statistics",
+    "lastSeenRun": "20260704T232800Z",
+    "methodState": "areas_menu_v1",
+    "provenance": "declared",
+    "schemaVersion": "spider-graph/1.0.0",
+    "source": "AREAS menu",
+    "type": "launch_surface"
+  },
+  {
+    "attrs": {
+      "declaredUrl": "./time_to_2050/",
+      "liveUrl": "https://globalgrid2050.com/time_to_2050/",
+      "path": "time_to_2050/"
+    },
+    "firstSeenRun": "20260704T232800Z",
+    "id": "app:globalgrid2050-time-to-2050",
+    "kind": "app",
+    "label": "Time Left Today, Hourglass to 2050",
+    "lastSeenRun": "20260704T232800Z",
+    "methodState": "areas_menu_v1",
+    "provenance": "declared",
+    "schemaVersion": "spider-graph/1.0.0",
+    "source": "AREAS menu",
+    "type": "launch_surface"
+  },
+  {
+    "attrs": {
+      "declaredUrl": "./uk_energy_tracking/",
+      "liveUrl": "https://globalgrid2050.com/uk_energy_tracking/",
+      "path": "uk_energy_tracking/"
+    },
+    "firstSeenRun": "20260704T232800Z",
+    "id": "app:globalgrid2050-uk-energy-tracking",
+    "kind": "app",
+    "label": "UK Live Grid Tracker, Electricity, Carbon, Oil and Metals",
+    "lastSeenRun": "20260704T232800Z",
+    "methodState": "areas_menu_v1",
+    "provenance": "declared",
+    "schemaVersion": "spider-graph/1.0.0",
+    "source": "AREAS menu",
+    "type": "launch_surface"
+  },
+  {
+    "attrs": {
+      "declaredUrl": "./uk_energy_tracking_v2/",
+      "liveUrl": "https://globalgrid2050.com/uk_energy_tracking_v2/",
+      "path": "uk_energy_tracking_v2/"
+    },
+    "firstSeenRun": "20260704T232800Z",
+    "id": "app:globalgrid2050-uk-energy-tracking-v2",
+    "kind": "app",
+    "label": "UK Live Grid Tracker V2, Transport Energy Test Clone",
+    "lastSeenRun": "20260704T232800Z",
+    "methodState": "areas_menu_v1",
+    "provenance": "declared",
+    "schemaVersion": "spider-graph/1.0.0",
+    "source": "AREAS menu",
+    "type": "launch_surface"
+  },
+  {
+    "attrs": {
+      "declaredUrl": "./uk_energy_tracking_v3/",
+      "liveUrl": "https://globalgrid2050.com/uk_energy_tracking_v3/",
+      "path": "uk_energy_tracking_v3/"
+    },
+    "firstSeenRun": "20260704T232800Z",
+    "id": "app:globalgrid2050-uk-energy-tracking-v3",
+    "kind": "app",
+    "label": "UK Live Grid Tracker V3, Experimental Intelligence Lab",
+    "lastSeenRun": "20260704T232800Z",
+    "methodState": "areas_menu_v1",
+    "provenance": "declared",
+    "schemaVersion": "spider-graph/1.0.0",
+    "source": "AREAS menu",
+    "type": "launch_surface"
+  },
+  {
+    "attrs": {
+      "declaredUrl": "./uk_energy_tracking_v5/",
+      "devStatus": "in development",
+      "liveUrl": "https://globalgrid2050.com/uk_energy_tracking_v5/",
+      "path": "uk_energy_tracking_v5/"
+    },
+    "firstSeenRun": "20260704T232800Z",
+    "id": "app:globalgrid2050-uk-energy-tracking-v5",
+    "kind": "app",
+    "label": "UK Live Grid Tracker V5, Electricity Market Intelligence Machine",
+    "lastSeenRun": "20260704T232800Z",
+    "methodState": "areas_menu_v1",
+    "provenance": "declared",
+    "schemaVersion": "spider-graph/1.0.0",
+    "source": "AREAS menu",
+    "type": "launch_surface"
+  },
+  {
+    "attrs": {
+      "declaredUrl": "./uk_energy_tracking_v6/",
+      "devStatus": "modular development",
+      "liveUrl": "https://globalgrid2050.com/uk_energy_tracking_v6/",
+      "path": "uk_energy_tracking_v6/"
+    },
+    "firstSeenRun": "20260704T232800Z",
+    "id": "app:globalgrid2050-uk-energy-tracking-v6",
+    "kind": "app",
+    "label": "UK Live Grid Tracker V6, Modular Electricity Market Intelligence Machine",
+    "lastSeenRun": "20260704T232800Z",
+    "methodState": "areas_menu_v1",
+    "provenance": "declared",
+    "schemaVersion": "spider-graph/1.0.0",
+    "source": "AREAS menu",
+    "type": "launch_surface"
+  },
+  {
+    "attrs": {
+      "declaredUrl": "./uk_energy_tracking_v6_2/generation_history/",
+      "devStatus": "BACKUP",
+      "liveUrl": "https://globalgrid2050.com/uk_energy_tracking_v6_2/generation_history/",
+      "path": "uk_energy_tracking_v6_2/generation_history/"
+    },
+    "firstSeenRun": "20260704T232800Z",
+    "id": "app:globalgrid2050-uk-energy-tracking-v6-2-generation-history",
+    "kind": "app",
+    "label": "UK Generation History V6 2 Backup Mirror",
+    "lastSeenRun": "20260704T232800Z",
+    "methodState": "areas_menu_v1",
+    "provenance": "declared",
+    "schemaVersion": "spider-graph/1.0.0",
+    "source": "AREAS menu",
+    "type": "launch_surface"
+  },
+  {
+    "attrs": {
+      "declaredUrl": "./uk_energy_tracking_v6/generation_history/",
+      "devStatus": "in development",
+      "liveUrl": "https://globalgrid2050.com/uk_energy_tracking_v6/generation_history/",
+      "path": "uk_energy_tracking_v6/generation_history/"
+    },
+    "firstSeenRun": "20260704T232800Z",
+    "id": "app:globalgrid2050-uk-energy-tracking-v6-generation-history",
+    "kind": "app",
+    "label": "UK Generation History V6 Module",
+    "lastSeenRun": "20260704T232800Z",
+    "methodState": "areas_menu_v1",
+    "provenance": "declared",
+    "schemaVersion": "spider-graph/1.0.0",
+    "source": "AREAS menu",
+    "type": "launch_surface"
+  },
+  {
+    "attrs": {
+      "declaredUrl": "./uk_macro_energy_trends/",
+      "liveUrl": "https://globalgrid2050.com/uk_macro_energy_trends/",
+      "path": "uk_macro_energy_trends/"
+    },
+    "firstSeenRun": "20260704T232800Z",
+    "id": "app:globalgrid2050-uk-macro-energy-trends",
+    "kind": "app",
+    "label": "UK Macro Energy Consumption Trends ONS",
+    "lastSeenRun": "20260704T232800Z",
+    "methodState": "areas_menu_v1",
+    "provenance": "declared",
+    "schemaVersion": "spider-graph/1.0.0",
+    "source": "AREAS menu",
+    "type": "launch_surface"
+  },
+  {
+    "attrs": {
+      "declaredUrl": "./uk_renewables_pipeline/dashboard.html",
+      "liveUrl": "https://globalgrid2050.com/uk_renewables_pipeline/dashboard.html",
+      "path": "uk_renewables_pipeline/dashboard.html"
+    },
+    "firstSeenRun": "20260704T232800Z",
+    "id": "app:globalgrid2050-uk-renewables-pipeline-dashboard-html",
+    "kind": "app",
+    "label": "UK Renewables Pipeline Analytics Dashboard",
+    "lastSeenRun": "20260704T232800Z",
+    "methodState": "areas_menu_v1",
+    "provenance": "declared",
+    "schemaVersion": "spider-graph/1.0.0",
+    "source": "AREAS menu",
+    "type": "launch_surface"
+  },
+  {
+    "attrs": {
+      "declaredUrl": "./why_ventusltd_building_globalgrid2050/",
+      "liveUrl": "https://globalgrid2050.com/why_ventusltd_building_globalgrid2050/",
+      "path": "why_ventusltd_building_globalgrid2050/"
+    },
+    "firstSeenRun": "20260704T232800Z",
+    "id": "app:globalgrid2050-why-ventusltd-building-globalgrid2050",
+    "kind": "app",
+    "label": "Why VENTUS Ltd Is Building GlobalGrid2050",
+    "lastSeenRun": "20260704T232800Z",
+    "methodState": "areas_menu_v1",
+    "provenance": "declared",
+    "schemaVersion": "spider-graph/1.0.0",
+    "source": "AREAS menu",
+    "type": "launch_surface"
+  },
+  {
+    "attrs": {},
+    "firstSeenRun": "20260704T232800Z",
+    "id": "area:globalgrid2050-about-media",
+    "kind": "area",
+    "label": "About & Media",
+    "lastSeenRun": "20260704T232800Z",
+    "methodState": "areas_menu_v1",
+    "provenance": "declared",
+    "schemaVersion": "spider-graph/1.0.0",
+    "source": "AREAS menu",
+    "type": "homepage_menu_area"
+  },
+  {
+    "attrs": {},
+    "firstSeenRun": "20260704T232800Z",
+    "id": "area:globalgrid2050-cables-conductors",
+    "kind": "area",
+    "label": "Cables & Conductors",
+    "lastSeenRun": "20260704T232800Z",
+    "methodState": "areas_menu_v1",
+    "provenance": "declared",
+    "schemaVersion": "spider-graph/1.0.0",
+    "source": "AREAS menu",
+    "type": "homepage_menu_area"
+  },
+  {
+    "attrs": {},
+    "firstSeenRun": "20260704T232800Z",
+    "id": "area:globalgrid2050-components",
+    "kind": "area",
+    "label": "Components",
+    "lastSeenRun": "20260704T232800Z",
+    "methodState": "areas_menu_v1",
+    "provenance": "declared",
+    "schemaVersion": "spider-graph/1.0.0",
+    "source": "AREAS menu",
+    "type": "homepage_menu_area"
+  },
+  {
+    "attrs": {},
+    "firstSeenRun": "20260704T232800Z",
+    "id": "area:globalgrid2050-planning-requirements",
+    "kind": "area",
+    "label": "Planning & Requirements",
+    "lastSeenRun": "20260704T232800Z",
+    "methodState": "areas_menu_v1",
+    "provenance": "declared",
+    "schemaVersion": "spider-graph/1.0.0",
+    "source": "AREAS menu",
+    "type": "homepage_menu_area"
+  },
+  {
+    "attrs": {},
+    "firstSeenRun": "20260704T232800Z",
+    "id": "area:globalgrid2050-pricing-materials",
+    "kind": "area",
+    "label": "Pricing & Materials",
+    "lastSeenRun": "20260704T232800Z",
+    "methodState": "areas_menu_v1",
+    "provenance": "declared",
+    "schemaVersion": "spider-graph/1.0.0",
+    "source": "AREAS menu",
+    "type": "homepage_menu_area"
+  },
+  {
+    "attrs": {},
+    "firstSeenRun": "20260704T232800Z",
+    "id": "area:globalgrid2050-reference-knowledge",
+    "kind": "area",
+    "label": "Reference & Knowledge",
+    "lastSeenRun": "20260704T232800Z",
+    "methodState": "areas_menu_v1",
+    "provenance": "declared",
+    "schemaVersion": "spider-graph/1.0.0",
+    "source": "AREAS menu",
+    "type": "homepage_menu_area"
+  },
+  {
+    "attrs": {},
+    "firstSeenRun": "20260704T232800Z",
+    "id": "area:globalgrid2050-solar-bess-topology",
+    "kind": "area",
+    "label": "Solar & BESS Topology",
+    "lastSeenRun": "20260704T232800Z",
+    "methodState": "areas_menu_v1",
+    "provenance": "declared",
+    "schemaVersion": "spider-graph/1.0.0",
+    "source": "AREAS menu",
+    "type": "homepage_menu_area"
+  },
+  {
+    "attrs": {},
+    "firstSeenRun": "20260704T232800Z",
+    "id": "area:globalgrid2050-uk-grid-tracking",
+    "kind": "area",
+    "label": "UK Grid Tracking",
+    "lastSeenRun": "20260704T232800Z",
+    "methodState": "areas_menu_v1",
+    "provenance": "declared",
+    "schemaVersion": "spider-graph/1.0.0",
+    "source": "AREAS menu",
+    "type": "homepage_menu_area"
+  },
+  {
+    "attrs": {
+      "pagesBaseUrl": "https://globalgrid2050.com/",
+      "repository": "Ventusltd/globalgrid2050"
+    },
+    "firstSeenRun": "20260704T232800Z",
+    "id": "repo:globalgrid2050",
+    "kind": "repo",
+    "label": "globalgrid2050",
+    "lastSeenRun": "20260704T232800Z",
+    "methodState": "areas_menu_v1",
+    "provenance": "declared",
+    "schemaVersion": "spider-graph/1.0.0",
+    "source": "AREAS menu",
+    "type": "monolith"
+  }
+]

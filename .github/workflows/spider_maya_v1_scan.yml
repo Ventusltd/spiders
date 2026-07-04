@@ -1,0 +1,38 @@
+name: spider_maya v1 scan
+
+on:
+  workflow_dispatch:
+    inputs:
+      globalgrid_ref:
+        description: Git ref for Ventusltd/globalgrid2050 homepage AREAS menu
+        required: true
+        default: 88894bebe6cc42a7bf766a2b104d609fd3a1f514
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Build declared AREAS graph
+        run: python spider_maya/v1/scripts/scan_areas_menu.py --globalgrid-ref "${{ inputs.globalgrid_ref }}"
+      - name: Validate graph
+        run: python spider_maya/v1/scripts/validate.py
+      - name: Commit derived graph and audit receipt
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add spider_maya/v1/data/derived spider_maya/v1/audit
+          if git diff --cached --quiet; then
+            echo "No derived changes to commit"
+          else
+            git commit -m "spider_maya: refresh v1 declared graph"
+            git push
+          fi

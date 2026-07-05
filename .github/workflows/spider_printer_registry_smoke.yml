@@ -1,0 +1,36 @@
+name: Spider Printer registry smoke
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '30 10 * * 1'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: spider-printer-registry-smoke
+  cancel-in-progress: false
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check registry files
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json, urllib.request
+          base = 'https://raw.githubusercontent.com/Ventusltd/registry_of_all_content_in_repos_and_dependencies/main/'
+          latest = json.load(urllib.request.urlopen(base + 'registry/latest.json', timeout=30))
+          registry = json.load(urllib.request.urlopen(base + latest['json_path'], timeout=60))
+          assert registry['totals']['repo_count'] >= 1
+          assert registry['totals']['file_count'] >= 1
+          print('Registry OK:', latest['json_path'], registry['totals'])
+          try:
+              graph = json.load(urllib.request.urlopen(base + 'registry/graph_latest.json', timeout=30))
+              assert graph['nodes']
+              print('Graph OK:', len(graph['nodes']), 'nodes')
+          except Exception as exc:
+              print('Graph not available yet:', exc)
+          PY

@@ -1,151 +1,61 @@
 <!doctype html>
 <html lang="en" data-spider-species="spider_printer_v1">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>GlobalGrid2050 Spider Printer v1</title>
-  <meta name="description" content="A dark SCADA topological federation printer for the GlobalGrid2050 repository and data network.">
-  <style>
-    :root {
-      --bg: #030a10;
-      --panel: rgba(7, 17, 26, 0.92);
-      --panel2: rgba(10, 28, 42, 0.86);
-      --line: rgba(93, 180, 255, 0.28);
-      --grid: rgba(70, 255, 140, 0.08);
-      --text: #d9f5ff;
-      --muted: #7fa8bc;
-      --green: #48ff61;
-      --cyan: #36d9ff;
-      --amber: #ffb000;
-      --red: #ff4b4b;
-      --purple: #b05cff;
-    }
-    * { box-sizing: border-box; }
-    html, body { height: 100%; margin: 0; background: var(--bg); color: var(--text); font-family: Arial, Helvetica, sans-serif; overflow: hidden; }
-    body::before { content: ""; position: fixed; inset: 0; background: radial-gradient(circle at 50% 12%, rgba(0, 153, 255, 0.18), transparent 36%), linear-gradient(rgba(70,255,140,.06) 1px, transparent 1px), linear-gradient(90deg, rgba(70,255,140,.06) 1px, transparent 1px); background-size: auto, 36px 36px, 36px 36px; pointer-events: none; }
-    .app { display: grid; grid-template-columns: 320px 1fr 310px; grid-template-rows: 78px 1fr 38px; height: 100vh; position: relative; }
-    header { grid-column: 1 / 4; display: grid; grid-template-columns: 320px 1fr 310px; align-items: center; border-bottom: 1px solid var(--line); background: rgba(3,10,16,.9); z-index: 5; }
-    .brand { padding: 10px 18px; border-right: 1px solid var(--line); }
-    .brand h1 { margin: 0; font-size: 20px; letter-spacing: .08em; color: var(--cyan); }
-    .brand strong { color: var(--green); }
-    .brand span { display: block; font-size: 12px; color: var(--muted); margin-top: 4px; }
-    .title { text-align: center; }
-    .title h2 { margin: 0; color: #5fc9ff; font-size: 22px; letter-spacing: .06em; }
-    .title p { margin: 6px 0 0; color: var(--green); font-size: 14px; }
-    .status { margin: 10px 14px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--panel2); text-align: center; }
-    .status b { color: var(--green); }
-    aside { padding: 14px; overflow: auto; background: rgba(3,10,16,.82); z-index: 4; }
-    aside.left { border-right: 1px solid var(--line); }
-    aside.right { border-left: 1px solid var(--line); }
-    .box { border: 1px solid var(--line); border-radius: 10px; padding: 12px; margin-bottom: 12px; background: var(--panel); box-shadow: 0 0 22px rgba(0, 180, 255, .08); }
-    .box h3 { margin: 0 0 10px; color: #c8f6ff; font-size: 12px; text-transform: uppercase; letter-spacing: .08em; }
-    .row { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin: 8px 0; color: #ccecf8; font-size: 13px; }
-    .switch { appearance: none; width: 42px; height: 20px; border-radius: 20px; background: #1e2f3a; border: 1px solid #4d6573; cursor: pointer; position: relative; }
-    .switch:checked { background: rgba(72,255,97,.45); border-color: var(--green); }
-    .switch::after { content: ""; width: 14px; height: 14px; border-radius: 50%; background: #9fb5c3; position: absolute; top: 2px; left: 3px; transition: .15s; }
-    .switch:checked::after { left: 23px; background: #eaffed; }
-    button { border: 1px solid #2f83bd; background: #071826; color: #dff8ff; border-radius: 6px; padding: 8px 10px; cursor: pointer; }
-    button:hover { border-color: var(--green); color: var(--green); }
-    .btn-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
-    main { position: relative; overflow: hidden; }
-    #viewport { position: absolute; inset: 0; cursor: grab; }
-    #viewport.dragging { cursor: grabbing; }
-    svg { width: 100%; height: 100%; display: block; background: radial-gradient(circle at 50% 40%, rgba(0, 90, 120, .16), transparent 58%); }
-    .node rect { stroke-width: 2.5; rx: 18; filter: drop-shadow(0 0 8px rgba(0,170,255,.25)); }
-    .node text { pointer-events: none; }
-    .node .label { fill: #effcff; font-size: 26px; font-weight: 700; }
-    .node .sub { fill: #91b8c8; font-size: 18px; }
-    .node.data rect { fill: rgba(11, 62, 28, .96); stroke: var(--green); }
-    .node.engine rect { fill: rgba(45, 18, 73, .96); stroke: var(--purple); }
-    .node.app rect { fill: rgba(8, 42, 78, .96); stroke: #1c8eff; }
-    .node.library rect { fill: rgba(44, 18, 68, .94); stroke: var(--purple); }
-    .node.schema rect { fill: rgba(71, 20, 18, .94); stroke: var(--red); }
-    .node.infra rect { fill: rgba(71, 49, 8, .94); stroke: var(--amber); }
-    .node.external rect { fill: rgba(5, 63, 56, .94); stroke: #10e0c4; }
-    .node.future rect { fill: rgba(13, 40, 48, .72); stroke: #4edfff; stroke-dasharray: 10 8; }
-    .edge { fill: none; stroke-width: 4; opacity: .9; }
-    .edge.hidden, .node.hidden { display: none; }
-    .section-label { fill: #bff8ff; font-size: 20px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
-    .section-line { stroke: rgba(150,230,255,.28); stroke-width: 2; }
-    .hud { position: absolute; top: 14px; left: 14px; display: flex; gap: 8px; z-index: 3; }
-    .metric { border: 1px solid var(--line); padding: 8px 14px; border-radius: 8px; background: rgba(2,10,17,.8); min-width: 110px; text-align: center; }
-    .metric span { display: block; color: var(--muted); font-size: 10px; text-transform: uppercase; }
-    .metric b { color: #fff; font-size: 16px; }
-    footer { grid-column: 1 / 4; display: flex; align-items: center; justify-content: space-between; padding: 0 18px; border-top: 1px solid var(--line); color: var(--green); font-size: 12px; background: rgba(3,10,16,.92); z-index: 5; }
-    .legend-line { display: grid; grid-template-columns: 38px 1fr; align-items: center; gap: 8px; font-size: 13px; margin: 9px 0; }
-    .sample { height: 0; border-top: 3px solid; }
-    .details { font-size: 13px; color: #ccecf8; line-height: 1.45; }
-    .details code { color: var(--green); }
-    .print-note { color: var(--amber); }
-    @media print {
-      @page { size: A1 landscape; margin: 8mm; }
-      html, body { overflow: visible; background: #02070b; }
-      .app { display: block; height: auto; }
-      header, aside, footer, .hud { display: none !important; }
-      main { overflow: visible; height: 100vh; }
-      svg { width: 100%; height: 100%; }
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>GlobalGrid2050 Spider Printer v1</title>
+<meta name="description" content="Fullscreen dark SCADA topological federation printer for GlobalGrid2050.">
+<style>
+:root{--bg:#02070c;--panel:rgba(5,15,24,.88);--panel2:rgba(8,24,38,.94);--line:rgba(83,190,255,.30);--text:#dff8ff;--muted:#82aabc;--green:#48ff61;--cyan:#39cfff;--amber:#ffb000;--red:#ff4f4f;--purple:#b05cff;--blue:#258bff}
+*{box-sizing:border-box}html,body{margin:0;height:100%;overflow:hidden;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif}body{touch-action:none}body:before{content:"";position:fixed;inset:0;background:radial-gradient(circle at 52% 8%,rgba(0,140,255,.22),transparent 34%),linear-gradient(rgba(72,255,97,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(72,255,97,.055) 1px,transparent 1px);background-size:auto,44px 44px,44px 44px;pointer-events:none}.app{position:fixed;inset:0;display:grid;grid-template-rows:auto 1fr auto}.top{z-index:10;display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:center;padding:10px 14px;border-bottom:1px solid var(--line);background:linear-gradient(180deg,rgba(2,7,12,.96),rgba(2,7,12,.70));backdrop-filter:blur(10px)}.brand{font-weight:800;letter-spacing:.08em;color:var(--cyan);white-space:nowrap}.brand b{color:var(--green)}.title{text-align:center;min-width:0}.title h1{margin:0;color:#6ed4ff;font-size:clamp(14px,2.5vw,24px);letter-spacing:.07em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.title p{margin:3px 0 0;color:var(--green);font-size:12px}.topActions{display:flex;gap:8px}.iconBtn,.tab,button{border:1px solid #2f83bd;background:#061522;color:#dff8ff;border-radius:9px;padding:9px 11px;cursor:pointer}.iconBtn{min-width:40px;height:38px}.iconBtn:hover,.tab:hover,button:hover{border-color:var(--green);color:var(--green)}main{position:relative;overflow:hidden}.mapFrame{position:absolute;inset:0;cursor:grab}.mapFrame.dragging{cursor:grabbing}svg{display:block;width:100%;height:100%;background:radial-gradient(circle at 50% 42%,rgba(0,100,140,.18),transparent 62%)}.hud{position:absolute;top:12px;left:12px;display:flex;gap:8px;z-index:5}.metric{border:1px solid var(--line);background:rgba(2,9,15,.78);border-radius:10px;padding:7px 12px;text-align:center;min-width:86px;box-shadow:0 0 22px rgba(0,180,255,.08)}.metric span{display:block;color:var(--muted);font-size:10px;text-transform:uppercase}.metric b{font-size:16px;color:#fff}.zoomDock{position:absolute;right:14px;top:14px;z-index:7;display:grid;gap:8px}.zoomDock button{width:44px;height:40px;font-size:16px}.drawer{position:absolute;right:14px;top:70px;width:min(360px,calc(100vw - 28px));max-height:calc(100vh - 170px);overflow:auto;z-index:8;border:1px solid var(--line);border-radius:14px;background:var(--panel2);box-shadow:0 18px 80px rgba(0,0,0,.48);padding:14px;display:none}.drawer.open{display:block}.drawer h2{margin:0 0 8px;color:#bff6ff;font-size:14px;letter-spacing:.08em;text-transform:uppercase}.drawer p,.drawer li{color:#ccecf8;font-size:13px;line-height:1.45}.drawer code{color:var(--green)}.layerRow{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:9px 0;border-bottom:1px solid rgba(120,200,255,.12);font-size:13px}.switch{appearance:none;width:44px;height:22px;border-radius:22px;background:#1e2f3a;border:1px solid #4d6573;position:relative}.switch:checked{background:rgba(72,255,97,.45);border-color:var(--green)}.switch:after{content:"";position:absolute;top:3px;left:4px;width:14px;height:14px;border-radius:50%;background:#9fb5c3;transition:.15s}.switch:checked:after{left:24px;background:#eaffed}.tabs{z-index:12;display:flex;gap:8px;align-items:center;justify-content:center;padding:10px 12px;border-top:1px solid var(--line);background:linear-gradient(0deg,rgba(2,7,12,.98),rgba(2,7,12,.72));backdrop-filter:blur(10px);overflow-x:auto}.tab{white-space:nowrap;font-size:13px;padding:9px 14px}.tab.active{color:var(--green);border-color:var(--green);background:rgba(72,255,97,.10)}.node rect{stroke-width:2.2;rx:18;filter:drop-shadow(0 0 10px rgba(0,170,255,.18))}.node text{pointer-events:none}.node .label{fill:#effcff;font-size:24px;font-weight:800}.node .sub{fill:#9bc4d2;font-size:17px}.node.data rect{fill:rgba(11,62,28,.96);stroke:var(--green)}.node.engine rect{fill:rgba(45,18,73,.96);stroke:var(--purple)}.node.app rect{fill:rgba(8,42,78,.96);stroke:var(--blue)}.node.library rect{fill:rgba(44,18,68,.94);stroke:var(--purple)}.node.schema rect{fill:rgba(71,20,18,.94);stroke:var(--red)}.node.infra rect{fill:rgba(71,49,8,.94);stroke:var(--amber)}.node.external rect{fill:rgba(5,63,56,.94);stroke:#10e0c4}.node.future rect{fill:rgba(13,40,48,.72);stroke:#4edfff;stroke-dasharray:10 8}.edge{fill:none;stroke-width:4;opacity:.9}.hidden{display:none}.section-label{fill:#bff8ff;font-size:19px;font-weight:800;letter-spacing:.09em;text-transform:uppercase}.section-line{stroke:rgba(150,230,255,.24);stroke-width:2}.toast{position:absolute;left:50%;bottom:76px;transform:translateX(-50%);z-index:9;border:1px solid var(--line);border-radius:999px;background:rgba(2,9,15,.78);padding:8px 14px;color:var(--muted);font-size:12px;white-space:nowrap}.legendLine{display:grid;grid-template-columns:36px 1fr;gap:9px;align-items:center;margin:8px 0;font-size:13px}.sample{height:0;border-top:3px solid}.nodeLink{display:block;color:var(--cyan);text-decoration:none;margin-top:8px;word-break:break-all;font-size:12px}.nodeLink:hover{text-decoration:underline}.listBtn{display:block;width:100%;text-align:left;margin:7px 0;border-color:rgba(83,190,255,.25)}
+@media(max-width:760px){.top{grid-template-columns:1fr auto}.brand{font-size:13px}.title{display:none}.hud{display:none}.zoomDock{right:10px;top:76px}.drawer{left:10px;right:10px;top:70px;width:auto;max-height:calc(100vh - 150px)}.tab{font-size:12px;padding:8px 11px}.toast{bottom:68px;font-size:11px}.node .label{font-size:22px}.node .sub{font-size:16px}}
+@media print{@page{size:A1 landscape;margin:7mm}html,body{overflow:visible;background:#02070b}.top,.tabs,.drawer,.hud,.zoomDock,.toast{display:none!important}.app{display:block;height:auto}main{height:100vh;overflow:visible}svg{width:100%;height:100%}}
+</style>
 </head>
 <body>
-<div class="app">
-  <header>
-    <div class="brand"><h1>GLOBALGRID<strong>2050</strong></h1><span>Spider Printer v1 • Federation construction map</span></div>
-    <div class="title"><h2>GLOBALGRID2050 FEDERATION NETWORK — SPIDER PRINTER v1</h2><p>Open Data • Open Tools • Open Intelligence • Open Future</p></div>
-    <div class="status">SYSTEM STATUS<br><b>SCREENING MAP</b></div>
-  </header>
-
-  <aside class="left">
-    <div class="box"><h3>Layer cartridges</h3><div id="layerControls"></div></div>
-    <div class="box"><h3>View presets</h3><div class="btn-grid"><button data-preset="full">Full federation</button><button data-preset="data">Data spine</button><button data-preset="apps">Apps view</button><button data-preset="external">Authorities</button></div></div>
-    <div class="box"><h3>Spider controls</h3><div class="btn-grid"><button id="zoomIn">Zoom +</button><button id="zoomOut">Zoom -</button><button id="fit">Fit map</button><button id="print">Print A1</button></div><p class="details">Zoom: <code id="zoomReadout">100%</code><br>Drag canvas to pan. Mouse wheel zooms.</p></div>
-    <div class="box"><h3>Print discipline</h3><p class="details print-note">A1 landscape print mode hides panels and prints the full topological SLD canvas. The map is intentionally not geospatial.</p></div>
-  </aside>
-
-  <main>
-    <div class="hud"><div class="metric"><span>nodes</span><b id="nodeCount">0</b></div><div class="metric"><span>connections</span><b id="edgeCount">0</b></div><div class="metric"><span>layers</span><b id="layerCount">0</b></div></div>
-    <div id="viewport"><svg id="map" viewBox="0 0 4200 3300" role="img" aria-label="GlobalGrid2050 federation network topological SLD map"><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="context-stroke"></path></marker></defs><g id="world"></g></svg></div>
-  </main>
-
-  <aside class="right">
-    <div class="box"><h3>Legend — connection types</h3><div id="legend"></div></div>
-    <div class="box"><h3>Node details</h3><div id="details" class="details">Click a node to inspect it.</div></div>
-    <div class="box"><h3>Backend states</h3><p class="details">Species: <code>spider_printer_v1</code><br>Data: <code>data/topology.json</code><br>Mode: <code>topological_sld_not_geospatial</code><br>State: <code>screening</code></p></div>
-  </aside>
-
-  <footer><span>LIVE MODE: STATIC SCREENING CARTRIDGE</span><span>DATA IS THE NEW INFRASTRUCTURE</span><span>BUILDING THE OPERATING SYSTEM FOR THE ENERGY TRANSITION</span></footer>
+<div class="app" id="app">
+<header class="top">
+  <div class="brand">GLOBALGRID<b>2050</b> · SPIDER PRINTER</div>
+  <div class="title"><h1>FEDERATION NETWORK — FULLSCREEN TOPOLOGICAL SLD</h1><p>Open Data • Open Tools • Open Intelligence • Open Future</p></div>
+  <div class="topActions"><button class="iconBtn" id="layersBtn" title="Layers">☰</button><button class="iconBtn" id="infoBtn" title="Info">ⓘ</button><button class="iconBtn" id="fullBtn" title="Fullscreen">⛶</button></div>
+</header>
+<main>
+  <div class="hud"><div class="metric"><span>nodes</span><b id="nodeCount">0</b></div><div class="metric"><span>links</span><b id="edgeCount">0</b></div><div class="metric"><span>zoom</span><b id="zoomReadout">100%</b></div></div>
+  <div class="zoomDock"><button id="zoomIn">＋</button><button id="zoomOut">−</button><button id="fit">Fit</button><button id="print">A1</button></div>
+  <div class="drawer" id="drawer"></div>
+  <div class="mapFrame" id="viewport"><svg id="map" viewBox="0 0 4200 3300" role="img" aria-label="GlobalGrid2050 federation network map"><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="context-stroke"></path></marker></defs><g id="world"></g></svg></div>
+  <div class="toast" id="toast">Drag to pan · wheel or pinch to zoom · tap nodes for details</div>
+</main>
+<nav class="tabs" id="tabs"><button class="tab active" data-view="full">Full Federation</button><button class="tab" data-view="data">Data Spine</button><button class="tab" data-view="apps">Apps</button><button class="tab" data-view="audit">Audit</button><button class="tab" data-view="external">Authorities</button></nav>
 </div>
-
 <script>
-const state = {data:null, scale:1, tx:0, ty:0, dragging:false, sx:0, sy:0, layers:{}};
-const svg = document.getElementById('map');
-const world = document.getElementById('world');
-const viewport = document.getElementById('viewport');
-
-function layerOn(id){ return state.layers[id] !== false; }
-function colourForNode(kind){ return {data:'#48ff61',engine:'#b05cff',app:'#1c8eff',library:'#b05cff',schema:'#ff4b4b',infra:'#ffb000',external:'#10e0c4',future:'#4edfff'}[kind] || '#d9f5ff'; }
-function updateTransform(){ world.setAttribute('transform', `translate(${state.tx} ${state.ty}) scale(${state.scale})`); document.getElementById('zoomReadout').textContent = Math.round(state.scale*100)+'%'; }
-function linePath(a,b,i){ const dx = b.x-a.x; const midY = (a.y + b.y)/2 + ((i%5)-2)*22; return `M ${a.x+160} ${a.y+52} C ${a.x+160+dx*.25} ${midY}, ${b.x+160-dx*.25} ${midY}, ${b.x+160} ${b.y+52}`; }
-function sectionLabel(text,y){ const g=document.createElementNS('http://www.w3.org/2000/svg','g'); g.innerHTML = `<line class="section-line" x1="260" y1="${y}" x2="3600" y2="${y}"/><text class="section-label" x="1800" y="${y-16}" text-anchor="middle">${text}</text>`; world.appendChild(g); }
-function render(){ const data=state.data; world.innerHTML=''; sectionLabel('Core data repositories',240); sectionLabel('Engines and topology tools',760); sectionLabel('Applications and dashboards',1260); sectionLabel('Libraries and shared tools',1700); sectionLabel('Standards, schemas and contracts',2060); sectionLabel('Infrastructure and platforms',2400); sectionLabel('External data sources',2880);
- const nodes = Object.fromEntries(data.nodes.map(n=>[n.id,n]));
- data.edges.forEach((e,i)=>{ const a=nodes[e.from], b=nodes[e.to]; if(!a||!b) return; const et=data.edgeTypes[e.type]||data.edgeTypes.reference; const p=document.createElementNS('http://www.w3.org/2000/svg','path'); p.setAttribute('d',linePath(a,b,i)); p.setAttribute('class',`edge edge-${e.type} layer-${et.layer}`); p.setAttribute('stroke',et.colour); p.setAttribute('stroke-dasharray',et.dash); p.setAttribute('marker-end','url(#arrow)'); if(!layerOn(et.layer)) p.classList.add('hidden'); world.appendChild(p); });
- data.nodes.forEach(n=>{ const g=document.createElementNS('http://www.w3.org/2000/svg','g'); g.setAttribute('class',`node ${n.kind} layer-${n.layer}`); g.setAttribute('transform',`translate(${n.x},${n.y})`); if(!layerOn(n.layer)) g.classList.add('hidden'); g.innerHTML=`<rect width="320" height="104"></rect><circle cx="34" cy="34" r="14" fill="${colourForNode(n.kind)}"></circle><text class="label" x="62" y="38">${escapeXml(n.label)}</text><text class="sub" x="62" y="70">${escapeXml(n.subtitle||'')}</text>`; g.addEventListener('click',()=>showDetails(n)); world.appendChild(g); });
- document.getElementById('nodeCount').textContent=data.nodes.length; document.getElementById('edgeCount').textContent=data.edges.length; document.getElementById('layerCount').textContent=data.layers.length; updateTransform(); }
-function escapeXml(s){return String(s).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));}
-function showDetails(n){ document.getElementById('details').innerHTML=`<b style="color:${colourForNode(n.kind)}">${escapeXml(n.label)}</b><br>${escapeXml(n.subtitle||'')}<br><br>Kind: <code>${n.kind}</code><br>Layer: <code>${n.layer}</code><br>Node ID: <code>${n.id}</code>`; }
-function buildControls(){ const c=document.getElementById('layerControls'); state.data.layers.forEach(l=>{state.layers[l.id]=l.defaultOn; const row=document.createElement('label'); row.className='row'; row.innerHTML=`<span>${l.label}</span><input class="switch" type="checkbox" ${l.defaultOn?'checked':''}>`; row.querySelector('input').addEventListener('change',ev=>{state.layers[l.id]=ev.target.checked; render();}); c.appendChild(row);}); const lg=document.getElementById('legend'); Object.values(state.data.edgeTypes).forEach(e=>{ const r=document.createElement('div'); r.className='legend-line'; r.innerHTML=`<span class="sample" style="border-color:${e.colour};border-top-style:${e.dash?'dashed':'solid'}"></span><span>${e.label}</span>`; lg.appendChild(r);}); }
-function preset(name){ Object.keys(state.layers).forEach(k=>state.layers[k]=false); if(name==='full') Object.keys(state.layers).forEach(k=>state.layers[k]=true); if(name==='data') ['data','engines','external','schemas'].forEach(k=>state.layers[k]=true); if(name==='apps') ['apps','libs','data','infra'].forEach(k=>state.layers[k]=true); if(name==='external') ['external','data','engines'].forEach(k=>state.layers[k]=true); document.querySelectorAll('.switch').forEach(sw=>{ const label=sw.parentElement.textContent.trim(); const layer=state.data.layers.find(l=>l.label===label); if(layer) sw.checked=state.layers[layer.id];}); render(); }
-function fit(){ state.scale=.28; state.tx=140; state.ty=80; updateTransform(); }
-viewport.addEventListener('wheel',e=>{e.preventDefault(); const delta=e.deltaY<0?1.08:.92; state.scale=Math.min(3,Math.max(.12,state.scale*delta)); updateTransform();},{passive:false});
-viewport.addEventListener('pointerdown',e=>{state.dragging=true; state.sx=e.clientX-state.tx; state.sy=e.clientY-state.ty; viewport.classList.add('dragging');});
-window.addEventListener('pointermove',e=>{if(!state.dragging)return; state.tx=e.clientX-state.sx; state.ty=e.clientY-state.sy; updateTransform();});
-window.addEventListener('pointerup',()=>{state.dragging=false; viewport.classList.remove('dragging');});
-document.getElementById('zoomIn').onclick=()=>{state.scale=Math.min(3,state.scale*1.2); updateTransform();};
-document.getElementById('zoomOut').onclick=()=>{state.scale=Math.max(.12,state.scale*.8); updateTransform();};
-document.getElementById('fit').onclick=fit; document.getElementById('print').onclick=()=>window.print();
-document.querySelectorAll('[data-preset]').forEach(b=>b.onclick=()=>preset(b.dataset.preset));
-fetch('data/topology.json').then(r=>r.json()).then(data=>{state.data=data; buildControls(); render(); fit();}).catch(err=>{document.getElementById('details').textContent='Failed to load topology cartridge: '+err.message;});
+const state={data:null,scale:1,tx:0,ty:0,dragging:false,sx:0,sy:0,layers:{},view:'full',selected:null,lastDist:0};
+const world=document.getElementById('world'),viewport=document.getElementById('viewport'),drawer=document.getElementById('drawer');
+const viewLayers={full:null,data:['data','engines','schemas','external'],apps:['data','apps','libs','infra'],audit:['engines','schemas','infra','data'],external:['external','data','engines']};
+function activeLayer(id){return state.layers[id]!==false && (!viewLayers[state.view]||viewLayers[state.view].includes(id));}
+function colourNode(kind){return{data:'#48ff61',engine:'#b05cff',app:'#258bff',library:'#b05cff',schema:'#ff4f4f',infra:'#ffb000',external:'#10e0c4',future:'#4edfff'}[kind]||'#dff8ff'}
+function setTransform(){world.setAttribute('transform',`translate(${state.tx} ${state.ty}) scale(${state.scale})`);document.getElementById('zoomReadout').textContent=Math.round(state.scale*100)+'%'}
+function esc(s){return String(s||'').replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]))}
+function path(a,b,i){const dx=b.x-a.x,midY=(a.y+b.y)/2+((i%7)-3)*18;return`M ${a.x+160} ${a.y+52} C ${a.x+160+dx*.25} ${midY}, ${b.x+160-dx*.25} ${midY}, ${b.x+160} ${b.y+52}`}
+function section(text,y){const g=document.createElementNS('http://www.w3.org/2000/svg','g');g.innerHTML=`<line class="section-line" x1="260" y1="${y}" x2="3600" y2="${y}"/><text class="section-label" x="1800" y="${y-16}" text-anchor="middle">${text}</text>`;world.appendChild(g)}
+function render(){const d=state.data;if(!d)return;world.innerHTML='';section('Core data repositories',240);section('Engines and topology tools',760);section('Applications and dashboards',1260);section('Libraries and shared tools',1700);section('Standards, schemas and contracts',2060);section('Infrastructure and platforms',2400);section('External data sources',2880);const nodes=Object.fromEntries(d.nodes.map(n=>[n.id,n]));
+d.edges.forEach((e,i)=>{const a=nodes[e.from],b=nodes[e.to];if(!a||!b)return;const et=d.edgeTypes[e.type]||d.edgeTypes.reference;if(!activeLayer(et.layer)||!activeLayer(a.layer)||!activeLayer(b.layer))return;const p=document.createElementNS('http://www.w3.org/2000/svg','path');p.setAttribute('d',path(a,b,i));p.setAttribute('class','edge');p.setAttribute('stroke',et.colour);p.setAttribute('stroke-dasharray',et.dash);p.setAttribute('marker-end','url(#arrow)');world.appendChild(p)});
+d.nodes.forEach(n=>{if(!activeLayer(n.layer))return;const g=document.createElementNS('http://www.w3.org/2000/svg','g');g.setAttribute('class',`node ${n.kind}`);g.setAttribute('transform',`translate(${n.x},${n.y})`);g.innerHTML=`<rect width="320" height="104"></rect><circle cx="34" cy="34" r="14" fill="${colourNode(n.kind)}"></circle><text class="label" x="62" y="38">${esc(n.label)}</text><text class="sub" x="62" y="70">${esc(n.subtitle)}</text>`;g.onclick=()=>showNode(n);world.appendChild(g)});document.getElementById('nodeCount').textContent=d.nodes.filter(n=>activeLayer(n.layer)).length;document.getElementById('edgeCount').textContent=d.edges.length;setTransform()}
+function showDrawer(html){drawer.innerHTML=html;drawer.classList.add('open')}
+function showNode(n){state.selected=n.id;showDrawer(`<h2>${esc(n.label)}</h2><p>${esc(n.subtitle)}</p><p>Kind: <code>${esc(n.kind)}</code><br>Layer: <code>${esc(n.layer)}</code><br>Node ID: <code>${esc(n.id)}</code></p><button onclick="drawer.classList.remove('open')">Close</button>`)}
+function showLayers(){const rows=state.data.layers.map(l=>`<label class="layerRow"><span>${esc(l.label)}</span><input class="switch" type="checkbox" data-layer="${l.id}" ${state.layers[l.id]!==false?'checked':''}></label>`).join('');showDrawer(`<h2>Layer cartridges</h2>${rows}<p>Tabs at the bottom change view level. Layer toggles decide cartridge visibility.</p><button onclick="drawer.classList.remove('open')">Close</button>`);drawer.querySelectorAll('[data-layer]').forEach(x=>x.onchange=e=>{state.layers[e.target.dataset.layer]=e.target.checked;render()})}
+function showInfo(){const legend=Object.values(state.data.edgeTypes).map(e=>`<div class="legendLine"><span class="sample" style="border-color:${e.colour};border-top-style:${e.dash?'dashed':'solid'}"></span><span>${esc(e.label)}</span></div>`).join('');showDrawer(`<h2>Spider Printer v1</h2><p>Fullscreen SCADA-style topological SLD. Screening grade. Not geospatial. Built for print and AI handover.</p><p>Data cartridge: <code>data/topology.json</code><br>Mode: <code>topological_sld_not_geospatial</code></p><h2>Legend</h2>${legend}<button onclick="window.print()">Print A1</button> <button onclick="drawer.classList.remove('open')">Close</button>`)}
+function fit(){state.scale=.28;state.tx=140;state.ty=80;setTransform()}
+function zoom(f,cx=innerWidth/2,cy=innerHeight/2){const old=state.scale;state.scale=Math.min(3,Math.max(.12,state.scale*f));state.tx=cx-(cx-state.tx)*(state.scale/old);state.ty=cy-(cy-state.ty)*(state.scale/old);setTransform()}
+viewport.addEventListener('wheel',e=>{e.preventDefault();zoom(e.deltaY<0?1.09:.91,e.clientX,e.clientY)},{passive:false});
+viewport.addEventListener('pointerdown',e=>{state.dragging=true;state.sx=e.clientX-state.tx;state.sy=e.clientY-state.ty;viewport.classList.add('dragging')});
+window.addEventListener('pointermove',e=>{if(!state.dragging)return;state.tx=e.clientX-state.sx;state.ty=e.clientY-state.sy;setTransform()});
+window.addEventListener('pointerup',()=>{state.dragging=false;viewport.classList.remove('dragging')});
+viewport.addEventListener('touchmove',e=>{if(e.touches.length===2){e.preventDefault();const [a,b]=e.touches;const dist=Math.hypot(a.clientX-b.clientX,a.clientY-b.clientY);if(state.lastDist)zoom(dist/state.lastDist,(a.clientX+b.clientX)/2,(a.clientY+b.clientY)/2);state.lastDist=dist}},{passive:false});
+viewport.addEventListener('touchend',()=>state.lastDist=0);
+document.getElementById('zoomIn').onclick=()=>zoom(1.2);document.getElementById('zoomOut').onclick=()=>zoom(.8);document.getElementById('fit').onclick=fit;document.getElementById('print').onclick=()=>window.print();document.getElementById('layersBtn').onclick=showLayers;document.getElementById('infoBtn').onclick=showInfo;document.getElementById('fullBtn').onclick=()=>{const el=document.documentElement;if(!document.fullscreenElement)el.requestFullscreen?.();else document.exitFullscreen?.()};
+document.querySelectorAll('.tab').forEach(t=>t.onclick=()=>{document.querySelectorAll('.tab').forEach(x=>x.classList.remove('active'));t.classList.add('active');state.view=t.dataset.view;render();fit()});
+fetch('data/topology.json').then(r=>r.json()).then(d=>{state.data=d;d.layers.forEach(l=>state.layers[l.id]=l.defaultOn);render();fit()}).catch(err=>showDrawer(`<h2>Load error</h2><p>${esc(err.message)}</p>`));
 </script>
 </body>
 </html>

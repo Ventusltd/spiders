@@ -4,6 +4,8 @@ The Federation Spider is the first living Spider species.
 
 It was born in the federation map repository, which remains its hibernation chamber and recovery source.
 
-This species renders repository and dependency topology as cards, columns and a wired Spider view.
+The current working specimen is here:
 
-Run the sync workflow to copy the current working specimen into this folder.
+https://ventusltd.github.io/data-federation-map-for-globalgrid2050-all-repos/dashboard/sandbox/spider_full_po_test.html?utm_source=chatgpt.com
+
+This species page is being prepared as the permanent home for that working Spider.

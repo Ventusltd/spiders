@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en" data-spider-species="spider_printer_v1">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GlobalGrid2050 Spider Printer v1</title>
+  <meta name="description" content="A dark SCADA topological federation printer for the GlobalGrid2050 repository and data network.">
+  <style>
+    :root {
+      --bg: #030a10;
+      --panel: rgba(7, 17, 26, 0.92);
+      --panel2: rgba(10, 28, 42, 0.86);
+      --line: rgba(93, 180, 255, 0.28);
+      --grid: rgba(70, 255, 140, 0.08);
+      --text: #d9f5ff;
+      --muted: #7fa8bc;
+      --green: #48ff61;
+      --cyan: #36d9ff;
+      --amber: #ffb000;
+      --red: #ff4b4b;
+      --purple: #b05cff;
+    }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; background: var(--bg); color: var(--text); font-family: Arial, Helvetica, sans-serif; overflow: hidden; }
+    body::before { content: ""; position: fixed; inset: 0; background: radial-gradient(circle at 50% 12%, rgba(0, 153, 255, 0.18), transparent 36%), linear-gradient(rgba(70,255,140,.06) 1px, transparent 1px), linear-gradient(90deg, rgba(70,255,140,.06) 1px, transparent 1px); background-size: auto, 36px 36px, 36px 36px; pointer-events: none; }
+    .app { display: grid; grid-template-columns: 320px 1fr 310px; grid-template-rows: 78px 1fr 38px; height: 100vh; position: relative; }
+    header { grid-column: 1 / 4; display: grid; grid-template-columns: 320px 1fr 310px; align-items: center; border-bottom: 1px solid var(--line); background: rgba(3,10,16,.9); z-index: 5; }
+    .brand { padding: 10px 18px; border-right: 1px solid var(--line); }
+    .brand h1 { margin: 0; font-size: 20px; letter-spacing: .08em; color: var(--cyan); }
+    .brand strong { color: var(--green); }
+    .brand span { display: block; font-size: 12px; color: var(--muted); margin-top: 4px; }
+    .title { text-align: center; }
+    .title h2 { margin: 0; color: #5fc9ff; font-size: 22px; letter-spacing: .06em; }
+    .title p { margin: 6px 0 0; color: var(--green); font-size: 14px; }
+    .status { margin: 10px 14px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 8px; background: var(--panel2); text-align: center; }
+    .status b { color: var(--green); }
+    aside { padding: 14px; overflow: auto; background: rgba(3,10,16,.82); z-index: 4; }
+    aside.left { border-right: 1px solid var(--line); }
+    aside.right { border-left: 1px solid var(--line); }
+    .box { border: 1px solid var(--line); border-radius: 10px; padding: 12px; margin-bottom: 12px; background: var(--panel); box-shadow: 0 0 22px rgba(0, 180, 255, .08); }
+    .box h3 { margin: 0 0 10px; color: #c8f6ff; font-size: 12px; text-transform: uppercase; letter-spacing: .08em; }
+    .row { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin: 8px 0; color: #ccecf8; font-size: 13px; }
+    .switch { appearance: none; width: 42px; height: 20px; border-radius: 20px; background: #1e2f3a; border: 1px solid #4d6573; cursor: pointer; position: relative; }
+    .switch:checked { background: rgba(72,255,97,.45); border-color: var(--green); }
+    .switch::after { content: ""; width: 14px; height: 14px; border-radius: 50%; background: #9fb5c3; position: absolute; top: 2px; left: 3px; transition: .15s; }
+    .switch:checked::after { left: 23px; background: #eaffed; }
+    button { border: 1px solid #2f83bd; background: #071826; color: #dff8ff; border-radius: 6px; padding: 8px 10px; cursor: pointer; }
+    button:hover { border-color: var(--green); color: var(--green); }
+    .btn-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    main { position: relative; overflow: hidden; }
+    #viewport { position: absolute; inset: 0; cursor: grab; }
+    #viewport.dragging { cursor: grabbing; }
+    svg { width: 100%; height: 100%; display: block; background: radial-gradient(circle at 50% 40%, rgba(0, 90, 120, .16), transparent 58%); }
+    .node rect { stroke-width: 2.5; rx: 18; filter: drop-shadow(0 0 8px rgba(0,170,255,.25)); }
+    .node text { pointer-events: none; }
+    .node .label { fill: #effcff; font-size: 26px; font-weight: 700; }
+    .node .sub { fill: #91b8c8; font-size: 18px; }
+    .node.data rect { fill: rgba(11, 62, 28, .96); stroke: var(--green); }
+    .node.engine rect { fill: rgba(45, 18, 73, .96); stroke: var(--purple); }
+    .node.app rect { fill: rgba(8, 42, 78, .96); stroke: #1c8eff; }
+    .node.library rect { fill: rgba(44, 18, 68, .94); stroke: var(--purple); }
+    .node.schema rect { fill: rgba(71, 20, 18, .94); stroke: var(--red); }
+    .node.infra rect { fill: rgba(71, 49, 8, .94); stroke: var(--amber); }
+    .node.external rect { fill: rgba(5, 63, 56, .94); stroke: #10e0c4; }
+    .node.future rect { fill: rgba(13, 40, 48, .72); stroke: #4edfff; stroke-dasharray: 10 8; }
+    .edge { fill: none; stroke-width: 4; opacity: .9; }
+    .edge.hidden, .node.hidden { display: none; }
+    .section-label { fill: #bff8ff; font-size: 20px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+    .section-line { stroke: rgba(150,230,255,.28); stroke-width: 2; }
+    .hud { position: absolute; top: 14px; left: 14px; display: flex; gap: 8px; z-index: 3; }
+    .metric { border: 1px solid var(--line); padding: 8px 14px; border-radius: 8px; background: rgba(2,10,17,.8); min-width: 110px; text-align: center; }
+    .metric span { display: block; color: var(--muted); font-size: 10px; text-transform: uppercase; }
+    .metric b { color: #fff; font-size: 16px; }
+    footer { grid-column: 1 / 4; display: flex; align-items: center; justify-content: space-between; padding: 0 18px; border-top: 1px solid var(--line); color: var(--green); font-size: 12px; background: rgba(3,10,16,.92); z-index: 5; }
+    .legend-line { display: grid; grid-template-columns: 38px 1fr; align-items: center; gap: 8px; font-size: 13px; margin: 9px 0; }
+    .sample { height: 0; border-top: 3px solid; }
+    .details { font-size: 13px; color: #ccecf8; line-height: 1.45; }
+    .details code { color: var(--green); }
+    .print-note { color: var(--amber); }
+    @media print {
+      @page { size: A1 landscape; margin: 8mm; }
+      html, body { overflow: visible; background: #02070b; }
+      .app { display: block; height: auto; }
+      header, aside, footer, .hud { display: none !important; }
+      main { overflow: visible; height: 100vh; }
+      svg { width: 100%; height: 100%; }
+    }
+  </style>
+</head>
+<body>
+<div class="app">
+  <header>
+    <div class="brand"><h1>GLOBALGRID<strong>2050</strong></h1><span>Spider Printer v1 • Federation construction map</span></div>
+    <div class="title"><h2>GLOBALGRID2050 FEDERATION NETWORK — SPIDER PRINTER v1</h2><p>Open Data • Open Tools • Open Intelligence • Open Future</p></div>
+    <div class="status">SYSTEM STATUS<br><b>SCREENING MAP</b></div>
+  </header>
+
+  <aside class="left">
+    <div class="box"><h3>Layer cartridges</h3><div id="layerControls"></div></div>
+    <div class="box"><h3>View presets</h3><div class="btn-grid"><button data-preset="full">Full federation</button><button data-preset="data">Data spine</button><button data-preset="apps">Apps view</button><button data-preset="external">Authorities</button></div></div>
+    <div class="box"><h3>Spider controls</h3><div class="btn-grid"><button id="zoomIn">Zoom +</button><button id="zoomOut">Zoom -</button><button id="fit">Fit map</button><button id="print">Print A1</button></div><p class="details">Zoom: <code id="zoomReadout">100%</code><br>Drag canvas to pan. Mouse wheel zooms.</p></div>
+    <div class="box"><h3>Print discipline</h3><p class="details print-note">A1 landscape print mode hides panels and prints the full topological SLD canvas. The map is intentionally not geospatial.</p></div>
+  </aside>
+
+  <main>
+    <div class="hud"><div class="metric"><span>nodes</span><b id="nodeCount">0</b></div><div class="metric"><span>connections</span><b id="edgeCount">0</b></div><div class="metric"><span>layers</span><b id="layerCount">0</b></div></div>
+    <div id="viewport"><svg id="map" viewBox="0 0 4200 3300" role="img" aria-label="GlobalGrid2050 federation network topological SLD map"><defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="context-stroke"></path></marker></defs><g id="world"></g></svg></div>
+  </main>
+
+  <aside class="right">
+    <div class="box"><h3>Legend — connection types</h3><div id="legend"></div></div>
+    <div class="box"><h3>Node details</h3><div id="details" class="details">Click a node to inspect it.</div></div>
+    <div class="box"><h3>Backend states</h3><p class="details">Species: <code>spider_printer_v1</code><br>Data: <code>data/topology.json</code><br>Mode: <code>topological_sld_not_geospatial</code><br>State: <code>screening</code></p></div>
+  </aside>
+
+  <footer><span>LIVE MODE: STATIC SCREENING CARTRIDGE</span><span>DATA IS THE NEW INFRASTRUCTURE</span><span>BUILDING THE OPERATING SYSTEM FOR THE ENERGY TRANSITION</span></footer>
+</div>
+
+<script>
+const state = {data:null, scale:1, tx:0, ty:0, dragging:false, sx:0, sy:0, layers:{}};
+const svg = document.getElementById('map');
+const world = document.getElementById('world');
+const viewport = document.getElementById('viewport');
+
+function layerOn(id){ return state.layers[id] !== false; }
+function colourForNode(kind){ return {data:'#48ff61',engine:'#b05cff',app:'#1c8eff',library:'#b05cff',schema:'#ff4b4b',infra:'#ffb000',external:'#10e0c4',future:'#4edfff'}[kind] || '#d9f5ff'; }
+function updateTransform(){ world.setAttribute('transform', `translate(${state.tx} ${state.ty}) scale(${state.scale})`); document.getElementById('zoomReadout').textContent = Math.round(state.scale*100)+'%'; }
+function linePath(a,b,i){ const dx = b.x-a.x; const midY = (a.y + b.y)/2 + ((i%5)-2)*22; return `M ${a.x+160} ${a.y+52} C ${a.x+160+dx*.25} ${midY}, ${b.x+160-dx*.25} ${midY}, ${b.x+160} ${b.y+52}`; }
+function sectionLabel(text,y){ const g=document.createElementNS('http://www.w3.org/2000/svg','g'); g.innerHTML = `<line class="section-line" x1="260" y1="${y}" x2="3600" y2="${y}"/><text class="section-label" x="1800" y="${y-16}" text-anchor="middle">${text}</text>`; world.appendChild(g); }
+function render(){ const data=state.data; world.innerHTML=''; sectionLabel('Core data repositories',240); sectionLabel('Engines and topology tools',760); sectionLabel('Applications and dashboards',1260); sectionLabel('Libraries and shared tools',1700); sectionLabel('Standards, schemas and contracts',2060); sectionLabel('Infrastructure and platforms',2400); sectionLabel('External data sources',2880);
+ const nodes = Object.fromEntries(data.nodes.map(n=>[n.id,n]));
+ data.edges.forEach((e,i)=>{ const a=nodes[e.from], b=nodes[e.to]; if(!a||!b) return; const et=data.edgeTypes[e.type]||data.edgeTypes.reference; const p=document.createElementNS('http://www.w3.org/2000/svg','path'); p.setAttribute('d',linePath(a,b,i)); p.setAttribute('class',`edge edge-${e.type} layer-${et.layer}`); p.setAttribute('stroke',et.colour); p.setAttribute('stroke-dasharray',et.dash); p.setAttribute('marker-end','url(#arrow)'); if(!layerOn(et.layer)) p.classList.add('hidden'); world.appendChild(p); });
+ data.nodes.forEach(n=>{ const g=document.createElementNS('http://www.w3.org/2000/svg','g'); g.setAttribute('class',`node ${n.kind} layer-${n.layer}`); g.setAttribute('transform',`translate(${n.x},${n.y})`); if(!layerOn(n.layer)) g.classList.add('hidden'); g.innerHTML=`<rect width="320" height="104"></rect><circle cx="34" cy="34" r="14" fill="${colourForNode(n.kind)}"></circle><text class="label" x="62" y="38">${escapeXml(n.label)}</text><text class="sub" x="62" y="70">${escapeXml(n.subtitle||'')}</text>`; g.addEventListener('click',()=>showDetails(n)); world.appendChild(g); });
+ document.getElementById('nodeCount').textContent=data.nodes.length; document.getElementById('edgeCount').textContent=data.edges.length; document.getElementById('layerCount').textContent=data.layers.length; updateTransform(); }
+function escapeXml(s){return String(s).replace(/[&<>]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));}
+function showDetails(n){ document.getElementById('details').innerHTML=`<b style="color:${colourForNode(n.kind)}">${escapeXml(n.label)}</b><br>${escapeXml(n.subtitle||'')}<br><br>Kind: <code>${n.kind}</code><br>Layer: <code>${n.layer}</code><br>Node ID: <code>${n.id}</code>`; }
+function buildControls(){ const c=document.getElementById('layerControls'); state.data.layers.forEach(l=>{state.layers[l.id]=l.defaultOn; const row=document.createElement('label'); row.className='row'; row.innerHTML=`<span>${l.label}</span><input class="switch" type="checkbox" ${l.defaultOn?'checked':''}>`; row.querySelector('input').addEventListener('change',ev=>{state.layers[l.id]=ev.target.checked; render();}); c.appendChild(row);}); const lg=document.getElementById('legend'); Object.values(state.data.edgeTypes).forEach(e=>{ const r=document.createElement('div'); r.className='legend-line'; r.innerHTML=`<span class="sample" style="border-color:${e.colour};border-top-style:${e.dash?'dashed':'solid'}"></span><span>${e.label}</span>`; lg.appendChild(r);}); }
+function preset(name){ Object.keys(state.layers).forEach(k=>state.layers[k]=false); if(name==='full') Object.keys(state.layers).forEach(k=>state.layers[k]=true); if(name==='data') ['data','engines','external','schemas'].forEach(k=>state.layers[k]=true); if(name==='apps') ['apps','libs','data','infra'].forEach(k=>state.layers[k]=true); if(name==='external') ['external','data','engines'].forEach(k=>state.layers[k]=true); document.querySelectorAll('.switch').forEach(sw=>{ const label=sw.parentElement.textContent.trim(); const layer=state.data.layers.find(l=>l.label===label); if(layer) sw.checked=state.layers[layer.id];}); render(); }
+function fit(){ state.scale=.28; state.tx=140; state.ty=80; updateTransform(); }
+viewport.addEventListener('wheel',e=>{e.preventDefault(); const delta=e.deltaY<0?1.08:.92; state.scale=Math.min(3,Math.max(.12,state.scale*delta)); updateTransform();},{passive:false});
+viewport.addEventListener('pointerdown',e=>{state.dragging=true; state.sx=e.clientX-state.tx; state.sy=e.clientY-state.ty; viewport.classList.add('dragging');});
+window.addEventListener('pointermove',e=>{if(!state.dragging)return; state.tx=e.clientX-state.sx; state.ty=e.clientY-state.sy; updateTransform();});
+window.addEventListener('pointerup',()=>{state.dragging=false; viewport.classList.remove('dragging');});
+document.getElementById('zoomIn').onclick=()=>{state.scale=Math.min(3,state.scale*1.2); updateTransform();};
+document.getElementById('zoomOut').onclick=()=>{state.scale=Math.max(.12,state.scale*.8); updateTransform();};
+document.getElementById('fit').onclick=fit; document.getElementById('print').onclick=()=>window.print();
+document.querySelectorAll('[data-preset]').forEach(b=>b.onclick=()=>preset(b.dataset.preset));
+fetch('data/topology.json').then(r=>r.json()).then(data=>{state.data=data; buildControls(); render(); fit();}).catch(err=>{document.getElementById('details').textContent='Failed to load topology cartridge: '+err.message;});
+</script>
+</body>
+</html>

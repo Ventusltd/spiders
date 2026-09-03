@@ -1,0 +1,32 @@
+name: 60x program proof
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - control/20260904-60x-program.json
+      - tools/validate-60x-program.mjs
+      - .github/workflows/20260904-60x-program-proof.yml
+
+permissions:
+  contents: read
+
+concurrency:
+  group: 60x-program-proof-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - name: Validate data-only program and write receipt
+        run: node tools/validate-60x-program.mjs --receipt artifacts/60x-program-receipt.json
+      - name: Upload deterministic receipt
+        if: always()
+        uses: actions/upload-artifact@65c4c4a1ddee5b72f698fdd19549f0f0fb45cf08
+        with:
+          name: 60x-program-receipt
+          path: artifacts/60x-program-receipt.json
+          if-no-files-found: error

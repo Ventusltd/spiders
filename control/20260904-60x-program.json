@@ -1,0 +1,1830 @@
+{
+  "schema": "spiders.autonomous-build-program.v1",
+  "program_id": "20260904-two-lane-60x",
+  "generated_at": "2026-09-03T23:45:00Z",
+  "total_slots": 60,
+  "evidence_boundary": "Local immutable Git objects and committed branch receipts observed at generation time; no live or deployment claim.",
+  "lanes": [
+    {
+      "id": "pipeline",
+      "repository": "pipelinenews",
+      "isolated_branch": "codex/202609040002-pages-classifier",
+      "base_commit": "937b8c019074e40bebbc7edf5d8ef8d1751e034e",
+      "observed_head": "a855ffe41d99c765c9eab0607603e274b31737b5",
+      "ledger_commit": "6d5ef4ba3aab23b47b2cc6f9fdf5eb1fcb38b30c",
+      "target_slots": 30,
+      "promotion": "forbidden"
+    },
+    {
+      "id": "grid",
+      "repository": "gridatlas",
+      "isolated_branch": "codex/20260904-gridatlas-30x",
+      "base_commit": "7e3bdcbdab58ab22bdcd4d8aedc068baa7d02c6d",
+      "observed_head": "64320b54216b4aebb412a2db65fc0eaa6a17ed17",
+      "target_slots": 30,
+      "promotion": "forbidden"
+    }
+  ],
+  "execution": {
+    "order": "discovery-author-serial-cutter",
+    "discovery": {
+      "mode": "data-only",
+      "executes_target_code": false
+    },
+    "author": {
+      "isolated_branches_only": true
+    },
+    "serial_cutter": {
+      "parallelism": 1,
+      "no_op": "reject",
+      "same_input_replay": "same-release",
+      "divergent_reuse": "reject",
+      "failed_attempts_count": false
+    }
+  },
+  "promotion": {
+    "authority": "CEO",
+    "candidate_may_promote": false,
+    "requires_explicit_review": true,
+    "destination": "main"
+  },
+  "state_delivery": {
+    "identity_from_state": true,
+    "receiver_acceptance_required": true,
+    "delivered_state_readback_required": true,
+    "fallback_distinguished": true,
+    "rule": "Source identity is delivered only when the receiver accepts canonical fields and read-back proves intended state; fallback arrival is separate."
+  },
+  "workflow_policy": {
+    "triggers": [
+      "pull_request:path-scoped",
+      "workflow_dispatch"
+    ],
+    "forbidden_triggers": [
+      "push",
+      "schedule"
+    ],
+    "token": "contents:read",
+    "concurrency_cancel": true,
+    "deterministic": true,
+    "artifact_receipt": true,
+    "deploy": false,
+    "model_execution": false,
+    "informational_findings_fail_job": false
+  },
+  "graph": {
+    "nodes": [
+      {
+        "id": "pipeline-discovery",
+        "phase": "discovery",
+        "lane": "pipeline"
+      },
+      {
+        "id": "pipeline-author",
+        "phase": "author",
+        "lane": "pipeline"
+      },
+      {
+        "id": "pipeline-cutter",
+        "phase": "serial-cutter",
+        "lane": "pipeline"
+      },
+      {
+        "id": "grid-discovery",
+        "phase": "discovery",
+        "lane": "grid"
+      },
+      {
+        "id": "grid-author",
+        "phase": "author",
+        "lane": "grid"
+      },
+      {
+        "id": "grid-cutter",
+        "phase": "serial-cutter",
+        "lane": "grid"
+      },
+      {
+        "id": "ceo-review",
+        "phase": "promotion-review",
+        "lane": null
+      }
+    ],
+    "edges": [
+      [
+        "pipeline-discovery",
+        "pipeline-author"
+      ],
+      [
+        "pipeline-author",
+        "pipeline-cutter"
+      ],
+      [
+        "grid-discovery",
+        "grid-author"
+      ],
+      [
+        "grid-author",
+        "grid-cutter"
+      ],
+      [
+        "pipeline-cutter",
+        "ceo-review"
+      ],
+      [
+        "grid-cutter",
+        "ceo-review"
+      ]
+    ]
+  },
+  "sources": {
+    "pipeline_ledger": {
+      "path": "pipelinenews:docs/coordination/20260904-pipelinenews-30x-ledger.json",
+      "sha256": "7bbd2d172c5b3b73f681885a2f612c199c600960d61719d5ff5250f425ffbe27"
+    },
+    "grid_proof": {
+      "path": "gridatlas:atlas/codex/20260904-finding-loop-30x/proof.mjs",
+      "observed_head": "64320b54216b4aebb412a2db65fc0eaa6a17ed17"
+    }
+  },
+  "queue": [
+    {
+      "slot": 1,
+      "lane": "pipeline",
+      "lane_iteration": 1,
+      "source_attempt": 2,
+      "state": "passed",
+      "qualifies": true,
+      "commit": "bdc6619fb098fc0135c3de70492e632bec5e0022",
+      "parent": "002d181275217cd9388adce91a2bd446cbb459e4",
+      "improvement": "make classifier tests path-independent",
+      "changed_paths": [
+        "tools/publication/test_pages_release_classifier.py"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "python tools/publication/test_pages_release_classifier.py",
+          "result": "pass"
+        }
+      ],
+      "receipt_path": "pipelinenews:docs/coordination/20260904-pipelinenews-30x-ledger.json#iteration-2"
+    },
+    {
+      "slot": 2,
+      "lane": "pipeline",
+      "lane_iteration": 2,
+      "source_attempt": 3,
+      "state": "passed",
+      "qualifies": true,
+      "commit": "42365840136175b4d03b2c38b46341121d62e7b5",
+      "parent": "bdc6619fb098fc0135c3de70492e632bec5e0022",
+      "improvement": "reject unsafe release identifiers",
+      "changed_paths": [
+        "tools/publication/pages_release_classifier.py",
+        "tools/publication/test_pages_release_classifier.py"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "python tools/publication/test_pages_release_classifier.py",
+          "result": "pass"
+        }
+      ],
+      "receipt_path": "pipelinenews:docs/coordination/20260904-pipelinenews-30x-ledger.json#iteration-3"
+    },
+    {
+      "slot": 3,
+      "lane": "pipeline",
+      "lane_iteration": 3,
+      "source_attempt": 4,
+      "state": "passed",
+      "qualifies": true,
+      "commit": "3e0d1ed37861fbe9d81068c1a5a8f0667ce50da0",
+      "parent": "42365840136175b4d03b2c38b46341121d62e7b5",
+      "improvement": "bind manifest identity to its directory",
+      "changed_paths": [
+        "tools/publication/pages_release_classifier.py",
+        "tools/publication/test_pages_release_classifier.py"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "python tools/publication/test_pages_release_classifier.py",
+          "result": "pass"
+        }
+      ],
+      "receipt_path": "pipelinenews:docs/coordination/20260904-pipelinenews-30x-ledger.json#iteration-4"
+    },
+    {
+      "slot": 4,
+      "lane": "pipeline",
+      "lane_iteration": 4,
+      "source_attempt": 5,
+      "state": "passed",
+      "qualifies": true,
+      "commit": "34ddbd27b3ddb238f548e99ebf31a873c01d71d8",
+      "parent": "3e0d1ed37861fbe9d81068c1a5a8f0667ce50da0",
+      "improvement": "bind generation to release identity",
+      "changed_paths": [
+        "tools/publication/pages_release_classifier.py",
+        "tools/publication/test_pages_release_classifier.py"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "python tools/publication/test_pages_release_classifier.py",
+          "result": "pass"
+        }
+      ],
+      "receipt_path": "pipelinenews:docs/coordination/20260904-pipelinenews-30x-ledger.json#iteration-5"
+    },
+    {
+      "slot": 5,
+      "lane": "pipeline",
+      "lane_iteration": 5,
+      "source_attempt": 6,
+      "state": "passed",
+      "qualifies": true,
+      "commit": "3271ba2567954f299c7baac3c301b0eff836aaf2",
+      "parent": "34ddbd27b3ddb238f548e99ebf31a873c01d71d8",
+      "improvement": "reject ambiguous duplicate manifest keys",
+      "changed_paths": [
+        "tools/publication/pages_release_classifier.py",
+        "tools/publication/test_pages_release_classifier.py"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "python tools/publication/test_pages_release_classifier.py",
+          "result": "pass"
+        }
+      ],
+      "receipt_path": "pipelinenews:docs/coordination/20260904-pipelinenews-30x-ledger.json#iteration-6"
+    },
+    {
+      "slot": 6,
+      "lane": "pipeline",
+      "lane_iteration": 6,
+      "source_attempt": 7,
+      "state": "passed",
+      "qualifies": true,
+      "commit": "83c0ea63ffc8914ab1fcb88224fb6572aa1580a5",
+      "parent": "3271ba2567954f299c7baac3c301b0eff836aaf2",
+      "improvement": "enforce additive deployment boundary",
+      "changed_paths": [
+        "tools/publication/pages_release_classifier.py",
+        "tools/publication/test_pages_release_classifier.py"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "python tools/publication/test_pages_release_classifier.py",
+          "result": "pass"
+        }
+      ],
+      "receipt_path": "pipelinenews:docs/coordination/20260904-pipelinenews-30x-ledger.json#iteration-7"
+    },
+    {
+      "slot": 7,
+      "lane": "pipeline",
+      "lane_iteration": 7,
+      "source_attempt": 8,
+      "state": "passed",
+      "qualifies": true,
+      "commit": "1f145fe9676e10dfff012c0ac1400a6bcf7c25d0",
+      "parent": "83c0ea63ffc8914ab1fcb88224fb6572aa1580a5",
+      "improvement": "require immutable modern releases",
+      "changed_paths": [
+        "tools/publication/pages_release_classifier.py",
+        "tools/publication/test_pages_release_classifier.py"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "python tools/publication/test_pages_release_classifier.py",
+          "result": "pass"
+        }
+      ],
+      "receipt_path": "pipelinenews:docs/coordination/20260904-pipelinenews-30x-ledger.json#iteration-8"
+    },
+    {
+      "slot": 8,
+      "lane": "pipeline",
+      "lane_iteration": 8,
+      "source_attempt": 9,
+      "state": "passed",
+      "qualifies": true,
+      "commit": "2fe9b43f9499c35c6ceb14e13052233cf8f278db",
+      "parent": "1f145fe9676e10dfff012c0ac1400a6bcf7c25d0",
+      "improvement": "validate additive release lineage",
+      "changed_paths": [
+        "tools/publication/pages_release_classifier.py",
+        "tools/publication/test_pages_release_classifier.py"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "python tools/publication/test_pages_release_classifier.py",
+          "result": "pass"
+        }
+      ],
+      "receipt_path": "pipelinenews:docs/coordination/20260904-pipelinenews-30x-ledger.json#iteration-9"
+    },
+    {
+      "slot": 9,
+      "lane": "pipeline",
+      "lane_iteration": 9,
+      "source_attempt": 10,
+      "state": "passed",
+      "qualifies": true,
+      "commit": "cefe9ddc4956f76a12babd54d7732a65023758d6",
+      "parent": "2fe9b43f9499c35c6ceb14e13052233cf8f278db",
+      "improvement": "require a real additive parent manifest",
+      "changed_paths": [
+        "tools/publication/pages_release_classifier.py",
+        "tools/publication/test_pages_release_classifier.py"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "python tools/publication/test_pages_release_classifier.py",
+          "result": "pass"
+        }
+      ],
+      "receipt_path": "pipelinenews:docs/coordination/20260904-pipelinenews-30x-ledger.json#iteration-10"
+    },
+    {
+      "slot": 10,
+      "lane": "pipeline",
+      "lane_iteration": 10,
+      "source_attempt": 11,
+      "state": "passed",
+      "qualifies": true,
+      "commit": "ec3e77d405e222cb856045ead2dc881d8b99dcdd",
+      "parent": "cefe9ddc4956f76a12babd54d7732a65023758d6",
+      "improvement": "bound manifest input size",
+      "changed_paths": [
+        "tools/publication/pages_release_classifier.py",
+        "tools/publication/test_pages_release_classifier.py"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "python tools/publication/test_pages_release_classifier.py",
+          "result": "pass"
+        }
+      ],
+      "receipt_path": "pipelinenews:docs/coordination/20260904-pipelinenews-30x-ledger.json#iteration-11"
+    },
+    {
+      "slot": 11,
+      "lane": "pipeline",
+      "lane_iteration": 11,
+      "source_attempt": 12,
+      "state": "passed",
+      "qualifies": true,
+      "commit": "84089920e6d01d42b9cb107b5074455366716d07",
+      "parent": "ec3e77d405e222cb856045ead2dc881d8b99dcdd",
+      "improvement": "receipt exact manifest bytes",
+      "changed_paths": [
+        "tools/publication/pages_release_classifier.py",
+        "tools/publication/test_pages_release_classifier.py"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "python tools/publication/test_pages_release_classifier.py",
+          "result": "pass"
+        }
+      ],
+      "receipt_path": "pipelinenews:docs/coordination/20260904-pipelinenews-30x-ledger.json#iteration-12"
+    },
+    {
+      "slot": 12,
+      "lane": "pipeline",
+      "lane_iteration": 12,
+      "source_attempt": 13,
+      "state": "passed",
+      "qualifies": true,
+      "commit": "42404857681b0929f0ac4da6d063585cc6299ffe",
+      "parent": "84089920e6d01d42b9cb107b5074455366716d07",
+      "improvement": "emit safe GitHub job outputs",
+      "changed_paths": [
+        "tools/publication/pages_release_classifier.py",
+        "tools/publication/test_pages_release_classifier.py"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "python tools/publication/test_pages_release_classifier.py",
+          "result": "pass"
+        }
+      ],
+      "receipt_path": "pipelinenews:docs/coordination/20260904-pipelinenews-30x-ledger.json#iteration-13"
+    },
+    {
+      "slot": 13,
+      "lane": "pipeline",
+      "lane_iteration": 13,
+      "source_attempt": 14,
+      "state": "passed",
+      "qualifies": true,
+      "commit": "9d44e36e92833343edd98d3907d33f3f15ee2ff2",
+      "parent": "42404857681b0929f0ac4da6d063585cc6299ffe",
+      "improvement": "write classification receipts atomically",
+      "changed_paths": [
+        "tools/publication/pages_release_classifier.py",
+        "tools/publication/test_pages_release_classifier.py"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "python tools/publication/test_pages_release_classifier.py",
+          "result": "pass"
+        }
+      ],
+      "receipt_path": "pipelinenews:docs/coordination/20260904-pipelinenews-30x-ledger.json#iteration-14"
+    },
+    {
+      "slot": 14,
+      "lane": "pipeline",
+      "lane_iteration": 14,
+      "source_attempt": 15,
+      "state": "passed",
+      "qualifies": true,
+      "commit": "aa9d01f9fd42480838a1c2ef9df3af00ae941ba1",
+      "parent": "9d44e36e92833343edd98d3907d33f3f15ee2ff2",
+      "improvement": "prove the current additive release route",
+      "changed_paths": [
+        "tools/publication/test_pages_release_classifier.py"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "python tools/publication/test_pages_release_classifier.py",
+          "result": "pass"
+        }
+      ],
+      "receipt_path": "pipelinenews:docs/coordination/20260904-pipelinenews-30x-ledger.json#iteration-15"
+    },
+    {
+      "slot": 15,
+      "lane": "pipeline",
+      "lane_iteration": 15,
+      "source_attempt": 16,
+      "state": "passed",
+      "qualifies": true,
+      "commit": "d2401f7d9c9760c85ded17d34a16364700928a3d",
+      "parent": "aa9d01f9fd42480838a1c2ef9df3af00ae941ba1",
+      "improvement": "discover release ids from changed paths",
+      "changed_paths": [
+        "tools/publication/pages_release_classifier.py",
+        "tools/publication/test_pages_release_classifier.py"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "python tools/publication/test_pages_release_classifier.py",
+          "result": "pass"
+        }
+      ],
+      "receipt_path": "pipelinenews:docs/coordination/20260904-pipelinenews-30x-ledger.json#iteration-16"
+    },
+    {
+      "slot": 16,
+      "lane": "pipeline",
+      "lane_iteration": 16,
+      "source_attempt": 17,
+      "state": "passed",
+      "qualifies": true,
+      "commit": "24eda035c56f91574195dbb6a311ab228a50488f",
+      "parent": "d2401f7d9c9760c85ded17d34a16364700928a3d",
+      "improvement": "derive the candidate from an exact Git range",
+      "changed_paths": [
+        "tools/publication/pages_release_classifier.py",
+        "tools/publication/test_pages_release_classifier.py"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "python tools/publication/test_pages_release_classifier.py",
+          "result": "pass"
+        }
+      ],
+      "receipt_path": "pipelinenews:docs/coordination/20260904-pipelinenews-30x-ledger.json#iteration-17"
+    },
+    {
+      "slot": 17,
+      "lane": "pipeline",
+      "lane_iteration": 17,
+      "source_attempt": 18,
+      "state": "passed",
+      "qualifies": true,
+      "commit": "70f3b9d790fcdae3b542060f77ac93ef674fedc6",
+      "parent": "24eda035c56f91574195dbb6a311ab228a50488f",
+      "improvement": "prove multi-release changes fail closed",
+      "changed_paths": [
+        "tools/publication/test_pages_release_classifier.py"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "python tools/publication/test_pages_release_classifier.py",
+          "result": "pass"
+        }
+      ],
+      "receipt_path": "pipelinenews:docs/coordination/20260904-pipelinenews-30x-ledger.json#iteration-18"
+    },
+    {
+      "slot": 18,
+      "lane": "pipeline",
+      "lane_iteration": 18,
+      "source_attempt": 19,
+      "state": "passed",
+      "qualifies": true,
+      "commit": "df628c2ec078964cada2f68381cc03effbd7f77e",
+      "parent": "70f3b9d790fcdae3b542060f77ac93ef674fedc6",
+      "improvement": "reject immutable release path mutations",
+      "changed_paths": [
+        "tools/publication/pages_release_classifier.py",
+        "tools/publication/test_pages_release_classifier.py"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "python tools/publication/test_pages_release_classifier.py",
+          "result": "pass"
+        }
+      ],
+      "receipt_path": "pipelinenews:docs/coordination/20260904-pipelinenews-30x-ledger.json#iteration-19"
+    },
+    {
+      "slot": 19,
+      "lane": "pipeline",
+      "lane_iteration": 19,
+      "source_attempt": 20,
+      "state": "passed",
+      "qualifies": true,
+      "commit": "9204e70668a3c6ee85f196f15126bd075a753ec9",
+      "parent": "df628c2ec078964cada2f68381cc03effbd7f77e",
+      "improvement": "require exact available Git commits",
+      "changed_paths": [
+        "tools/publication/pages_release_classifier.py",
+        "tools/publication/test_pages_release_classifier.py"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "python tools/publication/test_pages_release_classifier.py",
+          "result": "pass"
+        }
+      ],
+      "receipt_path": "pipelinenews:docs/coordination/20260904-pipelinenews-30x-ledger.json#iteration-20"
+    },
+    {
+      "slot": 20,
+      "lane": "pipeline",
+      "lane_iteration": 20,
+      "source_attempt": 21,
+      "state": "passed",
+      "qualifies": true,
+      "commit": "01a59344127bb767a5e89b89aebcdf47cff5b70e",
+      "parent": "9204e70668a3c6ee85f196f15126bd075a753ec9",
+      "improvement": "classify release before choosing Pages",
+      "changed_paths": [
+        ".github/workflows/pages.yml"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "python tools/publication/test_pages_release_classifier.py",
+          "result": "pass"
+        },
+        {
+          "command": "python tools/publication/pages_release_classifier.py --repo . --release 202609032251-pipelinenews",
+          "result": "pass"
+        }
+      ],
+      "receipt_path": "pipelinenews:docs/coordination/20260904-pipelinenews-30x-ledger.json#iteration-21"
+    },
+    {
+      "slot": 21,
+      "lane": "pipeline",
+      "lane_iteration": 21,
+      "source_attempt": 22,
+      "state": "passed",
+      "qualifies": true,
+      "commit": "6752ca5e3cfdc4bf0673a5ddd33c387610367586",
+      "parent": "01a59344127bb767a5e89b89aebcdf47cff5b70e",
+      "improvement": "validate additive releases without publishing",
+      "changed_paths": [
+        ".github/workflows/pages.yml"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "python tools/intelligence/release_builder.py --check 202609032251-pipelinenews",
+          "result": "pass"
+        }
+      ],
+      "receipt_path": "pipelinenews:docs/coordination/20260904-pipelinenews-30x-ledger.json#iteration-22"
+    },
+    {
+      "slot": 22,
+      "lane": "pipeline",
+      "lane_iteration": 22,
+      "source_attempt": 23,
+      "state": "passed",
+      "qualifies": true,
+      "commit": "3a0479f0a5d529bcd63c44b9401b43f58c84728b",
+      "parent": "6752ca5e3cfdc4bf0673a5ddd33c387610367586",
+      "improvement": "gate Pages at the reusable-job boundary",
+      "changed_paths": [
+        ".github/workflows/pages.yml"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "python tools/publication/test_pages_release_classifier.py",
+          "result": "pass"
+        }
+      ],
+      "receipt_path": "pipelinenews:docs/coordination/20260904-pipelinenews-30x-ledger.json#iteration-23"
+    },
+    {
+      "slot": 23,
+      "lane": "pipeline",
+      "lane_iteration": 23,
+      "source_attempt": 24,
+      "state": "passed",
+      "qualifies": true,
+      "commit": "96b2589d79e942ff63a2e2d61d229253525de715",
+      "parent": "3a0479f0a5d529bcd63c44b9401b43f58c84728b",
+      "improvement": "retain the byte-bound routing receipt",
+      "changed_paths": [
+        ".github/workflows/pages.yml"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "git diff --check",
+          "result": "pass"
+        }
+      ],
+      "receipt_path": "pipelinenews:docs/coordination/20260904-pipelinenews-30x-ledger.json#iteration-24"
+    },
+    {
+      "slot": 24,
+      "lane": "pipeline",
+      "lane_iteration": 24,
+      "source_attempt": 25,
+      "state": "passed",
+      "qualifies": true,
+      "commit": "dde98ba674bddf6246d4d00ebb8bd036d85b86b5",
+      "parent": "96b2589d79e942ff63a2e2d61d229253525de715",
+      "improvement": "scope Pages write authority to its route",
+      "changed_paths": [
+        ".github/workflows/pages.yml"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "git diff --check",
+          "result": "pass"
+        }
+      ],
+      "receipt_path": "pipelinenews:docs/coordination/20260904-pipelinenews-30x-ledger.json#iteration-25"
+    },
+    {
+      "slot": 25,
+      "lane": "pipeline",
+      "lane_iteration": 25,
+      "source_attempt": 26,
+      "state": "passed",
+      "qualifies": true,
+      "commit": "9b732620050337b1d952ad4ff3bdb1237a03c515",
+      "parent": "dde98ba674bddf6246d4d00ebb8bd036d85b86b5",
+      "improvement": "prove both workflow routes statically",
+      "changed_paths": [
+        "tools/publication/test_verify_pages_workflow.py",
+        "tools/publication/verify_pages_workflow.py"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "python tools/publication/test_pages_release_classifier.py",
+          "result": "pass"
+        },
+        {
+          "command": "python tools/publication/test_verify_pages_workflow.py",
+          "result": "pass"
+        }
+      ],
+      "receipt_path": "pipelinenews:docs/coordination/20260904-pipelinenews-30x-ledger.json#iteration-26"
+    },
+    {
+      "slot": 26,
+      "lane": "pipeline",
+      "lane_iteration": 26,
+      "source_attempt": 27,
+      "state": "passed",
+      "qualifies": true,
+      "commit": "6ae34fb99595fd537c8bb0074d7f8fa7ac21bfe4",
+      "parent": "9b732620050337b1d952ad4ff3bdb1237a03c515",
+      "improvement": "resolve only byte-identical live pointers",
+      "changed_paths": [
+        "tools/publication/pages_release_classifier.py",
+        "tools/publication/test_pages_release_classifier.py"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "python tools/publication/test_pages_release_classifier.py",
+          "result": "pass"
+        }
+      ],
+      "receipt_path": "pipelinenews:docs/coordination/20260904-pipelinenews-30x-ledger.json#iteration-27"
+    },
+    {
+      "slot": 27,
+      "lane": "pipeline",
+      "lane_iteration": 27,
+      "source_attempt": 28,
+      "state": "passed",
+      "qualifies": true,
+      "commit": "4b0b2b99bf0e1814bdaf3bebee5ae848718f082a",
+      "parent": "6ae34fb99595fd537c8bb0074d7f8fa7ac21bfe4",
+      "improvement": "prove stale and ambiguous pointers fail",
+      "changed_paths": [
+        "tools/publication/test_pages_release_classifier.py"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "python tools/publication/test_pages_release_classifier.py",
+          "result": "pass"
+        }
+      ],
+      "receipt_path": "pipelinenews:docs/coordination/20260904-pipelinenews-30x-ledger.json#iteration-28"
+    },
+    {
+      "slot": 28,
+      "lane": "pipeline",
+      "lane_iteration": 28,
+      "source_attempt": 29,
+      "state": "passed",
+      "qualifies": true,
+      "commit": "a65aab5c38ef5f448e761e2b8942da90b332424f",
+      "parent": "4b0b2b99bf0e1814bdaf3bebee5ae848718f082a",
+      "improvement": "preserve manual and pointer-only Pages routes",
+      "changed_paths": [
+        ".github/workflows/pages.yml",
+        "tools/publication/pages_release_classifier.py",
+        "tools/publication/test_pages_release_classifier.py"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "python tools/publication/test_pages_release_classifier.py",
+          "result": "pass"
+        },
+        {
+          "command": "python tools/publication/test_verify_pages_workflow.py",
+          "result": "pass"
+        }
+      ],
+      "receipt_path": "pipelinenews:docs/coordination/20260904-pipelinenews-30x-ledger.json#iteration-29"
+    },
+    {
+      "slot": 29,
+      "lane": "pipeline",
+      "lane_iteration": 29,
+      "source_attempt": 30,
+      "state": "passed",
+      "qualifies": true,
+      "commit": "f3c396ad1545121ae8cc6f503b125095b7ea5665",
+      "parent": "a65aab5c38ef5f448e761e2b8942da90b332424f",
+      "improvement": "run the complete Pages candidate gate serially",
+      "changed_paths": [
+        "tools/publication/run_pages_candidate_gate.py",
+        "tools/publication/test_verify_pages_workflow.py",
+        "tools/publication/verify_pages_workflow.py"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "python tools/publication/run_pages_candidate_gate.py --receipt <temp>",
+          "result": "pass"
+        }
+      ],
+      "receipt_path": "pipelinenews:docs/coordination/20260904-pipelinenews-30x-ledger.json#iteration-30"
+    },
+    {
+      "slot": 30,
+      "lane": "pipeline",
+      "lane_iteration": 30,
+      "source_attempt": 31,
+      "state": "passed",
+      "qualifies": true,
+      "commit": "2212d539c013532e37a65d67aed4723b0bfa73ee",
+      "parent": "f3c396ad1545121ae8cc6f503b125095b7ea5665",
+      "improvement": "bind classification to exact current main",
+      "changed_paths": [
+        ".github/workflows/pages.yml",
+        "tools/publication/test_verify_pages_workflow.py",
+        "tools/publication/verify_pages_workflow.py"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "python tools/publication/test_pages_release_classifier.py",
+          "result": "pass"
+        },
+        {
+          "command": "python tools/publication/test_verify_pages_workflow.py",
+          "result": "pass"
+        }
+      ],
+      "receipt_path": "pipelinenews:docs/coordination/20260904-pipelinenews-30x-ledger.json#iteration-31"
+    },
+    {
+      "slot": 31,
+      "lane": "grid",
+      "lane_iteration": 1,
+      "source_attempt": 1,
+      "state": "authored",
+      "qualifies": false,
+      "commit": "ef3361840fd346cf09e09d2f0e751f1ebbe3ecec",
+      "parent": "7e3bdcbdab58ab22bdcd4d8aedc068baa7d02c6d",
+      "improvement": "iteration 01: exact project selection contract",
+      "changed_paths": [
+        "atlas/codex/20260904-finding-loop-30x/finding-loop.mjs",
+        "atlas/codex/20260904-finding-loop-30x/proof.mjs"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "node atlas/codex/20260904-finding-loop-30x/proof.mjs",
+          "result": "pending-independent-review"
+        }
+      ],
+      "receipt_path": "gridatlas:atlas/codex/20260904-finding-loop-30x/proof.mjs#iteration-1"
+    },
+    {
+      "slot": 32,
+      "lane": "grid",
+      "lane_iteration": 2,
+      "source_attempt": 2,
+      "state": "authored",
+      "qualifies": false,
+      "commit": "de19d2c617c21a9f36b394b471ed95ade4186a96",
+      "parent": "ef3361840fd346cf09e09d2f0e751f1ebbe3ecec",
+      "improvement": "iteration 02: explicit coordinate selection",
+      "changed_paths": [
+        "atlas/codex/20260904-finding-loop-30x/finding-loop.mjs",
+        "atlas/codex/20260904-finding-loop-30x/proof.mjs"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "node atlas/codex/20260904-finding-loop-30x/proof.mjs",
+          "result": "pending-independent-review"
+        }
+      ],
+      "receipt_path": "gridatlas:atlas/codex/20260904-finding-loop-30x/proof.mjs#iteration-2"
+    },
+    {
+      "slot": 33,
+      "lane": "grid",
+      "lane_iteration": 3,
+      "source_attempt": 3,
+      "state": "authored",
+      "qualifies": false,
+      "commit": "e38928b63275c1f95e641c8a346ec94fa9496f93",
+      "parent": "de19d2c617c21a9f36b394b471ed95ade4186a96",
+      "improvement": "iteration 03: exact substation selection",
+      "changed_paths": [
+        "atlas/codex/20260904-finding-loop-30x/finding-loop.mjs",
+        "atlas/codex/20260904-finding-loop-30x/proof.mjs"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "node atlas/codex/20260904-finding-loop-30x/proof.mjs",
+          "result": "pending-independent-review"
+        }
+      ],
+      "receipt_path": "gridatlas:atlas/codex/20260904-finding-loop-30x/proof.mjs#iteration-3"
+    },
+    {
+      "slot": 34,
+      "lane": "grid",
+      "lane_iteration": 4,
+      "source_attempt": 4,
+      "state": "authored",
+      "qualifies": false,
+      "commit": "652e1107852fcfacc0a2ebf56d80c016f376aecd",
+      "parent": "e38928b63275c1f95e641c8a346ec94fa9496f93",
+      "improvement": "iteration 04: discriminated selection dispatch",
+      "changed_paths": [
+        "atlas/codex/20260904-finding-loop-30x/finding-loop.mjs",
+        "atlas/codex/20260904-finding-loop-30x/proof.mjs"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "node atlas/codex/20260904-finding-loop-30x/proof.mjs",
+          "result": "pending-independent-review"
+        }
+      ],
+      "receipt_path": "gridatlas:atlas/codex/20260904-finding-loop-30x/proof.mjs#iteration-4"
+    },
+    {
+      "slot": 35,
+      "lane": "grid",
+      "lane_iteration": 5,
+      "source_attempt": 5,
+      "state": "authored",
+      "qualifies": false,
+      "commit": "dcee800987c632af9c0f41b07e00bb9720f89074",
+      "parent": "652e1107852fcfacc0a2ebf56d80c016f376aecd",
+      "improvement": "iteration 05: canonical selection round trip",
+      "changed_paths": [
+        "atlas/codex/20260904-finding-loop-30x/finding-loop.mjs",
+        "atlas/codex/20260904-finding-loop-30x/proof.mjs"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "node atlas/codex/20260904-finding-loop-30x/proof.mjs",
+          "result": "pending-independent-review"
+        }
+      ],
+      "receipt_path": "gridatlas:atlas/codex/20260904-finding-loop-30x/proof.mjs#iteration-5"
+    },
+    {
+      "slot": 36,
+      "lane": "grid",
+      "lane_iteration": 6,
+      "source_attempt": 6,
+      "state": "authored",
+      "qualifies": false,
+      "commit": "5cd17bfb75c9738eac83bc7924aa9851403cb933",
+      "parent": "dcee800987c632af9c0f41b07e00bb9720f89074",
+      "improvement": "iteration 06: typed grid finding contract",
+      "changed_paths": [
+        "atlas/codex/20260904-finding-loop-30x/finding-loop.mjs",
+        "atlas/codex/20260904-finding-loop-30x/proof.mjs"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "node atlas/codex/20260904-finding-loop-30x/proof.mjs",
+          "result": "pending-independent-review"
+        }
+      ],
+      "receipt_path": "gridatlas:atlas/codex/20260904-finding-loop-30x/proof.mjs#iteration-6"
+    },
+    {
+      "slot": 37,
+      "lane": "grid",
+      "lane_iteration": 7,
+      "source_attempt": 7,
+      "state": "authored",
+      "qualifies": false,
+      "commit": "fcb7e241963eb7892f31cdd43081d24f458a7a47",
+      "parent": "5cd17bfb75c9738eac83bc7924aa9851403cb933",
+      "improvement": "iteration 07: evidence class allow set",
+      "changed_paths": [
+        "atlas/codex/20260904-finding-loop-30x/finding-loop.mjs",
+        "atlas/codex/20260904-finding-loop-30x/proof.mjs"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "node atlas/codex/20260904-finding-loop-30x/proof.mjs",
+          "result": "pending-independent-review"
+        }
+      ],
+      "receipt_path": "gridatlas:atlas/codex/20260904-finding-loop-30x/proof.mjs#iteration-7"
+    },
+    {
+      "slot": 38,
+      "lane": "grid",
+      "lane_iteration": 8,
+      "source_attempt": 8,
+      "state": "authored",
+      "qualifies": false,
+      "commit": "7f9dd3deeb8e211275ead37fb3b0d8d792aea5bd",
+      "parent": "fcb7e241963eb7892f31cdd43081d24f458a7a47",
+      "improvement": "iteration 08: pinned finding provenance",
+      "changed_paths": [
+        "atlas/codex/20260904-finding-loop-30x/finding-loop.mjs",
+        "atlas/codex/20260904-finding-loop-30x/proof.mjs"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "node atlas/codex/20260904-finding-loop-30x/proof.mjs",
+          "result": "pending-independent-review"
+        }
+      ],
+      "receipt_path": "gridatlas:atlas/codex/20260904-finding-loop-30x/proof.mjs#iteration-8"
+    },
+    {
+      "slot": 39,
+      "lane": "grid",
+      "lane_iteration": 9,
+      "source_attempt": 9,
+      "state": "authored",
+      "qualifies": false,
+      "commit": "a999d3299807dd1315c061b5e034569fdc6b437f",
+      "parent": "7f9dd3deeb8e211275ead37fb3b0d8d792aea5bd",
+      "improvement": "iteration 09: dynamic coverage boundary",
+      "changed_paths": [
+        "atlas/codex/20260904-finding-loop-30x/finding-loop.mjs",
+        "atlas/codex/20260904-finding-loop-30x/proof.mjs"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "node atlas/codex/20260904-finding-loop-30x/proof.mjs",
+          "result": "pending-independent-review"
+        }
+      ],
+      "receipt_path": "gridatlas:atlas/codex/20260904-finding-loop-30x/proof.mjs#iteration-9"
+    },
+    {
+      "slot": 40,
+      "lane": "grid",
+      "lane_iteration": 10,
+      "source_attempt": 10,
+      "state": "authored",
+      "qualifies": false,
+      "commit": "db25053bce630ad5a068398cc0f13a0cddfe6047",
+      "parent": "a999d3299807dd1315c061b5e034569fdc6b437f",
+      "improvement": "iteration 10: end-to-end finding loop",
+      "changed_paths": [
+        "atlas/codex/20260904-finding-loop-30x/finding-loop.mjs",
+        "atlas/codex/20260904-finding-loop-30x/proof.mjs"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "node atlas/codex/20260904-finding-loop-30x/proof.mjs",
+          "result": "pending-independent-review"
+        }
+      ],
+      "receipt_path": "gridatlas:atlas/codex/20260904-finding-loop-30x/proof.mjs#iteration-10"
+    },
+    {
+      "slot": 41,
+      "lane": "grid",
+      "lane_iteration": 11,
+      "source_attempt": 11,
+      "state": "authored",
+      "qualifies": false,
+      "commit": "58018b2f26fcb8fe75bbf0cf23991747e7f02663",
+      "parent": "db25053bce630ad5a068398cc0f13a0cddfe6047",
+      "improvement": "iteration 11: deterministic candidate ordering",
+      "changed_paths": [
+        "atlas/codex/20260904-finding-loop-30x/finding-loop.mjs",
+        "atlas/codex/20260904-finding-loop-30x/proof.mjs"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "node atlas/codex/20260904-finding-loop-30x/proof.mjs",
+          "result": "pending-independent-review"
+        }
+      ],
+      "receipt_path": "gridatlas:atlas/codex/20260904-finding-loop-30x/proof.mjs#iteration-11"
+    },
+    {
+      "slot": 42,
+      "lane": "grid",
+      "lane_iteration": 12,
+      "source_attempt": 12,
+      "state": "authored",
+      "qualifies": false,
+      "commit": "5a8ab329303a701e9013294de66bdfb55ced49e0",
+      "parent": "58018b2f26fcb8fe75bbf0cf23991747e7f02663",
+      "improvement": "iteration 12: ambiguous nearest withholding",
+      "changed_paths": [
+        "atlas/codex/20260904-finding-loop-30x/finding-loop.mjs",
+        "atlas/codex/20260904-finding-loop-30x/proof.mjs"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "node atlas/codex/20260904-finding-loop-30x/proof.mjs",
+          "result": "pending-independent-review"
+        }
+      ],
+      "receipt_path": "gridatlas:atlas/codex/20260904-finding-loop-30x/proof.mjs#iteration-12"
+    },
+    {
+      "slot": 43,
+      "lane": "grid",
+      "lane_iteration": 13,
+      "source_attempt": 13,
+      "state": "authored",
+      "qualifies": false,
+      "commit": "adce6eb36122bff9af6cb0f51339bf37d5d32143",
+      "parent": "5a8ab329303a701e9013294de66bdfb55ced49e0",
+      "improvement": "iteration 13: full project register index",
+      "changed_paths": [
+        "atlas/codex/20260904-finding-loop-30x/finding-loop.mjs",
+        "atlas/codex/20260904-finding-loop-30x/proof.mjs"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "node atlas/codex/20260904-finding-loop-30x/proof.mjs",
+          "result": "pending-independent-review"
+        }
+      ],
+      "receipt_path": "gridatlas:atlas/codex/20260904-finding-loop-30x/proof.mjs#iteration-13"
+    },
+    {
+      "slot": 44,
+      "lane": "grid",
+      "lane_iteration": 14,
+      "source_attempt": 14,
+      "state": "authored",
+      "qualifies": false,
+      "commit": "515b5189e37de9f24dd3d70bead1020db2f50af7",
+      "parent": "adce6eb36122bff9af6cb0f51339bf37d5d32143",
+      "improvement": "iteration 14: project to finding request",
+      "changed_paths": [
+        "atlas/codex/20260904-finding-loop-30x/finding-loop.mjs",
+        "atlas/codex/20260904-finding-loop-30x/proof.mjs"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "node atlas/codex/20260904-finding-loop-30x/proof.mjs",
+          "result": "pending-independent-review"
+        }
+      ],
+      "receipt_path": "gridatlas:atlas/codex/20260904-finding-loop-30x/proof.mjs#iteration-14"
+    },
+    {
+      "slot": 45,
+      "lane": "grid",
+      "lane_iteration": 15,
+      "source_attempt": 15,
+      "state": "authored",
+      "qualifies": false,
+      "commit": "bca2ddf42fa8638c012bd841997805c88b3fd215",
+      "parent": "515b5189e37de9f24dd3d70bead1020db2f50af7",
+      "improvement": "iteration 15: reject coordinate coercion",
+      "changed_paths": [
+        "atlas/codex/20260904-finding-loop-30x/finding-loop.mjs",
+        "atlas/codex/20260904-finding-loop-30x/proof.mjs"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "node atlas/codex/20260904-finding-loop-30x/proof.mjs",
+          "result": "pending-independent-review"
+        }
+      ],
+      "receipt_path": "gridatlas:atlas/codex/20260904-finding-loop-30x/proof.mjs#iteration-15"
+    },
+    {
+      "slot": 46,
+      "lane": "grid",
+      "lane_iteration": 16,
+      "source_attempt": 16,
+      "state": "authored",
+      "qualifies": false,
+      "commit": "60a393f093b41b935431910565b2f9120e55355d",
+      "parent": "bca2ddf42fa8638c012bd841997805c88b3fd215",
+      "improvement": "iteration 16: descriptor-safe selection dispatch",
+      "changed_paths": [
+        "atlas/codex/20260904-finding-loop-30x/finding-loop.mjs",
+        "atlas/codex/20260904-finding-loop-30x/proof.mjs"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "node atlas/codex/20260904-finding-loop-30x/proof.mjs",
+          "result": "pending-independent-review"
+        }
+      ],
+      "receipt_path": "gridatlas:atlas/codex/20260904-finding-loop-30x/proof.mjs#iteration-16"
+    },
+    {
+      "slot": 47,
+      "lane": "grid",
+      "lane_iteration": 17,
+      "source_attempt": 17,
+      "state": "authored",
+      "qualifies": false,
+      "commit": "2bb9d49b373acdf287337594c2d7064c8134ea39",
+      "parent": "60a393f093b41b935431910565b2f9120e55355d",
+      "improvement": "iteration 17: require canonical provenance strings",
+      "changed_paths": [
+        "atlas/codex/20260904-finding-loop-30x/finding-loop.mjs",
+        "atlas/codex/20260904-finding-loop-30x/proof.mjs"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "node atlas/codex/20260904-finding-loop-30x/proof.mjs",
+          "result": "pending-independent-review"
+        }
+      ],
+      "receipt_path": "gridatlas:atlas/codex/20260904-finding-loop-30x/proof.mjs#iteration-17"
+    },
+    {
+      "slot": 48,
+      "lane": "grid",
+      "lane_iteration": 18,
+      "source_attempt": 18,
+      "state": "authored",
+      "qualifies": false,
+      "commit": "655be6c81fde79d808567c395a1233dd47586936",
+      "parent": "2bb9d49b373acdf287337594c2d7064c8134ea39",
+      "improvement": "iteration 18: cancel findings on history navigation",
+      "changed_paths": [
+        "atlas/codex/20260904-finding-loop-30x/finding-loop.mjs",
+        "atlas/codex/20260904-finding-loop-30x/proof.mjs"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "node atlas/codex/20260904-finding-loop-30x/proof.mjs",
+          "result": "pending-independent-review"
+        }
+      ],
+      "receipt_path": "gridatlas:atlas/codex/20260904-finding-loop-30x/proof.mjs#iteration-18"
+    },
+    {
+      "slot": 49,
+      "lane": "grid",
+      "lane_iteration": 19,
+      "source_attempt": 19,
+      "state": "authored",
+      "qualifies": false,
+      "commit": "39c50aafe8cb6a7a419de9882547e3fe5ceddb7c",
+      "parent": "655be6c81fde79d808567c395a1233dd47586936",
+      "improvement": "iteration 19: validate nearby query coordinates",
+      "changed_paths": [
+        "atlas/codex/20260904-finding-loop-30x/finding-loop.mjs",
+        "atlas/codex/20260904-finding-loop-30x/proof.mjs"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "node atlas/codex/20260904-finding-loop-30x/proof.mjs",
+          "result": "pending-independent-review"
+        }
+      ],
+      "receipt_path": "gridatlas:atlas/codex/20260904-finding-loop-30x/proof.mjs#iteration-19"
+    },
+    {
+      "slot": 50,
+      "lane": "grid",
+      "lane_iteration": 20,
+      "source_attempt": 20,
+      "state": "authored",
+      "qualifies": false,
+      "commit": "e5350a0a1ff2128c9f32e8a4a23c22f17310c03d",
+      "parent": "39c50aafe8cb6a7a419de9882547e3fe5ceddb7c",
+      "improvement": "iteration 20: qualified straight-line distance findings",
+      "changed_paths": [
+        "atlas/codex/20260904-finding-loop-30x/finding-loop.mjs",
+        "atlas/codex/20260904-finding-loop-30x/proof.mjs"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "node atlas/codex/20260904-finding-loop-30x/proof.mjs",
+          "result": "pending-independent-review"
+        }
+      ],
+      "receipt_path": "gridatlas:atlas/codex/20260904-finding-loop-30x/proof.mjs#iteration-20"
+    },
+    {
+      "slot": 51,
+      "lane": "grid",
+      "lane_iteration": 21,
+      "source_attempt": 21,
+      "state": "authored",
+      "qualifies": false,
+      "commit": "d02c76bbc523c92f78eb4bedc1b64606ded5278d",
+      "parent": "e5350a0a1ff2128c9f32e8a4a23c22f17310c03d",
+      "improvement": "iteration 21: bind project requests to source release",
+      "changed_paths": [
+        "atlas/codex/20260904-finding-loop-30x/finding-loop.mjs",
+        "atlas/codex/20260904-finding-loop-30x/proof.mjs"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "node atlas/codex/20260904-finding-loop-30x/proof.mjs",
+          "result": "pending-independent-review"
+        }
+      ],
+      "receipt_path": "gridatlas:atlas/codex/20260904-finding-loop-30x/proof.mjs#iteration-21"
+    },
+    {
+      "slot": 52,
+      "lane": "grid",
+      "lane_iteration": 22,
+      "source_attempt": 22,
+      "state": "authored",
+      "qualifies": false,
+      "commit": "cbfac7b55866e5a440371575ba3573f4e27714e3",
+      "parent": "d02c76bbc523c92f78eb4bedc1b64606ded5278d",
+      "improvement": "iteration 22: adapt complete project technology vocabulary",
+      "changed_paths": [
+        "atlas/codex/20260904-finding-loop-30x/finding-loop.mjs",
+        "atlas/codex/20260904-finding-loop-30x/proof.mjs"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "node atlas/codex/20260904-finding-loop-30x/proof.mjs",
+          "result": "pending-independent-review"
+        }
+      ],
+      "receipt_path": "gridatlas:atlas/codex/20260904-finding-loop-30x/proof.mjs#iteration-22"
+    },
+    {
+      "slot": 53,
+      "lane": "grid",
+      "lane_iteration": 23,
+      "source_attempt": 23,
+      "state": "authored",
+      "qualifies": false,
+      "commit": "529790fcad9c9a4f91a337615957c76d07c1870d",
+      "parent": "cbfac7b55866e5a440371575ba3573f4e27714e3",
+      "improvement": "iteration 23: canonicalize all project deep-link technologies",
+      "changed_paths": [
+        "atlas/codex/20260904-finding-loop-30x/finding-loop.mjs",
+        "atlas/codex/20260904-finding-loop-30x/proof.mjs"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "node atlas/codex/20260904-finding-loop-30x/proof.mjs",
+          "result": "pending-independent-review"
+        }
+      ],
+      "receipt_path": "gridatlas:atlas/codex/20260904-finding-loop-30x/proof.mjs#iteration-23"
+    },
+    {
+      "slot": 54,
+      "lane": "grid",
+      "lane_iteration": 24,
+      "source_attempt": 24,
+      "state": "authored",
+      "qualifies": false,
+      "commit": "418f207abc505cd5865714ca0006d97a713a09da",
+      "parent": "529790fcad9c9a4f91a337615957c76d07c1870d",
+      "improvement": "iteration 24: reject coerced project register rows",
+      "changed_paths": [
+        "atlas/codex/20260904-finding-loop-30x/finding-loop.mjs",
+        "atlas/codex/20260904-finding-loop-30x/proof.mjs"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "node atlas/codex/20260904-finding-loop-30x/proof.mjs",
+          "result": "pending-independent-review"
+        }
+      ],
+      "receipt_path": "gridatlas:atlas/codex/20260904-finding-loop-30x/proof.mjs#iteration-24"
+    },
+    {
+      "slot": 55,
+      "lane": "grid",
+      "lane_iteration": 25,
+      "source_attempt": 25,
+      "state": "authored",
+      "qualifies": false,
+      "commit": "957b2ed731671c4d04d9b87ad955dd8232bac7c1",
+      "parent": "418f207abc505cd5865714ca0006d97a713a09da",
+      "improvement": "iteration 25: deterministic hostile-input boundaries",
+      "changed_paths": [
+        "atlas/codex/20260904-finding-loop-30x/finding-loop.mjs",
+        "atlas/codex/20260904-finding-loop-30x/proof.mjs"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "node atlas/codex/20260904-finding-loop-30x/proof.mjs",
+          "result": "pending-independent-review"
+        }
+      ],
+      "receipt_path": "gridatlas:atlas/codex/20260904-finding-loop-30x/proof.mjs#iteration-25"
+    },
+    {
+      "slot": 56,
+      "lane": "grid",
+      "lane_iteration": 26,
+      "source_attempt": 26,
+      "state": "authored",
+      "qualifies": false,
+      "commit": "3220f71339e6854541dade95d44b8a5ded9daa0a",
+      "parent": "957b2ed731671c4d04d9b87ad955dd8232bac7c1",
+      "improvement": "iteration 26: enforce finding status and value matrix",
+      "changed_paths": [
+        "atlas/codex/20260904-finding-loop-30x/finding-loop.mjs",
+        "atlas/codex/20260904-finding-loop-30x/proof.mjs"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "node atlas/codex/20260904-finding-loop-30x/proof.mjs",
+          "result": "pending-independent-review"
+        }
+      ],
+      "receipt_path": "gridatlas:atlas/codex/20260904-finding-loop-30x/proof.mjs#iteration-26"
+    },
+    {
+      "slot": 57,
+      "lane": "grid",
+      "lane_iteration": 27,
+      "source_attempt": 27,
+      "state": "authored",
+      "qualifies": false,
+      "commit": "01e64d347977532f80cd50520a227f8d620c6ef9",
+      "parent": "3220f71339e6854541dade95d44b8a5ded9daa0a",
+      "improvement": "iteration 27: bind deep links to immutable project facts",
+      "changed_paths": [
+        "atlas/codex/20260904-finding-loop-30x/finding-loop.mjs",
+        "atlas/codex/20260904-finding-loop-30x/proof.mjs"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "node atlas/codex/20260904-finding-loop-30x/proof.mjs",
+          "result": "pending-independent-review"
+        }
+      ],
+      "receipt_path": "gridatlas:atlas/codex/20260904-finding-loop-30x/proof.mjs#iteration-27"
+    },
+    {
+      "slot": 58,
+      "lane": "grid",
+      "lane_iteration": 28,
+      "source_attempt": 28,
+      "state": "authored",
+      "qualifies": false,
+      "commit": "28c1f65151219490f318750d5db7bf0c46c3dd6f",
+      "parent": "01e64d347977532f80cd50520a227f8d620c6ef9",
+      "improvement": "iteration 28: snapshot safe candidate descriptors",
+      "changed_paths": [
+        "atlas/codex/20260904-finding-loop-30x/finding-loop.mjs",
+        "atlas/codex/20260904-finding-loop-30x/proof.mjs"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "node atlas/codex/20260904-finding-loop-30x/proof.mjs",
+          "result": "pending-independent-review"
+        }
+      ],
+      "receipt_path": "gridatlas:atlas/codex/20260904-finding-loop-30x/proof.mjs#iteration-28"
+    },
+    {
+      "slot": 59,
+      "lane": "grid",
+      "lane_iteration": 29,
+      "source_attempt": 29,
+      "state": "authored",
+      "qualifies": false,
+      "commit": "bb2a160980bd7ad06b2335c3c82859546c3ee77f",
+      "parent": "28c1f65151219490f318750d5db7bf0c46c3dd6f",
+      "improvement": "iteration 29: withhold unproved route estimates",
+      "changed_paths": [
+        "atlas/codex/20260904-finding-loop-30x/finding-loop.mjs",
+        "atlas/codex/20260904-finding-loop-30x/proof.mjs"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "node atlas/codex/20260904-finding-loop-30x/proof.mjs",
+          "result": "pending-independent-review"
+        }
+      ],
+      "receipt_path": "gridatlas:atlas/codex/20260904-finding-loop-30x/proof.mjs#iteration-29"
+    },
+    {
+      "slot": 60,
+      "lane": "grid",
+      "lane_iteration": 30,
+      "source_attempt": 30,
+      "state": "authored",
+      "qualifies": false,
+      "commit": "64320b54216b4aebb412a2db65fc0eaa6a17ed17",
+      "parent": "bb2a160980bd7ad06b2335c3c82859546c3ee77f",
+      "improvement": "iteration 30: scope distance targets and populations",
+      "changed_paths": [
+        "atlas/codex/20260904-finding-loop-30x/finding-loop.mjs",
+        "atlas/codex/20260904-finding-loop-30x/proof.mjs"
+      ],
+      "phases": [
+        "discovery",
+        "author",
+        "serial-cutter"
+      ],
+      "tests": [
+        {
+          "command": "node atlas/codex/20260904-finding-loop-30x/proof.mjs",
+          "result": "pending-independent-review"
+        }
+      ],
+      "receipt_path": "gridatlas:atlas/codex/20260904-finding-loop-30x/proof.mjs#iteration-30"
+    }
+  ],
+  "retained_attempts": [
+    {
+      "lane": "pipeline",
+      "source_attempt": 1,
+      "state": "superseded",
+      "qualifies": false,
+      "commit": "002d181275217cd9388adce91a2bd446cbb459e4",
+      "parent": "937b8c019074e40bebbc7edf5d8ef8d1751e034e",
+      "tests": [
+        {
+          "command": "python -m unittest tools/publication/test_pages_release_classifier.py",
+          "detail": "Windows import path was not initialized; iteration 02 repaired the harness.",
+          "result": "fail"
+        }
+      ],
+      "receipt_path": "pipelinenews:docs/coordination/20260904-pipelinenews-30x-ledger.json#iteration-1"
+    }
+  ],
+  "additional_passing_attempts_outside_program": [
+    {
+      "lane": "pipeline",
+      "source_attempt": 32,
+      "commit": "4146a4b08b43bbbef8cc5c44ac674287ce03ae44",
+      "tests": [
+        {
+          "command": "python tools/publication/test_pages_release_classifier.py",
+          "result": "pass"
+        },
+        {
+          "command": "python tools/publication/test_verify_pages_workflow.py",
+          "result": "pass"
+        }
+      ],
+      "receipt_path": "pipelinenews:docs/coordination/20260904-pipelinenews-30x-ledger.json#iteration-32"
+    },
+    {
+      "lane": "pipeline",
+      "source_attempt": 33,
+      "commit": "a855ffe41d99c765c9eab0607603e274b31737b5",
+      "tests": [
+        {
+          "command": "python tools/publication/run_pages_candidate_gate.py --receipt <temp>",
+          "result": "pass"
+        }
+      ],
+      "receipt_path": "pipelinenews:docs/coordination/20260904-pipelinenews-30x-ledger.json#iteration-33"
+    }
+  ]
+}

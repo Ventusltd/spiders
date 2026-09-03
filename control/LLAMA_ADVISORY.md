@@ -10,9 +10,10 @@ Owner repo: spiders
 
 Last reviewed: 2026-09-03 UTC
 
-The workflow is manual-only and disabled by default. When enabled it uses a
-standard Ubuntu runner and a small CPU-capable model. It has no write,
-deployment, schedule, push, secret, or GPU authority.
+Manual dispatch is disabled by default. A path-scoped push to main after CEO
+integration enables one run against the merged bytes. The job uses a standard
+Ubuntu runner and a small CPU-capable model. It has no write, deployment,
+schedule, secret, or GPU authority.
 
 The runtime source is llama.cpp at exact commit
 ff067f76dd8e9e05f0528056f1274adf01a54d70. The model is

@@ -354,7 +354,14 @@
       /* menu-bar.js lines 181-183 */
       '#' + BAR_ID + ' .gm-side{display:flex;align-items:stretch;flex:1 1 0;min-width:0}',
       '#' + BAR_ID + ' .gm-side-left{justify-content:flex-start}',
-      '#' + BAR_ID + ' .gm-side-right{justify-content:flex-end}',
+      /* The right group is empty by design (see buildBar): it must take no
+         space, or the single menu group would be squeezed to half the bar. */
+      '#' + BAR_ID + ' .gm-side-right{flex:0 0 0;width:0;overflow:hidden}',
+      /* The logo no longer sits between two groups, so it does not need the
+         centred, width-capped slot the reference gives it; it is a compact
+         leading mark with a gap before the first title. */
+      '#' + BAR_ID + ' .gm-brand-slot{flex:0 0 auto!important;max-width:none!important;',
+      'justify-content:flex-start!important;padding:0 14px 0 8px!important;text-align:left!important}',
       /* Brand slot — menu-bar.js lines 192-205. GridAtlas fuses its real
          .hud-header DOM node in here (moved, not cloned); this module has
          no such node to move, so it builds an equivalent .hud-header shape
@@ -532,14 +539,21 @@
 
       menu.appendChild(title);
       menu.appendChild(panel);
-      (index < 3 ? left : right).appendChild(menu);
+      /* All six titles in ONE contiguous group. The reference bar split
+         them either side of a centred wordmark; the architect's instruction,
+         2026-09-04, twice: "have all the menus together not split with the
+         ventus logo but keep the logo". So the logo stays - first in the bar
+         - and FILE EDIT VIEW SCOPE GRID ABOUT run unbroken after it. The
+         right-hand group is kept as an empty element so nothing that looks
+         for it throws, and it takes no space. */
+      left.appendChild(menu);
       panels[name] = panel;
       titles.push(title);
     });
 
-    nav.appendChild(left);
-    nav.appendChild(brand);
-    nav.appendChild(right);
+    nav.appendChild(brand);   // the logo, kept, first
+    nav.appendChild(left);    // then every menu, together
+    nav.appendChild(right);   // empty; present so selectors resolve
 
     /* Keyboard behaviour — menu-bar.js lines 537-563: Escape closes,
        ArrowLeft/ArrowRight move across titles, Home/End jump to the ends,

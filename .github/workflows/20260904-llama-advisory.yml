@@ -1,0 +1,105 @@
+name: Manual Llama advisory fault finding
+
+on:
+  workflow_dispatch:
+    inputs:
+      enable_advisory:
+        description: Run the pinned CPU model after deterministic validation
+        required: true
+        default: false
+        type: boolean
+  push:
+    branches:
+      - main
+    paths:
+      - control/20260904-60x-program.json
+      - tools/validate-60x-program.mjs
+      - tools/llama-advisory.mjs
+      - tools/test-cloud-workflows.mjs
+      - .github/workflows/20260904-llama-advisory.yml
+
+permissions:
+  contents: read
+
+concurrency:
+  group: spiders-llama-advisory
+  cancel-in-progress: true
+
+jobs:
+  advisory:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+
+      - name: Authoritative pre-validation
+        run: |
+          node tools/test-cloud-workflows.mjs
+          node tools/validate-60x-program.mjs --receipt artifacts/pre-validation.json
+          node tools/llama-advisory.mjs prepare --program control/20260904-60x-program.json --validation artifacts/pre-validation.json --out artifacts/prompt.txt
+
+      - name: Optional bounded CPU advisory
+        env:
+          ENABLE_ADVISORY: ${{ github.event_name == 'push' || inputs.enable_advisory }}
+          LLAMA_COMMIT: ff067f76dd8e9e05f0528056f1274adf01a54d70
+          MODEL_REVISION: 9217f5db79a29953eb74d5343926648285ec7e67
+          MODEL_SHA256: 74a4da8c9fdbcd15bd1f6d01d621410d31c6fc00986f5eb687824e7b93d7a9db
+        run: |
+          set +e
+          output=artifacts/advisory.txt
+          status=artifacts/runtime-status.txt
+          if [ "$ENABLE_ADVISORY" != "true" ]; then
+            printf '%s\n' 'advisory disabled by dispatch input' > "$output"
+            printf '%s\n' 'disabled' > "$status"
+            exit 0
+          fi
+          git init -q /tmp/llama.cpp
+          git -C /tmp/llama.cpp remote add origin https://github.com/ggml-org/llama.cpp.git
+          git -C /tmp/llama.cpp fetch -q --depth 1 origin "$LLAMA_COMMIT"
+          git -C /tmp/llama.cpp checkout -q --detach FETCH_HEAD
+          if [ "$(git -C /tmp/llama.cpp rev-parse HEAD)" != "$LLAMA_COMMIT" ]; then
+            printf '%s\n' 'runtime commit mismatch; inference refused' > "$output"
+            printf '%s\n' 'runtime-integrity-failed' > "$status"
+            exit 0
+          fi
+          cmake -S /tmp/llama.cpp -B /tmp/llama.cpp/build -DLLAMA_CURL=OFF -DGGML_NATIVE=OFF -DGGML_OPENMP=ON -DCMAKE_BUILD_TYPE=Release
+          cmake --build /tmp/llama.cpp/build --config Release -j 2 --target llama-cli
+          cli=$(find /tmp/llama.cpp/build -type f -name llama-cli | head -1)
+          model=/tmp/qwen2.5-0.5b-instruct-q4_k_m.gguf
+          curl --fail --location --retry 2 --max-time 240 -o "$model" "https://huggingface.co/Qwen/Qwen2.5-0.5B-Instruct-GGUF/resolve/$MODEL_REVISION/qwen2.5-0.5b-instruct-q4_k_m.gguf?download=true"
+          if [ "$(sha256sum "$model" | cut -d' ' -f1)" != "$MODEL_SHA256" ] || [ ! -x "$cli" ]; then
+            printf '%s\n' 'model or runtime integrity failed; inference refused' > "$output"
+            printf '%s\n' 'dependency-integrity-failed' > "$status"
+            exit 0
+          fi
+          timeout 180 "$cli" -m "$model" -f artifacts/prompt.txt --ctx-size 4096 --threads 4 --n-predict 384 --temp 0 > /tmp/advisory-full.txt 2>/tmp/advisory-runtime.txt
+          rc=$?
+          head -c 32768 /tmp/advisory-full.txt > "$output"
+          printf 'inference-rc=%s\n' "$rc" > "$status"
+          exit 0
+
+      - name: Seal advisory receipt
+        if: always()
+        run: |
+          test -f artifacts/prompt.txt
+          test -f artifacts/advisory.txt
+          test -f artifacts/runtime-status.txt
+          node tools/llama-advisory.mjs seal --prompt artifacts/prompt.txt --output artifacts/advisory.txt --runtime-status artifacts/runtime-status.txt --receipt artifacts/llama-advisory-receipt.json
+
+      - name: Authoritative post-validation
+        run: |
+          node tools/test-cloud-workflows.mjs
+          node tools/validate-60x-program.mjs --receipt artifacts/post-validation.json
+          test "$(python3 -c 'import json;print(json.load(open("artifacts/pre-validation.json"))["program_sha256"])')" = "$(python3 -c 'import json;print(json.load(open("artifacts/post-validation.json"))["program_sha256"])')"
+          node tools/llama-advisory.mjs validate --prompt artifacts/prompt.txt --output artifacts/advisory.txt --runtime-status artifacts/runtime-status.txt --receipt artifacts/llama-advisory-receipt.json
+
+      - name: Upload bounded advisory evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: llama-advisory-${{ github.sha }}
+          path: artifacts/
+          if-no-files-found: error
+          retention-days: 30

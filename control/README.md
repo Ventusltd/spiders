@@ -34,6 +34,10 @@ Structural corruption fails the command. Pending review is reported as an
 informational finding and stays green, preventing a notification storm while
 preserving the incomplete state in the receipt.
 
+This is a structural observer: it validates the graph and its declared receipt
+references but does not execute another repository's tests or treat embedded
+`result: pass` fields as independently replayed evidence.
+
 The workflow candidate is limited to manual dispatch and path-scoped pull
 requests. It has a read-only token, cancels superseded runs, performs no deploy
 or model execution, and uploads the deterministic receipt.

@@ -1,0 +1,30 @@
+{
+  "schema": "genome-spider.receipt.v1",
+  "command": "crawl",
+  "status": "ok",
+  "detail": "",
+  "generation_utc": "202609042137",
+  "generated_at": "2026-09-04T21:37:01.105Z",
+  "triggered_by": "push",
+  "git_sha": "31d1d524bfb14139b7d6307811f5dc797e4cd8c9",
+  "counts": {
+    "repos_walked": 19,
+    "repos_skipped": 0,
+    "nodes": 1200,
+    "edges": 2562,
+    "duplication": 521,
+    "drift": 1,
+    "dead_code": 3,
+    "uncomposed": 0,
+    "re_doing_groups": 235,
+    "genome_generated_at": "2026-09-04T21:36:57.875Z"
+  },
+  "proof": {
+    "exit_code": 0,
+    "passed": true,
+    "summary": "22/22 checks passed"
+  },
+  "receipt_file": "202609042137-crawl.json",
+  "receipt_url": "https://github.com/Ventusltd/spiders/blob/main/species/genome-spider/receipts/202609042137-crawl.json",
+  "latest_url": "https://github.com/Ventusltd/spiders/blob/main/species/genome-spider/receipts/LATEST.json"
+}

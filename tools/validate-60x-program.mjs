@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import { createHash } from 'node:crypto';
 import { mkdirSync, readFileSync, writeFileSync } from 'node:fs';
-import { dirname, resolve } from 'node:path';
+import { dirname, relative, resolve } from 'node:path';
 
 const args = process.argv.slice(2);
 const valueAfter = flag => {
@@ -77,7 +77,7 @@ for (const attempt of program.retained_attempts || []) {
 
 const result = {
   schema: 'spiders.autonomous-build-receipt.v1',
-  program: programPath.replaceAll('\\', '/'),
+  program: relative(process.cwd(), programPath).replaceAll('\\', '/'),
   program_sha256: sha256,
   slot_count: queue.length,
   qualifying_count: queue.filter(item => item.qualifies).length,

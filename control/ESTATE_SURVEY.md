@@ -12,8 +12,9 @@ private-data authority.
 
 Each shard handles a deterministic subset selected from the SHA-256 of
 `owner/name`. At most four shard jobs run concurrently, and requests inside a
-shard are serial. Each repository receives three bounded, read-only API reads:
-metadata, its declared default-branch head, and workflow inventory.
+shard are serial. Each repository receives up to three bounded, read-only API
+reads: metadata, its declared default-branch head, and workflow inventory. A
+missing repository stops after the metadata response.
 
 Head drift, a changed default branch, archival, disablement, or a missing
 repository is an informational finding. Those facts belong to the repository

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Estate menu — demo (fake host bar)</title>
+<style>
+  html{color-scheme:dark;background:#05070a}
+  body{margin:0;background:#05070a;color:#cfeef6;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;padding:24px}
+  h1{font-size:16px;letter-spacing:.06em;color:#fff}
+  p{max-width:640px;line-height:1.5;color:#9aa9ad;font-size:12px}
+  code{color:#6bebff}
+  /* A minimal stand-in for gridatlas's real #gridatlas-menu-bar — only the
+     id matters to this module's refusal check, so the stand-in does not
+     reproduce the real bar's own CSS. */
+  #gridatlas-menu-bar{height:36px;background:#111;border-bottom:1px solid #333;
+    color:#8fd; display:flex;align-items:center;padding:0 12px;font-size:11px}
+</style>
+</head>
+<body>
+  <nav id="gridatlas-menu-bar">FAKE #gridatlas-menu-bar (stands in for the real host bar)</nav>
+  <h1>VENTUS Estate Menu — refusal demo</h1>
+  <p>
+    This page already carries an element with id <code>gridatlas-menu-bar</code>
+    (the fake nav above). Loading <code>estate-menu.js</code> here must publish
+    <code>window.__VENTUS_ESTATE_MENU__</code> (schema, manifest, entries(),
+    mount(), version) but must render NOTHING — no second bar — and
+    <code>mount()</code> must return <code>{mounted:false, reason:'host bar present'}</code>.
+  </p>
+  <p id="result">mount() has not reported yet.</p>
+
+  <script src="./estate-menu.js" defer></script>
+  <script defer>
+    window.addEventListener('load', function () {
+      setTimeout(function () {
+        var api = window.__VENTUS_ESTATE_MENU__;
+        var out = document.getElementById('result');
+        if (!api) { out.textContent = 'window.__VENTUS_ESTATE_MENU__ did not publish.'; return; }
+        var ourBar = document.getElementById('ventus-estate-menu-bar');
+        var res = api.mount();
+        out.textContent = 'schema=' + api.schema
+          + ' second-bar-present=' + !!ourBar
+          + ' mount()=' + JSON.stringify(res);
+      }, 50);
+    });
+  </script>
+</body>
+</html>

@@ -44,3 +44,26 @@ agent named. It is **redo-by-clone**: six atlases, seven trackers, and a v9
 deleted in May that came back in August as a new repository. Timestamps make
 that recoverable; they do not stop it. `ventus-grid-engine` exists to stop it
 for the grid maths, and the population spider is the mechanism.
+
+## Correction to this document — 2026-09-04, later the same evening
+
+The third row of "Did not survive verification" above is **wrong**, and the
+antibody was right. It said the `ventus-grid-engine` generation stamp and its
+UTC commit time were identical. The check that produced that used
+`TZ=UTC git log --date=format:...`, which Git for Windows ignores. Against the
+commit's own epoch (`git log --format=%ct`, 1788530403) the true UTC time of
+commit `3589fac` is **202609041400**; its subject says **202609041500**; the
+ISO form is `2026-09-04T15:00:03+01:00`. The stamp was typed in BST by the
+coordinating session — the exact fault vaccine
+`202608301701-monotonic-utc-generations` exists to catch — and the antibody
+found it. This document then struck the finding. Both errors were the
+coordinator's, and this row records them rather than editing them away.
+
+The other two struck findings (release checksums; `.gitattributes`) stand as
+struck: re-verified against committed bytes in the fleet run of
+`202609042153` (see `cvaa/studies/202609042153-fleet/`).
+
+Rule reaffirmed, now with a worked example of its author breaking it: a
+generation is read from `date -u` at the moment of committing, never typed;
+and a verification that overrides an instrument must show the raw evidence,
+not a derived one.

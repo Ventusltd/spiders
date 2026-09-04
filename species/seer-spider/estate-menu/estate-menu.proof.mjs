@@ -178,6 +178,141 @@ async function runStructuralChecks(browser, engineName, viewport) {
   });
 }
 
+/* Same regex the module's own labelFromUrl() uses (estate-menu.js), copied
+   here rather than imported so this proof has no dependency on the module's
+   internals beyond the source text it already reads for other checks. */
+function labelFromUrl(u) {
+  let m = /\/v(\d[\w.]*)\/?$/.exec(u || '');
+  if (m) return 'v' + m[1];
+  m = /\/(\d{10,14})\/?$/.exec(u || '');
+  if (m) return m[1];
+  return u;
+}
+
+function isAlphabetical(labels) {
+  const sorted = labels.slice().sort((a, b) => a.localeCompare(b, 'en-GB', { sensitivity: 'base' }));
+  return JSON.stringify(sorted) === JSON.stringify(labels);
+}
+
+/* Checks added for the alphabetical-ordering task (2026-09-04):
+     (1) every non-version group renders alphabetically
+     (2) version groups (FILE) render current-first, superseded newest-first
+     (3) the wordmark stays centred to the pixel, brand-slot centre == viewport centre
+     (4) the sub-line reads exactly "Cables & Connectivity®" from source, uppercased by CSS
+     (5) no visible text in the bar or its panels contains the word "estate" */
+async function runOrderingAndBrandChecks(browser, engineName, viewport) {
+  const tag = engineName + '@' + viewport.name;
+
+  await withPage(browser, viewport, DEMO_HTML, async (page) => {
+    // (1) Non-version groups: EDIT, VIEW (Surfaces, Proofs), ABOUT — each
+    // panel's own group buckets, extracted in DOM order, must already be
+    // alphabetical (case-insensitive, locale en-GB) without this proof
+    // re-sorting anything itself.
+    const buckets = await page.evaluate(() => {
+      function panelForTitle(name) {
+        const titles = Array.from(document.querySelectorAll('#ventus-estate-menu-bar .gm-title'));
+        const title = titles.find((t) => t.textContent.trim() === name);
+        if (!title) return null;
+        return document.getElementById(title.getAttribute('aria-controls'));
+      }
+      function bucketsOf(panel) {
+        const out = {};
+        let group = '__root__';
+        out[group] = [];
+        if (!panel) return out;
+        Array.from(panel.children).forEach((node) => {
+          if (node.classList.contains('gm-group')) {
+            group = node.textContent.trim();
+            out[group] = out[group] || [];
+            return;
+          }
+          if (node.tagName === 'A' || node.classList.contains('gm-row')) {
+            const span = node.querySelector('span') || node;
+            out[group].push(span.textContent.trim());
+          }
+        });
+        return out;
+      }
+      return {
+        Edit: bucketsOf(panelForTitle('Edit')),
+        View: bucketsOf(panelForTitle('View')),
+        About: bucketsOf(panelForTitle('About')),
+      };
+    });
+
+    Object.keys(buckets).forEach((panelName) => {
+      Object.keys(buckets[panelName]).forEach((groupName) => {
+        const raw = buckets[panelName][groupName];
+        if (!raw.length) return;
+        // Strip the "— you are here" / " — current" render-time suffixes
+        // before comparing, since those are appended after the real label.
+        const labels = raw.map((s) => s.replace(/\s+—\s+(you are here|current)$/i, ''));
+        record(tag + ': ' + panelName + ' → "' + groupName + '" renders its entries alphabetically (case-insensitive, en-GB): ' + JSON.stringify(labels),
+          isAlphabetical(labels), JSON.stringify(labels));
+      });
+    });
+
+    // (2) FILE stays newest-first, current leading — never alphabetised.
+    const fileOrder = await page.evaluate(() => {
+      const titles = Array.from(document.querySelectorAll('#ventus-estate-menu-bar .gm-title'));
+      const title = titles.find((t) => t.textContent.trim() === 'File');
+      const panel = document.getElementById(title.getAttribute('aria-controls'));
+      const groups = [];
+      let current = null;
+      Array.from(panel.children).forEach((node) => {
+        if (node.classList.contains('gm-group')) {
+          current = { label: node.textContent.trim(), firstText: null, supersededLabels: [] };
+          groups.push(current);
+          return;
+        }
+        if (!current) return;
+        if (current.firstText === null && (node.tagName === 'A' || node.classList.contains('gm-row'))) {
+          current.firstText = node.textContent.trim();
+          return;
+        }
+        if (node.tagName === 'DETAILS') {
+          Array.from(node.querySelectorAll('a')).forEach((a) => current.supersededLabels.push(a.textContent.trim()));
+        }
+      });
+      return groups;
+    });
+    const pipelineGroup = fileOrder.find((g) => g.label === 'Pipeline News versions');
+    const expectedSuperseded = (MANIFEST.menus.FILE.entries.find((e) => e.label === 'Pipeline News versions').superseded || []).map(labelFromUrl);
+    record(tag + ': FILE → each version group\'s first row names the current release ("— current"), never alphabetised',
+      fileOrder.every((g) => /—\s*current/i.test(g.firstText || '')),
+      JSON.stringify(fileOrder.map((g) => g.firstText)));
+    record(tag + ': FILE → "Pipeline News versions" superseded disclosure stays newest-first, in the manifest\'s own order',
+      JSON.stringify(pipelineGroup && pipelineGroup.supersededLabels) === JSON.stringify(expectedSuperseded),
+      JSON.stringify(pipelineGroup && pipelineGroup.supersededLabels) + ' vs expected ' + JSON.stringify(expectedSuperseded));
+
+    // (3) The wordmark's brand slot stays centred on the viewport, to the pixel.
+    const brandCentre = await page.evaluate(() => {
+      const slot = document.querySelector('#ventus-estate-menu-bar .gm-brand-slot');
+      const rect = slot.getBoundingClientRect();
+      return { centre: rect.left + rect.width / 2, viewport: window.innerWidth };
+    });
+    const offset = Math.abs(brandCentre.centre - brandCentre.viewport / 2);
+    record(tag + ': the brand slot is centred to the pixel (viewport ' + brandCentre.viewport + 'px, slot centre ' + brandCentre.centre.toFixed(1) + 'px)',
+      offset <= 1, 'offset=' + offset.toFixed(2) + 'px');
+
+    // (4) The sub-line's SOURCE text, and that CSS (not the source string) uppercases it.
+    const sub = await page.evaluate(() => {
+      const el = document.querySelector('#ventus-estate-menu-bar .gm-brand-slot .ventus-sub');
+      return { text: el.textContent, transform: getComputedStyle(el).textTransform };
+    });
+    record(tag + ': the sub-line reads exactly "Cables & Connectivity®" in source',
+      sub.text === 'Cables & Connectivity®', JSON.stringify(sub.text));
+    record(tag + ': the sub-line is uppercased by CSS (text-transform:uppercase), not by the source string',
+      sub.transform === 'uppercase', sub.transform);
+
+    // (5) No visible text anywhere in the bar or its panels says "estate".
+    const barText = await page.$eval('#ventus-estate-menu-bar', (e) => e.textContent);
+    const hasEstate = /estate/i.test(barText);
+    record(tag + ': no visible text in the bar or its panels contains the word "estate"',
+      !hasEstate, hasEstate ? 'found "estate" in bar text' : 'clean');
+  });
+}
+
 async function runCurrentSurfaceCheck(browser, engineName) {
   const tag = engineName;
   const context = await browser.newContext({ viewport: { width: 1400, height: 900 } });
@@ -275,6 +410,7 @@ async function main() {
     try {
       for (const viewport of VIEWPORTS) {
         await runStructuralChecks(browser, engine.name, viewport);
+        await runOrderingAndBrandChecks(browser, engine.name, viewport);
         await runFederationOverlapCheck(browser, engine.name, viewport);
         await screenshotDemoAndPipeline(browser, engine.name, viewport);
       }

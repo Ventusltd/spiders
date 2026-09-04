@@ -40,4 +40,21 @@ for (const token of ['workflow_dispatch:', 'pull_request:', 'push:', '- main', '
 assert(!/^\s*schedule:/m.test(proofTriggers), '60x proof must not schedule itself');
 assert(!/actions\/deploy|git push|contents:\s*write/.test(proof), '60x proof acquired publication authority');
 
-console.log(JSON.stringify({ schema: 'spiders.cloud-workflow-test.v1', status: 'pass', workflows: 2 }));
+const surveyFile = '.github/workflows/20260904-estate-survey.yml';
+const survey = read(surveyFile);
+const surveyTriggers = survey.split('\npermissions:\n', 1)[0];
+noPatchOperands(survey, surveyFile);
+pinnedActions(survey, surveyFile);
+for (const token of [
+  'workflow_dispatch:', 'pull_request:', 'push:', '- main', 'contents: read',
+  "- 'codex/**'",
+  'cancel-in-progress: true', 'fail-fast: false', 'max-parallel: 4',
+  'shard: [0, 1, 2, 3]', 'persist-credentials: false', 'if: always()',
+  'tools/test-estate-survey.mjs', 'tools/test-cloud-workflows.mjs',
+  'estate-survey.mjs registry', 'estate-survey.mjs survey', 'estate-survey.mjs aggregate',
+]) assert(survey.includes(token), `${surveyFile} missing ${token}`);
+assert(!/^\s*schedule:/m.test(surveyTriggers), 'estate survey must not schedule itself');
+assert(!/actions\/deploy|git push|contents:\s*write|continue-on-error|llama|ollama|model[_ -]/i.test(survey),
+  'estate survey acquired deploy, write, bypass or model authority');
+
+console.log(JSON.stringify({ schema: 'spiders.cloud-workflow-test.v1', status: 'pass', workflows: 3 }));

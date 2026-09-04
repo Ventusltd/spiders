@@ -1,6 +1,6 @@
 {
   "schema": "genome-spider.gridatlas-lineage.v1",
-  "generated_at": "2026-09-04T21:49:51.946Z",
+  "generated_at": "2026-09-04T22:10:10.477Z",
   "generator": "spiders/species/genome-spider/lineage.mjs",
   "repo": "Ventusltd/gridatlas",
   "compositions_available_on_disk": 58,
@@ -462,8 +462,8 @@
       "id": "unit:atlas/modules/202609030048-pipeline-news-layers.js",
       "label": "202609030048-pipeline-news-layers.js",
       "type": "module",
-      "rag": "red",
-      "reason": "current content (sha256 e7351ba48188...) does not match what atlas/manifests/202609042123-substation-intelligence-v9-63-parts.json recorded (075fb2e50723...) — edited since this cartridge was built",
+      "rag": "green",
+      "reason": "role=module",
       "gh": "https://github.com/Ventusltd/gridatlas/blob/main/atlas/modules/202609030048-pipeline-news-layers.js",
       "ext": null,
       "first_commit": {
@@ -1626,17 +1626,6 @@
         "line": 0,
         "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
         "snippet": "role=module, path=atlas/modules/202609030048-pipeline-news-layers.js, sha256=075fb2e50723bcd2..."
-      }
-    },
-    {
-      "from": "unit:atlas/modules/202609030048-pipeline-news-layers.js",
-      "to": "cartridge:substation-intelligence@202609042123",
-      "type": "uncomposed",
-      "evidence": {
-        "file": "atlas/manifests/202609042123-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "sha256 mismatch: current file content vs. recorded assembled_from[].sha256",
-        "snippet": "recorded=075fb2e50723bcd2... current=e7351ba48188c530..."
       }
     },
     {

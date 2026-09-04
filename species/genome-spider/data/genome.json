@@ -1,6 +1,6 @@
 {
   "schema": "genome-spider.genome.v1",
-  "generated_at": "2026-09-04T21:36:57.875Z",
+  "generated_at": "2026-09-04T21:41:40.031Z",
   "generator": "spiders/species/genome-spider/spider.mjs",
   "estate_root": "/home/runner/work/spiders/spiders/estate",
   "repos_configured": 19,
@@ -55,7 +55,7 @@
       "repo": "spiders",
       "files_considered": 38,
       "files_scanned": 37,
-      "bytes_scanned": 1294017,
+      "bytes_scanned": 1310079,
       "files_capped_out": 1,
       "cartridge_logical_groups_kept_latest_only": 0
     }
@@ -23836,10 +23836,10 @@
         "date": "2026-07-04T07:34:47+01:00"
       },
       "last_commit": {
-        "sha": "31d1d524bfb14139b7d6307811f5dc797e4cd8c9",
-        "date": "2026-09-04T22:35:07+01:00"
+        "sha": "7dd87f3a57ade0b0c5bbdeff2652106e5534e0ca",
+        "date": "2026-09-04T22:38:44+01:00"
       },
-      "commit_count": 67,
+      "commit_count": 69,
       "top_revised_files": [
         {
           "path": "spider_printer_v1/index.html",
@@ -23854,23 +23854,23 @@
           "commits": 3
         },
         {
-          "path": ".github/workflows/20260904-estate-survey.yml",
+          "path": "species/genome-spider/data/edges.json",
           "commits": 2
         },
         {
-          "path": "control/ESTATE_SURVEY.md",
+          "path": "species/genome-spider/data/genome.json",
           "commits": 2
         },
         {
-          "path": "control/README.md",
+          "path": "species/genome-spider/data/gridatlas-lineage.json",
           "commits": 2
         },
         {
-          "path": "tools/validate-60x-program.mjs",
+          "path": "species/genome-spider/data/manifest.json",
           "commits": 2
         },
         {
-          "path": ".github/workflows/20260904-60x-program-proof.yml",
+          "path": "species/genome-spider/data/nodes.json",
           "commits": 2
         }
       ],
@@ -24268,10 +24268,10 @@
         "date": "2026-09-04T22:35:07+01:00"
       },
       "last_commit": {
-        "sha": "31d1d524bfb14139b7d6307811f5dc797e4cd8c9",
-        "date": "2026-09-04T22:35:07+01:00"
+        "sha": "22eefb58d086af3fa79d992242bc220019ddf5e3",
+        "date": "2026-09-04T21:37:01Z"
       },
-      "commit_count": 1,
+      "commit_count": 2,
       "top_revised_files": [],
       "rag": "green",
       "status_reason": "",
@@ -24289,10 +24289,10 @@
         "date": "2026-09-04T22:35:07+01:00"
       },
       "last_commit": {
-        "sha": "31d1d524bfb14139b7d6307811f5dc797e4cd8c9",
-        "date": "2026-09-04T22:35:07+01:00"
+        "sha": "22eefb58d086af3fa79d992242bc220019ddf5e3",
+        "date": "2026-09-04T21:37:01Z"
       },
-      "commit_count": 1,
+      "commit_count": 2,
       "top_revised_files": [],
       "rag": "green",
       "status_reason": "",
@@ -24310,10 +24310,10 @@
         "date": "2026-09-04T22:35:07+01:00"
       },
       "last_commit": {
-        "sha": "31d1d524bfb14139b7d6307811f5dc797e4cd8c9",
-        "date": "2026-09-04T22:35:07+01:00"
+        "sha": "22eefb58d086af3fa79d992242bc220019ddf5e3",
+        "date": "2026-09-04T21:37:01Z"
       },
-      "commit_count": 1,
+      "commit_count": 2,
       "top_revised_files": [],
       "rag": "green",
       "status_reason": "",
@@ -24331,10 +24331,10 @@
         "date": "2026-09-04T22:35:07+01:00"
       },
       "last_commit": {
-        "sha": "31d1d524bfb14139b7d6307811f5dc797e4cd8c9",
-        "date": "2026-09-04T22:35:07+01:00"
+        "sha": "22eefb58d086af3fa79d992242bc220019ddf5e3",
+        "date": "2026-09-04T21:37:01Z"
       },
-      "commit_count": 1,
+      "commit_count": 2,
       "top_revised_files": [],
       "rag": "grey",
       "status_reason": "stub node — edge target outside the content-scanned set",
@@ -24667,11 +24667,15 @@
         "date": "2026-09-04T14:03:11+01:00"
       },
       "last_commit": {
-        "sha": "742b98818d16cf08a7fc12b9f6aa21c30dc29562",
-        "date": "2026-09-04T22:34:29+01:00"
+        "sha": "3b7cc6f161d7ccbcf9b3a2b065eaad1823cc7cf4",
+        "date": "2026-09-04T22:36:54+01:00"
       },
-      "commit_count": 6,
+      "commit_count": 7,
       "top_revised_files": [
+        {
+          "path": "spider/manifest.json",
+          "commits": 2
+        },
         {
           "path": "index.html",
           "commits": 2
@@ -24698,10 +24702,6 @@
         },
         {
           "path": "engine/electrical-distance.js",
-          "commits": 1
-        },
-        {
-          "path": "engine/network-topology.js",
           "commits": 1
         }
       ],
@@ -25771,10 +25771,10 @@
         "date": "2026-09-04T22:08:38+01:00"
       },
       "last_commit": {
-        "sha": "e7520b4681521033caf4daef4bc50a0ceec1a1e7",
-        "date": "2026-09-04T22:08:38+01:00"
+        "sha": "3b7cc6f161d7ccbcf9b3a2b065eaad1823cc7cf4",
+        "date": "2026-09-04T22:36:54+01:00"
       },
-      "commit_count": 1,
+      "commit_count": 2,
       "top_revised_files": [],
       "rag": "green",
       "status_reason": "",
@@ -54958,28 +54958,6 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/953/properties/label = \"index.html\""
-      }
-    },
-    {
-      "from": "Ventusltd/spiders::species/genome-spider/data/nodes.json",
-      "to": "Ventusltd/spiders::index.html",
-      "type": "manifest-path",
-      "evidence": {
-        "file": "species/genome-spider/data/nodes.json",
-        "line": 0,
-        "pattern": "json:\"label\"",
-        "snippet": "/features/954/properties/label = \"index.html\""
-      }
-    },
-    {
-      "from": "Ventusltd/spiders::species/genome-spider/data/nodes.json",
-      "to": "Ventusltd/spiders::index.html",
-      "type": "manifest-path",
-      "evidence": {
-        "file": "species/genome-spider/data/nodes.json",
-        "line": 0,
-        "pattern": "json:\"label\"",
         "snippet": "/features/955/properties/label = \"index.html\""
       }
     },
@@ -55046,7 +55024,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/978/properties/label = \"index.html\""
+        "snippet": "/features/961/properties/label = \"index.html\""
       }
     },
     {
@@ -55057,7 +55035,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/1056/properties/label = \"index.html\""
+        "snippet": "/features/962/properties/label = \"index.html\""
       }
     },
     {
@@ -55068,7 +55046,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/1119/properties/label = \"index.html\""
+        "snippet": "/features/980/properties/label = \"index.html\""
       }
     },
     {
@@ -55079,29 +55057,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/1120/properties/label = \"index.html\""
-      }
-    },
-    {
-      "from": "Ventusltd/spiders::species/genome-spider/data/nodes.json",
-      "to": "Ventusltd/spiders::index.html",
-      "type": "manifest-path",
-      "evidence": {
-        "file": "species/genome-spider/data/nodes.json",
-        "line": 0,
-        "pattern": "json:\"label\"",
-        "snippet": "/features/1122/properties/label = \"index.html\""
-      }
-    },
-    {
-      "from": "Ventusltd/spiders::species/genome-spider/data/nodes.json",
-      "to": "Ventusltd/spiders::species/genome-spider/data/edges.json",
-      "type": "manifest-path",
-      "evidence": {
-        "file": "species/genome-spider/data/nodes.json",
-        "line": 0,
-        "pattern": "json:\"label\"",
-        "snippet": "/features/1123/properties/label = \"edges.json\""
+        "snippet": "/features/1058/properties/label = \"index.html\""
       }
     },
     {
@@ -55123,29 +55079,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/1129/properties/label = \"index.html\""
-      }
-    },
-    {
-      "from": "Ventusltd/spiders::species/genome-spider/data/nodes.json",
-      "to": "Ventusltd/spiders::index.html",
-      "type": "manifest-path",
-      "evidence": {
-        "file": "species/genome-spider/data/nodes.json",
-        "line": 0,
-        "pattern": "json:\"label\"",
-        "snippet": "/features/1143/properties/label = \"index.html\""
-      }
-    },
-    {
-      "from": "Ventusltd/spiders::species/genome-spider/data/nodes.json",
-      "to": "Ventusltd/spiders::index.html",
-      "type": "manifest-path",
-      "evidence": {
-        "file": "species/genome-spider/data/nodes.json",
-        "line": 0,
-        "pattern": "json:\"label\"",
-        "snippet": "/features/1144/properties/label = \"index.html\""
+        "snippet": "/features/1126/properties/label = \"index.html\""
       }
     },
     {
@@ -55156,7 +55090,18 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/1176/properties/label = \"edges.json\""
+        "snippet": "/features/1127/properties/label = \"edges.json\""
+      }
+    },
+    {
+      "from": "Ventusltd/spiders::species/genome-spider/data/nodes.json",
+      "to": "Ventusltd/spiders::species/genome-spider/data/gridatlas-lineage.json",
+      "type": "manifest-path",
+      "evidence": {
+        "file": "species/genome-spider/data/nodes.json",
+        "line": 0,
+        "pattern": "json:\"label\"",
+        "snippet": "/features/1128/properties/label = \"gridatlas-lineage.json\""
       }
     },
     {
@@ -55167,7 +55112,18 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/1177/properties/label = \"manifest.json\""
+        "snippet": "/features/1129/properties/label = \"manifest.json\""
+      }
+    },
+    {
+      "from": "Ventusltd/spiders::species/genome-spider/data/nodes.json",
+      "to": "Ventusltd/spiders::index.html",
+      "type": "manifest-path",
+      "evidence": {
+        "file": "species/genome-spider/data/nodes.json",
+        "line": 0,
+        "pattern": "json:\"label\"",
+        "snippet": "/features/1133/properties/label = \"index.html\""
       }
     },
     {
@@ -55178,7 +55134,62 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/1179/properties/label = \"edges.json\""
+        "snippet": "/features/1134/properties/label = \"edges.json\""
+      }
+    },
+    {
+      "from": "Ventusltd/spiders::species/genome-spider/data/nodes.json",
+      "to": "Ventusltd/spiders::index.html",
+      "type": "manifest-path",
+      "evidence": {
+        "file": "species/genome-spider/data/nodes.json",
+        "line": 0,
+        "pattern": "json:\"label\"",
+        "snippet": "/features/1136/properties/label = \"index.html\""
+      }
+    },
+    {
+      "from": "Ventusltd/spiders::species/genome-spider/data/nodes.json",
+      "to": "Ventusltd/spiders::index.html",
+      "type": "manifest-path",
+      "evidence": {
+        "file": "species/genome-spider/data/nodes.json",
+        "line": 0,
+        "pattern": "json:\"label\"",
+        "snippet": "/features/1140/properties/label = \"index.html\""
+      }
+    },
+    {
+      "from": "Ventusltd/spiders::species/genome-spider/data/nodes.json",
+      "to": "Ventusltd/spiders::index.html",
+      "type": "manifest-path",
+      "evidence": {
+        "file": "species/genome-spider/data/nodes.json",
+        "line": 0,
+        "pattern": "json:\"label\"",
+        "snippet": "/features/1159/properties/label = \"index.html\""
+      }
+    },
+    {
+      "from": "Ventusltd/spiders::species/genome-spider/data/nodes.json",
+      "to": "Ventusltd/spiders::index.html",
+      "type": "manifest-path",
+      "evidence": {
+        "file": "species/genome-spider/data/nodes.json",
+        "line": 0,
+        "pattern": "json:\"label\"",
+        "snippet": "/features/1160/properties/label = \"index.html\""
+      }
+    },
+    {
+      "from": "Ventusltd/spiders::species/genome-spider/data/nodes.json",
+      "to": "Ventusltd/spiders::species/genome-spider/data/edges.json",
+      "type": "manifest-path",
+      "evidence": {
+        "file": "species/genome-spider/data/nodes.json",
+        "line": 0,
+        "pattern": "json:\"label\"",
+        "snippet": "/features/1192/properties/label = \"edges.json\""
       }
     },
     {
@@ -55189,7 +55200,29 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/1181/properties/label = \"manifest.json\""
+        "snippet": "/features/1193/properties/label = \"manifest.json\""
+      }
+    },
+    {
+      "from": "Ventusltd/spiders::species/genome-spider/data/nodes.json",
+      "to": "Ventusltd/spiders::species/genome-spider/data/edges.json",
+      "type": "manifest-path",
+      "evidence": {
+        "file": "species/genome-spider/data/nodes.json",
+        "line": 0,
+        "pattern": "json:\"label\"",
+        "snippet": "/features/1195/properties/label = \"edges.json\""
+      }
+    },
+    {
+      "from": "Ventusltd/spiders::species/genome-spider/data/nodes.json",
+      "to": "Ventusltd/spiders::species/genome-spider/data/manifest.json",
+      "type": "manifest-path",
+      "evidence": {
+        "file": "species/genome-spider/data/nodes.json",
+        "line": 0,
+        "pattern": "json:\"label\"",
+        "snippet": "/features/1197/properties/label = \"manifest.json\""
       }
     },
     {

@@ -54,7 +54,7 @@
   if (typeof window === 'undefined' || typeof document === 'undefined') return;
 
   var SCHEMA = 'ventus.estate-menu.v1';
-  var VERSION = '202609042147';   // the UTC generation this module was published at, read from the clock, never typed
+  var VERSION = '202609042211';   // the UTC generation this module was published at, read from the clock, never typed
   var BAR_ID = 'ventus-estate-menu-bar';
   var STYLE_ID = BAR_ID + '-css';
   var HOST_BAR_ID = 'gridatlas-menu-bar';           // the id gridatlas's own module installs
@@ -93,14 +93,14 @@
     "EDIT": {
       "purpose": "the spiders - commands with receipts, through GitHub's own auth",
       "entries": [
-        { "label": "Crawl the estate", "spider": "genome-spider", "status": "being built, spiders/species/genome-spider/" },
+        { "label": "Crawl all repositories", "spider": "genome-spider", "status": "being built, spiders/species/genome-spider/" },
         { "label": "Populate the engine", "spider": "population", "status": "being built, ventus-grid-engine/genome/" },
         { "label": "Immunity (cvaa fleet)", "tool": "cvaa/tools/fleet.mjs", "note": "trustworthy only when run in CI on the repository's own bytes" },
         { "label": "History replay (cvaa)", "tool": "cvaa/tools/replay.mjs", "note": "currently crashes: catch reads e.stdout when null" }
       ]
     },
     "VIEW": {
-      "purpose": "the estate's surfaces - hard-fought SCADA-type GUIs, reused not rebuilt - and whether the map is telling the truth",
+      "purpose": "the surfaces - hard-fought SCADA-type GUIs, reused not rebuilt - and whether the map is telling the truth",
       "surfaces": [
         { "label": "GlobalGrid2050 home", "url": "https://globalgrid2050.com/", "title": "GlobalGrid2050", "verified": "200" },
         { "label": "Pipeline News", "url": "https://globalgrid2050.com/uk_renewables_pipeline/v9.7/", "title": "UK Renewables Pipeline V9.7", "verified": "200" },
@@ -121,7 +121,7 @@
     "SCOPE": { "purpose": "unchanged - the grid, not the IDE" },
     "GRID":  { "purpose": "unchanged - the 63 layer proxies; the V8 panel returns beneath when authorised" },
     "ABOUT": {
-      "purpose": "the estate itself",
+      "purpose": "the genome and the version ledger",
       "entries": [
         { "label": "Genome", "source": "scratchpad/genome/cvaa/genome.md + VERIFICATION.md", "status": "written, corrected, not yet published" },
         { "label": "Six months", "source": "scratchpad/genome/cvaa/six-month-mutations.md" },
@@ -169,6 +169,27 @@
   function array(v) { return Array.prototype.slice.call(v || []); }
 
   function cleanText(v) { return String(v == null ? '' : v).replace(/\s+/g, ' ').trim(); }
+
+  /* -----------------------------------------------------------------------
+     Alphabetical ordering — the architect, 2026-09-04: "maintain menus and
+     the IDE apps in the menus amongst other things in alphabetical order."
+     Applied here, in the render layer, so it holds for whatever the
+     manifest lists next — never by hand-ordering the manifest's own JSON.
+     Sorted by the entry's VISIBLE label, case-insensitive, locale 'en-GB'.
+
+     EXCEPTION: version lists (the FILE entries whose kind is "versions",
+     see fileEntries()) are never run through this — they stay newest-first
+     with the current release leading, because alphabetical order of
+     v7, v8, v9, v9.4, v9.5.1 ... is meaningless to a reader and the build
+     that is actually live must lead. renderFile() below does not call this
+     helper for that reason; every other panel does. */
+  function sortByLabel(list) {
+    var copy = array(list);
+    copy.sort(function (a, b) {
+      return String((a && a.label) || '').localeCompare(String((b && b.label) || ''), 'en-GB', { sensitivity: 'base' });
+    });
+    return copy;
+  }
 
   function el(tag, className, text) {
     var node = document.createElement(tag);
@@ -394,9 +415,9 @@
       'align-items:center;justify-content:center;gap:11px;margin:0;padding:0;',
       'background:none;border:0}',
       '#' + BAR_ID + ' .gm-brand-slot .hud-header>div{flex:0 0 auto;line-height:1.05}',
-      '#' + BAR_ID + ' .gm-brand-slot .ventus-main{font-size:14px;font-weight:800;',
+      '#' + BAR_ID + ' .gm-brand-slot .ventus-main{text-transform:uppercase;font-size:14px;font-weight:800;',
       'letter-spacing:.2em;margin:0;color:#fff}',
-      '#' + BAR_ID + ' .gm-brand-slot .ventus-sub{font-size:5.5px;letter-spacing:.14em;',
+      '#' + BAR_ID + ' .gm-brand-slot .ventus-sub{text-transform:uppercase;font-size:5.5px;letter-spacing:.14em;',
       'color:#9adde8;white-space:nowrap}',
       /* Panel — menu-bar.js lines 206-211 */
       '#' + BAR_ID + ' .gm-panel{position:absolute;top:100%;left:0;min-width:240px;',
@@ -677,6 +698,8 @@
   function renderFile(panel) {
     panel.innerHTML = '';
     var surfaceUrls = viewSurfaceUrlSet();
+    /* NOT alphabetised — see the EXCEPTION on sortByLabel() above: these
+       are version lists, kept newest-first with the current build leading. */
     fileEntries().forEach(function (item) {
       appendGroup(panel, item.label);
       if (item.current) {
@@ -713,7 +736,7 @@
   function renderEdit(panel) {
     panel.innerHTML = '';
     appendNote(panel, (menuBlock('EDIT') || {}).purpose || '');
-    editEntries().forEach(function (item) {
+    sortByLabel(editEntries()).forEach(function (item) {
       panel.appendChild(makeRow(item.label, item.path, item.detail));
     });
   }
@@ -722,7 +745,7 @@
     panel.innerHTML = '';
     var data = viewEntries();
     appendGroup(panel, 'Surfaces');
-    data.surfaces.forEach(function (item) {
+    sortByLabel(data.surfaces).forEach(function (item) {
       panel.appendChild(makeLink(item.label + (item.isCurrent ? ' — you are here' : ''), item.url, {
         meta: item.title || null,
         current: item.isCurrent
@@ -730,7 +753,7 @@
     });
     if (data.proofs.length) {
       appendGroup(panel, 'Proofs (run from the spiders’ own tooling, not a link)');
-      data.proofs.forEach(function (item) {
+      sortByLabel(data.proofs).forEach(function (item) {
         panel.appendChild(makeRow(item.label, item.tool, null));
       });
     }
@@ -751,7 +774,7 @@
   function renderAbout(panel) {
     panel.innerHTML = '';
     appendGroup(panel, 'Genome');
-    aboutEntries().forEach(function (item) {
+    sortByLabel(aboutEntries()).forEach(function (item) {
       if (item.url) {
         panel.appendChild(makeLink(item.label, item.url, { current: isCurrentUrl(item.url) }));
       } else {

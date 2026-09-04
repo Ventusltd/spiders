@@ -26,14 +26,14 @@
     "EDIT": {
       "purpose": "the spiders - commands with receipts, through GitHub's own auth",
       "entries": [
-        { "label": "Crawl the estate", "spider": "genome-spider", "status": "being built, spiders/species/genome-spider/" },
+        { "label": "Crawl all repositories", "spider": "genome-spider", "status": "being built, spiders/species/genome-spider/" },
         { "label": "Populate the engine", "spider": "population", "status": "being built, ventus-grid-engine/genome/" },
         { "label": "Immunity (cvaa fleet)", "tool": "cvaa/tools/fleet.mjs", "note": "trustworthy only when run in CI on the repository's own bytes" },
         { "label": "History replay (cvaa)", "tool": "cvaa/tools/replay.mjs", "note": "currently crashes: catch reads e.stdout when null" }
       ]
     },
     "VIEW": {
-      "purpose": "the estate's surfaces - hard-fought SCADA-type GUIs, reused not rebuilt - and whether the map is telling the truth",
+      "purpose": "the surfaces - hard-fought SCADA-type GUIs, reused not rebuilt - and whether the map is telling the truth",
       "surfaces": [
         { "label": "GlobalGrid2050 home", "url": "https://globalgrid2050.com/", "title": "GlobalGrid2050", "verified": "200" },
         { "label": "Pipeline News", "url": "https://globalgrid2050.com/uk_renewables_pipeline/v9.7/", "title": "UK Renewables Pipeline V9.7", "verified": "200" },
@@ -54,7 +54,7 @@
     "SCOPE": { "purpose": "unchanged - the grid, not the IDE" },
     "GRID":  { "purpose": "unchanged - the 63 layer proxies; the V8 panel returns beneath when authorised" },
     "ABOUT": {
-      "purpose": "the estate itself",
+      "purpose": "the genome and the version ledger",
       "entries": [
         { "label": "Genome", "source": "scratchpad/genome/cvaa/genome.md + VERIFICATION.md", "status": "written, corrected, not yet published" },
         { "label": "Six months", "source": "scratchpad/genome/cvaa/six-month-mutations.md" },

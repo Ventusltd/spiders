@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Estate menu — demo (no host bar)</title>
+<style>
+  html{color-scheme:dark;background:#05070a}
+  body{margin:0;background:#05070a;color:#cfeef6;font-family:ui-monospace,SFMono-Regular,Menlo,monospace;padding:24px}
+  h1{font-size:16px;letter-spacing:.06em;color:#fff}
+  p{max-width:640px;line-height:1.5;color:#9aa9ad;font-size:12px}
+  code{color:#6bebff}
+</style>
+</head>
+<body>
+  <h1>VENTUS Estate Menu — blank-page demo</h1>
+  <p>
+    This page carries no <code>#gridatlas-menu-bar</code>. Loading
+    <code>estate-menu.js</code> here should render the shared bar at the top
+    of the page, push this text down by its own height (via
+    <code>--gridatlas-menu-bar-clear</code>), and mark no surface as current
+    (this file has no manifest URL of its own).
+  </p>
+  <p id="result">mount() has not reported yet.</p>
+
+  <script src="./estate-menu.js" defer></script>
+  <script defer>
+    window.addEventListener('load', function () {
+      setTimeout(function () {
+        var api = window.__VENTUS_ESTATE_MENU__;
+        var out = document.getElementById('result');
+        if (!api) { out.textContent = 'window.__VENTUS_ESTATE_MENU__ did not publish.'; return; }
+        var bar = document.getElementById('ventus-estate-menu-bar');
+        out.textContent = 'schema=' + api.schema + ' mounted-bar-present=' + !!bar
+          + ' File entries=' + api.entries('File').length
+          + ' View entries=' + api.entries('View').surfaces.length;
+      }, 50);
+    });
+  </script>
+</body>
+</html>

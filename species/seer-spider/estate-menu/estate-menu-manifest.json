@@ -1,0 +1,80 @@
+{
+  "schema": "ventus.estate-menu.v1",
+  "note": "Every URL here answered HTTP 200 on 2026-09-04 when probed from this session. A menu that links to a guessed URL is worse than no link, so nothing unverified is listed. Pipeline News versions are read from the publishing repository (globalgrid2050/uk_renewables_pipeline/) and each was probed.",
+  "verified_utc": "2026-09-04T20:20Z",
+  "menus": {
+    "FILE": {
+      "purpose": "versions and what is live - the version controls, kept out of the reader's face",
+      "entries": [
+        { "label": "Pipeline News versions", "kind": "versions", "current": "https://globalgrid2050.com/uk_renewables_pipeline/v9.7/",
+          "superseded": [
+            "https://globalgrid2050.com/uk_renewables_pipeline/v9.6.2/",
+            "https://globalgrid2050.com/uk_renewables_pipeline/v9.6.1/",
+            "https://globalgrid2050.com/uk_renewables_pipeline/v9.6/",
+            "https://globalgrid2050.com/uk_renewables_pipeline/v9.5.1/",
+            "https://globalgrid2050.com/uk_renewables_pipeline/v9.5/",
+            "https://globalgrid2050.com/uk_renewables_pipeline/v9.4/",
+            "https://globalgrid2050.com/uk_renewables_pipeline/v9/",
+            "https://globalgrid2050.com/uk_renewables_pipeline/v8/",
+            "https://globalgrid2050.com/uk_renewables_pipeline/v7/"
+          ],
+          "verified": "v9.7, v9.6.1, v9.6, v9.5.1, v9, v8 probed 200; v9.6 titles itself DISCONTINUED; v9.6.2, v9.5, v9.4, v7 present in repo, not individually probed" },
+        { "label": "Pipeline News intelligence releases", "kind": "versions", "current": "https://globalgrid2050.com/pipelinenews_intelligence/202609032329/", "verified": "200" },
+        { "label": "GridAtlas versions", "kind": "versions", "current": "https://ventusltd.github.io/gridatlas/atlas/", "pinned_pattern": "https://ventusltd.github.io/gridatlas/atlas/v/<generation>/", "ledger": "on-page under ABOUT; live generation read from atlas/current.json", "verified": "200, generation 202609041957 v9.115" }
+      ]
+    },
+    "EDIT": {
+      "purpose": "the spiders - commands with receipts, through GitHub's own auth",
+      "entries": [
+        { "label": "Crawl the estate", "spider": "genome-spider", "status": "being built, spiders/species/genome-spider/" },
+        { "label": "Populate the engine", "spider": "population", "status": "being built, ventus-grid-engine/genome/" },
+        { "label": "Immunity (cvaa fleet)", "tool": "cvaa/tools/fleet.mjs", "note": "trustworthy only when run in CI on the repository's own bytes" },
+        { "label": "History replay (cvaa)", "tool": "cvaa/tools/replay.mjs", "note": "currently crashes: catch reads e.stdout when null" }
+      ]
+    },
+    "VIEW": {
+      "purpose": "the estate's surfaces - hard-fought SCADA-type GUIs, reused not rebuilt - and whether the map is telling the truth",
+      "surfaces": [
+        { "label": "GlobalGrid2050 home", "url": "https://globalgrid2050.com/", "title": "GlobalGrid2050", "verified": "200" },
+        { "label": "Pipeline News", "url": "https://globalgrid2050.com/uk_renewables_pipeline/v9.7/", "title": "UK Renewables Pipeline V9.7", "verified": "200" },
+        { "label": "GridAtlas (VENTUS core)", "url": "https://ventusltd.github.io/gridatlas/atlas/", "title": "Grid Atlas", "verified": "200" },
+        { "label": "Repository federation", "url": "https://ventusltd.github.io/data-federation-map-for-globalgrid2050-all-repos/dashboard/sandbox/spider_full_po_test.html", "title": "Ventus Global Grid 2050 · The Spider Sandbox", "verified": "200, byte-identical to local d9f6f194" },
+        { "label": "Spider species lab", "url": "https://ventusltd.github.io/spiders/", "title": "Ventus Spiders", "verified": "200" },
+        { "label": "Grid engine receiver", "url": "https://ventusltd.github.io/ventus-grid-engine/", "title": "Ventus Global Grid 2050 · The Spider Sandbox", "verified": "200, e7520b4" },
+        { "label": "Immune system (cvaa)", "url": "https://ventusltd.github.io/cvaa/", "verified": "200" },
+        { "label": "GB network data", "url": "https://ventusltd.github.io/data-grid-gb/", "verified": "200" },
+        { "label": "Grid distance maths", "url": "https://ventusltd.github.io/grid-distance-maths/", "verified": "200" }
+      ],
+      "proofs": [
+        { "label": "Proofs (886 checks)", "tool": "gridatlas/tools/proofs/run-current.mjs" },
+        { "label": "Phone arrival", "tool": "gridatlas/tools/proofs/deep-link-visibility.browser.mjs" },
+        { "label": "Deep-link contract", "tool": "pipelinenews/tools/intelligence/202609012300-verify-atlas-deep-link-contract.mjs" }
+      ]
+    },
+    "SCOPE": { "purpose": "unchanged - the grid, not the IDE" },
+    "GRID":  { "purpose": "unchanged - the 63 layer proxies; the V8 panel returns beneath when authorised" },
+    "ABOUT": {
+      "purpose": "the estate itself",
+      "entries": [
+        { "label": "Genome", "source": "scratchpad/genome/cvaa/genome.md + VERIFICATION.md", "status": "written, corrected, not yet published" },
+        { "label": "Six months", "source": "scratchpad/genome/cvaa/six-month-mutations.md" },
+        { "label": "Latest receipts", "source": "the spiders' receipts, path to be declared by genome-spider README" },
+        { "label": "Version ledger", "source": "gridatlas/atlas/modules/202609030157-version-ledger.js" }
+      ]
+    }
+  },
+  "not_found": [
+    "https://globalgrid2050.com/pipelinenews/ (404)",
+    "https://ventusltd.github.io/pipelinenews/ (404)",
+    "https://globalgrid2050.com/gridatlas/atlas/ (404) - the MAP button points at ventusltd.github.io/gridatlas/atlas/"
+  ],
+  "homepage_constraints": {
+    "file": "globalgrid2050/index.html, 111,720 bytes, one inline AREAS data block",
+    "rules": [
+      "numbered snapshot homepage_v00N.html with line/word/char counts and a plain-English intention BEFORE any edit (homepage_versions/README.md)",
+      "the V8_ENTRY sentinel and GRIDATLAS_V9_AUTOMATION_START/END markers must survive byte-for-byte (scripts/catalogue_gridatlas_v9.py fails closed otherwise)",
+      "change only the structure he names; every existing name: and note: string byte-identical, diffed to prove it",
+      "the 2026-08-31 outage came from a string-surgery edit to that inline block; the menu therefore lands as ONE additive <script src> tag and touches nothing inside the file"
+    ]
+  }
+}

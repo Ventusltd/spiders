@@ -1,0 +1,27 @@
+{
+  "schema": "genome-spider.repos.v1",
+  "note": "The estate genome-spider walks by default. `root` is resolved relative to spider.mjs's own directory (spiders/species/genome-spider/), not to the current working directory, so this file works the same whether you run it from the repo root or from inside genome-spider/. Override with --root=<path> or the GENOME_SPIDER_ROOT env var to point at a different checkout layout (this is how spiders.yml's CI job uses it — see spiders/.github/workflows/genome.yml).",
+  "owner": "Ventusltd",
+  "root": "../../..",
+  "repos": [
+    "chatgpt-audits",
+    "claude",
+    "codex-chatgpt",
+    "companies",
+    "cvaa",
+    "data-centres-gb",
+    "data-federation-map-for-globalgrid2050-all-repos",
+    "data-gb-electricity",
+    "data-grid-gb",
+    "data-gridatlas",
+    "data-interconnectors",
+    "gb-electricity-ui",
+    "gemini",
+    "globalgrid2050",
+    "grid-distance-maths",
+    "gridatlas",
+    "pipelinenews",
+    "spiders",
+    "ventus-grid-engine"
+  ]
+}

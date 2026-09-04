@@ -1,0 +1,27 @@
+{
+  "schema_version": "atlas-cartridge-v0.2",
+  "generated_utc": "2026-09-04T21:31:09.384Z",
+  "public_title": "Ventus estate genome",
+  "public_strapline": "Repositories, internal units and the dependencies genome-spider could evidence between them",
+  "scope": {
+    "id": "estate-genome",
+    "label": "Estate genome (genome-spider)",
+    "scope_type": "repository_federation",
+    "parent_manifest": null
+  },
+  "counts": {
+    "nodes": 1184,
+    "edges": 2424,
+    "sectors": 0
+  },
+  "key_law_status": "SCREENING_GRADE_NOT_CERTIFICATION",
+  "key_note": "Every node carries real git history (first/last commit, commit count). Every edge carries a file+line or JSON-pointer citation. Genome markers (duplication, drift, dead code, re-doing, uncomposed) are listed separately in genome.json and are not folded into this cartridge's rag colouring beyond a coarse amber/red flag.",
+  "unresolved_findings": [],
+  "tier": "geojson",
+  "sources": {
+    "nodes": "nodes.json",
+    "edges": "edges.json",
+    "layers": null,
+    "sectors": null
+  }
+}

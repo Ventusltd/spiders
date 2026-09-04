@@ -1,0 +1,280 @@
+# genome-spider — CI runner.
+#
+# Command surface: this workflow is driven the same way the GridAtlas menu
+# bar issues verbs (crawl / populate / compose / verify — see
+# gridatlas/atlas/modules/202609031958-menu-bar.js for the live menu this
+# is meant to be wired to later; that wiring is a separate, future change
+# and this workflow does not touch gridatlas).
+#
+#   crawl    — walk the estate, emit the genome and gridatlas's cartridge
+#              lineage (gridatlas-lineage.json), commit whatever changed.
+#   verify   — run genome.proof.mjs against the genome already committed
+#              here, without re-crawling. Commits nothing but a receipt.
+#   populate — declared, not implemented. Fails loudly with a receipt
+#              rather than reporting a fake success.
+#   compose  — declared, not implemented. Same as populate.
+#
+# Every run — whichever command, whatever the outcome — writes one
+# append-only, timestamped receipt under species/genome-spider/receipts/
+# and updates receipts/LATEST.json, so a menu (or a human) always has
+# somewhere stable to read the outcome of the last run. See
+# species/genome-spider/README.md "Receipts" for the exact URL shape and
+# how to trigger each command.
+#
+# Vaccines this workflow satisfies (Ventusltd/cvaa/vaccines/):
+#   202608301442-pinned-actions.md        — every `uses:` below is pinned
+#     to a 40-character commit SHA (reusing the same pins already used
+#     elsewhere in this estate: actions/checkout@11bd719... is v4.2.2,
+#     actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 is v4).
+#   202608301443-least-permissions.md     — an explicit `permissions:`
+#     block (contents: write, nothing else; write is used only to commit
+#     genome data and receipts back into this repo), timeout-minutes on
+#     the job, and workflow_dispatch present alongside `schedule:`.
+#   202608301323-no-per-release-workflows.md — one workflow file, not
+#     timestamped, not regenerated per run. Commands are an input, not a
+#     new file.
+#   202608301325-self-terminating-loops.md — the scheduled path always
+#     resolves to `crawl`; crawl's commit step has an explicit
+#     nothing-to-commit exit-0 path (see "Commit if changed" step) instead
+#     of failing, or committing noise, when nothing is pending.
+
+name: genome-spider
+
+on:
+  workflow_dispatch:
+    inputs:
+      command:
+        description: "Command to run: crawl | verify | populate | compose"
+        required: true
+        type: choice
+        options:
+          - crawl
+          - verify
+          - populate
+          - compose
+        default: crawl
+  schedule:
+    # Daily. Schedule and push both always run `crawl` — only
+    # workflow_dispatch can choose a different command (see "Resolve
+    # command" below).
+    - cron: '17 3 * * *'
+  push:
+    branches: [main]
+    paths:
+      - 'species/genome-spider/**'
+      - '.github/workflows/genome.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: genome-spider
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      # ---------------------------------------------------------------
+      # Checkout: the spiders repo itself, plus every other repo
+      # genome-spider walks, all as siblings under one estate/ directory —
+      # the same layout genome-spider expects locally (see
+      # species/genome-spider/config/repos.json "root"). A repo that can't
+      # be checked out (private, renamed, gone) does not fail the job —
+      # spider.mjs already records that honestly in repos_skipped, which
+      # is the point of that field.
+      # ---------------------------------------------------------------
+      - name: Checkout spiders (self)
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          path: estate/spiders
+          fetch-depth: 0
+
+      - name: Checkout chatgpt-audits
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        continue-on-error: true
+        with: { repository: Ventusltd/chatgpt-audits, path: estate/chatgpt-audits, fetch-depth: 0 }
+      - name: Checkout claude
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        continue-on-error: true
+        with: { repository: Ventusltd/claude, path: estate/claude, fetch-depth: 0 }
+      - name: Checkout codex-chatgpt
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        continue-on-error: true
+        with: { repository: Ventusltd/codex-chatgpt, path: estate/codex-chatgpt, fetch-depth: 0 }
+      - name: Checkout companies
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        continue-on-error: true
+        with: { repository: Ventusltd/companies, path: estate/companies, fetch-depth: 0 }
+      - name: Checkout cvaa
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        continue-on-error: true
+        with: { repository: Ventusltd/cvaa, path: estate/cvaa, fetch-depth: 0 }
+      - name: Checkout data-centres-gb
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        continue-on-error: true
+        with: { repository: Ventusltd/data-centres-gb, path: estate/data-centres-gb, fetch-depth: 0 }
+      - name: Checkout data-federation-map-for-globalgrid2050-all-repos
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        continue-on-error: true
+        with: { repository: Ventusltd/data-federation-map-for-globalgrid2050-all-repos, path: estate/data-federation-map-for-globalgrid2050-all-repos, fetch-depth: 0 }
+      - name: Checkout data-gb-electricity
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        continue-on-error: true
+        with: { repository: Ventusltd/data-gb-electricity, path: estate/data-gb-electricity, fetch-depth: 0 }
+      - name: Checkout data-grid-gb
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        continue-on-error: true
+        with: { repository: Ventusltd/data-grid-gb, path: estate/data-grid-gb, fetch-depth: 0 }
+      - name: Checkout data-gridatlas
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        continue-on-error: true
+        with: { repository: Ventusltd/data-gridatlas, path: estate/data-gridatlas, fetch-depth: 0 }
+      - name: Checkout data-interconnectors
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        continue-on-error: true
+        with: { repository: Ventusltd/data-interconnectors, path: estate/data-interconnectors, fetch-depth: 0 }
+      - name: Checkout gb-electricity-ui
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        continue-on-error: true
+        with: { repository: Ventusltd/gb-electricity-ui, path: estate/gb-electricity-ui, fetch-depth: 0 }
+      - name: Checkout gemini
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        continue-on-error: true
+        with: { repository: Ventusltd/gemini, path: estate/gemini, fetch-depth: 0 }
+      - name: Checkout globalgrid2050
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        continue-on-error: true
+        with: { repository: Ventusltd/globalgrid2050, path: estate/globalgrid2050, fetch-depth: 0 }
+      - name: Checkout grid-distance-maths
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        continue-on-error: true
+        with: { repository: Ventusltd/grid-distance-maths, path: estate/grid-distance-maths, fetch-depth: 0 }
+      - name: Checkout gridatlas
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        continue-on-error: true
+        with: { repository: Ventusltd/gridatlas, path: estate/gridatlas, fetch-depth: 0 }
+      - name: Checkout pipelinenews
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        continue-on-error: true
+        with: { repository: Ventusltd/pipelinenews, path: estate/pipelinenews, fetch-depth: 0 }
+      - name: Checkout ventus-grid-engine
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        continue-on-error: true
+        with: { repository: Ventusltd/ventus-grid-engine, path: estate/ventus-grid-engine, fetch-depth: 0 }
+
+      - name: Setup Node
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v4
+        with:
+          node-version: '22'
+
+      - name: Resolve command
+        id: cmd
+        run: |
+          set -euo pipefail
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "value=${{ inputs.command }}" >> "$GITHUB_OUTPUT"
+          else
+            echo "value=crawl" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Run crawl (populate genome.json)
+        if: steps.cmd.outputs.value == 'crawl'
+        working-directory: estate/spiders/species/genome-spider
+        run: node spider.mjs
+
+      - name: Run gridatlas lineage (populate gridatlas-lineage.json)
+        if: steps.cmd.outputs.value == 'crawl'
+        working-directory: estate/spiders/species/genome-spider
+        run: node lineage.mjs
+
+      - name: Run proof
+        if: steps.cmd.outputs.value == 'crawl' || steps.cmd.outputs.value == 'verify'
+        id: proof
+        working-directory: estate/spiders/species/genome-spider
+        run: |
+          set +e
+          node genome.proof.mjs 2>&1 | tee /tmp/proof-output.txt
+          code=${PIPESTATUS[0]}
+          set -e
+          echo "exit_code=$code" >> "$GITHUB_OUTPUT"
+          summary=$(grep -E '^[0-9]+/[0-9]+ checks passed$' /tmp/proof-output.txt | tail -1)
+          echo "summary=${summary}" >> "$GITHUB_OUTPUT"
+
+      - name: Write receipt (populate / compose — not yet implemented)
+        if: steps.cmd.outputs.value == 'populate' || steps.cmd.outputs.value == 'compose'
+        working-directory: estate/spiders/species/genome-spider
+        run: |
+          node make-receipt.mjs \
+            --command="${{ steps.cmd.outputs.value }}" \
+            --status=not-implemented \
+            --detail="${{ steps.cmd.outputs.value }} is declared on the command surface but not yet built. See README.md Commands." \
+            --git-sha="${{ github.sha }}" \
+            --event-name="${{ github.event_name }}" \
+            --repo-url-base="https://github.com/${{ github.repository }}/blob/main/species/genome-spider" \
+            --out-dir=receipts
+
+      - name: Write receipt (crawl / verify)
+        if: steps.cmd.outputs.value == 'crawl' || steps.cmd.outputs.value == 'verify'
+        working-directory: estate/spiders/species/genome-spider
+        run: |
+          status=ok
+          if [ "${{ steps.proof.outputs.exit_code }}" != "0" ]; then status=failed; fi
+          node make-receipt.mjs \
+            --command="${{ steps.cmd.outputs.value }}" \
+            --status="$status" \
+            --git-sha="${{ github.sha }}" \
+            --event-name="${{ github.event_name }}" \
+            --genome=data/genome.json \
+            --proof-exit="${{ steps.proof.outputs.exit_code }}" \
+            --proof-summary="${{ steps.proof.outputs.summary }}" \
+            --repo-url-base="https://github.com/${{ github.repository }}/blob/main/species/genome-spider" \
+            --out-dir=receipts
+
+      # -----------------------------------------------------------------
+      # Commit. Receipts are append-only — every run adds a new file, so
+      # they are always staged. The genome data files are staged too, but
+      # only actually committed if something besides generated_at changed
+      # (that field is set fresh on every run and would otherwise force a
+      # commit every time — see README.md "Why genome.json's timestamp is
+      # excluded from the change check"). This is the self-terminating
+      # exit-0 path cvaa vaccine 202608301325 requires of a scheduled job:
+      # nothing pending is a clean, quiet success, not a failure.
+      # -----------------------------------------------------------------
+      - name: Commit if changed
+        working-directory: estate/spiders
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add species/genome-spider/data species/genome-spider/receipts
+          if git diff --cached --quiet; then
+            echo "No changes staged; nothing to commit."
+            exit 0
+          fi
+          MATERIAL=$(git diff --cached -- species/genome-spider/data \
+            | grep -E '^[+-]' \
+            | grep -v '^+++' | grep -v '^---' \
+            | grep -v '"generated_at"' || true)
+          if [ -z "$MATERIAL" ]; then
+            git restore --staged species/genome-spider/data
+          fi
+          if git diff --cached --quiet; then
+            echo "Only generated_at changed in genome data and no receipt was staged; nothing material to commit."
+            exit 0
+          fi
+          git commit -m "genome-spider: ${{ steps.cmd.outputs.value }} run ${{ github.run_id }}"
+          git push
+
+      - name: Fail the run if the command was not implemented
+        if: steps.cmd.outputs.value == 'populate' || steps.cmd.outputs.value == 'compose'
+        run: |
+          echo "'${{ steps.cmd.outputs.value }}' is declared on the command surface but not implemented yet. A receipt recording this was committed; this step exists so the workflow run itself reads red, not a false green." >&2
+          exit 1
+
+      - name: Fail the run if the proof failed
+        if: (steps.cmd.outputs.value == 'crawl' || steps.cmd.outputs.value == 'verify') && steps.proof.outputs.exit_code != '0'
+        run: |
+          echo "genome.proof.mjs exited ${{ steps.proof.outputs.exit_code }}. A receipt recording the failure was committed." >&2
+          exit 1

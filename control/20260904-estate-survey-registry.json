@@ -1,0 +1,181 @@
+{
+  "schema": "spiders.estate-survey-registry.v1",
+  "owner": "Ventusltd",
+  "scope": "public-owner-repositories",
+  "captured_utc": "2026-09-04T00:07:36Z",
+  "capture_method": "git ls-remote --symref <repository> HEAD",
+  "repository_count": 33,
+  "shard_count": 4,
+  "checks": [
+    "repository-metadata",
+    "default-branch-head",
+    "workflow-inventory"
+  ],
+  "repositories": [
+    {
+      "name": "Mahabharata",
+      "default_branch": "main",
+      "head_sha": "b9b70d8656b8fef2a8a222be0095d8a6d6da2e77"
+    },
+    {
+      "name": "Solar-PV-Hybrid-and-off-grid",
+      "default_branch": "main",
+      "head_sha": "a74f5ee6bffe91a4251469a54e2206bee62b85b2"
+    },
+    {
+      "name": "architecture",
+      "default_branch": "main",
+      "head_sha": "c07260091c47e96c7df8207bd50b0e0ce211d01f"
+    },
+    {
+      "name": "chatgpt-audits",
+      "default_branch": "main",
+      "head_sha": "661e171193b3439650b85facead651b13e674a76"
+    },
+    {
+      "name": "claude",
+      "default_branch": "main",
+      "head_sha": "d571709be7ad83fcf8011d6bd169cbb9772598ee"
+    },
+    {
+      "name": "codex-chatgpt",
+      "default_branch": "main",
+      "head_sha": "9bc0a5feaa81fb7181cfe86c42955c9f84b8671f"
+    },
+    {
+      "name": "companies",
+      "default_branch": "main",
+      "head_sha": "ac70a37408d4f434e89e8a80cc36d40e450d3cfb"
+    },
+    {
+      "name": "cvaa",
+      "default_branch": "main",
+      "head_sha": "a1678df0eaaddb0cb96b1495dd32ce9a59078915"
+    },
+    {
+      "name": "data-centres-gb",
+      "default_branch": "main",
+      "head_sha": "f9f47286fae63872375c558fc89ff4b1793914e4"
+    },
+    {
+      "name": "data-federation-map-for-globalgrid2050-all-repos",
+      "default_branch": "main",
+      "head_sha": "b759a7d2b5ec0dcc233c27db813ceadc5469157d"
+    },
+    {
+      "name": "data-gb-electricity",
+      "default_branch": "main",
+      "head_sha": "d310e3cec8cd14bc7cd3eef1e37037197bcb0798"
+    },
+    {
+      "name": "data-grid-gb",
+      "default_branch": "main",
+      "head_sha": "5181de3423e4fe50c77c568b9f3066c61a1d9e41"
+    },
+    {
+      "name": "data-gridatlas",
+      "default_branch": "main",
+      "head_sha": "8bf88da9e210ce9f61dc0398869d3369f3fa2445"
+    },
+    {
+      "name": "data-interconnectors",
+      "default_branch": "main",
+      "head_sha": "1e00d0e4d7bf3ddbc86224b3b6be5c2f3eaabf86"
+    },
+    {
+      "name": "data_uk_dno_and_tso",
+      "default_branch": "main",
+      "head_sha": "3d46dd63ce9bfc082ad7c506c056d242f159d8b6"
+    },
+    {
+      "name": "gb-electricity-ui",
+      "default_branch": "main",
+      "head_sha": "5b4533914bb2bcad7f5ea697af00faf67cf626cc"
+    },
+    {
+      "name": "gemini",
+      "default_branch": "main",
+      "head_sha": "16122ae08d45cec6f56838fb74938a1ab8131f81"
+    },
+    {
+      "name": "globalgrid2050",
+      "default_branch": "main",
+      "head_sha": "7d00781b6993b9038a1a8bedf2c88a4eb0109ad4"
+    },
+    {
+      "name": "globalgrid2050-hompage",
+      "default_branch": "main",
+      "head_sha": "a8ae433687b37c40f6344edb1422a70c807e8ba0"
+    },
+    {
+      "name": "grid-distance-maths",
+      "default_branch": "main",
+      "head_sha": "30d2f817a4b007b7c3be334f3aff308331a848b8"
+    },
+    {
+      "name": "gridatlas",
+      "default_branch": "main",
+      "head_sha": "cef7b8fd8b6e95d81618bd99c8d50017bafaac95"
+    },
+    {
+      "name": "pandapower",
+      "default_branch": "develop",
+      "head_sha": "109416d25abb77d75bd3622d7492e1db57ae678e"
+    },
+    {
+      "name": "pipelinenews",
+      "default_branch": "main",
+      "head_sha": "25f03422d12ed6e5bfca860a825d6273c2e0c296"
+    },
+    {
+      "name": "pv-arc-protection-circuit",
+      "default_branch": "main",
+      "head_sha": "8c74069d192741f07d36752381e14a39328f002a"
+    },
+    {
+      "name": "registry_of_all_content_in_repos_and_dependencies",
+      "default_branch": "main",
+      "head_sha": "76c9612bafb5562cf4c619cd1d71833e973a6ff4"
+    },
+    {
+      "name": "reports",
+      "default_branch": "main",
+      "head_sha": "7648f57c5a50c11982de00b82b1fddac1d009056"
+    },
+    {
+      "name": "seed-data",
+      "default_branch": "main",
+      "head_sha": "aec2b3d0004ef65d907794858cc973b7a932e2bf"
+    },
+    {
+      "name": "solar-electrical-topology-analysis-engine-text-based",
+      "default_branch": "main",
+      "head_sha": "d3b4c497144c2c9b3e8f0e82117e7e9abe4672b9"
+    },
+    {
+      "name": "solar-repowering-whitepaper",
+      "default_branch": "main",
+      "head_sha": "be02c9bbaa83584ec38f14c8092e4a680fc93f67"
+    },
+    {
+      "name": "spiders",
+      "default_branch": "main",
+      "head_sha": "6b6af3c24898ea1c861df5aeeb8959c71ddbe253"
+    },
+    {
+      "name": "uk-dno-data",
+      "default_branch": "main",
+      "head_sha": "f90b038c9309b01b5f3eda2328b5853d823d1d0c"
+    },
+    {
+      "name": "v11",
+      "default_branch": "main",
+      "head_sha": "debb30e092a1983e775d2ab4126995ab7bb72fe3"
+    },
+    {
+      "name": "youengineer-code-review",
+      "default_branch": "main",
+      "head_sha": "f86dcb229b40ea774b2b5af049dbdc4b90b476de"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+name: Bounded public estate survey
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - 'codex/**'
+    paths:
+      - control/20260904-estate-survey-registry.json
+      - control/ESTATE_SURVEY.md
+      - tools/estate-survey.mjs
+      - tools/test-estate-survey.mjs
+      - tools/test-cloud-workflows.mjs
+      - .github/workflows/20260904-estate-survey.yml
+  pull_request:
+    paths:
+      - control/20260904-estate-survey-registry.json
+      - control/ESTATE_SURVEY.md
+      - tools/estate-survey.mjs
+      - tools/test-estate-survey.mjs
+      - tools/test-cloud-workflows.mjs
+      - .github/workflows/20260904-estate-survey.yml
+
+permissions:
+  contents: read
+
+concurrency:
+  group: spiders-estate-survey-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  prepare:
+    name: Validate immutable local registry
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Prove observer and workflow policy
+        run: |
+          node tools/test-estate-survey.mjs
+          node tools/test-cloud-workflows.mjs
+          node tools/estate-survey.mjs registry \
+            --registry control/20260904-estate-survey-registry.json \
+            --out artifacts/estate-survey-local.json
+      - name: Upload local registry receipt
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: estate-survey-local
+          path: artifacts/estate-survey-local.json
+          if-no-files-found: error
+          retention-days: 30
+
+  survey:
+    name: Survey shard ${{ matrix.shard }}
+    needs: prepare
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      max-parallel: 4
+      matrix:
+        shard: [0, 1, 2, 3]
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Read public repository state
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: >-
+          node tools/estate-survey.mjs survey
+          --registry control/20260904-estate-survey-registry.json
+          --shard ${{ matrix.shard }}
+          --out artifacts/estate-survey-shard-${{ matrix.shard }}.json
+      - name: Upload shard receipt
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: estate-survey-shard-${{ matrix.shard }}
+          path: artifacts/estate-survey-shard-${{ matrix.shard }}.json
+          if-no-files-found: error
+          retention-days: 30
+
+  aggregate:
+    name: Compare cloud observations with local registry
+    needs: [prepare, survey]
+    if: always()
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Download local and cloud receipts
+        uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093
+        with:
+          pattern: estate-survey-*
+          path: artifacts/downloaded
+          merge-multiple: true
+      - name: Aggregate and fail closed on observer faults
+        run: >-
+          node tools/estate-survey.mjs aggregate
+          --registry control/20260904-estate-survey-registry.json
+          --local artifacts/downloaded/estate-survey-local.json
+          --shards artifacts/downloaded/estate-survey-shard-0.json,artifacts/downloaded/estate-survey-shard-1.json,artifacts/downloaded/estate-survey-shard-2.json,artifacts/downloaded/estate-survey-shard-3.json
+          --out artifacts/estate-survey-aggregate.json
+      - name: Upload aggregate receipt
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: estate-survey-aggregate
+          path: artifacts/estate-survey-aggregate.json
+          if-no-files-found: error
+          retention-days: 30

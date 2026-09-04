@@ -54,7 +54,7 @@
   if (typeof window === 'undefined' || typeof document === 'undefined') return;
 
   var SCHEMA = 'ventus.estate-menu.v1';
-  var VERSION = '1.0.0';
+  var VERSION = '202609042147';   // the UTC generation this module was published at, read from the clock, never typed
   var BAR_ID = 'ventus-estate-menu-bar';
   var STYLE_ID = BAR_ID + '-css';
   var HOST_BAR_ID = 'gridatlas-menu-bar';           // the id gridatlas's own module installs
@@ -357,11 +357,31 @@
       /* The right group is empty by design (see buildBar): it must take no
          space, or the single menu group would be squeezed to half the bar. */
       '#' + BAR_ID + ' .gm-side-right{flex:0 0 0;width:0;overflow:hidden}',
-      /* The logo no longer sits between two groups, so it does not need the
-         centred, width-capped slot the reference gives it; it is a compact
-         leading mark with a gap before the first title. */
-      '#' + BAR_ID + ' .gm-brand-slot{flex:0 0 auto!important;max-width:none!important;',
-      'justify-content:flex-start!important;padding:0 14px 0 8px!important;text-align:left!important}',
+      /* THE WORDMARK STAYS IN THE MIDDLE, AS V8 HAS IT. The architect,
+         2026-09-04: "Ventus logo is the main event, must be in the middle of
+         the app" and "keep it as it is, don't do it again - just the menus
+         are the additions". So the six menus are one group on the left and
+         the wordmark is centred in the bar independently of them, the way
+         V8's own header centres VENTUS between SYSTEM TIME and 2050 TARGET.
+         V8's own sizes (ventusv8.css lines 7-8): 17px/800/5px spacing over
+         6.5px/#888/2px, both uppercased by CSS from V8's source text. */
+      '#' + BAR_ID + ' .gm-brand-slot{position:absolute!important;left:50%!important;top:0!important;',
+      'bottom:0!important;transform:translateX(-50%);flex:none!important;max-width:none!important;',
+      'justify-content:center!important;padding:0 8px!important;text-align:center!important;pointer-events:none}',
+      /* The wordmark's type is the live gridatlas bar's (14px desktop, 11px
+         phone, set further down from menu-bar.js) - the look the architect
+         has been reviewing and accepted, and the one this bar must be
+         indistinguishable from. V8's source text is uppercased by that CSS. */
+      /* A phone cannot hold six titles and a centred wordmark on one line
+         without one crossing the other, so the wordmark keeps the centre of
+         its own row - centred on the VIEWPORT, not on the bar's padded
+         content box, which was measured 8px off - and the menus run beneath
+         it. The bar reports its real rendered height through the clear
+         variable, so the page is pushed down by both rows. */
+      '@media(max-width:700px){#' + BAR_ID + '{flex-wrap:wrap;height:auto!important;padding-top:30px!important}',
+      '#' + BAR_ID + ' .gm-brand-slot{position:absolute!important;left:0!important;right:0!important;top:0!important;',
+      'bottom:auto!important;height:30px;transform:none;pointer-events:none}',
+      '#' + BAR_ID + ' .gm-side-left{flex:0 0 100%;justify-content:center}}',
       /* Brand slot — menu-bar.js lines 192-205. GridAtlas fuses its real
          .hud-header DOM node in here (moved, not cloned); this module has
          no such node to move, so it builds an equivalent .hud-header shape
@@ -446,7 +466,11 @@
     var header = el('div', 'hud-header');
     var main = el('div');
     main.appendChild(el('div', 'ventus-main', 'VENTUS'));
-    main.appendChild(el('div', 'ventus-sub', 'GLOBALGRID2050 ESTATE'));
+    /* The wordmark is V8's, exactly - the same source text the V8 shell
+       carries (ventusv8.css uppercases it): VENTUS over Cables & Connectivity(R).
+       Not restyled, not reworded, not moved: it is the main event and it sits
+       in the middle, as V8 always had it. The menus are the only addition. */
+    main.appendChild(el('div', 'ventus-sub', 'Cables & Connectivity®'));
     header.appendChild(main);
     slot.appendChild(header);
     return slot;
@@ -506,7 +530,7 @@
   function buildBar(doc) {
     var nav = doc.createElement('nav');
     nav.id = BAR_ID;
-    nav.setAttribute('aria-label', 'Estate menu');
+    nav.setAttribute('aria-label', 'Menu');
 
     var left = el('div', 'gm-side gm-side-left');
     var right = el('div', 'gm-side gm-side-right');
@@ -726,7 +750,7 @@
 
   function renderAbout(panel) {
     panel.innerHTML = '';
-    appendGroup(panel, 'The estate genome');
+    appendGroup(panel, 'Genome');
     aboutEntries().forEach(function (item) {
       if (item.url) {
         panel.appendChild(makeLink(item.label, item.url, { current: isCurrentUrl(item.url) }));

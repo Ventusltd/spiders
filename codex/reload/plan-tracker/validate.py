@@ -116,12 +116,24 @@ def main():
     args = parser.parse_args()
     plan = json.loads(args.plan.read_text(encoding='utf8'))
     errors = validate(plan, args.evidence_root)
+    roadmap = None
+    if plan.get('nextFiftyRoadmap'):
+        if plan['nextFiftyRoadmap'] != 'NEXT-50.json':
+            errors.append('unsupported roadmap filename')
+        else:
+            from validate_roadmap import validate as validate_queue
+            roadmap_path = args.plan.with_name('NEXT-50.json')
+            roadmap = json.loads(roadmap_path.read_bytes())
+            errors.extend(validate_queue(roadmap))
     # Deliberately excludes artifact paths, machine paths and arbitrary evidence content.
     result = {'schema': 'spiders.plan-validation.v1', 'planSha256': digest(args.plan),
               'ok': not errors, 'errors': errors,
               'scope': 'Checkpoint structure and supplied receipt integrity; not a product pass.',
               'tasks': [{k: t[k] for k in ('id', 'status', 'owner', 'dependsOn', 'nextAction')} for t in plan['tasks']]}
     result['campaign'] = plan.get('campaign', [])
+    if roadmap:
+        result['roadmapSha256'] = digest(roadmap_path)
+        result['nextFifty'] = [{k: item[k] for k in ('id', 'title', 'owner', 'status', 'dependsOn', 'nextAction', 'generation')} for item in roadmap['items']]
     args.out.mkdir(parents=True, exist_ok=True)
     (args.out / 'validation.json').write_text(json.dumps(result, indent=2) + '\n', encoding='utf8')
     lines = ['# Build plan resume', '', 'Plan SHA-256: ' + result['planSha256'], '', result['scope'], '']
@@ -131,6 +143,10 @@ def main():
         lines.extend(['', '## Five-version campaign', '', 'Statuses are declared checkpoints; consult exact receipts before advancing.', ''])
         for version in result['campaign']:
             lines.append(f"- {version['id']} | {version.get('generation') or 'not allocated'} | {version['status']}: {version['change']}")
+    if roadmap:
+        lines.extend(['', '## Next fifty substantive increments', '', 'Roadmap SHA-256: ' + result['roadmapSha256'], 'Planned and in-progress entries are not accepted builds.', ''])
+        for item in result['nextFifty']:
+            lines.append(f"- {item['id']} | {item['status']} | {item['title']} | dependencies: {', '.join(item['dependsOn']) or 'baseline'}: {item['nextAction']}")
     (args.out / 'RESUME.md').write_text('\n'.join(lines) + '\n', encoding='utf8')
     print(json.dumps({'ok': result['ok'], 'tasks': len(plan['tasks']), 'errors': errors}))
     raise SystemExit(0 if not errors else 1)

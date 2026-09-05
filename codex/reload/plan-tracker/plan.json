@@ -1,6 +1,6 @@
 {
   "schema": "spiders.build-plan.v1",
-  "updatedAt": "2026-09-05T19:52:35.405105+00:00",
+  "updatedAt": "2026-09-05T19:53:10.314024+00:00",
   "baselineRelease": {
     "generation": "202609051820",
     "sourceCommit": "faa66443a7754878f51b2cc5155a21692dbdaecf",
@@ -543,6 +543,20 @@
       "nextAction": "Retain scoped proof; address later observed Module Ready polling race separately in N07.",
       "requirementStatus": null,
       "acceptanceScope": "Exact served and live desktop/mobile viewport cases; GIS drawing remains unreported, no transfer to new full print/fleet acceptance."
+    },
+    {
+      "id": "N06",
+      "change": "Restart one design tool while preserving sibling sessions",
+      "generation": "202609051948",
+      "status": "failed",
+      "sourceCommit": "510d3fa6668cb33249da9adc7e4be7da5412642e",
+      "engineCommit": "41063ac8cc82d24965a6e2ca1262b8bcd8bb0a36",
+      "buildSha256": "d8c576bd7fe3d6c57f5810c36810d99bc95239534f875cb2b7495d702116ab9e",
+      "publicationCommit": "a7fb24c22decd71166a6f9d1265b06c87425d9eb",
+      "servedPublicationCommit": null,
+      "nextAction": "Retain desktop pass and phone failure; N07 must prove event-driven readiness and recovery in its own immutable candidate.",
+      "requirementStatus": null,
+      "acceptanceScope": "Not accepted: actual local phone run failed despite earlier override preflight passes."
     }
   ],
   "nextFiftyRoadmap": "NEXT-50.json"

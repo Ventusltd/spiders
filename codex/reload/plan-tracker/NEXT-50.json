@@ -107,33 +107,33 @@
       "id": "N06",
       "title": "Independent tool session reset",
       "owner": "testcode",
-      "module": "sandbox/capsules/tool-layers/session-reset.js",
+      "module": "sandbox/capsules/tool-layers/session-restart.js",
       "dependsOn": [
         "N04"
       ],
-      "status": "planned",
+      "status": "blocked",
       "feature": "Add explicit per-tool reset while ordinary close/reopen retains state.",
       "requiredProof": "Reset affects chosen tool only; hidden peer state retained",
-      "generation": null,
+      "generation": "202609051948",
       "release": null,
       "evidence": [],
-      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+      "nextAction": "Retain desktop pass and phone failure; N07 must prove event-driven readiness and recovery in its own immutable candidate."
     },
     {
       "id": "N07",
       "title": "Tool-load failure recovery",
       "owner": "testcode",
-      "module": "sandbox/capsules/tool-layers/load-recovery.js",
+      "module": "sandbox/capsules/tool-layers/recovery.js",
       "dependsOn": [
         "N04"
       ],
-      "status": "planned",
+      "status": "in_progress",
       "feature": "Expose failed dependency/load state with bounded retry and preserved parent map.",
       "requiredProof": "Missing script and timed-out init; retry success without duplicate iframe",
       "generation": null,
       "release": null,
       "evidence": [],
-      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+      "nextAction": "Prove explicit recovery confirmation, external document classification and transient Ready observation; retain N06 failed run."
     },
     {
       "id": "N08",

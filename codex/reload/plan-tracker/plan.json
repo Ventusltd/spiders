@@ -1,6 +1,6 @@
 {
   "schema": "spiders.build-plan.v1",
-  "updatedAt": "2026-09-05T20:14:20.340166+00:00",
+  "updatedAt": "2026-09-05T20:19:31.371334+00:00",
   "baselineRelease": {
     "generation": "202609051820",
     "sourceCommit": "faa66443a7754878f51b2cc5155a21692dbdaecf",
@@ -613,6 +613,20 @@
       "nextAction": "Local desktop/mobile passed; await consumer served/live route-state proof. Producer2008 CI passed.",
       "requirementStatus": null,
       "acceptanceScope": "Read-only route snapshot pending own consumer proof; no route solver change."
+    },
+    {
+      "id": "N11",
+      "change": "Resolve current sibling layer owner and restart destination",
+      "generation": "202609052015",
+      "status": "built",
+      "sourceCommit": "7cc598e15d1e0695a8e95bd1a484382fa3ca04df",
+      "engineCommit": "a6a9af8449d445d9204021f6c76347a25f80593c",
+      "buildSha256": "2452688ed6e465d31e260d8c6606858a0aa7001b4c8ade056908c518192b53a8",
+      "publicationCommit": "616c2df25aa7d0a0e82d274665fb5d1b7d0c3496",
+      "servedPublicationCommit": null,
+      "nextAction": "Local preview passed; await served bytes and real sibling navigation in this exact candidate.",
+      "requirementStatus": null,
+      "acceptanceScope": "Pending own served/live proof; historical dependency declarations remain separate."
     }
   ],
   "nextFiftyRoadmap": "NEXT-50.json"

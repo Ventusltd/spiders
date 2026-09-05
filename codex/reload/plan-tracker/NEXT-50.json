@@ -206,7 +206,7 @@
       "status": "in_progress",
       "feature": "Resolve known sibling links through pinned tool registry without copying unrelated runtimes.",
       "requiredProof": "Module/DC/GIS links resolve exact entries; undeclared owner remains blocked",
-      "generation": null,
+      "generation": "202609052015",
       "release": null,
       "evidence": [],
       "nextAction": "Pure registry fixtures pass; integrate load-time title/readiness and actual-owner binding without rewriting original navigation."
@@ -215,17 +215,17 @@
       "id": "N12",
       "title": "Nested source-scope manifest",
       "owner": "teleprinter",
-      "module": "drivers/codex/tool-source-scope.mjs",
+      "module": "sandbox/capsules/tool-layers/source-scopes.mjs",
       "dependsOn": [
         "N11"
       ],
-      "status": "planned",
+      "status": "in_progress",
       "feature": "Describe iframe runtime coverage and exclusions separately from Atlas source.",
       "requiredProof": "Owner manifest complete; unvisited runtime marked unobserved; no false full-source pass",
       "generation": null,
       "release": null,
       "evidence": [],
-      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+      "nextAction": "Eight semantic negative/positive fixtures pass; index is separate JSON with owner/baseline/dependency hashes, no source concatenation. Await its consumer release and proof."
     },
     {
       "id": "N13",

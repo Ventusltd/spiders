@@ -34,3 +34,8 @@ Road classification must come from an identified routable graph, with connectivi
 - Independent raw geometry/length checks use stated units and Earth model; visual drawing and calculated values are checked separately.
 
 This is P9 research and implementation planning. No new routing engine, constraint dataset, construction authorization or accepted route is claimed by this document.
+
+
+## Existing manual-route parity evidence
+
+The offline `original-gis-engine-comparison.json` records unchanged engine `f9531a7a36ff1b2557362bf2a61949066f393821`: direct first pass 0.20022376989905494 km and four-vertex manually drawn route 0.4405921418291705 km. The original GIS export reports 0.4405921418291706 km, a difference of approximately 1.1e-16 km. Both results are retained. This supports distance parity for this manual example; it does not prove an automatic route, obstacle avoidance, complete constraint data or construction permission.

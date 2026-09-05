@@ -1,0 +1,266 @@
+{
+  "schema": "spiders.context-owners.v1",
+  "note": "Explicit local working-copy selection, not a replacement federation registry. Paths are relative to --home. Remote CI is observation only.",
+  "repositories": [
+    {
+      "id": "federation",
+      "repo": "data-federation-map-for-globalgrid2050-all-repos",
+      "role": "Canonical estate topology and data contracts",
+      "path": "OneDrive/Documents/GitHub/data-federation-map-for-globalgrid2050-all-repos",
+      "anchors": [
+        "README.md",
+        "DEPENDENCIES.md",
+        "DATA_CONTRACT.md",
+        "federation.yaml"
+      ]
+    },
+    {
+      "id": "spiders",
+      "repo": "spiders",
+      "role": "Dependency observation, genome and this local reload instrument",
+      "path": "OneDrive/Documents/GitHub/spiders",
+      "anchors": [
+        "AI_NEW_REPO_MEMORY_LOADER.md",
+        "species/genome-spider/config/repos.json",
+        "species/genome-spider/data/manifest.json",
+        "control/ESTATE_SURVEY.md"
+      ]
+    },
+    {
+      "id": "cvaa",
+      "repo": "cvaa",
+      "role": "Reusable executable regression rules; this checkout is a candidate branch",
+      "path": "OneDrive/Documents/GitHub/cvaa",
+      "anchors": [
+        "README.md",
+        "vaccines.lock",
+        "cvaa.json",
+        "tools/selftest.mjs"
+      ]
+    },
+    {
+      "id": "cvaa-receipt",
+      "repo": "cvaa",
+      "role": "Adjacent session runtime receipt vaccine worktree; distinct from older CVAA candidate",
+      "path": "cvaa-codex-receipt",
+      "anchors": [
+        "vaccines.lock",
+        "tools/selftest.mjs",
+        "README.md"
+      ]
+    },
+    {
+      "id": "grid-engine",
+      "repo": "ventus-grid-engine",
+      "role": "Pure screening mathematics, deep-link contract, computation receipts",
+      "path": "OneDrive/Documents/GitHub/ventus-grid-engine",
+      "anchors": [
+        "README.md",
+        "package.json",
+        "deeplink/receivers.json",
+        "engine/compute-observer.js",
+        "docs/compute-observer.md"
+      ]
+    },
+    {
+      "id": "geodesy",
+      "repo": "grid-distance-maths",
+      "role": "Geodesy and earth-model decisions",
+      "path": "OneDrive/Documents/GitHub/grid-distance-maths",
+      "anchors": [
+        "README.md",
+        "docs/EARTH-MODEL.md"
+      ]
+    },
+    {
+      "id": "gpu",
+      "repo": "gpu-drivers-for-global-grid",
+      "role": "Independent hardware benchmarking; not a runtime app dependency",
+      "path": "OneDrive/Documents/GitHub/gpu-drivers-for-global-grid",
+      "anchors": [
+        "README.md",
+        "claude/README.md",
+        "claude/results/2026-09-05-gpu-rtx5070.json",
+        ".github/workflows/claude-bench.yml"
+      ]
+    },
+    {
+      "id": "atlas-main",
+      "repo": "gridatlas",
+      "role": "Explicit main-line working tree; authoritative composition pointer",
+      "path": "OneDrive/Documents/GitHub/gridatlas-main-202609050200",
+      "anchors": [
+        "AGENTS.md",
+        "STATE.md",
+        "atlas/current.json",
+        "atlas/index.html",
+        "atlas/state/live-set.json"
+      ]
+    },
+    {
+      "id": "atlas-candidate",
+      "repo": "gridatlas",
+      "role": "Older candidate checkout; never substitute for main implicitly",
+      "path": "OneDrive/Documents/GitHub/gridatlas",
+      "anchors": [
+        "AGENTS.md",
+        "STATE.md",
+        "atlas/current.json"
+      ]
+    },
+    {
+      "id": "pipeline",
+      "repo": "pipelinenews",
+      "role": "Project/news source, UI modules, compilers and releases",
+      "path": "OneDrive/Documents/GitHub/pipelinenews",
+      "anchors": [
+        "README.md"
+      ]
+    },
+    {
+      "id": "testcode",
+      "repo": "testcode",
+      "role": "Estate gates and regression capsules, sibling-layout test checkout",
+      "path": "OneDrive/Documents/GitHub/testcode",
+      "anchors": [
+        "README.md",
+        "engines.json",
+        "run.mjs",
+        ".github/workflows/testcode.yml",
+        "sandbox/capsules/grid-compute/README.md"
+      ]
+    },
+    {
+      "id": "testcode-source",
+      "repo": "testcode",
+      "role": "Isolated timestamped candidate and pinned source-bundle worktree",
+      "path": "testcode-source-publication",
+      "anchors": [
+        "sandbox/capsules/teleprinter/build.mjs",
+        "sandbox/capsules/teleprinter/verify-candidate.mjs",
+        "sandbox/capsules/grid-compute/detector.mjs",
+        "sandbox/capsules/teleprinter/serve.py",
+        "sandbox/capsules/teleprinter/serve.test.py"
+      ]
+    },
+    {
+      "id": "teleprinter",
+      "repo": "teleprinter",
+      "role": "Separate PDF and source-record engines; Codex and Claude lanes",
+      "path": "OneDrive/Documents/GitHub/teleprinter",
+      "anchors": [
+        "AGENTS.md",
+        "drivers/codex/README.md",
+        "drivers/codex/app-frame.js",
+        "drivers/codex/controls.js",
+        "drivers/codex/runtime-source.js",
+        "drivers/codex/design-freeze.mjs"
+      ]
+    },
+    {
+      "id": "portal",
+      "repo": "globalgrid2050",
+      "role": "Ordinary portal checkout; may trail publication worktree",
+      "path": "OneDrive/Documents/GitHub/globalgrid2050",
+      "anchors": [
+        "index.html",
+        "status.json",
+        ".github/workflows/deploy-pages.yml"
+      ]
+    },
+    {
+      "id": "publication",
+      "repo": "globalgrid2050",
+      "role": "Explicit deployment worktree; homepage and Test Code served copies",
+      "path": "globalgrid-testcode-publication",
+      "anchors": [
+        "index.html",
+        "status.json",
+        "homepage_versions/README.md",
+        ".github/workflows/deploy-pages.yml"
+      ]
+    },
+    {
+      "id": "network-data",
+      "repo": "data-grid-gb",
+      "role": "Derived grid assets, circuit and connection-point products",
+      "path": "OneDrive/Documents/GitHub/data-grid-gb",
+      "anchors": [
+        "README.md"
+      ]
+    },
+    {
+      "id": "map-data",
+      "repo": "data-gridatlas",
+      "role": "Map data compilation, schemas and layer-fidelity evidence",
+      "path": "OneDrive/Documents/GitHub/data-gridatlas",
+      "anchors": [
+        "README.md",
+        "requirements.lock"
+      ]
+    },
+    {
+      "id": "electricity-data",
+      "repo": "data-gb-electricity",
+      "role": "Electricity market data products",
+      "path": "OneDrive/Documents/GitHub/data-gb-electricity",
+      "anchors": [
+        "README.md"
+      ]
+    },
+    {
+      "id": "companies",
+      "repo": "companies",
+      "role": "Company identity data products consumed by Pipeline",
+      "path": "OneDrive/Documents/GitHub/companies",
+      "anchors": [
+        "README.md"
+      ]
+    },
+    {
+      "id": "paper",
+      "repo": "linux-for-the-power-grid",
+      "role": "Technical synthesis and historical source coverage, not live state",
+      "path": "OneDrive/Documents/GitHub/linux-for-the-power-grid",
+      "anchors": [
+        "README.md",
+        "codex/README.md",
+        "codex/REPOSITORY-COVERAGE.json",
+        "codex/EVIDENCE-INDEX.json"
+      ]
+    },
+    {
+      "id": "coordination",
+      "repo": "claude",
+      "role": "Cooperation and historical findings; not product authority",
+      "path": "OneDrive/Documents/GitHub/claude",
+      "anchors": [
+        "README.md"
+      ]
+    },
+    {
+      "id": "gis-sld-sandbox",
+      "repo": "gis-sld-sandbox",
+      "role": "Standalone original GIS SLD Financial Sandbox; immutable v7 baseline, original formulas and optional future routing",
+      "path": "OneDrive/Documents/GitHub/gis-sld-sandbox",
+      "anchors": [
+        "README.md",
+        "latest.json",
+        "tools/verify.py",
+        ".github/workflows/verify-original.yml"
+      ]
+    },
+    {
+      "id": "layout-tool",
+      "repo": "layout-tool",
+      "role": "Independent Module Layout, Cable Geometry and DC/AC review producers; original runtime baselines",
+      "path": "OneDrive/Documents/GitHub/layout-tool",
+      "anchors": [
+        "README.md",
+        "latest.json",
+        "tools/verify.py",
+        ".github/workflows/verify-original.yml"
+      ]
+    }
+  ]
+}

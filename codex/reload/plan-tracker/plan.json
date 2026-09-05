@@ -1,6 +1,6 @@
 {
   "schema": "spiders.build-plan.v1",
-  "updatedAt": "2026-09-05T18:34:00Z",
+  "updatedAt": "2026-09-05T19:12:27.720519+00:00",
   "baselineRelease": {
     "generation": "202609051820",
     "sourceCommit": "faa66443a7754878f51b2cc5155a21692dbdaecf",
@@ -227,7 +227,7 @@
     {
       "id": "P8",
       "title": "Isolate the original layout and cable tools in their own owner",
-      "owner": "layout-tool + testcode + globalgrid2050",
+      "owner": "gis-sld-sandbox + layout-tool + testcode + globalgrid2050",
       "dependsOn": [
         "P0",
         "P4"
@@ -236,8 +236,8 @@
       "blockers": [
         "1850 adapter opens embeddedAtlaslayout, not user-specified originalGIS tool."
       ],
-      "nextAction": "Study and import originalGISSLDFinancialSandbox intact behind a separate isolated layer cartridge; give module-layout and cable-geometry-visualiser separate feature increments.",
-      "acceptance": "Original tool identities/formulas retained; separate Layout button opens correct original tool without mutating Atlas GRID/SUBS/selection; each new timestamp carries one major feature and exact served/test receipts.",
+      "nextAction": "Complete isolated tool desktop/mobile tests and preserve original UI/formulas. Add a separately versioned app-only tool print adapter later; Atlas/Pipeline 50 visits do not cover iframe printing.",
+      "acceptance": "Original tool identities/formulas retained; separate Layout button opens correct original tool without mutating Atlas GRID/SUBS/selection; each new timestamp carries one major feature and exact served/test receipts. Original tools remain standalone and byte-identical, with their original window.print unchanged. Current Atlas source scope excludes tool runtime and pins owner configuration; full recursive tool source export needs separate proof.",
       "requiredProofs": [
         "original-tool-identity",
         "isolated-layer-boundary",
@@ -423,6 +423,45 @@
       "nextAction": "Retain phonefailure; correct originalGIS launcher placement innewtimestamp.",
       "requirementStatus": "superseded",
       "acceptanceScope": null
+    },
+    {
+      "id": "V6",
+      "change": "Original GIS SLD standalone layer",
+      "generation": "202609051901",
+      "status": "tested",
+      "sourceCommit": "33317ea9f6864e2b9a61c3a5d9ebab277658aaaa",
+      "engineCommit": "d01843d4e8bbcb9b14c2511e9eda3e4326d6b495",
+      "publicationCommit": "9fe82394d18db43fabad2b54a9fd7431880089f3",
+      "servedPublicationCommit": "9fe82394d18db43fabad2b54a9fd7431880089f3",
+      "nextAction": "Retain focused layer proof; final print campaign and tool printing remain separate.",
+      "requirementStatus": null,
+      "acceptanceScope": "Isolated tool controls and state only; no original-tool PDF/source-export or automatic constrained-routing acceptance."
+    },
+    {
+      "id": "V7",
+      "change": "Module Layout isolated layer",
+      "generation": "202609051905",
+      "status": "failed",
+      "sourceCommit": "f77b8a3d5db021d5adb2a744c66b80484b007253",
+      "engineCommit": "d01843d4e8bbcb9b14c2511e9eda3e4326d6b495",
+      "publicationCommit": "1696731982608da2a1f9aba1fba1c7b57d70882c",
+      "servedPublicationCommit": "c4c704e293a08f4d655b13b0227b604ca7bfe2ea",
+      "nextAction": "Verify served bytes and real desktop/mobile layer state.",
+      "requirementStatus": null,
+      "acceptanceScope": "Isolated tool controls and state only; no original-tool PDF/source-export or automatic constrained-routing acceptance."
+    },
+    {
+      "id": "V8",
+      "change": "Cable Geometry isolated layer",
+      "generation": "202609051906",
+      "status": "built",
+      "sourceCommit": "174a88bb55cb5cef0122944debb100411e21bf01",
+      "engineCommit": "d01843d4e8bbcb9b14c2511e9eda3e4326d6b495",
+      "publicationCommit": "c4c704e293a08f4d655b13b0227b604ca7bfe2ea",
+      "servedPublicationCommit": null,
+      "nextAction": "Verify served bytes and real desktop/mobile layer state.",
+      "requirementStatus": null,
+      "acceptanceScope": "Isolated tool controls and state only; no original-tool PDF/source-export or automatic constrained-routing acceptance."
     }
   ]
 }

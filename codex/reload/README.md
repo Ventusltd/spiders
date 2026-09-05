@@ -50,3 +50,9 @@ The wider 40-repository historical inventory is in
 `linux-for-the-power-grid/codex/REPOSITORY-COVERAGE.json`. It records entry-point
 coverage, not a complete review of every repository. Newly created GPU work is
 included explicitly here; old registry snapshots are not silently rewritten.
+
+
+The active Build context checkpoint workflow runs the six reload fixtures alongside
+the eight completion-proof and two campaign-proof fixtures on Linux. It validates
+public context and retains only compact resume/CI observations. It does not scan a
+user's private machine, upload raw evidence or certify application builds.

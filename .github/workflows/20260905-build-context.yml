@@ -4,9 +4,9 @@ on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ['codex/reload/plan-tracker/**', '.github/workflows/20260905-build-context.yml']
+    paths: ['codex/reload/**', '.github/workflows/20260905-build-context.yml']
   pull_request:
-    paths: ['codex/reload/plan-tracker/**', 'codex/reload/BUILD-PLAN.md']
+    paths: ['codex/reload/**', '.github/workflows/20260905-build-context.yml']
 permissions:
   contents: read
 concurrency:
@@ -20,8 +20,9 @@ jobs:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
         with:
           persist-credentials: false
-      - name: Prove rejection of invalid completion receipts
+      - name: Prove read-only reload and completion boundaries
         run: |
+          python3 -B codex/reload/test_reload.py
           python3 -B codex/reload/plan-tracker/test_validate.py
           python3 -B codex/reload/plan-tracker/test_campaign.py
       - name: Validate public checkpoint and write resume context

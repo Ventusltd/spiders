@@ -1,6 +1,6 @@
 # Modular build programme
 
-Plan revision: 202609052046. All 100 increments are planned; no release timestamp has been allocated.
+Plan revision: 202609052048. All 100 increments are planned; no release timestamp has been allocated.
 
 Canonical input: master-plan.geojson. Historical releases remain in ../reload/plan-tracker/.
 
@@ -750,10 +750,10 @@ CI: Run owner fixtures and consumer contract at exact commits; retain failed rec
 Publication: Unique UTC-minute candidate; served source/data/module digests match pins; repeat applicable Chrome action before acceptance.
 Rollback: Keep previous immutable release and data manifest; revert current pointer only after verifying old served bytes. Never rewrite historical release.
 
-## ATLAS-13: Layer lifecycle contract
+## ATLAS-13: VENTUS Core layer plugin lifecycle
 
 Owner: Ventusltd/gridatlas; proposed module: cartridges/layer-lifecycle/index.mjs.
-Change: Define mount show hide dispose for optional tools
+Change: Extract optional plugin mount/show/hide/dispose adapter in Atlas host, reusing existing isolated tool-layer lifecycle
 Dependencies: none within this programme.
 Sources: repository inputs and user requirements.
 Local acceptance: Open-close cycles release listeners without map-state loss

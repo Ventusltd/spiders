@@ -63,3 +63,21 @@ Fresh observations on 5 September 2026:
 | Grid engine verify | f9531a7a36ff1b2557362bf2a61949066f393821 | [33969419919](https://github.com/Ventusltd/ventus-grid-engine/actions/runs/33969419919) | Verification passed for that commit; not every browser selection |
 
 The compact `ci-observation-20260905.json` records the discovery snapshot. Detailed fresh job/step receipts are offline under the architecture review's plan-tracker directory. Observe again before relying on an old conclusion.
+
+
+## Five-version campaign
+
+The user authorized at least five substantive new versions. The local ledger is
+`architecture-reload-20260905/five-version-campaign/ledger.json` under the offline
+evidence folder. Each slot names the extracted source cartridge, exact release
+identity, publication commit and immutable proof references. Geometry, clone UI,
+GRID/SUBS, Layers-panel policy and the independent Layout command are separate
+increments. Source packaging remains a later P5 task.
+
+`campaign.py --ledger <ledger.json> --evidence-root <offline-screenshots> --out
+<offline checkpoint directory> --observe-ci` writes a new timestamped checkpoint
+and observes recent public deployment runs. Its two regression tests reject
+premature acceptance and a same-generation proof from a different engine. It
+never dispatches or modifies a product. A compact campaign summary in plan.json
+also travels in CI's RESUME.md. Built, deployed, tested and accepted are separate
+states; a later deployment containing older candidates does not make them tested.

@@ -121,11 +121,16 @@ def main():
               'ok': not errors, 'errors': errors,
               'scope': 'Checkpoint structure and supplied receipt integrity; not a product pass.',
               'tasks': [{k: t[k] for k in ('id', 'status', 'owner', 'dependsOn', 'nextAction')} for t in plan['tasks']]}
+    result['campaign'] = plan.get('campaign', [])
     args.out.mkdir(parents=True, exist_ok=True)
     (args.out / 'validation.json').write_text(json.dumps(result, indent=2) + '\n', encoding='utf8')
     lines = ['# Build plan resume', '', 'Plan SHA-256: ' + result['planSha256'], '', result['scope'], '']
     for task in result['tasks']:
         lines.extend([f"- {task['id']} | {task['status']} | {task['owner']}: {task['nextAction']}"])
+    if result['campaign']:
+        lines.extend(['', '## Five-version campaign', '', 'Statuses are declared checkpoints; consult exact receipts before advancing.', ''])
+        for version in result['campaign']:
+            lines.append(f"- {version['id']} | {version.get('generation') or 'not allocated'} | {version['status']}: {version['change']}")
     (args.out / 'RESUME.md').write_text('\n'.join(lines) + '\n', encoding='utf8')
     print(json.dumps({'ok': result['ok'], 'tasks': len(plan['tasks']), 'errors': errors}))
     raise SystemExit(0 if not errors else 1)

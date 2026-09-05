@@ -123,7 +123,8 @@
       "proofs": [],
       "targetRelease": null,
       "targetCommits": {},
-      "targetEnvironments": {}
+      "targetEnvironments": {},
+      "layoutCommandRequirement": "Layout is a separate visible command/button using the existing selected-project tool. Preserve formulas and selection; do not couple layout opening to GRID/SUBS toggles."
     },
     {
       "id": "P5",
@@ -213,7 +214,8 @@
       "panelStateContract": "Quick toggles and deep-link layer activation do not open Layers. Panel visibility changes preserve enabled layers, selection and computed connections. Grid/substation default enabled states are unchanged by this requirement.",
       "defaultArrivalProof": "Desktop and mobile fresh-load checks; toggle GRID/SUBS with panel closed; expand/collapse without map-state loss; app-PDF visual reference.",
       "cartridgeRequirement": "Extract cohesive layer-quick-controls source cartridge; explicit engine adapter, scoped styling, mount/dispose, default panel visibility. Compose through existing parts manifest; no whole-SLD copy.",
-      "observedMainBehavior": "Root agent directly exercised main Atlas in installed Chrome: GRID enabled all five400/275/220/132/66 controls; SUBS enabled substations and points appeared. Existing buttons are bottom-left of MAP, not entire browser. Preserve this behavior in Codex consumer."
+      "observedMainBehavior": "Root agent directly exercised main Atlas in installed Chrome: GRID enabled all five400/275/220/132/66 controls; SUBS enabled substations and points appeared. Existing buttons are bottom-left of MAP, not entire browser. Preserve this behavior in Codex consumer.",
+      "layoutCommandRequirement": "Layout is a separate visible command/button using the existing selected-project tool. Preserve formulas and selection; do not couple layout opening to GRID/SUBS toggles."
     }
   ],
   "handoverEvidence": [
@@ -271,6 +273,58 @@
       "runId": 33969419919,
       "commit": "f9531a7a36ff1b2557362bf2a61949066f393821",
       "scope": "Engine verify; not all app interactions"
+    }
+  ],
+  "campaign": [
+    {
+      "id": "V1",
+      "change": "Integer app-render backing geometry",
+      "generation": "202609051844",
+      "status": "in_progress",
+      "sourceCommit": "e85c494924191084763246959e6a2dfa85ce3277",
+      "engineCommit": "0ef49c23a02cfef0c7d56fe9f94dd140feed531c",
+      "publicationCommit": "8a20401537a7724f04126375f48c1b2fb9c4d71d",
+      "nextAction": "Await exact frozen build hash, served-byte verification and real Chrome fractional-DPR print receipt."
+    },
+    {
+      "id": "V2",
+      "change": "Scoped print clone styles and stable visible contents",
+      "generation": "202609051845",
+      "status": "in_progress",
+      "sourceCommit": null,
+      "engineCommit": null,
+      "publicationCommit": null,
+      "nextAction": "Review clone-isolation extraction and record exact deployed identity and Pipeline capture proof."
+    },
+    {
+      "id": "V3",
+      "change": "Independent Grid/Subs quick-controls cartridge",
+      "generation": null,
+      "status": "planned",
+      "sourceCommit": null,
+      "engineCommit": null,
+      "publicationCommit": null,
+      "nextAction": "Implement and verify increment, then allocate a new immutable generation."
+    },
+    {
+      "id": "V4",
+      "change": "Collapsed Layers default with preserved map state",
+      "generation": null,
+      "status": "planned",
+      "sourceCommit": null,
+      "engineCommit": null,
+      "publicationCommit": null,
+      "nextAction": "Implement and verify increment, then allocate a new immutable generation."
+    },
+    {
+      "id": "V5",
+      "change": "Separate Layout command with existing selected-project semantics",
+      "generation": null,
+      "status": "planned",
+      "sourceCommit": null,
+      "engineCommit": null,
+      "publicationCommit": null,
+      "nextAction": "Extract Layout command adapter from existing project tool; give Layout its own button without coupling it to GRID/SUBS."
     }
   ]
 }

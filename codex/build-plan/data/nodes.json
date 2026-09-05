@@ -614,7 +614,7 @@
       "id": "build:ATLAS-39",
       "geometry": null,
       "properties": {
-        "label": "Weekly electricity layer",
+        "label": "Original electricity chart layer",
         "repo_type": "build",
         "scope_type": "build",
         "status": "planned",
@@ -1887,6 +1887,21 @@
     },
     {
       "type": "Feature",
+      "id": "module:Ventusltd/gb-electricity-ui::cartridges/electricity-history/index.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/electricity-history/index.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/gb-electricity-ui"
+      }
+    },
+    {
+      "type": "Feature",
       "id": "module:Ventusltd/gis-sld-sandbox::cartridges/dom-frame/index.mjs",
       "geometry": null,
       "properties": {
@@ -2161,21 +2176,6 @@
       "geometry": null,
       "properties": {
         "label": "cartridges/subs-switch/index.mjs",
-        "repo_type": "module",
-        "scope_type": "module",
-        "status": "planned",
-        "rag": "grey",
-        "status_reason": "Declared build plan; not observed implementation or acceptance",
-        "child_manifest": null,
-        "owner_repository": "Ventusltd/gridatlas"
-      }
-    },
-    {
-      "type": "Feature",
-      "id": "module:Ventusltd/gridatlas::cartridges/weekly-electricity/index.mjs",
-      "geometry": null,
-      "properties": {
-        "label": "cartridges/weekly-electricity/index.mjs",
         "repo_type": "module",
         "scope_type": "module",
         "status": "planned",
@@ -3278,6 +3278,20 @@
     },
     {
       "type": "Feature",
+      "id": "repo:Ventusltd/gb-electricity-ui",
+      "geometry": null,
+      "properties": {
+        "label": "Ventusltd/gb-electricity-ui",
+        "repo_type": "repository",
+        "scope_type": "repository",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null
+      }
+    },
+    {
+      "type": "Feature",
       "id": "repo:Ventusltd/gis-sld-sandbox",
       "geometry": null,
       "properties": {
@@ -3492,6 +3506,20 @@
       "geometry": null,
       "properties": {
         "label": "companies",
+        "repo_type": "source",
+        "scope_type": "source",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "source:data-gb-electricity",
+      "geometry": null,
+      "properties": {
+        "label": "data-gb-electricity",
         "repo_type": "source",
         "scope_type": "source",
         "status": "planned",

@@ -1,6 +1,6 @@
 # Modular build programme
 
-Plan revision: 202609052041. All 100 increments are planned; no release timestamp has been allocated.
+Plan revision: 202609052046. All 100 increments are planned; no release timestamp has been allocated.
 
 Canonical input: master-plan.geojson. Historical releases remain in ../reload/plan-tracker/.
 
@@ -300,7 +300,7 @@ Owner: Ventusltd/data-gb-electricity; proposed module: cartridges/weekly-ingesti
 Change: Create bounded revisioned recent-week staging and checkpoint alongside immutable closed-month partitions
 Dependencies: none within this programme.
 Sources: repository inputs and user requirements.
-Local acceptance: Bound request counts, last-success/last-attempt and unchanged stale fallback; negative fixture and independent served-consumer proof required
+Local acceptance: Bound request counts, last-success/last-attempt and unchanged stale fallback; negative fixture and independent served-consumer proof required; pre-write compressed-byte and row limits, archive hashes unchanged, bounded revision lookback and Git growth receipt; no full historical fetch by default
 Chrome: Use actual File/menu/layer interaction on desktop and phone viewport; save screenshot and action receipt. Data-only changes require consumer check. No physical-device claim.
 CI: Run owner fixtures and consumer contract at exact commits; retain failed receipts; unrelated red jobs stay visible.
 Publication: Unique UTC-minute candidate; served source/data/module digests match pins; repeat applicable Chrome action before acceptance.
@@ -408,7 +408,7 @@ Owner: Ventusltd/data-gb-electricity; proposed module: cartridges/coverage-weigh
 Change: Separate MW fromMWh and sourcegrain fromweeklycadence
 Dependencies: PIPELINE-25, PIPELINE-31.
 Sources: Elexon-Insights.
-Local acceptance: Separate MW fromMWh and sourcegrain fromweeklycadence; negative fixture and independent served-consumer proof required
+Local acceptance: Separate MW fromMWh and sourcegrain fromweeklycadence; negative fixture and independent served-consumer proof required; retain source half-hourly price extrema and settlement timestamps in detailed chart windows, never infer missing periods as zero
 Chrome: Use actual File/menu/layer interaction on desktop and phone viewport; save screenshot and action receipt. Data-only changes require consumer check. No physical-device claim.
 CI: Run owner fixtures and consumer contract at exact commits; retain failed receipts; unrelated red jobs stay visible.
 Publication: Unique UTC-minute candidate; served source/data/module digests match pins; repeat applicable Chrome action before acceptance.
@@ -1062,13 +1062,13 @@ CI: Run owner fixtures and consumer contract at exact commits; retain failed rec
 Publication: Unique UTC-minute candidate; served source/data/module digests match pins; repeat applicable Chrome action before acceptance.
 Rollback: Keep previous immutable release and data manifest; revert current pointer only after verifying old served bytes. Never rewrite historical release.
 
-## ATLAS-39: Weekly electricity layer
+## ATLAS-39: Original electricity chart layer
 
-Owner: Ventusltd/gridatlas; proposed module: cartridges/weekly-electricity/index.mjs.
-Change: Render owner weekly generation and coverage product
+Owner: Ventusltd/gb-electricity-ui; proposed module: cartridges/electricity-history/index.mjs.
+Change: Port the original V6 electricity price chart as an independent layer consuming proven owner data products
 Dependencies: PIPELINE-34.
-Sources: Elexon-Insights.
-Local acceptance: MWh versus mean MW explicit; missing or DST intervals handled by owner contract
+Sources: Elexon-Insights, data-gb-electricity.
+Local acceptance: Upstream data gate first: keys coverage canary rows and byte budget. Preserve original seasonal colours, negative prices, high/low callouts, date/period/day-night controls, history scroller and fullscreen. Half-hour detail loads only selected partitions; long-range aggregation retains extrema.
 Chrome: Use actual File/menu/layer interaction on desktop and phone viewport; save screenshot and action receipt. Data-only changes require consumer check. No physical-device claim.
 CI: Run owner fixtures and consumer contract at exact commits; retain failed receipts; unrelated red jobs stay visible.
 Publication: Unique UTC-minute candidate; served source/data/module digests match pins; repeat applicable Chrome action before acceptance.

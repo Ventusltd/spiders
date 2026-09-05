@@ -1,6 +1,6 @@
 {
-  "revision": "202609052041",
-  "planSha256": "77639cd0ee86ef62c452d04ddad47b882e2e06e3efa3caeb407c8ec148cef002",
+  "revision": "202609052046",
+  "planSha256": "1e9a127f2b4327295c3d8afc429f4c10a91da9261bec522da953f14827bbd358",
   "manifest": "data/manifest.json",
   "status": "planned"
 }

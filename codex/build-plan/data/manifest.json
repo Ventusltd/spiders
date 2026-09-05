@@ -9,8 +9,8 @@
     "parent_manifest": null
   },
   "counts": {
-    "nodes": 232,
-    "edges": 330,
+    "nodes": 234,
+    "edges": 331,
     "sectors": 0
   },
   "key_law_status": "PLANNED_NOT_ACCEPTED",
@@ -25,9 +25,9 @@
   },
   "provenance": {
     "schema": "canonical-json-sha256-v1",
-    "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
-    "nodesSha256": "57ba62aa5a489ca9ac31f023b18b39b39fbedd3534b06ea4efa42ee24dc695a8",
-    "edgesSha256": "59227fa80113eb29ceab67179d8442109bc5371a7f3150c0ea5f4a9198699cb4",
-    "evidenceSha256": "446748add8ea1f442b632a43edf31e86046b58f4f79a94ff6c77f0c12a9ae602"
+    "planSha256": "3aa6481805a13e381589ae4d387c66086ee0b9ca2532cb3927cbe19b6e960537",
+    "nodesSha256": "cda6da6145ab052d809e669511c55b130e98ed08d14a3f32ee0d8cdcf3caed64",
+    "edgesSha256": "bd13e1cfe1a5387a5a6328299d88b06cceee9541f99b3ad9df85633c32bae27b",
+    "evidenceSha256": "cfde21ffd4e7fce2c6dfbfadd3ad0e6b1051dc3512741445d0fbe3da7191b35f"
   }
 }

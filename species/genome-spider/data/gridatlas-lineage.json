@@ -1,28 +1,28 @@
 {
   "schema": "genome-spider.gridatlas-lineage.v1",
-  "generated_at": "2026-09-04T22:10:10.477Z",
+  "generated_at": "2026-09-05T07:39:15.854Z",
   "generator": "spiders/species/genome-spider/lineage.mjs",
   "repo": "Ventusltd/gridatlas",
-  "compositions_available_on_disk": 58,
+  "compositions_available_on_disk": 63,
   "generations_walked": 15,
   "max_generations": 15,
-  "note": "Focused on the current composition and its parent_generation ancestry, capped at 15 generations (58 exist on disk in this checkout). Nodes are scoped per generation on purpose — the same cartridge id appearing in two generations is two distinct nodes, because the lineage between them is exactly what this graph exists to show.",
+  "note": "Focused on the current composition and its parent_generation ancestry, capped at 15 generations (63 exist on disk in this checkout). Nodes are scoped per generation on purpose — the same cartridge id appearing in two generations is two distinct nodes, because the lineage between them is exactly what this graph exists to show.",
   "nodes": [
     {
-      "id": "composition:202609042123",
-      "label": "composition 202609042123",
+      "id": "composition:202609050354",
+      "label": "composition 202609050354",
       "type": "composition",
       "rag": "green",
-      "reason": "One stylesheet rule in the menu-bar module hid the whole v8 SCADA layers panel with display:none!important whenever the bar was hosted, and its justification was circular: the rule made the panel's height never change, which was cited as proof the panel's own toggle was inert, which justified the rule. Measured live on v9.115 at 1400x900 and at an iPhone 13 viewport: all 60 engine layer switches present in the DOM and zero of 120 reachable without opening a menu, with the page unable to scroll to them. The register, the voltages, the supermarkets, the transit and the EV layers were all there and none could be touched. The rule is replaced with display:flex, the toggle is un-hidden, and the panel starts open on a desktop as v8 always did and collapsed on a phone where an open panel was measured holding 31.6 percent of the screen against the map's 29.3. The dropdowns are untouched; the Grid dropdown proxies the same original inputs the panel shows, so the two cannot disagree. The architect's instruction verbatim: restore v8 panels but keep dropdowns file, edit, scope, grid, about. And: do not lose the grid engines - so the arrival's measurement is proven against these same composed bytes by the hidden-tab and five-case arrival browser proofs before this generation ships.",
-      "gh": "https://github.com/Ventusltd/gridatlas/blob/main/atlas/manifests/202609042123-composition.json",
+      "reason": "A WebGL canvas without preserveDrawingBuffer returns a fully transparent image when read outside a render frame, and it still encodes to a valid PNG that downloads happily. A blank file that looks like a successful save is worse than a refusal. And the print must fit the reader's paper rather than the one we assumed: size:auto with a flex column, not a forced A4 landscape with a fixed map height.",
+      "gh": "https://github.com/Ventusltd/gridatlas/blob/main/atlas/manifests/202609050354-composition.json",
       "ext": null,
       "first_commit": {
-        "sha": "703337bb927ef870ea03f3eef3a454ca1f9fdfb3",
-        "date": "2026-09-04T22:25:42+01:00"
+        "sha": "18cffd516db0bec7f8186aafe60962cb154fcc53",
+        "date": "2026-09-05T04:57:30+01:00"
       },
       "last_commit": {
-        "sha": "703337bb927ef870ea03f3eef3a454ca1f9fdfb3",
-        "date": "2026-09-04T22:25:42+01:00"
+        "sha": "18cffd516db0bec7f8186aafe60962cb154fcc53",
+        "date": "2026-09-05T04:57:30+01:00"
       },
       "commit_count": 1
     },
@@ -81,20 +81,20 @@
       "commit_count": 2
     },
     {
-      "id": "cartridge:sld-sandbox@202609042123",
-      "label": "sld-sandbox 202609042123",
+      "id": "cartridge:sld-sandbox@202609050354",
+      "label": "sld-sandbox 202609050354",
       "type": "cartridge",
       "rag": "green",
-      "reason": "v9.116 script slot=replace-script",
-      "gh": "https://github.com/Ventusltd/gridatlas/blob/main/atlas/cartridges/202609042123-sld-sandbox-v9-8.js",
+      "reason": "v9.121 script slot=replace-script",
+      "gh": "https://github.com/Ventusltd/gridatlas/blob/main/atlas/cartridges/202609050354-sld-sandbox-v9-8.js",
       "ext": null,
       "first_commit": {
-        "sha": "703337bb927ef870ea03f3eef3a454ca1f9fdfb3",
-        "date": "2026-09-04T22:25:42+01:00"
+        "sha": "18cffd516db0bec7f8186aafe60962cb154fcc53",
+        "date": "2026-09-05T04:57:30+01:00"
       },
       "last_commit": {
-        "sha": "703337bb927ef870ea03f3eef3a454ca1f9fdfb3",
-        "date": "2026-09-04T22:25:42+01:00"
+        "sha": "18cffd516db0bec7f8186aafe60962cb154fcc53",
+        "date": "2026-09-05T04:57:30+01:00"
       },
       "commit_count": 1
     },
@@ -207,20 +207,20 @@
       "commit_count": 3
     },
     {
-      "id": "cartridge:substation-intelligence@202609042123",
-      "label": "substation-intelligence 202609042123",
+      "id": "cartridge:substation-intelligence@202609050354",
+      "label": "substation-intelligence 202609050354",
       "type": "cartridge",
       "rag": "green",
-      "reason": "v9.116 script slot=replace-script",
-      "gh": "https://github.com/Ventusltd/gridatlas/blob/main/atlas/cartridges/202609042123-substation-intelligence-v9-63.js",
+      "reason": "v9.121 script slot=replace-script",
+      "gh": "https://github.com/Ventusltd/gridatlas/blob/main/atlas/cartridges/202609050354-substation-intelligence-v9-63.js",
       "ext": null,
       "first_commit": {
-        "sha": "703337bb927ef870ea03f3eef3a454ca1f9fdfb3",
-        "date": "2026-09-04T22:25:42+01:00"
+        "sha": "18cffd516db0bec7f8186aafe60962cb154fcc53",
+        "date": "2026-09-05T04:57:30+01:00"
       },
       "last_commit": {
-        "sha": "703337bb927ef870ea03f3eef3a454ca1f9fdfb3",
-        "date": "2026-09-04T22:25:42+01:00"
+        "sha": "18cffd516db0bec7f8186aafe60962cb154fcc53",
+        "date": "2026-09-05T04:57:30+01:00"
       },
       "commit_count": 1
     },
@@ -399,10 +399,10 @@
         "date": "2026-09-03T02:56:55+01:00"
       },
       "last_commit": {
-        "sha": "703337bb927ef870ea03f3eef3a454ca1f9fdfb3",
-        "date": "2026-09-04T22:25:42+01:00"
+        "sha": "18cffd516db0bec7f8186aafe60962cb154fcc53",
+        "date": "2026-09-05T04:57:30+01:00"
       },
-      "commit_count": 26
+      "commit_count": 31
     },
     {
       "id": "unit:atlas/modules/202609030205-corridor-estimate.js",
@@ -435,10 +435,10 @@
         "date": "2026-09-03T21:03:20+01:00"
       },
       "last_commit": {
-        "sha": "703337bb927ef870ea03f3eef3a454ca1f9fdfb3",
-        "date": "2026-09-04T22:25:42+01:00"
+        "sha": "18cffd516db0bec7f8186aafe60962cb154fcc53",
+        "date": "2026-09-05T04:57:30+01:00"
       },
-      "commit_count": 10
+      "commit_count": 15
     },
     {
       "id": "unit:atlas/modules/202609032220-arrival-tidy.js",
@@ -511,6 +511,276 @@
         "date": "2026-09-03T03:00:52+01:00"
       },
       "commit_count": 4
+    },
+    {
+      "id": "composition:202609050301",
+      "label": "composition 202609050301",
+      "type": "composition",
+      "rag": "grey",
+      "reason": "View is where this application already keeps readings of the network over time - GB prices historic is moved into it by adoptLate - so a price and constraint time series belongs beside it. About would have filed it as provenance, which it is not: it is something to look at.",
+      "gh": "https://github.com/Ventusltd/gridatlas/blob/main/atlas/manifests/202609050301-composition.json",
+      "ext": null,
+      "first_commit": {
+        "sha": "5c013cdbf32319b10088220b7208d03247645937",
+        "date": "2026-09-05T04:03:57+01:00"
+      },
+      "last_commit": {
+        "sha": "5c013cdbf32319b10088220b7208d03247645937",
+        "date": "2026-09-05T04:03:57+01:00"
+      },
+      "commit_count": 1
+    },
+    {
+      "id": "cartridge:sld-sandbox@202609050301",
+      "label": "sld-sandbox 202609050301",
+      "type": "cartridge",
+      "rag": "grey",
+      "reason": "v9.120 script slot=replace-script",
+      "gh": "https://github.com/Ventusltd/gridatlas/blob/main/atlas/cartridges/202609050301-sld-sandbox-v9-8.js",
+      "ext": null,
+      "first_commit": {
+        "sha": "5c013cdbf32319b10088220b7208d03247645937",
+        "date": "2026-09-05T04:03:57+01:00"
+      },
+      "last_commit": {
+        "sha": "5c013cdbf32319b10088220b7208d03247645937",
+        "date": "2026-09-05T04:03:57+01:00"
+      },
+      "commit_count": 1
+    },
+    {
+      "id": "cartridge:substation-intelligence@202609050301",
+      "label": "substation-intelligence 202609050301",
+      "type": "cartridge",
+      "rag": "grey",
+      "reason": "v9.120 script slot=replace-script",
+      "gh": "https://github.com/Ventusltd/gridatlas/blob/main/atlas/cartridges/202609050301-substation-intelligence-v9-63.js",
+      "ext": null,
+      "first_commit": {
+        "sha": "5c013cdbf32319b10088220b7208d03247645937",
+        "date": "2026-09-05T04:03:57+01:00"
+      },
+      "last_commit": {
+        "sha": "5c013cdbf32319b10088220b7208d03247645937",
+        "date": "2026-09-05T04:03:57+01:00"
+      },
+      "commit_count": 1
+    },
+    {
+      "id": "composition:202609050249",
+      "label": "composition 202609050249",
+      "type": "composition",
+      "rag": "grey",
+      "reason": "Measured: the engine declares no dependencies and no proof in it opens a socket, so node verify.mjs runs all 133 checks from a clone, offline. The command shipped an hour earlier included npm install, which implied a network dependency that does not exist and would have made the offline claim false.",
+      "gh": "https://github.com/Ventusltd/gridatlas/blob/main/atlas/manifests/202609050249-composition.json",
+      "ext": null,
+      "first_commit": {
+        "sha": "100d206147d6202f9f06fdf8bdbf7995998da67f",
+        "date": "2026-09-05T03:52:30+01:00"
+      },
+      "last_commit": {
+        "sha": "100d206147d6202f9f06fdf8bdbf7995998da67f",
+        "date": "2026-09-05T03:52:30+01:00"
+      },
+      "commit_count": 1
+    },
+    {
+      "id": "cartridge:sld-sandbox@202609050249",
+      "label": "sld-sandbox 202609050249",
+      "type": "cartridge",
+      "rag": "grey",
+      "reason": "v9.119 script slot=replace-script",
+      "gh": "https://github.com/Ventusltd/gridatlas/blob/main/atlas/cartridges/202609050249-sld-sandbox-v9-8.js",
+      "ext": null,
+      "first_commit": {
+        "sha": "100d206147d6202f9f06fdf8bdbf7995998da67f",
+        "date": "2026-09-05T03:52:30+01:00"
+      },
+      "last_commit": {
+        "sha": "100d206147d6202f9f06fdf8bdbf7995998da67f",
+        "date": "2026-09-05T03:52:30+01:00"
+      },
+      "commit_count": 1
+    },
+    {
+      "id": "cartridge:substation-intelligence@202609050249",
+      "label": "substation-intelligence 202609050249",
+      "type": "cartridge",
+      "rag": "grey",
+      "reason": "v9.119 script slot=replace-script",
+      "gh": "https://github.com/Ventusltd/gridatlas/blob/main/atlas/cartridges/202609050249-substation-intelligence-v9-63.js",
+      "ext": null,
+      "first_commit": {
+        "sha": "100d206147d6202f9f06fdf8bdbf7995998da67f",
+        "date": "2026-09-05T03:52:30+01:00"
+      },
+      "last_commit": {
+        "sha": "100d206147d6202f9f06fdf8bdbf7995998da67f",
+        "date": "2026-09-05T03:52:30+01:00"
+      },
+      "commit_count": 1
+    },
+    {
+      "id": "composition:202609050244",
+      "label": "composition 202609050244",
+      "type": "composition",
+      "rag": "grey",
+      "reason": "Why are the mjs files not there - because the first cut filtered to canonical, and every .mjs in the estate is an extract, a reference or a fragment. All 44 nodes are listed now, fragments included, because a fragment is where a calculation has been copied and left to drift. The menu also hands over one command that runs: it is copied to the clipboard, never executed, so the person or agent that pastes it is the one who approves it.",
+      "gh": "https://github.com/Ventusltd/gridatlas/blob/main/atlas/manifests/202609050244-composition.json",
+      "ext": null,
+      "first_commit": {
+        "sha": "9c1ed59f3d61780acf408fa1a99cc44f962ad3b5",
+        "date": "2026-09-05T03:48:02+01:00"
+      },
+      "last_commit": {
+        "sha": "9c1ed59f3d61780acf408fa1a99cc44f962ad3b5",
+        "date": "2026-09-05T03:48:02+01:00"
+      },
+      "commit_count": 1
+    },
+    {
+      "id": "cartridge:sld-sandbox@202609050244",
+      "label": "sld-sandbox 202609050244",
+      "type": "cartridge",
+      "rag": "grey",
+      "reason": "v9.118 script slot=replace-script",
+      "gh": "https://github.com/Ventusltd/gridatlas/blob/main/atlas/cartridges/202609050244-sld-sandbox-v9-8.js",
+      "ext": null,
+      "first_commit": {
+        "sha": "9c1ed59f3d61780acf408fa1a99cc44f962ad3b5",
+        "date": "2026-09-05T03:48:02+01:00"
+      },
+      "last_commit": {
+        "sha": "9c1ed59f3d61780acf408fa1a99cc44f962ad3b5",
+        "date": "2026-09-05T03:48:02+01:00"
+      },
+      "commit_count": 1
+    },
+    {
+      "id": "cartridge:substation-intelligence@202609050244",
+      "label": "substation-intelligence 202609050244",
+      "type": "cartridge",
+      "rag": "grey",
+      "reason": "v9.118 script slot=replace-script",
+      "gh": "https://github.com/Ventusltd/gridatlas/blob/main/atlas/cartridges/202609050244-substation-intelligence-v9-63.js",
+      "ext": null,
+      "first_commit": {
+        "sha": "9c1ed59f3d61780acf408fa1a99cc44f962ad3b5",
+        "date": "2026-09-05T03:48:02+01:00"
+      },
+      "last_commit": {
+        "sha": "9c1ed59f3d61780acf408fa1a99cc44f962ad3b5",
+        "date": "2026-09-05T03:48:02+01:00"
+      },
+      "commit_count": 1
+    },
+    {
+      "id": "composition:202609050238",
+      "label": "composition 202609050238",
+      "type": "composition",
+      "rag": "grey",
+      "reason": "The attribution bar clashed with the menus - on a 393x852 phone, opening EDIT drew Status Colours underneath it - so it moves into About, small print at the bottom, credit intact. File becomes the way into the mathematics the application runs on. Both additions are guarded to settle to no-ops: adoptLate runs from a MutationObserver, and an unconditional append inside one is a feedback loop that crashed the renderer under the arrival gate.",
+      "gh": "https://github.com/Ventusltd/gridatlas/blob/main/atlas/manifests/202609050238-composition.json",
+      "ext": null,
+      "first_commit": {
+        "sha": "54438ef9e07f62bc0c0aa7cfd2aa7260ab83d43b",
+        "date": "2026-09-05T03:42:24+01:00"
+      },
+      "last_commit": {
+        "sha": "54438ef9e07f62bc0c0aa7cfd2aa7260ab83d43b",
+        "date": "2026-09-05T03:42:24+01:00"
+      },
+      "commit_count": 1
+    },
+    {
+      "id": "cartridge:sld-sandbox@202609050238",
+      "label": "sld-sandbox 202609050238",
+      "type": "cartridge",
+      "rag": "grey",
+      "reason": "v9.117 script slot=replace-script",
+      "gh": "https://github.com/Ventusltd/gridatlas/blob/main/atlas/cartridges/202609050238-sld-sandbox-v9-8.js",
+      "ext": null,
+      "first_commit": {
+        "sha": "54438ef9e07f62bc0c0aa7cfd2aa7260ab83d43b",
+        "date": "2026-09-05T03:42:24+01:00"
+      },
+      "last_commit": {
+        "sha": "54438ef9e07f62bc0c0aa7cfd2aa7260ab83d43b",
+        "date": "2026-09-05T03:42:24+01:00"
+      },
+      "commit_count": 1
+    },
+    {
+      "id": "cartridge:substation-intelligence@202609050238",
+      "label": "substation-intelligence 202609050238",
+      "type": "cartridge",
+      "rag": "grey",
+      "reason": "v9.117 script slot=replace-script",
+      "gh": "https://github.com/Ventusltd/gridatlas/blob/main/atlas/cartridges/202609050238-substation-intelligence-v9-63.js",
+      "ext": null,
+      "first_commit": {
+        "sha": "54438ef9e07f62bc0c0aa7cfd2aa7260ab83d43b",
+        "date": "2026-09-05T03:42:24+01:00"
+      },
+      "last_commit": {
+        "sha": "54438ef9e07f62bc0c0aa7cfd2aa7260ab83d43b",
+        "date": "2026-09-05T03:42:24+01:00"
+      },
+      "commit_count": 1
+    },
+    {
+      "id": "composition:202609042123",
+      "label": "composition 202609042123",
+      "type": "composition",
+      "rag": "grey",
+      "reason": "One stylesheet rule in the menu-bar module hid the whole v8 SCADA layers panel with display:none!important whenever the bar was hosted, and its justification was circular: the rule made the panel's height never change, which was cited as proof the panel's own toggle was inert, which justified the rule. Measured live on v9.115 at 1400x900 and at an iPhone 13 viewport: all 60 engine layer switches present in the DOM and zero of 120 reachable without opening a menu, with the page unable to scroll to them. The register, the voltages, the supermarkets, the transit and the EV layers were all there and none could be touched. The rule is replaced with display:flex, the toggle is un-hidden, and the panel starts open on a desktop as v8 always did and collapsed on a phone where an open panel was measured holding 31.6 percent of the screen against the map's 29.3. The dropdowns are untouched; the Grid dropdown proxies the same original inputs the panel shows, so the two cannot disagree. The architect's instruction verbatim: restore v8 panels but keep dropdowns file, edit, scope, grid, about. And: do not lose the grid engines - so the arrival's measurement is proven against these same composed bytes by the hidden-tab and five-case arrival browser proofs before this generation ships.",
+      "gh": "https://github.com/Ventusltd/gridatlas/blob/main/atlas/manifests/202609042123-composition.json",
+      "ext": null,
+      "first_commit": {
+        "sha": "703337bb927ef870ea03f3eef3a454ca1f9fdfb3",
+        "date": "2026-09-04T22:25:42+01:00"
+      },
+      "last_commit": {
+        "sha": "703337bb927ef870ea03f3eef3a454ca1f9fdfb3",
+        "date": "2026-09-04T22:25:42+01:00"
+      },
+      "commit_count": 1
+    },
+    {
+      "id": "cartridge:sld-sandbox@202609042123",
+      "label": "sld-sandbox 202609042123",
+      "type": "cartridge",
+      "rag": "grey",
+      "reason": "v9.116 script slot=replace-script",
+      "gh": "https://github.com/Ventusltd/gridatlas/blob/main/atlas/cartridges/202609042123-sld-sandbox-v9-8.js",
+      "ext": null,
+      "first_commit": {
+        "sha": "703337bb927ef870ea03f3eef3a454ca1f9fdfb3",
+        "date": "2026-09-04T22:25:42+01:00"
+      },
+      "last_commit": {
+        "sha": "703337bb927ef870ea03f3eef3a454ca1f9fdfb3",
+        "date": "2026-09-04T22:25:42+01:00"
+      },
+      "commit_count": 1
+    },
+    {
+      "id": "cartridge:substation-intelligence@202609042123",
+      "label": "substation-intelligence 202609042123",
+      "type": "cartridge",
+      "rag": "grey",
+      "reason": "v9.116 script slot=replace-script",
+      "gh": "https://github.com/Ventusltd/gridatlas/blob/main/atlas/cartridges/202609042123-substation-intelligence-v9-63.js",
+      "ext": null,
+      "first_commit": {
+        "sha": "703337bb927ef870ea03f3eef3a454ca1f9fdfb3",
+        "date": "2026-09-04T22:25:42+01:00"
+      },
+      "last_commit": {
+        "sha": "703337bb927ef870ea03f3eef3a454ca1f9fdfb3",
+        "date": "2026-09-04T22:25:42+01:00"
+      },
+      "commit_count": 1
     },
     {
       "id": "composition:202609041957",
@@ -961,387 +1231,1549 @@
         "date": "2026-09-04T05:21:52+01:00"
       },
       "commit_count": 1
-    },
-    {
-      "id": "composition:202609040337",
-      "label": "composition 202609040337",
-      "type": "composition",
-      "rag": "grey",
-      "reason": "One arrival-identity repair: expected active-register absence is not a failure, supplied facts are not promoted to official facts, failed identity checks retry identity and measurement on one fresh epoch, late identity cannot reclaim user navigation, and one exact receiver eliminates the redundant wrong-domain 404.",
-      "gh": "https://github.com/Ventusltd/gridatlas/blob/main/atlas/manifests/202609040337-composition.json",
-      "ext": null,
-      "first_commit": {
-        "sha": "2d8cc7bacf80a3f20ecfb96ea24548fcea43a19d",
-        "date": "2026-09-04T04:46:10+01:00"
-      },
-      "last_commit": {
-        "sha": "2d8cc7bacf80a3f20ecfb96ea24548fcea43a19d",
-        "date": "2026-09-04T04:46:10+01:00"
-      },
-      "commit_count": 1
-    },
-    {
-      "id": "cartridge:sld-sandbox@202609040337",
-      "label": "sld-sandbox 202609040337",
-      "type": "cartridge",
-      "rag": "grey",
-      "reason": "v9.106 script slot=replace-script",
-      "gh": "https://github.com/Ventusltd/gridatlas/blob/main/atlas/cartridges/202609040337-sld-sandbox-v9-8.js",
-      "ext": null,
-      "first_commit": {
-        "sha": "2d8cc7bacf80a3f20ecfb96ea24548fcea43a19d",
-        "date": "2026-09-04T04:46:10+01:00"
-      },
-      "last_commit": {
-        "sha": "2d8cc7bacf80a3f20ecfb96ea24548fcea43a19d",
-        "date": "2026-09-04T04:46:10+01:00"
-      },
-      "commit_count": 1
-    },
-    {
-      "id": "unit:atlas/parts/202609040229-sld-sandbox-arrival-identity.js",
-      "label": "202609040229-sld-sandbox-arrival-identity.js",
-      "type": "part",
-      "rag": "green",
-      "reason": "role=part",
-      "gh": "https://github.com/Ventusltd/gridatlas/blob/main/atlas/parts/202609040229-sld-sandbox-arrival-identity.js",
-      "ext": null,
-      "first_commit": {
-        "sha": "2d8cc7bacf80a3f20ecfb96ea24548fcea43a19d",
-        "date": "2026-09-04T04:46:10+01:00"
-      },
-      "last_commit": {
-        "sha": "2d8cc7bacf80a3f20ecfb96ea24548fcea43a19d",
-        "date": "2026-09-04T04:46:10+01:00"
-      },
-      "commit_count": 1
-    },
-    {
-      "id": "cartridge:substation-intelligence@202609040337",
-      "label": "substation-intelligence 202609040337",
-      "type": "cartridge",
-      "rag": "grey",
-      "reason": "v9.106 script slot=replace-script",
-      "gh": "https://github.com/Ventusltd/gridatlas/blob/main/atlas/cartridges/202609040337-substation-intelligence-v9-63.js",
-      "ext": null,
-      "first_commit": {
-        "sha": "2d8cc7bacf80a3f20ecfb96ea24548fcea43a19d",
-        "date": "2026-09-04T04:46:10+01:00"
-      },
-      "last_commit": {
-        "sha": "2d8cc7bacf80a3f20ecfb96ea24548fcea43a19d",
-        "date": "2026-09-04T04:46:10+01:00"
-      },
-      "commit_count": 1
-    },
-    {
-      "id": "composition:202609040219",
-      "label": "composition 202609040219",
-      "type": "composition",
-      "rag": "grey",
-      "reason": "One honest-state repair: distinguish bytes fetched from features renderable. No quarantined data is enabled or rewritten.",
-      "gh": "https://github.com/Ventusltd/gridatlas/blob/main/atlas/manifests/202609040219-composition.json",
-      "ext": null,
-      "first_commit": {
-        "sha": "5cb95611bae0eae031d493b7f2b6b3ef9ce2b995",
-        "date": "2026-09-04T03:27:00+01:00"
-      },
-      "last_commit": {
-        "sha": "5cb95611bae0eae031d493b7f2b6b3ef9ce2b995",
-        "date": "2026-09-04T03:27:00+01:00"
-      },
-      "commit_count": 1
-    },
-    {
-      "id": "cartridge:uk-gazetteer-flyto@202609011141",
-      "label": "uk-gazetteer-flyto 202609011141",
-      "type": "cartridge",
-      "rag": "grey",
-      "reason": "v9.5 script slot=replace-script",
-      "gh": "https://github.com/Ventusltd/gridatlas/blob/main/atlas/cartridges/202609011141-place-global-search-v9-5.js",
-      "ext": null,
-      "first_commit": {
-        "sha": "cbba326b8c76c47093a15e57f125bb5695b87892",
-        "date": "2026-09-01T12:42:58+01:00"
-      },
-      "last_commit": {
-        "sha": "cbba326b8c76c47093a15e57f125bb5695b87892",
-        "date": "2026-09-01T12:42:58+01:00"
-      },
-      "commit_count": 1
-    },
-    {
-      "id": "cartridge:sld-sandbox@202609040219",
-      "label": "sld-sandbox 202609040219",
-      "type": "cartridge",
-      "rag": "grey",
-      "reason": "v9.105 script slot=replace-script",
-      "gh": "https://github.com/Ventusltd/gridatlas/blob/main/atlas/cartridges/202609040219-sld-sandbox-v9-8.js",
-      "ext": null,
-      "first_commit": {
-        "sha": "5cb95611bae0eae031d493b7f2b6b3ef9ce2b995",
-        "date": "2026-09-04T03:27:00+01:00"
-      },
-      "last_commit": {
-        "sha": "5cb95611bae0eae031d493b7f2b6b3ef9ce2b995",
-        "date": "2026-09-04T03:27:00+01:00"
-      },
-      "commit_count": 1
-    },
-    {
-      "id": "unit:atlas/parts/202609012045-sld-sandbox-body.js",
-      "label": "202609012045-sld-sandbox-body.js",
-      "type": "part",
-      "rag": "green",
-      "reason": "role=part",
-      "gh": "https://github.com/Ventusltd/gridatlas/blob/main/atlas/parts/202609012045-sld-sandbox-body.js",
-      "ext": null,
-      "first_commit": {
-        "sha": "5634beb939b65ba6bc376452a7df67eca7fb42eb",
-        "date": "2026-09-01T18:52:12+01:00"
-      },
-      "last_commit": {
-        "sha": "ab80d45be05eb08b334af8bc93cfeb30d3b9d3d9",
-        "date": "2026-09-04T02:35:00+01:00"
-      },
-      "commit_count": 33
-    },
-    {
-      "id": "cartridge:substation-intelligence@202609040219",
-      "label": "substation-intelligence 202609040219",
-      "type": "cartridge",
-      "rag": "grey",
-      "reason": "v9.105 script slot=replace-script",
-      "gh": "https://github.com/Ventusltd/gridatlas/blob/main/atlas/cartridges/202609040219-substation-intelligence-v9-63.js",
-      "ext": null,
-      "first_commit": {
-        "sha": "5cb95611bae0eae031d493b7f2b6b3ef9ce2b995",
-        "date": "2026-09-04T03:27:00+01:00"
-      },
-      "last_commit": {
-        "sha": "5cb95611bae0eae031d493b7f2b6b3ef9ce2b995",
-        "date": "2026-09-04T03:27:00+01:00"
-      },
-      "commit_count": 1
-    },
-    {
-      "id": "unit:atlas/parts/202609040212-ventus-corev8engine-layer-availability.js",
-      "label": "202609040212-ventus-corev8engine-layer-availability.js",
-      "type": "part",
-      "rag": "green",
-      "reason": "role=carried_shell_script",
-      "gh": "https://github.com/Ventusltd/gridatlas/blob/main/atlas/parts/202609040212-ventus-corev8engine-layer-availability.js",
-      "ext": null,
-      "first_commit": {
-        "sha": "5cb95611bae0eae031d493b7f2b6b3ef9ce2b995",
-        "date": "2026-09-04T03:27:00+01:00"
-      },
-      "last_commit": {
-        "sha": "5cb95611bae0eae031d493b7f2b6b3ef9ce2b995",
-        "date": "2026-09-04T03:27:00+01:00"
-      },
-      "commit_count": 1
-    },
-    {
-      "id": "composition:202609040134",
-      "label": "composition 202609040134",
-      "type": "composition",
-      "rag": "grey",
-      "reason": "The fullscreen dashboard moves only between disjoint trees; the six-menu surface remains inside #map-container and mirrors each original layer state.",
-      "gh": "https://github.com/Ventusltd/gridatlas/blob/main/atlas/manifests/202609040134-composition.json",
-      "ext": null,
-      "first_commit": {
-        "sha": "ab80d45be05eb08b334af8bc93cfeb30d3b9d3d9",
-        "date": "2026-09-04T02:35:00+01:00"
-      },
-      "last_commit": {
-        "sha": "ab80d45be05eb08b334af8bc93cfeb30d3b9d3d9",
-        "date": "2026-09-04T02:35:00+01:00"
-      },
-      "commit_count": 1
-    },
-    {
-      "id": "cartridge:sld-sandbox@202609040134",
-      "label": "sld-sandbox 202609040134",
-      "type": "cartridge",
-      "rag": "grey",
-      "reason": "v9.104 script slot=replace-script",
-      "gh": "https://github.com/Ventusltd/gridatlas/blob/main/atlas/cartridges/202609040134-sld-sandbox-v9-8.js",
-      "ext": null,
-      "first_commit": {
-        "sha": "ab80d45be05eb08b334af8bc93cfeb30d3b9d3d9",
-        "date": "2026-09-04T02:35:00+01:00"
-      },
-      "last_commit": {
-        "sha": "ab80d45be05eb08b334af8bc93cfeb30d3b9d3d9",
-        "date": "2026-09-04T02:35:00+01:00"
-      },
-      "commit_count": 1
-    },
-    {
-      "id": "cartridge:substation-intelligence@202609040134",
-      "label": "substation-intelligence 202609040134",
-      "type": "cartridge",
-      "rag": "grey",
-      "reason": "v9.104 script slot=replace-script",
-      "gh": "https://github.com/Ventusltd/gridatlas/blob/main/atlas/cartridges/202609040134-substation-intelligence-v9-63.js",
-      "ext": null,
-      "first_commit": {
-        "sha": "ab80d45be05eb08b334af8bc93cfeb30d3b9d3d9",
-        "date": "2026-09-04T02:35:00+01:00"
-      },
-      "last_commit": {
-        "sha": "ab80d45be05eb08b334af8bc93cfeb30d3b9d3d9",
-        "date": "2026-09-04T02:35:00+01:00"
-      },
-      "commit_count": 1
-    },
-    {
-      "id": "unit:atlas/parts/202609040045-ventus-corev8engine-deep-link-receiver.js",
-      "label": "202609040045-ventus-corev8engine-deep-link-receiver.js",
-      "type": "part",
-      "rag": "green",
-      "reason": "role=carried_shell_script",
-      "gh": "https://github.com/Ventusltd/gridatlas/blob/main/atlas/parts/202609040045-ventus-corev8engine-deep-link-receiver.js",
-      "ext": null,
-      "first_commit": {
-        "sha": "6d2bad3c7bd0bb49f6bafad316c11ef7e753c964",
-        "date": "2026-09-04T01:50:04+01:00"
-      },
-      "last_commit": {
-        "sha": "6d2bad3c7bd0bb49f6bafad316c11ef7e753c964",
-        "date": "2026-09-04T01:50:04+01:00"
-      },
-      "commit_count": 1
-    },
-    {
-      "id": "composition:202609040058",
-      "label": "composition 202609040058",
-      "type": "composition",
-      "rag": "grey",
-      "reason": "v9.103 is the first promotion candidate in this lane. v9.100-v9.102 remain immutable rejected pre-promotion evidence; the live lineage skips them back to v9.99.",
-      "gh": "https://github.com/Ventusltd/gridatlas/blob/main/atlas/manifests/202609040058-composition.json",
-      "ext": null,
-      "first_commit": {
-        "sha": "03ac1fd5b094c59e21b311a7978c954111d3e330",
-        "date": "2026-09-04T02:07:12+01:00"
-      },
-      "last_commit": {
-        "sha": "03ac1fd5b094c59e21b311a7978c954111d3e330",
-        "date": "2026-09-04T02:07:12+01:00"
-      },
-      "commit_count": 1
-    },
-    {
-      "id": "cartridge:sld-sandbox@202609040058",
-      "label": "sld-sandbox 202609040058",
-      "type": "cartridge",
-      "rag": "grey",
-      "reason": "v9.103 script slot=replace-script",
-      "gh": "https://github.com/Ventusltd/gridatlas/blob/main/atlas/cartridges/202609040058-sld-sandbox-v9-8.js",
-      "ext": null,
-      "first_commit": {
-        "sha": "03ac1fd5b094c59e21b311a7978c954111d3e330",
-        "date": "2026-09-04T02:07:12+01:00"
-      },
-      "last_commit": {
-        "sha": "03ac1fd5b094c59e21b311a7978c954111d3e330",
-        "date": "2026-09-04T02:07:12+01:00"
-      },
-      "commit_count": 1
-    },
-    {
-      "id": "cartridge:substation-intelligence@202609040058",
-      "label": "substation-intelligence 202609040058",
-      "type": "cartridge",
-      "rag": "grey",
-      "reason": "v9.103 script slot=replace-script",
-      "gh": "https://github.com/Ventusltd/gridatlas/blob/main/atlas/cartridges/202609040058-substation-intelligence-v9-63.js",
-      "ext": null,
-      "first_commit": {
-        "sha": "03ac1fd5b094c59e21b311a7978c954111d3e330",
-        "date": "2026-09-04T02:07:12+01:00"
-      },
-      "last_commit": {
-        "sha": "03ac1fd5b094c59e21b311a7978c954111d3e330",
-        "date": "2026-09-04T02:07:12+01:00"
-      },
-      "commit_count": 1
-    },
-    {
-      "id": "composition:202609032315",
-      "label": "composition 202609032315",
-      "type": "composition",
-      "rag": "grey",
-      "reason": "The ceiling check asserted against 368,640 and reported against 409,600, so at 35 characters from failure it printed 40,995 clear - overstated 1,171-fold in the call whose own comment says it exists so a reader can watch the margin close rather than discover it closed.",
-      "gh": "https://github.com/Ventusltd/gridatlas/blob/main/atlas/manifests/202609032315-composition.json",
-      "ext": null,
-      "first_commit": {
-        "sha": "cef7b8fd8b6e95d81618bd99c8d50017bafaac95",
-        "date": "2026-09-04T00:16:20+01:00"
-      },
-      "last_commit": {
-        "sha": "cef7b8fd8b6e95d81618bd99c8d50017bafaac95",
-        "date": "2026-09-04T00:16:20+01:00"
-      },
-      "commit_count": 1
-    },
-    {
-      "id": "cartridge:sld-sandbox@202609032315",
-      "label": "sld-sandbox 202609032315",
-      "type": "cartridge",
-      "rag": "grey",
-      "reason": "v9.99 script slot=replace-script",
-      "gh": "https://github.com/Ventusltd/gridatlas/blob/main/atlas/cartridges/202609032315-sld-sandbox-v9-8.js",
-      "ext": null,
-      "first_commit": {
-        "sha": "cef7b8fd8b6e95d81618bd99c8d50017bafaac95",
-        "date": "2026-09-04T00:16:20+01:00"
-      },
-      "last_commit": {
-        "sha": "cef7b8fd8b6e95d81618bd99c8d50017bafaac95",
-        "date": "2026-09-04T00:16:20+01:00"
-      },
-      "commit_count": 1
-    },
-    {
-      "id": "cartridge:substation-intelligence@202609032315",
-      "label": "substation-intelligence 202609032315",
-      "type": "cartridge",
-      "rag": "grey",
-      "reason": "v9.99 script slot=replace-script",
-      "gh": "https://github.com/Ventusltd/gridatlas/blob/main/atlas/cartridges/202609032315-substation-intelligence-v9-63.js",
-      "ext": null,
-      "first_commit": {
-        "sha": "cef7b8fd8b6e95d81618bd99c8d50017bafaac95",
-        "date": "2026-09-04T00:16:20+01:00"
-      },
-      "last_commit": {
-        "sha": "cef7b8fd8b6e95d81618bd99c8d50017bafaac95",
-        "date": "2026-09-04T00:16:20+01:00"
-      },
-      "commit_count": 1
-    },
-    {
-      "id": "unit:atlas/releases/202608300453-atlas-v9/ventus-corev8engine.js",
-      "label": "ventus-corev8engine.js",
-      "type": "unit",
-      "rag": "green",
-      "reason": "role=carried_shell_script",
-      "gh": "https://github.com/Ventusltd/gridatlas/blob/main/atlas/releases/202608300453-atlas-v9/ventus-corev8engine.js",
-      "ext": null,
-      "first_commit": {
-        "sha": "e5ad420a363a879cc84e33133a673ac165e16891",
-        "date": "2026-08-30T14:18:51Z"
-      },
-      "last_commit": {
-        "sha": "e5ad420a363a879cc84e33133a673ac165e16891",
-        "date": "2026-08-30T14:18:51Z"
-      },
-      "commit_count": 1
     }
   ],
   "edges": [
+    {
+      "from": "composition:202609050354",
+      "to": "composition:202609050301",
+      "type": "supersedes",
+      "evidence": {
+        "file": "atlas/manifests/202609050354-composition.json",
+        "line": 0,
+        "pattern": "json:\"parent_generation\"",
+        "snippet": "parent_generation = \"202609050301\""
+      }
+    },
+    {
+      "from": "composition:202609050354",
+      "to": "cartridge:streaming-parquet-bridge@202609041945",
+      "type": "composed_of",
+      "evidence": {
+        "file": "atlas/manifests/202609050354-composition.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (cartridges[])",
+        "snippet": "streaming-parquet-bridge: path=./cartridges/202609041945-streaming-parquet-bridge-v9-5.js, sha256=4a6b594f7705bc4d..."
+      }
+    },
+    {
+      "from": "composition:202609050354",
+      "to": "cartridge:uk-gazetteer-flyto@202609041945",
+      "type": "composed_of",
+      "evidence": {
+        "file": "atlas/manifests/202609050354-composition.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (cartridges[])",
+        "snippet": "uk-gazetteer-flyto: path=./cartridges/202609041945-place-global-search-v9-5.js, sha256=21ab1507e98ee299..."
+      }
+    },
+    {
+      "from": "cartridge:uk-gazetteer-flyto@202609041945",
+      "to": "unit:atlas/parts/202609040229-place-global-search-arrival-identity.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609041945-place-global-search-v9-5-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=part, path=atlas/parts/202609040229-place-global-search-arrival-identity.js, sha256=a40137cbae040a9e..."
+      }
+    },
+    {
+      "from": "composition:202609050354",
+      "to": "cartridge:sld-sandbox@202609050354",
+      "type": "composed_of",
+      "evidence": {
+        "file": "atlas/manifests/202609050354-composition.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (cartridges[])",
+        "snippet": "sld-sandbox: path=./cartridges/202609050354-sld-sandbox-v9-8.js, sha256=7c2df5dabb0082d4..."
+      }
+    },
+    {
+      "from": "cartridge:sld-sandbox@202609050354",
+      "to": "unit:atlas/modules/202609012040-grid-scope.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050354-sld-sandbox-v9-8-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609012040-grid-scope.js, sha256=a4f96c30c9240424..."
+      }
+    },
+    {
+      "from": "cartridge:sld-sandbox@202609050354",
+      "to": "unit:atlas/modules/202609012217-source-registry.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050354-sld-sandbox-v9-8-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609012217-source-registry.js, sha256=22080f1a774879d9..."
+      }
+    },
+    {
+      "from": "cartridge:sld-sandbox@202609050354",
+      "to": "unit:atlas/modules/202609012128-declared-connections.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050354-sld-sandbox-v9-8-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609012128-declared-connections.js, sha256=a44520ebd644e725..."
+      }
+    },
+    {
+      "from": "cartridge:sld-sandbox@202609050354",
+      "to": "unit:atlas/modules/202609012205-sizing-arithmetic.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050354-sld-sandbox-v9-8-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609012205-sizing-arithmetic.js, sha256=bbaf6453475be4c5..."
+      }
+    },
+    {
+      "from": "cartridge:sld-sandbox@202609050354",
+      "to": "unit:atlas/modules/202609031310-technology-coverage.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050354-sld-sandbox-v9-8-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609031310-technology-coverage.js, sha256=6db7d5ae1619da0e..."
+      }
+    },
+    {
+      "from": "cartridge:sld-sandbox@202609050354",
+      "to": "unit:atlas/parts/202609041234-sld-sandbox-technology-buckets.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050354-sld-sandbox-v9-8-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=part, path=atlas/parts/202609041234-sld-sandbox-technology-buckets.js, sha256=38fa65a2283d3cbb..."
+      }
+    },
+    {
+      "from": "composition:202609050354",
+      "to": "cartridge:substation-intelligence@202609050354",
+      "type": "composed_of",
+      "evidence": {
+        "file": "atlas/manifests/202609050354-composition.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (cartridges[])",
+        "snippet": "substation-intelligence: path=./cartridges/202609050354-substation-intelligence-v9-63.js, sha256=062b754c19d6eb0e..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050354",
+      "to": "unit:atlas/parts/202609040229-ventus-corev8engine-exact-repd-delegation.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050354-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=carried_shell_script, path=atlas/parts/202609040229-ventus-corev8engine-exact-repd-delegation.js, sha256=d38a958aa3988b25..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050354",
+      "to": "unit:atlas/modules/202609011950-geodesy.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050354-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609011950-geodesy.js, sha256=2c98d0be8a1c8f4d..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050354",
+      "to": "unit:atlas/modules/202609012245-network-topology.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050354-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609012245-network-topology.js, sha256=d279e5338c4b325a..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050354",
+      "to": "unit:atlas/modules/202609012245-electrical-distance.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050354-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609012245-electrical-distance.js, sha256=28ae3f3e2de8c9d2..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050354",
+      "to": "unit:atlas/modules/202609012250-rating-envelope.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050354-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609012250-rating-envelope.js, sha256=a0160fac5aa25185..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050354",
+      "to": "unit:atlas/modules/202609020015-injection-response.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050354-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609020015-injection-response.js, sha256=c4c5614ddf962f2c..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050354",
+      "to": "unit:atlas/modules/202609012345-planned-change.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050354-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609012345-planned-change.js, sha256=cee36a7b6cfc0b47..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050354",
+      "to": "unit:atlas/modules/202609012350-owner-boundary.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050354-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609012350-owner-boundary.js, sha256=29a9f42930f7720f..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050354",
+      "to": "unit:atlas/modules/202609030137-pinned-products.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050354-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609030137-pinned-products.js, sha256=8929b8d762d2cf17..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050354",
+      "to": "unit:atlas/modules/202609030157-version-ledger.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050354-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609030157-version-ledger.js, sha256=6a432a0837ddfe62..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050354",
+      "to": "unit:atlas/modules/202609030205-corridor-estimate.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050354-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609030205-corridor-estimate.js, sha256=197c0353f4421edc..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050354",
+      "to": "unit:atlas/modules/202609031958-menu-bar.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050354-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609031958-menu-bar.js, sha256=cb3e8de2b0f74eaf..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050354",
+      "to": "unit:atlas/modules/202609032220-arrival-tidy.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050354-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609032220-arrival-tidy.js, sha256=59826ccf25a465ab..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050354",
+      "to": "unit:atlas/modules/202609030048-pipeline-news-layers.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050354-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609030048-pipeline-news-layers.js, sha256=075fb2e50723bcd2..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050354",
+      "to": "unit:atlas/modules/202609040400-sld-styles.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050354-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609040400-sld-styles.js, sha256=7497379df0de2b70..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050354",
+      "to": "unit:atlas/parts/202609012350-substation-intelligence-body.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050354-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=part, path=atlas/parts/202609012350-substation-intelligence-body.js, sha256=44c0caba961993e8..."
+      }
+    },
+    {
+      "from": "composition:202609050301",
+      "to": "composition:202609050249",
+      "type": "supersedes",
+      "evidence": {
+        "file": "atlas/manifests/202609050301-composition.json",
+        "line": 0,
+        "pattern": "json:\"parent_generation\"",
+        "snippet": "parent_generation = \"202609050249\""
+      }
+    },
+    {
+      "from": "composition:202609050301",
+      "to": "cartridge:streaming-parquet-bridge@202609041945",
+      "type": "composed_of",
+      "evidence": {
+        "file": "atlas/manifests/202609050301-composition.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (cartridges[])",
+        "snippet": "streaming-parquet-bridge: path=./cartridges/202609041945-streaming-parquet-bridge-v9-5.js, sha256=4a6b594f7705bc4d..."
+      }
+    },
+    {
+      "from": "composition:202609050301",
+      "to": "cartridge:uk-gazetteer-flyto@202609041945",
+      "type": "composed_of",
+      "evidence": {
+        "file": "atlas/manifests/202609050301-composition.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (cartridges[])",
+        "snippet": "uk-gazetteer-flyto: path=./cartridges/202609041945-place-global-search-v9-5.js, sha256=21ab1507e98ee299..."
+      }
+    },
+    {
+      "from": "cartridge:uk-gazetteer-flyto@202609041945",
+      "to": "unit:atlas/parts/202609040229-place-global-search-arrival-identity.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609041945-place-global-search-v9-5-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=part, path=atlas/parts/202609040229-place-global-search-arrival-identity.js, sha256=a40137cbae040a9e..."
+      }
+    },
+    {
+      "from": "composition:202609050301",
+      "to": "cartridge:sld-sandbox@202609050301",
+      "type": "composed_of",
+      "evidence": {
+        "file": "atlas/manifests/202609050301-composition.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (cartridges[])",
+        "snippet": "sld-sandbox: path=./cartridges/202609050301-sld-sandbox-v9-8.js, sha256=f1b809e424272230..."
+      }
+    },
+    {
+      "from": "cartridge:sld-sandbox@202609050301",
+      "to": "unit:atlas/modules/202609012040-grid-scope.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050301-sld-sandbox-v9-8-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609012040-grid-scope.js, sha256=a4f96c30c9240424..."
+      }
+    },
+    {
+      "from": "cartridge:sld-sandbox@202609050301",
+      "to": "unit:atlas/modules/202609012217-source-registry.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050301-sld-sandbox-v9-8-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609012217-source-registry.js, sha256=22080f1a774879d9..."
+      }
+    },
+    {
+      "from": "cartridge:sld-sandbox@202609050301",
+      "to": "unit:atlas/modules/202609012128-declared-connections.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050301-sld-sandbox-v9-8-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609012128-declared-connections.js, sha256=a44520ebd644e725..."
+      }
+    },
+    {
+      "from": "cartridge:sld-sandbox@202609050301",
+      "to": "unit:atlas/modules/202609012205-sizing-arithmetic.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050301-sld-sandbox-v9-8-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609012205-sizing-arithmetic.js, sha256=bbaf6453475be4c5..."
+      }
+    },
+    {
+      "from": "cartridge:sld-sandbox@202609050301",
+      "to": "unit:atlas/modules/202609031310-technology-coverage.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050301-sld-sandbox-v9-8-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609031310-technology-coverage.js, sha256=6db7d5ae1619da0e..."
+      }
+    },
+    {
+      "from": "cartridge:sld-sandbox@202609050301",
+      "to": "unit:atlas/parts/202609041234-sld-sandbox-technology-buckets.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050301-sld-sandbox-v9-8-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=part, path=atlas/parts/202609041234-sld-sandbox-technology-buckets.js, sha256=38fa65a2283d3cbb..."
+      }
+    },
+    {
+      "from": "composition:202609050301",
+      "to": "cartridge:substation-intelligence@202609050301",
+      "type": "composed_of",
+      "evidence": {
+        "file": "atlas/manifests/202609050301-composition.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (cartridges[])",
+        "snippet": "substation-intelligence: path=./cartridges/202609050301-substation-intelligence-v9-63.js, sha256=a1bfbf4d11e4c860..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050301",
+      "to": "unit:atlas/parts/202609040229-ventus-corev8engine-exact-repd-delegation.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050301-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=carried_shell_script, path=atlas/parts/202609040229-ventus-corev8engine-exact-repd-delegation.js, sha256=d38a958aa3988b25..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050301",
+      "to": "unit:atlas/modules/202609011950-geodesy.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050301-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609011950-geodesy.js, sha256=2c98d0be8a1c8f4d..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050301",
+      "to": "unit:atlas/modules/202609012245-network-topology.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050301-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609012245-network-topology.js, sha256=d279e5338c4b325a..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050301",
+      "to": "unit:atlas/modules/202609012245-electrical-distance.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050301-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609012245-electrical-distance.js, sha256=28ae3f3e2de8c9d2..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050301",
+      "to": "unit:atlas/modules/202609012250-rating-envelope.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050301-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609012250-rating-envelope.js, sha256=a0160fac5aa25185..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050301",
+      "to": "unit:atlas/modules/202609020015-injection-response.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050301-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609020015-injection-response.js, sha256=c4c5614ddf962f2c..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050301",
+      "to": "unit:atlas/modules/202609012345-planned-change.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050301-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609012345-planned-change.js, sha256=cee36a7b6cfc0b47..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050301",
+      "to": "unit:atlas/modules/202609012350-owner-boundary.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050301-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609012350-owner-boundary.js, sha256=29a9f42930f7720f..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050301",
+      "to": "unit:atlas/modules/202609030137-pinned-products.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050301-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609030137-pinned-products.js, sha256=8929b8d762d2cf17..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050301",
+      "to": "unit:atlas/modules/202609030157-version-ledger.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050301-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609030157-version-ledger.js, sha256=f6b5dc8d81317f18..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050301",
+      "to": "unit:atlas/modules/202609030205-corridor-estimate.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050301-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609030205-corridor-estimate.js, sha256=197c0353f4421edc..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050301",
+      "to": "unit:atlas/modules/202609031958-menu-bar.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050301-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609031958-menu-bar.js, sha256=af3c3573aa88ff3a..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050301",
+      "to": "unit:atlas/modules/202609032220-arrival-tidy.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050301-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609032220-arrival-tidy.js, sha256=59826ccf25a465ab..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050301",
+      "to": "unit:atlas/modules/202609030048-pipeline-news-layers.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050301-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609030048-pipeline-news-layers.js, sha256=075fb2e50723bcd2..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050301",
+      "to": "unit:atlas/modules/202609040400-sld-styles.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050301-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609040400-sld-styles.js, sha256=7497379df0de2b70..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050301",
+      "to": "unit:atlas/parts/202609012350-substation-intelligence-body.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050301-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=part, path=atlas/parts/202609012350-substation-intelligence-body.js, sha256=44c0caba961993e8..."
+      }
+    },
+    {
+      "from": "composition:202609050249",
+      "to": "composition:202609050244",
+      "type": "supersedes",
+      "evidence": {
+        "file": "atlas/manifests/202609050249-composition.json",
+        "line": 0,
+        "pattern": "json:\"parent_generation\"",
+        "snippet": "parent_generation = \"202609050244\""
+      }
+    },
+    {
+      "from": "composition:202609050249",
+      "to": "cartridge:streaming-parquet-bridge@202609041945",
+      "type": "composed_of",
+      "evidence": {
+        "file": "atlas/manifests/202609050249-composition.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (cartridges[])",
+        "snippet": "streaming-parquet-bridge: path=./cartridges/202609041945-streaming-parquet-bridge-v9-5.js, sha256=4a6b594f7705bc4d..."
+      }
+    },
+    {
+      "from": "composition:202609050249",
+      "to": "cartridge:uk-gazetteer-flyto@202609041945",
+      "type": "composed_of",
+      "evidence": {
+        "file": "atlas/manifests/202609050249-composition.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (cartridges[])",
+        "snippet": "uk-gazetteer-flyto: path=./cartridges/202609041945-place-global-search-v9-5.js, sha256=21ab1507e98ee299..."
+      }
+    },
+    {
+      "from": "cartridge:uk-gazetteer-flyto@202609041945",
+      "to": "unit:atlas/parts/202609040229-place-global-search-arrival-identity.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609041945-place-global-search-v9-5-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=part, path=atlas/parts/202609040229-place-global-search-arrival-identity.js, sha256=a40137cbae040a9e..."
+      }
+    },
+    {
+      "from": "composition:202609050249",
+      "to": "cartridge:sld-sandbox@202609050249",
+      "type": "composed_of",
+      "evidence": {
+        "file": "atlas/manifests/202609050249-composition.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (cartridges[])",
+        "snippet": "sld-sandbox: path=./cartridges/202609050249-sld-sandbox-v9-8.js, sha256=6225b587fb4988be..."
+      }
+    },
+    {
+      "from": "cartridge:sld-sandbox@202609050249",
+      "to": "unit:atlas/modules/202609012040-grid-scope.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050249-sld-sandbox-v9-8-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609012040-grid-scope.js, sha256=a4f96c30c9240424..."
+      }
+    },
+    {
+      "from": "cartridge:sld-sandbox@202609050249",
+      "to": "unit:atlas/modules/202609012217-source-registry.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050249-sld-sandbox-v9-8-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609012217-source-registry.js, sha256=22080f1a774879d9..."
+      }
+    },
+    {
+      "from": "cartridge:sld-sandbox@202609050249",
+      "to": "unit:atlas/modules/202609012128-declared-connections.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050249-sld-sandbox-v9-8-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609012128-declared-connections.js, sha256=a44520ebd644e725..."
+      }
+    },
+    {
+      "from": "cartridge:sld-sandbox@202609050249",
+      "to": "unit:atlas/modules/202609012205-sizing-arithmetic.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050249-sld-sandbox-v9-8-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609012205-sizing-arithmetic.js, sha256=bbaf6453475be4c5..."
+      }
+    },
+    {
+      "from": "cartridge:sld-sandbox@202609050249",
+      "to": "unit:atlas/modules/202609031310-technology-coverage.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050249-sld-sandbox-v9-8-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609031310-technology-coverage.js, sha256=6db7d5ae1619da0e..."
+      }
+    },
+    {
+      "from": "cartridge:sld-sandbox@202609050249",
+      "to": "unit:atlas/parts/202609041234-sld-sandbox-technology-buckets.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050249-sld-sandbox-v9-8-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=part, path=atlas/parts/202609041234-sld-sandbox-technology-buckets.js, sha256=38fa65a2283d3cbb..."
+      }
+    },
+    {
+      "from": "composition:202609050249",
+      "to": "cartridge:substation-intelligence@202609050249",
+      "type": "composed_of",
+      "evidence": {
+        "file": "atlas/manifests/202609050249-composition.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (cartridges[])",
+        "snippet": "substation-intelligence: path=./cartridges/202609050249-substation-intelligence-v9-63.js, sha256=fd3a1655f09f7694..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050249",
+      "to": "unit:atlas/parts/202609040229-ventus-corev8engine-exact-repd-delegation.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050249-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=carried_shell_script, path=atlas/parts/202609040229-ventus-corev8engine-exact-repd-delegation.js, sha256=d38a958aa3988b25..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050249",
+      "to": "unit:atlas/modules/202609011950-geodesy.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050249-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609011950-geodesy.js, sha256=2c98d0be8a1c8f4d..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050249",
+      "to": "unit:atlas/modules/202609012245-network-topology.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050249-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609012245-network-topology.js, sha256=d279e5338c4b325a..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050249",
+      "to": "unit:atlas/modules/202609012245-electrical-distance.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050249-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609012245-electrical-distance.js, sha256=28ae3f3e2de8c9d2..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050249",
+      "to": "unit:atlas/modules/202609012250-rating-envelope.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050249-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609012250-rating-envelope.js, sha256=a0160fac5aa25185..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050249",
+      "to": "unit:atlas/modules/202609020015-injection-response.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050249-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609020015-injection-response.js, sha256=c4c5614ddf962f2c..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050249",
+      "to": "unit:atlas/modules/202609012345-planned-change.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050249-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609012345-planned-change.js, sha256=cee36a7b6cfc0b47..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050249",
+      "to": "unit:atlas/modules/202609012350-owner-boundary.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050249-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609012350-owner-boundary.js, sha256=29a9f42930f7720f..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050249",
+      "to": "unit:atlas/modules/202609030137-pinned-products.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050249-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609030137-pinned-products.js, sha256=8929b8d762d2cf17..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050249",
+      "to": "unit:atlas/modules/202609030157-version-ledger.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050249-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609030157-version-ledger.js, sha256=40f60791cfcd482b..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050249",
+      "to": "unit:atlas/modules/202609030205-corridor-estimate.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050249-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609030205-corridor-estimate.js, sha256=197c0353f4421edc..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050249",
+      "to": "unit:atlas/modules/202609031958-menu-bar.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050249-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609031958-menu-bar.js, sha256=55d096b90ae014ec..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050249",
+      "to": "unit:atlas/modules/202609032220-arrival-tidy.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050249-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609032220-arrival-tidy.js, sha256=59826ccf25a465ab..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050249",
+      "to": "unit:atlas/modules/202609030048-pipeline-news-layers.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050249-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609030048-pipeline-news-layers.js, sha256=075fb2e50723bcd2..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050249",
+      "to": "unit:atlas/modules/202609040400-sld-styles.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050249-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609040400-sld-styles.js, sha256=7497379df0de2b70..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050249",
+      "to": "unit:atlas/parts/202609012350-substation-intelligence-body.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050249-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=part, path=atlas/parts/202609012350-substation-intelligence-body.js, sha256=44c0caba961993e8..."
+      }
+    },
+    {
+      "from": "composition:202609050244",
+      "to": "composition:202609050238",
+      "type": "supersedes",
+      "evidence": {
+        "file": "atlas/manifests/202609050244-composition.json",
+        "line": 0,
+        "pattern": "json:\"parent_generation\"",
+        "snippet": "parent_generation = \"202609050238\""
+      }
+    },
+    {
+      "from": "composition:202609050244",
+      "to": "cartridge:streaming-parquet-bridge@202609041945",
+      "type": "composed_of",
+      "evidence": {
+        "file": "atlas/manifests/202609050244-composition.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (cartridges[])",
+        "snippet": "streaming-parquet-bridge: path=./cartridges/202609041945-streaming-parquet-bridge-v9-5.js, sha256=4a6b594f7705bc4d..."
+      }
+    },
+    {
+      "from": "composition:202609050244",
+      "to": "cartridge:uk-gazetteer-flyto@202609041945",
+      "type": "composed_of",
+      "evidence": {
+        "file": "atlas/manifests/202609050244-composition.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (cartridges[])",
+        "snippet": "uk-gazetteer-flyto: path=./cartridges/202609041945-place-global-search-v9-5.js, sha256=21ab1507e98ee299..."
+      }
+    },
+    {
+      "from": "cartridge:uk-gazetteer-flyto@202609041945",
+      "to": "unit:atlas/parts/202609040229-place-global-search-arrival-identity.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609041945-place-global-search-v9-5-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=part, path=atlas/parts/202609040229-place-global-search-arrival-identity.js, sha256=a40137cbae040a9e..."
+      }
+    },
+    {
+      "from": "composition:202609050244",
+      "to": "cartridge:sld-sandbox@202609050244",
+      "type": "composed_of",
+      "evidence": {
+        "file": "atlas/manifests/202609050244-composition.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (cartridges[])",
+        "snippet": "sld-sandbox: path=./cartridges/202609050244-sld-sandbox-v9-8.js, sha256=1b511d029f1a5b88..."
+      }
+    },
+    {
+      "from": "cartridge:sld-sandbox@202609050244",
+      "to": "unit:atlas/modules/202609012040-grid-scope.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050244-sld-sandbox-v9-8-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609012040-grid-scope.js, sha256=a4f96c30c9240424..."
+      }
+    },
+    {
+      "from": "cartridge:sld-sandbox@202609050244",
+      "to": "unit:atlas/modules/202609012217-source-registry.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050244-sld-sandbox-v9-8-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609012217-source-registry.js, sha256=22080f1a774879d9..."
+      }
+    },
+    {
+      "from": "cartridge:sld-sandbox@202609050244",
+      "to": "unit:atlas/modules/202609012128-declared-connections.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050244-sld-sandbox-v9-8-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609012128-declared-connections.js, sha256=a44520ebd644e725..."
+      }
+    },
+    {
+      "from": "cartridge:sld-sandbox@202609050244",
+      "to": "unit:atlas/modules/202609012205-sizing-arithmetic.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050244-sld-sandbox-v9-8-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609012205-sizing-arithmetic.js, sha256=bbaf6453475be4c5..."
+      }
+    },
+    {
+      "from": "cartridge:sld-sandbox@202609050244",
+      "to": "unit:atlas/modules/202609031310-technology-coverage.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050244-sld-sandbox-v9-8-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609031310-technology-coverage.js, sha256=6db7d5ae1619da0e..."
+      }
+    },
+    {
+      "from": "cartridge:sld-sandbox@202609050244",
+      "to": "unit:atlas/parts/202609041234-sld-sandbox-technology-buckets.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050244-sld-sandbox-v9-8-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=part, path=atlas/parts/202609041234-sld-sandbox-technology-buckets.js, sha256=38fa65a2283d3cbb..."
+      }
+    },
+    {
+      "from": "composition:202609050244",
+      "to": "cartridge:substation-intelligence@202609050244",
+      "type": "composed_of",
+      "evidence": {
+        "file": "atlas/manifests/202609050244-composition.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (cartridges[])",
+        "snippet": "substation-intelligence: path=./cartridges/202609050244-substation-intelligence-v9-63.js, sha256=bf1c7c2d2743d561..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050244",
+      "to": "unit:atlas/parts/202609040229-ventus-corev8engine-exact-repd-delegation.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050244-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=carried_shell_script, path=atlas/parts/202609040229-ventus-corev8engine-exact-repd-delegation.js, sha256=d38a958aa3988b25..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050244",
+      "to": "unit:atlas/modules/202609011950-geodesy.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050244-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609011950-geodesy.js, sha256=2c98d0be8a1c8f4d..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050244",
+      "to": "unit:atlas/modules/202609012245-network-topology.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050244-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609012245-network-topology.js, sha256=d279e5338c4b325a..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050244",
+      "to": "unit:atlas/modules/202609012245-electrical-distance.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050244-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609012245-electrical-distance.js, sha256=28ae3f3e2de8c9d2..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050244",
+      "to": "unit:atlas/modules/202609012250-rating-envelope.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050244-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609012250-rating-envelope.js, sha256=a0160fac5aa25185..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050244",
+      "to": "unit:atlas/modules/202609020015-injection-response.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050244-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609020015-injection-response.js, sha256=c4c5614ddf962f2c..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050244",
+      "to": "unit:atlas/modules/202609012345-planned-change.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050244-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609012345-planned-change.js, sha256=cee36a7b6cfc0b47..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050244",
+      "to": "unit:atlas/modules/202609012350-owner-boundary.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050244-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609012350-owner-boundary.js, sha256=29a9f42930f7720f..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050244",
+      "to": "unit:atlas/modules/202609030137-pinned-products.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050244-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609030137-pinned-products.js, sha256=8929b8d762d2cf17..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050244",
+      "to": "unit:atlas/modules/202609030157-version-ledger.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050244-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609030157-version-ledger.js, sha256=6b91b9d4026e8c62..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050244",
+      "to": "unit:atlas/modules/202609030205-corridor-estimate.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050244-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609030205-corridor-estimate.js, sha256=197c0353f4421edc..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050244",
+      "to": "unit:atlas/modules/202609031958-menu-bar.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050244-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609031958-menu-bar.js, sha256=3bf5ed37db0f3ca1..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050244",
+      "to": "unit:atlas/modules/202609032220-arrival-tidy.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050244-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609032220-arrival-tidy.js, sha256=59826ccf25a465ab..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050244",
+      "to": "unit:atlas/modules/202609030048-pipeline-news-layers.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050244-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609030048-pipeline-news-layers.js, sha256=075fb2e50723bcd2..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050244",
+      "to": "unit:atlas/modules/202609040400-sld-styles.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050244-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609040400-sld-styles.js, sha256=7497379df0de2b70..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050244",
+      "to": "unit:atlas/parts/202609012350-substation-intelligence-body.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050244-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=part, path=atlas/parts/202609012350-substation-intelligence-body.js, sha256=44c0caba961993e8..."
+      }
+    },
+    {
+      "from": "composition:202609050238",
+      "to": "composition:202609042123",
+      "type": "supersedes",
+      "evidence": {
+        "file": "atlas/manifests/202609050238-composition.json",
+        "line": 0,
+        "pattern": "json:\"parent_generation\"",
+        "snippet": "parent_generation = \"202609042123\""
+      }
+    },
+    {
+      "from": "composition:202609050238",
+      "to": "cartridge:streaming-parquet-bridge@202609041945",
+      "type": "composed_of",
+      "evidence": {
+        "file": "atlas/manifests/202609050238-composition.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (cartridges[])",
+        "snippet": "streaming-parquet-bridge: path=./cartridges/202609041945-streaming-parquet-bridge-v9-5.js, sha256=4a6b594f7705bc4d..."
+      }
+    },
+    {
+      "from": "composition:202609050238",
+      "to": "cartridge:uk-gazetteer-flyto@202609041945",
+      "type": "composed_of",
+      "evidence": {
+        "file": "atlas/manifests/202609050238-composition.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (cartridges[])",
+        "snippet": "uk-gazetteer-flyto: path=./cartridges/202609041945-place-global-search-v9-5.js, sha256=21ab1507e98ee299..."
+      }
+    },
+    {
+      "from": "cartridge:uk-gazetteer-flyto@202609041945",
+      "to": "unit:atlas/parts/202609040229-place-global-search-arrival-identity.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609041945-place-global-search-v9-5-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=part, path=atlas/parts/202609040229-place-global-search-arrival-identity.js, sha256=a40137cbae040a9e..."
+      }
+    },
+    {
+      "from": "composition:202609050238",
+      "to": "cartridge:sld-sandbox@202609050238",
+      "type": "composed_of",
+      "evidence": {
+        "file": "atlas/manifests/202609050238-composition.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (cartridges[])",
+        "snippet": "sld-sandbox: path=./cartridges/202609050238-sld-sandbox-v9-8.js, sha256=b1415884a3d3c9a1..."
+      }
+    },
+    {
+      "from": "cartridge:sld-sandbox@202609050238",
+      "to": "unit:atlas/modules/202609012040-grid-scope.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050238-sld-sandbox-v9-8-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609012040-grid-scope.js, sha256=a4f96c30c9240424..."
+      }
+    },
+    {
+      "from": "cartridge:sld-sandbox@202609050238",
+      "to": "unit:atlas/modules/202609012217-source-registry.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050238-sld-sandbox-v9-8-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609012217-source-registry.js, sha256=22080f1a774879d9..."
+      }
+    },
+    {
+      "from": "cartridge:sld-sandbox@202609050238",
+      "to": "unit:atlas/modules/202609012128-declared-connections.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050238-sld-sandbox-v9-8-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609012128-declared-connections.js, sha256=a44520ebd644e725..."
+      }
+    },
+    {
+      "from": "cartridge:sld-sandbox@202609050238",
+      "to": "unit:atlas/modules/202609012205-sizing-arithmetic.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050238-sld-sandbox-v9-8-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609012205-sizing-arithmetic.js, sha256=bbaf6453475be4c5..."
+      }
+    },
+    {
+      "from": "cartridge:sld-sandbox@202609050238",
+      "to": "unit:atlas/modules/202609031310-technology-coverage.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050238-sld-sandbox-v9-8-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609031310-technology-coverage.js, sha256=6db7d5ae1619da0e..."
+      }
+    },
+    {
+      "from": "cartridge:sld-sandbox@202609050238",
+      "to": "unit:atlas/parts/202609041234-sld-sandbox-technology-buckets.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050238-sld-sandbox-v9-8-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=part, path=atlas/parts/202609041234-sld-sandbox-technology-buckets.js, sha256=38fa65a2283d3cbb..."
+      }
+    },
+    {
+      "from": "composition:202609050238",
+      "to": "cartridge:substation-intelligence@202609050238",
+      "type": "composed_of",
+      "evidence": {
+        "file": "atlas/manifests/202609050238-composition.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (cartridges[])",
+        "snippet": "substation-intelligence: path=./cartridges/202609050238-substation-intelligence-v9-63.js, sha256=8a7eeca505f7417d..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050238",
+      "to": "unit:atlas/parts/202609040229-ventus-corev8engine-exact-repd-delegation.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050238-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=carried_shell_script, path=atlas/parts/202609040229-ventus-corev8engine-exact-repd-delegation.js, sha256=d38a958aa3988b25..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050238",
+      "to": "unit:atlas/modules/202609011950-geodesy.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050238-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609011950-geodesy.js, sha256=2c98d0be8a1c8f4d..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050238",
+      "to": "unit:atlas/modules/202609012245-network-topology.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050238-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609012245-network-topology.js, sha256=d279e5338c4b325a..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050238",
+      "to": "unit:atlas/modules/202609012245-electrical-distance.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050238-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609012245-electrical-distance.js, sha256=28ae3f3e2de8c9d2..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050238",
+      "to": "unit:atlas/modules/202609012250-rating-envelope.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050238-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609012250-rating-envelope.js, sha256=a0160fac5aa25185..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050238",
+      "to": "unit:atlas/modules/202609020015-injection-response.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050238-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609020015-injection-response.js, sha256=c4c5614ddf962f2c..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050238",
+      "to": "unit:atlas/modules/202609012345-planned-change.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050238-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609012345-planned-change.js, sha256=cee36a7b6cfc0b47..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050238",
+      "to": "unit:atlas/modules/202609012350-owner-boundary.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050238-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609012350-owner-boundary.js, sha256=29a9f42930f7720f..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050238",
+      "to": "unit:atlas/modules/202609030137-pinned-products.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050238-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609030137-pinned-products.js, sha256=8929b8d762d2cf17..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050238",
+      "to": "unit:atlas/modules/202609030157-version-ledger.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050238-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609030157-version-ledger.js, sha256=7f7bd0acf67e89e9..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050238",
+      "to": "unit:atlas/modules/202609030205-corridor-estimate.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050238-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609030205-corridor-estimate.js, sha256=197c0353f4421edc..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050238",
+      "to": "unit:atlas/modules/202609031958-menu-bar.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050238-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609031958-menu-bar.js, sha256=4d0a7b9523f92f0f..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050238",
+      "to": "unit:atlas/modules/202609032220-arrival-tidy.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050238-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609032220-arrival-tidy.js, sha256=59826ccf25a465ab..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050238",
+      "to": "unit:atlas/modules/202609030048-pipeline-news-layers.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050238-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609030048-pipeline-news-layers.js, sha256=075fb2e50723bcd2..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050238",
+      "to": "unit:atlas/modules/202609040400-sld-styles.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050238-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=module, path=atlas/modules/202609040400-sld-styles.js, sha256=7497379df0de2b70..."
+      }
+    },
+    {
+      "from": "cartridge:substation-intelligence@202609050238",
+      "to": "unit:atlas/parts/202609012350-substation-intelligence-body.js",
+      "type": "assembled_from",
+      "evidence": {
+        "file": "atlas/manifests/202609050238-substation-intelligence-v9-63-parts.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
+        "snippet": "role=part, path=atlas/parts/202609012350-substation-intelligence-body.js, sha256=44c0caba961993e8..."
+      }
+    },
     {
       "from": "composition:202609042123",
       "to": "composition:202609041957",
@@ -4116,17 +5548,6 @@
     },
     {
       "from": "composition:202609040403",
-      "to": "composition:202609040337",
-      "type": "supersedes",
-      "evidence": {
-        "file": "atlas/manifests/202609040403-composition.json",
-        "line": 0,
-        "pattern": "json:\"parent_generation\"",
-        "snippet": "parent_generation = \"202609040337\""
-      }
-    },
-    {
-      "from": "composition:202609040403",
       "to": "cartridge:streaming-parquet-bridge@202608301825",
       "type": "composed_of",
       "evidence": {
@@ -4417,1436 +5838,6 @@
       "type": "assembled_from",
       "evidence": {
         "file": "atlas/manifests/202609040403-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=part, path=atlas/parts/202609012350-substation-intelligence-body.js, sha256=44c0caba961993e8..."
-      }
-    },
-    {
-      "from": "composition:202609040337",
-      "to": "composition:202609040219",
-      "type": "supersedes",
-      "evidence": {
-        "file": "atlas/manifests/202609040337-composition.json",
-        "line": 0,
-        "pattern": "json:\"parent_generation\"",
-        "snippet": "parent_generation = \"202609040219\""
-      }
-    },
-    {
-      "from": "composition:202609040337",
-      "to": "cartridge:streaming-parquet-bridge@202608301825",
-      "type": "composed_of",
-      "evidence": {
-        "file": "atlas/manifests/202609040337-composition.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (cartridges[])",
-        "snippet": "streaming-parquet-bridge: path=./cartridges/202608301825-streaming-parquet-bridge-v9-5.js, sha256=79045ccadaebf226..."
-      }
-    },
-    {
-      "from": "composition:202609040337",
-      "to": "cartridge:uk-gazetteer-flyto@202609040337",
-      "type": "composed_of",
-      "evidence": {
-        "file": "atlas/manifests/202609040337-composition.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (cartridges[])",
-        "snippet": "uk-gazetteer-flyto: path=./cartridges/202609040337-place-global-search-v9-5.js, sha256=41f96a73784bfb20..."
-      }
-    },
-    {
-      "from": "cartridge:uk-gazetteer-flyto@202609040337",
-      "to": "unit:atlas/parts/202609040229-place-global-search-arrival-identity.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040337-place-global-search-v9-5-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=part, path=atlas/parts/202609040229-place-global-search-arrival-identity.js, sha256=3262423bf7fe5b75..."
-      }
-    },
-    {
-      "from": "composition:202609040337",
-      "to": "cartridge:sld-sandbox@202609040337",
-      "type": "composed_of",
-      "evidence": {
-        "file": "atlas/manifests/202609040337-composition.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (cartridges[])",
-        "snippet": "sld-sandbox: path=./cartridges/202609040337-sld-sandbox-v9-8.js, sha256=a247b53de5420f94..."
-      }
-    },
-    {
-      "from": "cartridge:sld-sandbox@202609040337",
-      "to": "unit:atlas/modules/202609012040-grid-scope.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040337-sld-sandbox-v9-8-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609012040-grid-scope.js, sha256=a4f96c30c9240424..."
-      }
-    },
-    {
-      "from": "cartridge:sld-sandbox@202609040337",
-      "to": "unit:atlas/modules/202609012217-source-registry.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040337-sld-sandbox-v9-8-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609012217-source-registry.js, sha256=22080f1a774879d9..."
-      }
-    },
-    {
-      "from": "cartridge:sld-sandbox@202609040337",
-      "to": "unit:atlas/modules/202609012128-declared-connections.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040337-sld-sandbox-v9-8-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609012128-declared-connections.js, sha256=a44520ebd644e725..."
-      }
-    },
-    {
-      "from": "cartridge:sld-sandbox@202609040337",
-      "to": "unit:atlas/modules/202609012205-sizing-arithmetic.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040337-sld-sandbox-v9-8-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609012205-sizing-arithmetic.js, sha256=bbaf6453475be4c5..."
-      }
-    },
-    {
-      "from": "cartridge:sld-sandbox@202609040337",
-      "to": "unit:atlas/modules/202609031310-technology-coverage.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040337-sld-sandbox-v9-8-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609031310-technology-coverage.js, sha256=6db7d5ae1619da0e..."
-      }
-    },
-    {
-      "from": "cartridge:sld-sandbox@202609040337",
-      "to": "unit:atlas/parts/202609040229-sld-sandbox-arrival-identity.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040337-sld-sandbox-v9-8-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=part, path=atlas/parts/202609040229-sld-sandbox-arrival-identity.js, sha256=7c0d4eb1ef95c845..."
-      }
-    },
-    {
-      "from": "composition:202609040337",
-      "to": "cartridge:substation-intelligence@202609040337",
-      "type": "composed_of",
-      "evidence": {
-        "file": "atlas/manifests/202609040337-composition.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (cartridges[])",
-        "snippet": "substation-intelligence: path=./cartridges/202609040337-substation-intelligence-v9-63.js, sha256=15c626d65ca22e46..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040337",
-      "to": "unit:atlas/parts/202609040229-ventus-corev8engine-exact-repd-delegation.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040337-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=carried_shell_script, path=atlas/parts/202609040229-ventus-corev8engine-exact-repd-delegation.js, sha256=d38a958aa3988b25..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040337",
-      "to": "unit:atlas/modules/202609011950-geodesy.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040337-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609011950-geodesy.js, sha256=2c98d0be8a1c8f4d..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040337",
-      "to": "unit:atlas/modules/202609012245-network-topology.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040337-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609012245-network-topology.js, sha256=d279e5338c4b325a..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040337",
-      "to": "unit:atlas/modules/202609012245-electrical-distance.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040337-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609012245-electrical-distance.js, sha256=28ae3f3e2de8c9d2..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040337",
-      "to": "unit:atlas/modules/202609012250-rating-envelope.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040337-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609012250-rating-envelope.js, sha256=a0160fac5aa25185..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040337",
-      "to": "unit:atlas/modules/202609020015-injection-response.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040337-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609020015-injection-response.js, sha256=c4c5614ddf962f2c..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040337",
-      "to": "unit:atlas/modules/202609012345-planned-change.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040337-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609012345-planned-change.js, sha256=cee36a7b6cfc0b47..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040337",
-      "to": "unit:atlas/modules/202609012350-owner-boundary.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040337-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609012350-owner-boundary.js, sha256=29a9f42930f7720f..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040337",
-      "to": "unit:atlas/modules/202609030137-pinned-products.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040337-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609030137-pinned-products.js, sha256=8929b8d762d2cf17..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040337",
-      "to": "unit:atlas/modules/202609030157-version-ledger.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040337-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609030157-version-ledger.js, sha256=faf288f476515a95..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040337",
-      "to": "unit:atlas/modules/202609030205-corridor-estimate.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040337-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609030205-corridor-estimate.js, sha256=197c0353f4421edc..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040337",
-      "to": "unit:atlas/modules/202609031958-menu-bar.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040337-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609031958-menu-bar.js, sha256=41e810c39f6ea5d5..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040337",
-      "to": "unit:atlas/modules/202609032220-arrival-tidy.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040337-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609032220-arrival-tidy.js, sha256=59826ccf25a465ab..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040337",
-      "to": "unit:atlas/modules/202609030048-pipeline-news-layers.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040337-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609030048-pipeline-news-layers.js, sha256=075fb2e50723bcd2..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040337",
-      "to": "unit:atlas/parts/202609012350-substation-intelligence-body.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040337-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=part, path=atlas/parts/202609012350-substation-intelligence-body.js, sha256=44c0caba961993e8..."
-      }
-    },
-    {
-      "from": "composition:202609040219",
-      "to": "composition:202609040134",
-      "type": "supersedes",
-      "evidence": {
-        "file": "atlas/manifests/202609040219-composition.json",
-        "line": 0,
-        "pattern": "json:\"parent_generation\"",
-        "snippet": "parent_generation = \"202609040134\""
-      }
-    },
-    {
-      "from": "composition:202609040219",
-      "to": "cartridge:streaming-parquet-bridge@202608301825",
-      "type": "composed_of",
-      "evidence": {
-        "file": "atlas/manifests/202609040219-composition.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (cartridges[])",
-        "snippet": "streaming-parquet-bridge: path=./cartridges/202608301825-streaming-parquet-bridge-v9-5.js, sha256=79045ccadaebf226..."
-      }
-    },
-    {
-      "from": "composition:202609040219",
-      "to": "cartridge:uk-gazetteer-flyto@202609011141",
-      "type": "composed_of",
-      "evidence": {
-        "file": "atlas/manifests/202609040219-composition.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (cartridges[])",
-        "snippet": "uk-gazetteer-flyto: path=./cartridges/202609011141-place-global-search-v9-5.js, sha256=0e57e7cdc1f87212..."
-      }
-    },
-    {
-      "from": "composition:202609040219",
-      "to": "cartridge:sld-sandbox@202609040219",
-      "type": "composed_of",
-      "evidence": {
-        "file": "atlas/manifests/202609040219-composition.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (cartridges[])",
-        "snippet": "sld-sandbox: path=./cartridges/202609040219-sld-sandbox-v9-8.js, sha256=0547925f28a5200f..."
-      }
-    },
-    {
-      "from": "cartridge:sld-sandbox@202609040219",
-      "to": "unit:atlas/modules/202609012040-grid-scope.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040219-sld-sandbox-v9-8-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609012040-grid-scope.js, sha256=a4f96c30c9240424..."
-      }
-    },
-    {
-      "from": "cartridge:sld-sandbox@202609040219",
-      "to": "unit:atlas/modules/202609012217-source-registry.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040219-sld-sandbox-v9-8-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609012217-source-registry.js, sha256=22080f1a774879d9..."
-      }
-    },
-    {
-      "from": "cartridge:sld-sandbox@202609040219",
-      "to": "unit:atlas/modules/202609012128-declared-connections.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040219-sld-sandbox-v9-8-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609012128-declared-connections.js, sha256=a44520ebd644e725..."
-      }
-    },
-    {
-      "from": "cartridge:sld-sandbox@202609040219",
-      "to": "unit:atlas/modules/202609012205-sizing-arithmetic.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040219-sld-sandbox-v9-8-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609012205-sizing-arithmetic.js, sha256=bbaf6453475be4c5..."
-      }
-    },
-    {
-      "from": "cartridge:sld-sandbox@202609040219",
-      "to": "unit:atlas/modules/202609031310-technology-coverage.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040219-sld-sandbox-v9-8-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609031310-technology-coverage.js, sha256=6db7d5ae1619da0e..."
-      }
-    },
-    {
-      "from": "cartridge:sld-sandbox@202609040219",
-      "to": "unit:atlas/parts/202609012045-sld-sandbox-body.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040219-sld-sandbox-v9-8-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=part, path=atlas/parts/202609012045-sld-sandbox-body.js, sha256=4494ff9a6fd9db05..."
-      }
-    },
-    {
-      "from": "composition:202609040219",
-      "to": "cartridge:substation-intelligence@202609040219",
-      "type": "composed_of",
-      "evidence": {
-        "file": "atlas/manifests/202609040219-composition.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (cartridges[])",
-        "snippet": "substation-intelligence: path=./cartridges/202609040219-substation-intelligence-v9-63.js, sha256=db3f3717fb1a862e..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040219",
-      "to": "unit:atlas/parts/202609040212-ventus-corev8engine-layer-availability.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040219-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=carried_shell_script, path=atlas/parts/202609040212-ventus-corev8engine-layer-availability.js, sha256=81b103b055258ddd..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040219",
-      "to": "unit:atlas/modules/202609011950-geodesy.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040219-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609011950-geodesy.js, sha256=2c98d0be8a1c8f4d..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040219",
-      "to": "unit:atlas/modules/202609012245-network-topology.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040219-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609012245-network-topology.js, sha256=d279e5338c4b325a..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040219",
-      "to": "unit:atlas/modules/202609012245-electrical-distance.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040219-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609012245-electrical-distance.js, sha256=28ae3f3e2de8c9d2..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040219",
-      "to": "unit:atlas/modules/202609012250-rating-envelope.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040219-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609012250-rating-envelope.js, sha256=a0160fac5aa25185..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040219",
-      "to": "unit:atlas/modules/202609020015-injection-response.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040219-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609020015-injection-response.js, sha256=c4c5614ddf962f2c..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040219",
-      "to": "unit:atlas/modules/202609012345-planned-change.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040219-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609012345-planned-change.js, sha256=cee36a7b6cfc0b47..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040219",
-      "to": "unit:atlas/modules/202609012350-owner-boundary.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040219-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609012350-owner-boundary.js, sha256=29a9f42930f7720f..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040219",
-      "to": "unit:atlas/modules/202609030137-pinned-products.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040219-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609030137-pinned-products.js, sha256=8929b8d762d2cf17..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040219",
-      "to": "unit:atlas/modules/202609030157-version-ledger.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040219-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609030157-version-ledger.js, sha256=fa06b3c23a75ec15..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040219",
-      "to": "unit:atlas/modules/202609030205-corridor-estimate.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040219-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609030205-corridor-estimate.js, sha256=197c0353f4421edc..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040219",
-      "to": "unit:atlas/modules/202609031958-menu-bar.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040219-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609031958-menu-bar.js, sha256=41e810c39f6ea5d5..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040219",
-      "to": "unit:atlas/modules/202609032220-arrival-tidy.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040219-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609032220-arrival-tidy.js, sha256=59826ccf25a465ab..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040219",
-      "to": "unit:atlas/modules/202609030048-pipeline-news-layers.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040219-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609030048-pipeline-news-layers.js, sha256=075fb2e50723bcd2..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040219",
-      "to": "unit:atlas/parts/202609012350-substation-intelligence-body.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040219-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=part, path=atlas/parts/202609012350-substation-intelligence-body.js, sha256=44c0caba961993e8..."
-      }
-    },
-    {
-      "from": "composition:202609040134",
-      "to": "composition:202609040058",
-      "type": "supersedes",
-      "evidence": {
-        "file": "atlas/manifests/202609040134-composition.json",
-        "line": 0,
-        "pattern": "json:\"parent_generation\"",
-        "snippet": "parent_generation = \"202609040058\""
-      }
-    },
-    {
-      "from": "composition:202609040134",
-      "to": "cartridge:streaming-parquet-bridge@202608301825",
-      "type": "composed_of",
-      "evidence": {
-        "file": "atlas/manifests/202609040134-composition.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (cartridges[])",
-        "snippet": "streaming-parquet-bridge: path=./cartridges/202608301825-streaming-parquet-bridge-v9-5.js, sha256=79045ccadaebf226..."
-      }
-    },
-    {
-      "from": "composition:202609040134",
-      "to": "cartridge:uk-gazetteer-flyto@202609011141",
-      "type": "composed_of",
-      "evidence": {
-        "file": "atlas/manifests/202609040134-composition.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (cartridges[])",
-        "snippet": "uk-gazetteer-flyto: path=./cartridges/202609011141-place-global-search-v9-5.js, sha256=0e57e7cdc1f87212..."
-      }
-    },
-    {
-      "from": "composition:202609040134",
-      "to": "cartridge:sld-sandbox@202609040134",
-      "type": "composed_of",
-      "evidence": {
-        "file": "atlas/manifests/202609040134-composition.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (cartridges[])",
-        "snippet": "sld-sandbox: path=./cartridges/202609040134-sld-sandbox-v9-8.js, sha256=ac7c7a402f708ac0..."
-      }
-    },
-    {
-      "from": "cartridge:sld-sandbox@202609040134",
-      "to": "unit:atlas/modules/202609012040-grid-scope.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040134-sld-sandbox-v9-8-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609012040-grid-scope.js, sha256=a4f96c30c9240424..."
-      }
-    },
-    {
-      "from": "cartridge:sld-sandbox@202609040134",
-      "to": "unit:atlas/modules/202609012217-source-registry.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040134-sld-sandbox-v9-8-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609012217-source-registry.js, sha256=22080f1a774879d9..."
-      }
-    },
-    {
-      "from": "cartridge:sld-sandbox@202609040134",
-      "to": "unit:atlas/modules/202609012128-declared-connections.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040134-sld-sandbox-v9-8-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609012128-declared-connections.js, sha256=a44520ebd644e725..."
-      }
-    },
-    {
-      "from": "cartridge:sld-sandbox@202609040134",
-      "to": "unit:atlas/modules/202609012205-sizing-arithmetic.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040134-sld-sandbox-v9-8-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609012205-sizing-arithmetic.js, sha256=bbaf6453475be4c5..."
-      }
-    },
-    {
-      "from": "cartridge:sld-sandbox@202609040134",
-      "to": "unit:atlas/modules/202609031310-technology-coverage.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040134-sld-sandbox-v9-8-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609031310-technology-coverage.js, sha256=6db7d5ae1619da0e..."
-      }
-    },
-    {
-      "from": "cartridge:sld-sandbox@202609040134",
-      "to": "unit:atlas/parts/202609012045-sld-sandbox-body.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040134-sld-sandbox-v9-8-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=part, path=atlas/parts/202609012045-sld-sandbox-body.js, sha256=4494ff9a6fd9db05..."
-      }
-    },
-    {
-      "from": "composition:202609040134",
-      "to": "cartridge:substation-intelligence@202609040134",
-      "type": "composed_of",
-      "evidence": {
-        "file": "atlas/manifests/202609040134-composition.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (cartridges[])",
-        "snippet": "substation-intelligence: path=./cartridges/202609040134-substation-intelligence-v9-63.js, sha256=0fecdcf51e0c4e76..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040134",
-      "to": "unit:atlas/parts/202609040045-ventus-corev8engine-deep-link-receiver.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040134-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=carried_shell_script, path=atlas/parts/202609040045-ventus-corev8engine-deep-link-receiver.js, sha256=b1da9baca77c7ddc..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040134",
-      "to": "unit:atlas/modules/202609011950-geodesy.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040134-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609011950-geodesy.js, sha256=2c98d0be8a1c8f4d..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040134",
-      "to": "unit:atlas/modules/202609012245-network-topology.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040134-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609012245-network-topology.js, sha256=d279e5338c4b325a..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040134",
-      "to": "unit:atlas/modules/202609012245-electrical-distance.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040134-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609012245-electrical-distance.js, sha256=28ae3f3e2de8c9d2..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040134",
-      "to": "unit:atlas/modules/202609012250-rating-envelope.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040134-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609012250-rating-envelope.js, sha256=a0160fac5aa25185..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040134",
-      "to": "unit:atlas/modules/202609020015-injection-response.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040134-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609020015-injection-response.js, sha256=c4c5614ddf962f2c..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040134",
-      "to": "unit:atlas/modules/202609012345-planned-change.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040134-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609012345-planned-change.js, sha256=cee36a7b6cfc0b47..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040134",
-      "to": "unit:atlas/modules/202609012350-owner-boundary.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040134-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609012350-owner-boundary.js, sha256=29a9f42930f7720f..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040134",
-      "to": "unit:atlas/modules/202609030137-pinned-products.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040134-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609030137-pinned-products.js, sha256=8929b8d762d2cf17..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040134",
-      "to": "unit:atlas/modules/202609030157-version-ledger.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040134-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609030157-version-ledger.js, sha256=a5f67aa307f8849a..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040134",
-      "to": "unit:atlas/modules/202609030205-corridor-estimate.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040134-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609030205-corridor-estimate.js, sha256=197c0353f4421edc..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040134",
-      "to": "unit:atlas/modules/202609031958-menu-bar.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040134-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609031958-menu-bar.js, sha256=41e810c39f6ea5d5..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040134",
-      "to": "unit:atlas/modules/202609032220-arrival-tidy.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040134-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609032220-arrival-tidy.js, sha256=59826ccf25a465ab..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040134",
-      "to": "unit:atlas/modules/202609030048-pipeline-news-layers.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040134-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609030048-pipeline-news-layers.js, sha256=075fb2e50723bcd2..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040134",
-      "to": "unit:atlas/parts/202609012350-substation-intelligence-body.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040134-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=part, path=atlas/parts/202609012350-substation-intelligence-body.js, sha256=44c0caba961993e8..."
-      }
-    },
-    {
-      "from": "composition:202609040058",
-      "to": "composition:202609032315",
-      "type": "supersedes",
-      "evidence": {
-        "file": "atlas/manifests/202609040058-composition.json",
-        "line": 0,
-        "pattern": "json:\"parent_generation\"",
-        "snippet": "parent_generation = \"202609032315\""
-      }
-    },
-    {
-      "from": "composition:202609040058",
-      "to": "cartridge:streaming-parquet-bridge@202608301825",
-      "type": "composed_of",
-      "evidence": {
-        "file": "atlas/manifests/202609040058-composition.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (cartridges[])",
-        "snippet": "streaming-parquet-bridge: path=./cartridges/202608301825-streaming-parquet-bridge-v9-5.js, sha256=79045ccadaebf226..."
-      }
-    },
-    {
-      "from": "composition:202609040058",
-      "to": "cartridge:uk-gazetteer-flyto@202609011141",
-      "type": "composed_of",
-      "evidence": {
-        "file": "atlas/manifests/202609040058-composition.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (cartridges[])",
-        "snippet": "uk-gazetteer-flyto: path=./cartridges/202609011141-place-global-search-v9-5.js, sha256=0e57e7cdc1f87212..."
-      }
-    },
-    {
-      "from": "composition:202609040058",
-      "to": "cartridge:sld-sandbox@202609040058",
-      "type": "composed_of",
-      "evidence": {
-        "file": "atlas/manifests/202609040058-composition.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (cartridges[])",
-        "snippet": "sld-sandbox: path=./cartridges/202609040058-sld-sandbox-v9-8.js, sha256=c022e892aea7230a..."
-      }
-    },
-    {
-      "from": "cartridge:sld-sandbox@202609040058",
-      "to": "unit:atlas/modules/202609012040-grid-scope.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040058-sld-sandbox-v9-8-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609012040-grid-scope.js, sha256=a4f96c30c9240424..."
-      }
-    },
-    {
-      "from": "cartridge:sld-sandbox@202609040058",
-      "to": "unit:atlas/modules/202609012217-source-registry.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040058-sld-sandbox-v9-8-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609012217-source-registry.js, sha256=22080f1a774879d9..."
-      }
-    },
-    {
-      "from": "cartridge:sld-sandbox@202609040058",
-      "to": "unit:atlas/modules/202609012128-declared-connections.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040058-sld-sandbox-v9-8-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609012128-declared-connections.js, sha256=a44520ebd644e725..."
-      }
-    },
-    {
-      "from": "cartridge:sld-sandbox@202609040058",
-      "to": "unit:atlas/modules/202609012205-sizing-arithmetic.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040058-sld-sandbox-v9-8-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609012205-sizing-arithmetic.js, sha256=bbaf6453475be4c5..."
-      }
-    },
-    {
-      "from": "cartridge:sld-sandbox@202609040058",
-      "to": "unit:atlas/modules/202609031310-technology-coverage.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040058-sld-sandbox-v9-8-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609031310-technology-coverage.js, sha256=6db7d5ae1619da0e..."
-      }
-    },
-    {
-      "from": "cartridge:sld-sandbox@202609040058",
-      "to": "unit:atlas/parts/202609012045-sld-sandbox-body.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040058-sld-sandbox-v9-8-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=part, path=atlas/parts/202609012045-sld-sandbox-body.js, sha256=728f4b1a86f73a9d..."
-      }
-    },
-    {
-      "from": "composition:202609040058",
-      "to": "cartridge:substation-intelligence@202609040058",
-      "type": "composed_of",
-      "evidence": {
-        "file": "atlas/manifests/202609040058-composition.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (cartridges[])",
-        "snippet": "substation-intelligence: path=./cartridges/202609040058-substation-intelligence-v9-63.js, sha256=20862b3058e73561..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040058",
-      "to": "unit:atlas/parts/202609040045-ventus-corev8engine-deep-link-receiver.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040058-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=carried_shell_script, path=atlas/parts/202609040045-ventus-corev8engine-deep-link-receiver.js, sha256=b1da9baca77c7ddc..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040058",
-      "to": "unit:atlas/modules/202609011950-geodesy.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040058-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609011950-geodesy.js, sha256=2c98d0be8a1c8f4d..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040058",
-      "to": "unit:atlas/modules/202609012245-network-topology.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040058-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609012245-network-topology.js, sha256=d279e5338c4b325a..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040058",
-      "to": "unit:atlas/modules/202609012245-electrical-distance.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040058-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609012245-electrical-distance.js, sha256=28ae3f3e2de8c9d2..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040058",
-      "to": "unit:atlas/modules/202609012250-rating-envelope.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040058-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609012250-rating-envelope.js, sha256=a0160fac5aa25185..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040058",
-      "to": "unit:atlas/modules/202609020015-injection-response.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040058-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609020015-injection-response.js, sha256=c4c5614ddf962f2c..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040058",
-      "to": "unit:atlas/modules/202609012345-planned-change.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040058-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609012345-planned-change.js, sha256=cee36a7b6cfc0b47..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040058",
-      "to": "unit:atlas/modules/202609012350-owner-boundary.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040058-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609012350-owner-boundary.js, sha256=29a9f42930f7720f..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040058",
-      "to": "unit:atlas/modules/202609030137-pinned-products.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040058-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609030137-pinned-products.js, sha256=8929b8d762d2cf17..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040058",
-      "to": "unit:atlas/modules/202609030157-version-ledger.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040058-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609030157-version-ledger.js, sha256=23dcdfa6b80afe7f..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040058",
-      "to": "unit:atlas/modules/202609030205-corridor-estimate.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040058-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609030205-corridor-estimate.js, sha256=197c0353f4421edc..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040058",
-      "to": "unit:atlas/modules/202609031958-menu-bar.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040058-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609031958-menu-bar.js, sha256=4c92383de0d0571a..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040058",
-      "to": "unit:atlas/modules/202609032220-arrival-tidy.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040058-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609032220-arrival-tidy.js, sha256=59826ccf25a465ab..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040058",
-      "to": "unit:atlas/modules/202609030048-pipeline-news-layers.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040058-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609030048-pipeline-news-layers.js, sha256=075fb2e50723bcd2..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609040058",
-      "to": "unit:atlas/parts/202609012350-substation-intelligence-body.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609040058-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=part, path=atlas/parts/202609012350-substation-intelligence-body.js, sha256=44c0caba961993e8..."
-      }
-    },
-    {
-      "from": "composition:202609032315",
-      "to": "cartridge:streaming-parquet-bridge@202608301825",
-      "type": "composed_of",
-      "evidence": {
-        "file": "atlas/manifests/202609032315-composition.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (cartridges[])",
-        "snippet": "streaming-parquet-bridge: path=./cartridges/202608301825-streaming-parquet-bridge-v9-5.js, sha256=79045ccadaebf226..."
-      }
-    },
-    {
-      "from": "composition:202609032315",
-      "to": "cartridge:uk-gazetteer-flyto@202609011141",
-      "type": "composed_of",
-      "evidence": {
-        "file": "atlas/manifests/202609032315-composition.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (cartridges[])",
-        "snippet": "uk-gazetteer-flyto: path=./cartridges/202609011141-place-global-search-v9-5.js, sha256=0e57e7cdc1f87212..."
-      }
-    },
-    {
-      "from": "composition:202609032315",
-      "to": "cartridge:sld-sandbox@202609032315",
-      "type": "composed_of",
-      "evidence": {
-        "file": "atlas/manifests/202609032315-composition.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (cartridges[])",
-        "snippet": "sld-sandbox: path=./cartridges/202609032315-sld-sandbox-v9-8.js, sha256=e598064a7359400a..."
-      }
-    },
-    {
-      "from": "cartridge:sld-sandbox@202609032315",
-      "to": "unit:atlas/modules/202609012040-grid-scope.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609032315-sld-sandbox-v9-8-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609012040-grid-scope.js, sha256=a4f96c30c9240424..."
-      }
-    },
-    {
-      "from": "cartridge:sld-sandbox@202609032315",
-      "to": "unit:atlas/modules/202609012217-source-registry.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609032315-sld-sandbox-v9-8-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609012217-source-registry.js, sha256=22080f1a774879d9..."
-      }
-    },
-    {
-      "from": "cartridge:sld-sandbox@202609032315",
-      "to": "unit:atlas/modules/202609012128-declared-connections.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609032315-sld-sandbox-v9-8-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609012128-declared-connections.js, sha256=a44520ebd644e725..."
-      }
-    },
-    {
-      "from": "cartridge:sld-sandbox@202609032315",
-      "to": "unit:atlas/modules/202609012205-sizing-arithmetic.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609032315-sld-sandbox-v9-8-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609012205-sizing-arithmetic.js, sha256=bbaf6453475be4c5..."
-      }
-    },
-    {
-      "from": "cartridge:sld-sandbox@202609032315",
-      "to": "unit:atlas/modules/202609030048-pipeline-news-layers.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609032315-sld-sandbox-v9-8-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609030048-pipeline-news-layers.js, sha256=075fb2e50723bcd2..."
-      }
-    },
-    {
-      "from": "cartridge:sld-sandbox@202609032315",
-      "to": "unit:atlas/modules/202609031310-technology-coverage.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609032315-sld-sandbox-v9-8-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609031310-technology-coverage.js, sha256=6db7d5ae1619da0e..."
-      }
-    },
-    {
-      "from": "cartridge:sld-sandbox@202609032315",
-      "to": "unit:atlas/parts/202609012045-sld-sandbox-body.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609032315-sld-sandbox-v9-8-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=part, path=atlas/parts/202609012045-sld-sandbox-body.js, sha256=7cda92a8650895a0..."
-      }
-    },
-    {
-      "from": "composition:202609032315",
-      "to": "cartridge:substation-intelligence@202609032315",
-      "type": "composed_of",
-      "evidence": {
-        "file": "atlas/manifests/202609032315-composition.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (cartridges[])",
-        "snippet": "substation-intelligence: path=./cartridges/202609032315-substation-intelligence-v9-63.js, sha256=b97cb894b2edafe1..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609032315",
-      "to": "unit:atlas/releases/202608300453-atlas-v9/ventus-corev8engine.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609032315-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=carried_shell_script, path=atlas/releases/202608300453-atlas-v9/ventus-corev8engine.js, sha256=9a75901ebdff05e0..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609032315",
-      "to": "unit:atlas/modules/202609011950-geodesy.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609032315-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609011950-geodesy.js, sha256=2c98d0be8a1c8f4d..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609032315",
-      "to": "unit:atlas/modules/202609012245-network-topology.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609032315-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609012245-network-topology.js, sha256=d279e5338c4b325a..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609032315",
-      "to": "unit:atlas/modules/202609012245-electrical-distance.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609032315-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609012245-electrical-distance.js, sha256=28ae3f3e2de8c9d2..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609032315",
-      "to": "unit:atlas/modules/202609012250-rating-envelope.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609032315-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609012250-rating-envelope.js, sha256=a0160fac5aa25185..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609032315",
-      "to": "unit:atlas/modules/202609020015-injection-response.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609032315-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609020015-injection-response.js, sha256=c4c5614ddf962f2c..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609032315",
-      "to": "unit:atlas/modules/202609012345-planned-change.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609032315-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609012345-planned-change.js, sha256=cee36a7b6cfc0b47..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609032315",
-      "to": "unit:atlas/modules/202609012350-owner-boundary.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609032315-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609012350-owner-boundary.js, sha256=29a9f42930f7720f..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609032315",
-      "to": "unit:atlas/modules/202609030137-pinned-products.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609032315-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609030137-pinned-products.js, sha256=8929b8d762d2cf17..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609032315",
-      "to": "unit:atlas/modules/202609030157-version-ledger.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609032315-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609030157-version-ledger.js, sha256=f169ece3dd99498d..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609032315",
-      "to": "unit:atlas/modules/202609030205-corridor-estimate.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609032315-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609030205-corridor-estimate.js, sha256=197c0353f4421edc..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609032315",
-      "to": "unit:atlas/modules/202609031958-menu-bar.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609032315-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609031958-menu-bar.js, sha256=0cd0b672932712da..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609032315",
-      "to": "unit:atlas/modules/202609032220-arrival-tidy.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609032315-substation-intelligence-v9-63-parts.json",
-        "line": 0,
-        "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
-        "snippet": "role=module, path=atlas/modules/202609032220-arrival-tidy.js, sha256=59826ccf25a465ab..."
-      }
-    },
-    {
-      "from": "cartridge:substation-intelligence@202609032315",
-      "to": "unit:atlas/parts/202609012350-substation-intelligence-body.js",
-      "type": "assembled_from",
-      "evidence": {
-        "file": "atlas/manifests/202609032315-substation-intelligence-v9-63-parts.json",
         "line": 0,
         "pattern": "json:\"path\"+\"sha256\" (assembled_from[])",
         "snippet": "role=part, path=atlas/parts/202609012350-substation-intelligence-body.js, sha256=44c0caba961993e8..."

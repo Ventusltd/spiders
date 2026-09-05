@@ -130,7 +130,7 @@
       "status": "in_progress",
       "feature": "Expose failed dependency/load state with bounded retry and preserved parent map.",
       "requiredProof": "Missing script and timed-out init; retry success without duplicate iframe",
-      "generation": null,
+      "generation": "202609051953",
       "release": null,
       "evidence": [],
       "nextAction": "Prove explicit recovery confirmation, external document classification and transient Ready observation; retain N06 failed run."
@@ -139,17 +139,17 @@
       "id": "N08",
       "title": "Module draw readiness guard",
       "owner": "layout-tool",
-      "module": "cartridges/module-draw-readiness.js",
+      "module": "src/module-layout/draw-readiness.js",
       "dependsOn": [
         "N04"
       ],
-      "status": "planned",
+      "status": "in_progress",
       "feature": "Prevent original Module Draw from reporting zero modules before map readiness.",
-      "requiredProof": "Early click and ready click both produce requested rows/modules; original baseline retained",
+      "requiredProof": "Early click is blocked without changing calculations; ready click draws requested modules; original runtime remains byte-identical.",
       "generation": null,
       "release": null,
       "evidence": [],
-      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+      "nextAction": "Derived producer1955 verifies seven files against baseline; await committed producer identity, delayed-map guard browser proof and consumer release. Producer timestamp is not the consumer generation."
     },
     {
       "id": "N09",

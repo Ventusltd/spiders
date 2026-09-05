@@ -1,0 +1,50 @@
+{
+  "retrievedUtc": "2026-09-05T19:26:30.287048+00:00",
+  "sources": [
+    {
+      "url": "https://globalgrid2050.com/mv_and_hv_components/",
+      "bytes": 11071,
+      "sha256": "0ccb1cee845a4e9440dc0be0ab6ea1e6bb585c04a81cdf8848b50216110f6a4b"
+    },
+    {
+      "url": "https://globalgrid2050.com/power_systems_studies/",
+      "bytes": 6547,
+      "sha256": "8ce9127bb3666dcc8647e87c456d6c5fc7797293ad911ddbecd9c5fc97719041"
+    },
+    {
+      "url": "https://globalgrid2050.com/employers_competence/",
+      "bytes": 26858,
+      "sha256": "950b58efb41030a6b015a51d4ed913e87f5b8e8118aeabd7012b92ebdc3586df"
+    },
+    {
+      "url": "https://globalgrid2050.com/employers_requirements_BESS/",
+      "bytes": 19768,
+      "sha256": "8f31206d3883ae7c8fb083c1fc9bcde14b8a0b88997bdd63a942e69cf0d677c9"
+    },
+    {
+      "url": "https://globalgrid2050.com/employers_requirments_large_scale_solar/",
+      "bytes": 22007,
+      "sha256": "93d808a6c75a1ea3ee6d140a9aab0651cf801d9f8448882a59966181c199a302"
+    },
+    {
+      "url": "https://globalgrid2050.com/solar_components/",
+      "bytes": 8756,
+      "sha256": "2de5bef6b75383917a1255160db64debcb4b6d8afe45393ff992d770d8d6a58b"
+    },
+    {
+      "url": "https://globalgrid2050.com/solar_deployment_statistics/",
+      "bytes": 14834,
+      "sha256": "eaa7cde008cd49f6f35e63d05c1573ab30c7a7cecbce05287c13b65b80a1f4fa"
+    }
+  ],
+  "scope": "Dated owner-reference pages, not independently verified engineering authority or current market totals.",
+  "roles": {
+    "mv_and_hv_components": "Electrical/mechanical termination interfaces, cable/accessory matching and installation assumptions",
+    "power_systems_studies": "Named project case studies and study-versus-installation attribution; not a generic automatic study engine",
+    "employers_competence": "Living selective electrical evidence checklist, design authority and review responsibilities; civil and other disciplines explicitly outside its scope",
+    "employers_requirements_BESS": "PCS/BESS and other electrical boundaries, model inputs, study deliverables and review evidence",
+    "employers_requirments_large_scale_solar": "Plant-level requirements and cross-study consistency, cable routing and supplier bend limits",
+    "solar_components": "Component population/model assumptions and technology-specific source context",
+    "solar_deployment_statistics": "Stated 2025 basis; distinguish GWac inputs and normalisation by1.2 from measured 2026 totals"
+  }
+}

@@ -53,6 +53,8 @@ included explicitly here; old registry snapshots are not silently rewritten.
 
 
 The active Build context checkpoint workflow runs the six reload fixtures alongside
-the eight completion-proof and two campaign-proof fixtures on Linux. It validates
+the eight completion-proof, two campaign-proof and three roadmap fixtures on Linux. It validates
 public context and retains only compact resume/CI observations. It does not scan a
 user's private machine, upload raw evidence or certify application builds.
+
+Read plan-tracker/NEXT-50.md for the newly authorized fifty-feature queue. Timestamped releases are assigned only during real builds; the queue does not claim future work is complete.

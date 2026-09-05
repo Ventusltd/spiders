@@ -1,0 +1,42 @@
+# Source template for the active .github/workflows/20260905-build-context.yml.
+name: Build context checkpoint
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['codex/reload/plan-tracker/**', '.github/workflows/20260905-build-context.yml']
+  pull_request:
+    paths: ['codex/reload/plan-tracker/**', 'codex/reload/BUILD-PLAN.md']
+permissions:
+  contents: read
+concurrency:
+  group: build-context-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  checkpoint:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+      - name: Prove rejection of invalid completion receipts
+        run: |
+          python3 -B codex/reload/plan-tracker/test_validate.py
+          python3 -B codex/reload/plan-tracker/test_campaign.py
+      - name: Validate public checkpoint and write resume context
+        run: python3 -B codex/reload/plan-tracker/validate.py --out artifacts/build-context
+      - name: Observe exact existing CI runs
+        if: always()
+        run: python3 -B codex/reload/plan-tracker/observe_ci.py --out artifacts/build-context
+      - name: Retain public context only
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a
+        with:
+          name: build-context-${{ github.sha }}-${{ github.run_id }}-${{ github.run_attempt }}
+          path: |
+            artifacts/build-context/validation.json
+            artifacts/build-context/RESUME.md
+            artifacts/build-context/ci-context.json
+          if-no-files-found: error
+          retention-days: 30

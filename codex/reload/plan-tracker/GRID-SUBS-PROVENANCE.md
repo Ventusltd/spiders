@@ -1,0 +1,23 @@
+# GRID and SUBS: existing component and missing consumer update
+
+Read-only source/history study, 5 September 2026. This document does not claim a fresh layer-toggle browser pass.
+
+The remembered voltage is **275 kV**, alongside 400, 220, 132 and 66 kV. The implementation is `installMobileTray()` in GridAtlas's `atlas/parts/202609041234-sld-sandbox-technology-buckets.js`, starting near line 3766. The tray ID is `gridatlas-mobile-tray`. `GRID_LINE_LAYERS` holds the five layer IDs. `quickChip()` drives the engine's existing `#scada-ui-container input[type=checkbox][data-layer-id]` controls with real clicks; it turns the group on if any available member is off, otherwise turns the group off. The SUBS chip targets the `subs` layer. It reflects changes back through `aria-pressed`.
+
+The actual labels are “⚡ Grid” and “◉ Subs”; the style renders uppercase. This is distinct from the GRID menu title and “Grid At Point” tool. The clone/export and UI tests must not count those other controls as the chips.
+
+Desktop chip creation was added by [GridAtlas commit fb8dc54c7f4c172e65d6ca854cdf3e3e8be65392](https://github.com/Ventusltd/gridatlas/commit/fb8dc54c7f4c172e65d6ca854cdf3e3e8be65392), authored by the Ventusltd Git identity on 5 September at 16:27:10 BST. Its commit explicitly records `Co-Authored-By: Claude Opus 5 (1M context)` and a Claude session. This is evidence of recorded authorship, not a guess based on naming. The commit's current composition was 202609051526; the subject describes the v9.131–v9.133 sequence. Do not confuse the commit-message timestamp with the manifest generation.
+
+The creation fix replaced the early desktop return with `const collapse = trayTarget()`: the two chips are created at every width, but the six-tool collapse remains limited to coarse-pointer or width ≤700px views. Menu-module `atlas/modules/202609031958-menu-bar.js`, `chipStaysOnMap()` around line 1530 and `adoptLate()` around line 1568, keeps GRID/SUBS on the map while routing other tray tools into menus. Both creation and retention are required.
+
+Bottom-left positioning already follows the immutable shell's `atlas/releases/202608300453-atlas-v9/ventusv8.css:49`: `.map-controls { position:absolute; bottom:30px; left:10px; ... }`. The tray is inserted as its first child. Visual styling is in `atlas/modules/202609040400-sld-styles.js:179` (`mobileTray`), with flex layout and 44px minimum touch height. Preserve this ownership and test actual geometry rather than adding an unrelated fixed overlay.
+
+Main composition **202609051624** references SLD cartridge **202609051540-sld-sandbox-v9-8.js**, whose parts manifest includes the updated technology-buckets part. By contrast, frozen Testcode **202609051623** and **202609051820** still contain the earlier `if (!trayTarget()) { ... return; }` near line 5607 of their `atlas/cartridges/<generation>-sld-sandbox.js`. These consumers therefore do not create the desktop chips, even though current main has the capability. Carry the change through the next immutable composition and verify the bytes served by the consumer; changing a main source part alone will not update a frozen Testcode release.
+
+The same introducing commit added `tools/proofs/grid-subs-chips-on-desktop.browser.mjs`. It checks nonzero chip boxes outside menus at 1400×900, 2327×1156 and 393×852. It does **not** click the chips, verify all five required layer checkboxes exist, check actual rendered layers, or assert bottom-left placement. The inspected workflows did not reference this proof. The broader GridAtlas cartridge workflow failed on a later inspected commit, with downstream mobile checks skipped; that workflow result cannot be presented as a passing chip interaction proof.
+
+P7 adds explicit placement, five-voltage group toggle, SUBS toggle, selection synchronization and mobile-regression acceptance. It should test all five controls rather than accepting the production helper's filtered subset when some controls are missing, and should verify map hit targets remain unobstructed when cards or menus open.
+
+## Direct Chrome follow-up
+
+The root agent subsequently opened the exact main Atlas URL in installed Chrome. GRID changed all five 400/275/220/132/66 kV checkboxes to checked; SUBS enabled the substation layer. The screenshot shows grid lines and substation points, with the two buttons at the bottom-left of the map above the open layer panel. Evidence: offline-screenshots/architecture-reload-20260905/chrome-main-grid-subs.png and chrome-main-grid-subs.txt. This is one desktop interaction, not the full mobile/desktop matrix or a fresh CI pass.

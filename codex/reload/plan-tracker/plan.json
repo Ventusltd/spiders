@@ -1,0 +1,276 @@
+{
+  "schema": "spiders.build-plan.v1",
+  "updatedAt": "2026-09-05T18:34:00Z",
+  "baselineRelease": {
+    "generation": "202609051820",
+    "sourceCommit": "faa66443a7754878f51b2cc5155a21692dbdaecf",
+    "engineCommit": "15e85b6d1444967005fb825d5d1d8439667ffcd5",
+    "buildSha256": "42782185656a1db608411afaaa7ba8ce1aa8dda604d3783d6ff8e8f6df8f34d2"
+  },
+  "baselineAcceptance": "not_accepted",
+  "nextGeneration": "Assign only when preparing a new immutable build.",
+  "tasks": [
+    {
+      "id": "P0",
+      "title": "Pin handover and release identities",
+      "owner": "spiders + federation",
+      "dependsOn": [],
+      "status": "in_progress",
+      "blockers": [],
+      "nextAction": "Refresh explicit checkout snapshot and check the completed handover against immutable receipts.",
+      "acceptance": "A resume artifact identifies the handover hash, owning commits, dirty files, accepted release and unaccepted candidate separately.",
+      "requiredProofs": [
+        "handover-identity",
+        "resume-integrity"
+      ],
+      "proofs": [],
+      "targetRelease": null,
+      "targetCommits": {},
+      "targetEnvironments": {}
+    },
+    {
+      "id": "P1",
+      "title": "Reconcile local environment and CI inputs",
+      "owner": "testcode + cvaa",
+      "dependsOn": [
+        "P0"
+      ],
+      "status": "in_progress",
+      "blockers": [
+        "Testcode CI at ab632e5 fails; endpoint fix does not clear broader gate."
+      ],
+      "nextAction": "Read failed offline-gate artifact, declare required checkout and endpoint inputs, preserve static-server negative control.",
+      "acceptance": "Required inputs fail as environment preconditions; exact owning commits pass endpoint fixtures and applicable product gates.",
+      "requiredProofs": [
+        "environment-negative-control",
+        "endpoint-regression",
+        "required-ci-gates"
+      ],
+      "proofs": [],
+      "targetRelease": null,
+      "targetCommits": {},
+      "targetEnvironments": {}
+    },
+    {
+      "id": "P2",
+      "title": "Correct app-only print fidelity and geometry",
+      "owner": "teleprinter + testcode",
+      "dependsOn": [
+        "P0",
+        "P1"
+      ],
+      "status": "blocked",
+      "blockers": [
+        "Pipeline clone shadow-style leakage, closed File contents and animated-chart mismatch.",
+        "Normal Chrome at 2048x972 DPR1.875 refused: vendor floors backing height while app expects round."
+      ],
+      "nextAction": "Define one integer backing-size contract and separate viewport-drift detection; fix scoped clone rendering and add fractional-DPR regressions.",
+      "acceptance": "No display sharing, window.print or injected screenshot path; real controls retain all app content. New pinned build passes 25 PDF + 25 source visits plus independent regional content checks.",
+      "requiredProofs": [
+        "fractional-dpr",
+        "app-pdf-fidelity",
+        "full-50-campaign",
+        "source-independent-audit"
+      ],
+      "proofs": [],
+      "targetRelease": null,
+      "targetCommits": {},
+      "targetEnvironments": {}
+    },
+    {
+      "id": "P3",
+      "title": "Bind selected project to actual compute and drawing",
+      "owner": "ventus-grid-engine + gridatlas + pipelinenews",
+      "dependsOn": [
+        "P0",
+        "P1"
+      ],
+      "status": "planned",
+      "blockers": [
+        "Wraysbury screenshot badge identity differs from fresh selected REPD1938."
+      ],
+      "nextAction": "Test MAP navigation, direct selection and reselection; reject stale completion from preceding project.",
+      "acceptance": "Each visible completed badge and drawn result matches entity, location, attempt and actual operation; empty/failed states remain distinct.",
+      "requiredProofs": [
+        "identity-transitions",
+        "actual-compute",
+        "drawn-result-parity"
+      ],
+      "proofs": [],
+      "targetRelease": null,
+      "targetCommits": {},
+      "targetEnvironments": {}
+    },
+    {
+      "id": "P4",
+      "title": "Extract bounded cartridges with unchanged behavior",
+      "owner": "gridatlas + teleprinter + owning data repos",
+      "dependsOn": [
+        "P2",
+        "P3"
+      ],
+      "status": "planned",
+      "blockers": [
+        "Do not refactor unaccepted renderer and change capture semantics in the same comparison."
+      ],
+      "nextAction": "Extract one seam per commit using existing source-part manifest and ordered composition; begin with clone/style, viewport geometry or receipt adapters.",
+      "acceptance": "Recomposition preserves runtime ordering and explicit API contracts; shell and cartridge hashes are checked; unchanged behavior proof precedes promotion.",
+      "requiredProofs": [
+        "cartridge-contract",
+        "recomposition-hashes",
+        "behavior-parity"
+      ],
+      "proofs": [],
+      "targetRelease": null,
+      "targetCommits": {},
+      "targetEnvironments": {}
+    },
+    {
+      "id": "P5",
+      "title": "Make source export complete and usable on phones",
+      "owner": "teleprinter + testcode",
+      "dependsOn": [
+        "P0",
+        "P1"
+      ],
+      "status": "planned",
+      "blockers": [
+        "Current source downloads approximately61-62MB; prior iPhone PDF truncates data."
+      ],
+      "nextAction": "Measure exact duplicate bytes and dependency closure; separate manifest, unique resource bodies and state without silently dropping required dependencies.",
+      "acceptance": "Export records exact served or refetched provenance, failures and completeness; unique content integrity and actual phone attachment usability are proved.",
+      "requiredProofs": [
+        "source-closure",
+        "dedup-correctness",
+        "physical-phone-usability"
+      ],
+      "proofs": [],
+      "targetRelease": null,
+      "targetCommits": {},
+      "targetEnvironments": {},
+      "sourcePresentationRequirement": "Readable release/cartridge index plus per-cartridge access and complete content-addressed dependency package. No silent truncation; reconstruct-and-hash proof and mobile usability checks."
+    },
+    {
+      "id": "P6",
+      "title": "Measure performance before GPU integration",
+      "owner": "gpu-drivers-for-global-grid + spiders",
+      "dependsOn": [
+        "P0"
+      ],
+      "status": "planned",
+      "blockers": [
+        "Green GPU-repository CI runs CPU stand-in and skips GPU.",
+        "Historic resident GPU ratio uses GPU baseline, not same-workload CPU speedup."
+      ],
+      "nextAction": "Measure cold/warm end-to-end latency and memory on the actual dependency closure, then compare identical CPU and GPU workloads.",
+      "acceptance": "Report adapter, corpus hash, upload/compute/readback/wall times, memory and correctness oracle; speedup denominators and residency are explicit.",
+      "requiredProofs": [
+        "same-workload-cpu",
+        "gpu-hardware-receipt",
+        "end-to-end-benefit"
+      ],
+      "proofs": [],
+      "targetRelease": null,
+      "targetCommits": {},
+      "targetEnvironments": {}
+    },
+    {
+      "id": "P7",
+      "title": "Carry Grid and Subs chips into the desktop consumer",
+      "owner": "gridatlas + testcode",
+      "dependsOn": [
+        "P0",
+        "P3"
+      ],
+      "status": "planned",
+      "blockers": [
+        "Main Atlas has desktop chip creation, but frozen Testcode1623 and1820 retain the old phone-only return.",
+        "Existing browser proof checks visible presence only, not toggled layer state or bottom-left geometry."
+      ],
+      "nextAction": "Carry existing main GRID/SUBS behavior through an independent source cartridge into the Codex Testcode candidate; preserve bottom-left MAP placement and default-collapsed Layers without replacing the whole app.",
+      "acceptance": "GRID toggles400,275,220,132,66kV through real engine controls; SUBS toggles substations. Both remain bottom-left on desktop and reachable on mobile without panel overlap; other tool collapse stays mobile-only.",
+      "requiredProofs": [
+        "desktop-chip-placement",
+        "five-voltage-toggle",
+        "substation-toggle",
+        "mobile-no-regression"
+      ],
+      "targetRelease": null,
+      "targetCommits": {},
+      "targetEnvironments": {},
+      "proofs": [],
+      "sourceEvidence": {
+        "commit": "fb8dc54c7f4c172e65d6ca854cdf3e3e8be65392",
+        "repository": "Ventusltd/gridatlas",
+        "part": "atlas/parts/202609041234-sld-sandbox-technology-buckets.js",
+        "component": "#gridatlas-mobile-tray",
+        "mainComposition": "202609051624",
+        "cartridge": "atlas/cartridges/202609051540-sld-sandbox-v9-8.js"
+      },
+      "integrationConstraint": "Preserve Codex candidate lineage. Port only GRID/SUBS controls and required scoped dependencies; do not replace with the main Claude app.",
+      "visualReference": "gridbutton.jpg: user-selected bottom-left GRID/SUBS, coloured grid lines, bottom-right Layers with panel closed.",
+      "defaultArrival": "Layers panel collapsed on fresh arrival; GRID/SUBS visible bottom left; Layers expander bottom right.",
+      "panelStateContract": "Quick toggles and deep-link layer activation do not open Layers. Panel visibility changes preserve enabled layers, selection and computed connections. Grid/substation default enabled states are unchanged by this requirement.",
+      "defaultArrivalProof": "Desktop and mobile fresh-load checks; toggle GRID/SUBS with panel closed; expand/collapse without map-state loss; app-PDF visual reference.",
+      "cartridgeRequirement": "Extract cohesive layer-quick-controls source cartridge; explicit engine adapter, scoped styling, mount/dispose, default panel visibility. Compose through existing parts manifest; no whole-SLD copy.",
+      "observedMainBehavior": "Root agent directly exercised main Atlas in installed Chrome: GRID enabled all five400/275/220/132/66 controls; SUBS enabled substations and points appeared. Existing buttons are bottom-left of MAP, not entire browser. Preserve this behavior in Codex consumer."
+    }
+  ],
+  "handoverEvidence": [
+    {
+      "path": "handover-202609051831/EXECUTIVE-SUMMARY.txt",
+      "sha256": "2421b669cb9af723ed469d54e3684334650c1c9c86d59767f84f9509bf0eab23",
+      "classification": "inspected-record",
+      "claim": "Endpoint fix complete; overall PDF build unaccepted."
+    },
+    {
+      "path": "handover-202609051831/SESSION-HANDOVER.txt",
+      "sha256": "a1a47149dd63bc4523fea86905f246f1a8221ae940e59eba993e1db738f509a9",
+      "classification": "inspected-record",
+      "claim": "Four focused visits across deployed and corrected-local environment; full campaign retains failures."
+    },
+    {
+      "path": "receipt-vaccine-202609051828/retained-failed-50-run.json",
+      "sha256": "fdd39a5e5dfa418320d680cec65bb63904fdaeb81d7974c8fd0295878854c3c5",
+      "classification": "inspected-record",
+      "claim": "Historical failed fifty-visit run retained, not replaced by smoke checks."
+    }
+  ],
+  "ciWatch": [
+    {
+      "taskId": "P1",
+      "repository": "Ventusltd/testcode",
+      "runId": 33984231463,
+      "commit": "ab632e5841def44f5023206315b4a13876c868ae",
+      "scope": "Testcode offline gate and downstream skip state"
+    },
+    {
+      "taskId": "P1",
+      "repository": "Ventusltd/cvaa",
+      "runId": 33984247747,
+      "commit": "a1fae46a1cb3685ce1214ecd930363ca2c6eba39",
+      "scope": "CVAA selftest and fleet audit; not PDF fidelity"
+    },
+    {
+      "taskId": "P4",
+      "repository": "Ventusltd/gridatlas",
+      "runId": 33977790282,
+      "commit": "0ea9ba16882899a755a88d34caedc11d390c3f94",
+      "scope": "Cartridge proof; distinct from parse and Pages success"
+    },
+    {
+      "taskId": "P6",
+      "repository": "Ventusltd/gpu-drivers-for-global-grid",
+      "runId": 33978552699,
+      "commit": "676715abad48773d45a401e91ac4c260a72548a5",
+      "scope": "CPU/RAM benchmark only; GPU explicitly skipped"
+    },
+    {
+      "taskId": "P3",
+      "repository": "Ventusltd/ventus-grid-engine",
+      "runId": 33969419919,
+      "commit": "f9531a7a36ff1b2557362bf2a61949066f393821",
+      "scope": "Engine verify; not all app interactions"
+    }
+  ]
+}

@@ -8,7 +8,7 @@ The settled1906 campaign completed50/50 installed-Chrome visits and50 downloads 
 
 Homepage promotion was pushed at `a9474d74d0a4366357baacbadb2eef86da86cee3` after the successful restore-point workflow. Both homepage and release record matched that commit in the independent 19:32:46 UTC served-byte receipt. Candidate1927 subsequently passed198/198 served-file checks and desktop/mobile controls with dedicated Cable producer provenance. Source/print claims cover Atlas/Pipeline, not standalone iframe printing; no physical-device or automatic obstacle-routing proof is implied. The estate fleet and additional legacy homepage gates still have real failures, so this is no blanket green/design-freeze claim.
 
-The authoritative queue for newly authorized work is [NEXT-50.md](plan-tracker/NEXT-50.md). N01 Cable ownership has a hashed tested checkpoint. N02 Escape1932 passed199/199 served-file checks and live desktop/mobile Escape for all three tools. N03 focus1936 passed200/200 served-file checks with live browser testing in progress; N04 readiness1940 is still finishing. Read the ledger before advancing either pending feature. Read the offline ledger for exact release tuples and receipts.
+The authoritative queue for newly authorized work is [NEXT-50.md](plan-tracker/NEXT-50.md). N01 Cable ownership has a hashed tested checkpoint. N02 Escape1932 passed199/199 served-file checks and live desktop/mobile Escape for all three tools. N03 focus1936 passed200/200 served-file checks and live desktop/mobile focus boundaries for all three tools. N04 readiness1940 and N05 viewport1945 have publication commits but await their own served/live proof. Read the ledger before advancing pending features. Read the offline ledger for exact release tuples and receipts.
 
 ## Historical starting point (1623/1820, not current blocker status)
 
@@ -72,7 +72,7 @@ The current main composition's real extraction targets are:
 | atlas/parts/202609040229-ventus-corev8engine-exact-repd-delegation.js | 1,497 lines / 94,129 bytes | Legacy adapter lifecycle; layer availability; selection delegation; drawing integration |
 | atlas/modules/202609031958-menu-bar.js | 1,805 lines / 89,938 bytes | Menu registry; menu view; keyboard/pointer behavior; export commands; engine/source catalogue |
 | atlas/modules/202609051624-teleprint-controls.js | 1,238 lines / 59,117 bytes | Main-Atlas lane print controls, capture adapter and download/source UI; keep its ownership distinct from Codex Teleprinter |
-| Pipeline live UI runtime | Inspected historical runtimes about 862–900 lines | Release assembly must identify the active one first; then separate row model, table rendering, filters, charts and MAP-link adapter |
+| Pipeline live UI runtime | Inspected historical runtimes about 862â€“900 lines | Release assembly must identify the active one first; then separate row model, table rendering, filters, charts and MAP-link adapter |
 
 The current sld-sandbox is already assembled from grid-scope, source-registry, declared-connections, sizing-arithmetic and technology-coverage modules plus the large body. Preserve those separations. Financial assumptions and engineering screening remain distinct domains; extraction must not silently change formulas.
 
@@ -88,7 +88,7 @@ For each extraction:
 
 ## P5 source export and P6 performance
 
-The current 61–62 MB source output deserves a measured dependency graph. Separate executable code, dynamic code, data, styles and captured state. Record URL, content hash, byte count, content type, producer and discovery edge. Store repeated bodies once and reference their hashes; preserve an export that can reconstruct the original declared resources and verify every digest. Compression is packaging, not permission to omit dependencies. An index/summary plus an attached archive can improve usability only if the phone/AI attachment path supports it and incompleteness stays visible.
+The current 61â€“62 MB source output deserves a measured dependency graph. Separate executable code, dynamic code, data, styles and captured state. Record URL, content hash, byte count, content type, producer and discovery edge. Store repeated bodies once and reference their hashes; preserve an export that can reconstruct the original declared resources and verify every digest. Compression is packaging, not permission to omit dependencies. An index/summary plus an attached archive can improve usability only if the phone/AI attachment path supports it and incompleteness stays visible.
 
 Do not call a source PDF complete when it truncates data to 4,000 characters. Do not infer dependency failure from strings inside captured source comments. Record unavailable and nonliteral edges explicitly. Evaluate peak browser memory while building an export, not only final file size.
 

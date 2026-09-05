@@ -1,6 +1,6 @@
 {
   "schema": "spiders.build-plan.v1",
-  "updatedAt": "2026-09-05T19:12:27.720519+00:00",
+  "updatedAt": "2026-09-05T19:47:45.873315+00:00",
   "baselineRelease": {
     "generation": "202609051820",
     "sourceCommit": "faa66443a7754878f51b2cc5155a21692dbdaecf",
@@ -364,146 +364,94 @@
   "campaign": [
     {
       "id": "V1",
-      "change": "Integer app-render backing geometry",
       "generation": "202609051844",
       "status": "tested",
-      "sourceCommit": "e85c494924191084763246959e6a2dfa85ce3277",
-      "engineCommit": "0ef49c23a02cfef0c7d56fe9f94dd140feed531c",
-      "publicationCommit": "8a20401537a7724f04126375f48c1b2fb9c4d71d",
-      "servedPublicationCommit": "8a20401537a7724f04126375f48c1b2fb9c4d71d",
-      "nextAction": "Geometry increment has pure tests, served-byte match,2appvisits and separate realChrome PDF. Retain as tested comparison; full50release acceptance remains pending.",
-      "requirementStatus": null,
-      "acceptanceScope": "Focused geometry increment tested; not overall PDF design freeze."
+      "change": "Integer app-render backing geometry",
+      "nextAction": "Geometry increment has pure tests, served-byte match,2appvisits and separate realChrome PDF. Retain as tested comparison; full50release acceptance remains pending."
     },
     {
       "id": "V2",
-      "change": "Scoped print clone styles and stable visible contents",
       "generation": "202609051845",
       "status": "tested",
-      "sourceCommit": "57d6104ff1d2bfee0b06c7e14928c169b2f89c4c",
-      "engineCommit": "caf89b0e70563ba30506bfe6148664dd6c89061b",
-      "publicationCommit": "322ba18938b7937eaafea55e3a54e5354aece9b1",
-      "servedPublicationCommit": "d1443c2fcd10fd5b4da676b6a4f81982e77de961",
-      "nextAction": "Retain tested clone increment; final release acceptance remains separate.",
-      "requirementStatus": null,
-      "acceptanceScope": "Focused Pipeline PDF/source pair plus separate visual review. Whole regionalagreement90.62%,minimum87.24%; approximate85%threshold,not compositor equality orfull50acceptance."
+      "change": "Scoped print clone styles and stable visible contents",
+      "nextAction": "Retain tested clone increment; final release acceptance remains separate."
     },
     {
       "id": "V3",
-      "change": "Independent Grid/Subs quick-controls cartridge",
       "generation": "202609051847",
       "status": "tested",
-      "sourceCommit": "109aea625dd24ab3d1d105a863574272b7e905a1",
-      "engineCommit": "e2ec03afd98302354050379928244846cc01a56d",
-      "publicationCommit": "d1443c2fcd10fd5b4da676b6a4f81982e77de961",
-      "servedPublicationCommit": "4185020ade7da01869b4ffc0ee1d2656608da716",
-      "nextAction": "Retain tested control increment; verify originaltool integration separately.",
-      "requirementStatus": null,
-      "acceptanceScope": "Desktop1400x900 andphone393x852 installedChromecontrols; notphysicalphone orfullPDFcampaign."
+      "change": "Independent Grid/Subs quick-controls cartridge",
+      "nextAction": "Retain tested control increment; verify originaltool integration separately."
     },
     {
       "id": "V4",
-      "change": "Collapsed Layers default with preserved map state",
       "generation": "202609051848",
       "status": "tested",
-      "sourceCommit": "2bf27b124344cb4431b50599d3045f58280ee0e2",
-      "engineCommit": "a01ccb3f2f0aa2d3d2e0a4831836655891810a6d",
-      "publicationCommit": "fc947ad0f9c9f81aa0df25c37c1e92eaadb8a847",
-      "servedPublicationCommit": "4185020ade7da01869b4ffc0ee1d2656608da716",
-      "nextAction": "Retain tested control increment; verify originaltool integration separately.",
-      "requirementStatus": null,
-      "acceptanceScope": "Desktop1400x900 andphone393x852 installedChromecontrols; notphysicalphone orfullPDFcampaign."
+      "change": "Collapsed Layers default with preserved map state",
+      "nextAction": "Retain tested control increment; verify originaltool integration separately."
     },
     {
       "id": "V5",
-      "change": "Separate Layout command with existing selected-project semantics",
       "generation": "202609051850",
       "status": "failed",
-      "sourceCommit": "0dac7512704076ae1a01f16875ee20009a3c4454",
-      "engineCommit": "821830690d3e6c0f30b062e2bb7bfacd5bae6703",
-      "publicationCommit": "4185020ade7da01869b4ffc0ee1d2656608da716",
-      "servedPublicationCommit": "4185020ade7da01869b4ffc0ee1d2656608da716",
-      "nextAction": "Retain phonefailure; correct originalGIS launcher placement innewtimestamp.",
-      "requirementStatus": "superseded",
-      "acceptanceScope": null
+      "change": "Separate Layout command with existing selected-project semantics",
+      "nextAction": "Retain phonefailure; correct originalGIS launcher placement innewtimestamp."
     },
     {
       "id": "V6",
-      "change": "Original GIS SLD standalone layer",
       "generation": "202609051901",
       "status": "tested",
-      "sourceCommit": "33317ea9f6864e2b9a61c3a5d9ebab277658aaaa",
-      "engineCommit": "d01843d4e8bbcb9b14c2511e9eda3e4326d6b495",
-      "publicationCommit": "9fe82394d18db43fabad2b54a9fd7431880089f3",
-      "servedPublicationCommit": "9fe82394d18db43fabad2b54a9fd7431880089f3",
-      "nextAction": "Retain focused layer proof; final print campaign and tool printing remain separate.",
-      "requirementStatus": null,
-      "acceptanceScope": "Isolated tool controls and state only; no original-tool PDF/source-export or automatic constrained-routing acceptance."
+      "change": "Original GIS SLD standalone layer",
+      "nextAction": "Retain focused layer proof; final print campaign and tool printing remain separate."
     },
     {
       "id": "V7",
-      "change": "Module Layout isolated layer",
       "generation": "202609051905",
       "status": "tested",
-      "sourceCommit": "f77b8a3d5db021d5adb2a744c66b80484b007253",
-      "engineCommit": "d01843d4e8bbcb9b14c2511e9eda3e4326d6b495",
-      "publicationCommit": "1696731982608da2a1f9aba1fba1c7b57d70882c",
-      "servedPublicationCommit": "c4c704e293a08f4d655b13b0227b604ca7bfe2ea",
-      "nextAction": "Retain settled desktop/mobile layer proof and both failed timing runs; address original Module readiness as a separate future increment.",
-      "requirementStatus": null,
-      "acceptanceScope": "Isolated tool controls and state only; no original-tool PDF/source-export or automatic constrained-routing acceptance."
+      "change": "Module Layout isolated layer",
+      "nextAction": "Retain settled desktop/mobile layer proof and both failed timing runs; address original Module readiness as a separate future increment."
     },
     {
       "id": "V8",
-      "change": "Cable Geometry isolated layer",
       "generation": "202609051906",
       "status": "tested",
-      "sourceCommit": "174a88bb55cb5cef0122944debb100411e21bf01",
-      "engineCommit": "d01843d4e8bbcb9b14c2511e9eda3e4326d6b495",
-      "publicationCommit": "c4c704e293a08f4d655b13b0227b604ca7bfe2ea",
-      "servedPublicationCommit": "c4c704e293a08f4d655b13b0227b604ca7bfe2ea",
-      "nextAction": "1906 settled50/50 Atlas/Pipeline print campaign passes; retain independent source audit and homepage receipts. Next feature is N01 Cable owner migration.",
-      "requirementStatus": null,
-      "acceptanceScope": "50 installed-Chrome Atlas/Pipeline visits and50 downloads, plus desktop/mobile tool controls; no physical-device, standalone-tool print, automatic routing or fleet-CI-green claim."
+      "change": "Cable Geometry isolated layer",
+      "nextAction": "1906 settled50/50 Atlas/Pipeline print campaign passes; retain independent source audit and homepage receipts. Next feature is N01 Cable owner migration."
     },
     {
       "id": "N01",
-      "change": "Pin Cable Geometry to dedicated cable-trench-or-drill producer",
       "generation": "202609051927",
       "status": "tested",
-      "sourceCommit": "83bed5df2eb1a772d3d276e0ddc6a7d8451a2fc2",
-      "engineCommit": "d075621da9aff2264f70a6db45975cf238f1bc1a",
-      "publicationCommit": "1f8be09f86fa8aaa336c8dea3241a55dc386f97d",
-      "servedPublicationCommit": "1f8be09f86fa8aaa336c8dea3241a55dc386f97d",
-      "nextAction": "Cable owner migration has exact served bytes, producer parity and desktop/mobile live controls. Continue N02 Escape without transferring print/fleet acceptance.",
-      "requirementStatus": null,
-      "acceptanceScope": "Dedicated owner migration and live desktop/mobile controls; not a new full50 print campaign or fleet acceptance."
+      "change": "Pin Cable Geometry to dedicated cable-trench-or-drill producer",
+      "nextAction": "Cable owner migration has exact served bytes, producer parity and desktop/mobile live controls. Continue N02 Escape without transferring print/fleet acceptance."
     },
     {
       "id": "N02",
-      "change": "Add Escape dismissal cartridge to persistent design layers",
       "generation": "202609051932",
-      "status": "built",
-      "sourceCommit": "9bef6d20ff022c23cbe3b868925fb7455f1cac83",
-      "engineCommit": "fc27df849f3811713e94e4c056a9d0e0c084e1c9",
-      "publicationCommit": "b48e406e9e6149e7ffd80a1a1ab8c001493572b7",
-      "servedPublicationCommit": null,
-      "nextAction": "Local semantic/browser preflight passed; await exact served bytes and live keyboard proof.",
-      "requirementStatus": null,
-      "acceptanceScope": "Pending own release proof. Local override tests are not shipping-feature evidence."
+      "status": "tested",
+      "change": "Add Escape dismissal cartridge to persistent design layers",
+      "nextAction": "Continue focus/readiness increments with their own release proofs."
     },
     {
       "id": "N03",
-      "change": "Add keyboard focus boundary cartridge for original tools",
       "generation": "202609051936",
+      "status": "tested",
+      "change": "Add keyboard focus boundary cartridge for original tools",
+      "nextAction": "Continue readiness and viewport increments with separate proofs."
+    },
+    {
+      "id": "N04",
+      "generation": "202609051940",
       "status": "built",
-      "sourceCommit": "cf4d34269ab100c8a5a22f61477155cf71727349",
-      "engineCommit": "9a6b52f893123222724740e7098166af17e19517",
-      "publicationCommit": "64085673f8a24d86ff9fa8398c2c4b3c931fc2a1",
-      "servedPublicationCommit": null,
-      "nextAction": "Local semantic/browser preflight passed; await exact served bytes and live keyboard proof.",
-      "requirementStatus": null,
-      "acceptanceScope": "Pending own release proof. Local override tests are not shipping-feature evidence."
+      "change": "Phased interface and drawing readiness",
+      "nextAction": "Published commit exists; await exact served bytes and live feature proof. Local tests remain separate."
+    },
+    {
+      "id": "N05",
+      "generation": "202609051945",
+      "status": "built",
+      "change": "Fit design tool header and frame to responsive viewport",
+      "nextAction": "Published commit exists; await exact served bytes and live feature proof. Local tests remain separate."
     }
   ],
   "nextFiftyRoadmap": "NEXT-50.json"

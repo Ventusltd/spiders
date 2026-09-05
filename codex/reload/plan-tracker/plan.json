@@ -228,7 +228,7 @@
     {
       "id": "P8",
       "title": "Isolate the original layout and cable tools in their own owner",
-      "owner": "gis-sld-sandbox + layout-tool + testcode + globalgrid2050",
+      "owner": "gis-sld-sandbox + layout-tool + cable-trench-or-drill + testcode + globalgrid2050",
       "dependsOn": [
         "P0",
         "P4"
@@ -276,7 +276,7 @@
     {
       "id": "P9",
       "title": "Optional constraint-aware second pass with direct baseline preserved",
-      "owner": "ventus-grid-engine + data owners + gis-sld-sandbox",
+      "owner": "ventus-grid-engine + cable-trench-or-drill + gis-sld-sandbox + data owners",
       "dependsOn": [
         "P3",
         "P8"
@@ -286,7 +286,7 @@
         "Road and constraint coverage/policy require explicit products and review.",
         "No reviewed source grants blanketB-roadpermission."
       ],
-      "nextAction": "Define graph/constraint/version/coverage contract; retain directengine unchanged; implement optional comparison as separate cartridge after evidence review.",
+      "nextAction": "Preserve direct first pass; plan separately versioned trenching and directional-drilling assessment contracts, explicit coverage and segment/crossing methods. Original manual route parity is evidence, not automatic routing implementation.",
       "acceptance": "Directresult alwaysavailable; secondpass preservesbothresults boundtoentity/attempt; unknowncoverageexplicit; crossingsseparate; B-roadpreference softpolicy,notpermission.",
       "requiredProofs": [
         "direct-baseline-retained",

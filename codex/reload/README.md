@@ -15,7 +15,7 @@ Read the generated `RELOAD.md`, then `delta.json`. Open relevant anchor files fr
 `snapshot.json`. `--with-ci` adds bounded read-only GitHub observations; it does not
 execute tests, fetch branches, trigger workflows, or certify a deployment.
 
-The owner registry declares 23 working copies explicitly. `--home` and `--owners`
+The owner registry declares 24 working copies explicitly. `--home` and `--owners`
 support another machine. Missing repositories are errors; missing optional anchor
 files are recorded individually. No fallback chooses a similarly named checkout.
 Local working bytes are hashed for the small anchors on every scan, so an uncommitted
@@ -38,7 +38,7 @@ Proofs:
 python -B C:\Users\vikra\OneDrive\Documents\GitHub\spiders\codex\reload\test_reload.py
 ```
 
-Five tests cover uncommitted drift, wrong origin, missing checkouts, metadata-only
+Six tests cover uncommitted drift, wrong repository/owner/host origin, missing checkouts, metadata-only
 evidence, partial-handover changes and output-path refusal.
 
 The evidence section of delta.json lists added, modified and removed files. Growing

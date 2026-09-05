@@ -253,11 +253,24 @@
     {
       "id": "layout-tool",
       "repo": "layout-tool",
-      "role": "Independent Module Layout, Cable Geometry and DC/AC review producers; original runtime baselines",
+      "role": "Module Layout and DC/AC review producer; historical immutable Cable copy, with new Cable ownership in cable-trench-or-drill",
       "path": "OneDrive/Documents/GitHub/layout-tool",
       "anchors": [
         "README.md",
         "latest.json",
+        "tools/verify.py",
+        ".github/workflows/verify-original.yml"
+      ]
+    },
+    {
+      "id": "cable-trench-or-drill",
+      "repo": "cable-trench-or-drill",
+      "role": "Independent Cable Geometry baseline and planned trenching/directional-drilling alternatives after unchanged direct first pass",
+      "path": "OneDrive/Documents/GitHub/cable-trench-or-drill",
+      "anchors": [
+        "README.md",
+        "latest.json",
+        "DEVELOPMENT-PLAN.md",
         "tools/verify.py",
         ".github/workflows/verify-original.yml"
       ]

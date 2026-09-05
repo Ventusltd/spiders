@@ -147,45 +147,49 @@
       "dependsOn": [
         "N04"
       ],
-      "status": "in_progress",
+      "status": "linked",
       "feature": "Prevent original Module Draw from reporting zero modules before map readiness.",
       "requiredProof": "Early click is blocked without changing calculations; ready click draws requested modules; original runtime remains byte-identical.",
       "generation": "202609051958",
       "release": null,
       "evidence": [],
-      "nextAction": "Derived producer1955 verifies seven files against baseline; await committed producer identity, delayed-map guard browser proof and consumer release. Producer timestamp is not the consumer generation."
+      "nextAction": "Continue Cable observer consumer with its own served/live proof.",
+      "checkpoint": {
+        "path": "architecture-reload-20260905/next-fifty/N08-202609051958-checkpoint.json",
+        "sha256": "d693cfe1769722cdf30d4353f37a992f6bd6cfa5904fda0c061acb9f7ffa7b9b"
+      }
     },
     {
       "id": "N09",
       "title": "Cable render readiness signal",
       "owner": "cable-trench-or-drill",
-      "module": "cartridges/render-readiness.js",
+      "module": "src/cable-geometry/render-readiness.js",
       "dependsOn": [
         "N04"
       ],
-      "status": "planned",
+      "status": "in_progress",
       "feature": "Publish an explicit completed-drawing revision only after all three canvases are drawn.",
       "requiredProof": "Pending versus rendered revision; edits advance it after actual draw",
-      "generation": null,
+      "generation": "202609052008",
       "release": null,
       "evidence": [],
-      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+      "nextAction": "Verify consumer served/live signal, route-name blur and same-value redraw; producer baseline remains unchanged."
     },
     {
       "id": "N10",
       "title": "Standalone route-state adapter",
       "owner": "gis-sld-sandbox",
-      "module": "cartridges/route-state.js",
+      "module": "src/gis-sld/route-state.js",
       "dependsOn": [
         "N04"
       ],
-      "status": "planned",
+      "status": "in_progress",
       "feature": "Expose current route geometry and selection through a versioned read-only adapter.",
       "requiredProof": "Manual pins/edit/reset; exported geometry equals visible route",
       "generation": null,
       "release": null,
       "evidence": [],
-      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+      "nextAction": "Derived GIS producer2008 verifies18members; await producer commit/CI and separate consumer generation with real pin-state tests."
     },
     {
       "id": "N11",

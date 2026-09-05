@@ -167,13 +167,17 @@
       "dependsOn": [
         "N04"
       ],
-      "status": "in_progress",
+      "status": "linked",
       "feature": "Publish an explicit completed-drawing revision only after all three canvases are drawn.",
       "requiredProof": "Pending versus rendered revision; edits advance it after actual draw",
       "generation": "202609052008",
       "release": null,
       "evidence": [],
-      "nextAction": "Verify consumer served/live signal, route-name blur and same-value redraw; producer baseline remains unchanged."
+      "nextAction": "Continue GIS route adapter consumer with its own served/live proof.",
+      "checkpoint": {
+        "path": "architecture-reload-20260905/next-fifty/N09-202609052008-checkpoint.json",
+        "sha256": "4a5c45dd9c07f7c89f4910b019bd102fc8766e781cfd1551846e6180d8ee5782"
+      }
     },
     {
       "id": "N10",
@@ -186,7 +190,7 @@
       "status": "in_progress",
       "feature": "Expose current route geometry and selection through a versioned read-only adapter.",
       "requiredProof": "Manual pins/edit/reset; exported geometry equals visible route",
-      "generation": null,
+      "generation": "202609052011",
       "release": null,
       "evidence": [],
       "nextAction": "Derived GIS producer2008 verifies18members; await producer commit/CI and separate consumer generation with real pin-state tests."
@@ -195,17 +199,17 @@
       "id": "N11",
       "title": "Cross-owner navigation resolver",
       "owner": "testcode",
-      "module": "sandbox/capsules/tool-layers/navigation-resolver.js",
+      "module": "sandbox/capsules/tool-layers/registry.mjs",
       "dependsOn": [
         "N01"
       ],
-      "status": "planned",
+      "status": "in_progress",
       "feature": "Resolve known sibling links through pinned tool registry without copying unrelated runtimes.",
       "requiredProof": "Module/DC/GIS links resolve exact entries; undeclared owner remains blocked",
       "generation": null,
       "release": null,
       "evidence": [],
-      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+      "nextAction": "Pure registry fixtures pass; integrate load-time title/readiness and actual-owner binding without rewriting original navigation."
     },
     {
       "id": "N12",

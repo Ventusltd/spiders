@@ -251,7 +251,11 @@
         "README.md",
         "latest.json",
         "tools/verify.py",
-        ".github/workflows/verify-original.yml"
+        ".github/workflows/verify-original.yml",
+        "derived-latest.json",
+        "src/gis-sld/route-state.js",
+        "tools/verify_derived.py",
+        ".github/workflows/verify-derived.yml"
       ]
     },
     {

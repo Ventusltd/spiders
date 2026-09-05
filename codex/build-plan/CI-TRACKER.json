@@ -29,9 +29,29 @@
       "runId": 33991120628,
       "workflow": "Pages",
       "conclusion": "success"
+    },
+    {
+      "repository": "Ventusltd/spiders",
+      "commit": "eadace4e26ff0023692deb3efd0edba3c14cc11b",
+      "runId": 33991289183,
+      "workflow": "genome-spider",
+      "conclusion": "success",
+      "planBuilds": 100,
+      "planNodes": 234,
+      "planEdges": 331,
+      "genomeRepos": 19,
+      "genomeProof": "22/22",
+      "committedReceipt": "species/genome-spider/receipts/202609052052-crawl.json"
+    },
+    {
+      "repository": "Ventusltd/spiders",
+      "commit": "eadace4e26ff0023692deb3efd0edba3c14cc11b",
+      "runId": 33991288684,
+      "workflow": "Pages",
+      "conclusion": "success"
     }
   ],
   "offlineEvidence": "architecture-reload-20260905/master-100",
-  "browser": "viewer-live-c3a9453/results.json: twoChrome viewports, migration records visible, tampered graph refused",
-  "nextObservation": "Final priority/plugin revision CI must be recorded separately."
+  "browser": "viewer-final-live/results.json: desktop and phone Chrome pass; tampered graph refused; served-final.json verifies six served files against eadace4.",
+  "nextObservation": "Observe new owner implementation commits separately."
 }

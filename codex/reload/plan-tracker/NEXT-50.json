@@ -127,13 +127,17 @@
       "dependsOn": [
         "N04"
       ],
-      "status": "in_progress",
+      "status": "linked",
       "feature": "Expose failed dependency/load state with bounded retry and preserved parent map.",
       "requiredProof": "Missing script and timed-out init; retry success without duplicate iframe",
       "generation": "202609051953",
       "release": null,
       "evidence": [],
-      "nextAction": "Prove explicit recovery confirmation, external document classification and transient Ready observation; retain N06 failed run."
+      "nextAction": "Scoped normal and fault-injected live proofs linked; keep failed N06 unchanged.",
+      "checkpoint": {
+        "path": "architecture-reload-20260905/next-fifty/N07-202609051953-checkpoint.json",
+        "sha256": "8b4a48c974e0c0df0c073f8a38b6327fe838c31b0b4ec97fcb05501dfbac6a48"
+      }
     },
     {
       "id": "N08",
@@ -146,7 +150,7 @@
       "status": "in_progress",
       "feature": "Prevent original Module Draw from reporting zero modules before map readiness.",
       "requiredProof": "Early click is blocked without changing calculations; ready click draws requested modules; original runtime remains byte-identical.",
-      "generation": null,
+      "generation": "202609051958",
       "release": null,
       "evidence": [],
       "nextAction": "Derived producer1955 verifies seven files against baseline; await committed producer identity, delayed-map guard browser proof and consumer release. Producer timestamp is not the consumer generation."

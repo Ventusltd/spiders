@@ -1,6 +1,6 @@
 {
   "schema": "spiders.build-plan.v1",
-  "updatedAt": "2026-09-05T19:57:34.638985+00:00",
+  "updatedAt": "2026-09-05T20:03:57.478363+00:00",
   "baselineRelease": {
     "generation": "202609051820",
     "sourceCommit": "faa66443a7754878f51b2cc5155a21692dbdaecf",
@@ -562,15 +562,29 @@
       "id": "N07",
       "change": "Recover failed tool loads through explicit confirmation",
       "generation": "202609051953",
-      "status": "built",
+      "status": "tested",
       "sourceCommit": "2da0f119a7a53a1511bb361237c72897ec3c80a0",
       "engineCommit": "cc6564dd42b1dd18ae3efd993f29004a2308e74b",
       "buildSha256": "2a010c7ab235f91b8c2acff65186eb9a996eb0b061f6293dc56fffd629768172",
       "publicationCommit": "c6cdf4fce91ed274a5a8941197dcdd237868a23d",
       "servedPublicationCommit": null,
-      "nextAction": "Await served bytes and real desktop/mobile recovery, external navigation and transient Ready cases.",
+      "nextAction": "Continue separate Module producer guard integration; retain N06 failure and N07 fault evidence.",
       "requirementStatus": null,
-      "acceptanceScope": "Pending own immutable release proof; preflight and pure fixtures remain separate."
+      "acceptanceScope": "Live desktop/mobile Module restart and fault-injected recovery; retains sibling and Atlas state. N06 failed historical release unchanged."
+    },
+    {
+      "id": "N08",
+      "change": "Guard Module drawing until original map source and layers exist",
+      "generation": "202609051958",
+      "status": "built",
+      "sourceCommit": "a640aa31fe7f9871f1f04d1a1d24d4d3f883359e",
+      "engineCommit": "701132ab790c03ca2590f5995c912b2c0f43e91a",
+      "buildSha256": "a9d69d7ac649947ee639d8b4c64a72e609e35489d6e14659a0ab8d5555877230",
+      "publicationCommit": "53745c3facca700a9474494cec1e314368576200",
+      "servedPublicationCommit": null,
+      "nextAction": "Derived producer CI passed; consumer local guard test is separate from pending served/live proof.",
+      "requirementStatus": null,
+      "acceptanceScope": "Pending consumer proof; original producer baseline and formulas preserved."
     }
   ],
   "nextFiftyRoadmap": "NEXT-50.json"

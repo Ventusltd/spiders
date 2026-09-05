@@ -1,8 +1,13 @@
-import {compilePlan} from './federation.mjs';
 const $=id=>document.getElementById(id);
+const canonical=x=>Array.isArray(x)?'['+x.map(canonical).join(',')+']':x!==null&&typeof x==='object'?'{'+Object.keys(x).sort().map(k=>JSON.stringify(k)+':'+canonical(x[k])).join(',')+'}':JSON.stringify(x);
+const hash=async x=>Array.from(new Uint8Array(await crypto.subtle.digest('SHA-256',new TextEncoder().encode(canonical(x)))),b=>b.toString(16).padStart(2,'0')).join('');
+async function read(url){const r=await fetch(url);if(!r.ok)throw Error(`${url} HTTP ${r.status}`);return r.json();}
 try{
- const response=await fetch('./master-plan.geojson');if(!response.ok)throw Error(`Plan HTTP ${response.status}`);
- const plan=await response.json(),graph=compilePlan(plan),nodes=graph.nodes.features,edges=graph.edges.edges;
+ const [plan,manifest,nodeDoc,edgeDoc]=await Promise.all(['./master-plan.geojson','./data/manifest.json','./data/nodes.json','./data/edges.json'].map(read));
+ const digests=await Promise.all([plan,nodeDoc,edgeDoc].map(hash));
+ if(digests.some((d,i)=>d!==manifest.provenance[['planSha256','nodesSha256','edgesSha256'][i]]))throw Error('Plan and graph digests do not match');
+ const nodes=nodeDoc.features,edges=edgeDoc.edges;
+ if(plan.features.length!==100||nodes.length!==manifest.counts.nodes||edges.length!==manifest.counts.edges||edges.some(e=>!nodes[e[0]]||!nodes[e[1]]))throw Error('Invalid graph counts or endpoints');
  for(const f of plan.features){const o=document.createElement('option');o.value=f.id;o.textContent=`${f.id} — ${f.properties.title}`;$('build').append(o);}
  $('status').textContent=`Validated: ${plan.features.length} builds, ${nodes.length} nodes, ${edges.length} unique relationships. All builds planned. Revision ${plan.metadata.revision}.`;
  const svgNS='http://www.w3.org/2000/svg';

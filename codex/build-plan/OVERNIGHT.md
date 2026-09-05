@@ -6,6 +6,8 @@ The manually dispatchable `estate-audit.yml` also runs Sundays at 02:35 UTC. Thr
 
 Storage follows the bounded, keyed-product principles in data-gb-electricity and the Data Discipline Manual. One report partition per repository, maximum 8 MB before write, includes its pinned identity; manifests declare SHA-256 hashes and omissions. No report can reach 50 MB. Large future tabular extensions require explicitly keyed, bounded Parquet partitions readable with DuckDB, with duplicate/null-key and round-trip checks before publication. Do not quietly raise the JSON limit. Do not duplicate electricity archives into Spiders.
 
+Each shard is capped at 1,200 API requests (3,600 total), with a deadline checked before every request. API rejection or missing coverage is retained as an error, not converted into a pass. Other workflows sharing the token can still reduce available quota.
+
 CI evidence is an artifact retained for 14 days, never committed as bulk Git data. Download it to `C:/Users/vikra/OneDrive/Desktop/offline-screenshots` during the next review. Local invocation writes directly there:
 
 ```powershell

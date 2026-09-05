@@ -13,14 +13,21 @@ import urllib.request
 API = 'https://api.github.com'
 MAX_RESPONSE = 24_000_000
 MAX_PART = 8_000_000
+REQUESTS = 0
+DEADLINE = time.monotonic() + 4800
 
 
 def get(path):
+    global REQUESTS
+    remaining = DEADLINE - time.monotonic()
+    if REQUESTS >= 1200 or remaining <= 0:
+        raise ValueError('Shard request/time budget exhausted')
+    REQUESTS += 1
     headers = {'Accept': 'application/vnd.github+json', 'User-Agent': 'ventus-estate-audit'}
     if os.getenv('GH_TOKEN'):
         headers['Authorization'] = 'Bearer ' + os.environ['GH_TOKEN']
     request = urllib.request.Request(API + path, headers=headers)
-    with urllib.request.urlopen(request, timeout=60) as response:
+    with urllib.request.urlopen(request, timeout=min(60, max(1, remaining))) as response:
         raw = response.read(MAX_RESPONSE + 1)
     if len(raw) > MAX_RESPONSE:
         raise ValueError('API response exceeds pre-read budget: ' + path)
@@ -72,11 +79,11 @@ def main():
                 'discovered': len(repos), 'discoveryComplete': discovery_complete, 'selected': len(selected),
                 'repositoryCapTruncated': len(repos) > args.limit, 'shard': args.shard, 'shards': args.shards,
                 'budgets': {'reportPartitionBytes': MAX_PART, 'maxSourceFilesPerRepo': 16, 'maxSourceFileBytes': 512000,
-                            'maxSourceBytesPerRepo': 4000000, 'maxElapsedSeconds': 4800}, 'records': [], 'errors': []}
+                            'maxSourceBytesPerRepo': 4000000, 'maxElapsedSeconds': 4800, 'maxRequestsPerShard': 1200}, 'records': [], 'errors': []}
     save(args.out, 'discovery.json', [{'repository': r['full_name'], 'defaultBranch': r['default_branch']} for r in repos])
     for repo in selected:
         name = repo['full_name']
-        if time.monotonic() - started > 4800:
+        if time.monotonic() >= DEADLINE or REQUESTS >= 1200:
             manifest['errors'].append({'repository': name, 'error': 'Shard time budget reached; remaining repositories unscanned'})
             break
         try:
@@ -118,6 +125,7 @@ def main():
         save(args.out, 'manifest.json', manifest)
         print(json.dumps({'repository': name, 'scanned': len(manifest['records']), 'errors': len(manifest['errors'])}), flush=True)
     manifest['finishedAt'] = dt.datetime.now(dt.timezone.utc).isoformat()
+    manifest['requests'] = REQUESTS
     manifest['ok'] = not manifest['errors'] and len(manifest['records']) == len(selected)
     save(args.out, 'manifest.json', manifest)
     (args.out / 'SUMMARY.md').write_text('Estate audit: ' + str(len(manifest['records'])) + '/' + str(len(selected)) + ' selected repositories scanned.\n\n' + manifest['scope'] + '\n\nSee manifest.json for explicit omissions, hashes and errors. This is observation evidence, not a release approval.\n', encoding='utf8')

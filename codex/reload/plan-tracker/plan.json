@@ -455,12 +455,12 @@
       "id": "V8",
       "change": "Cable Geometry isolated layer",
       "generation": "202609051906",
-      "status": "built",
+      "status": "tested",
       "sourceCommit": "174a88bb55cb5cef0122944debb100411e21bf01",
       "engineCommit": "d01843d4e8bbcb9b14c2511e9eda3e4326d6b495",
       "publicationCommit": "c4c704e293a08f4d655b13b0227b604ca7bfe2ea",
-      "servedPublicationCommit": null,
-      "nextAction": "Verify served bytes and real desktop/mobile layer state.",
+      "servedPublicationCommit": "c4c704e293a08f4d655b13b0227b604ca7bfe2ea",
+      "nextAction": "Retain failed harness/timing runs and settled desktop/mobile layer pass; finish final50 Atlas/Pipeline campaign and source audit separately.",
       "requirementStatus": null,
       "acceptanceScope": "Isolated tool controls and state only; no original-tool PDF/source-export or automatic constrained-routing acceptance."
     }

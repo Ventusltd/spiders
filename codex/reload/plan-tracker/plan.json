@@ -465,6 +465,45 @@
       "nextAction": "1906 settled50/50 Atlas/Pipeline print campaign passes; retain independent source audit and homepage receipts. Next feature is N01 Cable owner migration.",
       "requirementStatus": null,
       "acceptanceScope": "50 installed-Chrome Atlas/Pipeline visits and50 downloads, plus desktop/mobile tool controls; no physical-device, standalone-tool print, automatic routing or fleet-CI-green claim."
+    },
+    {
+      "id": "N01",
+      "change": "Pin Cable Geometry to dedicated cable-trench-or-drill producer",
+      "generation": "202609051927",
+      "status": "tested",
+      "sourceCommit": "83bed5df2eb1a772d3d276e0ddc6a7d8451a2fc2",
+      "engineCommit": "d075621da9aff2264f70a6db45975cf238f1bc1a",
+      "publicationCommit": "1f8be09f86fa8aaa336c8dea3241a55dc386f97d",
+      "servedPublicationCommit": "1f8be09f86fa8aaa336c8dea3241a55dc386f97d",
+      "nextAction": "Cable owner migration has exact served bytes, producer parity and desktop/mobile live controls. Continue N02 Escape without transferring print/fleet acceptance.",
+      "requirementStatus": null,
+      "acceptanceScope": "Dedicated owner migration and live desktop/mobile controls; not a new full50 print campaign or fleet acceptance."
+    },
+    {
+      "id": "N02",
+      "change": "Add Escape dismissal cartridge to persistent design layers",
+      "generation": "202609051932",
+      "status": "built",
+      "sourceCommit": "9bef6d20ff022c23cbe3b868925fb7455f1cac83",
+      "engineCommit": "fc27df849f3811713e94e4c056a9d0e0c084e1c9",
+      "publicationCommit": "b48e406e9e6149e7ffd80a1a1ab8c001493572b7",
+      "servedPublicationCommit": null,
+      "nextAction": "Local semantic/browser preflight passed; await exact served bytes and live keyboard proof.",
+      "requirementStatus": null,
+      "acceptanceScope": "Pending own release proof. Local override tests are not shipping-feature evidence."
+    },
+    {
+      "id": "N03",
+      "change": "Add keyboard focus boundary cartridge for original tools",
+      "generation": "202609051936",
+      "status": "built",
+      "sourceCommit": "cf4d34269ab100c8a5a22f61477155cf71727349",
+      "engineCommit": "9a6b52f893123222724740e7098166af17e19517",
+      "publicationCommit": "64085673f8a24d86ff9fa8398c2c4b3c931fc2a1",
+      "servedPublicationCommit": null,
+      "nextAction": "Local semantic/browser preflight passed; await exact served bytes and live keyboard proof.",
+      "requirementStatus": null,
+      "acceptanceScope": "Pending own release proof. Local override tests are not shipping-feature evidence."
     }
   ],
   "nextFiftyRoadmap": "NEXT-50.json"

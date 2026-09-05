@@ -11,13 +11,17 @@
       "owner": "testcode",
       "module": "sandbox/capsules/tool-layers/compose.mjs",
       "dependsOn": [],
-      "status": "in_progress",
+      "status": "linked",
       "feature": "Switch only Cable runtime provenance to cable-trench-or-drill76396fd; preserve sibling routes and bytes.",
       "requiredProof": "Producer hash equality; desktop/mobile all three canvases; cross-owner links",
       "generation": "202609051927",
       "release": null,
       "evidence": [],
-      "nextAction": "Dedicated Cable owner migration is built/publishing; await exact served bytes and real tool controls. Review same-producer partial-update manifest retention separately."
+      "nextAction": "N01 tested scope is recorded in its hashed offline checkpoint; continue prerequisite-dependent increments.",
+      "checkpoint": {
+        "path": "architecture-reload-20260905/next-fifty/N01-202609051927-checkpoint.json",
+        "sha256": "ed833a3f59262e56b2fceceb4b310fda1e40631ab107cd7a94559b82545abb50"
+      }
     },
     {
       "id": "N02",
@@ -30,7 +34,7 @@
       "status": "in_progress",
       "feature": "Extract a keyboard-close cartridge that restores focus to the invoking tool button.",
       "requiredProof": "Escape closes active layer; state remains; inactive Escape has no effect",
-      "generation": null,
+      "generation": "202609051932",
       "release": null,
       "evidence": [],
       "nextAction": "Escape source22c4bdc exists; await immutable candidate and actual parent/iframe Escape and focus-return proof."
@@ -43,13 +47,13 @@
       "dependsOn": [
         "N02"
       ],
-      "status": "planned",
+      "status": "in_progress",
       "feature": "Contain Tab and Shift+Tab within active dialog while preserving standalone controls.",
       "requiredProof": "Keyboard traversal and focus return with desktop/mobile viewport",
-      "generation": null,
+      "generation": "202609051936",
       "release": null,
       "evidence": [],
-      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+      "nextAction": "Focus semantic and local browser preflight passed; own served/live candidate proof pending."
     },
     {
       "id": "N04",
@@ -59,13 +63,13 @@
       "dependsOn": [
         "N01"
       ],
-      "status": "planned",
+      "status": "in_progress",
       "feature": "Expose pending/ready/failed based on tool-specific actual render state; no static status text proof.",
       "requiredProof": "Delayed scripts, blank canvas and module-map readiness negative cases",
       "generation": null,
       "release": null,
       "evidence": [],
-      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+      "nextAction": "Implement truthful interface/drawing readiness; GIS remains drawing-unreported without a sidecar. Review initial-load timeout and stale timeout lifecycle."
     },
     {
       "id": "N05",

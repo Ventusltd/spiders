@@ -2,13 +2,13 @@
 
 Prepared 5 September 2026 from repository source, current CI observations, direct Chrome interaction and the completed handover at offline-screenshots/handover-202609051831. The first sections retain the historical1623/1820 diagnosis; use the current checkpoint below before resuming. Generate each release timestamp from UTC when building; the stages below are not invented version numbers.
 
-## Current checkpoint: 1906 tested scope; later candidates pending
+## Current checkpoint: 1906 print campaign and N01 ownership tested; later candidates pending
 
 The settled1906 campaign completed50/50 installed-Chrome visits and50 downloads through app-only printing; independent audit passed all25 source downloads. Original GIS, Module Layout and Cable controls passed desktop/mobile browser cases. The geometry and clone defects described below are historical findings with tested corrections in1844/1845 and1906; do not reopen them simply because the old baseline text is retained. First failed and timing-sensitive runs remain evidence.
 
-Homepage promotion was pushed at `a9474d74d0a4366357baacbadb2eef86da86cee3` after the successful restore-point workflow. Exact live homepage verification is tracked separately. Candidate1927 is pending its own served/browser proof. Source/print claims cover Atlas/Pipeline, not standalone iframe printing; no physical-device or automatic obstacle-routing proof is implied. The estate fleet and additional legacy homepage gates still have real failures, so this is no blanket green/design-freeze claim.
+Homepage promotion was pushed at `a9474d74d0a4366357baacbadb2eef86da86cee3` after the successful restore-point workflow. Both homepage and release record matched that commit in the independent 19:32:46 UTC served-byte receipt. Candidate1927 subsequently passed198/198 served-file checks and desktop/mobile controls with dedicated Cable producer provenance. Source/print claims cover Atlas/Pipeline, not standalone iframe printing; no physical-device or automatic obstacle-routing proof is implied. The estate fleet and additional legacy homepage gates still have real failures, so this is no blanket green/design-freeze claim.
 
-The authoritative queue for newly authorized work is [NEXT-50.md](plan-tracker/NEXT-50.md). N01 Cable ownership is underway; N02 Escape source is implemented but awaits a new tested candidate. Read the offline ledger for exact release tuples and receipts.
+The authoritative queue for newly authorized work is [NEXT-50.md](plan-tracker/NEXT-50.md). N01 Cable ownership has a hashed tested checkpoint. N02 Escape1932 passed199/199 served-file checks and live desktop/mobile Escape for all three tools. N03 focus1936 passed200/200 served-file checks with live browser testing in progress; N04 readiness1940 is still finishing. Read the ledger before advancing either pending feature. Read the offline ledger for exact release tuples and receipts.
 
 ## Historical starting point (1623/1820, not current blocker status)
 

@@ -1,0 +1,37 @@
+name: Estate overnight audit
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '35 2 * * 0'
+permissions:
+  contents: read
+concurrency:
+  group: estate-overnight-audit
+  cancel-in-progress: false
+jobs:
+  observe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      max-parallel: 3
+      matrix:
+        shard: [0, 1, 2]
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: Verify storage guard and reference extraction
+        run: python3 codex/build-plan/estate-audit.test.py
+      - name: Bounded read-only estate audit
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 codex/build-plan/estate-audit.py --out evidence --shard ${{ matrix.shard }} --shards 3
+      - name: Retain partitioned evidence even on failure
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: estate-audit-${{ github.run_id }}-${{ matrix.shard }}
+          path: evidence/
+          retention-days: 14
+          if-no-files-found: error

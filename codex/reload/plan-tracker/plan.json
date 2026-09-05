@@ -35,11 +35,12 @@
       "dependsOn": [
         "P0"
       ],
-      "status": "in_progress",
+      "status": "blocked",
       "blockers": [
-        "Testcode CI at ab632e5 fails; endpoint fix does not clear broader gate."
+        "Testcode b668730 fleet workflow omits required cvaa and globalgrid2050/pipelinenews/spiders inputs. Latest artifact has one required absent gate and two input-dependent failures.",
+        "Actual GridAtlas sibling805b4b114766e3395437d96148d6d265a9a74f0d fails sld-sandbox size boundary:438867 exceeds368640; this remains genuine after workflow input repair."
       ],
-      "nextAction": "Read failed offline-gate artifact, declare required checkout and endpoint inputs, preserve static-server negative control.",
+      "nextAction": "Materialise declared sibling inputs and preflight them; preserve required gate failures and collect full per-gate logs. Reproduce the same exact fleet before claiming CI green.",
       "acceptance": "Required inputs fail as environment preconditions; exact owning commits pass endpoint fixtures and applicable product gates.",
       "requiredProofs": [
         "environment-negative-control",

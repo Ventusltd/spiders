@@ -460,9 +460,10 @@
       "engineCommit": "d01843d4e8bbcb9b14c2511e9eda3e4326d6b495",
       "publicationCommit": "c4c704e293a08f4d655b13b0227b604ca7bfe2ea",
       "servedPublicationCommit": "c4c704e293a08f4d655b13b0227b604ca7bfe2ea",
-      "nextAction": "Retain failed harness/timing runs and settled desktop/mobile layer pass; finish final50 Atlas/Pipeline campaign and source audit separately.",
+      "nextAction": "1906 settled50/50 Atlas/Pipeline print campaign passes; retain independent source audit and homepage receipts. Next feature is N01 Cable owner migration.",
       "requirementStatus": null,
-      "acceptanceScope": "Isolated tool controls and state only; no original-tool PDF/source-export or automatic constrained-routing acceptance."
+      "acceptanceScope": "50 installed-Chrome Atlas/Pipeline visits and50 downloads, plus desktop/mobile tool controls; no physical-device, standalone-tool print, automatic routing or fleet-CI-green claim."
     }
-  ]
+  ],
+  "nextFiftyRoadmap": "NEXT-50.json"
 }

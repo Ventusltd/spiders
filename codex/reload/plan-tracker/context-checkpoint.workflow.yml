@@ -25,6 +25,8 @@ jobs:
           python3 -B codex/reload/test_reload.py
           python3 -B codex/reload/plan-tracker/test_validate.py
           python3 -B codex/reload/plan-tracker/test_campaign.py
+          python3 -B codex/reload/plan-tracker/test_roadmap.py
+          python3 -B codex/reload/plan-tracker/validate_roadmap.py
       - name: Validate public checkpoint and write resume context
         run: python3 -B codex/reload/plan-tracker/validate.py --out artifacts/build-context
       - name: Observe exact existing CI runs

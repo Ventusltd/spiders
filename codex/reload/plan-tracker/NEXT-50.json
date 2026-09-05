@@ -1,0 +1,832 @@
+{
+  "schema": "spiders.next-fifty-roadmap.v1",
+  "createdAt": "2026-09-05T19:28:36.952038+00:00",
+  "baselineGeneration": "202609051906",
+  "rule": "Fifty meaningful increments, not fifty cosmetic commits. Assign one UTC timestamp per actual build. No completion without exact producer/consumer/deployment identity and matching real proof. Dependencies may block release; do not fabricate data or weaken gates.",
+  "referenceCatalog": "engineering-references.json",
+  "items": [
+    {
+      "id": "N01",
+      "title": "Cable producer owner migration",
+      "owner": "testcode",
+      "module": "sandbox/capsules/tool-layers/compose.mjs",
+      "dependsOn": [],
+      "status": "in_progress",
+      "feature": "Switch only Cable runtime provenance to cable-trench-or-drill76396fd; preserve sibling routes and bytes.",
+      "requiredProof": "Producer hash equality; desktop/mobile all three canvases; cross-owner links",
+      "generation": "202609051927",
+      "release": null,
+      "evidence": [],
+      "nextAction": "Dedicated Cable owner migration is built/publishing; await exact served bytes and real tool controls. Review same-producer partial-update manifest retention separately."
+    },
+    {
+      "id": "N02",
+      "title": "Escape closes the active tool layer",
+      "owner": "testcode",
+      "module": "sandbox/capsules/tool-layers/host-keyboard.js",
+      "dependsOn": [
+        "N01"
+      ],
+      "status": "planned",
+      "feature": "Extract a keyboard-close cartridge that restores focus to the invoking tool button.",
+      "requiredProof": "Escape closes active layer; state remains; inactive Escape has no effect",
+      "generation": null,
+      "release": null,
+      "evidence": [],
+      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+    },
+    {
+      "id": "N03",
+      "title": "Modal focus containment",
+      "owner": "testcode",
+      "module": "sandbox/capsules/tool-layers/host-focus.js",
+      "dependsOn": [
+        "N02"
+      ],
+      "status": "planned",
+      "feature": "Contain Tab and Shift+Tab within active dialog while preserving standalone controls.",
+      "requiredProof": "Keyboard traversal and focus return with desktop/mobile viewport",
+      "generation": null,
+      "release": null,
+      "evidence": [],
+      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+    },
+    {
+      "id": "N04",
+      "title": "Tool readiness contract",
+      "owner": "testcode",
+      "module": "sandbox/capsules/tool-layers/tool-readiness.js",
+      "dependsOn": [
+        "N01"
+      ],
+      "status": "planned",
+      "feature": "Expose pending/ready/failed based on tool-specific actual render state; no static status text proof.",
+      "requiredProof": "Delayed scripts, blank canvas and module-map readiness negative cases",
+      "generation": null,
+      "release": null,
+      "evidence": [],
+      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+    },
+    {
+      "id": "N05",
+      "title": "Responsive tool viewport policy",
+      "owner": "testcode",
+      "module": "sandbox/capsules/tool-layers/viewport-policy.js",
+      "dependsOn": [
+        "N03"
+      ],
+      "status": "planned",
+      "feature": "Preserve usable standalone tool layouts through orientation, resize and fractional zoom.",
+      "requiredProof": "Phone portrait/landscape and DPR1.875; no clipping of close/critical controls",
+      "generation": null,
+      "release": null,
+      "evidence": [],
+      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+    },
+    {
+      "id": "N06",
+      "title": "Independent tool session reset",
+      "owner": "testcode",
+      "module": "sandbox/capsules/tool-layers/session-reset.js",
+      "dependsOn": [
+        "N04"
+      ],
+      "status": "planned",
+      "feature": "Add explicit per-tool reset while ordinary close/reopen retains state.",
+      "requiredProof": "Reset affects chosen tool only; hidden peer state retained",
+      "generation": null,
+      "release": null,
+      "evidence": [],
+      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+    },
+    {
+      "id": "N07",
+      "title": "Tool-load failure recovery",
+      "owner": "testcode",
+      "module": "sandbox/capsules/tool-layers/load-recovery.js",
+      "dependsOn": [
+        "N04"
+      ],
+      "status": "planned",
+      "feature": "Expose failed dependency/load state with bounded retry and preserved parent map.",
+      "requiredProof": "Missing script and timed-out init; retry success without duplicate iframe",
+      "generation": null,
+      "release": null,
+      "evidence": [],
+      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+    },
+    {
+      "id": "N08",
+      "title": "Module draw readiness guard",
+      "owner": "layout-tool",
+      "module": "cartridges/module-draw-readiness.js",
+      "dependsOn": [
+        "N04"
+      ],
+      "status": "planned",
+      "feature": "Prevent original Module Draw from reporting zero modules before map readiness.",
+      "requiredProof": "Early click and ready click both produce requested rows/modules; original baseline retained",
+      "generation": null,
+      "release": null,
+      "evidence": [],
+      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+    },
+    {
+      "id": "N09",
+      "title": "Cable render readiness signal",
+      "owner": "cable-trench-or-drill",
+      "module": "cartridges/render-readiness.js",
+      "dependsOn": [
+        "N04"
+      ],
+      "status": "planned",
+      "feature": "Publish an explicit completed-drawing revision only after all three canvases are drawn.",
+      "requiredProof": "Pending versus rendered revision; edits advance it after actual draw",
+      "generation": null,
+      "release": null,
+      "evidence": [],
+      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+    },
+    {
+      "id": "N10",
+      "title": "Standalone route-state adapter",
+      "owner": "gis-sld-sandbox",
+      "module": "cartridges/route-state.js",
+      "dependsOn": [
+        "N04"
+      ],
+      "status": "planned",
+      "feature": "Expose current route geometry and selection through a versioned read-only adapter.",
+      "requiredProof": "Manual pins/edit/reset; exported geometry equals visible route",
+      "generation": null,
+      "release": null,
+      "evidence": [],
+      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+    },
+    {
+      "id": "N11",
+      "title": "Cross-owner navigation resolver",
+      "owner": "testcode",
+      "module": "sandbox/capsules/tool-layers/navigation-resolver.js",
+      "dependsOn": [
+        "N01"
+      ],
+      "status": "planned",
+      "feature": "Resolve known sibling links through pinned tool registry without copying unrelated runtimes.",
+      "requiredProof": "Module/DC/GIS links resolve exact entries; undeclared owner remains blocked",
+      "generation": null,
+      "release": null,
+      "evidence": [],
+      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+    },
+    {
+      "id": "N12",
+      "title": "Nested source-scope manifest",
+      "owner": "teleprinter",
+      "module": "drivers/codex/tool-source-scope.mjs",
+      "dependsOn": [
+        "N11"
+      ],
+      "status": "planned",
+      "feature": "Describe iframe runtime coverage and exclusions separately from Atlas source.",
+      "requiredProof": "Owner manifest complete; unvisited runtime marked unobserved; no false full-source pass",
+      "generation": null,
+      "release": null,
+      "evidence": [],
+      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+    },
+    {
+      "id": "N13",
+      "title": "Standalone source attachment index",
+      "owner": "teleprinter",
+      "module": "drivers/codex/tool-source-index.mjs",
+      "dependsOn": [
+        "N12"
+      ],
+      "status": "planned",
+      "feature": "Export hashed tool runtime index and owning revision without repeated giant source bundles.",
+      "requiredProof": "Every indexed body matches producer SHA; missing body explicit",
+      "generation": null,
+      "release": null,
+      "evidence": [],
+      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+    },
+    {
+      "id": "N14",
+      "title": "GIS canvas snapshot adapter",
+      "owner": "gis-sld-sandbox",
+      "module": "cartridges/print-canvas-snapshot.js",
+      "dependsOn": [
+        "N10"
+      ],
+      "status": "planned",
+      "feature": "Capture actual GIS map canvas on its render event for a future app-only PDF.",
+      "requiredProof": "No screen-sharing; nonblank map and drawn manual route; refused tainted canvas",
+      "generation": null,
+      "release": null,
+      "evidence": [],
+      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+    },
+    {
+      "id": "N15",
+      "title": "GIS visible DOM print adapter",
+      "owner": "gis-sld-sandbox",
+      "module": "cartridges/print-visible-dom.js",
+      "dependsOn": [
+        "N14"
+      ],
+      "status": "planned",
+      "feature": "Render visible GIS controls/legend and verified map image without iframe omission.",
+      "requiredProof": "Layer, drawing controls and finance panel retain visible content",
+      "generation": null,
+      "release": null,
+      "evidence": [],
+      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+    },
+    {
+      "id": "N16",
+      "title": "GIS standalone app-only PDF",
+      "owner": "teleprinter",
+      "module": "drivers/codex/gis-pdf-adapter.mjs",
+      "dependsOn": [
+        "N15"
+      ],
+      "status": "planned",
+      "feature": "Connect the standalone GIS print command to scoped PDF capture with its own evidence.",
+      "requiredProof": "Actual GIS menu download, no window.print/getDisplayMedia, separate source and PDF assertions",
+      "generation": null,
+      "release": null,
+      "evidence": [],
+      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+    },
+    {
+      "id": "N17",
+      "title": "Module Layout print snapshot",
+      "owner": "layout-tool",
+      "module": "cartridges/module-print-snapshot.js",
+      "dependsOn": [
+        "N08"
+      ],
+      "status": "planned",
+      "feature": "Capture rendered module arrangement, counts and site boundary in app-only frame.",
+      "requiredProof": "120-module case retained, nonzero geometry and counts, fractional-DPR case",
+      "generation": null,
+      "release": null,
+      "evidence": [],
+      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+    },
+    {
+      "id": "N18",
+      "title": "Cable drawings print snapshot",
+      "owner": "cable-trench-or-drill",
+      "module": "cartridges/cable-print-snapshot.js",
+      "dependsOn": [
+        "N09"
+      ],
+      "status": "planned",
+      "feature": "Compose three Cable drawings and visible dimensions into a tool-owned print frame.",
+      "requiredProof": "Formation/trench/bend images all nonblank; labels and units remain",
+      "generation": null,
+      "release": null,
+      "evidence": [],
+      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+    },
+    {
+      "id": "N19",
+      "title": "Tool print provenance furniture",
+      "owner": "teleprinter",
+      "module": "drivers/codex/tool-print-provenance.mjs",
+      "dependsOn": [
+        "N16",
+        "N17",
+        "N18"
+      ],
+      "status": "planned",
+      "feature": "Attach tool owner/revision, input revision and capture scope outside the app image.",
+      "requiredProof": "Provenance matches selected tool; image unscaled; unknown scope explicit",
+      "generation": null,
+      "release": null,
+      "evidence": [],
+      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+    },
+    {
+      "id": "N20",
+      "title": "Tool export size budget",
+      "owner": "teleprinter",
+      "module": "drivers/codex/tool-export-budget.mjs",
+      "dependsOn": [
+        "N13",
+        "N19"
+      ],
+      "status": "planned",
+      "feature": "Bound duplicate resource bytes and expose portable index/bundle export choices.",
+      "requiredProof": "Large source fixture reports bytes honestly; no silent truncation; mobile opens attachment",
+      "generation": null,
+      "release": null,
+      "evidence": [],
+      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+    },
+    {
+      "id": "N21",
+      "title": "Direct baseline result contract",
+      "owner": "ventus-grid-engine",
+      "module": "routing/direct-result.mjs",
+      "dependsOn": [
+        "N10"
+      ],
+      "status": "planned",
+      "feature": "Wrap unchanged direct-distance result with project, endpoints, attempt and model identity.",
+      "requiredProof": "Existing f9531a7 numerical parity; stale selection rejection; direct first pass always available",
+      "generation": null,
+      "release": null,
+      "evidence": [],
+      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+    },
+    {
+      "id": "N22",
+      "title": "Route graph input contract",
+      "owner": "ventus-grid-engine",
+      "module": "routing/graph-contract.mjs",
+      "dependsOn": [
+        "N21"
+      ],
+      "status": "planned",
+      "feature": "Accept an explicit graph with units, CRS, revision and coverage instead of implicit map pixels.",
+      "requiredProof": "Bad CRS/units, disconnected graph and version mismatch negatives",
+      "generation": null,
+      "release": null,
+      "evidence": [],
+      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+    },
+    {
+      "id": "N23",
+      "title": "Constraint coverage contract",
+      "owner": "ventus-grid-engine",
+      "module": "routing/coverage-contract.mjs",
+      "dependsOn": [
+        "N22"
+      ],
+      "status": "planned",
+      "feature": "Represent present, absent and unknown constraint coverage independently of routing success.",
+      "requiredProof": "Missing water/protected-area data remains unknown; footprint mismatch rejects",
+      "generation": null,
+      "release": null,
+      "evidence": [],
+      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+    },
+    {
+      "id": "N24",
+      "title": "Crossing event classifier",
+      "owner": "cable-trench-or-drill",
+      "module": "routing/crossing-events.mjs",
+      "dependsOn": [
+        "N23"
+      ],
+      "status": "planned",
+      "feature": "Record road, watercourse and other route crossings with separate source identity.",
+      "requiredProof": "Known synthetic crossings, touching cases and unknown classifications",
+      "generation": null,
+      "release": null,
+      "evidence": [],
+      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+    },
+    {
+      "id": "N25",
+      "title": "B-road preference cost",
+      "owner": "ventus-grid-engine",
+      "module": "routing/road-preference-cost.mjs",
+      "dependsOn": [
+        "N22"
+      ],
+      "status": "planned",
+      "feature": "Apply configurable user soft preference without granting route eligibility or permission.",
+      "requiredProof": "Preference changes cost only; blocked edge stays blocked; missing class explicit",
+      "generation": null,
+      "release": null,
+      "evidence": [],
+      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+    },
+    {
+      "id": "N26",
+      "title": "Constraint exclusion policy",
+      "owner": "ventus-grid-engine",
+      "module": "routing/exclusion-policy.mjs",
+      "dependsOn": [
+        "N23"
+      ],
+      "status": "planned",
+      "feature": "Apply explicit hard exclusions and review-only constraints from supplied project policy.",
+      "requiredProof": "Forbidden edge rejected; review-only status retained; no blanket road permissions",
+      "generation": null,
+      "release": null,
+      "evidence": [],
+      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+    },
+    {
+      "id": "N27",
+      "title": "Optional route solver",
+      "owner": "ventus-grid-engine",
+      "module": "routing/route-search.mjs",
+      "dependsOn": [
+        "N24",
+        "N25",
+        "N26"
+      ],
+      "status": "planned",
+      "feature": "Compute an optional graph route while retaining the direct first-pass result.",
+      "requiredProof": "Known shortest/costed paths, no-route, incomplete graph and deterministic results",
+      "generation": null,
+      "release": null,
+      "evidence": [],
+      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+    },
+    {
+      "id": "N28",
+      "title": "Separate route result view",
+      "owner": "gis-sld-sandbox",
+      "module": "cartridges/route-comparison-view.js",
+      "dependsOn": [
+        "N27"
+      ],
+      "status": "planned",
+      "feature": "Show direct and optional route geometry, lengths and reasons independently.",
+      "requiredProof": "Both results stay visible; missing/failed optional result never hides baseline",
+      "generation": null,
+      "release": null,
+      "evidence": [],
+      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+    },
+    {
+      "id": "N29",
+      "title": "Routing cancellation and stale-result guard",
+      "owner": "ventus-grid-engine",
+      "module": "routing/attempt-guard.mjs",
+      "dependsOn": [
+        "N27"
+      ],
+      "status": "planned",
+      "feature": "Cancel or reject outdated route attempts after entity/endpoints change.",
+      "requiredProof": "Delayed older result cannot replace newest; direct result preserved",
+      "generation": null,
+      "release": null,
+      "evidence": [],
+      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+    },
+    {
+      "id": "N30",
+      "title": "Manual route comparison adapter",
+      "owner": "gis-sld-sandbox",
+      "module": "cartridges/manual-route-comparison.js",
+      "dependsOn": [
+        "N28",
+        "N29"
+      ],
+      "status": "planned",
+      "feature": "Compare original manually pinned route against baseline and optional route without overwriting either.",
+      "requiredProof": "Four-vertex original0.4405921418291706km parity retained; edits create new revision",
+      "generation": null,
+      "release": null,
+      "evidence": [],
+      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+    },
+    {
+      "id": "N31",
+      "title": "Construction segment model",
+      "owner": "cable-trench-or-drill",
+      "module": "assessment/segment-contract.mjs",
+      "dependsOn": [
+        "N24",
+        "N28"
+      ],
+      "status": "planned",
+      "feature": "Represent individual construction segments and crossings with method-independent geometry.",
+      "requiredProof": "Segments join correctly, lengths total, gaps and overlap explicit",
+      "generation": null,
+      "release": null,
+      "evidence": [],
+      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+    },
+    {
+      "id": "N32",
+      "title": "Trench alternative contract",
+      "owner": "cable-trench-or-drill",
+      "module": "assessment/trench-alternative.mjs",
+      "dependsOn": [
+        "N31"
+      ],
+      "status": "planned",
+      "feature": "Compute only declared trench geometry quantities and expose missing thermal/land inputs.",
+      "requiredProof": "Known cross-section quantities, invalid dimensions, explicit unassessed electrical limits",
+      "generation": null,
+      "release": null,
+      "evidence": [],
+      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+    },
+    {
+      "id": "N33",
+      "title": "Directional-drill alternative contract",
+      "owner": "cable-trench-or-drill",
+      "module": "assessment/drill-alternative.mjs",
+      "dependsOn": [
+        "N31"
+      ],
+      "status": "planned",
+      "feature": "Represent entry/exit geometry, supplied bend/cover bounds and feasibility unknowns.",
+      "requiredProof": "Known geometric bounds, infeasible bend and missing geotechnical inputs",
+      "generation": null,
+      "release": null,
+      "evidence": [],
+      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+    },
+    {
+      "id": "N34",
+      "title": "Method-specific crossing review",
+      "owner": "cable-trench-or-drill",
+      "module": "assessment/crossing-review.mjs",
+      "dependsOn": [
+        "N32",
+        "N33"
+      ],
+      "status": "planned",
+      "feature": "Compare trench/drill assumptions per crossing while retaining unresolved approval/design tasks.",
+      "requiredProof": "Same crossing two alternatives; no method silently grants consent",
+      "generation": null,
+      "release": null,
+      "evidence": [],
+      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+    },
+    {
+      "id": "N35",
+      "title": "Mixed construction route totals",
+      "owner": "cable-trench-or-drill",
+      "module": "assessment/method-totals.mjs",
+      "dependsOn": [
+        "N34"
+      ],
+      "status": "planned",
+      "feature": "Aggregate explicitly selected segment methods with separate length/quantity totals.",
+      "requiredProof": "Mixed-method totals, unassigned segment and incompatible transition cases",
+      "generation": null,
+      "release": null,
+      "evidence": [],
+      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+    },
+    {
+      "id": "N36",
+      "title": "Unit-aware civil cost inputs",
+      "owner": "cable-trench-or-drill",
+      "module": "assessment/cost-inputs.mjs",
+      "dependsOn": [
+        "N35"
+      ],
+      "status": "planned",
+      "feature": "Accept dated project quotations/rates with units and scope, never guessed market defaults.",
+      "requiredProof": "Currency/unit/date validation; absent quote leaves cost unknown",
+      "generation": null,
+      "release": null,
+      "evidence": [],
+      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+    },
+    {
+      "id": "N37",
+      "title": "Alternative cost comparison",
+      "owner": "cable-trench-or-drill",
+      "module": "assessment/cost-comparison.mjs",
+      "dependsOn": [
+        "N36"
+      ],
+      "status": "planned",
+      "feature": "Compare supplied cost assumptions for feasible and review-required alternatives.",
+      "requiredProof": "Known arithmetic, exclusions, uncertainty intervals and double-count prevention",
+      "generation": null,
+      "release": null,
+      "evidence": [],
+      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+    },
+    {
+      "id": "N38",
+      "title": "Cable product and accessory contract",
+      "owner": "cable-trench-or-drill",
+      "module": "interfaces/product-contract.mjs",
+      "dependsOn": [
+        "N32",
+        "N33"
+      ],
+      "status": "planned",
+      "feature": "Bind geometry to exact cable/accessory data and mechanical interface assumptions.",
+      "requiredProof": "Supplier revision and compatible interface checks; missing limit not defaulted",
+      "generation": null,
+      "release": null,
+      "evidence": [],
+      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+    },
+    {
+      "id": "N39",
+      "title": "Pulling and bend evidence adapter",
+      "owner": "cable-trench-or-drill",
+      "module": "interfaces/installation-evidence.mjs",
+      "dependsOn": [
+        "N38"
+      ],
+      "status": "planned",
+      "feature": "Attach externally validated pulling/bend/sidewall checks to specific route segments.",
+      "requiredProof": "Evidence revision matches geometry; stale or missing study cannot pass",
+      "generation": null,
+      "release": null,
+      "evidence": [],
+      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+    },
+    {
+      "id": "N40",
+      "title": "Thermal-study evidence adapter",
+      "owner": "cable-trench-or-drill",
+      "module": "interfaces/thermal-evidence.mjs",
+      "dependsOn": [
+        "N35",
+        "N38"
+      ],
+      "status": "planned",
+      "feature": "Record thermal model, grouping, soil/duct assumptions and reviewed result as separate study evidence.",
+      "requiredProof": "Geometry change invalidates prior thermal binding; no automatic ampacity claim",
+      "generation": null,
+      "release": null,
+      "evidence": [],
+      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+    },
+    {
+      "id": "N41",
+      "title": "Electrical-study identity contract",
+      "owner": "ventus-grid-engine",
+      "module": "studies/study-identity.mjs",
+      "dependsOn": [
+        "N21",
+        "N38"
+      ],
+      "status": "planned",
+      "feature": "Bind load-flow/fault/protection evidence to equipment and operating-case revisions.",
+      "requiredProof": "Cross-study revision mismatch, missing operating case and raw result identity",
+      "generation": null,
+      "release": null,
+      "evidence": [],
+      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+    },
+    {
+      "id": "N42",
+      "title": "Interface responsibility matrix",
+      "owner": "gis-sld-sandbox",
+      "module": "cartridges/interface-responsibility.js",
+      "dependsOn": [
+        "N38",
+        "N41"
+      ],
+      "status": "planned",
+      "feature": "Represent named design authority and owner for electrical/civil/OEM/grid boundaries.",
+      "requiredProof": "Unassigned interface remains open; explicit exclusions and reviewer recorded",
+      "generation": null,
+      "release": null,
+      "evidence": [],
+      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+    },
+    {
+      "id": "N43",
+      "title": "BESS requirements evidence mapping",
+      "owner": "gis-sld-sandbox",
+      "module": "cartridges/bess-requirements.js",
+      "dependsOn": [
+        "N40",
+        "N41",
+        "N42"
+      ],
+      "status": "planned",
+      "feature": "Map PCS/BESS project requirements to dated evidence without marking unimplemented studies compliant.",
+      "requiredProof": "Missing study remains missing; boundary-specific evidence and current input identity",
+      "generation": null,
+      "release": null,
+      "evidence": [],
+      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+    },
+    {
+      "id": "N44",
+      "title": "Solar requirements evidence mapping",
+      "owner": "gis-sld-sandbox",
+      "module": "cartridges/solar-requirements.js",
+      "dependsOn": [
+        "N40",
+        "N41",
+        "N42"
+      ],
+      "status": "planned",
+      "feature": "Map plant/DC/MV/termination requirements to separately owned study and design records.",
+      "requiredProof": "Selective scope, applicability reason, supplier bend record and evidence retention",
+      "generation": null,
+      "release": null,
+      "evidence": [],
+      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+    },
+    {
+      "id": "N45",
+      "title": "Competence and review sign-off record",
+      "owner": "gis-sld-sandbox",
+      "module": "cartridges/review-record.js",
+      "dependsOn": [
+        "N43",
+        "N44"
+      ],
+      "status": "planned",
+      "feature": "Record who reviewed which evidence and limitations, without automated competency certification.",
+      "requiredProof": "Revision-bound sign-off, unresolved finding and changed design invalidation",
+      "generation": null,
+      "release": null,
+      "evidence": [],
+      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+    },
+    {
+      "id": "N46",
+      "title": "Engineering assumptions register",
+      "owner": "gis-sld-sandbox",
+      "module": "cartridges/assumptions-register.js",
+      "dependsOn": [
+        "N37",
+        "N45"
+      ],
+      "status": "planned",
+      "feature": "Keep assumptions with source date, units, owner, applicability and change history.",
+      "requiredProof": "Historical claims never become current figures; unit/year scope validated",
+      "generation": null,
+      "release": null,
+      "evidence": [],
+      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+    },
+    {
+      "id": "N47",
+      "title": "Source-bound assessment export",
+      "owner": "teleprinter",
+      "module": "drivers/codex/assessment-export.mjs",
+      "dependsOn": [
+        "N20",
+        "N46"
+      ],
+      "status": "planned",
+      "feature": "Export the selected assessment with both routes, method assumptions and linked evidence manifest.",
+      "requiredProof": "Replay input identity, no missing source disguised as pass, output scope shown",
+      "generation": null,
+      "release": null,
+      "evidence": [],
+      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+    },
+    {
+      "id": "N48",
+      "title": "Real-path performance instrumentation",
+      "owner": "gpu-drivers-for-global-grid",
+      "module": "cartridges/route-benchmark-adapter.mjs",
+      "dependsOn": [
+        "N27",
+        "N47"
+      ],
+      "status": "planned",
+      "feature": "Measure actual route/input-size phases with CPU baseline and hardware identity before proposing GPU acceleration.",
+      "requiredProof": "Repeatable representative inputs; CPU/GPU capability distinction; no synthetic-only performance claim",
+      "generation": null,
+      "release": null,
+      "evidence": [],
+      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+    },
+    {
+      "id": "N49",
+      "title": "Incremental evidence reload index",
+      "owner": "spiders",
+      "module": "codex/reload/evidence-index.py",
+      "dependsOn": [
+        "N47"
+      ],
+      "status": "planned",
+      "feature": "Index changed assessment manifests with bounded hashing and stable snapshot identity.",
+      "requiredProof": "Added/changed/deleted evidence, concurrent writer and stale index negatives",
+      "generation": null,
+      "release": null,
+      "evidence": [],
+      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+    },
+    {
+      "id": "N50",
+      "title": "Release acceptance manifest compiler",
+      "owner": "testcode",
+      "module": "sandbox/capsules/assessment-release/acceptance.mjs",
+      "dependsOn": [
+        "N39",
+        "N40",
+        "N45",
+        "N47",
+        "N48",
+        "N49"
+      ],
+      "status": "planned",
+      "feature": "Compile exact producer/consumer/deployment and scoped proof records into reviewable acceptance.",
+      "requiredProof": "Reject failed required fleet gates, wrong revision/environment and incomplete evidence; retain historical candidates",
+      "generation": null,
+      "release": null,
+      "evidence": [],
+      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+    }
+  ]
+}

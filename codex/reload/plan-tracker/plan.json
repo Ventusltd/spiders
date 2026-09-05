@@ -99,7 +99,14 @@
       "proofs": [],
       "targetRelease": null,
       "targetCommits": {},
-      "targetEnvironments": {}
+      "targetEnvironments": {},
+      "routingContract": "Keep the straight-line engine as the always-available first pass. Optional constraint-aware second pass preserves both results and never replaces, erases or relabels the baseline.",
+      "routingAcceptance": [
+        "baseline before constraint data loads",
+        "both results bound to the same project/attempt",
+        "second-pass failure leaves baseline intact",
+        "selection changes invalidate only corresponding stale results"
+      ]
     },
     {
       "id": "P4",
@@ -244,7 +251,54 @@
       "targetEnvironments": {},
       "reference": "https://globalgrid2050.com/solar-bess-topology-v7/gis-sld-financial-sandbox/index.html",
       "repository": "Ventusltd/layout-tool",
-      "initialObservedCommit": "3da7d34a4b1284f0c75bc4020cbe59a4c027db5a"
+      "initialObservedCommit": "3da7d34a4b1284f0c75bc4020cbe59a4c027db5a",
+      "standaloneIdentity": "Original GIS SLD Financial Sandbox is a standalone app developed through seven versions; preserve V7 reference identity/history, not an embedded Atlas layout substitute.",
+      "producerBaselines": [
+        {
+          "repository": "Ventusltd/gis-sld-sandbox",
+          "commit": "9fe7b2d920aaa11e95380de39b33fd98f04e9696",
+          "generation": "202609051855",
+          "manifestSha256": "90190a0846717b5203305a8c08301fb26ed58e015b992272e0999272091a0916",
+          "ciRun": 33985645150,
+          "ciConclusion": "success"
+        },
+        {
+          "repository": "Ventusltd/layout-tool",
+          "commit": "e201075e052bfc71e7fef01f1360f319808cb78f",
+          "generation": "202609051858",
+          "manifestSha256": "bb6d0a5cf4cf63d68b3d5cb02e55c27f1ccc0646135d7e39cdedbbe3da262796",
+          "ciRun": 33985726487,
+          "ciConclusion": "success"
+        }
+      ]
+    },
+    {
+      "id": "P9",
+      "title": "Optional constraint-aware second pass with direct baseline preserved",
+      "owner": "ventus-grid-engine + data owners + gis-sld-sandbox",
+      "dependsOn": [
+        "P3",
+        "P8"
+      ],
+      "status": "planned",
+      "blockers": [
+        "Road and constraint coverage/policy require explicit products and review.",
+        "No reviewed source grants blanketB-roadpermission."
+      ],
+      "nextAction": "Define graph/constraint/version/coverage contract; retain directengine unchanged; implement optional comparison as separate cartridge after evidence review.",
+      "acceptance": "Directresult alwaysavailable; secondpass preservesbothresults boundtoentity/attempt; unknowncoverageexplicit; crossingsseparate; B-roadpreference softpolicy,notpermission.",
+      "requiredProofs": [
+        "direct-baseline-retained",
+        "optional-route-identity",
+        "unknown-coverage",
+        "crossing-fixtures",
+        "preference-not-permission"
+      ],
+      "proofs": [],
+      "targetRelease": null,
+      "targetCommits": {},
+      "targetEnvironments": {},
+      "research": "ROUTING-SECOND-PASS.md"
     }
   ],
   "handoverEvidence": [
@@ -313,52 +367,62 @@
       "sourceCommit": "e85c494924191084763246959e6a2dfa85ce3277",
       "engineCommit": "0ef49c23a02cfef0c7d56fe9f94dd140feed531c",
       "publicationCommit": "8a20401537a7724f04126375f48c1b2fb9c4d71d",
+      "servedPublicationCommit": "8a20401537a7724f04126375f48c1b2fb9c4d71d",
       "nextAction": "Geometry increment has pure tests, served-byte match,2appvisits and separate realChrome PDF. Retain as tested comparison; full50release acceptance remains pending.",
-      "requirementStatus": null
+      "requirementStatus": null,
+      "acceptanceScope": "Focused geometry increment tested; not overall PDF design freeze."
     },
     {
       "id": "V2",
       "change": "Scoped print clone styles and stable visible contents",
       "generation": "202609051845",
-      "status": "built",
+      "status": "tested",
       "sourceCommit": "57d6104ff1d2bfee0b06c7e14928c169b2f89c4c",
       "engineCommit": "caf89b0e70563ba30506bfe6148664dd6c89061b",
       "publicationCommit": "322ba18938b7937eaafea55e3a54e5354aece9b1",
-      "nextAction": "Await served-byte verification and real app interaction acceptance for the exact candidate.",
-      "requirementStatus": null
+      "servedPublicationCommit": "d1443c2fcd10fd5b4da676b6a4f81982e77de961",
+      "nextAction": "Retain tested clone increment; final release acceptance remains separate.",
+      "requirementStatus": null,
+      "acceptanceScope": "Focused Pipeline PDF/source pair plus separate visual review. Whole regionalagreement90.62%,minimum87.24%; approximate85%threshold,not compositor equality orfull50acceptance."
     },
     {
       "id": "V3",
       "change": "Independent Grid/Subs quick-controls cartridge",
       "generation": "202609051847",
-      "status": "in_progress",
+      "status": "tested",
       "sourceCommit": "109aea625dd24ab3d1d105a863574272b7e905a1",
       "engineCommit": "e2ec03afd98302354050379928244846cc01a56d",
       "publicationCommit": "d1443c2fcd10fd5b4da676b6a4f81982e77de961",
-      "nextAction": "Await served-byte verification and real app interaction acceptance for the exact candidate.",
-      "requirementStatus": null
+      "servedPublicationCommit": "4185020ade7da01869b4ffc0ee1d2656608da716",
+      "nextAction": "Retain tested control increment; verify originaltool integration separately.",
+      "requirementStatus": null,
+      "acceptanceScope": "Desktop1400x900 andphone393x852 installedChromecontrols; notphysicalphone orfullPDFcampaign."
     },
     {
       "id": "V4",
       "change": "Collapsed Layers default with preserved map state",
       "generation": "202609051848",
-      "status": "in_progress",
+      "status": "tested",
       "sourceCommit": "2bf27b124344cb4431b50599d3045f58280ee0e2",
       "engineCommit": "a01ccb3f2f0aa2d3d2e0a4831836655891810a6d",
       "publicationCommit": "fc947ad0f9c9f81aa0df25c37c1e92eaadb8a847",
-      "nextAction": "Await served-byte verification and real app interaction acceptance for the exact candidate.",
-      "requirementStatus": null
+      "servedPublicationCommit": "4185020ade7da01869b4ffc0ee1d2656608da716",
+      "nextAction": "Retain tested control increment; verify originaltool integration separately.",
+      "requirementStatus": null,
+      "acceptanceScope": "Desktop1400x900 andphone393x852 installedChromecontrols; notphysicalphone orfullPDFcampaign."
     },
     {
       "id": "V5",
       "change": "Separate Layout command with existing selected-project semantics",
       "generation": "202609051850",
-      "status": "in_progress",
+      "status": "failed",
       "sourceCommit": "0dac7512704076ae1a01f16875ee20009a3c4454",
       "engineCommit": "821830690d3e6c0f30b062e2bb7bfacd5bae6703",
       "publicationCommit": "4185020ade7da01869b4ffc0ee1d2656608da716",
-      "nextAction": "Retain and test deployed comparison; implement original GIS tool separately in layout-tool under a new timestamp.",
-      "requirementStatus": "superseded"
+      "servedPublicationCommit": "4185020ade7da01869b4ffc0ee1d2656608da716",
+      "nextAction": "Retain phonefailure; correct originalGIS launcher placement innewtimestamp.",
+      "requirementStatus": "superseded",
+      "acceptanceScope": null
     }
   ]
 }

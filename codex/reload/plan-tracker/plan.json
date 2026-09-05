@@ -124,7 +124,7 @@
       "targetRelease": null,
       "targetCommits": {},
       "targetEnvironments": {},
-      "layoutCommandRequirement": "Layout is a separate visible command/button using the existing selected-project tool. Preserve formulas and selection; do not couple layout opening to GRID/SUBS toggles."
+      "layoutCommandRequirement": "Superseded by P8: user means original GIS SLD Financial Sandbox in independent layout-tool, not embedded Atlas selected-project layout. Preserve1850 as a comparison."
     },
     {
       "id": "P5",
@@ -215,7 +215,36 @@
       "defaultArrivalProof": "Desktop and mobile fresh-load checks; toggle GRID/SUBS with panel closed; expand/collapse without map-state loss; app-PDF visual reference.",
       "cartridgeRequirement": "Extract cohesive layer-quick-controls source cartridge; explicit engine adapter, scoped styling, mount/dispose, default panel visibility. Compose through existing parts manifest; no whole-SLD copy.",
       "observedMainBehavior": "Root agent directly exercised main Atlas in installed Chrome: GRID enabled all five400/275/220/132/66 controls; SUBS enabled substations and points appeared. Existing buttons are bottom-left of MAP, not entire browser. Preserve this behavior in Codex consumer.",
-      "layoutCommandRequirement": "Layout is a separate visible command/button using the existing selected-project tool. Preserve formulas and selection; do not couple layout opening to GRID/SUBS toggles."
+      "layoutCommandRequirement": "Superseded by P8: user means original GIS SLD Financial Sandbox in independent layout-tool, not embedded Atlas selected-project layout. Preserve1850 as a comparison."
+    },
+    {
+      "id": "P8",
+      "title": "Isolate the original layout and cable tools in their own owner",
+      "owner": "layout-tool + testcode + globalgrid2050",
+      "dependsOn": [
+        "P0",
+        "P4"
+      ],
+      "status": "in_progress",
+      "blockers": [
+        "1850 adapter opens embeddedAtlaslayout, not user-specified originalGIS tool."
+      ],
+      "nextAction": "Study and import originalGISSLDFinancialSandbox intact behind a separate isolated layer cartridge; give module-layout and cable-geometry-visualiser separate feature increments.",
+      "acceptance": "Original tool identities/formulas retained; separate Layout button opens correct original tool without mutating Atlas GRID/SUBS/selection; each new timestamp carries one major feature and exact served/test receipts.",
+      "requiredProofs": [
+        "original-tool-identity",
+        "isolated-layer-boundary",
+        "original-formula-parity",
+        "real-app-browser",
+        "served-bytes"
+      ],
+      "proofs": [],
+      "targetRelease": null,
+      "targetCommits": {},
+      "targetEnvironments": {},
+      "reference": "https://globalgrid2050.com/solar-bess-topology-v7/gis-sld-financial-sandbox/index.html",
+      "repository": "Ventusltd/layout-tool",
+      "initialObservedCommit": "3da7d34a4b1284f0c75bc4020cbe59a4c027db5a"
     }
   ],
   "handoverEvidence": [
@@ -280,51 +309,56 @@
       "id": "V1",
       "change": "Integer app-render backing geometry",
       "generation": "202609051844",
-      "status": "in_progress",
+      "status": "tested",
       "sourceCommit": "e85c494924191084763246959e6a2dfa85ce3277",
       "engineCommit": "0ef49c23a02cfef0c7d56fe9f94dd140feed531c",
       "publicationCommit": "8a20401537a7724f04126375f48c1b2fb9c4d71d",
-      "nextAction": "Await exact frozen build hash, served-byte verification and real Chrome fractional-DPR print receipt."
+      "nextAction": "Geometry increment has pure tests, served-byte match,2appvisits and separate realChrome PDF. Retain as tested comparison; full50release acceptance remains pending.",
+      "requirementStatus": null
     },
     {
       "id": "V2",
       "change": "Scoped print clone styles and stable visible contents",
       "generation": "202609051845",
-      "status": "in_progress",
-      "sourceCommit": null,
-      "engineCommit": null,
-      "publicationCommit": null,
-      "nextAction": "Review clone-isolation extraction and record exact deployed identity and Pipeline capture proof."
+      "status": "built",
+      "sourceCommit": "57d6104ff1d2bfee0b06c7e14928c169b2f89c4c",
+      "engineCommit": "caf89b0e70563ba30506bfe6148664dd6c89061b",
+      "publicationCommit": "322ba18938b7937eaafea55e3a54e5354aece9b1",
+      "nextAction": "Await served-byte verification and real app interaction acceptance for the exact candidate.",
+      "requirementStatus": null
     },
     {
       "id": "V3",
       "change": "Independent Grid/Subs quick-controls cartridge",
-      "generation": null,
-      "status": "planned",
-      "sourceCommit": null,
-      "engineCommit": null,
-      "publicationCommit": null,
-      "nextAction": "Implement and verify increment, then allocate a new immutable generation."
+      "generation": "202609051847",
+      "status": "in_progress",
+      "sourceCommit": "109aea625dd24ab3d1d105a863574272b7e905a1",
+      "engineCommit": "e2ec03afd98302354050379928244846cc01a56d",
+      "publicationCommit": "d1443c2fcd10fd5b4da676b6a4f81982e77de961",
+      "nextAction": "Await served-byte verification and real app interaction acceptance for the exact candidate.",
+      "requirementStatus": null
     },
     {
       "id": "V4",
       "change": "Collapsed Layers default with preserved map state",
-      "generation": null,
-      "status": "planned",
-      "sourceCommit": null,
-      "engineCommit": null,
-      "publicationCommit": null,
-      "nextAction": "Implement and verify increment, then allocate a new immutable generation."
+      "generation": "202609051848",
+      "status": "in_progress",
+      "sourceCommit": "2bf27b124344cb4431b50599d3045f58280ee0e2",
+      "engineCommit": "a01ccb3f2f0aa2d3d2e0a4831836655891810a6d",
+      "publicationCommit": "fc947ad0f9c9f81aa0df25c37c1e92eaadb8a847",
+      "nextAction": "Await served-byte verification and real app interaction acceptance for the exact candidate.",
+      "requirementStatus": null
     },
     {
       "id": "V5",
       "change": "Separate Layout command with existing selected-project semantics",
-      "generation": null,
-      "status": "planned",
-      "sourceCommit": null,
-      "engineCommit": null,
-      "publicationCommit": null,
-      "nextAction": "Extract Layout command adapter from existing project tool; give Layout its own button without coupling it to GRID/SUBS."
+      "generation": "202609051850",
+      "status": "in_progress",
+      "sourceCommit": "0dac7512704076ae1a01f16875ee20009a3c4454",
+      "engineCommit": "821830690d3e6c0f30b062e2bb7bfacd5bae6703",
+      "publicationCommit": "4185020ade7da01869b4ffc0ee1d2656608da716",
+      "nextAction": "Retain and test deployed comparison; implement original GIS tool separately in layout-tool under a new timestamp.",
+      "requirementStatus": "superseded"
     }
   ]
 }

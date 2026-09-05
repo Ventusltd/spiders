@@ -222,7 +222,7 @@
     {
       "id": "N12",
       "title": "Nested source-scope manifest",
-      "owner": "teleprinter",
+      "owner": "testcode",
       "module": "sandbox/capsules/tool-layers/source-scopes.mjs",
       "dependsOn": [
         "N11"
@@ -230,42 +230,42 @@
       "status": "in_progress",
       "feature": "Describe iframe runtime coverage and exclusions separately from Atlas source.",
       "requiredProof": "Owner manifest complete; unvisited runtime marked unobserved; no false full-source pass",
-      "generation": null,
+      "generation": "202609052020",
       "release": null,
       "evidence": [],
-      "nextAction": "Eight semantic negative/positive fixtures pass; index is separate JSON with owner/baseline/dependency hashes, no source concatenation. Await its consumer release and proof."
+      "nextAction": "2020 candidate is built and pushed in publication39873303; await its exact served-byte and live source-scope proof before linking acceptance. Eight semantic fixtures passed."
     },
     {
       "id": "N13",
       "title": "Standalone source attachment index",
-      "owner": "teleprinter",
-      "module": "drivers/codex/tool-source-index.mjs",
+      "owner": "testcode",
+      "module": "sandbox/capsules/tool-layers/source-browser/source-browser.mjs",
       "dependsOn": [
         "N12"
       ],
-      "status": "planned",
+      "status": "in_progress",
       "feature": "Export hashed tool runtime index and owning revision without repeated giant source bundles.",
       "requiredProof": "Every indexed body matches producer SHA; missing body explicit",
-      "generation": null,
+      "generation": "202609052023",
       "release": null,
       "evidence": [],
-      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+      "nextAction": "2023 local source-browser checks pass; publication39873303 is deploying. Preserve failed unpublished2022 syntax-gate draft: explicit .mjs module replaced ambiguous .js parsing. Await served and actual live tamper/stale-selection proof."
     },
     {
       "id": "N14",
       "title": "GIS canvas snapshot adapter",
       "owner": "gis-sld-sandbox",
-      "module": "cartridges/print-canvas-snapshot.js",
+      "module": "src/gis-sld/map-frame.js",
       "dependsOn": [
         "N10"
       ],
-      "status": "planned",
+      "status": "in_progress",
       "feature": "Capture actual GIS map canvas on its render event for a future app-only PDF.",
       "requiredProof": "No screen-sharing; nonblank map and drawn manual route; refused tainted canvas",
       "generation": null,
       "release": null,
       "evidence": [],
-      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+      "nextAction": "Producer2024 draft retains route-state and adds render-event map capture; 14 derived provenance fixtures and 11 route/map semantic tests pass. Await producer commit/CI and actual Chrome pixel/route tests; this is not a full GIS PDF."
     },
     {
       "id": "N15",

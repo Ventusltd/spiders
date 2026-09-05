@@ -163,3 +163,12 @@ Its architectural relevance is application-specific assessment with source and a
 The user's objective is accessible power infrastructure that supports economic growth, with access and interoperability comparable to the internet. Translate that into inspectable calculations, portable source-bound data, explicit assumptions and usable tools on ordinary browsers. Keep engineering methods replaceable behind small contracts, with independent validation and clear evidence ownership. This is the design direction, not a claim that an automated system has already made engineering decisions or delivered economic outcomes.
 
 For current implementation status, begin with BUILD-PLAN.md's1906 checkpoint and the next-fifty queue. Older diagnostic sections describe the session's original baseline; they do not reopen defects whose later scoped evidence passed.
+
+
+## Derived producer cartridges and reload anchors
+
+Module and Cable now have a second, explicit producer lane. `latest.json` still pins the byte-identical original baseline. `derived-latest.json` identifies a new immutable release whose manifest binds the baseline commit/digest, exact entry insertion, preserved original files and the maintained cartridge source. Separate derived CI verifies those relationships; the original verifier remains unchanged. Consumers pin the producer commit and derived manifest, then prove their own served bytes and browser behavior. A producer generation is not a consumer generation.
+
+The reload registry hashes both producer pointers, maintained sidecar source and both verifier/workflow boundaries. This makes a changed guard or readiness observer visible without rescanning large immutable originals on every context reload. Candidate composition and readiness anchors are also tracked. Exact release verification still opens and hashes every declared member when accepting a build.
+
+Module's guard addresses early draw/pick interaction without replacing layout formulas. Cable's observer reports completion of the original geometry rendering and records snapshot identity; it does not imply electrical suitability, construction acceptance or a trench-versus-drill calculation. Current deployed/tested status belongs to the ledger, not this architecture description.

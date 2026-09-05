@@ -140,7 +140,11 @@
         "sandbox/capsules/teleprinter/verify-candidate.mjs",
         "sandbox/capsules/grid-compute/detector.mjs",
         "sandbox/capsules/teleprinter/serve.py",
-        "sandbox/capsules/teleprinter/serve.test.py"
+        "sandbox/capsules/teleprinter/serve.test.py",
+        "sandbox/capsules/tool-layers/compose.mjs",
+        "sandbox/capsules/tool-layers/host.js",
+        "sandbox/capsules/tool-layers/readiness.js",
+        ".github/workflows/codex-cartridges.yml"
       ]
     },
     {
@@ -259,7 +263,11 @@
         "README.md",
         "latest.json",
         "tools/verify.py",
-        ".github/workflows/verify-original.yml"
+        ".github/workflows/verify-original.yml",
+        "derived-latest.json",
+        "src/module-layout/draw-readiness.js",
+        "tools/verify_derived.py",
+        ".github/workflows/verify-derived.yml"
       ]
     },
     {
@@ -272,7 +280,11 @@
         "latest.json",
         "DEVELOPMENT-PLAN.md",
         "tools/verify.py",
-        ".github/workflows/verify-original.yml"
+        ".github/workflows/verify-original.yml",
+        "derived-latest.json",
+        "src/cable-geometry/render-readiness.js",
+        "tools/verify_derived.py",
+        ".github/workflows/verify-derived.yml"
       ]
     }
   ]

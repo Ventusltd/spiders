@@ -187,13 +187,17 @@
       "dependsOn": [
         "N04"
       ],
-      "status": "in_progress",
+      "status": "linked",
       "feature": "Expose current route geometry and selection through a versioned read-only adapter.",
       "requiredProof": "Manual pins/edit/reset; exported geometry equals visible route",
       "generation": "202609052011",
       "release": null,
       "evidence": [],
-      "nextAction": "Derived GIS producer2008 verifies18members; await producer commit/CI and separate consumer generation with real pin-state tests."
+      "nextAction": "Continue source-scope/index browser releases with their own proof.",
+      "checkpoint": {
+        "path": "architecture-reload-20260905/next-fifty/N10-202609052011-checkpoint.json",
+        "sha256": "cedb7b56f3143b54bfdf24473133c181341494ac52715a2a19b3973c0dccc4fb"
+      }
     },
     {
       "id": "N11",
@@ -203,13 +207,17 @@
       "dependsOn": [
         "N01"
       ],
-      "status": "in_progress",
+      "status": "linked",
       "feature": "Resolve known sibling links through pinned tool registry without copying unrelated runtimes.",
       "requiredProof": "Module/DC/GIS links resolve exact entries; undeclared owner remains blocked",
       "generation": "202609052015",
       "release": null,
       "evidence": [],
-      "nextAction": "Pure registry fixtures pass; integrate load-time title/readiness and actual-owner binding without rewriting original navigation."
+      "nextAction": "Continue source-scope/index browser releases with their own proof.",
+      "checkpoint": {
+        "path": "architecture-reload-20260905/next-fifty/N11-202609052015-checkpoint.json",
+        "sha256": "653902bde6b4986e87e2e411bf8353f8a867ee704e04ab853d2a0d5eb8c85854"
+      }
     },
     {
       "id": "N12",

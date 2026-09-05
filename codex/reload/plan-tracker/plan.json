@@ -1,6 +1,6 @@
 {
   "schema": "spiders.build-plan.v1",
-  "updatedAt": "2026-09-05T20:19:31.371334+00:00",
+  "updatedAt": "2026-09-05T20:23:05.310158+00:00",
   "baselineRelease": {
     "generation": "202609051820",
     "sourceCommit": "faa66443a7754878f51b2cc5155a21692dbdaecf",
@@ -604,29 +604,29 @@
       "id": "N10",
       "change": "Read-only original GIS manual route adapter",
       "generation": "202609052011",
-      "status": "built",
+      "status": "tested",
       "sourceCommit": "004ab31de8fae26db215c22a6b329484fc73b340",
       "engineCommit": "0c378f3bc035a2a23a2fc43e018cc2eb82229a9f",
       "buildSha256": "733fd204082a08752676ea46562e6a550e1759a2fb911cad113bbb6395bba2a8",
       "publicationCommit": "30e55559fc29c525e5dc4d5eba234e5d897916bb",
       "servedPublicationCommit": null,
-      "nextAction": "Local desktop/mobile passed; await consumer served/live route-state proof. Producer2008 CI passed.",
+      "nextAction": "Continue source-scope/index browser releases with their own proof.",
       "requirementStatus": null,
-      "acceptanceScope": "Read-only route snapshot pending own consumer proof; no route solver change."
+      "acceptanceScope": "Live desktop/mobile route-state parity and18-member producer identity; no solver mutation."
     },
     {
       "id": "N11",
       "change": "Resolve current sibling layer owner and restart destination",
       "generation": "202609052015",
-      "status": "built",
+      "status": "tested",
       "sourceCommit": "7cc598e15d1e0695a8e95bd1a484382fa3ca04df",
       "engineCommit": "a6a9af8449d445d9204021f6c76347a25f80593c",
       "buildSha256": "2452688ed6e465d31e260d8c6606858a0aa7001b4c8ade056908c518192b53a8",
       "publicationCommit": "616c2df25aa7d0a0e82d274665fb5d1b7d0c3496",
       "servedPublicationCommit": null,
-      "nextAction": "Local preview passed; await served bytes and real sibling navigation in this exact candidate.",
+      "nextAction": "Continue source-scope/index browser releases with their own proof.",
       "requirementStatus": null,
-      "acceptanceScope": "Pending own served/live proof; historical dependency declarations remain separate."
+      "acceptanceScope": "Live desktop/mobile sibling navigation, current owner and restart destination; DC drawing readiness remains unreported."
     }
   ],
   "nextFiftyRoadmap": "NEXT-50.json"

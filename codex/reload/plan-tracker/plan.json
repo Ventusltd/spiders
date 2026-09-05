@@ -60,12 +60,9 @@
         "P0",
         "P1"
       ],
-      "status": "blocked",
-      "blockers": [
-        "Pipeline clone shadow-style leakage, closed File contents and animated-chart mismatch.",
-        "Normal Chrome at 2048x972 DPR1.875 refused: vendor floors backing height while app expects round."
-      ],
-      "nextAction": "Define one integer backing-size contract and separate viewport-drift detection; fix scoped clone rendering and add fractional-DPR regressions.",
+      "status": "in_progress",
+      "blockers": [],
+      "nextAction": "Preserve tested1906 behavior; implement separate standalone-tool print adapters through N14?N20. Do not revive historical1820 geometry/clone blockers.",
       "acceptance": "No display sharing, window.print or injected screenshot path; real controls retain all app content. New pinned build passes 25 PDF + 25 source visits plus independent regional content checks.",
       "requiredProofs": [
         "fractional-dpr",
@@ -76,7 +73,12 @@
       "proofs": [],
       "targetRelease": null,
       "targetCommits": {},
-      "targetEnvironments": {}
+      "targetEnvironments": {},
+      "historicalBlockers": [
+        "Pipeline clone shadow-style leakage, closed File contents and animated-chart mismatch.",
+        "Normal Chrome at 2048x972 DPR1.875 refused: vendor floors backing height while app expects round."
+      ],
+      "scopedResolution": "Observed geometry/clone defects corrected and1906 settled50/50 Atlas/Pipeline plus25 source audits pass. Standalone iframe tool printing and fleet acceptance are separate open scopes."
     },
     {
       "id": "P3",

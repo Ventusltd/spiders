@@ -27,13 +27,13 @@
       "dependsOn": [
         "N01"
       ],
-      "status": "planned",
+      "status": "in_progress",
       "feature": "Extract a keyboard-close cartridge that restores focus to the invoking tool button.",
       "requiredProof": "Escape closes active layer; state remains; inactive Escape has no effect",
       "generation": null,
       "release": null,
       "evidence": [],
-      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+      "nextAction": "Escape source22c4bdc exists; await immutable candidate and actual parent/iframe Escape and focus-return proof."
     },
     {
       "id": "N03",

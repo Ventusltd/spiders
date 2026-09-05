@@ -1,8 +1,16 @@
 # Next GlobalGrid builds: release gates, cartridges and recoverable context
 
-Prepared 5 September 2026 from repository source, current CI observations, direct Chrome interaction and the completed handover at offline-screenshots/handover-202609051831. This plan does not mark the current candidate accepted. Generate each release timestamp from UTC when building; the stages below are not invented version numbers.
+Prepared 5 September 2026 from repository source, current CI observations, direct Chrome interaction and the completed handover at offline-screenshots/handover-202609051831. The first sections retain the historical1623/1820 diagnosis; use the current checkpoint below before resuming. Generate each release timestamp from UTC when building; the stages below are not invented version numbers.
 
-## Starting point
+## Current checkpoint: 1906 tested scope; later candidates pending
+
+The settled1906 campaign completed50/50 installed-Chrome visits and50 downloads through app-only printing; independent audit passed all25 source downloads. Original GIS, Module Layout and Cable controls passed desktop/mobile browser cases. The geometry and clone defects described below are historical findings with tested corrections in1844/1845 and1906; do not reopen them simply because the old baseline text is retained. First failed and timing-sensitive runs remain evidence.
+
+Homepage promotion was pushed at `a9474d74d0a4366357baacbadb2eef86da86cee3` after the successful restore-point workflow. Exact live homepage verification is tracked separately. Candidate1927 is pending its own served/browser proof. Source/print claims cover Atlas/Pipeline, not standalone iframe printing; no physical-device or automatic obstacle-routing proof is implied. The estate fleet and additional legacy homepage gates still have real failures, so this is no blanket green/design-freeze claim.
+
+The authoritative queue for newly authorized work is [NEXT-50.md](plan-tracker/NEXT-50.md). N01 Cable ownership is underway; N02 Escape source is implemented but awaits a new tested candidate. Read the offline ledger for exact release tuples and receipts.
+
+## Historical starting point (1623/1820, not current blocker status)
 
 Homepage: tested-but-unsuitable normal print path in 202609051623. Staged candidate: 202609051820, source faa66443a7754878f51b2cc5155a21692dbdaecf, Teleprinter 15e85b6d1444967005fb825d5d1d8439667ffcd5, inventory hash 42782185656a1db608411afaaa7ba8ce1aa8dda604d3783d6ff8e8f6df8f34d2. Candidate deployment commit: 30df31f371740e354f4b3b307b97a7de0b914911.
 
@@ -119,13 +127,13 @@ The existing source ends by rewriting mobile_tray.tools_collapsed to true even f
 
 The first next build should repair app-only PDF behavior and prove it on both Atlas and Pipeline. Cartridge extraction then proceeds in small reviewed steps with separate releases. Do not combine all repository migration, rendering changes, financial-model edits and GPU integration into one release.
 
-No estimated completion date or blanket all-green claim is supplied: the retained failed campaign and new fractional-DPR refusal are real blockers. Promotion awaits their correction and a complete new campaign. The proposed module paths are design targets, not claims that those product modules have already been implemented.
+Historical planning note: the1820 failed campaign and fractional-DPR refusal blocked that baseline. Subsequent1844/1845 corrections and the settled1906 campaign resolved those observed print defects within the stated tested scope. Proposed paths below record design intent; use current manifests for implemented module names. Remaining fleet and standalone-tool print limits are separate.
 
 ## User-selected reference and integration boundary
 
 The user supplied offline-screenshots/gridbutton.jpg and stated that the main Claude app has more bugs than the Codex final. Preserve the Codex candidate lineage as the integration base. The screenshot is the visual reference for the compact bottom-left GRID / SUBS controls, coloured grid lines, and bottom-right Layers control with the panel closed. It is not approval to replace the Codex app with the main Claude app or to import unrelated menus, print engines, layouts or model changes.
 
-P7 must port only the control creation, existing layer-toggle adapter, scoped styling and necessary menu-retention behavior. Review dependencies individually. Test against the Codex baseline for project selection, computed/drawn connections, layer state, menus and app-only printing. The user's comparative bug assessment is recorded as feedback, not an independently measured total bug count. Existing Codex print blockers remain open.
+P7 must port only the control creation, existing layer-toggle adapter, scoped styling and necessary menu-retention behavior. Review dependencies individually. Test against the Codex baseline for project selection, computed/drawn connections, layer state, menus and app-only printing. The user's comparative bug assessment is recorded as feedback, not an independently measured total bug count. That statement concerned the historical1820 baseline. The observed geometry/clone defects have tested corrections in1906; separate standalone-tool printing and fleet acceptance remain open.
 
 ## Default arrival experience: map first
 
@@ -154,7 +162,7 @@ The temporary selected-project Layout button in candidate1850 is not completion 
 
 The original GIS producer baseline is `gis-sld-sandbox` commit `9fe7b2d920aaa11e95380de39b33fd98f04e9696`, release `202609051855`. Module Layout, Cable Geometry and DC/AC review belong to `layout-tool` commit `e201075e052bfc71e7fef01f1360f319808cb78f`, release `202609051858`. Runtime files were imported byte-for-byte from GlobalGrid commit `4185020ade7da01869b4ffc0ee1d2656608da716`; producer CI checks those original bytes and relative resources. GIS remains a standalone application with its seven-version history. The Atlas consumer mounts a pinned iframe through a small host cartridge; it does not acquire ownership of GIS formulas.
 
-Eight consumer increments are recorded in `plan-tracker/plan.json` and the offline `five-version-campaign/ledger.json`: 1844 geometry, 1845 clone isolation, 1847 Grid/Subs controls, 1848 panel policy, 1850 temporary selected-layout adapter, 1901 original GIS layer, 1905 Module Layout, and 1906 Cable Geometry. The 1850 phone failure remains historical and its integration requirement is superseded. Publication, focused test results and final acceptance remain separate. Read the refreshed ledger before reporting which candidate passes: deployment and browser work are still active.
+Eight consumer increments are recorded in `plan-tracker/plan.json` and the offline `five-version-campaign/ledger.json`: 1844 geometry, 1845 clone isolation, 1847 Grid/Subs controls, 1848 panel policy, 1850 temporary selected-layout adapter, 1901 original GIS layer, 1905 Module Layout, and 1906 Cable Geometry. The 1850 phone failure remains historical and its integration requirement is superseded. Publication, focused test results and final acceptance remain separate. Read the refreshed ledger before reporting which candidate passes:1906 has its settled50/50 and source audit, while newer increments have their own pending proofs.
 
 **Printing boundary:** the original tools keep their original `window.print` behavior unchanged. Atlas/Pipeline's 50-visit campaign does not establish that an iframe's WebGL content prints correctly. Current source scopes pin tool owner configuration and explicitly exclude tool runtime. A future dedicated tool print/source adapter needs its own app-only PDF, canvas, state and recursive source coverage tests. It must not silently rewrite the standalone baseline.
 

@@ -1,6 +1,6 @@
 # Next fifty substantive version increments
 
-This is a dependency-gated implementation roadmap. All stages are planned; no future timestamp or pass is implied. Each stage creates one substantive feature/cartridge and must earn an immutable release receipt. Stages can remain blocked when real data, permissions, study evidence or required fleet checks are unavailable.
+This is a dependency-gated implementation roadmap. The table defines the queue; current states and actual generation numbers are in NEXT-50.json and its hashed offline checkpoints. No future timestamp or pass is implied. Each stage creates one substantive feature/cartridge and must earn an immutable release receipt. Stages can remain blocked when real data, permissions, study evidence or required fleet checks are unavailable.
 
 | Stage | Single feature | Owner | Prerequisites |
 |---|---|---|---|

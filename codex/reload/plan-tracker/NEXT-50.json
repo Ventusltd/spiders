@@ -27,23 +27,27 @@
       "id": "N02",
       "title": "Escape closes the active tool layer",
       "owner": "testcode",
-      "module": "sandbox/capsules/tool-layers/host-keyboard.js",
+      "module": "sandbox/capsules/tool-layers/dismissal.js",
       "dependsOn": [
         "N01"
       ],
-      "status": "in_progress",
+      "status": "linked",
       "feature": "Extract a keyboard-close cartridge that restores focus to the invoking tool button.",
       "requiredProof": "Escape closes active layer; state remains; inactive Escape has no effect",
       "generation": "202609051932",
       "release": null,
       "evidence": [],
-      "nextAction": "Escape source22c4bdc exists; await immutable candidate and actual parent/iframe Escape and focus-return proof."
+      "nextAction": "Exact served and desktop/mobile Escape proof is linked in the immutable checkpoint.",
+      "checkpoint": {
+        "path": "architecture-reload-20260905/next-fifty/N02-202609051932-checkpoint.json",
+        "sha256": "f225efff4ad903cc67d8d90ea55428682289e7e0f564ad9828868bf3e626f4f1"
+      }
     },
     {
       "id": "N03",
       "title": "Modal focus containment",
       "owner": "testcode",
-      "module": "sandbox/capsules/tool-layers/host-focus.js",
+      "module": "sandbox/capsules/tool-layers/focus-boundary.js",
       "dependsOn": [
         "N02"
       ],
@@ -59,17 +63,17 @@
       "id": "N04",
       "title": "Tool readiness contract",
       "owner": "testcode",
-      "module": "sandbox/capsules/tool-layers/tool-readiness.js",
+      "module": "sandbox/capsules/tool-layers/readiness.js",
       "dependsOn": [
         "N01"
       ],
       "status": "in_progress",
       "feature": "Expose pending/ready/failed based on tool-specific actual render state; no static status text proof.",
       "requiredProof": "Delayed scripts, blank canvas and module-map readiness negative cases",
-      "generation": null,
+      "generation": "202609051940",
       "release": null,
       "evidence": [],
-      "nextAction": "Implement truthful interface/drawing readiness; GIS remains drawing-unreported without a sidecar. Review initial-load timeout and stale timeout lifecycle."
+      "nextAction": "Finish immutable candidate after the correctly detected CRLF/LF source mismatch; independently verify served bytes and live readiness. Source bcbc1bf fixes never-load timeout and stale timeout state; GIS drawing remains unreported."
     },
     {
       "id": "N05",
@@ -79,13 +83,13 @@
       "dependsOn": [
         "N03"
       ],
-      "status": "planned",
+      "status": "in_progress",
       "feature": "Preserve usable standalone tool layouts through orientation, resize and fractional zoom.",
       "requiredProof": "Phone portrait/landscape and DPR1.875; no clipping of close/critical controls",
       "generation": null,
       "release": null,
       "evidence": [],
-      "nextAction": "Inspect owning source and implement this single feature only after prerequisites are proven."
+      "nextAction": "Local viewport preflight passed according to parent; source and candidate remain uncommitted/unpublished until exact evidence is recorded."
     },
     {
       "id": "N06",

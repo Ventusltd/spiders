@@ -16,7 +16,7 @@ python -B codex/reload/plan-tracker/observe_ci.py --out C:/Users/vikra/OneDrive/
 
 Use a new timestamped output directory for checkpoints that must be immutable. The path above is a convenience current view, not an append-only journal. Plan references point to hashed retained evidence, never mutable driver convenience receipts. The handover hashes are checked when an evidence root is provided; its statements remain inspected records, not independently rerun product tests.
 
-Eight focused tests exercise missing proofs, wrong release, wrong owning commit, wrong environment, underlying artifact tampering, recorded claims, incomplete prerequisites, dependency cycles, path escape and completion without evidence. The actual eight-task plan validates with its current unfinished statuses; this says nothing about product acceptance.
+Eight focused tests exercise missing proofs, wrong release, wrong owning commit, wrong environment, underlying artifact tampering, recorded claims, incomplete prerequisites, dependency cycles, path escape and completion without evidence. The actual ten-task plan validates with its current unfinished statuses; this says nothing about product acceptance.
 
 ## Completion contract
 
@@ -81,3 +81,5 @@ premature acceptance and a same-generation proof from a different engine. It
 never dispatches or modifies a product. A compact campaign summary in plan.json
 also travels in CI's RESUME.md. Built, deployed, tested and accepted are separate
 states; a later deployment containing older candidates does not make them tested.
+
+Routing research and the retained direct first pass are documented in [ROUTING-SECOND-PASS.md](ROUTING-SECOND-PASS.md). Original standalone GIS ownership/history is P8; optional constrained routing is P9.

@@ -1,0 +1,365 @@
+[
+  {
+    "checkout": "C:\\Users\\vikra\\OneDrive\\Documents\\GitHub\\globalgrid2050",
+    "head": "a7fb24c22decd71166a6f9d1265b06c87425d9eb",
+    "branch": "main",
+    "shallow": false,
+    "oldestReachable": "880110b1d4befdee2c9b3f8991932abfb32a693a 2026-03-12T16:26:24Z",
+    "window": {
+      "start": "2026-04-05T00:00:00Z",
+      "end": "2026-09-06T00:00:00Z"
+    },
+    "commits": 3843,
+    "monthly": {
+      "2026-09": 100,
+      "2026-08": 259,
+      "2026-07": 47,
+      "2026-06": 1567,
+      "2026-05": 1443,
+      "2026-04": 427
+    }
+  },
+  {
+    "checkout": "C:\\Users\\vikra\\OneDrive\\Documents\\GitHub\\gridatlas-main-202609050200",
+    "head": "805b4b114766e3395437d96148d6d265a9a74f0d",
+    "branch": "main",
+    "shallow": false,
+    "oldestReachable": "aa8ebe48453d5457747e78bbde006498df124963 2026-08-29T07:10:33+01:00",
+    "window": {
+      "start": "2026-04-05T00:00:00Z",
+      "end": "2026-09-06T00:00:00Z"
+    },
+    "commits": 479,
+    "monthly": {
+      "2026-09": 275,
+      "2026-08": 204
+    }
+  },
+  {
+    "checkout": "C:\\Users\\vikra\\OneDrive\\Documents\\GitHub\\ventus-grid-engine",
+    "head": "0f34464fdb4e1c5adef26c6210269c2449fbda85",
+    "branch": "main",
+    "shallow": false,
+    "oldestReachable": "06c05e4d35b68778ba11029aa76656da777c9340 2026-09-04T14:03:11+01:00",
+    "window": {
+      "start": "2026-04-05T00:00:00Z",
+      "end": "2026-09-06T00:00:00Z"
+    },
+    "commits": 19,
+    "monthly": {
+      "2026-09": 19
+    }
+  },
+  {
+    "checkout": "C:\\Users\\vikra\\OneDrive\\Documents\\GitHub\\grid-distance-maths",
+    "head": "30aa4e0456f95f084aa4ca7a234c610546eaf020",
+    "branch": "main",
+    "shallow": false,
+    "oldestReachable": "ed53284e9fbc7cae6f30fc728bd7b629f9f32312 2026-08-31T16:25:27+01:00",
+    "window": {
+      "start": "2026-04-05T00:00:00Z",
+      "end": "2026-09-06T00:00:00Z"
+    },
+    "commits": 11,
+    "monthly": {
+      "2026-09": 3,
+      "2026-08": 8
+    }
+  },
+  {
+    "checkout": "C:\\Users\\vikra\\OneDrive\\Documents\\GitHub\\gpu-drivers-for-global-grid",
+    "head": "bc50c57637aaecf8af97f4213fb4b05cfbf9e9b6",
+    "branch": "main",
+    "shallow": false,
+    "oldestReachable": "a6c92ebbe7456ea5693aacbb9f11ddb603eb0614 2026-09-05T16:54:36+01:00",
+    "window": {
+      "start": "2026-04-05T00:00:00Z",
+      "end": "2026-09-06T00:00:00Z"
+    },
+    "commits": 6,
+    "monthly": {
+      "2026-09": 6
+    }
+  },
+  {
+    "checkout": "C:\\Users\\vikra\\OneDrive\\Documents\\GitHub\\data-federation-map-for-globalgrid2050-all-repos",
+    "head": "b759a7d2b5ec0dcc233c27db813ceadc5469157d",
+    "branch": "main",
+    "shallow": false,
+    "oldestReachable": "8df9cb1c91424e2ac2933a3c92e7bed752458073 2026-06-30T09:22:21+01:00",
+    "window": {
+      "start": "2026-04-05T00:00:00Z",
+      "end": "2026-09-06T00:00:00Z"
+    },
+    "commits": 228,
+    "monthly": {
+      "2026-09": 1,
+      "2026-08": 2,
+      "2026-07": 133,
+      "2026-06": 92
+    }
+  },
+  {
+    "checkout": "C:\\Users\\vikra\\OneDrive\\Documents\\GitHub\\data-grid-gb",
+    "head": "b91e45b231464c24339f5a58b81e6b1eb4c8b47f",
+    "branch": "codex/20260903-phase0-integrity",
+    "shallow": false,
+    "oldestReachable": "7efd44aa222599ab5535609324150fc5d5948b77 2026-09-01T17:35:14+01:00",
+    "window": {
+      "start": "2026-04-05T00:00:00Z",
+      "end": "2026-09-06T00:00:00Z"
+    },
+    "commits": 12,
+    "monthly": {
+      "2026-09": 12
+    }
+  },
+  {
+    "checkout": "C:\\Users\\vikra\\OneDrive\\Documents\\GitHub\\data-gridatlas",
+    "head": "8bf88da9e210ce9f61dc0398869d3369f3fa2445",
+    "branch": "main",
+    "shallow": false,
+    "oldestReachable": "bd382d0f6079fbdfcd25a68c1515bb293127f0f4 2026-08-29T09:01:36+01:00",
+    "window": {
+      "start": "2026-04-05T00:00:00Z",
+      "end": "2026-09-06T00:00:00Z"
+    },
+    "commits": 24,
+    "monthly": {
+      "2026-09": 3,
+      "2026-08": 21
+    }
+  },
+  {
+    "checkout": "C:\\Users\\vikra\\OneDrive\\Documents\\GitHub\\data-gb-electricity",
+    "head": "49691bcf2762b071b63b0c9604ea1342fd7f86d3",
+    "branch": "main",
+    "shallow": false,
+    "oldestReachable": "cccf3fd501a1f6164918e4b8c0a24779ad5433c9 2026-06-29T10:48:27+01:00",
+    "window": {
+      "start": "2026-04-05T00:00:00Z",
+      "end": "2026-09-06T00:00:00Z"
+    },
+    "commits": 77,
+    "monthly": {
+      "2026-09": 6,
+      "2026-08": 2,
+      "2026-06": 69
+    }
+  },
+  {
+    "checkout": "C:\\Users\\vikra\\OneDrive\\Documents\\GitHub\\companies",
+    "head": "ac70a37408d4f434e89e8a80cc36d40e450d3cfb",
+    "branch": "main",
+    "shallow": false,
+    "oldestReachable": "042a7215bc7f16862460b9bd98d87ec3ab2e9855 2026-08-26T22:25:29+01:00",
+    "window": {
+      "start": "2026-04-05T00:00:00Z",
+      "end": "2026-09-06T00:00:00Z"
+    },
+    "commits": 80,
+    "monthly": {
+      "2026-08": 80
+    }
+  },
+  {
+    "checkout": "C:\\Users\\vikra\\OneDrive\\Documents\\GitHub\\data-centres-gb",
+    "head": "f9f47286fae63872375c558fc89ff4b1793914e4",
+    "branch": "main",
+    "shallow": false,
+    "oldestReachable": "c7ccf2ffd3b3715247b3e85f6664ffb33ff9d59e 2026-07-29T12:41:30+01:00",
+    "window": {
+      "start": "2026-04-05T00:00:00Z",
+      "end": "2026-09-06T00:00:00Z"
+    },
+    "commits": 16,
+    "monthly": {
+      "2026-09": 1,
+      "2026-08": 9,
+      "2026-07": 6
+    }
+  },
+  {
+    "checkout": "C:\\Users\\vikra\\OneDrive\\Documents\\GitHub\\data-interconnectors",
+    "head": "1e00d0e4d7bf3ddbc86224b3b6be5c2f3eaabf86",
+    "branch": "main",
+    "shallow": false,
+    "oldestReachable": "977ddf1b768ccc58b268cdc84745935d3f66522e 2026-06-29T21:46:31+01:00",
+    "window": {
+      "start": "2026-04-05T00:00:00Z",
+      "end": "2026-09-06T00:00:00Z"
+    },
+    "commits": 22,
+    "monthly": {
+      "2026-09": 1,
+      "2026-06": 21
+    }
+  },
+  {
+    "checkout": "C:\\Users\\vikra\\OneDrive\\Documents\\GitHub\\gb-electricity-ui",
+    "head": "5b4533914bb2bcad7f5ea697af00faf67cf626cc",
+    "branch": "main",
+    "shallow": false,
+    "oldestReachable": "38a9e0200bf058877ad2a44e5fb3ba9134173607 2026-06-29T22:34:10+01:00",
+    "window": {
+      "start": "2026-04-05T00:00:00Z",
+      "end": "2026-09-06T00:00:00Z"
+    },
+    "commits": 19,
+    "monthly": {
+      "2026-08": 1,
+      "2026-06": 18
+    }
+  },
+  {
+    "checkout": "C:\\Users\\vikra\\OneDrive\\Documents\\GitHub\\linux-for-the-power-grid",
+    "head": "b984303b3d9ec104c92d754b8fd6207af021fef8",
+    "branch": "main",
+    "shallow": false,
+    "oldestReachable": "e2f1829c2863de90182fabcdb257f5e6c36072f2 2026-09-05T16:02:26+01:00",
+    "window": {
+      "start": "2026-04-05T00:00:00Z",
+      "end": "2026-09-06T00:00:00Z"
+    },
+    "commits": 4,
+    "monthly": {
+      "2026-09": 4
+    }
+  },
+  {
+    "checkout": "C:\\Users\\vikra\\OneDrive\\Documents\\GitHub\\gis-sld-sandbox",
+    "head": "d0e0ec62aa9c500ecdf1f40e9621e011f64d07b7",
+    "branch": "main",
+    "shallow": false,
+    "oldestReachable": "762051b29c897cdc73d700ea736662f1d96011e1 2026-09-05T19:54:00+01:00",
+    "window": {
+      "start": "2026-04-05T00:00:00Z",
+      "end": "2026-09-06T00:00:00Z"
+    },
+    "commits": 10,
+    "monthly": {
+      "2026-09": 10
+    }
+  },
+  {
+    "checkout": "C:\\Users\\vikra\\OneDrive\\Documents\\GitHub\\layout-tool",
+    "head": "5c450e27e430d6eb5d80070f794a5660f30015a1",
+    "branch": "main",
+    "shallow": false,
+    "oldestReachable": "3da7d34a4b1284f0c75bc4020cbe59a4c027db5a 2026-09-05T19:46:46+01:00",
+    "window": {
+      "start": "2026-04-05T00:00:00Z",
+      "end": "2026-09-06T00:00:00Z"
+    },
+    "commits": 5,
+    "monthly": {
+      "2026-09": 5
+    }
+  },
+  {
+    "checkout": "C:\\Users\\vikra\\OneDrive\\Documents\\GitHub\\cable-trench-or-drill",
+    "head": "85929edd9815a4fe6ff972f880513654a5440fa9",
+    "branch": "main",
+    "shallow": false,
+    "oldestReachable": "4360aa9fb83f9968e5e83cf3732d74e413bea717 2026-09-05T20:19:54+01:00",
+    "window": {
+      "start": "2026-04-05T00:00:00Z",
+      "end": "2026-09-06T00:00:00Z"
+    },
+    "commits": 5,
+    "monthly": {
+      "2026-09": 5
+    }
+  },
+  {
+    "checkout": "C:\\Users\\vikra\\OneDrive\\Documents\\GitHub\\teleprinter",
+    "head": "142163d591ab2cafbe36806f12e6f3607740f4c7",
+    "branch": "main",
+    "shallow": false,
+    "oldestReachable": "2575d89fb6b34a4a6ca6cf3febe7229b162062dd 2026-09-05T15:08:26+01:00",
+    "window": {
+      "start": "2026-04-05T00:00:00Z",
+      "end": "2026-09-06T00:00:00Z"
+    },
+    "commits": 63,
+    "monthly": {
+      "2026-09": 63
+    }
+  },
+  {
+    "checkout": "C:\\Users\\vikra\\OneDrive\\Documents\\GitHub\\testcode",
+    "head": "3a4070b39c7bacce2c12bcf5435b268567338dc4",
+    "branch": "main",
+    "shallow": false,
+    "oldestReachable": "70c5d7d12781e92822acedb34f77911b097edf1f 2026-09-05T04:12:47+01:00",
+    "window": {
+      "start": "2026-04-05T00:00:00Z",
+      "end": "2026-09-06T00:00:00Z"
+    },
+    "commits": 121,
+    "monthly": {
+      "2026-09": 121
+    }
+  },
+  {
+    "checkout": "C:\\Users\\vikra\\OneDrive\\Documents\\GitHub\\claude",
+    "head": "35ddc65347ce2fff56fa8ca60e9e76cf0945a242",
+    "branch": "main",
+    "shallow": false,
+    "oldestReachable": "a74da9075267452edae5d552a2e4d87a238fd3f0 2026-09-03T01:17:30+01:00",
+    "window": {
+      "start": "2026-04-05T00:00:00Z",
+      "end": "2026-09-06T00:00:00Z"
+    },
+    "commits": 192,
+    "monthly": {
+      "2026-09": 192
+    }
+  },
+  {
+    "checkout": "C:\\Users\\vikra\\OneDrive\\Documents\\GitHub\\codex-chatgpt",
+    "head": "0ec78a23f9ef69060f71f55af8b94003ff05c114",
+    "branch": "main",
+    "shallow": false,
+    "oldestReachable": "3b6edb098a8cc7a244766c30f2b52bb882c72dcb 2026-09-03T01:20:21+01:00",
+    "window": {
+      "start": "2026-04-05T00:00:00Z",
+      "end": "2026-09-06T00:00:00Z"
+    },
+    "commits": 7,
+    "monthly": {
+      "2026-09": 7
+    }
+  },
+  {
+    "checkout": "C:\\Users\\vikra\\OneDrive\\Documents\\GitHub\\chatgpt-audits",
+    "head": "35ef8daf3fa9afd28fb77909e9e71127dcebaf1a",
+    "branch": "main",
+    "shallow": false,
+    "oldestReachable": "c5f0c21f2b0003361930e9eea60f0b7b9508b17c 2026-08-31T00:32:35+01:00",
+    "window": {
+      "start": "2026-04-05T00:00:00Z",
+      "end": "2026-09-06T00:00:00Z"
+    },
+    "commits": 119,
+    "monthly": {
+      "2026-09": 2,
+      "2026-08": 117
+    }
+  },
+  {
+    "checkout": "C:\\Users\\vikra\\OneDrive\\Documents\\GitHub\\studies",
+    "head": "6caf90f27d04473378b759513280e51537f85f7a",
+    "branch": "main",
+    "shallow": false,
+    "oldestReachable": "6caf90f27d04473378b759513280e51537f85f7a 2026-09-05T00:16:04+01:00",
+    "window": {
+      "start": "2026-04-05T00:00:00Z",
+      "end": "2026-09-06T00:00:00Z"
+    },
+    "commits": 1,
+    "monthly": {
+      "2026-09": 1
+    }
+  }
+]

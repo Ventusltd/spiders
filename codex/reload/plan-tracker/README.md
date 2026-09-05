@@ -1,6 +1,6 @@
 # Build plan tracker
 
-This is the machine-readable companion to [BUILD-PLAN.md](../BUILD-PLAN.md). It keeps P0–P6, prerequisites, blockers, next actions and required proof categories explicit. It observes CI; it never upgrades a task automatically because a workflow is green. Generation 202609051820 remains an unaccepted baseline. Assign the next timestamp only when preparing a new immutable candidate.
+The current forward programme is [the100-build GeoJSON plan](../../build-plan/README.md). This directory retains the historical P0-P9 tracker and release evidence. Generation202609051820 is an unaccepted historical baseline, not the current accepted release. Read exact receipts and current pointers before resuming; allocate a new timestamp only when preparing an immutable candidate.
 
 The tracker is code, not a permanently running agent. An agent resumes by running the commands below, reading RESUME.md and delta.json from the wider reload instrument, then opening only the changed code and relevant evidence. Long coding blocks should end with a checkpoint update and immutable receipts before the next block begins.
 

@@ -1,0 +1,56 @@
+{
+  "schema": "ventus.market-feed-study.v1",
+  "scope": "Read source and history; collectors not executed or reactivated.",
+  "freezeCommit": "a0782f1ebce3467d1a5c1bec21260698d6c7ff5c",
+  "evidence": [
+    {
+      "path": ".github/workflows/update_prices.yml",
+      "sha256": "d814515c01f16709052133ded272b8ffc16c790f6feaf526a505e766b10b4158",
+      "lastCommit": "a0782f1ebce3467d1a5c1bec21260698d6c7ff5c"
+    },
+    {
+      "path": ".github/workflows/update_oil_prices.yml",
+      "sha256": "ae63bab678696c969e671337afd897a52da284c8931888dc637fc0ff4e674f55",
+      "lastCommit": "a0782f1ebce3467d1a5c1bec21260698d6c7ff5c"
+    },
+    {
+      "path": "scripts/update_prices.py",
+      "sha256": "f65de64223a659af9945b7ce89f05b845c4616a79edc556b78938347ba08db26",
+      "lastCommit": "3c819760712433fd6279c1c650f44b474dbcd11e"
+    },
+    {
+      "path": "scripts/update_metal_trends.py",
+      "sha256": "75e68b043bec4ef984a43ff362d41a9d0f57e0a4e829a104cf4810f155f583ad",
+      "lastCommit": "212f920ca2e09b3f605176244f473570469882db"
+    },
+    {
+      "path": "scripts/update_oil_prices.py",
+      "sha256": "ba3b0fb33146853323630882b9723866262c6762b1980546207101b938ae91f7",
+      "lastCommit": "7e7b68d7826e4ff7eaaeaadc055b58c6fdb4a25f"
+    }
+  ],
+  "findings": [
+    "Both named workflows are manual-only and write monolith pages/data directly.",
+    "Metal collectors seed numeric fallback prices; fetch failure sets used_fallback but page Last Update is current generation time.",
+    "Yahoo HG=F and ALI=F results appear under LME labels in generated 33kV estimator.",
+    "Oil history shares output field names between FRED spot and fallback Yahoo futures; these must be separate typed series.",
+    "Oil GeoJSON uses placeholder0,0; new nonspatial observations require null geometry.",
+    "Old oil collector can fetch25years; weekly collection should request bounded new observations and preserve verified historical archive."
+  ],
+  "officialReferences": [
+    {
+      "url": "https://www.exchangerate-api.com/docs/free",
+      "use": "Existing FX endpoint contract and attribution review"
+    },
+    {
+      "url": "https://www.eia.gov/opendata/index.php/api",
+      "use": "Official oil data endpoint discovery; separate spot and futures series"
+    },
+    {
+      "url": "https://www.lme.com/en/Market-data/Market-data-licensing/Data-distribution",
+      "use": "Public redistribution licensing must be established before selecting LME feed"
+    }
+  ],
+  "proposedOwner": "Ventusltd/spiders species/market-spider; source adapters and small weekly products, not monolith page-writing",
+  "publicationBoundary": "No feed claimed restored until live bounded probes, fixture tests, owner workflow receipt and dashboard consumer proof exist."
+}

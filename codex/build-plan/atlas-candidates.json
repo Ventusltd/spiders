@@ -1,0 +1,502 @@
+[
+  {
+    "id": "ATLAS-01",
+    "title": "App DOM frame completion",
+    "owner": "gis-sld-sandbox",
+    "proposedCartridge": "cartridges/dom-frame/",
+    "change": "Complete checkpoint2031 viewport capture without screen permission",
+    "acceptance": "Original map, route, toolbar and legend present on desktop and phone; zero display-sharing calls",
+    "status": "planned",
+    "generation": null
+  },
+  {
+    "id": "ATLAS-02",
+    "title": "Layer PDF integration",
+    "owner": "teleprinter",
+    "proposedCartridge": "cartridges/layer-pdf/",
+    "change": "Consume explicit sandbox capture contract when its layer is active",
+    "acceptance": "Selected layer PDF contains original UI; ordinary Atlas PDF remains unchanged",
+    "status": "planned",
+    "generation": null
+  },
+  {
+    "id": "ATLAS-03",
+    "title": "Pipeline print clipping",
+    "owner": "teleprinter",
+    "proposedCartridge": "cartridges/pipeline-clipping/",
+    "change": "Isolate table clipping correction from generic renderer",
+    "acceptance": "Reproduce1820 failed region; preserve font and column geometry across viewports",
+    "status": "planned",
+    "generation": null
+  },
+  {
+    "id": "ATLAS-04",
+    "title": "Source byte budget",
+    "owner": "teleprinter",
+    "proposedCartridge": "cartridges/source-budget/",
+    "change": "Report per-resource byte budgets before full source export",
+    "acceptance": "Oversized source identified without truncation or fabricated dependency failures",
+    "status": "planned",
+    "generation": null
+  },
+  {
+    "id": "ATLAS-05",
+    "title": "Source reader entry selection",
+    "owner": "testcode",
+    "proposedCartridge": "cartridges/source-entry/",
+    "change": "Open small entry module before multi-megabyte data",
+    "acceptance": "Four tool readers select declared source entry and retain hash checks",
+    "status": "planned",
+    "generation": null
+  },
+  {
+    "id": "ATLAS-06",
+    "title": "Layer menu separator",
+    "owner": "testcode",
+    "proposedCartridge": "cartridges/layer-menu-text/",
+    "change": "Replace corrupted separators in source and navigation controls",
+    "acceptance": "ASCII or valid Unicode labels on Chrome phone and desktop",
+    "status": "planned",
+    "generation": null
+  },
+  {
+    "id": "ATLAS-07",
+    "title": "GRID switch cartridge",
+    "owner": "gridatlas",
+    "proposedCartridge": "cartridges/grid-switch/",
+    "change": "Lift GRID toggle into isolated control retaining current network data",
+    "acceptance": "400/275/220/132/66kV palette parity; repeat toggle no duplicate map layers",
+    "status": "planned",
+    "generation": null
+  },
+  {
+    "id": "ATLAS-08",
+    "title": "SUBS switch cartridge",
+    "owner": "gridatlas",
+    "proposedCartridge": "cartridges/subs-switch/",
+    "change": "Lift substations toggle independently of network toggle",
+    "acceptance": "GRID and SUBS states independent across repeated toggles",
+    "status": "planned",
+    "generation": null
+  },
+  {
+    "id": "ATLAS-09",
+    "title": "Collapsed layer defaults",
+    "owner": "gridatlas",
+    "proposedCartridge": "cartridges/layer-defaults/",
+    "change": "Centralize fresh-session collapsed panel state",
+    "acceptance": "Fresh desktop and phone show map and bottom-left switches; user opening panel still works",
+    "status": "planned",
+    "generation": null
+  },
+  {
+    "id": "ATLAS-10",
+    "title": "Control safe area",
+    "owner": "gridatlas",
+    "proposedCartridge": "cartridges/control-safe-area/",
+    "change": "Anchor GRID/SUBS above desktop and mobile safe areas",
+    "acceptance": "No overlap with map attribution or tool layer controls at four widths",
+    "status": "planned",
+    "generation": null
+  },
+  {
+    "id": "ATLAS-11",
+    "title": "Cartridge loader hash guard",
+    "owner": "gridatlas",
+    "proposedCartridge": "cartridges/loader-hash/",
+    "change": "Verify shell entry digest alongside cartridge digests",
+    "acceptance": "Tampered shell refused with meaningful error; pinned good build loads",
+    "status": "planned",
+    "generation": null
+  },
+  {
+    "id": "ATLAS-12",
+    "title": "Cartridge dependency resolver",
+    "owner": "gridatlas",
+    "proposedCartridge": "cartridges/cartridge-dependencies/",
+    "change": "Resolve explicit acyclic dependency versions before loading",
+    "acceptance": "Missing or cyclic dependency refuses only dependent layer",
+    "status": "planned",
+    "generation": null
+  },
+  {
+    "id": "ATLAS-13",
+    "title": "Layer lifecycle contract",
+    "owner": "gridatlas",
+    "proposedCartridge": "cartridges/layer-lifecycle/",
+    "change": "Define mount show hide dispose for optional tools",
+    "acceptance": "Open-close cycles release listeners without map-state loss",
+    "status": "planned",
+    "generation": null
+  },
+  {
+    "id": "ATLAS-14",
+    "title": "GIS original baseline proof",
+    "owner": "gis-sld-sandbox",
+    "proposedCartridge": "cartridges/original-parity/",
+    "change": "Maintain original V7 interaction oracle separately from extensions",
+    "acceptance": "Reference layout controls and calculations match imported pinned baseline",
+    "status": "planned",
+    "generation": null
+  },
+  {
+    "id": "ATLAS-15",
+    "title": "GIS route persistence",
+    "owner": "gis-sld-sandbox",
+    "proposedCartridge": "cartridges/route-persistence/",
+    "change": "Save versioned user route GeoJSON explicitly",
+    "acceptance": "Round-trip pins and route; malformed file cannot overwrite current drawing",
+    "status": "planned",
+    "generation": null
+  },
+  {
+    "id": "ATLAS-16",
+    "title": "GIS route undo",
+    "owner": "gis-sld-sandbox",
+    "proposedCartridge": "cartridges/route-undo/",
+    "change": "Add bounded undo for manual route changes",
+    "acceptance": "Undo restores exact previous coordinate sequence; clear reversible",
+    "status": "planned",
+    "generation": null
+  },
+  {
+    "id": "ATLAS-17",
+    "title": "Module placement adapter",
+    "owner": "layout-tool",
+    "proposedCartridge": "cartridges/placement-state/",
+    "change": "Expose read-only original module placement snapshot",
+    "acceptance": "Published dimensions orientation and counts preserved; no engine reimplementation",
+    "status": "planned",
+    "generation": null
+  },
+  {
+    "id": "ATLAS-18",
+    "title": "Module export cartridge",
+    "owner": "layout-tool",
+    "proposedCartridge": "cartridges/placement-export/",
+    "change": "Export validated placement snapshot as GeoJSON",
+    "acceptance": "Coordinate reference and units explicit; invalid placements rejected",
+    "status": "planned",
+    "generation": null
+  },
+  {
+    "id": "ATLAS-19",
+    "title": "Cable geometry snapshot",
+    "owner": "cable-trench-or-drill",
+    "proposedCartridge": "cartridges/geometry-state/",
+    "change": "Expose original trench and drill input geometry",
+    "acceptance": "Snapshot preserves original values and calculations independently of Atlas",
+    "status": "planned",
+    "generation": null
+  },
+  {
+    "id": "ATLAS-20",
+    "title": "Straight-line first pass",
+    "owner": "ventus-grid-engine",
+    "proposedCartridge": "cartridges/first-pass-contract/",
+    "change": "Pin straight-line route as immutable initial screening output",
+    "acceptance": "All existing distance fixtures unchanged when advanced routing unavailable",
+    "status": "planned",
+    "generation": null
+  },
+  {
+    "id": "ATLAS-21",
+    "title": "Manual route comparison",
+    "owner": "ventus-grid-engine",
+    "proposedCartridge": "cartridges/route-comparison/",
+    "change": "Compare traced route length with straight-line baseline",
+    "acceptance": "Both distances labelled; no implied construction feasibility",
+    "status": "planned",
+    "generation": null
+  },
+  {
+    "id": "ATLAS-22",
+    "title": "Route source provenance",
+    "owner": "gis-sld-sandbox",
+    "proposedCartridge": "cartridges/route-provenance/",
+    "change": "Attach author source date and coordinate system to route",
+    "acceptance": "User drawing distinguishable from surveyed or official network route",
+    "status": "planned",
+    "generation": null
+  },
+  {
+    "id": "ATLAS-23",
+    "title": "Road classification adapter",
+    "owner": "spiders",
+    "proposedCartridge": "cartridges/road-classification/",
+    "change": "Normalize licensed road classes for routing constraints",
+    "acceptance": "Unknown class remains unknown; B-road preference never grants permission",
+    "status": "planned",
+    "generation": null
+  },
+  {
+    "id": "ATLAS-24",
+    "title": "River crossing adapter",
+    "owner": "spiders",
+    "proposedCartridge": "cartridges/river-crossings/",
+    "change": "Expose river intersections with source precision",
+    "acceptance": "Crossing evidence and map dates retained; missing coverage not no rivers",
+    "status": "planned",
+    "generation": null
+  },
+  {
+    "id": "ATLAS-25",
+    "title": "Rail crossing adapter",
+    "owner": "spiders",
+    "proposedCartridge": "cartridges/rail-crossings/",
+    "change": "Expose rail intersections as reviewed constraints",
+    "acceptance": "Crossings flagged without automatic permission or invented engineering clearance",
+    "status": "planned",
+    "generation": null
+  },
+  {
+    "id": "ATLAS-26",
+    "title": "Constraint overlay",
+    "owner": "gridatlas",
+    "proposedCartridge": "cartridges/route-constraints/",
+    "change": "Render road river rail evidence independently of base map",
+    "acceptance": "Each source can fail independently; straight-line layer remains available",
+    "status": "planned",
+    "generation": null
+  },
+  {
+    "id": "ATLAS-27",
+    "title": "Route alternatives",
+    "owner": "ventus-grid-engine",
+    "proposedCartridge": "cartridges/route-alternatives/",
+    "change": "Offer explicit scored corridor alternatives after first pass",
+    "acceptance": "Weights and excluded edges shown; missing data produces unassessed segments",
+    "status": "planned",
+    "generation": null
+  },
+  {
+    "id": "ATLAS-28",
+    "title": "Trench scenario inputs",
+    "owner": "cable-trench-or-drill",
+    "proposedCartridge": "cartridges/trench-scenario/",
+    "change": "Isolate trench depth width reinstatement inputs",
+    "acceptance": "Units and user assumptions shown; original geometry output parity",
+    "status": "planned",
+    "generation": null
+  },
+  {
+    "id": "ATLAS-29",
+    "title": "HDD scenario inputs",
+    "owner": "cable-trench-or-drill",
+    "proposedCartridge": "cartridges/hdd-scenario/",
+    "change": "Isolate directional-drill entry exit and bend assumptions",
+    "acceptance": "Geometry constraints tested; no automatic geotechnical approval",
+    "status": "planned",
+    "generation": null
+  },
+  {
+    "id": "ATLAS-30",
+    "title": "Crossing method comparison",
+    "owner": "cable-trench-or-drill",
+    "proposedCartridge": "cartridges/crossing-method/",
+    "change": "Compare trench and drill scenario quantities",
+    "acceptance": "Quantity basis and exclusions visible; no unsupported preferred design",
+    "status": "planned",
+    "generation": null
+  },
+  {
+    "id": "ATLAS-31",
+    "title": "Route cost basis",
+    "owner": "gis-sld-sandbox",
+    "proposedCartridge": "cartridges/route-cost-basis/",
+    "change": "Bind estimates to timestamped user rates and route quantities",
+    "acceptance": "All totals trace to explicit inputs; stale feed cannot silently refresh estimate",
+    "status": "planned",
+    "generation": null
+  },
+  {
+    "id": "ATLAS-32",
+    "title": "Published fault levels",
+    "owner": "ventus-grid-engine",
+    "proposedCartridge": "cartridges/published-fault-adapter/",
+    "change": "Integrate Claude published-fault-level contract after handover",
+    "acceptance": "Exact metric date busbar voltage units and source; never infer headroom or calculate fault current",
+    "status": "planned",
+    "generation": null
+  },
+  {
+    "id": "ATLAS-33",
+    "title": "Fault evidence layer",
+    "owner": "gridatlas",
+    "proposedCartridge": "cartridges/fault-evidence-layer/",
+    "change": "Show published figures as independent evidence layer",
+    "acceptance": "Missing figures explicit; no capacity colour inferred from fault-current magnitude",
+    "status": "planned",
+    "generation": null
+  },
+  {
+    "id": "ATLAS-34",
+    "title": "Connection point identity",
+    "owner": "data-grid-gb",
+    "proposedCartridge": "cartridges/connection-identity/",
+    "change": "Expose exact transformer and busbar join evidence",
+    "acceptance": "Ambiguous voltage or site joins fail closed using existing ETYS fixtures",
+    "status": "planned",
+    "generation": null
+  },
+  {
+    "id": "ATLAS-35",
+    "title": "Network lineage panel",
+    "owner": "gridatlas",
+    "proposedCartridge": "cartridges/network-lineage/",
+    "change": "Display dataset version and ingestion source for selected grid asset",
+    "acceptance": "Asset ID resolves pinned owner record with timestamp and licence",
+    "status": "planned",
+    "generation": null
+  },
+  {
+    "id": "ATLAS-36",
+    "title": "REPD status delta",
+    "owner": "spiders",
+    "proposedCartridge": "cartridges/repd-status-delta/",
+    "change": "Publish dated changes in project planning status",
+    "acceptance": "Stable project IDs; removed records not silently counted as new",
+    "status": "planned",
+    "generation": null
+  },
+  {
+    "id": "ATLAS-37",
+    "title": "User evidence intake",
+    "owner": "spiders",
+    "proposedCartridge": "cartridges/user-evidence/",
+    "change": "Validate user observations as attributed unverified submissions",
+    "acceptance": "No automatic overwrite of official project or network attributes",
+    "status": "planned",
+    "generation": null
+  },
+  {
+    "id": "ATLAS-38",
+    "title": "Evidence conflict cartridge",
+    "owner": "cvaa",
+    "proposedCartridge": "cartridges/evidence-conflict/",
+    "change": "Detect conflicting source values with provenance",
+    "acceptance": "Conflict retained as finding; newest timestamp alone cannot establish truth",
+    "status": "planned",
+    "generation": null
+  },
+  {
+    "id": "ATLAS-39",
+    "title": "Weekly electricity layer",
+    "owner": "gridatlas",
+    "proposedCartridge": "cartridges/weekly-electricity/",
+    "change": "Render owner weekly generation and coverage product",
+    "acceptance": "MWh versus mean MW explicit; missing or DST intervals handled by owner contract",
+    "status": "planned",
+    "generation": null
+  },
+  {
+    "id": "ATLAS-40",
+    "title": "Weekly PV layer",
+    "owner": "gridatlas",
+    "proposedCartridge": "cartridges/weekly-pv/",
+    "change": "Render attributed PV estimates with regional boundary version",
+    "acceptance": "Estimate scope explicit; no double-count with Elexon series",
+    "status": "planned",
+    "generation": null
+  },
+  {
+    "id": "ATLAS-41",
+    "title": "Metals source adapter",
+    "owner": "spiders",
+    "proposedCartridge": "cartridges/market-metals/",
+    "change": "Lift copper and aluminium collection from monolith page writers",
+    "acceptance": "No fixed fallback marked fresh; instrument exchange contract currency and mass unit preserved",
+    "status": "planned",
+    "generation": null
+  },
+  {
+    "id": "ATLAS-42",
+    "title": "FX source adapter",
+    "owner": "spiders",
+    "proposedCartridge": "cartridges/market-fx/",
+    "change": "Collect weekly validated GBP USD EUR observations",
+    "acceptance": "Positive finite rates; base currency explicit; source observation date retained",
+    "status": "planned",
+    "generation": null
+  },
+  {
+    "id": "ATLAS-43",
+    "title": "Oil source adapter",
+    "owner": "spiders",
+    "proposedCartridge": "cartridges/market-oil/",
+    "change": "Collect bounded oil observations separating spot and futures",
+    "acceptance": "FRED EIA spot series not silently replaced by Yahoo futures in same series",
+    "status": "planned",
+    "generation": null
+  },
+  {
+    "id": "ATLAS-44",
+    "title": "Weekly market product",
+    "owner": "spiders",
+    "proposedCartridge": "cartridges/weekly-market/",
+    "change": "Publish immutable compact market observations with manifest",
+    "acceptance": "Idempotent weekly keys; stale last-good distinct from failed attempt; no synthetic geometry",
+    "status": "planned",
+    "generation": null
+  },
+  {
+    "id": "ATLAS-45",
+    "title": "Financial layer feed",
+    "owner": "gis-sld-sandbox",
+    "proposedCartridge": "cartridges/market-input-layer/",
+    "change": "Offer explicit import of dated market assumptions",
+    "acceptance": "User must choose update; saved scenario remains pinned to old observations",
+    "status": "planned",
+    "generation": null
+  },
+  {
+    "id": "ATLAS-46",
+    "title": "GPU equivalent-work benchmark",
+    "owner": "gpu-drivers-for-global-grid",
+    "proposedCartridge": "cartridges/cpu-gpu-oracle/",
+    "change": "Compare same workload against CPU oracle with transfer costs",
+    "acceptance": "Adapter bytes upload compute readback and warm/cold timings reported separately",
+    "status": "planned",
+    "generation": null
+  },
+  {
+    "id": "ATLAS-47",
+    "title": "GPU optional adapter",
+    "owner": "gpu-drivers-for-global-grid",
+    "proposedCartridge": "cartridges/optional-compute/",
+    "change": "Expose optional accelerator behind deterministic CPU fallback",
+    "acceptance": "Unavailable GPU gives identical result; benchmark does not claim end-user speedup",
+    "status": "planned",
+    "generation": null
+  },
+  {
+    "id": "ATLAS-48",
+    "title": "Cartridge isolation vaccine",
+    "owner": "cvaa",
+    "proposedCartridge": "cartridges/cartridge-isolation/",
+    "change": "Detect app-wide failure caused by optional module rejection",
+    "acceptance": "One failed layer leaves search GRID SUBS and straight-line computation usable",
+    "status": "planned",
+    "generation": null
+  },
+  {
+    "id": "ATLAS-49",
+    "title": "Federated build-plan reader",
+    "owner": "spiders",
+    "proposedCartridge": "cartridges/build-plan-reader/",
+    "change": "Project declared build relationships into separate federation cartridge",
+    "acceptance": "All100 build IDs resolve; planned edges never labelled observed runtime dependencies",
+    "status": "planned",
+    "generation": null
+  },
+  {
+    "id": "ATLAS-50",
+    "title": "Release evidence gate",
+    "owner": "testcode",
+    "proposedCartridge": "cartridges/release-evidence/",
+    "change": "Require exact source engine data and served-byte receipts per new timestamp",
+    "acceptance": "One substantive change; no accepted state before required local CI Chrome and deployed checks",
+    "status": "planned",
+    "generation": null
+  }
+]

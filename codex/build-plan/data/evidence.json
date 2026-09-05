@@ -1,0 +1,4285 @@
+{
+  "schema": "ventus.build-plan-evidence.v1",
+  "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+  "records": [
+    {
+      "from": "repo:Ventusltd/pipelinenews",
+      "to": "build:PIPELINE-01",
+      "kind": "plans",
+      "buildId": "PIPELINE-01",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/0/properties/ownerRepository"
+    },
+    {
+      "from": "build:PIPELINE-01",
+      "to": "module:Ventusltd/pipelinenews::cartridges/coverage-join-audit.mjs",
+      "kind": "proposes_module",
+      "buildId": "PIPELINE-01",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/0/properties/modulePath"
+    },
+    {
+      "from": "source:DESNZ-REPD",
+      "to": "build:PIPELINE-01",
+      "kind": "planned_source_input",
+      "buildId": "PIPELINE-01",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/0/properties/sourceFeeds/0"
+    },
+    {
+      "from": "repo:Ventusltd/pipelinenews",
+      "to": "build:PIPELINE-02",
+      "kind": "plans",
+      "buildId": "PIPELINE-02",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/1/properties/ownerRepository"
+    },
+    {
+      "from": "build:PIPELINE-02",
+      "to": "module:Ventusltd/pipelinenews::cartridges/grid-coverage-successor.mjs",
+      "kind": "proposes_module",
+      "buildId": "PIPELINE-02",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/1/properties/modulePath"
+    },
+    {
+      "from": "build:PIPELINE-01",
+      "to": "build:PIPELINE-02",
+      "kind": "planned_prerequisite",
+      "buildId": "PIPELINE-02",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/1/properties/dependsOn/0"
+    },
+    {
+      "from": "repo:Ventusltd/pipelinenews",
+      "to": "build:PIPELINE-03",
+      "kind": "plans",
+      "buildId": "PIPELINE-03",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/2/properties/ownerRepository"
+    },
+    {
+      "from": "build:PIPELINE-03",
+      "to": "module:Ventusltd/pipelinenews::cartridges/sub-coverage-successor.mjs",
+      "kind": "proposes_module",
+      "buildId": "PIPELINE-03",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/2/properties/modulePath"
+    },
+    {
+      "from": "build:PIPELINE-01",
+      "to": "build:PIPELINE-03",
+      "kind": "planned_prerequisite",
+      "buildId": "PIPELINE-03",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/2/properties/dependsOn/0"
+    },
+    {
+      "from": "repo:Ventusltd/pipelinenews",
+      "to": "build:PIPELINE-04",
+      "kind": "plans",
+      "buildId": "PIPELINE-04",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/3/properties/ownerRepository"
+    },
+    {
+      "from": "build:PIPELINE-04",
+      "to": "module:Ventusltd/pipelinenews::cartridges/coverage-explanation-ui.mjs",
+      "kind": "proposes_module",
+      "buildId": "PIPELINE-04",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/3/properties/modulePath"
+    },
+    {
+      "from": "build:PIPELINE-02",
+      "to": "build:PIPELINE-04",
+      "kind": "planned_prerequisite",
+      "buildId": "PIPELINE-04",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/3/properties/dependsOn/0"
+    },
+    {
+      "from": "build:PIPELINE-03",
+      "to": "build:PIPELINE-04",
+      "kind": "planned_prerequisite",
+      "buildId": "PIPELINE-04",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/3/properties/dependsOn/1"
+    },
+    {
+      "from": "repo:Ventusltd/pipelinenews",
+      "to": "build:PIPELINE-05",
+      "kind": "plans",
+      "buildId": "PIPELINE-05",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/4/properties/ownerRepository"
+    },
+    {
+      "from": "build:PIPELINE-05",
+      "to": "module:Ventusltd/pipelinenews::cartridges/coverage-ci-contract.mjs",
+      "kind": "proposes_module",
+      "buildId": "PIPELINE-05",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/4/properties/modulePath"
+    },
+    {
+      "from": "build:PIPELINE-01",
+      "to": "build:PIPELINE-05",
+      "kind": "planned_prerequisite",
+      "buildId": "PIPELINE-05",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/4/properties/dependsOn/0"
+    },
+    {
+      "from": "build:PIPELINE-02",
+      "to": "build:PIPELINE-05",
+      "kind": "planned_prerequisite",
+      "buildId": "PIPELINE-05",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/4/properties/dependsOn/1"
+    },
+    {
+      "from": "build:PIPELINE-03",
+      "to": "build:PIPELINE-05",
+      "kind": "planned_prerequisite",
+      "buildId": "PIPELINE-05",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/4/properties/dependsOn/2"
+    },
+    {
+      "from": "repo:Ventusltd/pipelinenews",
+      "to": "build:PIPELINE-06",
+      "kind": "plans",
+      "buildId": "PIPELINE-06",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/5/properties/ownerRepository"
+    },
+    {
+      "from": "build:PIPELINE-06",
+      "to": "module:Ventusltd/pipelinenews::cartridges/bounded-table-rendering.mjs",
+      "kind": "proposes_module",
+      "buildId": "PIPELINE-06",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/5/properties/modulePath"
+    },
+    {
+      "from": "repo:Ventusltd/pipelinenews",
+      "to": "build:PIPELINE-07",
+      "kind": "plans",
+      "buildId": "PIPELINE-07",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/6/properties/ownerRepository"
+    },
+    {
+      "from": "build:PIPELINE-07",
+      "to": "module:Ventusltd/pipelinenews::cartridges/pagination-state-cartridge.mjs",
+      "kind": "proposes_module",
+      "buildId": "PIPELINE-07",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/6/properties/modulePath"
+    },
+    {
+      "from": "build:PIPELINE-06",
+      "to": "build:PIPELINE-07",
+      "kind": "planned_prerequisite",
+      "buildId": "PIPELINE-07",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/6/properties/dependsOn/0"
+    },
+    {
+      "from": "repo:Ventusltd/pipelinenews",
+      "to": "build:PIPELINE-08",
+      "kind": "plans",
+      "buildId": "PIPELINE-08",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/7/properties/ownerRepository"
+    },
+    {
+      "from": "build:PIPELINE-08",
+      "to": "module:Ventusltd/pipelinenews::cartridges/stable-project-selection.mjs",
+      "kind": "proposes_module",
+      "buildId": "PIPELINE-08",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/7/properties/modulePath"
+    },
+    {
+      "from": "source:DESNZ-REPD",
+      "to": "build:PIPELINE-08",
+      "kind": "planned_source_input",
+      "buildId": "PIPELINE-08",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/7/properties/sourceFeeds/0"
+    },
+    {
+      "from": "build:PIPELINE-07",
+      "to": "build:PIPELINE-08",
+      "kind": "planned_prerequisite",
+      "buildId": "PIPELINE-08",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/7/properties/dependsOn/0"
+    },
+    {
+      "from": "repo:Ventusltd/pipelinenews",
+      "to": "build:PIPELINE-09",
+      "kind": "plans",
+      "buildId": "PIPELINE-09",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/8/properties/ownerRepository"
+    },
+    {
+      "from": "build:PIPELINE-09",
+      "to": "module:Ventusltd/pipelinenews::cartridges/mobile-row-actions.mjs",
+      "kind": "proposes_module",
+      "buildId": "PIPELINE-09",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/8/properties/modulePath"
+    },
+    {
+      "from": "build:PIPELINE-08",
+      "to": "build:PIPELINE-09",
+      "kind": "planned_prerequisite",
+      "buildId": "PIPELINE-09",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/8/properties/dependsOn/0"
+    },
+    {
+      "from": "repo:Ventusltd/pipelinenews",
+      "to": "build:PIPELINE-10",
+      "kind": "plans",
+      "buildId": "PIPELINE-10",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/9/properties/ownerRepository"
+    },
+    {
+      "from": "build:PIPELINE-10",
+      "to": "module:Ventusltd/pipelinenews::cartridges/observable-search-completion.mjs",
+      "kind": "proposes_module",
+      "buildId": "PIPELINE-10",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/9/properties/modulePath"
+    },
+    {
+      "from": "build:PIPELINE-06",
+      "to": "build:PIPELINE-10",
+      "kind": "planned_prerequisite",
+      "buildId": "PIPELINE-10",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/9/properties/dependsOn/0"
+    },
+    {
+      "from": "repo:Ventusltd/pipelinenews",
+      "to": "build:PIPELINE-11",
+      "kind": "plans",
+      "buildId": "PIPELINE-11",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/10/properties/ownerRepository"
+    },
+    {
+      "from": "build:PIPELINE-11",
+      "to": "module:Ventusltd/pipelinenews::cartridges/canonical-receiver-adapter.mjs",
+      "kind": "proposes_module",
+      "buildId": "PIPELINE-11",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/10/properties/modulePath"
+    },
+    {
+      "from": "repo:Ventusltd/pipelinenews",
+      "to": "build:PIPELINE-12",
+      "kind": "plans",
+      "buildId": "PIPELINE-12",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/11/properties/ownerRepository"
+    },
+    {
+      "from": "build:PIPELINE-12",
+      "to": "module:Ventusltd/pipelinenews::cartridges/receiver-failure-state.mjs",
+      "kind": "proposes_module",
+      "buildId": "PIPELINE-12",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/11/properties/modulePath"
+    },
+    {
+      "from": "build:PIPELINE-11",
+      "to": "build:PIPELINE-12",
+      "kind": "planned_prerequisite",
+      "buildId": "PIPELINE-12",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/11/properties/dependsOn/0"
+    },
+    {
+      "from": "repo:Ventusltd/pipelinenews",
+      "to": "build:PIPELINE-13",
+      "kind": "plans",
+      "buildId": "PIPELINE-13",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/12/properties/ownerRepository"
+    },
+    {
+      "from": "build:PIPELINE-13",
+      "to": "module:Ventusltd/pipelinenews::cartridges/geojson-identity-export.mjs",
+      "kind": "proposes_module",
+      "buildId": "PIPELINE-13",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/12/properties/modulePath"
+    },
+    {
+      "from": "repo:Ventusltd/pipelinenews",
+      "to": "build:PIPELINE-14",
+      "kind": "plans",
+      "buildId": "PIPELINE-14",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/13/properties/ownerRepository"
+    },
+    {
+      "from": "build:PIPELINE-14",
+      "to": "module:Ventusltd/pipelinenews::cartridges/geojson-filter-export.mjs",
+      "kind": "proposes_module",
+      "buildId": "PIPELINE-14",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/13/properties/modulePath"
+    },
+    {
+      "from": "build:PIPELINE-13",
+      "to": "build:PIPELINE-14",
+      "kind": "planned_prerequisite",
+      "buildId": "PIPELINE-14",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/13/properties/dependsOn/0"
+    },
+    {
+      "from": "repo:Ventusltd/pipelinenews",
+      "to": "build:PIPELINE-15",
+      "kind": "plans",
+      "buildId": "PIPELINE-15",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/14/properties/ownerRepository"
+    },
+    {
+      "from": "build:PIPELINE-15",
+      "to": "module:Ventusltd/pipelinenews::cartridges/geojson-null-geometry.mjs",
+      "kind": "proposes_module",
+      "buildId": "PIPELINE-15",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/14/properties/modulePath"
+    },
+    {
+      "from": "build:PIPELINE-13",
+      "to": "build:PIPELINE-15",
+      "kind": "planned_prerequisite",
+      "buildId": "PIPELINE-15",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/14/properties/dependsOn/0"
+    },
+    {
+      "from": "repo:Ventusltd/pipelinenews",
+      "to": "build:PIPELINE-16",
+      "kind": "plans",
+      "buildId": "PIPELINE-16",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/15/properties/ownerRepository"
+    },
+    {
+      "from": "build:PIPELINE-16",
+      "to": "module:Ventusltd/pipelinenews::cartridges/geojson-partition-manifest.mjs",
+      "kind": "proposes_module",
+      "buildId": "PIPELINE-16",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/15/properties/modulePath"
+    },
+    {
+      "from": "build:PIPELINE-13",
+      "to": "build:PIPELINE-16",
+      "kind": "planned_prerequisite",
+      "buildId": "PIPELINE-16",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/15/properties/dependsOn/0"
+    },
+    {
+      "from": "repo:Ventusltd/pipelinenews",
+      "to": "build:PIPELINE-17",
+      "kind": "plans",
+      "buildId": "PIPELINE-17",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/16/properties/ownerRepository"
+    },
+    {
+      "from": "build:PIPELINE-17",
+      "to": "module:Ventusltd/pipelinenews::cartridges/geojson-bounds-preview.mjs",
+      "kind": "proposes_module",
+      "buildId": "PIPELINE-17",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/16/properties/modulePath"
+    },
+    {
+      "from": "build:PIPELINE-15",
+      "to": "build:PIPELINE-17",
+      "kind": "planned_prerequisite",
+      "buildId": "PIPELINE-17",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/16/properties/dependsOn/0"
+    },
+    {
+      "from": "build:PIPELINE-16",
+      "to": "build:PIPELINE-17",
+      "kind": "planned_prerequisite",
+      "buildId": "PIPELINE-17",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/16/properties/dependsOn/1"
+    },
+    {
+      "from": "repo:Ventusltd/pipelinenews",
+      "to": "build:PIPELINE-18",
+      "kind": "plans",
+      "buildId": "PIPELINE-18",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/17/properties/ownerRepository"
+    },
+    {
+      "from": "build:PIPELINE-18",
+      "to": "module:Ventusltd/pipelinenews::cartridges/weekly-owner-manifest-reader/index.mjs",
+      "kind": "proposes_module",
+      "buildId": "PIPELINE-18",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/17/properties/modulePath"
+    },
+    {
+      "from": "source:Sheffield-PVLive",
+      "to": "build:PIPELINE-18",
+      "kind": "planned_source_input",
+      "buildId": "PIPELINE-18",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/17/properties/sourceFeeds/0"
+    },
+    {
+      "from": "repo:Ventusltd/pipelinenews",
+      "to": "build:PIPELINE-19",
+      "kind": "plans",
+      "buildId": "PIPELINE-19",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/18/properties/ownerRepository"
+    },
+    {
+      "from": "build:PIPELINE-19",
+      "to": "module:Ventusltd/pipelinenews::cartridges/official-evidence-rank.mjs",
+      "kind": "proposes_module",
+      "buildId": "PIPELINE-19",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/18/properties/modulePath"
+    },
+    {
+      "from": "source:news-publishers",
+      "to": "build:PIPELINE-19",
+      "kind": "planned_source_input",
+      "buildId": "PIPELINE-19",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/18/properties/sourceFeeds/0"
+    },
+    {
+      "from": "repo:Ventusltd/pipelinenews",
+      "to": "build:PIPELINE-20",
+      "kind": "plans",
+      "buildId": "PIPELINE-20",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/19/properties/ownerRepository"
+    },
+    {
+      "from": "build:PIPELINE-20",
+      "to": "module:Ventusltd/pipelinenews::cartridges/news-canonical-dedup.mjs",
+      "kind": "proposes_module",
+      "buildId": "PIPELINE-20",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/19/properties/modulePath"
+    },
+    {
+      "from": "source:news-publishers",
+      "to": "build:PIPELINE-20",
+      "kind": "planned_source_input",
+      "buildId": "PIPELINE-20",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/19/properties/sourceFeeds/0"
+    },
+    {
+      "from": "build:PIPELINE-19",
+      "to": "build:PIPELINE-20",
+      "kind": "planned_prerequisite",
+      "buildId": "PIPELINE-20",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/19/properties/dependsOn/0"
+    },
+    {
+      "from": "repo:Ventusltd/pipelinenews",
+      "to": "build:PIPELINE-21",
+      "kind": "plans",
+      "buildId": "PIPELINE-21",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/20/properties/ownerRepository"
+    },
+    {
+      "from": "build:PIPELINE-21",
+      "to": "module:Ventusltd/pipelinenews::cartridges/news-date-semantics.mjs",
+      "kind": "proposes_module",
+      "buildId": "PIPELINE-21",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/20/properties/modulePath"
+    },
+    {
+      "from": "source:news-publishers",
+      "to": "build:PIPELINE-21",
+      "kind": "planned_source_input",
+      "buildId": "PIPELINE-21",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/20/properties/sourceFeeds/0"
+    },
+    {
+      "from": "build:PIPELINE-19",
+      "to": "build:PIPELINE-21",
+      "kind": "planned_prerequisite",
+      "buildId": "PIPELINE-21",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/20/properties/dependsOn/0"
+    },
+    {
+      "from": "repo:Ventusltd/pipelinenews",
+      "to": "build:PIPELINE-22",
+      "kind": "plans",
+      "buildId": "PIPELINE-22",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/21/properties/ownerRepository"
+    },
+    {
+      "from": "build:PIPELINE-22",
+      "to": "module:Ventusltd/pipelinenews::cartridges/topic-relevance-cartridge.mjs",
+      "kind": "proposes_module",
+      "buildId": "PIPELINE-22",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/21/properties/modulePath"
+    },
+    {
+      "from": "build:PIPELINE-19",
+      "to": "build:PIPELINE-22",
+      "kind": "planned_prerequisite",
+      "buildId": "PIPELINE-22",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/21/properties/dependsOn/0"
+    },
+    {
+      "from": "repo:Ventusltd/pipelinenews",
+      "to": "build:PIPELINE-23",
+      "kind": "plans",
+      "buildId": "PIPELINE-23",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/22/properties/ownerRepository"
+    },
+    {
+      "from": "build:PIPELINE-23",
+      "to": "module:Ventusltd/pipelinenews::cartridges/project-binding-abstention.mjs",
+      "kind": "proposes_module",
+      "buildId": "PIPELINE-23",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/22/properties/modulePath"
+    },
+    {
+      "from": "source:companies",
+      "to": "build:PIPELINE-23",
+      "kind": "planned_source_input",
+      "buildId": "PIPELINE-23",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/22/properties/sourceFeeds/0"
+    },
+    {
+      "from": "build:PIPELINE-19",
+      "to": "build:PIPELINE-23",
+      "kind": "planned_prerequisite",
+      "buildId": "PIPELINE-23",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/22/properties/dependsOn/0"
+    },
+    {
+      "from": "build:PIPELINE-20",
+      "to": "build:PIPELINE-23",
+      "kind": "planned_prerequisite",
+      "buildId": "PIPELINE-23",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/22/properties/dependsOn/1"
+    },
+    {
+      "from": "repo:Ventusltd/pipelinenews",
+      "to": "build:PIPELINE-24",
+      "kind": "plans",
+      "buildId": "PIPELINE-24",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/23/properties/ownerRepository"
+    },
+    {
+      "from": "build:PIPELINE-24",
+      "to": "module:Ventusltd/pipelinenews::cartridges/evidence-freshness-ui.mjs",
+      "kind": "proposes_module",
+      "buildId": "PIPELINE-24",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/23/properties/modulePath"
+    },
+    {
+      "from": "build:PIPELINE-21",
+      "to": "build:PIPELINE-24",
+      "kind": "planned_prerequisite",
+      "buildId": "PIPELINE-24",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/23/properties/dependsOn/0"
+    },
+    {
+      "from": "repo:Ventusltd/data-gb-electricity",
+      "to": "build:PIPELINE-25",
+      "kind": "plans",
+      "buildId": "PIPELINE-25",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/24/properties/ownerRepository"
+    },
+    {
+      "from": "build:PIPELINE-25",
+      "to": "module:Ventusltd/data-gb-electricity::cartridges/weekly-ingestion-checkpoint-receipt/index.mjs",
+      "kind": "proposes_module",
+      "buildId": "PIPELINE-25",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/24/properties/modulePath"
+    },
+    {
+      "from": "repo:Ventusltd/pipelinenews",
+      "to": "build:PIPELINE-26",
+      "kind": "plans",
+      "buildId": "PIPELINE-26",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/25/properties/ownerRepository"
+    },
+    {
+      "from": "build:PIPELINE-26",
+      "to": "module:Ventusltd/pipelinenews::cartridges/source-rights-metadata.mjs",
+      "kind": "proposes_module",
+      "buildId": "PIPELINE-26",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/25/properties/modulePath"
+    },
+    {
+      "from": "repo:Ventusltd/pipelinenews",
+      "to": "build:PIPELINE-27",
+      "kind": "plans",
+      "buildId": "PIPELINE-27",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/26/properties/ownerRepository"
+    },
+    {
+      "from": "build:PIPELINE-27",
+      "to": "module:Ventusltd/pipelinenews::cartridges/company-identity-join.mjs",
+      "kind": "proposes_module",
+      "buildId": "PIPELINE-27",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/26/properties/modulePath"
+    },
+    {
+      "from": "source:companies",
+      "to": "build:PIPELINE-27",
+      "kind": "planned_source_input",
+      "buildId": "PIPELINE-27",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/26/properties/sourceFeeds/0"
+    },
+    {
+      "from": "repo:Ventusltd/pipelinenews",
+      "to": "build:PIPELINE-28",
+      "kind": "plans",
+      "buildId": "PIPELINE-28",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/27/properties/ownerRepository"
+    },
+    {
+      "from": "build:PIPELINE-28",
+      "to": "module:Ventusltd/pipelinenews::cartridges/company-confidence-view.mjs",
+      "kind": "proposes_module",
+      "buildId": "PIPELINE-28",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/27/properties/modulePath"
+    },
+    {
+      "from": "source:companies",
+      "to": "build:PIPELINE-28",
+      "kind": "planned_source_input",
+      "buildId": "PIPELINE-28",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/27/properties/sourceFeeds/0"
+    },
+    {
+      "from": "build:PIPELINE-27",
+      "to": "build:PIPELINE-28",
+      "kind": "planned_prerequisite",
+      "buildId": "PIPELINE-28",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/27/properties/dependsOn/0"
+    },
+    {
+      "from": "repo:Ventusltd/pipelinenews",
+      "to": "build:PIPELINE-29",
+      "kind": "plans",
+      "buildId": "PIPELINE-29",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/28/properties/ownerRepository"
+    },
+    {
+      "from": "build:PIPELINE-29",
+      "to": "module:Ventusltd/pipelinenews::cartridges/financial-units-adapter.mjs",
+      "kind": "proposes_module",
+      "buildId": "PIPELINE-29",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/28/properties/modulePath"
+    },
+    {
+      "from": "build:PIPELINE-27",
+      "to": "build:PIPELINE-29",
+      "kind": "planned_prerequisite",
+      "buildId": "PIPELINE-29",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/28/properties/dependsOn/0"
+    },
+    {
+      "from": "repo:Ventusltd/pipelinenews",
+      "to": "build:PIPELINE-30",
+      "kind": "plans",
+      "buildId": "PIPELINE-30",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/29/properties/ownerRepository"
+    },
+    {
+      "from": "build:PIPELINE-30",
+      "to": "module:Ventusltd/pipelinenews::cartridges/company-lazy-loading.mjs",
+      "kind": "proposes_module",
+      "buildId": "PIPELINE-30",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/29/properties/modulePath"
+    },
+    {
+      "from": "source:companies",
+      "to": "build:PIPELINE-30",
+      "kind": "planned_source_input",
+      "buildId": "PIPELINE-30",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/29/properties/sourceFeeds/0"
+    },
+    {
+      "from": "build:PIPELINE-27",
+      "to": "build:PIPELINE-30",
+      "kind": "planned_prerequisite",
+      "buildId": "PIPELINE-30",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/29/properties/dependsOn/0"
+    },
+    {
+      "from": "repo:Ventusltd/spiders",
+      "to": "build:PIPELINE-31",
+      "kind": "plans",
+      "buildId": "PIPELINE-31",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/30/properties/ownerRepository"
+    },
+    {
+      "from": "build:PIPELINE-31",
+      "to": "module:Ventusltd/spiders::species/pvlive-spider/interval-validation/index.mjs",
+      "kind": "proposes_module",
+      "buildId": "PIPELINE-31",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/30/properties/modulePath"
+    },
+    {
+      "from": "source:Sheffield-PVLive",
+      "to": "build:PIPELINE-31",
+      "kind": "planned_source_input",
+      "buildId": "PIPELINE-31",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/30/properties/sourceFeeds/0"
+    },
+    {
+      "from": "repo:Ventusltd/pipelinenews",
+      "to": "build:PIPELINE-32",
+      "kind": "plans",
+      "buildId": "PIPELINE-32",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/31/properties/ownerRepository"
+    },
+    {
+      "from": "build:PIPELINE-32",
+      "to": "module:Ventusltd/pipelinenews::cartridges/company-schema-gate.mjs",
+      "kind": "proposes_module",
+      "buildId": "PIPELINE-32",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/31/properties/modulePath"
+    },
+    {
+      "from": "source:companies",
+      "to": "build:PIPELINE-32",
+      "kind": "planned_source_input",
+      "buildId": "PIPELINE-32",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/31/properties/sourceFeeds/0"
+    },
+    {
+      "from": "build:PIPELINE-27",
+      "to": "build:PIPELINE-32",
+      "kind": "planned_prerequisite",
+      "buildId": "PIPELINE-32",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/31/properties/dependsOn/0"
+    },
+    {
+      "from": "repo:Ventusltd/pipelinenews",
+      "to": "build:PIPELINE-33",
+      "kind": "plans",
+      "buildId": "PIPELINE-33",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/32/properties/ownerRepository"
+    },
+    {
+      "from": "build:PIPELINE-33",
+      "to": "module:Ventusltd/pipelinenews::cartridges/electricity-coverage-scope.mjs",
+      "kind": "proposes_module",
+      "buildId": "PIPELINE-33",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/32/properties/modulePath"
+    },
+    {
+      "from": "source:Elexon-Insights",
+      "to": "build:PIPELINE-33",
+      "kind": "planned_source_input",
+      "buildId": "PIPELINE-33",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/32/properties/sourceFeeds/0"
+    },
+    {
+      "from": "repo:Ventusltd/data-gb-electricity",
+      "to": "build:PIPELINE-34",
+      "kind": "plans",
+      "buildId": "PIPELINE-34",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/33/properties/ownerRepository"
+    },
+    {
+      "from": "build:PIPELINE-34",
+      "to": "module:Ventusltd/data-gb-electricity::cartridges/coverage-weighted-energy-rollup/index.mjs",
+      "kind": "proposes_module",
+      "buildId": "PIPELINE-34",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/33/properties/modulePath"
+    },
+    {
+      "from": "source:Elexon-Insights",
+      "to": "build:PIPELINE-34",
+      "kind": "planned_source_input",
+      "buildId": "PIPELINE-34",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/33/properties/sourceFeeds/0"
+    },
+    {
+      "from": "build:PIPELINE-25",
+      "to": "build:PIPELINE-34",
+      "kind": "planned_prerequisite",
+      "buildId": "PIPELINE-34",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/33/properties/dependsOn/0"
+    },
+    {
+      "from": "build:PIPELINE-31",
+      "to": "build:PIPELINE-34",
+      "kind": "planned_prerequisite",
+      "buildId": "PIPELINE-34",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/33/properties/dependsOn/1"
+    },
+    {
+      "from": "repo:Ventusltd/pipelinenews",
+      "to": "build:PIPELINE-35",
+      "kind": "plans",
+      "buildId": "PIPELINE-35",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/34/properties/ownerRepository"
+    },
+    {
+      "from": "build:PIPELINE-35",
+      "to": "module:Ventusltd/pipelinenews::cartridges/feed-freshness-and-revision-panel/index.mjs",
+      "kind": "proposes_module",
+      "buildId": "PIPELINE-35",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/34/properties/modulePath"
+    },
+    {
+      "from": "build:PIPELINE-18",
+      "to": "build:PIPELINE-35",
+      "kind": "planned_prerequisite",
+      "buildId": "PIPELINE-35",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/34/properties/dependsOn/0"
+    },
+    {
+      "from": "build:PIPELINE-34",
+      "to": "build:PIPELINE-35",
+      "kind": "planned_prerequisite",
+      "buildId": "PIPELINE-35",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/34/properties/dependsOn/1"
+    },
+    {
+      "from": "repo:Ventusltd/pipelinenews",
+      "to": "build:PIPELINE-36",
+      "kind": "plans",
+      "buildId": "PIPELINE-36",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/35/properties/ownerRepository"
+    },
+    {
+      "from": "build:PIPELINE-36",
+      "to": "module:Ventusltd/pipelinenews::cartridges/runtime-source-index.mjs",
+      "kind": "proposes_module",
+      "buildId": "PIPELINE-36",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/35/properties/modulePath"
+    },
+    {
+      "from": "repo:Ventusltd/pipelinenews",
+      "to": "build:PIPELINE-37",
+      "kind": "plans",
+      "buildId": "PIPELINE-37",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/36/properties/ownerRepository"
+    },
+    {
+      "from": "build:PIPELINE-37",
+      "to": "module:Ventusltd/pipelinenews::cartridges/release-ancestry-guard.mjs",
+      "kind": "proposes_module",
+      "buildId": "PIPELINE-37",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/36/properties/modulePath"
+    },
+    {
+      "from": "repo:Ventusltd/pipelinenews",
+      "to": "build:PIPELINE-38",
+      "kind": "plans",
+      "buildId": "PIPELINE-38",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/37/properties/ownerRepository"
+    },
+    {
+      "from": "build:PIPELINE-38",
+      "to": "module:Ventusltd/pipelinenews::cartridges/semantic-change-gate.mjs",
+      "kind": "proposes_module",
+      "buildId": "PIPELINE-38",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/37/properties/modulePath"
+    },
+    {
+      "from": "repo:Ventusltd/pipelinenews",
+      "to": "build:PIPELINE-39",
+      "kind": "plans",
+      "buildId": "PIPELINE-39",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/38/properties/ownerRepository"
+    },
+    {
+      "from": "build:PIPELINE-39",
+      "to": "module:Ventusltd/pipelinenews::cartridges/transport-outcome-receipt.mjs",
+      "kind": "proposes_module",
+      "buildId": "PIPELINE-39",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/38/properties/modulePath"
+    },
+    {
+      "from": "repo:Ventusltd/pipelinenews",
+      "to": "build:PIPELINE-40",
+      "kind": "plans",
+      "buildId": "PIPELINE-40",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/39/properties/ownerRepository"
+    },
+    {
+      "from": "build:PIPELINE-40",
+      "to": "module:Ventusltd/pipelinenews::cartridges/typed-market-instrument-adapter/index.mjs",
+      "kind": "proposes_module",
+      "buildId": "PIPELINE-40",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/39/properties/modulePath"
+    },
+    {
+      "from": "build:PIPELINE-18",
+      "to": "build:PIPELINE-40",
+      "kind": "planned_prerequisite",
+      "buildId": "PIPELINE-40",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/39/properties/dependsOn/0"
+    },
+    {
+      "from": "build:ATLAS-44",
+      "to": "build:PIPELINE-40",
+      "kind": "planned_prerequisite",
+      "buildId": "PIPELINE-40",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/39/properties/dependsOn/1"
+    },
+    {
+      "from": "repo:Ventusltd/pipelinenews",
+      "to": "build:PIPELINE-41",
+      "kind": "plans",
+      "buildId": "PIPELINE-41",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/40/properties/ownerRepository"
+    },
+    {
+      "from": "build:PIPELINE-41",
+      "to": "module:Ventusltd/pipelinenews::cartridges/served-byte-promotion-gate.mjs",
+      "kind": "proposes_module",
+      "buildId": "PIPELINE-41",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/40/properties/modulePath"
+    },
+    {
+      "from": "build:PIPELINE-37",
+      "to": "build:PIPELINE-41",
+      "kind": "planned_prerequisite",
+      "buildId": "PIPELINE-41",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/40/properties/dependsOn/0"
+    },
+    {
+      "from": "build:PIPELINE-38",
+      "to": "build:PIPELINE-41",
+      "kind": "planned_prerequisite",
+      "buildId": "PIPELINE-41",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/40/properties/dependsOn/1"
+    },
+    {
+      "from": "repo:Ventusltd/pipelinenews",
+      "to": "build:PIPELINE-42",
+      "kind": "plans",
+      "buildId": "PIPELINE-42",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/41/properties/ownerRepository"
+    },
+    {
+      "from": "build:PIPELINE-42",
+      "to": "module:Ventusltd/pipelinenews::cartridges/exact-commit-dependency-ci.mjs",
+      "kind": "proposes_module",
+      "buildId": "PIPELINE-42",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/41/properties/modulePath"
+    },
+    {
+      "from": "repo:Ventusltd/pipelinenews",
+      "to": "build:PIPELINE-43",
+      "kind": "plans",
+      "buildId": "PIPELINE-43",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/42/properties/ownerRepository"
+    },
+    {
+      "from": "build:PIPELINE-43",
+      "to": "module:Ventusltd/pipelinenews::cartridges/cartridge-source-boundary.mjs",
+      "kind": "proposes_module",
+      "buildId": "PIPELINE-43",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/42/properties/modulePath"
+    },
+    {
+      "from": "repo:Ventusltd/pipelinenews",
+      "to": "build:PIPELINE-44",
+      "kind": "plans",
+      "buildId": "PIPELINE-44",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/43/properties/ownerRepository"
+    },
+    {
+      "from": "build:PIPELINE-44",
+      "to": "module:Ventusltd/pipelinenews::cartridges/print-readiness-cartridge.mjs",
+      "kind": "proposes_module",
+      "buildId": "PIPELINE-44",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/43/properties/modulePath"
+    },
+    {
+      "from": "build:PIPELINE-36",
+      "to": "build:PIPELINE-44",
+      "kind": "planned_prerequisite",
+      "buildId": "PIPELINE-44",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/43/properties/dependsOn/0"
+    },
+    {
+      "from": "repo:Ventusltd/pipelinenews",
+      "to": "build:PIPELINE-45",
+      "kind": "plans",
+      "buildId": "PIPELINE-45",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/44/properties/ownerRepository"
+    },
+    {
+      "from": "build:PIPELINE-45",
+      "to": "module:Ventusltd/pipelinenews::cartridges/print-geometry-tests.mjs",
+      "kind": "proposes_module",
+      "buildId": "PIPELINE-45",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/44/properties/modulePath"
+    },
+    {
+      "from": "build:PIPELINE-44",
+      "to": "build:PIPELINE-45",
+      "kind": "planned_prerequisite",
+      "buildId": "PIPELINE-45",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/44/properties/dependsOn/0"
+    },
+    {
+      "from": "repo:Ventusltd/pipelinenews",
+      "to": "build:PIPELINE-46",
+      "kind": "plans",
+      "buildId": "PIPELINE-46",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/45/properties/ownerRepository"
+    },
+    {
+      "from": "build:PIPELINE-46",
+      "to": "module:Ventusltd/pipelinenews::cartridges/performance-budget-receipt.mjs",
+      "kind": "proposes_module",
+      "buildId": "PIPELINE-46",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/45/properties/modulePath"
+    },
+    {
+      "from": "build:PIPELINE-06",
+      "to": "build:PIPELINE-46",
+      "kind": "planned_prerequisite",
+      "buildId": "PIPELINE-46",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/45/properties/dependsOn/0"
+    },
+    {
+      "from": "repo:Ventusltd/pipelinenews",
+      "to": "build:PIPELINE-47",
+      "kind": "plans",
+      "buildId": "PIPELINE-47",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/46/properties/ownerRepository"
+    },
+    {
+      "from": "build:PIPELINE-47",
+      "to": "module:Ventusltd/pipelinenews::cartridges/energy-feed-attribution-ownership-panel/index.mjs",
+      "kind": "proposes_module",
+      "buildId": "PIPELINE-47",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/46/properties/modulePath"
+    },
+    {
+      "from": "source:Elexon-Insights",
+      "to": "build:PIPELINE-47",
+      "kind": "planned_source_input",
+      "buildId": "PIPELINE-47",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/46/properties/sourceFeeds/0"
+    },
+    {
+      "from": "repo:Ventusltd/spiders",
+      "to": "build:PIPELINE-48",
+      "kind": "plans",
+      "buildId": "PIPELINE-48",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/47/properties/ownerRepository"
+    },
+    {
+      "from": "build:PIPELINE-48",
+      "to": "module:Ventusltd/spiders::cartridges/ci-resume-checkpoint.mjs",
+      "kind": "proposes_module",
+      "buildId": "PIPELINE-48",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/47/properties/modulePath"
+    },
+    {
+      "from": "build:PIPELINE-42",
+      "to": "build:PIPELINE-48",
+      "kind": "planned_prerequisite",
+      "buildId": "PIPELINE-48",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/47/properties/dependsOn/0"
+    },
+    {
+      "from": "repo:Ventusltd/cvaa",
+      "to": "build:PIPELINE-49",
+      "kind": "plans",
+      "buildId": "PIPELINE-49",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/48/properties/ownerRepository"
+    },
+    {
+      "from": "build:PIPELINE-49",
+      "to": "module:Ventusltd/cvaa::cartridges/endpoint-environment-vaccine.mjs",
+      "kind": "proposes_module",
+      "buildId": "PIPELINE-49",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/48/properties/modulePath"
+    },
+    {
+      "from": "repo:Ventusltd/cvaa",
+      "to": "build:PIPELINE-50",
+      "kind": "plans",
+      "buildId": "PIPELINE-50",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/49/properties/ownerRepository"
+    },
+    {
+      "from": "build:PIPELINE-50",
+      "to": "module:Ventusltd/cvaa::cartridges/independent-proof-vaccine.mjs",
+      "kind": "proposes_module",
+      "buildId": "PIPELINE-50",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/49/properties/modulePath"
+    },
+    {
+      "from": "source:NESO-ETYS",
+      "to": "build:PIPELINE-50",
+      "kind": "planned_source_input",
+      "buildId": "PIPELINE-50",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/49/properties/sourceFeeds/0"
+    },
+    {
+      "from": "build:PIPELINE-49",
+      "to": "build:PIPELINE-50",
+      "kind": "planned_prerequisite",
+      "buildId": "PIPELINE-50",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/49/properties/dependsOn/0"
+    },
+    {
+      "from": "repo:Ventusltd/gis-sld-sandbox",
+      "to": "build:ATLAS-01",
+      "kind": "plans",
+      "buildId": "ATLAS-01",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/50/properties/ownerRepository"
+    },
+    {
+      "from": "build:ATLAS-01",
+      "to": "module:Ventusltd/gis-sld-sandbox::cartridges/dom-frame/index.mjs",
+      "kind": "proposes_module",
+      "buildId": "ATLAS-01",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/50/properties/modulePath"
+    },
+    {
+      "from": "repo:Ventusltd/teleprinter",
+      "to": "build:ATLAS-02",
+      "kind": "plans",
+      "buildId": "ATLAS-02",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/51/properties/ownerRepository"
+    },
+    {
+      "from": "build:ATLAS-02",
+      "to": "module:Ventusltd/teleprinter::cartridges/layer-pdf/index.mjs",
+      "kind": "proposes_module",
+      "buildId": "ATLAS-02",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/51/properties/modulePath"
+    },
+    {
+      "from": "build:ATLAS-01",
+      "to": "build:ATLAS-02",
+      "kind": "planned_prerequisite",
+      "buildId": "ATLAS-02",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/51/properties/dependsOn/0"
+    },
+    {
+      "from": "repo:Ventusltd/teleprinter",
+      "to": "build:ATLAS-03",
+      "kind": "plans",
+      "buildId": "ATLAS-03",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/52/properties/ownerRepository"
+    },
+    {
+      "from": "build:ATLAS-03",
+      "to": "module:Ventusltd/teleprinter::cartridges/pipeline-clipping/index.mjs",
+      "kind": "proposes_module",
+      "buildId": "ATLAS-03",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/52/properties/modulePath"
+    },
+    {
+      "from": "repo:Ventusltd/teleprinter",
+      "to": "build:ATLAS-04",
+      "kind": "plans",
+      "buildId": "ATLAS-04",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/53/properties/ownerRepository"
+    },
+    {
+      "from": "build:ATLAS-04",
+      "to": "module:Ventusltd/teleprinter::cartridges/source-budget/index.mjs",
+      "kind": "proposes_module",
+      "buildId": "ATLAS-04",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/53/properties/modulePath"
+    },
+    {
+      "from": "repo:Ventusltd/testcode",
+      "to": "build:ATLAS-05",
+      "kind": "plans",
+      "buildId": "ATLAS-05",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/54/properties/ownerRepository"
+    },
+    {
+      "from": "build:ATLAS-05",
+      "to": "module:Ventusltd/testcode::cartridges/source-entry/index.mjs",
+      "kind": "proposes_module",
+      "buildId": "ATLAS-05",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/54/properties/modulePath"
+    },
+    {
+      "from": "build:ATLAS-04",
+      "to": "build:ATLAS-05",
+      "kind": "planned_prerequisite",
+      "buildId": "ATLAS-05",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/54/properties/dependsOn/0"
+    },
+    {
+      "from": "repo:Ventusltd/testcode",
+      "to": "build:ATLAS-06",
+      "kind": "plans",
+      "buildId": "ATLAS-06",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/55/properties/ownerRepository"
+    },
+    {
+      "from": "build:ATLAS-06",
+      "to": "module:Ventusltd/testcode::cartridges/layer-menu-text/index.mjs",
+      "kind": "proposes_module",
+      "buildId": "ATLAS-06",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/55/properties/modulePath"
+    },
+    {
+      "from": "repo:Ventusltd/gridatlas",
+      "to": "build:ATLAS-07",
+      "kind": "plans",
+      "buildId": "ATLAS-07",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/56/properties/ownerRepository"
+    },
+    {
+      "from": "build:ATLAS-07",
+      "to": "module:Ventusltd/gridatlas::cartridges/grid-switch/index.mjs",
+      "kind": "proposes_module",
+      "buildId": "ATLAS-07",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/56/properties/modulePath"
+    },
+    {
+      "from": "repo:Ventusltd/gridatlas",
+      "to": "build:ATLAS-08",
+      "kind": "plans",
+      "buildId": "ATLAS-08",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/57/properties/ownerRepository"
+    },
+    {
+      "from": "build:ATLAS-08",
+      "to": "module:Ventusltd/gridatlas::cartridges/subs-switch/index.mjs",
+      "kind": "proposes_module",
+      "buildId": "ATLAS-08",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/57/properties/modulePath"
+    },
+    {
+      "from": "build:ATLAS-07",
+      "to": "build:ATLAS-08",
+      "kind": "planned_prerequisite",
+      "buildId": "ATLAS-08",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/57/properties/dependsOn/0"
+    },
+    {
+      "from": "repo:Ventusltd/gridatlas",
+      "to": "build:ATLAS-09",
+      "kind": "plans",
+      "buildId": "ATLAS-09",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/58/properties/ownerRepository"
+    },
+    {
+      "from": "build:ATLAS-09",
+      "to": "module:Ventusltd/gridatlas::cartridges/layer-defaults/index.mjs",
+      "kind": "proposes_module",
+      "buildId": "ATLAS-09",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/58/properties/modulePath"
+    },
+    {
+      "from": "source:NESO-ETYS",
+      "to": "build:ATLAS-09",
+      "kind": "planned_source_input",
+      "buildId": "ATLAS-09",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/58/properties/sourceFeeds/0"
+    },
+    {
+      "from": "repo:Ventusltd/gridatlas",
+      "to": "build:ATLAS-10",
+      "kind": "plans",
+      "buildId": "ATLAS-10",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/59/properties/ownerRepository"
+    },
+    {
+      "from": "build:ATLAS-10",
+      "to": "module:Ventusltd/gridatlas::cartridges/control-safe-area/index.mjs",
+      "kind": "proposes_module",
+      "buildId": "ATLAS-10",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/59/properties/modulePath"
+    },
+    {
+      "from": "build:ATLAS-07",
+      "to": "build:ATLAS-10",
+      "kind": "planned_prerequisite",
+      "buildId": "ATLAS-10",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/59/properties/dependsOn/0"
+    },
+    {
+      "from": "build:ATLAS-08",
+      "to": "build:ATLAS-10",
+      "kind": "planned_prerequisite",
+      "buildId": "ATLAS-10",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/59/properties/dependsOn/1"
+    },
+    {
+      "from": "build:ATLAS-09",
+      "to": "build:ATLAS-10",
+      "kind": "planned_prerequisite",
+      "buildId": "ATLAS-10",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/59/properties/dependsOn/2"
+    },
+    {
+      "from": "repo:Ventusltd/gridatlas",
+      "to": "build:ATLAS-11",
+      "kind": "plans",
+      "buildId": "ATLAS-11",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/60/properties/ownerRepository"
+    },
+    {
+      "from": "build:ATLAS-11",
+      "to": "module:Ventusltd/gridatlas::cartridges/loader-hash/index.mjs",
+      "kind": "proposes_module",
+      "buildId": "ATLAS-11",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/60/properties/modulePath"
+    },
+    {
+      "from": "repo:Ventusltd/gridatlas",
+      "to": "build:ATLAS-12",
+      "kind": "plans",
+      "buildId": "ATLAS-12",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/61/properties/ownerRepository"
+    },
+    {
+      "from": "build:ATLAS-12",
+      "to": "module:Ventusltd/gridatlas::cartridges/cartridge-dependencies/index.mjs",
+      "kind": "proposes_module",
+      "buildId": "ATLAS-12",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/61/properties/modulePath"
+    },
+    {
+      "from": "build:ATLAS-11",
+      "to": "build:ATLAS-12",
+      "kind": "planned_prerequisite",
+      "buildId": "ATLAS-12",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/61/properties/dependsOn/0"
+    },
+    {
+      "from": "repo:Ventusltd/gridatlas",
+      "to": "build:ATLAS-13",
+      "kind": "plans",
+      "buildId": "ATLAS-13",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/62/properties/ownerRepository"
+    },
+    {
+      "from": "build:ATLAS-13",
+      "to": "module:Ventusltd/gridatlas::cartridges/layer-lifecycle/index.mjs",
+      "kind": "proposes_module",
+      "buildId": "ATLAS-13",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/62/properties/modulePath"
+    },
+    {
+      "from": "repo:Ventusltd/gis-sld-sandbox",
+      "to": "build:ATLAS-14",
+      "kind": "plans",
+      "buildId": "ATLAS-14",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/63/properties/ownerRepository"
+    },
+    {
+      "from": "build:ATLAS-14",
+      "to": "module:Ventusltd/gis-sld-sandbox::cartridges/original-parity/index.mjs",
+      "kind": "proposes_module",
+      "buildId": "ATLAS-14",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/63/properties/modulePath"
+    },
+    {
+      "from": "repo:Ventusltd/gis-sld-sandbox",
+      "to": "build:ATLAS-15",
+      "kind": "plans",
+      "buildId": "ATLAS-15",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/64/properties/ownerRepository"
+    },
+    {
+      "from": "build:ATLAS-15",
+      "to": "module:Ventusltd/gis-sld-sandbox::cartridges/route-persistence/index.mjs",
+      "kind": "proposes_module",
+      "buildId": "ATLAS-15",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/64/properties/modulePath"
+    },
+    {
+      "from": "build:ATLAS-14",
+      "to": "build:ATLAS-15",
+      "kind": "planned_prerequisite",
+      "buildId": "ATLAS-15",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/64/properties/dependsOn/0"
+    },
+    {
+      "from": "repo:Ventusltd/gis-sld-sandbox",
+      "to": "build:ATLAS-16",
+      "kind": "plans",
+      "buildId": "ATLAS-16",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/65/properties/ownerRepository"
+    },
+    {
+      "from": "build:ATLAS-16",
+      "to": "module:Ventusltd/gis-sld-sandbox::cartridges/route-undo/index.mjs",
+      "kind": "proposes_module",
+      "buildId": "ATLAS-16",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/65/properties/modulePath"
+    },
+    {
+      "from": "build:ATLAS-15",
+      "to": "build:ATLAS-16",
+      "kind": "planned_prerequisite",
+      "buildId": "ATLAS-16",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/65/properties/dependsOn/0"
+    },
+    {
+      "from": "repo:Ventusltd/layout-tool",
+      "to": "build:ATLAS-17",
+      "kind": "plans",
+      "buildId": "ATLAS-17",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/66/properties/ownerRepository"
+    },
+    {
+      "from": "build:ATLAS-17",
+      "to": "module:Ventusltd/layout-tool::cartridges/placement-state/index.mjs",
+      "kind": "proposes_module",
+      "buildId": "ATLAS-17",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/66/properties/modulePath"
+    },
+    {
+      "from": "repo:Ventusltd/layout-tool",
+      "to": "build:ATLAS-18",
+      "kind": "plans",
+      "buildId": "ATLAS-18",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/67/properties/ownerRepository"
+    },
+    {
+      "from": "build:ATLAS-18",
+      "to": "module:Ventusltd/layout-tool::cartridges/placement-export/index.mjs",
+      "kind": "proposes_module",
+      "buildId": "ATLAS-18",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/67/properties/modulePath"
+    },
+    {
+      "from": "build:ATLAS-17",
+      "to": "build:ATLAS-18",
+      "kind": "planned_prerequisite",
+      "buildId": "ATLAS-18",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/67/properties/dependsOn/0"
+    },
+    {
+      "from": "repo:Ventusltd/cable-trench-or-drill",
+      "to": "build:ATLAS-19",
+      "kind": "plans",
+      "buildId": "ATLAS-19",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/68/properties/ownerRepository"
+    },
+    {
+      "from": "build:ATLAS-19",
+      "to": "module:Ventusltd/cable-trench-or-drill::cartridges/geometry-state/index.mjs",
+      "kind": "proposes_module",
+      "buildId": "ATLAS-19",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/68/properties/modulePath"
+    },
+    {
+      "from": "repo:Ventusltd/ventus-grid-engine",
+      "to": "build:ATLAS-20",
+      "kind": "plans",
+      "buildId": "ATLAS-20",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/69/properties/ownerRepository"
+    },
+    {
+      "from": "build:ATLAS-20",
+      "to": "module:Ventusltd/ventus-grid-engine::cartridges/first-pass-contract/index.mjs",
+      "kind": "proposes_module",
+      "buildId": "ATLAS-20",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/69/properties/modulePath"
+    },
+    {
+      "from": "repo:Ventusltd/ventus-grid-engine",
+      "to": "build:ATLAS-21",
+      "kind": "plans",
+      "buildId": "ATLAS-21",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/70/properties/ownerRepository"
+    },
+    {
+      "from": "build:ATLAS-21",
+      "to": "module:Ventusltd/ventus-grid-engine::cartridges/route-comparison/index.mjs",
+      "kind": "proposes_module",
+      "buildId": "ATLAS-21",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/70/properties/modulePath"
+    },
+    {
+      "from": "build:ATLAS-20",
+      "to": "build:ATLAS-21",
+      "kind": "planned_prerequisite",
+      "buildId": "ATLAS-21",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/70/properties/dependsOn/0"
+    },
+    {
+      "from": "repo:Ventusltd/gis-sld-sandbox",
+      "to": "build:ATLAS-22",
+      "kind": "plans",
+      "buildId": "ATLAS-22",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/71/properties/ownerRepository"
+    },
+    {
+      "from": "build:ATLAS-22",
+      "to": "module:Ventusltd/gis-sld-sandbox::cartridges/route-provenance/index.mjs",
+      "kind": "proposes_module",
+      "buildId": "ATLAS-22",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/71/properties/modulePath"
+    },
+    {
+      "from": "build:ATLAS-15",
+      "to": "build:ATLAS-22",
+      "kind": "planned_prerequisite",
+      "buildId": "ATLAS-22",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/71/properties/dependsOn/0"
+    },
+    {
+      "from": "repo:Ventusltd/spiders",
+      "to": "build:ATLAS-23",
+      "kind": "plans",
+      "buildId": "ATLAS-23",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/72/properties/ownerRepository"
+    },
+    {
+      "from": "build:ATLAS-23",
+      "to": "module:Ventusltd/spiders::cartridges/road-classification/index.mjs",
+      "kind": "proposes_module",
+      "buildId": "ATLAS-23",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/72/properties/modulePath"
+    },
+    {
+      "from": "source:road-data-provider-pending",
+      "to": "build:ATLAS-23",
+      "kind": "planned_source_input",
+      "buildId": "ATLAS-23",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/72/properties/sourceFeeds/0"
+    },
+    {
+      "from": "repo:Ventusltd/spiders",
+      "to": "build:ATLAS-24",
+      "kind": "plans",
+      "buildId": "ATLAS-24",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/73/properties/ownerRepository"
+    },
+    {
+      "from": "build:ATLAS-24",
+      "to": "module:Ventusltd/spiders::cartridges/river-crossings/index.mjs",
+      "kind": "proposes_module",
+      "buildId": "ATLAS-24",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/73/properties/modulePath"
+    },
+    {
+      "from": "source:river-data-provider-pending",
+      "to": "build:ATLAS-24",
+      "kind": "planned_source_input",
+      "buildId": "ATLAS-24",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/73/properties/sourceFeeds/0"
+    },
+    {
+      "from": "repo:Ventusltd/spiders",
+      "to": "build:ATLAS-25",
+      "kind": "plans",
+      "buildId": "ATLAS-25",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/74/properties/ownerRepository"
+    },
+    {
+      "from": "build:ATLAS-25",
+      "to": "module:Ventusltd/spiders::cartridges/rail-crossings/index.mjs",
+      "kind": "proposes_module",
+      "buildId": "ATLAS-25",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/74/properties/modulePath"
+    },
+    {
+      "from": "source:rail-data-provider-pending",
+      "to": "build:ATLAS-25",
+      "kind": "planned_source_input",
+      "buildId": "ATLAS-25",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/74/properties/sourceFeeds/0"
+    },
+    {
+      "from": "repo:Ventusltd/gridatlas",
+      "to": "build:ATLAS-26",
+      "kind": "plans",
+      "buildId": "ATLAS-26",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/75/properties/ownerRepository"
+    },
+    {
+      "from": "build:ATLAS-26",
+      "to": "module:Ventusltd/gridatlas::cartridges/route-constraints/index.mjs",
+      "kind": "proposes_module",
+      "buildId": "ATLAS-26",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/75/properties/modulePath"
+    },
+    {
+      "from": "source:road-data-provider-pending",
+      "to": "build:ATLAS-26",
+      "kind": "planned_source_input",
+      "buildId": "ATLAS-26",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/75/properties/sourceFeeds/0"
+    },
+    {
+      "from": "source:rail-data-provider-pending",
+      "to": "build:ATLAS-26",
+      "kind": "planned_source_input",
+      "buildId": "ATLAS-26",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/75/properties/sourceFeeds/1"
+    },
+    {
+      "from": "source:river-data-provider-pending",
+      "to": "build:ATLAS-26",
+      "kind": "planned_source_input",
+      "buildId": "ATLAS-26",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/75/properties/sourceFeeds/2"
+    },
+    {
+      "from": "build:ATLAS-23",
+      "to": "build:ATLAS-26",
+      "kind": "planned_prerequisite",
+      "buildId": "ATLAS-26",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/75/properties/dependsOn/0"
+    },
+    {
+      "from": "build:ATLAS-24",
+      "to": "build:ATLAS-26",
+      "kind": "planned_prerequisite",
+      "buildId": "ATLAS-26",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/75/properties/dependsOn/1"
+    },
+    {
+      "from": "build:ATLAS-25",
+      "to": "build:ATLAS-26",
+      "kind": "planned_prerequisite",
+      "buildId": "ATLAS-26",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/75/properties/dependsOn/2"
+    },
+    {
+      "from": "repo:Ventusltd/ventus-grid-engine",
+      "to": "build:ATLAS-27",
+      "kind": "plans",
+      "buildId": "ATLAS-27",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/76/properties/ownerRepository"
+    },
+    {
+      "from": "build:ATLAS-27",
+      "to": "module:Ventusltd/ventus-grid-engine::cartridges/route-alternatives/index.mjs",
+      "kind": "proposes_module",
+      "buildId": "ATLAS-27",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/76/properties/modulePath"
+    },
+    {
+      "from": "build:ATLAS-20",
+      "to": "build:ATLAS-27",
+      "kind": "planned_prerequisite",
+      "buildId": "ATLAS-27",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/76/properties/dependsOn/0"
+    },
+    {
+      "from": "build:ATLAS-21",
+      "to": "build:ATLAS-27",
+      "kind": "planned_prerequisite",
+      "buildId": "ATLAS-27",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/76/properties/dependsOn/1"
+    },
+    {
+      "from": "build:ATLAS-26",
+      "to": "build:ATLAS-27",
+      "kind": "planned_prerequisite",
+      "buildId": "ATLAS-27",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/76/properties/dependsOn/2"
+    },
+    {
+      "from": "repo:Ventusltd/cable-trench-or-drill",
+      "to": "build:ATLAS-28",
+      "kind": "plans",
+      "buildId": "ATLAS-28",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/77/properties/ownerRepository"
+    },
+    {
+      "from": "build:ATLAS-28",
+      "to": "module:Ventusltd/cable-trench-or-drill::cartridges/trench-scenario/index.mjs",
+      "kind": "proposes_module",
+      "buildId": "ATLAS-28",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/77/properties/modulePath"
+    },
+    {
+      "from": "repo:Ventusltd/cable-trench-or-drill",
+      "to": "build:ATLAS-29",
+      "kind": "plans",
+      "buildId": "ATLAS-29",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/78/properties/ownerRepository"
+    },
+    {
+      "from": "build:ATLAS-29",
+      "to": "module:Ventusltd/cable-trench-or-drill::cartridges/hdd-scenario/index.mjs",
+      "kind": "proposes_module",
+      "buildId": "ATLAS-29",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/78/properties/modulePath"
+    },
+    {
+      "from": "repo:Ventusltd/cable-trench-or-drill",
+      "to": "build:ATLAS-30",
+      "kind": "plans",
+      "buildId": "ATLAS-30",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/79/properties/ownerRepository"
+    },
+    {
+      "from": "build:ATLAS-30",
+      "to": "module:Ventusltd/cable-trench-or-drill::cartridges/crossing-method/index.mjs",
+      "kind": "proposes_module",
+      "buildId": "ATLAS-30",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/79/properties/modulePath"
+    },
+    {
+      "from": "build:ATLAS-19",
+      "to": "build:ATLAS-30",
+      "kind": "planned_prerequisite",
+      "buildId": "ATLAS-30",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/79/properties/dependsOn/0"
+    },
+    {
+      "from": "build:ATLAS-28",
+      "to": "build:ATLAS-30",
+      "kind": "planned_prerequisite",
+      "buildId": "ATLAS-30",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/79/properties/dependsOn/1"
+    },
+    {
+      "from": "build:ATLAS-29",
+      "to": "build:ATLAS-30",
+      "kind": "planned_prerequisite",
+      "buildId": "ATLAS-30",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/79/properties/dependsOn/2"
+    },
+    {
+      "from": "repo:Ventusltd/gis-sld-sandbox",
+      "to": "build:ATLAS-31",
+      "kind": "plans",
+      "buildId": "ATLAS-31",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/80/properties/ownerRepository"
+    },
+    {
+      "from": "build:ATLAS-31",
+      "to": "module:Ventusltd/gis-sld-sandbox::cartridges/route-cost-basis/index.mjs",
+      "kind": "proposes_module",
+      "buildId": "ATLAS-31",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/80/properties/modulePath"
+    },
+    {
+      "from": "build:ATLAS-21",
+      "to": "build:ATLAS-31",
+      "kind": "planned_prerequisite",
+      "buildId": "ATLAS-31",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/80/properties/dependsOn/0"
+    },
+    {
+      "from": "build:ATLAS-30",
+      "to": "build:ATLAS-31",
+      "kind": "planned_prerequisite",
+      "buildId": "ATLAS-31",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/80/properties/dependsOn/1"
+    },
+    {
+      "from": "repo:Ventusltd/ventus-grid-engine",
+      "to": "build:ATLAS-32",
+      "kind": "plans",
+      "buildId": "ATLAS-32",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/81/properties/ownerRepository"
+    },
+    {
+      "from": "build:ATLAS-32",
+      "to": "module:Ventusltd/ventus-grid-engine::cartridges/published-fault-adapter/index.mjs",
+      "kind": "proposes_module",
+      "buildId": "ATLAS-32",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/81/properties/modulePath"
+    },
+    {
+      "from": "source:NESO-ETYS",
+      "to": "build:ATLAS-32",
+      "kind": "planned_source_input",
+      "buildId": "ATLAS-32",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/81/properties/sourceFeeds/0"
+    },
+    {
+      "from": "repo:Ventusltd/gridatlas",
+      "to": "build:ATLAS-33",
+      "kind": "plans",
+      "buildId": "ATLAS-33",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/82/properties/ownerRepository"
+    },
+    {
+      "from": "build:ATLAS-33",
+      "to": "module:Ventusltd/gridatlas::cartridges/fault-evidence-layer/index.mjs",
+      "kind": "proposes_module",
+      "buildId": "ATLAS-33",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/82/properties/modulePath"
+    },
+    {
+      "from": "source:NESO-ETYS",
+      "to": "build:ATLAS-33",
+      "kind": "planned_source_input",
+      "buildId": "ATLAS-33",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/82/properties/sourceFeeds/0"
+    },
+    {
+      "from": "build:ATLAS-32",
+      "to": "build:ATLAS-33",
+      "kind": "planned_prerequisite",
+      "buildId": "ATLAS-33",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/82/properties/dependsOn/0"
+    },
+    {
+      "from": "build:ATLAS-34",
+      "to": "build:ATLAS-33",
+      "kind": "planned_prerequisite",
+      "buildId": "ATLAS-33",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/82/properties/dependsOn/1"
+    },
+    {
+      "from": "repo:Ventusltd/data-grid-gb",
+      "to": "build:ATLAS-34",
+      "kind": "plans",
+      "buildId": "ATLAS-34",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/83/properties/ownerRepository"
+    },
+    {
+      "from": "build:ATLAS-34",
+      "to": "module:Ventusltd/data-grid-gb::cartridges/connection-identity/index.mjs",
+      "kind": "proposes_module",
+      "buildId": "ATLAS-34",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/83/properties/modulePath"
+    },
+    {
+      "from": "repo:Ventusltd/gridatlas",
+      "to": "build:ATLAS-35",
+      "kind": "plans",
+      "buildId": "ATLAS-35",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/84/properties/ownerRepository"
+    },
+    {
+      "from": "build:ATLAS-35",
+      "to": "module:Ventusltd/gridatlas::cartridges/network-lineage/index.mjs",
+      "kind": "proposes_module",
+      "buildId": "ATLAS-35",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/84/properties/modulePath"
+    },
+    {
+      "from": "build:ATLAS-34",
+      "to": "build:ATLAS-35",
+      "kind": "planned_prerequisite",
+      "buildId": "ATLAS-35",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/84/properties/dependsOn/0"
+    },
+    {
+      "from": "repo:Ventusltd/spiders",
+      "to": "build:ATLAS-36",
+      "kind": "plans",
+      "buildId": "ATLAS-36",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/85/properties/ownerRepository"
+    },
+    {
+      "from": "build:ATLAS-36",
+      "to": "module:Ventusltd/spiders::cartridges/repd-status-delta/index.mjs",
+      "kind": "proposes_module",
+      "buildId": "ATLAS-36",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/85/properties/modulePath"
+    },
+    {
+      "from": "source:DESNZ-REPD",
+      "to": "build:ATLAS-36",
+      "kind": "planned_source_input",
+      "buildId": "ATLAS-36",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/85/properties/sourceFeeds/0"
+    },
+    {
+      "from": "repo:Ventusltd/spiders",
+      "to": "build:ATLAS-37",
+      "kind": "plans",
+      "buildId": "ATLAS-37",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/86/properties/ownerRepository"
+    },
+    {
+      "from": "build:ATLAS-37",
+      "to": "module:Ventusltd/spiders::cartridges/user-evidence/index.mjs",
+      "kind": "proposes_module",
+      "buildId": "ATLAS-37",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/86/properties/modulePath"
+    },
+    {
+      "from": "repo:Ventusltd/cvaa",
+      "to": "build:ATLAS-38",
+      "kind": "plans",
+      "buildId": "ATLAS-38",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/87/properties/ownerRepository"
+    },
+    {
+      "from": "build:ATLAS-38",
+      "to": "module:Ventusltd/cvaa::cartridges/evidence-conflict/index.mjs",
+      "kind": "proposes_module",
+      "buildId": "ATLAS-38",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/87/properties/modulePath"
+    },
+    {
+      "from": "build:ATLAS-37",
+      "to": "build:ATLAS-38",
+      "kind": "planned_prerequisite",
+      "buildId": "ATLAS-38",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/87/properties/dependsOn/0"
+    },
+    {
+      "from": "repo:Ventusltd/gridatlas",
+      "to": "build:ATLAS-39",
+      "kind": "plans",
+      "buildId": "ATLAS-39",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/88/properties/ownerRepository"
+    },
+    {
+      "from": "build:ATLAS-39",
+      "to": "module:Ventusltd/gridatlas::cartridges/weekly-electricity/index.mjs",
+      "kind": "proposes_module",
+      "buildId": "ATLAS-39",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/88/properties/modulePath"
+    },
+    {
+      "from": "source:Elexon-Insights",
+      "to": "build:ATLAS-39",
+      "kind": "planned_source_input",
+      "buildId": "ATLAS-39",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/88/properties/sourceFeeds/0"
+    },
+    {
+      "from": "build:PIPELINE-34",
+      "to": "build:ATLAS-39",
+      "kind": "planned_prerequisite",
+      "buildId": "ATLAS-39",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/88/properties/dependsOn/0"
+    },
+    {
+      "from": "repo:Ventusltd/gridatlas",
+      "to": "build:ATLAS-40",
+      "kind": "plans",
+      "buildId": "ATLAS-40",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/89/properties/ownerRepository"
+    },
+    {
+      "from": "build:ATLAS-40",
+      "to": "module:Ventusltd/gridatlas::cartridges/weekly-pv/index.mjs",
+      "kind": "proposes_module",
+      "buildId": "ATLAS-40",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/89/properties/modulePath"
+    },
+    {
+      "from": "source:Sheffield-PVLive",
+      "to": "build:ATLAS-40",
+      "kind": "planned_source_input",
+      "buildId": "ATLAS-40",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/89/properties/sourceFeeds/0"
+    },
+    {
+      "from": "build:PIPELINE-31",
+      "to": "build:ATLAS-40",
+      "kind": "planned_prerequisite",
+      "buildId": "ATLAS-40",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/89/properties/dependsOn/0"
+    },
+    {
+      "from": "repo:Ventusltd/spiders",
+      "to": "build:ATLAS-41",
+      "kind": "plans",
+      "buildId": "ATLAS-41",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/90/properties/ownerRepository"
+    },
+    {
+      "from": "build:ATLAS-41",
+      "to": "module:Ventusltd/spiders::species/market-spider/metals/index.mjs",
+      "kind": "proposes_module",
+      "buildId": "ATLAS-41",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/90/properties/modulePath"
+    },
+    {
+      "from": "source:metal-market-provider-pending",
+      "to": "build:ATLAS-41",
+      "kind": "planned_source_input",
+      "buildId": "ATLAS-41",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/90/properties/sourceFeeds/0"
+    },
+    {
+      "from": "migration:Ventusltd/globalgrid2050@a7fb24c22decd71166a6f9d1265b06c87425d9eb::.github/workflows/update_prices.yml",
+      "to": "build:ATLAS-41",
+      "kind": "migration_source",
+      "buildId": "ATLAS-41",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/90/properties/migration/files/0",
+      "sourceCommit": "a7fb24c22decd71166a6f9d1265b06c87425d9eb",
+      "sourceRepository": "Ventusltd/globalgrid2050"
+    },
+    {
+      "from": "migration:Ventusltd/globalgrid2050@a7fb24c22decd71166a6f9d1265b06c87425d9eb::scripts/update_prices_lv.py",
+      "to": "build:ATLAS-41",
+      "kind": "migration_source",
+      "buildId": "ATLAS-41",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/90/properties/migration/files/1",
+      "sourceCommit": "a7fb24c22decd71166a6f9d1265b06c87425d9eb",
+      "sourceRepository": "Ventusltd/globalgrid2050"
+    },
+    {
+      "from": "migration:Ventusltd/globalgrid2050@a7fb24c22decd71166a6f9d1265b06c87425d9eb::scripts/update_prices.py",
+      "to": "build:ATLAS-41",
+      "kind": "migration_source",
+      "buildId": "ATLAS-41",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/90/properties/migration/files/2",
+      "sourceCommit": "a7fb24c22decd71166a6f9d1265b06c87425d9eb",
+      "sourceRepository": "Ventusltd/globalgrid2050"
+    },
+    {
+      "from": "migration:Ventusltd/globalgrid2050@a7fb24c22decd71166a6f9d1265b06c87425d9eb::scripts/update_metal_trends.py",
+      "to": "build:ATLAS-41",
+      "kind": "migration_source",
+      "buildId": "ATLAS-41",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/90/properties/migration/files/3",
+      "sourceCommit": "a7fb24c22decd71166a6f9d1265b06c87425d9eb",
+      "sourceRepository": "Ventusltd/globalgrid2050"
+    },
+    {
+      "from": "migration:Ventusltd/globalgrid2050@a7fb24c22decd71166a6f9d1265b06c87425d9eb::scripts/update_commodities_v5.py",
+      "to": "build:ATLAS-41",
+      "kind": "migration_source",
+      "buildId": "ATLAS-41",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/90/properties/migration/files/4",
+      "sourceCommit": "a7fb24c22decd71166a6f9d1265b06c87425d9eb",
+      "sourceRepository": "Ventusltd/globalgrid2050"
+    },
+    {
+      "from": "migration:Ventusltd/globalgrid2050@a7fb24c22decd71166a6f9d1265b06c87425d9eb::.github/workflows/update_prices.yml",
+      "to": "migration:Ventusltd/globalgrid2050@a7fb24c22decd71166a6f9d1265b06c87425d9eb::scripts/update_prices_lv.py",
+      "kind": "runs_script",
+      "buildId": "ATLAS-41",
+      "classification": "declared_from_source",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/90/properties/migration/dependencies/0",
+      "sourceCommit": "a7fb24c22decd71166a6f9d1265b06c87425d9eb",
+      "sourceRepository": "Ventusltd/globalgrid2050",
+      "evidence": ".github/workflows/update_prices.yml: run command"
+    },
+    {
+      "from": "migration:Ventusltd/globalgrid2050@a7fb24c22decd71166a6f9d1265b06c87425d9eb::.github/workflows/update_prices.yml",
+      "to": "migration:Ventusltd/globalgrid2050@a7fb24c22decd71166a6f9d1265b06c87425d9eb::scripts/update_prices.py",
+      "kind": "runs_script",
+      "buildId": "ATLAS-41",
+      "classification": "declared_from_source",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/90/properties/migration/dependencies/1",
+      "sourceCommit": "a7fb24c22decd71166a6f9d1265b06c87425d9eb",
+      "sourceRepository": "Ventusltd/globalgrid2050",
+      "evidence": ".github/workflows/update_prices.yml: run command"
+    },
+    {
+      "from": "migration:Ventusltd/globalgrid2050@a7fb24c22decd71166a6f9d1265b06c87425d9eb::.github/workflows/update_prices.yml",
+      "to": "migration:Ventusltd/globalgrid2050@a7fb24c22decd71166a6f9d1265b06c87425d9eb::scripts/update_metal_trends.py",
+      "kind": "runs_script",
+      "buildId": "ATLAS-41",
+      "classification": "declared_from_source",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/90/properties/migration/dependencies/2",
+      "sourceCommit": "a7fb24c22decd71166a6f9d1265b06c87425d9eb",
+      "sourceRepository": "Ventusltd/globalgrid2050",
+      "evidence": ".github/workflows/update_prices.yml: run command"
+    },
+    {
+      "from": "migration:Ventusltd/globalgrid2050@a7fb24c22decd71166a6f9d1265b06c87425d9eb::.github/workflows/update_prices.yml",
+      "to": "migration:Ventusltd/globalgrid2050@a7fb24c22decd71166a6f9d1265b06c87425d9eb::scripts/update_commodities_v5.py",
+      "kind": "runs_script",
+      "buildId": "ATLAS-41",
+      "classification": "declared_from_source",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/90/properties/migration/dependencies/3",
+      "sourceCommit": "a7fb24c22decd71166a6f9d1265b06c87425d9eb",
+      "sourceRepository": "Ventusltd/globalgrid2050",
+      "evidence": ".github/workflows/update_prices.yml: run command"
+    },
+    {
+      "from": "build:ATLAS-41",
+      "to": "repo:Ventusltd/spiders",
+      "kind": "planned_destination",
+      "buildId": "ATLAS-41",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/90/properties/migration/destinationRepository",
+      "destinationPath": "species/market-spider/metals/index.mjs",
+      "transferStatus": "blocked_pending_dependency_audit"
+    },
+    {
+      "from": "repo:Ventusltd/spiders",
+      "to": "build:ATLAS-42",
+      "kind": "plans",
+      "buildId": "ATLAS-42",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/91/properties/ownerRepository"
+    },
+    {
+      "from": "build:ATLAS-42",
+      "to": "module:Ventusltd/spiders::species/market-spider/fx/index.mjs",
+      "kind": "proposes_module",
+      "buildId": "ATLAS-42",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/91/properties/modulePath"
+    },
+    {
+      "from": "source:ExchangeRate-API",
+      "to": "build:ATLAS-42",
+      "kind": "planned_source_input",
+      "buildId": "ATLAS-42",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/91/properties/sourceFeeds/0"
+    },
+    {
+      "from": "migration:Ventusltd/globalgrid2050@a7fb24c22decd71166a6f9d1265b06c87425d9eb::.github/workflows/update_prices.yml",
+      "to": "build:ATLAS-42",
+      "kind": "migration_source",
+      "buildId": "ATLAS-42",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/91/properties/migration/files/0",
+      "sourceCommit": "a7fb24c22decd71166a6f9d1265b06c87425d9eb",
+      "sourceRepository": "Ventusltd/globalgrid2050"
+    },
+    {
+      "from": "migration:Ventusltd/globalgrid2050@a7fb24c22decd71166a6f9d1265b06c87425d9eb::scripts/update_prices_lv.py",
+      "to": "build:ATLAS-42",
+      "kind": "migration_source",
+      "buildId": "ATLAS-42",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/91/properties/migration/files/1",
+      "sourceCommit": "a7fb24c22decd71166a6f9d1265b06c87425d9eb",
+      "sourceRepository": "Ventusltd/globalgrid2050"
+    },
+    {
+      "from": "migration:Ventusltd/globalgrid2050@a7fb24c22decd71166a6f9d1265b06c87425d9eb::scripts/update_prices.py",
+      "to": "build:ATLAS-42",
+      "kind": "migration_source",
+      "buildId": "ATLAS-42",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/91/properties/migration/files/2",
+      "sourceCommit": "a7fb24c22decd71166a6f9d1265b06c87425d9eb",
+      "sourceRepository": "Ventusltd/globalgrid2050"
+    },
+    {
+      "from": "migration:Ventusltd/globalgrid2050@a7fb24c22decd71166a6f9d1265b06c87425d9eb::scripts/update_metal_trends.py",
+      "to": "build:ATLAS-42",
+      "kind": "migration_source",
+      "buildId": "ATLAS-42",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/91/properties/migration/files/3",
+      "sourceCommit": "a7fb24c22decd71166a6f9d1265b06c87425d9eb",
+      "sourceRepository": "Ventusltd/globalgrid2050"
+    },
+    {
+      "from": "migration:Ventusltd/globalgrid2050@a7fb24c22decd71166a6f9d1265b06c87425d9eb::scripts/update_commodities_v5.py",
+      "to": "build:ATLAS-42",
+      "kind": "migration_source",
+      "buildId": "ATLAS-42",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/91/properties/migration/files/4",
+      "sourceCommit": "a7fb24c22decd71166a6f9d1265b06c87425d9eb",
+      "sourceRepository": "Ventusltd/globalgrid2050"
+    },
+    {
+      "from": "migration:Ventusltd/globalgrid2050@a7fb24c22decd71166a6f9d1265b06c87425d9eb::.github/workflows/update_prices.yml",
+      "to": "migration:Ventusltd/globalgrid2050@a7fb24c22decd71166a6f9d1265b06c87425d9eb::scripts/update_prices_lv.py",
+      "kind": "runs_script",
+      "buildId": "ATLAS-42",
+      "classification": "declared_from_source",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/91/properties/migration/dependencies/0",
+      "sourceCommit": "a7fb24c22decd71166a6f9d1265b06c87425d9eb",
+      "sourceRepository": "Ventusltd/globalgrid2050",
+      "evidence": ".github/workflows/update_prices.yml: run command"
+    },
+    {
+      "from": "migration:Ventusltd/globalgrid2050@a7fb24c22decd71166a6f9d1265b06c87425d9eb::.github/workflows/update_prices.yml",
+      "to": "migration:Ventusltd/globalgrid2050@a7fb24c22decd71166a6f9d1265b06c87425d9eb::scripts/update_prices.py",
+      "kind": "runs_script",
+      "buildId": "ATLAS-42",
+      "classification": "declared_from_source",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/91/properties/migration/dependencies/1",
+      "sourceCommit": "a7fb24c22decd71166a6f9d1265b06c87425d9eb",
+      "sourceRepository": "Ventusltd/globalgrid2050",
+      "evidence": ".github/workflows/update_prices.yml: run command"
+    },
+    {
+      "from": "migration:Ventusltd/globalgrid2050@a7fb24c22decd71166a6f9d1265b06c87425d9eb::.github/workflows/update_prices.yml",
+      "to": "migration:Ventusltd/globalgrid2050@a7fb24c22decd71166a6f9d1265b06c87425d9eb::scripts/update_metal_trends.py",
+      "kind": "runs_script",
+      "buildId": "ATLAS-42",
+      "classification": "declared_from_source",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/91/properties/migration/dependencies/2",
+      "sourceCommit": "a7fb24c22decd71166a6f9d1265b06c87425d9eb",
+      "sourceRepository": "Ventusltd/globalgrid2050",
+      "evidence": ".github/workflows/update_prices.yml: run command"
+    },
+    {
+      "from": "migration:Ventusltd/globalgrid2050@a7fb24c22decd71166a6f9d1265b06c87425d9eb::.github/workflows/update_prices.yml",
+      "to": "migration:Ventusltd/globalgrid2050@a7fb24c22decd71166a6f9d1265b06c87425d9eb::scripts/update_commodities_v5.py",
+      "kind": "runs_script",
+      "buildId": "ATLAS-42",
+      "classification": "declared_from_source",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/91/properties/migration/dependencies/3",
+      "sourceCommit": "a7fb24c22decd71166a6f9d1265b06c87425d9eb",
+      "sourceRepository": "Ventusltd/globalgrid2050",
+      "evidence": ".github/workflows/update_prices.yml: run command"
+    },
+    {
+      "from": "build:ATLAS-42",
+      "to": "repo:Ventusltd/spiders",
+      "kind": "planned_destination",
+      "buildId": "ATLAS-42",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/91/properties/migration/destinationRepository",
+      "destinationPath": "species/market-spider/fx/index.mjs",
+      "transferStatus": "blocked_pending_dependency_audit"
+    },
+    {
+      "from": "repo:Ventusltd/spiders",
+      "to": "build:ATLAS-43",
+      "kind": "plans",
+      "buildId": "ATLAS-43",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/92/properties/ownerRepository"
+    },
+    {
+      "from": "build:ATLAS-43",
+      "to": "module:Ventusltd/spiders::species/market-spider/oil/index.mjs",
+      "kind": "proposes_module",
+      "buildId": "ATLAS-43",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/92/properties/modulePath"
+    },
+    {
+      "from": "source:EIA-FRED-oil",
+      "to": "build:ATLAS-43",
+      "kind": "planned_source_input",
+      "buildId": "ATLAS-43",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/92/properties/sourceFeeds/0"
+    },
+    {
+      "from": "migration:Ventusltd/globalgrid2050@a7fb24c22decd71166a6f9d1265b06c87425d9eb::.github/workflows/update_oil_prices.yml",
+      "to": "build:ATLAS-43",
+      "kind": "migration_source",
+      "buildId": "ATLAS-43",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/92/properties/migration/files/0",
+      "sourceCommit": "a7fb24c22decd71166a6f9d1265b06c87425d9eb",
+      "sourceRepository": "Ventusltd/globalgrid2050"
+    },
+    {
+      "from": "migration:Ventusltd/globalgrid2050@a7fb24c22decd71166a6f9d1265b06c87425d9eb::scripts/update_oil_prices.py",
+      "to": "build:ATLAS-43",
+      "kind": "migration_source",
+      "buildId": "ATLAS-43",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/92/properties/migration/files/1",
+      "sourceCommit": "a7fb24c22decd71166a6f9d1265b06c87425d9eb",
+      "sourceRepository": "Ventusltd/globalgrid2050"
+    },
+    {
+      "from": "migration:Ventusltd/globalgrid2050@a7fb24c22decd71166a6f9d1265b06c87425d9eb::.github/workflows/update_oil_prices.yml",
+      "to": "migration:Ventusltd/globalgrid2050@a7fb24c22decd71166a6f9d1265b06c87425d9eb::scripts/update_oil_prices.py",
+      "kind": "runs_script",
+      "buildId": "ATLAS-43",
+      "classification": "declared_from_source",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/92/properties/migration/dependencies/0",
+      "sourceCommit": "a7fb24c22decd71166a6f9d1265b06c87425d9eb",
+      "sourceRepository": "Ventusltd/globalgrid2050",
+      "evidence": ".github/workflows/update_oil_prices.yml: run command"
+    },
+    {
+      "from": "build:ATLAS-43",
+      "to": "repo:Ventusltd/spiders",
+      "kind": "planned_destination",
+      "buildId": "ATLAS-43",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/92/properties/migration/destinationRepository",
+      "destinationPath": "species/market-spider/oil/index.mjs",
+      "transferStatus": "blocked_pending_dependency_audit"
+    },
+    {
+      "from": "repo:Ventusltd/spiders",
+      "to": "build:ATLAS-44",
+      "kind": "plans",
+      "buildId": "ATLAS-44",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/93/properties/ownerRepository"
+    },
+    {
+      "from": "build:ATLAS-44",
+      "to": "module:Ventusltd/spiders::cartridges/weekly-market/index.mjs",
+      "kind": "proposes_module",
+      "buildId": "ATLAS-44",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/93/properties/modulePath"
+    },
+    {
+      "from": "build:ATLAS-41",
+      "to": "build:ATLAS-44",
+      "kind": "planned_prerequisite",
+      "buildId": "ATLAS-44",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/93/properties/dependsOn/0"
+    },
+    {
+      "from": "build:ATLAS-42",
+      "to": "build:ATLAS-44",
+      "kind": "planned_prerequisite",
+      "buildId": "ATLAS-44",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/93/properties/dependsOn/1"
+    },
+    {
+      "from": "build:ATLAS-43",
+      "to": "build:ATLAS-44",
+      "kind": "planned_prerequisite",
+      "buildId": "ATLAS-44",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/93/properties/dependsOn/2"
+    },
+    {
+      "from": "repo:Ventusltd/gis-sld-sandbox",
+      "to": "build:ATLAS-45",
+      "kind": "plans",
+      "buildId": "ATLAS-45",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/94/properties/ownerRepository"
+    },
+    {
+      "from": "build:ATLAS-45",
+      "to": "module:Ventusltd/gis-sld-sandbox::cartridges/market-input-layer/index.mjs",
+      "kind": "proposes_module",
+      "buildId": "ATLAS-45",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/94/properties/modulePath"
+    },
+    {
+      "from": "build:ATLAS-31",
+      "to": "build:ATLAS-45",
+      "kind": "planned_prerequisite",
+      "buildId": "ATLAS-45",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/94/properties/dependsOn/0"
+    },
+    {
+      "from": "build:ATLAS-44",
+      "to": "build:ATLAS-45",
+      "kind": "planned_prerequisite",
+      "buildId": "ATLAS-45",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/94/properties/dependsOn/1"
+    },
+    {
+      "from": "repo:Ventusltd/gpu-drivers-for-global-grid",
+      "to": "build:ATLAS-46",
+      "kind": "plans",
+      "buildId": "ATLAS-46",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/95/properties/ownerRepository"
+    },
+    {
+      "from": "build:ATLAS-46",
+      "to": "module:Ventusltd/gpu-drivers-for-global-grid::cartridges/cpu-gpu-oracle/index.mjs",
+      "kind": "proposes_module",
+      "buildId": "ATLAS-46",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/95/properties/modulePath"
+    },
+    {
+      "from": "repo:Ventusltd/gpu-drivers-for-global-grid",
+      "to": "build:ATLAS-47",
+      "kind": "plans",
+      "buildId": "ATLAS-47",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/96/properties/ownerRepository"
+    },
+    {
+      "from": "build:ATLAS-47",
+      "to": "module:Ventusltd/gpu-drivers-for-global-grid::cartridges/optional-compute/index.mjs",
+      "kind": "proposes_module",
+      "buildId": "ATLAS-47",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/96/properties/modulePath"
+    },
+    {
+      "from": "build:ATLAS-46",
+      "to": "build:ATLAS-47",
+      "kind": "planned_prerequisite",
+      "buildId": "ATLAS-47",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/96/properties/dependsOn/0"
+    },
+    {
+      "from": "repo:Ventusltd/cvaa",
+      "to": "build:ATLAS-48",
+      "kind": "plans",
+      "buildId": "ATLAS-48",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/97/properties/ownerRepository"
+    },
+    {
+      "from": "build:ATLAS-48",
+      "to": "module:Ventusltd/cvaa::cartridges/cartridge-isolation/index.mjs",
+      "kind": "proposes_module",
+      "buildId": "ATLAS-48",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/97/properties/modulePath"
+    },
+    {
+      "from": "build:ATLAS-12",
+      "to": "build:ATLAS-48",
+      "kind": "planned_prerequisite",
+      "buildId": "ATLAS-48",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/97/properties/dependsOn/0"
+    },
+    {
+      "from": "build:ATLAS-13",
+      "to": "build:ATLAS-48",
+      "kind": "planned_prerequisite",
+      "buildId": "ATLAS-48",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/97/properties/dependsOn/1"
+    },
+    {
+      "from": "repo:Ventusltd/spiders",
+      "to": "build:ATLAS-49",
+      "kind": "plans",
+      "buildId": "ATLAS-49",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/98/properties/ownerRepository"
+    },
+    {
+      "from": "build:ATLAS-49",
+      "to": "module:Ventusltd/spiders::cartridges/build-plan-reader/index.mjs",
+      "kind": "proposes_module",
+      "buildId": "ATLAS-49",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/98/properties/modulePath"
+    },
+    {
+      "from": "repo:Ventusltd/testcode",
+      "to": "build:ATLAS-50",
+      "kind": "plans",
+      "buildId": "ATLAS-50",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/99/properties/ownerRepository"
+    },
+    {
+      "from": "build:ATLAS-50",
+      "to": "module:Ventusltd/testcode::cartridges/release-evidence/index.mjs",
+      "kind": "proposes_module",
+      "buildId": "ATLAS-50",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/99/properties/modulePath"
+    },
+    {
+      "from": "build:ATLAS-48",
+      "to": "build:ATLAS-50",
+      "kind": "planned_prerequisite",
+      "buildId": "ATLAS-50",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/99/properties/dependsOn/0"
+    },
+    {
+      "from": "build:ATLAS-49",
+      "to": "build:ATLAS-50",
+      "kind": "planned_prerequisite",
+      "buildId": "ATLAS-50",
+      "classification": "declared_plan",
+      "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+      "jsonPointer": "/features/99/properties/dependsOn/1"
+    }
+  ],
+  "sourceEvidence": [
+    {
+      "buildId": "PIPELINE-01",
+      "evidence": [
+        {
+          "path": "evidence/pipeline-history-study.json",
+          "evidenceIds": [
+            "E10"
+          ]
+        }
+      ]
+    },
+    {
+      "buildId": "PIPELINE-02",
+      "evidence": [
+        {
+          "path": "evidence/pipeline-history-study.json",
+          "evidenceIds": [
+            "E10"
+          ]
+        }
+      ]
+    },
+    {
+      "buildId": "PIPELINE-03",
+      "evidence": [
+        {
+          "path": "evidence/pipeline-history-study.json",
+          "evidenceIds": [
+            "E10"
+          ]
+        }
+      ]
+    },
+    {
+      "buildId": "PIPELINE-04",
+      "evidence": [
+        {
+          "path": "evidence/pipeline-history-study.json",
+          "evidenceIds": [
+            "E10"
+          ]
+        }
+      ]
+    },
+    {
+      "buildId": "PIPELINE-05",
+      "evidence": [
+        {
+          "path": "evidence/pipeline-history-study.json",
+          "evidenceIds": [
+            "E10"
+          ]
+        }
+      ]
+    },
+    {
+      "buildId": "PIPELINE-06",
+      "evidence": [
+        {
+          "path": "evidence/pipeline-history-study.json",
+          "evidenceIds": [
+            "E02"
+          ]
+        }
+      ]
+    },
+    {
+      "buildId": "PIPELINE-07",
+      "evidence": [
+        {
+          "path": "evidence/pipeline-history-study.json",
+          "evidenceIds": [
+            "E02"
+          ]
+        }
+      ]
+    },
+    {
+      "buildId": "PIPELINE-08",
+      "evidence": [
+        {
+          "path": "evidence/pipeline-history-study.json",
+          "evidenceIds": [
+            "E02"
+          ]
+        }
+      ]
+    },
+    {
+      "buildId": "PIPELINE-09",
+      "evidence": [
+        {
+          "path": "evidence/pipeline-history-study.json",
+          "evidenceIds": [
+            "E02"
+          ]
+        }
+      ]
+    },
+    {
+      "buildId": "PIPELINE-10",
+      "evidence": [
+        {
+          "path": "evidence/pipeline-history-study.json",
+          "evidenceIds": [
+            "E02"
+          ]
+        }
+      ]
+    },
+    {
+      "buildId": "PIPELINE-11",
+      "evidence": [
+        {
+          "path": "evidence/pipeline-history-study.json",
+          "evidenceIds": [
+            "E01"
+          ]
+        }
+      ]
+    },
+    {
+      "buildId": "PIPELINE-12",
+      "evidence": [
+        {
+          "path": "evidence/pipeline-history-study.json",
+          "evidenceIds": [
+            "E02"
+          ]
+        }
+      ]
+    },
+    {
+      "buildId": "PIPELINE-13",
+      "evidence": [
+        {
+          "path": "evidence/pipeline-history-study.json",
+          "evidenceIds": [
+            "E05"
+          ]
+        }
+      ]
+    },
+    {
+      "buildId": "PIPELINE-14",
+      "evidence": [
+        {
+          "path": "evidence/pipeline-history-study.json",
+          "evidenceIds": [
+            "E05"
+          ]
+        }
+      ]
+    },
+    {
+      "buildId": "PIPELINE-15",
+      "evidence": [
+        {
+          "path": "evidence/pipeline-history-study.json",
+          "evidenceIds": [
+            "E05"
+          ]
+        }
+      ]
+    },
+    {
+      "buildId": "PIPELINE-16",
+      "evidence": [
+        {
+          "path": "evidence/pipeline-history-study.json",
+          "evidenceIds": [
+            "E05"
+          ]
+        }
+      ]
+    },
+    {
+      "buildId": "PIPELINE-17",
+      "evidence": [
+        {
+          "path": "evidence/pipeline-history-study.json",
+          "evidenceIds": [
+            "E05"
+          ]
+        }
+      ]
+    },
+    {
+      "buildId": "PIPELINE-18",
+      "evidence": [
+        {
+          "path": "evidence/pipeline-history-study.json",
+          "evidenceIds": []
+        },
+        {
+          "path": "evidence/energy-feed-study.json"
+        }
+      ]
+    },
+    {
+      "buildId": "PIPELINE-19",
+      "evidence": [
+        {
+          "path": "evidence/pipeline-history-study.json",
+          "evidenceIds": [
+            "E08"
+          ]
+        }
+      ]
+    },
+    {
+      "buildId": "PIPELINE-20",
+      "evidence": [
+        {
+          "path": "evidence/pipeline-history-study.json",
+          "evidenceIds": [
+            "E08"
+          ]
+        }
+      ]
+    },
+    {
+      "buildId": "PIPELINE-21",
+      "evidence": [
+        {
+          "path": "evidence/pipeline-history-study.json",
+          "evidenceIds": [
+            "E08"
+          ]
+        }
+      ]
+    },
+    {
+      "buildId": "PIPELINE-22",
+      "evidence": [
+        {
+          "path": "evidence/pipeline-history-study.json",
+          "evidenceIds": [
+            "E08"
+          ]
+        }
+      ]
+    },
+    {
+      "buildId": "PIPELINE-23",
+      "evidence": [
+        {
+          "path": "evidence/pipeline-history-study.json",
+          "evidenceIds": [
+            "E08"
+          ]
+        }
+      ]
+    },
+    {
+      "buildId": "PIPELINE-24",
+      "evidence": [
+        {
+          "path": "evidence/pipeline-history-study.json",
+          "evidenceIds": [
+            "E08"
+          ]
+        }
+      ]
+    },
+    {
+      "buildId": "PIPELINE-25",
+      "evidence": [
+        {
+          "path": "evidence/pipeline-history-study.json",
+          "evidenceIds": []
+        },
+        {
+          "path": "evidence/energy-feed-study.json"
+        }
+      ]
+    },
+    {
+      "buildId": "PIPELINE-26",
+      "evidence": [
+        {
+          "path": "evidence/pipeline-history-study.json",
+          "evidenceIds": [
+            "E08"
+          ]
+        }
+      ]
+    },
+    {
+      "buildId": "PIPELINE-27",
+      "evidence": [
+        {
+          "path": "evidence/pipeline-history-study.json",
+          "evidenceIds": [
+            "E06"
+          ]
+        }
+      ]
+    },
+    {
+      "buildId": "PIPELINE-28",
+      "evidence": [
+        {
+          "path": "evidence/pipeline-history-study.json",
+          "evidenceIds": [
+            "E06"
+          ]
+        }
+      ]
+    },
+    {
+      "buildId": "PIPELINE-29",
+      "evidence": [
+        {
+          "path": "evidence/pipeline-history-study.json",
+          "evidenceIds": [
+            "E06"
+          ]
+        }
+      ]
+    },
+    {
+      "buildId": "PIPELINE-30",
+      "evidence": [
+        {
+          "path": "evidence/pipeline-history-study.json",
+          "evidenceIds": [
+            "E06"
+          ]
+        }
+      ]
+    },
+    {
+      "buildId": "PIPELINE-31",
+      "evidence": [
+        {
+          "path": "evidence/pipeline-history-study.json",
+          "evidenceIds": []
+        },
+        {
+          "path": "evidence/energy-feed-study.json"
+        }
+      ]
+    },
+    {
+      "buildId": "PIPELINE-32",
+      "evidence": [
+        {
+          "path": "evidence/pipeline-history-study.json",
+          "evidenceIds": [
+            "E06"
+          ]
+        }
+      ]
+    },
+    {
+      "buildId": "PIPELINE-33",
+      "evidence": [
+        {
+          "path": "evidence/pipeline-history-study.json",
+          "evidenceIds": [
+            "E07"
+          ]
+        }
+      ]
+    },
+    {
+      "buildId": "PIPELINE-34",
+      "evidence": [
+        {
+          "path": "evidence/pipeline-history-study.json",
+          "evidenceIds": []
+        },
+        {
+          "path": "evidence/energy-feed-study.json"
+        }
+      ]
+    },
+    {
+      "buildId": "PIPELINE-35",
+      "evidence": [
+        {
+          "path": "evidence/pipeline-history-study.json",
+          "evidenceIds": []
+        },
+        {
+          "path": "evidence/energy-feed-study.json"
+        }
+      ]
+    },
+    {
+      "buildId": "PIPELINE-36",
+      "evidence": [
+        {
+          "path": "evidence/pipeline-history-study.json",
+          "evidenceIds": [
+            "E03"
+          ]
+        }
+      ]
+    },
+    {
+      "buildId": "PIPELINE-37",
+      "evidence": [
+        {
+          "path": "evidence/pipeline-history-study.json",
+          "evidenceIds": [
+            "E03"
+          ]
+        }
+      ]
+    },
+    {
+      "buildId": "PIPELINE-38",
+      "evidence": [
+        {
+          "path": "evidence/pipeline-history-study.json",
+          "evidenceIds": [
+            "E03"
+          ]
+        }
+      ]
+    },
+    {
+      "buildId": "PIPELINE-39",
+      "evidence": [
+        {
+          "path": "evidence/pipeline-history-study.json",
+          "evidenceIds": [
+            "E04"
+          ]
+        }
+      ]
+    },
+    {
+      "buildId": "PIPELINE-40",
+      "evidence": [
+        {
+          "path": "evidence/pipeline-history-study.json",
+          "evidenceIds": []
+        },
+        {
+          "path": "evidence/energy-feed-study.json"
+        }
+      ]
+    },
+    {
+      "buildId": "PIPELINE-41",
+      "evidence": [
+        {
+          "path": "evidence/pipeline-history-study.json",
+          "evidenceIds": [
+            "E02"
+          ]
+        }
+      ]
+    },
+    {
+      "buildId": "PIPELINE-42",
+      "evidence": [
+        {
+          "path": "evidence/pipeline-history-study.json",
+          "evidenceIds": [
+            "E03"
+          ]
+        }
+      ]
+    },
+    {
+      "buildId": "PIPELINE-43",
+      "evidence": [
+        {
+          "path": "evidence/pipeline-history-study.json",
+          "evidenceIds": [
+            "E03"
+          ]
+        }
+      ]
+    },
+    {
+      "buildId": "PIPELINE-44",
+      "evidence": [
+        {
+          "path": "evidence/pipeline-history-study.json",
+          "evidenceIds": [
+            "E09"
+          ]
+        }
+      ]
+    },
+    {
+      "buildId": "PIPELINE-45",
+      "evidence": [
+        {
+          "path": "evidence/pipeline-history-study.json",
+          "evidenceIds": [
+            "E09"
+          ]
+        }
+      ]
+    },
+    {
+      "buildId": "PIPELINE-46",
+      "evidence": [
+        {
+          "path": "evidence/pipeline-history-study.json",
+          "evidenceIds": [
+            "E09"
+          ]
+        }
+      ]
+    },
+    {
+      "buildId": "PIPELINE-47",
+      "evidence": [
+        {
+          "path": "evidence/pipeline-history-study.json",
+          "evidenceIds": []
+        },
+        {
+          "path": "evidence/energy-feed-study.json"
+        }
+      ]
+    },
+    {
+      "buildId": "PIPELINE-48",
+      "evidence": [
+        {
+          "path": "evidence/pipeline-history-study.json",
+          "evidenceIds": [
+            "E12"
+          ]
+        }
+      ]
+    },
+    {
+      "buildId": "PIPELINE-49",
+      "evidence": [
+        {
+          "path": "evidence/pipeline-history-study.json",
+          "evidenceIds": [
+            "E14"
+          ]
+        }
+      ]
+    },
+    {
+      "buildId": "PIPELINE-50",
+      "evidence": [
+        {
+          "path": "evidence/pipeline-history-study.json",
+          "evidenceIds": [
+            "E15"
+          ]
+        }
+      ]
+    },
+    {
+      "buildId": "ATLAS-01",
+      "evidence": [
+        {
+          "path": "evidence/history-coverage.json",
+          "basis": "History-index plus inspected owner contracts and user requirements; reproduce issue before implementation"
+        }
+      ]
+    },
+    {
+      "buildId": "ATLAS-02",
+      "evidence": [
+        {
+          "path": "evidence/history-coverage.json",
+          "basis": "History-index plus inspected owner contracts and user requirements; reproduce issue before implementation"
+        }
+      ]
+    },
+    {
+      "buildId": "ATLAS-03",
+      "evidence": [
+        {
+          "path": "evidence/history-coverage.json",
+          "basis": "History-index plus inspected owner contracts and user requirements; reproduce issue before implementation"
+        }
+      ]
+    },
+    {
+      "buildId": "ATLAS-04",
+      "evidence": [
+        {
+          "path": "evidence/history-coverage.json",
+          "basis": "History-index plus inspected owner contracts and user requirements; reproduce issue before implementation"
+        }
+      ]
+    },
+    {
+      "buildId": "ATLAS-05",
+      "evidence": [
+        {
+          "path": "evidence/history-coverage.json",
+          "basis": "History-index plus inspected owner contracts and user requirements; reproduce issue before implementation"
+        }
+      ]
+    },
+    {
+      "buildId": "ATLAS-06",
+      "evidence": [
+        {
+          "path": "evidence/history-coverage.json",
+          "basis": "History-index plus inspected owner contracts and user requirements; reproduce issue before implementation"
+        }
+      ]
+    },
+    {
+      "buildId": "ATLAS-07",
+      "evidence": [
+        {
+          "path": "evidence/history-coverage.json",
+          "basis": "History-index plus inspected owner contracts and user requirements; reproduce issue before implementation"
+        }
+      ]
+    },
+    {
+      "buildId": "ATLAS-08",
+      "evidence": [
+        {
+          "path": "evidence/history-coverage.json",
+          "basis": "History-index plus inspected owner contracts and user requirements; reproduce issue before implementation"
+        }
+      ]
+    },
+    {
+      "buildId": "ATLAS-09",
+      "evidence": [
+        {
+          "path": "evidence/history-coverage.json",
+          "basis": "History-index plus inspected owner contracts and user requirements; reproduce issue before implementation"
+        }
+      ]
+    },
+    {
+      "buildId": "ATLAS-10",
+      "evidence": [
+        {
+          "path": "evidence/history-coverage.json",
+          "basis": "History-index plus inspected owner contracts and user requirements; reproduce issue before implementation"
+        }
+      ]
+    },
+    {
+      "buildId": "ATLAS-11",
+      "evidence": [
+        {
+          "path": "evidence/history-coverage.json",
+          "basis": "History-index plus inspected owner contracts and user requirements; reproduce issue before implementation"
+        }
+      ]
+    },
+    {
+      "buildId": "ATLAS-12",
+      "evidence": [
+        {
+          "path": "evidence/history-coverage.json",
+          "basis": "History-index plus inspected owner contracts and user requirements; reproduce issue before implementation"
+        }
+      ]
+    },
+    {
+      "buildId": "ATLAS-13",
+      "evidence": [
+        {
+          "path": "evidence/history-coverage.json",
+          "basis": "History-index plus inspected owner contracts and user requirements; reproduce issue before implementation"
+        }
+      ]
+    },
+    {
+      "buildId": "ATLAS-14",
+      "evidence": [
+        {
+          "path": "evidence/history-coverage.json",
+          "basis": "History-index plus inspected owner contracts and user requirements; reproduce issue before implementation"
+        }
+      ]
+    },
+    {
+      "buildId": "ATLAS-15",
+      "evidence": [
+        {
+          "path": "evidence/history-coverage.json",
+          "basis": "History-index plus inspected owner contracts and user requirements; reproduce issue before implementation"
+        }
+      ]
+    },
+    {
+      "buildId": "ATLAS-16",
+      "evidence": [
+        {
+          "path": "evidence/history-coverage.json",
+          "basis": "History-index plus inspected owner contracts and user requirements; reproduce issue before implementation"
+        }
+      ]
+    },
+    {
+      "buildId": "ATLAS-17",
+      "evidence": [
+        {
+          "path": "evidence/history-coverage.json",
+          "basis": "History-index plus inspected owner contracts and user requirements; reproduce issue before implementation"
+        }
+      ]
+    },
+    {
+      "buildId": "ATLAS-18",
+      "evidence": [
+        {
+          "path": "evidence/history-coverage.json",
+          "basis": "History-index plus inspected owner contracts and user requirements; reproduce issue before implementation"
+        }
+      ]
+    },
+    {
+      "buildId": "ATLAS-19",
+      "evidence": [
+        {
+          "path": "evidence/history-coverage.json",
+          "basis": "History-index plus inspected owner contracts and user requirements; reproduce issue before implementation"
+        }
+      ]
+    },
+    {
+      "buildId": "ATLAS-20",
+      "evidence": [
+        {
+          "path": "evidence/history-coverage.json",
+          "basis": "History-index plus inspected owner contracts and user requirements; reproduce issue before implementation"
+        }
+      ]
+    },
+    {
+      "buildId": "ATLAS-21",
+      "evidence": [
+        {
+          "path": "evidence/history-coverage.json",
+          "basis": "History-index plus inspected owner contracts and user requirements; reproduce issue before implementation"
+        }
+      ]
+    },
+    {
+      "buildId": "ATLAS-22",
+      "evidence": [
+        {
+          "path": "evidence/history-coverage.json",
+          "basis": "History-index plus inspected owner contracts and user requirements; reproduce issue before implementation"
+        }
+      ]
+    },
+    {
+      "buildId": "ATLAS-23",
+      "evidence": [
+        {
+          "path": "evidence/history-coverage.json",
+          "basis": "History-index plus inspected owner contracts and user requirements; reproduce issue before implementation"
+        }
+      ]
+    },
+    {
+      "buildId": "ATLAS-24",
+      "evidence": [
+        {
+          "path": "evidence/history-coverage.json",
+          "basis": "History-index plus inspected owner contracts and user requirements; reproduce issue before implementation"
+        }
+      ]
+    },
+    {
+      "buildId": "ATLAS-25",
+      "evidence": [
+        {
+          "path": "evidence/history-coverage.json",
+          "basis": "History-index plus inspected owner contracts and user requirements; reproduce issue before implementation"
+        }
+      ]
+    },
+    {
+      "buildId": "ATLAS-26",
+      "evidence": [
+        {
+          "path": "evidence/history-coverage.json",
+          "basis": "History-index plus inspected owner contracts and user requirements; reproduce issue before implementation"
+        }
+      ]
+    },
+    {
+      "buildId": "ATLAS-27",
+      "evidence": [
+        {
+          "path": "evidence/history-coverage.json",
+          "basis": "History-index plus inspected owner contracts and user requirements; reproduce issue before implementation"
+        }
+      ]
+    },
+    {
+      "buildId": "ATLAS-28",
+      "evidence": [
+        {
+          "path": "evidence/history-coverage.json",
+          "basis": "History-index plus inspected owner contracts and user requirements; reproduce issue before implementation"
+        }
+      ]
+    },
+    {
+      "buildId": "ATLAS-29",
+      "evidence": [
+        {
+          "path": "evidence/history-coverage.json",
+          "basis": "History-index plus inspected owner contracts and user requirements; reproduce issue before implementation"
+        }
+      ]
+    },
+    {
+      "buildId": "ATLAS-30",
+      "evidence": [
+        {
+          "path": "evidence/history-coverage.json",
+          "basis": "History-index plus inspected owner contracts and user requirements; reproduce issue before implementation"
+        }
+      ]
+    },
+    {
+      "buildId": "ATLAS-31",
+      "evidence": [
+        {
+          "path": "evidence/history-coverage.json",
+          "basis": "History-index plus inspected owner contracts and user requirements; reproduce issue before implementation"
+        }
+      ]
+    },
+    {
+      "buildId": "ATLAS-32",
+      "evidence": [
+        {
+          "path": "evidence/history-coverage.json",
+          "basis": "History-index plus inspected owner contracts and user requirements; reproduce issue before implementation"
+        }
+      ]
+    },
+    {
+      "buildId": "ATLAS-33",
+      "evidence": [
+        {
+          "path": "evidence/history-coverage.json",
+          "basis": "History-index plus inspected owner contracts and user requirements; reproduce issue before implementation"
+        }
+      ]
+    },
+    {
+      "buildId": "ATLAS-34",
+      "evidence": [
+        {
+          "path": "evidence/history-coverage.json",
+          "basis": "History-index plus inspected owner contracts and user requirements; reproduce issue before implementation"
+        }
+      ]
+    },
+    {
+      "buildId": "ATLAS-35",
+      "evidence": [
+        {
+          "path": "evidence/history-coverage.json",
+          "basis": "History-index plus inspected owner contracts and user requirements; reproduce issue before implementation"
+        }
+      ]
+    },
+    {
+      "buildId": "ATLAS-36",
+      "evidence": [
+        {
+          "path": "evidence/history-coverage.json",
+          "basis": "History-index plus inspected owner contracts and user requirements; reproduce issue before implementation"
+        }
+      ]
+    },
+    {
+      "buildId": "ATLAS-37",
+      "evidence": [
+        {
+          "path": "evidence/history-coverage.json",
+          "basis": "History-index plus inspected owner contracts and user requirements; reproduce issue before implementation"
+        }
+      ]
+    },
+    {
+      "buildId": "ATLAS-38",
+      "evidence": [
+        {
+          "path": "evidence/history-coverage.json",
+          "basis": "History-index plus inspected owner contracts and user requirements; reproduce issue before implementation"
+        }
+      ]
+    },
+    {
+      "buildId": "ATLAS-39",
+      "evidence": [
+        {
+          "path": "evidence/history-coverage.json",
+          "basis": "History-index plus inspected owner contracts and user requirements; reproduce issue before implementation"
+        }
+      ]
+    },
+    {
+      "buildId": "ATLAS-40",
+      "evidence": [
+        {
+          "path": "evidence/history-coverage.json",
+          "basis": "History-index plus inspected owner contracts and user requirements; reproduce issue before implementation"
+        }
+      ]
+    },
+    {
+      "buildId": "ATLAS-41",
+      "evidence": [
+        {
+          "path": "evidence/history-coverage.json",
+          "basis": "History-index plus inspected owner contracts and user requirements; reproduce issue before implementation"
+        },
+        {
+          "path": "evidence/market-feed-study.json"
+        }
+      ],
+      "migration": {
+        "sourceRepository": "Ventusltd/globalgrid2050",
+        "sourceCommit": "a7fb24c22decd71166a6f9d1265b06c87425d9eb",
+        "destinationRepository": "Ventusltd/spiders",
+        "destinationPath": "species/market-spider/metals/index.mjs",
+        "homeEvidence": "Spiders README explicitly names market spiders as an owning species",
+        "transferStatus": "blocked_pending_dependency_audit",
+        "files": [
+          {
+            "path": ".github/workflows/update_prices.yml",
+            "sha256": "2700d28ce55f201a40af83bcc515017e08211c46033ccbcde9b698cd66a506f1",
+            "kind": "workflow"
+          },
+          {
+            "path": "scripts/update_prices_lv.py",
+            "sha256": "d22aac452bb5ba7bb02d9c7bd228b7fb4cc7cf471880d0526b0b66d14f0ec6ae",
+            "kind": "script"
+          },
+          {
+            "path": "scripts/update_prices.py",
+            "sha256": "516e49553c95de4405dd7ce8b4adcb05e9c41bab83a6b07dbb387a4b9024abea",
+            "kind": "script"
+          },
+          {
+            "path": "scripts/update_metal_trends.py",
+            "sha256": "a3bb847b314e0f3665bd72f644964385add8cc897dbc7de97261b377422a044d",
+            "kind": "script"
+          },
+          {
+            "path": "scripts/update_commodities_v5.py",
+            "sha256": "7f73cdbea2aed5b95b5b1353aee60516ee215214555e1c8862f05ddb08acfeb4",
+            "kind": "script"
+          }
+        ],
+        "dependencies": [
+          {
+            "from": ".github/workflows/update_prices.yml",
+            "to": "scripts/update_prices_lv.py",
+            "type": "runs_script",
+            "evidence": ".github/workflows/update_prices.yml: run command"
+          },
+          {
+            "from": ".github/workflows/update_prices.yml",
+            "to": "scripts/update_prices.py",
+            "type": "runs_script",
+            "evidence": ".github/workflows/update_prices.yml: run command"
+          },
+          {
+            "from": ".github/workflows/update_prices.yml",
+            "to": "scripts/update_metal_trends.py",
+            "type": "runs_script",
+            "evidence": ".github/workflows/update_prices.yml: run command"
+          },
+          {
+            "from": ".github/workflows/update_prices.yml",
+            "to": "scripts/update_commodities_v5.py",
+            "type": "runs_script",
+            "evidence": ".github/workflows/update_prices.yml: run command"
+          }
+        ],
+        "externalDependencies": [
+          "Python standard library",
+          "requests",
+          "urllib3 via requests",
+          "GitHub Actions checkout and setup-python",
+          "market provider APIs; source-specific terms pending"
+        ],
+        "legacyWriteTargets": "Monolith page and uk_energy_tracking paths are outputs to replace, not destination dependencies to copy.",
+        "requiredBeforeTransfer": [
+          "Confirm full closure including input data, environment and transitive imports",
+          "Record destination-owned output contract and consumer manifest",
+          "Prove clean owner runner fixtures without original globalgrid2050 checkout",
+          "Preserve original manual-only workflow"
+        ]
+      }
+    },
+    {
+      "buildId": "ATLAS-42",
+      "evidence": [
+        {
+          "path": "evidence/history-coverage.json",
+          "basis": "History-index plus inspected owner contracts and user requirements; reproduce issue before implementation"
+        },
+        {
+          "path": "evidence/market-feed-study.json"
+        }
+      ],
+      "migration": {
+        "sourceRepository": "Ventusltd/globalgrid2050",
+        "sourceCommit": "a7fb24c22decd71166a6f9d1265b06c87425d9eb",
+        "destinationRepository": "Ventusltd/spiders",
+        "destinationPath": "species/market-spider/fx/index.mjs",
+        "homeEvidence": "Spiders README explicitly names market spiders as an owning species",
+        "transferStatus": "blocked_pending_dependency_audit",
+        "files": [
+          {
+            "path": ".github/workflows/update_prices.yml",
+            "sha256": "2700d28ce55f201a40af83bcc515017e08211c46033ccbcde9b698cd66a506f1",
+            "kind": "workflow"
+          },
+          {
+            "path": "scripts/update_prices_lv.py",
+            "sha256": "d22aac452bb5ba7bb02d9c7bd228b7fb4cc7cf471880d0526b0b66d14f0ec6ae",
+            "kind": "script"
+          },
+          {
+            "path": "scripts/update_prices.py",
+            "sha256": "516e49553c95de4405dd7ce8b4adcb05e9c41bab83a6b07dbb387a4b9024abea",
+            "kind": "script"
+          },
+          {
+            "path": "scripts/update_metal_trends.py",
+            "sha256": "a3bb847b314e0f3665bd72f644964385add8cc897dbc7de97261b377422a044d",
+            "kind": "script"
+          },
+          {
+            "path": "scripts/update_commodities_v5.py",
+            "sha256": "7f73cdbea2aed5b95b5b1353aee60516ee215214555e1c8862f05ddb08acfeb4",
+            "kind": "script"
+          }
+        ],
+        "dependencies": [
+          {
+            "from": ".github/workflows/update_prices.yml",
+            "to": "scripts/update_prices_lv.py",
+            "type": "runs_script",
+            "evidence": ".github/workflows/update_prices.yml: run command"
+          },
+          {
+            "from": ".github/workflows/update_prices.yml",
+            "to": "scripts/update_prices.py",
+            "type": "runs_script",
+            "evidence": ".github/workflows/update_prices.yml: run command"
+          },
+          {
+            "from": ".github/workflows/update_prices.yml",
+            "to": "scripts/update_metal_trends.py",
+            "type": "runs_script",
+            "evidence": ".github/workflows/update_prices.yml: run command"
+          },
+          {
+            "from": ".github/workflows/update_prices.yml",
+            "to": "scripts/update_commodities_v5.py",
+            "type": "runs_script",
+            "evidence": ".github/workflows/update_prices.yml: run command"
+          }
+        ],
+        "externalDependencies": [
+          "Python standard library",
+          "requests",
+          "urllib3 via requests",
+          "GitHub Actions checkout and setup-python",
+          "market provider APIs; source-specific terms pending"
+        ],
+        "legacyWriteTargets": "Monolith page and uk_energy_tracking paths are outputs to replace, not destination dependencies to copy.",
+        "requiredBeforeTransfer": [
+          "Confirm full closure including input data, environment and transitive imports",
+          "Record destination-owned output contract and consumer manifest",
+          "Prove clean owner runner fixtures without original globalgrid2050 checkout",
+          "Preserve original manual-only workflow"
+        ]
+      }
+    },
+    {
+      "buildId": "ATLAS-43",
+      "evidence": [
+        {
+          "path": "evidence/history-coverage.json",
+          "basis": "History-index plus inspected owner contracts and user requirements; reproduce issue before implementation"
+        },
+        {
+          "path": "evidence/market-feed-study.json"
+        }
+      ],
+      "migration": {
+        "sourceRepository": "Ventusltd/globalgrid2050",
+        "sourceCommit": "a7fb24c22decd71166a6f9d1265b06c87425d9eb",
+        "destinationRepository": "Ventusltd/spiders",
+        "destinationPath": "species/market-spider/oil/index.mjs",
+        "homeEvidence": "Spiders README explicitly names market spiders as an owning species",
+        "transferStatus": "blocked_pending_dependency_audit",
+        "files": [
+          {
+            "path": ".github/workflows/update_oil_prices.yml",
+            "sha256": "959eace82237ae9dd23e1c1817382586b559295e52e6c610897ff5be9826919d",
+            "kind": "workflow"
+          },
+          {
+            "path": "scripts/update_oil_prices.py",
+            "sha256": "cf82557b401d35ddba31dbc31d738eccb8e978ca9caac4e7dd1a2e8f719cc1cf",
+            "kind": "script"
+          }
+        ],
+        "dependencies": [
+          {
+            "from": ".github/workflows/update_oil_prices.yml",
+            "to": "scripts/update_oil_prices.py",
+            "type": "runs_script",
+            "evidence": ".github/workflows/update_oil_prices.yml: run command"
+          }
+        ],
+        "externalDependencies": [
+          "Python standard library",
+          "requests",
+          "urllib3 via requests",
+          "GitHub Actions checkout and setup-python",
+          "market provider APIs; source-specific terms pending"
+        ],
+        "legacyWriteTargets": "Monolith page and uk_energy_tracking paths are outputs to replace, not destination dependencies to copy.",
+        "requiredBeforeTransfer": [
+          "Confirm full closure including input data, environment and transitive imports",
+          "Record destination-owned output contract and consumer manifest",
+          "Prove clean owner runner fixtures without original globalgrid2050 checkout",
+          "Preserve original manual-only workflow"
+        ]
+      }
+    },
+    {
+      "buildId": "ATLAS-44",
+      "evidence": [
+        {
+          "path": "evidence/history-coverage.json",
+          "basis": "History-index plus inspected owner contracts and user requirements; reproduce issue before implementation"
+        },
+        {
+          "path": "evidence/market-feed-study.json"
+        }
+      ]
+    },
+    {
+      "buildId": "ATLAS-45",
+      "evidence": [
+        {
+          "path": "evidence/history-coverage.json",
+          "basis": "History-index plus inspected owner contracts and user requirements; reproduce issue before implementation"
+        },
+        {
+          "path": "evidence/market-feed-study.json"
+        }
+      ]
+    },
+    {
+      "buildId": "ATLAS-46",
+      "evidence": [
+        {
+          "path": "evidence/history-coverage.json",
+          "basis": "History-index plus inspected owner contracts and user requirements; reproduce issue before implementation"
+        }
+      ]
+    },
+    {
+      "buildId": "ATLAS-47",
+      "evidence": [
+        {
+          "path": "evidence/history-coverage.json",
+          "basis": "History-index plus inspected owner contracts and user requirements; reproduce issue before implementation"
+        }
+      ]
+    },
+    {
+      "buildId": "ATLAS-48",
+      "evidence": [
+        {
+          "path": "evidence/history-coverage.json",
+          "basis": "History-index plus inspected owner contracts and user requirements; reproduce issue before implementation"
+        }
+      ]
+    },
+    {
+      "buildId": "ATLAS-49",
+      "evidence": [
+        {
+          "path": "evidence/history-coverage.json",
+          "basis": "History-index plus inspected owner contracts and user requirements; reproduce issue before implementation"
+        }
+      ]
+    },
+    {
+      "buildId": "ATLAS-50",
+      "evidence": [
+        {
+          "path": "evidence/history-coverage.json",
+          "basis": "History-index plus inspected owner contracts and user requirements; reproduce issue before implementation"
+        }
+      ]
+    }
+  ]
+}

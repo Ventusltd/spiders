@@ -1,0 +1,33 @@
+{
+  "schema_version": "atlas-cartridge-v0.2",
+  "public_title": "Ventus100-build plan",
+  "public_strapline": "Fifty PipelineNews and fifty GridAtlas planned increments",
+  "scope": {
+    "id": "ventus-build-plan",
+    "label": "Declared product build plan",
+    "scope_type": "repository_federation",
+    "parent_manifest": null
+  },
+  "counts": {
+    "nodes": 232,
+    "edges": 330,
+    "sectors": 0
+  },
+  "key_law_status": "PLANNED_NOT_ACCEPTED",
+  "key_note": "Geometry is null. Relations are declared proposals, not observed Git history or engineering verification.",
+  "tier": "geojson",
+  "sources": {
+    "nodes": "nodes.json",
+    "edges": "edges.json",
+    "evidence": "evidence.json",
+    "layers": null,
+    "sectors": null
+  },
+  "provenance": {
+    "schema": "canonical-json-sha256-v1",
+    "planSha256": "0bfa436a6f6f750907358503bac76dbf08335560c2819b2195d45fcc9a0ceaf5",
+    "nodesSha256": "57ba62aa5a489ca9ac31f023b18b39b39fbedd3534b06ea4efa42ee24dc695a8",
+    "edgesSha256": "59227fa80113eb29ceab67179d8442109bc5371a7f3150c0ea5f4a9198699cb4",
+    "evidenceSha256": "446748add8ea1f442b632a43edf31e86046b58f4f79a94ff6c77f0c12a9ae602"
+  }
+}

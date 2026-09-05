@@ -1,0 +1,3574 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "build:ATLAS-01",
+      "geometry": null,
+      "properties": {
+        "label": "App DOM frame completion",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "ATLAS-01",
+        "app": "gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:ATLAS-02",
+      "geometry": null,
+      "properties": {
+        "label": "Layer PDF integration",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "ATLAS-02",
+        "app": "gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:ATLAS-03",
+      "geometry": null,
+      "properties": {
+        "label": "Pipeline print clipping",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "ATLAS-03",
+        "app": "gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:ATLAS-04",
+      "geometry": null,
+      "properties": {
+        "label": "Source byte budget",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "ATLAS-04",
+        "app": "gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:ATLAS-05",
+      "geometry": null,
+      "properties": {
+        "label": "Source reader entry selection",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "ATLAS-05",
+        "app": "gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:ATLAS-06",
+      "geometry": null,
+      "properties": {
+        "label": "Layer menu separator",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "ATLAS-06",
+        "app": "gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:ATLAS-07",
+      "geometry": null,
+      "properties": {
+        "label": "GRID switch cartridge",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "ATLAS-07",
+        "app": "gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:ATLAS-08",
+      "geometry": null,
+      "properties": {
+        "label": "SUBS switch cartridge",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "ATLAS-08",
+        "app": "gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:ATLAS-09",
+      "geometry": null,
+      "properties": {
+        "label": "Collapsed layer defaults",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "ATLAS-09",
+        "app": "gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:ATLAS-10",
+      "geometry": null,
+      "properties": {
+        "label": "Control safe area",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "ATLAS-10",
+        "app": "gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:ATLAS-11",
+      "geometry": null,
+      "properties": {
+        "label": "Cartridge loader hash guard",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "ATLAS-11",
+        "app": "gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:ATLAS-12",
+      "geometry": null,
+      "properties": {
+        "label": "Cartridge dependency resolver",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "ATLAS-12",
+        "app": "gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:ATLAS-13",
+      "geometry": null,
+      "properties": {
+        "label": "Layer lifecycle contract",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "ATLAS-13",
+        "app": "gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:ATLAS-14",
+      "geometry": null,
+      "properties": {
+        "label": "GIS original baseline proof",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "ATLAS-14",
+        "app": "gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:ATLAS-15",
+      "geometry": null,
+      "properties": {
+        "label": "GIS route persistence",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "ATLAS-15",
+        "app": "gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:ATLAS-16",
+      "geometry": null,
+      "properties": {
+        "label": "GIS route undo",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "ATLAS-16",
+        "app": "gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:ATLAS-17",
+      "geometry": null,
+      "properties": {
+        "label": "Module placement adapter",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "ATLAS-17",
+        "app": "gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:ATLAS-18",
+      "geometry": null,
+      "properties": {
+        "label": "Module export cartridge",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "ATLAS-18",
+        "app": "gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:ATLAS-19",
+      "geometry": null,
+      "properties": {
+        "label": "Cable geometry snapshot",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "ATLAS-19",
+        "app": "gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:ATLAS-20",
+      "geometry": null,
+      "properties": {
+        "label": "Straight-line first pass",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "ATLAS-20",
+        "app": "gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:ATLAS-21",
+      "geometry": null,
+      "properties": {
+        "label": "Manual route comparison",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "ATLAS-21",
+        "app": "gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:ATLAS-22",
+      "geometry": null,
+      "properties": {
+        "label": "Route source provenance",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "ATLAS-22",
+        "app": "gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:ATLAS-23",
+      "geometry": null,
+      "properties": {
+        "label": "Road classification adapter",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "ATLAS-23",
+        "app": "gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:ATLAS-24",
+      "geometry": null,
+      "properties": {
+        "label": "River crossing adapter",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "ATLAS-24",
+        "app": "gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:ATLAS-25",
+      "geometry": null,
+      "properties": {
+        "label": "Rail crossing adapter",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "ATLAS-25",
+        "app": "gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:ATLAS-26",
+      "geometry": null,
+      "properties": {
+        "label": "Constraint overlay",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "ATLAS-26",
+        "app": "gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:ATLAS-27",
+      "geometry": null,
+      "properties": {
+        "label": "Route alternatives",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "ATLAS-27",
+        "app": "gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:ATLAS-28",
+      "geometry": null,
+      "properties": {
+        "label": "Trench scenario inputs",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "ATLAS-28",
+        "app": "gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:ATLAS-29",
+      "geometry": null,
+      "properties": {
+        "label": "HDD scenario inputs",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "ATLAS-29",
+        "app": "gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:ATLAS-30",
+      "geometry": null,
+      "properties": {
+        "label": "Crossing method comparison",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "ATLAS-30",
+        "app": "gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:ATLAS-31",
+      "geometry": null,
+      "properties": {
+        "label": "Route cost basis",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "ATLAS-31",
+        "app": "gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:ATLAS-32",
+      "geometry": null,
+      "properties": {
+        "label": "Published fault levels",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "ATLAS-32",
+        "app": "gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:ATLAS-33",
+      "geometry": null,
+      "properties": {
+        "label": "Fault evidence layer",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "ATLAS-33",
+        "app": "gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:ATLAS-34",
+      "geometry": null,
+      "properties": {
+        "label": "Connection point identity",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "ATLAS-34",
+        "app": "gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:ATLAS-35",
+      "geometry": null,
+      "properties": {
+        "label": "Network lineage panel",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "ATLAS-35",
+        "app": "gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:ATLAS-36",
+      "geometry": null,
+      "properties": {
+        "label": "REPD status delta",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "ATLAS-36",
+        "app": "gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:ATLAS-37",
+      "geometry": null,
+      "properties": {
+        "label": "User evidence intake",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "ATLAS-37",
+        "app": "gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:ATLAS-38",
+      "geometry": null,
+      "properties": {
+        "label": "Evidence conflict cartridge",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "ATLAS-38",
+        "app": "gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:ATLAS-39",
+      "geometry": null,
+      "properties": {
+        "label": "Weekly electricity layer",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "ATLAS-39",
+        "app": "gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:ATLAS-40",
+      "geometry": null,
+      "properties": {
+        "label": "Weekly PV layer",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "ATLAS-40",
+        "app": "gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:ATLAS-41",
+      "geometry": null,
+      "properties": {
+        "label": "Metals source adapter",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "ATLAS-41",
+        "app": "gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:ATLAS-42",
+      "geometry": null,
+      "properties": {
+        "label": "FX source adapter",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "ATLAS-42",
+        "app": "gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:ATLAS-43",
+      "geometry": null,
+      "properties": {
+        "label": "Oil source adapter",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "ATLAS-43",
+        "app": "gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:ATLAS-44",
+      "geometry": null,
+      "properties": {
+        "label": "Weekly market product",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "ATLAS-44",
+        "app": "gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:ATLAS-45",
+      "geometry": null,
+      "properties": {
+        "label": "Financial layer feed",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "ATLAS-45",
+        "app": "gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:ATLAS-46",
+      "geometry": null,
+      "properties": {
+        "label": "GPU equivalent-work benchmark",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "ATLAS-46",
+        "app": "gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:ATLAS-47",
+      "geometry": null,
+      "properties": {
+        "label": "GPU optional adapter",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "ATLAS-47",
+        "app": "gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:ATLAS-48",
+      "geometry": null,
+      "properties": {
+        "label": "Cartridge isolation vaccine",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "ATLAS-48",
+        "app": "gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:ATLAS-49",
+      "geometry": null,
+      "properties": {
+        "label": "Federated build-plan reader",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "ATLAS-49",
+        "app": "gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:ATLAS-50",
+      "geometry": null,
+      "properties": {
+        "label": "Release evidence gate",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "ATLAS-50",
+        "app": "gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:PIPELINE-01",
+      "geometry": null,
+      "properties": {
+        "label": "Coverage join audit",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "PIPELINE-01",
+        "app": "pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:PIPELINE-02",
+      "geometry": null,
+      "properties": {
+        "label": "GRID coverage successor",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "PIPELINE-02",
+        "app": "pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:PIPELINE-03",
+      "geometry": null,
+      "properties": {
+        "label": "SUB coverage successor",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "PIPELINE-03",
+        "app": "pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:PIPELINE-04",
+      "geometry": null,
+      "properties": {
+        "label": "Coverage explanation UI",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "PIPELINE-04",
+        "app": "pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:PIPELINE-05",
+      "geometry": null,
+      "properties": {
+        "label": "Coverage CI contract",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "PIPELINE-05",
+        "app": "pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:PIPELINE-06",
+      "geometry": null,
+      "properties": {
+        "label": "Bounded table rendering",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "PIPELINE-06",
+        "app": "pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:PIPELINE-07",
+      "geometry": null,
+      "properties": {
+        "label": "Pagination state cartridge",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "PIPELINE-07",
+        "app": "pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:PIPELINE-08",
+      "geometry": null,
+      "properties": {
+        "label": "Stable project selection",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "PIPELINE-08",
+        "app": "pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:PIPELINE-09",
+      "geometry": null,
+      "properties": {
+        "label": "Mobile row actions",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "PIPELINE-09",
+        "app": "pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:PIPELINE-10",
+      "geometry": null,
+      "properties": {
+        "label": "Observable search completion",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "PIPELINE-10",
+        "app": "pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:PIPELINE-11",
+      "geometry": null,
+      "properties": {
+        "label": "Canonical receiver adapter",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "PIPELINE-11",
+        "app": "pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:PIPELINE-12",
+      "geometry": null,
+      "properties": {
+        "label": "Receiver failure state",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "PIPELINE-12",
+        "app": "pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:PIPELINE-13",
+      "geometry": null,
+      "properties": {
+        "label": "GeoJSON identity export",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "PIPELINE-13",
+        "app": "pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:PIPELINE-14",
+      "geometry": null,
+      "properties": {
+        "label": "GeoJSON filter export",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "PIPELINE-14",
+        "app": "pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:PIPELINE-15",
+      "geometry": null,
+      "properties": {
+        "label": "GeoJSON null geometry",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "PIPELINE-15",
+        "app": "pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:PIPELINE-16",
+      "geometry": null,
+      "properties": {
+        "label": "GeoJSON partition manifest",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "PIPELINE-16",
+        "app": "pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:PIPELINE-17",
+      "geometry": null,
+      "properties": {
+        "label": "GeoJSON bounds preview",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "PIPELINE-17",
+        "app": "pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:PIPELINE-18",
+      "geometry": null,
+      "properties": {
+        "label": "Weekly owner-manifest reader",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "PIPELINE-18",
+        "app": "pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:PIPELINE-19",
+      "geometry": null,
+      "properties": {
+        "label": "Official evidence rank",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "PIPELINE-19",
+        "app": "pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:PIPELINE-20",
+      "geometry": null,
+      "properties": {
+        "label": "News canonical dedup",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "PIPELINE-20",
+        "app": "pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:PIPELINE-21",
+      "geometry": null,
+      "properties": {
+        "label": "News date semantics",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "PIPELINE-21",
+        "app": "pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:PIPELINE-22",
+      "geometry": null,
+      "properties": {
+        "label": "Topic relevance cartridge",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "PIPELINE-22",
+        "app": "pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:PIPELINE-23",
+      "geometry": null,
+      "properties": {
+        "label": "Project binding abstention",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "PIPELINE-23",
+        "app": "pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:PIPELINE-24",
+      "geometry": null,
+      "properties": {
+        "label": "Evidence freshness UI",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "PIPELINE-24",
+        "app": "pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:PIPELINE-25",
+      "geometry": null,
+      "properties": {
+        "label": "Weekly ingestion checkpoint receipt",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "PIPELINE-25",
+        "app": "pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:PIPELINE-26",
+      "geometry": null,
+      "properties": {
+        "label": "Source rights metadata",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "PIPELINE-26",
+        "app": "pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:PIPELINE-27",
+      "geometry": null,
+      "properties": {
+        "label": "Company identity join",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "PIPELINE-27",
+        "app": "pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:PIPELINE-28",
+      "geometry": null,
+      "properties": {
+        "label": "Company confidence view",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "PIPELINE-28",
+        "app": "pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:PIPELINE-29",
+      "geometry": null,
+      "properties": {
+        "label": "Financial units adapter",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "PIPELINE-29",
+        "app": "pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:PIPELINE-30",
+      "geometry": null,
+      "properties": {
+        "label": "Company lazy loading",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "PIPELINE-30",
+        "app": "pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:PIPELINE-31",
+      "geometry": null,
+      "properties": {
+        "label": "PVLive interval validation cartridge",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "PIPELINE-31",
+        "app": "pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:PIPELINE-32",
+      "geometry": null,
+      "properties": {
+        "label": "Company schema gate",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "PIPELINE-32",
+        "app": "pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:PIPELINE-33",
+      "geometry": null,
+      "properties": {
+        "label": "Electricity coverage scope",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "PIPELINE-33",
+        "app": "pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:PIPELINE-34",
+      "geometry": null,
+      "properties": {
+        "label": "Coverage-weighted energy rollup",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "PIPELINE-34",
+        "app": "pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:PIPELINE-35",
+      "geometry": null,
+      "properties": {
+        "label": "Feed freshness and revision panel",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "PIPELINE-35",
+        "app": "pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:PIPELINE-36",
+      "geometry": null,
+      "properties": {
+        "label": "Runtime source index",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "PIPELINE-36",
+        "app": "pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:PIPELINE-37",
+      "geometry": null,
+      "properties": {
+        "label": "Release ancestry guard",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "PIPELINE-37",
+        "app": "pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:PIPELINE-38",
+      "geometry": null,
+      "properties": {
+        "label": "Semantic-change gate",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "PIPELINE-38",
+        "app": "pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:PIPELINE-39",
+      "geometry": null,
+      "properties": {
+        "label": "Transport outcome receipt",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "PIPELINE-39",
+        "app": "pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:PIPELINE-40",
+      "geometry": null,
+      "properties": {
+        "label": "Typed market instrument adapter",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "PIPELINE-40",
+        "app": "pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:PIPELINE-41",
+      "geometry": null,
+      "properties": {
+        "label": "Served-byte promotion gate",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "PIPELINE-41",
+        "app": "pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:PIPELINE-42",
+      "geometry": null,
+      "properties": {
+        "label": "Exact-commit dependency CI",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "PIPELINE-42",
+        "app": "pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:PIPELINE-43",
+      "geometry": null,
+      "properties": {
+        "label": "Cartridge source boundary",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "PIPELINE-43",
+        "app": "pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:PIPELINE-44",
+      "geometry": null,
+      "properties": {
+        "label": "Print readiness cartridge",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "PIPELINE-44",
+        "app": "pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:PIPELINE-45",
+      "geometry": null,
+      "properties": {
+        "label": "Print geometry tests",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "PIPELINE-45",
+        "app": "pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:PIPELINE-46",
+      "geometry": null,
+      "properties": {
+        "label": "Performance budget receipt",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "PIPELINE-46",
+        "app": "pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:PIPELINE-47",
+      "geometry": null,
+      "properties": {
+        "label": "Energy feed attribution/ownership panel",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "PIPELINE-47",
+        "app": "pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:PIPELINE-48",
+      "geometry": null,
+      "properties": {
+        "label": "CI resume checkpoint",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "PIPELINE-48",
+        "app": "pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:PIPELINE-49",
+      "geometry": null,
+      "properties": {
+        "label": "Endpoint environment vaccine",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "PIPELINE-49",
+        "app": "pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "build:PIPELINE-50",
+      "geometry": null,
+      "properties": {
+        "label": "Independent proof vaccine",
+        "repo_type": "build",
+        "scope_type": "build",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "build_id": "PIPELINE-50",
+        "app": "pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "migration:Ventusltd/globalgrid2050@a7fb24c22decd71166a6f9d1265b06c87425d9eb::.github/workflows/update_oil_prices.yml",
+      "geometry": null,
+      "properties": {
+        "label": ".github/workflows/update_oil_prices.yml",
+        "repo_type": "workflow",
+        "scope_type": "workflow",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "source_repository": "Ventusltd/globalgrid2050",
+        "source_commit": "a7fb24c22decd71166a6f9d1265b06c87425d9eb",
+        "sha256": "959eace82237ae9dd23e1c1817382586b559295e52e6c610897ff5be9826919d"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "migration:Ventusltd/globalgrid2050@a7fb24c22decd71166a6f9d1265b06c87425d9eb::.github/workflows/update_prices.yml",
+      "geometry": null,
+      "properties": {
+        "label": ".github/workflows/update_prices.yml",
+        "repo_type": "workflow",
+        "scope_type": "workflow",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "source_repository": "Ventusltd/globalgrid2050",
+        "source_commit": "a7fb24c22decd71166a6f9d1265b06c87425d9eb",
+        "sha256": "2700d28ce55f201a40af83bcc515017e08211c46033ccbcde9b698cd66a506f1"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "migration:Ventusltd/globalgrid2050@a7fb24c22decd71166a6f9d1265b06c87425d9eb::scripts/update_commodities_v5.py",
+      "geometry": null,
+      "properties": {
+        "label": "scripts/update_commodities_v5.py",
+        "repo_type": "script",
+        "scope_type": "script",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "source_repository": "Ventusltd/globalgrid2050",
+        "source_commit": "a7fb24c22decd71166a6f9d1265b06c87425d9eb",
+        "sha256": "7f73cdbea2aed5b95b5b1353aee60516ee215214555e1c8862f05ddb08acfeb4"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "migration:Ventusltd/globalgrid2050@a7fb24c22decd71166a6f9d1265b06c87425d9eb::scripts/update_metal_trends.py",
+      "geometry": null,
+      "properties": {
+        "label": "scripts/update_metal_trends.py",
+        "repo_type": "script",
+        "scope_type": "script",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "source_repository": "Ventusltd/globalgrid2050",
+        "source_commit": "a7fb24c22decd71166a6f9d1265b06c87425d9eb",
+        "sha256": "a3bb847b314e0f3665bd72f644964385add8cc897dbc7de97261b377422a044d"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "migration:Ventusltd/globalgrid2050@a7fb24c22decd71166a6f9d1265b06c87425d9eb::scripts/update_oil_prices.py",
+      "geometry": null,
+      "properties": {
+        "label": "scripts/update_oil_prices.py",
+        "repo_type": "script",
+        "scope_type": "script",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "source_repository": "Ventusltd/globalgrid2050",
+        "source_commit": "a7fb24c22decd71166a6f9d1265b06c87425d9eb",
+        "sha256": "cf82557b401d35ddba31dbc31d738eccb8e978ca9caac4e7dd1a2e8f719cc1cf"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "migration:Ventusltd/globalgrid2050@a7fb24c22decd71166a6f9d1265b06c87425d9eb::scripts/update_prices.py",
+      "geometry": null,
+      "properties": {
+        "label": "scripts/update_prices.py",
+        "repo_type": "script",
+        "scope_type": "script",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "source_repository": "Ventusltd/globalgrid2050",
+        "source_commit": "a7fb24c22decd71166a6f9d1265b06c87425d9eb",
+        "sha256": "516e49553c95de4405dd7ce8b4adcb05e9c41bab83a6b07dbb387a4b9024abea"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "migration:Ventusltd/globalgrid2050@a7fb24c22decd71166a6f9d1265b06c87425d9eb::scripts/update_prices_lv.py",
+      "geometry": null,
+      "properties": {
+        "label": "scripts/update_prices_lv.py",
+        "repo_type": "script",
+        "scope_type": "script",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "source_repository": "Ventusltd/globalgrid2050",
+        "source_commit": "a7fb24c22decd71166a6f9d1265b06c87425d9eb",
+        "sha256": "d22aac452bb5ba7bb02d9c7bd228b7fb4cc7cf471880d0526b0b66d14f0ec6ae"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/cable-trench-or-drill::cartridges/crossing-method/index.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/crossing-method/index.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/cable-trench-or-drill"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/cable-trench-or-drill::cartridges/geometry-state/index.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/geometry-state/index.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/cable-trench-or-drill"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/cable-trench-or-drill::cartridges/hdd-scenario/index.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/hdd-scenario/index.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/cable-trench-or-drill"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/cable-trench-or-drill::cartridges/trench-scenario/index.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/trench-scenario/index.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/cable-trench-or-drill"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/cvaa::cartridges/cartridge-isolation/index.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/cartridge-isolation/index.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/cvaa"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/cvaa::cartridges/endpoint-environment-vaccine.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/endpoint-environment-vaccine.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/cvaa"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/cvaa::cartridges/evidence-conflict/index.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/evidence-conflict/index.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/cvaa"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/cvaa::cartridges/independent-proof-vaccine.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/independent-proof-vaccine.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/cvaa"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/data-gb-electricity::cartridges/coverage-weighted-energy-rollup/index.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/coverage-weighted-energy-rollup/index.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/data-gb-electricity"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/data-gb-electricity::cartridges/weekly-ingestion-checkpoint-receipt/index.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/weekly-ingestion-checkpoint-receipt/index.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/data-gb-electricity"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/data-grid-gb::cartridges/connection-identity/index.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/connection-identity/index.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/data-grid-gb"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/gis-sld-sandbox::cartridges/dom-frame/index.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/dom-frame/index.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/gis-sld-sandbox"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/gis-sld-sandbox::cartridges/market-input-layer/index.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/market-input-layer/index.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/gis-sld-sandbox"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/gis-sld-sandbox::cartridges/original-parity/index.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/original-parity/index.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/gis-sld-sandbox"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/gis-sld-sandbox::cartridges/route-cost-basis/index.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/route-cost-basis/index.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/gis-sld-sandbox"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/gis-sld-sandbox::cartridges/route-persistence/index.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/route-persistence/index.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/gis-sld-sandbox"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/gis-sld-sandbox::cartridges/route-provenance/index.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/route-provenance/index.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/gis-sld-sandbox"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/gis-sld-sandbox::cartridges/route-undo/index.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/route-undo/index.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/gis-sld-sandbox"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/gpu-drivers-for-global-grid::cartridges/cpu-gpu-oracle/index.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/cpu-gpu-oracle/index.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/gpu-drivers-for-global-grid"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/gpu-drivers-for-global-grid::cartridges/optional-compute/index.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/optional-compute/index.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/gpu-drivers-for-global-grid"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/gridatlas::cartridges/cartridge-dependencies/index.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/cartridge-dependencies/index.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/gridatlas::cartridges/control-safe-area/index.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/control-safe-area/index.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/gridatlas::cartridges/fault-evidence-layer/index.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/fault-evidence-layer/index.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/gridatlas::cartridges/grid-switch/index.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/grid-switch/index.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/gridatlas::cartridges/layer-defaults/index.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/layer-defaults/index.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/gridatlas::cartridges/layer-lifecycle/index.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/layer-lifecycle/index.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/gridatlas::cartridges/loader-hash/index.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/loader-hash/index.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/gridatlas::cartridges/network-lineage/index.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/network-lineage/index.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/gridatlas::cartridges/route-constraints/index.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/route-constraints/index.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/gridatlas::cartridges/subs-switch/index.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/subs-switch/index.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/gridatlas::cartridges/weekly-electricity/index.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/weekly-electricity/index.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/gridatlas::cartridges/weekly-pv/index.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/weekly-pv/index.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/gridatlas"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/layout-tool::cartridges/placement-export/index.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/placement-export/index.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/layout-tool"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/layout-tool::cartridges/placement-state/index.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/placement-state/index.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/layout-tool"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/pipelinenews::cartridges/bounded-table-rendering.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/bounded-table-rendering.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/pipelinenews::cartridges/canonical-receiver-adapter.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/canonical-receiver-adapter.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/pipelinenews::cartridges/cartridge-source-boundary.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/cartridge-source-boundary.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/pipelinenews::cartridges/company-confidence-view.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/company-confidence-view.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/pipelinenews::cartridges/company-identity-join.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/company-identity-join.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/pipelinenews::cartridges/company-lazy-loading.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/company-lazy-loading.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/pipelinenews::cartridges/company-schema-gate.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/company-schema-gate.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/pipelinenews::cartridges/coverage-ci-contract.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/coverage-ci-contract.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/pipelinenews::cartridges/coverage-explanation-ui.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/coverage-explanation-ui.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/pipelinenews::cartridges/coverage-join-audit.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/coverage-join-audit.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/pipelinenews::cartridges/electricity-coverage-scope.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/electricity-coverage-scope.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/pipelinenews::cartridges/energy-feed-attribution-ownership-panel/index.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/energy-feed-attribution-ownership-panel/index.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/pipelinenews::cartridges/evidence-freshness-ui.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/evidence-freshness-ui.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/pipelinenews::cartridges/exact-commit-dependency-ci.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/exact-commit-dependency-ci.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/pipelinenews::cartridges/feed-freshness-and-revision-panel/index.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/feed-freshness-and-revision-panel/index.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/pipelinenews::cartridges/financial-units-adapter.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/financial-units-adapter.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/pipelinenews::cartridges/geojson-bounds-preview.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/geojson-bounds-preview.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/pipelinenews::cartridges/geojson-filter-export.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/geojson-filter-export.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/pipelinenews::cartridges/geojson-identity-export.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/geojson-identity-export.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/pipelinenews::cartridges/geojson-null-geometry.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/geojson-null-geometry.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/pipelinenews::cartridges/geojson-partition-manifest.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/geojson-partition-manifest.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/pipelinenews::cartridges/grid-coverage-successor.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/grid-coverage-successor.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/pipelinenews::cartridges/mobile-row-actions.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/mobile-row-actions.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/pipelinenews::cartridges/news-canonical-dedup.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/news-canonical-dedup.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/pipelinenews::cartridges/news-date-semantics.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/news-date-semantics.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/pipelinenews::cartridges/observable-search-completion.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/observable-search-completion.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/pipelinenews::cartridges/official-evidence-rank.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/official-evidence-rank.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/pipelinenews::cartridges/pagination-state-cartridge.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/pagination-state-cartridge.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/pipelinenews::cartridges/performance-budget-receipt.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/performance-budget-receipt.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/pipelinenews::cartridges/print-geometry-tests.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/print-geometry-tests.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/pipelinenews::cartridges/print-readiness-cartridge.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/print-readiness-cartridge.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/pipelinenews::cartridges/project-binding-abstention.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/project-binding-abstention.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/pipelinenews::cartridges/receiver-failure-state.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/receiver-failure-state.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/pipelinenews::cartridges/release-ancestry-guard.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/release-ancestry-guard.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/pipelinenews::cartridges/runtime-source-index.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/runtime-source-index.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/pipelinenews::cartridges/semantic-change-gate.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/semantic-change-gate.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/pipelinenews::cartridges/served-byte-promotion-gate.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/served-byte-promotion-gate.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/pipelinenews::cartridges/source-rights-metadata.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/source-rights-metadata.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/pipelinenews::cartridges/stable-project-selection.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/stable-project-selection.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/pipelinenews::cartridges/sub-coverage-successor.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/sub-coverage-successor.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/pipelinenews::cartridges/topic-relevance-cartridge.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/topic-relevance-cartridge.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/pipelinenews::cartridges/transport-outcome-receipt.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/transport-outcome-receipt.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/pipelinenews::cartridges/typed-market-instrument-adapter/index.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/typed-market-instrument-adapter/index.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/pipelinenews::cartridges/weekly-owner-manifest-reader/index.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/weekly-owner-manifest-reader/index.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/pipelinenews"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/spiders::cartridges/build-plan-reader/index.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/build-plan-reader/index.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/spiders"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/spiders::cartridges/ci-resume-checkpoint.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/ci-resume-checkpoint.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/spiders"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/spiders::cartridges/rail-crossings/index.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/rail-crossings/index.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/spiders"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/spiders::cartridges/repd-status-delta/index.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/repd-status-delta/index.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/spiders"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/spiders::cartridges/river-crossings/index.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/river-crossings/index.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/spiders"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/spiders::cartridges/road-classification/index.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/road-classification/index.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/spiders"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/spiders::cartridges/user-evidence/index.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/user-evidence/index.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/spiders"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/spiders::cartridges/weekly-market/index.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/weekly-market/index.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/spiders"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/spiders::species/market-spider/fx/index.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "species/market-spider/fx/index.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/spiders"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/spiders::species/market-spider/metals/index.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "species/market-spider/metals/index.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/spiders"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/spiders::species/market-spider/oil/index.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "species/market-spider/oil/index.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/spiders"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/spiders::species/pvlive-spider/interval-validation/index.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "species/pvlive-spider/interval-validation/index.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/spiders"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/teleprinter::cartridges/layer-pdf/index.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/layer-pdf/index.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/teleprinter"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/teleprinter::cartridges/pipeline-clipping/index.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/pipeline-clipping/index.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/teleprinter"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/teleprinter::cartridges/source-budget/index.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/source-budget/index.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/teleprinter"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/testcode::cartridges/layer-menu-text/index.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/layer-menu-text/index.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/testcode"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/testcode::cartridges/release-evidence/index.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/release-evidence/index.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/testcode"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/testcode::cartridges/source-entry/index.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/source-entry/index.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/testcode"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/ventus-grid-engine::cartridges/first-pass-contract/index.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/first-pass-contract/index.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/ventus-grid-engine"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/ventus-grid-engine::cartridges/published-fault-adapter/index.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/published-fault-adapter/index.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/ventus-grid-engine"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/ventus-grid-engine::cartridges/route-alternatives/index.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/route-alternatives/index.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/ventus-grid-engine"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "module:Ventusltd/ventus-grid-engine::cartridges/route-comparison/index.mjs",
+      "geometry": null,
+      "properties": {
+        "label": "cartridges/route-comparison/index.mjs",
+        "repo_type": "module",
+        "scope_type": "module",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null,
+        "owner_repository": "Ventusltd/ventus-grid-engine"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "repo:Ventusltd/cable-trench-or-drill",
+      "geometry": null,
+      "properties": {
+        "label": "Ventusltd/cable-trench-or-drill",
+        "repo_type": "repository",
+        "scope_type": "repository",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "repo:Ventusltd/cvaa",
+      "geometry": null,
+      "properties": {
+        "label": "Ventusltd/cvaa",
+        "repo_type": "repository",
+        "scope_type": "repository",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "repo:Ventusltd/data-gb-electricity",
+      "geometry": null,
+      "properties": {
+        "label": "Ventusltd/data-gb-electricity",
+        "repo_type": "repository",
+        "scope_type": "repository",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "repo:Ventusltd/data-grid-gb",
+      "geometry": null,
+      "properties": {
+        "label": "Ventusltd/data-grid-gb",
+        "repo_type": "repository",
+        "scope_type": "repository",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "repo:Ventusltd/gis-sld-sandbox",
+      "geometry": null,
+      "properties": {
+        "label": "Ventusltd/gis-sld-sandbox",
+        "repo_type": "repository",
+        "scope_type": "repository",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "repo:Ventusltd/gpu-drivers-for-global-grid",
+      "geometry": null,
+      "properties": {
+        "label": "Ventusltd/gpu-drivers-for-global-grid",
+        "repo_type": "repository",
+        "scope_type": "repository",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "repo:Ventusltd/gridatlas",
+      "geometry": null,
+      "properties": {
+        "label": "Ventusltd/gridatlas",
+        "repo_type": "repository",
+        "scope_type": "repository",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "repo:Ventusltd/layout-tool",
+      "geometry": null,
+      "properties": {
+        "label": "Ventusltd/layout-tool",
+        "repo_type": "repository",
+        "scope_type": "repository",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "repo:Ventusltd/pipelinenews",
+      "geometry": null,
+      "properties": {
+        "label": "Ventusltd/pipelinenews",
+        "repo_type": "repository",
+        "scope_type": "repository",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "repo:Ventusltd/spiders",
+      "geometry": null,
+      "properties": {
+        "label": "Ventusltd/spiders",
+        "repo_type": "repository",
+        "scope_type": "repository",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "repo:Ventusltd/teleprinter",
+      "geometry": null,
+      "properties": {
+        "label": "Ventusltd/teleprinter",
+        "repo_type": "repository",
+        "scope_type": "repository",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "repo:Ventusltd/testcode",
+      "geometry": null,
+      "properties": {
+        "label": "Ventusltd/testcode",
+        "repo_type": "repository",
+        "scope_type": "repository",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "repo:Ventusltd/ventus-grid-engine",
+      "geometry": null,
+      "properties": {
+        "label": "Ventusltd/ventus-grid-engine",
+        "repo_type": "repository",
+        "scope_type": "repository",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "source:DESNZ-REPD",
+      "geometry": null,
+      "properties": {
+        "label": "DESNZ-REPD",
+        "repo_type": "source",
+        "scope_type": "source",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "source:EIA-FRED-oil",
+      "geometry": null,
+      "properties": {
+        "label": "EIA-FRED-oil",
+        "repo_type": "source",
+        "scope_type": "source",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "source:Elexon-Insights",
+      "geometry": null,
+      "properties": {
+        "label": "Elexon-Insights",
+        "repo_type": "source",
+        "scope_type": "source",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "source:ExchangeRate-API",
+      "geometry": null,
+      "properties": {
+        "label": "ExchangeRate-API",
+        "repo_type": "source",
+        "scope_type": "source",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "source:NESO-ETYS",
+      "geometry": null,
+      "properties": {
+        "label": "NESO-ETYS",
+        "repo_type": "source",
+        "scope_type": "source",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "source:Sheffield-PVLive",
+      "geometry": null,
+      "properties": {
+        "label": "Sheffield-PVLive",
+        "repo_type": "source",
+        "scope_type": "source",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "source:companies",
+      "geometry": null,
+      "properties": {
+        "label": "companies",
+        "repo_type": "source",
+        "scope_type": "source",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "source:metal-market-provider-pending",
+      "geometry": null,
+      "properties": {
+        "label": "metal-market-provider-pending",
+        "repo_type": "source",
+        "scope_type": "source",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "source:news-publishers",
+      "geometry": null,
+      "properties": {
+        "label": "news-publishers",
+        "repo_type": "source",
+        "scope_type": "source",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "source:rail-data-provider-pending",
+      "geometry": null,
+      "properties": {
+        "label": "rail-data-provider-pending",
+        "repo_type": "source",
+        "scope_type": "source",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "source:river-data-provider-pending",
+      "geometry": null,
+      "properties": {
+        "label": "river-data-provider-pending",
+        "repo_type": "source",
+        "scope_type": "source",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "source:road-data-provider-pending",
+      "geometry": null,
+      "properties": {
+        "label": "road-data-provider-pending",
+        "repo_type": "source",
+        "scope_type": "source",
+        "status": "planned",
+        "rag": "grey",
+        "status_reason": "Declared build plan; not observed implementation or acceptance",
+        "child_manifest": null
+      }
+    }
+  ]
+}

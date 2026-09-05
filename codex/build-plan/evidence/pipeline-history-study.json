@@ -1,0 +1,1086 @@
+{
+  "schema": "ventus.pipeline-history-study.v1",
+  "observedAt": "2026-09-05T20:34:42.151805+00:00",
+  "requestedWindow": {
+    "from": "2026-04-05",
+    "to": "2026-09-05"
+  },
+  "coverage": [
+    {
+      "repository": "pipelinenews",
+      "head": "5d8b2ae49cdb66af3615e137afe8be18f7dae192",
+      "shallow": false,
+      "reachableCommits": 504,
+      "windowCommits": 504,
+      "oldestCommittedAt": "2026-08-24T10:40:24Z",
+      "newestCommittedAt": "2026-09-05T14:52:39+01:00",
+      "monthCounts": {
+        "2026-08": 287,
+        "2026-09": 217
+      }
+    },
+    {
+      "repository": "spiders",
+      "head": "914554af2f449a3a7d1c88444e359ee425e2a286",
+      "shallow": false,
+      "reachableCommits": 108,
+      "windowCommits": 108,
+      "oldestCommittedAt": "2026-07-04T07:34:47+01:00",
+      "newestCommittedAt": "2026-09-05T21:28:19+01:00",
+      "monthCounts": {
+        "2026-07": 57,
+        "2026-08": 1,
+        "2026-09": 50
+      }
+    },
+    {
+      "repository": "cvaa",
+      "head": "19a20cef4fefa1b233d7beef9efd7b51fa67548d",
+      "shallow": false,
+      "reachableCommits": 53,
+      "windowCommits": 53,
+      "oldestCommittedAt": "2026-08-30T14:07:39+01:00",
+      "newestCommittedAt": "2026-09-05T19:29:53+01:00",
+      "monthCounts": {
+        "2026-08": 30,
+        "2026-09": 23
+      }
+    }
+  ],
+  "limitations": [
+    "Non-shallow local reachable refs were surveyed, not all remote deleted refs or every historical runtime visually tested.",
+    "No April-June history exists in these three reachable repositories; original globalgrid history must supply earlier lineage.",
+    "Latest30 CI runs per repo sampled, not all283Pipeline/135Spiders/86CVAA runs or their logs.",
+    "Claude/Codex board statements remain attributed historical evidence; current defects require reproduction unless independently measured.",
+    "These50 entries are candidate increments for parent masterplan, not50 releases or implementation authorization claims. Existing fixes are regression work, not undiscovered bugs."
+  ],
+  "evidence": [
+    {
+      "id": "E01",
+      "repository": "pipelinenews",
+      "commit": "5d8b2ae49cdb66af3615e137afe8be18f7dae192",
+      "path": "ui/templates/202608261927-shell-v9-6-2.html",
+      "pathExistsAtCommit": true,
+      "sha256": "2cec59602ded52930b8144124d5f368ff67c2665acfea35cd4aca8d091ee6b64",
+      "note": "Retired template anchor fixed; published historical copies preserved",
+      "changedPaths": [
+        "docs/coordination/BOARD.md",
+        "ui/templates/202608261927-shell-v9-6-2.html"
+      ]
+    },
+    {
+      "id": "E02",
+      "repository": "pipelinenews",
+      "commit": "a38ea967a9376b0b69b8e6fae241402373e715a5",
+      "path": "docs/coordination/BOARD.md",
+      "pathExistsAtCommit": true,
+      "sha256": "d51635351e8714307e1694b23f0ce4e91bb7d1ac692104b792ee09544542d9b6",
+      "note": "Claude-lane measured findings and explicit corrections; reported claims, not independently rerun here",
+      "changedPaths": [
+        "docs/coordination/BOARD.md"
+      ]
+    },
+    {
+      "id": "E03",
+      "repository": "pipelinenews",
+      "commit": "7ecb405583919c0d78f532913c3c6c72cc2ed64c",
+      "path": "tools/intelligence/release_builder.py",
+      "pathExistsAtCommit": true,
+      "sha256": "5d8ffd921c73f85ea54663df73f61553608b7bbb2cd8dbcc949a16c020324884",
+      "note": "Ancestry-aware repair applicability fixed; avoid cosmetic repeat releases",
+      "changedPaths": [
+        "tools/intelligence/release_builder.py",
+        "tools/publication/run_pages_candidate_gate.py",
+        "tools/publication/test_release_builder_applicability.py"
+      ]
+    },
+    {
+      "id": "E04",
+      "repository": "pipelinenews",
+      "commit": "00a7585afde5836b7eec6b81141bba72c0d5fc49",
+      "path": "tools/overnight/202609012300-shift.mjs",
+      "pathExistsAtCommit": true,
+      "sha256": "4d9e0808c141e534cbf945e2f667744ed34f69f6232e8565c9ddd452547128e8",
+      "note": "Proxy403 is transport failure, not host failure; session identity must not be invented",
+      "changedPaths": [
+        ".gitignore",
+        "tools/overnight/202609012300-shift.mjs",
+        "tools/overnight/shift-log.json"
+      ]
+    },
+    {
+      "id": "E05",
+      "repository": "pipelinenews",
+      "commit": "704a3c247ae58866533169488b9be7c4f920b73b",
+      "path": "data/atlas/202608261927-atlas-bess-partition-v9-1-001.geojson",
+      "pathExistsAtCommit": true,
+      "sha256": "70d936864c973c342729b37c6eb81151a9d2965e7fa2b6dff0cd998635c3581a",
+      "note": "Complete GeoJSON closure introduced",
+      "changedPaths": [
+        "data/atlas/202608261927-atlas-bess-partition-v9-1-001.geojson",
+        "data/atlas/202608261927-atlas-bess-partition-v9-1-002.geojson",
+        "data/atlas/202608261927-atlas-bess-partition-v9-1-003.geojson",
+        "data/atlas/202608261927-atlas-bess-partition-v9-1-004.geojson",
+        "data/atlas/202608261927-atlas-solar-partition-v9-1-001.geojson",
+        "data/atlas/202608261927-atlas-solar-partition-v9-1-002.geojson",
+        "data/atlas/202608261927-atlas-solar-partition-v9-1-003.geojson",
+        "data/atlas/202608261927-atlas-solar-partition-v9-1-004.geojson",
+        "data/atlas/202608261927-atlas-solar-partition-v9-1-005.geojson",
+        "data/atlas/202608261927-atlas-solar-partition-v9-1-006.geojson",
+        "data/atlas/202608261927-atlas-solar-partition-v9-1-007.geojson",
+        "data/atlas/202608261927-atlas-solar-partition-v9-1-008.geojson",
+        "data/atlas/202608261927-atlas-wind-offshore-partition-v9-1-001.geojson",
+        "data/atlas/202608261927-atlas-wind-onshore-partition-v9-1-001.geojson",
+        "data/atlas/202608261927-atlas-wind-onshore-partition-v9-1-002.geojson",
+        "data/atlas/202608261927-atlas-wind-onshore-partition-v9-1-003.geojson",
+        "data/atlas/202608261927-atlas-wind-onshore-partition-v9-1-004.geojson",
+        "data/atlas/202608261927-atlas-wind-onshore-partition-v9-1-005.geojson"
+      ]
+    },
+    {
+      "id": "E06",
+      "repository": "pipelinenews",
+      "commit": "c0851db567a6e508aa31228b2519e729ed0cb28a",
+      "path": "build/202608262103-companies-house-functional-next-steps.md",
+      "pathExistsAtCommit": true,
+      "sha256": "0a4cdd580771c08f142cb8318e07a21b227bfd7e034f08ff5220c80a02f114e0",
+      "note": "Design only; Companies owner now separate, do not duplicate datasets",
+      "changedPaths": [
+        "build/202608262103-companies-house-functional-next-steps.md"
+      ]
+    },
+    {
+      "id": "E07",
+      "repository": "pipelinenews",
+      "commit": "398c03d802692d3063c2f77d7b2a03df0055a090",
+      "path": "tools/intelligence/cartridges/gb-electricity-context/cartridge.json",
+      "pathExistsAtCommit": true,
+      "sha256": "1efc6130c3535c4b809ca01ae13190e305d602cdae98123565d25389f1ffc1c9",
+      "note": "Electricity normalization and coverage provenance",
+      "changedPaths": [
+        "docs/coordination/from-codex/202609010134-electricity-context-v2-handoff.md",
+        "releases/202609010131-pipelinenews/assets/202608261927-chart-umd.min.js",
+        "releases/202609010131-pipelinenews/assets/202608270055-v8-fast.css",
+        "releases/202609010131-pipelinenews/assets/202608272048-orientation.css",
+        "releases/202609010131-pipelinenews/assets/202608272130-sector-intelligence.mjs",
+        "releases/202609010131-pipelinenews/assets/202608282200-federated-relationships.mjs",
+        "releases/202609010131-pipelinenews/assets/202608291447-app.mjs",
+        "releases/202609010131-pipelinenews/assets/202608291447-atlas-pointer-deep-link.mjs",
+        "releases/202609010131-pipelinenews/assets/202608311343-atlas-pointer-deep-link.mjs",
+        "releases/202609010131-pipelinenews/assets/202608311343-project-intelligence.mjs",
+        "releases/202609010131-pipelinenews/assets/202608311610-grid-proximity.mjs",
+        "releases/202609010131-pipelinenews/assets/202608312037-atlas-pointer-deep-link.mjs",
+        "releases/202609010131-pipelinenews/assets/202608312109-sector-intelligence.mjs",
+        "releases/202609010131-pipelinenews/assets/202609010131-gb-electricity-context.mjs",
+        "releases/202609010131-pipelinenews/atlas-link-manifest.json",
+        "releases/202609010131-pipelinenews/build-manifest.json",
+        "releases/202609010131-pipelinenews/data/202608270055-8ab1807551bc-v8-fast-projects.json",
+        "releases/202609010131-pipelinenews/data/202608270055-8ab1807551bc-v8-fast-search.json",
+        "releases/202609010131-pipelinenews/data/202608271524-fd2212a8c76d-v8-fast-news.json",
+        "releases/202609010131-pipelinenews/data/202608272130-sector-intelligence.json",
+        "releases/202609010131-pipelinenews/data/202608282200-relationship-governance-status.json",
+        "releases/202609010131-pipelinenews/data/202608291447-registry.json",
+        "releases/202609010131-pipelinenews/data/202608311343-project-intelligence.json",
+        "releases/202609010131-pipelinenews/data/202608311343-project-intelligence.json.sha256",
+        "releases/202609010131-pipelinenews/data/202608311610-grid-proximity.json",
+        "releases/202609010131-pipelinenews/data/202608311610-grid-proximity.json.sha256",
+        "releases/202609010131-pipelinenews/data/202608311731-locality.json",
+        "releases/202609010131-pipelinenews/data/202608311731-locality.json.sha256",
+        "releases/202609010131-pipelinenews/data/202608311800-grid-distance.json",
+        "releases/202609010131-pipelinenews/data/202608311800-grid-distance.json.sha256"
+      ]
+    },
+    {
+      "id": "E08",
+      "repository": "pipelinenews",
+      "commit": "0a161cdf6f2c93bb8c5cade11b9f1eb4bfd11df4",
+      "path": "tools/intelligence/audits/202609010015-sector-ledger-relevance-proof.mjs",
+      "pathExistsAtCommit": true,
+      "sha256": "0d25fba2b594a7ec9ca08617f91a3dc499ee390bb2e0755b964c959b14bf74a5",
+      "note": "Relevance before Parquet; no keyword-only project binding",
+      "changedPaths": [
+        "discovery/javascript/202609010015-sector-ledger-relevance-gate.mjs",
+        "discovery/javascript/202609010015-sector-topic-evidence.mjs",
+        "docs/coordination/from-codex/202609010015-sector-ledger-relevance-gate.md",
+        "tools/intelligence/audits/202609010015-sector-ledger-relevance-proof.mjs",
+        "tools/intelligence/audits/sector_topic_relevance_audit.mjs"
+      ]
+    },
+    {
+      "id": "E09",
+      "repository": "pipelinenews",
+      "commit": "2d3defc5a111d178b619548f871809035316ad5b",
+      "path": "atman/202608262120-performance-audit.mjs",
+      "pathExistsAtCommit": true,
+      "sha256": "b9a3c80734b91b1c967ac061e208e82ea241dd768b0ea8130f2c3051cf76690d",
+      "note": "Read-only comparative performance harness",
+      "changedPaths": [
+        "atman/202608262120-performance-audit.mjs"
+      ]
+    },
+    {
+      "id": "E10",
+      "repository": "pipelinenews",
+      "commit": "5d8b2ae49cdb66af3615e137afe8be18f7dae192",
+      "path": "tools/intelligence/cartridges/wider-fleet-proximity/SPENT.md",
+      "pathExistsAtCommit": true,
+      "sha256": "d7a144853788bb0ba3a199917063d50859968165fe30b9126c3a46a8a12c4904",
+      "note": "Historical fail-open repair and current payload coverage seam",
+      "changedPaths": [
+        "docs/coordination/BOARD.md",
+        "ui/templates/202608261927-shell-v9-6-2.html"
+      ]
+    },
+    {
+      "id": "E11",
+      "repository": "spiders",
+      "commit": "31d1d524bfb14139b7d6307811f5dc797e4cd8c9",
+      "path": "species/genome-spider/config/repos.json",
+      "pathExistsAtCommit": true,
+      "sha256": "34c7b22e71c04a9cf116139409c3cc42918848b33682851e66370d41c739d5c4",
+      "note": "Genome species and CI evidence architecture",
+      "changedPaths": [
+        ".github/workflows/genome.yml",
+        "species/genome-spider/README.md",
+        "species/genome-spider/config/repos.json",
+        "species/genome-spider/data/edges.json",
+        "species/genome-spider/data/genome.json",
+        "species/genome-spider/data/gridatlas-lineage.json",
+        "species/genome-spider/data/manifest.json",
+        "species/genome-spider/data/nodes.json",
+        "species/genome-spider/genome.proof.mjs",
+        "species/genome-spider/lib/classify.mjs",
+        "species/genome-spider/lib/edges.mjs",
+        "species/genome-spider/lib/git.mjs",
+        "species/genome-spider/lib/markers.mjs",
+        "species/genome-spider/lib/schema.mjs",
+        "species/genome-spider/lineage.mjs",
+        "species/genome-spider/make-receipt.mjs",
+        "species/genome-spider/spider.mjs"
+      ]
+    },
+    {
+      "id": "E12",
+      "repository": "spiders",
+      "commit": "6b6af3c24898ea1c861df5aeeb8959c71ddbe253",
+      "path": "README.md",
+      "pathExistsAtCommit": true,
+      "sha256": "ec27a483fea54717c2b1c03297dc74c6082354b8a1e0e6f238bc01290563ac4c",
+      "note": "Portable observer receipts with explicit evidence boundaries",
+      "changedPaths": [
+        "control/README.md",
+        "tools/validate-60x-program.mjs"
+      ]
+    },
+    {
+      "id": "E13",
+      "repository": "cvaa",
+      "commit": "7c8ed0992c46f6aa22c8504e993b181bfc9b28a9",
+      "path": "inoculate.mjs",
+      "pathExistsAtCommit": true,
+      "sha256": "8d0f50a64648273a7026b56b13eee74696606e7f473308f63122ff86db8171c2",
+      "note": "Read-only target observation; skip is not pass",
+      "changedPaths": [
+        "inoculate.mjs",
+        "tools/antibody-runner.mjs",
+        "tools/selftest.mjs",
+        "vaccines.lock",
+        "vaccines/202608301328-derived-state-not-authored.md"
+      ]
+    },
+    {
+      "id": "E14",
+      "repository": "cvaa",
+      "commit": "a1fae46a1cb3685ce1214ecd930363ca2c6eba39",
+      "path": "vaccines/202609051828-runtime-endpoint-contract.md",
+      "pathExistsAtCommit": true,
+      "sha256": "698860f602f70592f069b682d219bf0ceb56375ae3b3a2ed85868fa4adb9d0be",
+      "note": "Runtime endpoint/environment regression",
+      "changedPaths": [
+        "studies/202609051830-runtime-endpoint-contract.md",
+        "tools/runtime-endpoints.test.mjs",
+        "tools/selftest.mjs",
+        "vaccines.lock",
+        "vaccines/202609051828-runtime-endpoint-contract.md"
+      ]
+    },
+    {
+      "id": "E15",
+      "repository": "cvaa",
+      "commit": "dfb81299c5e7ae4264647e4e18568d6ca841b873",
+      "path": "README.md",
+      "pathExistsAtCommit": true,
+      "sha256": "08c32d1613f84a80126de36da32c2f5e235c4e76e8564e24a0d56b114fe44467",
+      "note": "Self-agreeing proof prevention history",
+      "changedPaths": [
+        "vaccines.lock",
+        "vaccines/202609012350-historical-triangulation.md"
+      ]
+    }
+  ],
+  "independentMeasurements": [
+    {
+      "repository": "pipelinenews",
+      "head": "5d8b2ae49cdb66af3615e137afe8be18f7dae192",
+      "release": "202609050309-pipelinenews",
+      "counts": {
+        "grid_proximity_actual": 4138,
+        "grid_distance_actual": 3047,
+        "substation_actual": 3047
+      },
+      "scope": "Parsed local immutable JSON payload collection lengths; no live-server or engineering correctness claim"
+    }
+  ],
+  "candidates": [
+    {
+      "id": "PIPELINE-CANDIDATE-01",
+      "title": "Coverage join audit",
+      "evidenceIds": [
+        "E10"
+      ],
+      "classification": "confirmed_local_data_gap",
+      "owner": "pipelinenews",
+      "proposedCartridge": "proposed/coverage-join-audit.mjs",
+      "change": "Report exact REPD key differences among proximity, GRID and SUB",
+      "acceptance": "Pinned202609050309 counts4138/3047/3047 and key sets",
+      "status": "proposed_not_implemented",
+      "generation": null
+    },
+    {
+      "id": "PIPELINE-CANDIDATE-02",
+      "title": "GRID coverage successor",
+      "evidenceIds": [
+        "E10"
+      ],
+      "classification": "planned_repair",
+      "owner": "pipelinenews",
+      "proposedCartridge": "proposed/grid-coverage-successor.mjs",
+      "change": "Produce GRID projection for missing covered projects using owner data",
+      "acceptance": "No invented values; existing3047 byte/number parity",
+      "status": "proposed_not_implemented",
+      "generation": null
+    },
+    {
+      "id": "PIPELINE-CANDIDATE-03",
+      "title": "SUB coverage successor",
+      "evidenceIds": [
+        "E10"
+      ],
+      "classification": "planned_repair",
+      "owner": "pipelinenews",
+      "proposedCartridge": "proposed/sub-coverage-successor.mjs",
+      "change": "Produce missing substation records or explicit unavailable states",
+      "acceptance": "Dataset coverage and join-negative fixtures",
+      "status": "proposed_not_implemented",
+      "generation": null
+    },
+    {
+      "id": "PIPELINE-CANDIDATE-04",
+      "title": "Coverage explanation UI",
+      "evidenceIds": [
+        "E10"
+      ],
+      "classification": "planned_capability",
+      "owner": "pipelinenews",
+      "proposedCartridge": "proposed/coverage-explanation-ui.mjs",
+      "change": "Show which source lacks project coverage",
+      "acceptance": "Missing is not zero; panel/table agree",
+      "status": "proposed_not_implemented",
+      "generation": null
+    },
+    {
+      "id": "PIPELINE-CANDIDATE-05",
+      "title": "Coverage CI contract",
+      "evidenceIds": [
+        "E10"
+      ],
+      "classification": "planned_regression",
+      "owner": "pipelinenews",
+      "proposedCartridge": "proposed/coverage-ci-contract.mjs",
+      "change": "Reject falsely universal panel-column parity claims",
+      "acceptance": "Deliberately drop one project and fail",
+      "status": "proposed_not_implemented",
+      "generation": null
+    },
+    {
+      "id": "PIPELINE-CANDIDATE-06",
+      "title": "Bounded table rendering",
+      "evidenceIds": [
+        "E02"
+      ],
+      "classification": "reported_bug_needs_reproduction",
+      "owner": "pipelinenews",
+      "proposedCartridge": "proposed/bounded-table-rendering.mjs",
+      "change": "Extract virtualized row window preserving navigation",
+      "acceptance": "Measure DOM count, mobile MAP reach and keyboard rows",
+      "status": "proposed_not_implemented",
+      "generation": null
+    },
+    {
+      "id": "PIPELINE-CANDIDATE-07",
+      "title": "Pagination state cartridge",
+      "evidenceIds": [
+        "E02"
+      ],
+      "classification": "planned_regression",
+      "owner": "pipelinenews",
+      "proposedCartridge": "proposed/pagination-state-cartridge.mjs",
+      "change": "Bind pager range to visible filtered cut",
+      "acceptance": "Filter reset, end page and restored URL cases",
+      "status": "proposed_not_implemented",
+      "generation": null
+    },
+    {
+      "id": "PIPELINE-CANDIDATE-08",
+      "title": "Stable project selection",
+      "evidenceIds": [
+        "E02"
+      ],
+      "classification": "planned_capability",
+      "owner": "pipelinenews",
+      "proposedCartridge": "proposed/stable-project-selection.mjs",
+      "change": "Retain selected REPD identity across virtual scroll",
+      "acceptance": "Selection survives sort and recycling",
+      "status": "proposed_not_implemented",
+      "generation": null
+    },
+    {
+      "id": "PIPELINE-CANDIDATE-09",
+      "title": "Mobile row actions",
+      "evidenceIds": [
+        "E02"
+      ],
+      "classification": "reported_bug_needs_reproduction",
+      "owner": "pipelinenews",
+      "proposedCartridge": "proposed/mobile-row-actions.mjs",
+      "change": "Keep MAP action within phone hit area",
+      "acceptance": "393px measured click geometry, not href existence",
+      "status": "proposed_not_implemented",
+      "generation": null
+    },
+    {
+      "id": "PIPELINE-CANDIDATE-10",
+      "title": "Observable search completion",
+      "evidenceIds": [
+        "E02"
+      ],
+      "classification": "planned_regression",
+      "owner": "pipelinenews",
+      "proposedCartridge": "proposed/observable-search-completion.mjs",
+      "change": "Replace fixed waits with result-state readiness",
+      "acceptance": "Slow CPU and delayed data prove no arbitrary deadline",
+      "status": "proposed_not_implemented",
+      "generation": null
+    },
+    {
+      "id": "PIPELINE-CANDIDATE-11",
+      "title": "Canonical receiver adapter",
+      "evidenceIds": [
+        "E01"
+      ],
+      "classification": "planned_regression",
+      "owner": "pipelinenews",
+      "proposedCartridge": "proposed/canonical-receiver-adapter.mjs",
+      "change": "One compiled receiver contract for nav and row links",
+      "acceptance": "HTML and JS source scans plus actual destination",
+      "status": "proposed_not_implemented",
+      "generation": null
+    },
+    {
+      "id": "PIPELINE-CANDIDATE-12",
+      "title": "Receiver failure state",
+      "evidenceIds": [
+        "E02"
+      ],
+      "classification": "planned_regression",
+      "owner": "pipelinenews",
+      "proposedCartridge": "proposed/receiver-failure-state.mjs",
+      "change": "Separate unreadable schema from explicit withdrawal",
+      "acceptance": "Network/schema/withdrawn cases independently imported",
+      "status": "proposed_not_implemented",
+      "generation": null
+    },
+    {
+      "id": "PIPELINE-CANDIDATE-13",
+      "title": "GeoJSON identity export",
+      "evidenceIds": [
+        "E05"
+      ],
+      "classification": "planned_capability",
+      "owner": "pipelinenews",
+      "proposedCartridge": "proposed/geojson-identity-export.mjs",
+      "change": "Export current Pipeline project selection as owner-bound features",
+      "acceptance": "REPD keys, coordinate order and generation provenance",
+      "status": "proposed_not_implemented",
+      "generation": null
+    },
+    {
+      "id": "PIPELINE-CANDIDATE-14",
+      "title": "GeoJSON filter export",
+      "evidenceIds": [
+        "E05"
+      ],
+      "classification": "planned_capability",
+      "owner": "pipelinenews",
+      "proposedCartridge": "proposed/geojson-filter-export.mjs",
+      "change": "Export only visible logical filter set, not DOM window",
+      "acceptance": "Full selection equals export across virtual pages",
+      "status": "proposed_not_implemented",
+      "generation": null
+    },
+    {
+      "id": "PIPELINE-CANDIDATE-15",
+      "title": "GeoJSON null geometry",
+      "evidenceIds": [
+        "E05"
+      ],
+      "classification": "planned_capability",
+      "owner": "pipelinenews",
+      "proposedCartridge": "proposed/geojson-null-geometry.mjs",
+      "change": "Retain projects without coordinates as explicit null geometry",
+      "acceptance": "No0,0 substitution and missing-coordinate counts",
+      "status": "proposed_not_implemented",
+      "generation": null
+    },
+    {
+      "id": "PIPELINE-CANDIDATE-16",
+      "title": "GeoJSON partition manifest",
+      "evidenceIds": [
+        "E05"
+      ],
+      "classification": "planned_regression",
+      "owner": "pipelinenews",
+      "proposedCartridge": "proposed/geojson-partition-manifest.mjs",
+      "change": "Bind every partition and schema to exact owner SHA",
+      "acceptance": "Missing/tampered partition fails",
+      "status": "proposed_not_implemented",
+      "generation": null
+    },
+    {
+      "id": "PIPELINE-CANDIDATE-17",
+      "title": "GeoJSON bounds preview",
+      "evidenceIds": [
+        "E05"
+      ],
+      "classification": "planned_capability",
+      "owner": "pipelinenews",
+      "proposedCartridge": "proposed/geojson-bounds-preview.mjs",
+      "change": "Bound map preview using valid exported geometries",
+      "acceptance": "Antimeridian/nonfinite/out-of-range fixtures",
+      "status": "proposed_not_implemented",
+      "generation": null
+    },
+    {
+      "id": "PIPELINE-CANDIDATE-18",
+      "title": "GeoJSON provenance panel",
+      "evidenceIds": [
+        "E05"
+      ],
+      "classification": "planned_capability",
+      "owner": "pipelinenews",
+      "proposedCartridge": "proposed/geojson-provenance-panel.mjs",
+      "change": "Show source dataset date and owning commit",
+      "acceptance": "Manifest mismatch refuses confidence claim",
+      "status": "proposed_not_implemented",
+      "generation": null
+    },
+    {
+      "id": "PIPELINE-CANDIDATE-19",
+      "title": "Official evidence rank",
+      "evidenceIds": [
+        "E08"
+      ],
+      "classification": "planned_regression",
+      "owner": "pipelinenews",
+      "proposedCartridge": "proposed/official-evidence-rank.mjs",
+      "change": "Preserve official-source ranking over noisy news",
+      "acceptance": "Contradictory and syndication fixtures",
+      "status": "proposed_not_implemented",
+      "generation": null
+    },
+    {
+      "id": "PIPELINE-CANDIDATE-20",
+      "title": "News canonical dedup",
+      "evidenceIds": [
+        "E08"
+      ],
+      "classification": "planned_capability",
+      "owner": "pipelinenews",
+      "proposedCartridge": "proposed/news-canonical-dedup.mjs",
+      "change": "Separate publisher article identity from tracking URLs",
+      "acceptance": "Query tracking duplicates collapse without merging distinct articles",
+      "status": "proposed_not_implemented",
+      "generation": null
+    },
+    {
+      "id": "PIPELINE-CANDIDATE-21",
+      "title": "News date semantics",
+      "evidenceIds": [
+        "E08"
+      ],
+      "classification": "planned_capability",
+      "owner": "pipelinenews",
+      "proposedCartridge": "proposed/news-date-semantics.mjs",
+      "change": "Separate publication, event and retrieval timestamps",
+      "acceptance": "Undated and timezone cases visible",
+      "status": "proposed_not_implemented",
+      "generation": null
+    },
+    {
+      "id": "PIPELINE-CANDIDATE-22",
+      "title": "Topic relevance cartridge",
+      "evidenceIds": [
+        "E08"
+      ],
+      "classification": "planned_regression",
+      "owner": "pipelinenews",
+      "proposedCartridge": "proposed/topic-relevance-cartridge.mjs",
+      "change": "Preserve five-topic boundaries before projection",
+      "acceptance": "Off-topic plausible keyword negatives",
+      "status": "proposed_not_implemented",
+      "generation": null
+    },
+    {
+      "id": "PIPELINE-CANDIDATE-23",
+      "title": "Project binding abstention",
+      "evidenceIds": [
+        "E08"
+      ],
+      "classification": "planned_regression",
+      "owner": "pipelinenews",
+      "proposedCartridge": "proposed/project-binding-abstention.mjs",
+      "change": "Never promote ambiguous company/site mention to project fact",
+      "acceptance": "Same-name projects and multi-site organisation cases",
+      "status": "proposed_not_implemented",
+      "generation": null
+    },
+    {
+      "id": "PIPELINE-CANDIDATE-24",
+      "title": "Evidence freshness UI",
+      "evidenceIds": [
+        "E08"
+      ],
+      "classification": "planned_capability",
+      "owner": "pipelinenews",
+      "proposedCartridge": "proposed/evidence-freshness-ui.mjs",
+      "change": "Display last retrieval independently of publication age",
+      "acceptance": "Old source newly fetched does not become new event",
+      "status": "proposed_not_implemented",
+      "generation": null
+    },
+    {
+      "id": "PIPELINE-CANDIDATE-25",
+      "title": "Request budget receipt",
+      "evidenceIds": [
+        "E08"
+      ],
+      "classification": "planned_regression",
+      "owner": "pipelinenews",
+      "proposedCartridge": "proposed/request-budget-receipt.mjs",
+      "change": "Report nine-request bounded collector actual outcomes",
+      "acceptance": "Timeout/retry cannot silently exceed budget",
+      "status": "proposed_not_implemented",
+      "generation": null
+    },
+    {
+      "id": "PIPELINE-CANDIDATE-26",
+      "title": "Source rights metadata",
+      "evidenceIds": [
+        "E08"
+      ],
+      "classification": "planned_capability",
+      "owner": "pipelinenews",
+      "proposedCartridge": "proposed/source-rights-metadata.mjs",
+      "change": "Keep source-specific redistribution declarations",
+      "acceptance": "Open-source app does not imply publisher content rights",
+      "status": "proposed_not_implemented",
+      "generation": null
+    },
+    {
+      "id": "PIPELINE-CANDIDATE-27",
+      "title": "Company identity join",
+      "evidenceIds": [
+        "E06"
+      ],
+      "classification": "planned_capability",
+      "owner": "pipelinenews",
+      "proposedCartridge": "proposed/company-identity-join.mjs",
+      "change": "Consume Companies owner manifest with legal number binding",
+      "acceptance": "Keyword-only match remains unresolved",
+      "status": "proposed_not_implemented",
+      "generation": null
+    },
+    {
+      "id": "PIPELINE-CANDIDATE-28",
+      "title": "Company confidence view",
+      "evidenceIds": [
+        "E06"
+      ],
+      "classification": "planned_capability",
+      "owner": "pipelinenews",
+      "proposedCartridge": "proposed/company-confidence-view.mjs",
+      "change": "Expose confirmed/probable/unresolved without silent promotion",
+      "acceptance": "Name collisions and SPV ambiguity",
+      "status": "proposed_not_implemented",
+      "generation": null
+    },
+    {
+      "id": "PIPELINE-CANDIDATE-29",
+      "title": "Financial units adapter",
+      "evidenceIds": [
+        "E06"
+      ],
+      "classification": "planned_capability",
+      "owner": "pipelinenews",
+      "proposedCartridge": "proposed/financial-units-adapter.mjs",
+      "change": "Display currency scale and accounts period from source",
+      "acceptance": "Thousands/millions and stale-account negatives",
+      "status": "proposed_not_implemented",
+      "generation": null
+    },
+    {
+      "id": "PIPELINE-CANDIDATE-30",
+      "title": "Company lazy loading",
+      "evidenceIds": [
+        "E06"
+      ],
+      "classification": "planned_capability",
+      "owner": "pipelinenews",
+      "proposedCartridge": "proposed/company-lazy-loading.mjs",
+      "change": "Fetch compact summaries before selected company data",
+      "acceptance": "Cold load network and memory measurements",
+      "status": "proposed_not_implemented",
+      "generation": null
+    },
+    {
+      "id": "PIPELINE-CANDIDATE-31",
+      "title": "BTM opportunity labels",
+      "evidenceIds": [
+        "E06"
+      ],
+      "classification": "planned_capability",
+      "owner": "pipelinenews",
+      "proposedCartridge": "proposed/btm-opportunity-labels.mjs",
+      "change": "Separate SIC opportunity from verified electricity demand",
+      "acceptance": "No inferred MW claim from sector label",
+      "status": "proposed_not_implemented",
+      "generation": null
+    },
+    {
+      "id": "PIPELINE-CANDIDATE-32",
+      "title": "Company schema gate",
+      "evidenceIds": [
+        "E06"
+      ],
+      "classification": "planned_regression",
+      "owner": "pipelinenews",
+      "proposedCartridge": "proposed/company-schema-gate.mjs",
+      "change": "Validate count/number/provenance and unexpected empty corpus",
+      "acceptance": "Empty-success and malformed company fixtures",
+      "status": "proposed_not_implemented",
+      "generation": null
+    },
+    {
+      "id": "PIPELINE-CANDIDATE-33",
+      "title": "Electricity coverage scope",
+      "evidenceIds": [
+        "E07"
+      ],
+      "classification": "planned_regression",
+      "owner": "pipelinenews",
+      "proposedCartridge": "proposed/electricity-coverage-scope.mjs",
+      "change": "Retain GB/time/unit scope alongside price figures",
+      "acceptance": "Missing intervals not treated as zero",
+      "status": "proposed_not_implemented",
+      "generation": null
+    },
+    {
+      "id": "PIPELINE-CANDIDATE-34",
+      "title": "Price aggregation cartridge",
+      "evidenceIds": [
+        "E07"
+      ],
+      "classification": "planned_capability",
+      "owner": "pipelinenews",
+      "proposedCartridge": "proposed/price-aggregation-cartridge.mjs",
+      "change": "Expose normalized rollup inputs and interval weighting",
+      "acceptance": "Uneven interval and DST tests",
+      "status": "proposed_not_implemented",
+      "generation": null
+    },
+    {
+      "id": "PIPELINE-CANDIDATE-35",
+      "title": "Negative price share",
+      "evidenceIds": [
+        "E07"
+      ],
+      "classification": "planned_regression",
+      "owner": "pipelinenews",
+      "proposedCartridge": "proposed/negative-price-share.mjs",
+      "change": "Preserve denominator and missing-interval semantics",
+      "acceptance": "Negative fraction independent check",
+      "status": "proposed_not_implemented",
+      "generation": null
+    },
+    {
+      "id": "PIPELINE-CANDIDATE-36",
+      "title": "Runtime source index",
+      "evidenceIds": [
+        "E03"
+      ],
+      "classification": "planned_capability",
+      "owner": "pipelinenews",
+      "proposedCartridge": "proposed/runtime-source-index.mjs",
+      "change": "Export hashes and owner paths without repeated large bundles",
+      "acceptance": "Every body matches pinned index; no eval",
+      "status": "proposed_not_implemented",
+      "generation": null
+    },
+    {
+      "id": "PIPELINE-CANDIDATE-37",
+      "title": "Release ancestry guard",
+      "evidenceIds": [
+        "E03"
+      ],
+      "classification": "planned_regression",
+      "owner": "pipelinenews",
+      "proposedCartridge": "proposed/release-ancestry-guard.mjs",
+      "change": "Keep applied repair detection independent of payload registration",
+      "acceptance": "Already-applied idempotent repair cannot mint new release",
+      "status": "proposed_not_implemented",
+      "generation": null
+    },
+    {
+      "id": "PIPELINE-CANDIDATE-38",
+      "title": "Semantic-change gate",
+      "evidenceIds": [
+        "E03"
+      ],
+      "classification": "planned_capability",
+      "owner": "pipelinenews",
+      "proposedCartridge": "proposed/semantic-change-gate.mjs",
+      "change": "Require meaningful runtime/data difference before timestamp build",
+      "acceptance": "Manifest-only successor refused as empty",
+      "status": "proposed_not_implemented",
+      "generation": null
+    },
+    {
+      "id": "PIPELINE-CANDIDATE-39",
+      "title": "Transport outcome receipt",
+      "evidenceIds": [
+        "E04"
+      ],
+      "classification": "planned_regression",
+      "owner": "pipelinenews",
+      "proposedCartridge": "proposed/transport-outcome-receipt.mjs",
+      "change": "Separate proxy/network/HTTP/status from byte-match outcome",
+      "acceptance": "Proxy403 never blamed on remote host",
+      "status": "proposed_not_implemented",
+      "generation": null
+    },
+    {
+      "id": "PIPELINE-CANDIDATE-40",
+      "title": "Session attribution receipt",
+      "evidenceIds": [
+        "E04"
+      ],
+      "classification": "planned_regression",
+      "owner": "pipelinenews",
+      "proposedCartridge": "proposed/session-attribution-receipt.mjs",
+      "change": "Record actual supplied actor/session or unrecorded",
+      "acceptance": "Missing session cannot reuse hardcoded author identity",
+      "status": "proposed_not_implemented",
+      "generation": null
+    },
+    {
+      "id": "PIPELINE-CANDIDATE-41",
+      "title": "Served-byte promotion gate",
+      "evidenceIds": [
+        "E02"
+      ],
+      "classification": "planned_regression",
+      "owner": "pipelinenews",
+      "proposedCartridge": "proposed/served-byte-promotion-gate.mjs",
+      "change": "Compare exact candidate bytes after deployment",
+      "acceptance": "HTTP200 stalebody negative",
+      "status": "proposed_not_implemented",
+      "generation": null
+    },
+    {
+      "id": "PIPELINE-CANDIDATE-42",
+      "title": "Exact-commit dependency CI",
+      "evidenceIds": [
+        "E03"
+      ],
+      "classification": "planned_regression",
+      "owner": "pipelinenews",
+      "proposedCartridge": "proposed/exact-commit-dependency-ci.mjs",
+      "change": "Pin all proof inputs in Pages candidate lane",
+      "acceptance": "Absent sibling owner fails before browser network phase",
+      "status": "proposed_not_implemented",
+      "generation": null
+    },
+    {
+      "id": "PIPELINE-CANDIDATE-43",
+      "title": "Cartridge source boundary",
+      "evidenceIds": [
+        "E03"
+      ],
+      "classification": "planned_capability",
+      "owner": "pipelinenews",
+      "proposedCartridge": "proposed/cartridge-source-boundary.mjs",
+      "change": "Track maintained source to immutable output ownership",
+      "acceptance": "No editing historical release as repair",
+      "status": "proposed_not_implemented",
+      "generation": null
+    },
+    {
+      "id": "PIPELINE-CANDIDATE-44",
+      "title": "Print readiness cartridge",
+      "evidenceIds": [
+        "E09"
+      ],
+      "classification": "planned_capability",
+      "owner": "pipelinenews",
+      "proposedCartridge": "proposed/print-readiness-cartridge.mjs",
+      "change": "Capture settled chart and selected filter state",
+      "acceptance": "Animated chart readiness, no threshold weakening",
+      "status": "proposed_not_implemented",
+      "generation": null
+    },
+    {
+      "id": "PIPELINE-CANDIDATE-45",
+      "title": "Print geometry tests",
+      "evidenceIds": [
+        "E09"
+      ],
+      "classification": "planned_regression",
+      "owner": "pipelinenews",
+      "proposedCartridge": "proposed/print-geometry-tests.mjs",
+      "change": "Cover fractional DPR and phone landscape",
+      "acceptance": "Integer backing size plus actual PDF image geometry",
+      "status": "proposed_not_implemented",
+      "generation": null
+    },
+    {
+      "id": "PIPELINE-CANDIDATE-46",
+      "title": "Performance budget receipt",
+      "evidenceIds": [
+        "E09"
+      ],
+      "classification": "planned_capability",
+      "owner": "pipelinenews",
+      "proposedCartridge": "proposed/performance-budget-receipt.mjs",
+      "change": "Record cold load/sort/scroll with exact build and browser",
+      "acceptance": "Repeatable distributions, not one favourable run",
+      "status": "proposed_not_implemented",
+      "generation": null
+    },
+    {
+      "id": "PIPELINE-CANDIDATE-47",
+      "title": "Genome context projection",
+      "evidenceIds": [
+        "E11"
+      ],
+      "classification": "planned_capability",
+      "owner": "spiders",
+      "proposedCartridge": "proposed/genome-context-projection.mjs",
+      "change": "Expose Pipeline producer/consumer edges without copying datasets",
+      "acceptance": "Pinned owner graph and absent upstream explicitly unknown",
+      "status": "proposed_not_implemented",
+      "generation": null
+    },
+    {
+      "id": "PIPELINE-CANDIDATE-48",
+      "title": "CI resume checkpoint",
+      "evidenceIds": [
+        "E12"
+      ],
+      "classification": "planned_capability",
+      "owner": "spiders",
+      "proposedCartridge": "proposed/ci-resume-checkpoint.mjs",
+      "change": "Restore issue/dependency/proof context from compact artifacts",
+      "acceptance": "Fresh session reconstructs unfinished release state",
+      "status": "proposed_not_implemented",
+      "generation": null
+    },
+    {
+      "id": "PIPELINE-CANDIDATE-49",
+      "title": "Endpoint environment vaccine",
+      "evidenceIds": [
+        "E14"
+      ],
+      "classification": "planned_regression",
+      "owner": "cvaa",
+      "proposedCartridge": "proposed/endpoint-environment-vaccine.mjs",
+      "change": "Bind source checks to environment-required diagnostic endpoint",
+      "acceptance": "Staticserver404 differs from deployed endpoint-not-applicable",
+      "status": "proposed_not_implemented",
+      "generation": null
+    },
+    {
+      "id": "PIPELINE-CANDIDATE-50",
+      "title": "Independent proof vaccine",
+      "evidenceIds": [
+        "E15"
+      ],
+      "classification": "planned_regression",
+      "owner": "cvaa",
+      "proposedCartridge": "proposed/independent-proof-vaccine.mjs",
+      "change": "Reject proofs whose expected and actual bytes share same faulty producer",
+      "acceptance": "Red negative control and separate expected source",
+      "status": "proposed_not_implemented",
+      "generation": null
+    }
+  ],
+  "ciFindings": [
+    {
+      "repository": "pipelinenews",
+      "run": 33827160917,
+      "commit": "2592a366c1fee168946fc4eb16da7043641ab6b7",
+      "job": 100882209252,
+      "classification": "confirmed_historical_environment_failure",
+      "finding": "Complete MAP corpus production proof refused because grid-distance-maths sibling checkout was absent. Deployment skipped; later3720ee fixed dependency checkout.",
+      "log": {
+        "path": "pipelinenews-job-100882209252.log",
+        "sha256": "088693aa7268e93dc0c8ed379268b6845e3d22589a285ba732aa031df7900bd1"
+      }
+    },
+    {
+      "repository": "pipelinenews",
+      "run": 33827652585,
+      "commit": "3720eeea7be2b142cdb93c076dbb4f062fdfb4de",
+      "job": 100883672496,
+      "classification": "confirmed_historical_harness_failure",
+      "finding": "Failure-interception test expected unavailable/no-headlines but actual news remained visible. Subsequent3493be1 changes interception to immutable news route; this is not proof of current news outage.",
+      "log": {
+        "path": "pipelinenews-job-100883672496.log",
+        "sha256": "65d59daf90857339d166b045e858ab46915314d9b485d2b9475a43bbd963c524"
+      }
+    },
+    {
+      "repository": "pipelinenews",
+      "run": 33568167782,
+      "commit": "3861fb9b46bb2e7347bcc5a5ffb66ab5cc3d1d7e",
+      "job": 100056010174,
+      "classification": "confirmed_historical_ci_failure_partial_diagnosis",
+      "finding": "Shared board continuity failed CVAA selftest with2antibody problems. No new domain-product failure inferred.",
+      "log": {
+        "path": "pipelinenews-job-100056010174.log",
+        "sha256": "6611f9d606d39393aa4229e84b2e3cce052caa99e2791f66ccd42f9d7fa1ee8e"
+      }
+    },
+    {
+      "repository": "cvaa",
+      "run": 33712716373,
+      "commit": "a2912323a8db1882bb773a0a393be29d95a69e3c",
+      "job": 100515419401,
+      "classification": "confirmed_historical_ci_failure_partial_diagnosis",
+      "finding": "JSON contract subprocess failed; log warns unshare network namespace unavailable. Warning alone does not prove root cause. Latest a1fae46 selftest/fleet run33984247747 succeeded.",
+      "log": {
+        "path": "cvaa-job-100515419401.log",
+        "sha256": "428658c725ca27b3564c2f31f37ec97560e5a1c7c6fbfe5fb00ed9c9867e7a71"
+      }
+    }
+  ]
+}

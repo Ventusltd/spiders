@@ -49,6 +49,20 @@
       "runId": 33991288684,
       "workflow": "Pages",
       "conclusion": "success"
+    },
+    {
+      "repository": "Ventusltd/gridatlas",
+      "commit": "ab46203dcdfe1d9ac8ff794d898b2ec7c9a1f84e",
+      "runId": 33999920938,
+      "workflow": "202608312212 GridAtlas cartridge proof",
+      "conclusion": "failure",
+      "pullRequest": 15,
+      "legacyInputRegression": "success (six tests)",
+      "existingCartridgeFailures": [
+        "menu-bar DOM proof: old action stack emptied only after nested controls move",
+        "sld-sandbox proof: substation438867 exceeds368640"
+      ],
+      "scope": "Draft safety guard; no app release or merge. Existing composed app files unchanged."
     }
   ],
   "offlineEvidence": "architecture-reload-20260905/master-100",

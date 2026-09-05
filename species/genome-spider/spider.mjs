@@ -1,8 +1,8 @@
 #!/usr/bin/env node
-// spider.mjs â€” genome-spider. Walks a list of local git repositories and
+// spider.mjs — genome-spider. Walks a list of local git repositories and
 // emits the estate's genome: nodes (repos + significant internal units),
 // evidenced edges, and genome markers (duplication, drift, dead code,
-// re-doing, uncomposed). ESM, Node stdlib only â€” see README.md for the
+// re-doing, uncomposed). ESM, Node stdlib only — see README.md for the
 // full contract and what this deliberately does not claim.
 import fs from 'node:fs';
 import path from 'node:path';
@@ -91,7 +91,7 @@ function addEdge(from, to, type, evidence, extra = {}) {
 
 // An edge target inside the repo that wasn't picked up by the "significant
 // files" content scan (e.g. a build script under a directory with no kind
-// rule) still gets a real node â€” a stub, minimal purpose, but with the
+// rule) still gets a real node — a stub, minimal purpose, but with the
 // same real git history as any other unit node. This is what keeps every
 // edge pointing at a node genome.json actually declares (checked by
 // genome.proof.mjs) instead of silently dropping the reference.
@@ -106,13 +106,13 @@ function ensureUnitNode(repoId, repoDir, repoName, relPath) {
     first_commit: hist ? hist.first_commit : null,
     last_commit: hist ? hist.last_commit : null,
     commit_count: hist ? hist.commit_count : null,
-    top_revised_files: [], rag: 'grey', status_reason: 'stub node â€” edge target outside the content-scanned set', importance_score: 0.2,
+    top_revised_files: [], rag: 'grey', status_reason: 'stub node — edge target outside the content-scanned set', importance_score: 0.2,
   });
   return id;
 }
 
 function externalNodeId(specifier) {
-  // "owner/repo" or "owner/repo/subpath" from a workflow `uses:` â€” the node
+  // "owner/repo" or "owner/repo/subpath" from a workflow `uses:` — the node
   // is the owner/repo pair; deeper path segments (e.g. a reusable workflow
   // file) are not a separate node, just noted in evidence.
   const parts = specifier.split('/');
@@ -240,7 +240,7 @@ for (const name of REPO_NAMES) {
       if (stat.size > 2 * 1024 * 1024) { cappedOut++; continue; } // 2MB single-file guard
       text = fs.readFileSync(abs, 'utf8');
     } catch {
-      continue; // tracked but unreadable (rare) â€” not fatal
+      continue; // tracked but unreadable (rare) — not fatal
     }
     filesScanned++; bytesScanned += text.length;
 
@@ -303,7 +303,7 @@ for (const name of REPO_NAMES) {
       }
     }
 
-    // markers: functions, constants, known families (skip JSON/HTML for these â€” code files only)
+    // markers: functions, constants, known families (skip JSON/HTML for these — code files only)
     if (/\.(js|mjs|cjs|py)$/.test(relPath)) {
       for (const fn of extractFunctions(text)) {
         if (!functionsByName.has(fn.name)) functionsByName.set(fn.name, []);
@@ -370,7 +370,7 @@ for (const [name, copies] of constantsByName) {
   }
 }
 
-// DRIFT (known family, e.g. earth-radius-km) â€” cited from grid-distance-maths.
+// DRIFT (known family, e.g. earth-radius-km) — cited from grid-distance-maths.
 const driftFamilies = [];
 for (const family of KNOWN_CONSTANT_FAMILIES) {
   const hits = familyHits.filter((h) => h.family === family.id);
@@ -386,7 +386,7 @@ for (const family of KNOWN_CONSTANT_FAMILIES) {
   });
 }
 
-// DEAD CODE â€” composable-kind nodes with zero inbound imports/manifest-path
+// DEAD CODE — composable-kind nodes with zero inbound imports/manifest-path
 // edges among the files genome-spider actually scanned.
 const inboundByTarget = new Map();
 for (const e of rawEdges) {
@@ -409,7 +409,7 @@ for (const n of nodes) {
   }
 }
 
-// UNCOMPOSED â€” a composable-kind node that IS referenced by at least one
+// UNCOMPOSED — a composable-kind node that IS referenced by at least one
 // manifest, but whose current content (sha256) or whose last commit date
 // postdates the most recent manifest reference to it.
 const uncomposed = [];
@@ -424,7 +424,7 @@ for (const [targetId, refs] of refsByTarget) {
   if (!node || !COMPOSABLE_KINDS.has(node.kind)) continue;
   const dir = ROOT ? path.join(ROOT, node.repo) : null;
 
-  // Every referencing manifest, with its own git history â€” not any
+  // Every referencing manifest, with its own git history — not any
   // timestamp embedded in a filename (see UNCOMPOSED design note in
   // README.md: manifests cut in the same commit share a commit date, so
   // "the most recent one" is not well-defined by date alone).
@@ -438,7 +438,7 @@ for (const [targetId, refs] of refsByTarget) {
     // sha256 is decisive: if the file's current content matches what ANY
     // referencing manifest recorded, it has been composed (that manifest
     // proves it), regardless of which manifest is "newest". Only flag
-    // uncomposed when NO referencing manifest â€” including the newest â€”
+    // uncomposed when NO referencing manifest — including the newest —
     // ever recorded the content as it exists right now.
     const abs = path.join(dir, ...node.path.split('/'));
     let currentSha = null;

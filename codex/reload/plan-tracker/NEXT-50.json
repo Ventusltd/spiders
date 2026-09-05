@@ -71,13 +71,17 @@
       "dependsOn": [
         "N01"
       ],
-      "status": "in_progress",
+      "status": "linked",
       "feature": "Expose pending/ready/failed based on tool-specific actual render state; no static status text proof.",
       "requiredProof": "Delayed scripts, blank canvas and module-map readiness negative cases",
       "generation": "202609051940",
       "release": null,
       "evidence": [],
-      "nextAction": "Published candidate awaits exact served and live browser proof; retain earlier local tests separately."
+      "nextAction": "Scoped live proof linked; subsequent Module readiness race remains a separate N07 issue.",
+      "checkpoint": {
+        "path": "architecture-reload-20260905/next-fifty/N04-202609051940-checkpoint.json",
+        "sha256": "a8357676768a68c15ee1d8f65725a6e6d33d5a3789e3447d3409ed6d3eb6f9ea"
+      }
     },
     {
       "id": "N05",
@@ -87,13 +91,17 @@
       "dependsOn": [
         "N03"
       ],
-      "status": "in_progress",
+      "status": "linked",
       "feature": "Preserve usable standalone tool layouts through orientation, resize and fractional zoom.",
       "requiredProof": "Phone portrait/landscape and DPR1.875; no clipping of close/critical controls",
       "generation": "202609051945",
       "release": null,
       "evidence": [],
-      "nextAction": "Published candidate awaits exact served and live browser proof; retain earlier local tests separately."
+      "nextAction": "Scoped live proof linked; subsequent Module readiness race remains a separate N07 issue.",
+      "checkpoint": {
+        "path": "architecture-reload-20260905/next-fifty/N05-202609051945-checkpoint.json",
+        "sha256": "a6502894af9ea3f3a1b7709f7fbd58bb0ae38daebde82622be56193358ceb41c"
+      }
     },
     {
       "id": "N06",

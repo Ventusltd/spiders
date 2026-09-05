@@ -51,13 +51,17 @@
       "dependsOn": [
         "N02"
       ],
-      "status": "in_progress",
+      "status": "linked",
       "feature": "Contain Tab and Shift+Tab within active dialog while preserving standalone controls.",
       "requiredProof": "Keyboard traversal and focus return with desktop/mobile viewport",
       "generation": "202609051936",
       "release": null,
       "evidence": [],
-      "nextAction": "Focus semantic and local browser preflight passed; own served/live candidate proof pending."
+      "nextAction": "Exact served and desktop/mobile focus boundary proof linked.",
+      "checkpoint": {
+        "path": "architecture-reload-20260905/next-fifty/N03-202609051936-checkpoint.json",
+        "sha256": "6ea8546eae57ee375bf196319103e7c49c3b9cef0108273e38a914d6c0bc2865"
+      }
     },
     {
       "id": "N04",
@@ -73,23 +77,23 @@
       "generation": "202609051940",
       "release": null,
       "evidence": [],
-      "nextAction": "Finish immutable candidate after the correctly detected CRLF/LF source mismatch; independently verify served bytes and live readiness. Source bcbc1bf fixes never-load timeout and stale timeout state; GIS drawing remains unreported."
+      "nextAction": "Published candidate awaits exact served and live browser proof; retain earlier local tests separately."
     },
     {
       "id": "N05",
       "title": "Responsive tool viewport policy",
       "owner": "testcode",
-      "module": "sandbox/capsules/tool-layers/viewport-policy.js",
+      "module": "sandbox/capsules/tool-layers/viewport.js",
       "dependsOn": [
         "N03"
       ],
       "status": "in_progress",
       "feature": "Preserve usable standalone tool layouts through orientation, resize and fractional zoom.",
       "requiredProof": "Phone portrait/landscape and DPR1.875; no clipping of close/critical controls",
-      "generation": null,
+      "generation": "202609051945",
       "release": null,
       "evidence": [],
-      "nextAction": "Local viewport preflight passed according to parent; source and candidate remain uncommitted/unpublished until exact evidence is recorded."
+      "nextAction": "Published candidate awaits exact served and live browser proof; retain earlier local tests separately."
     },
     {
       "id": "N06",

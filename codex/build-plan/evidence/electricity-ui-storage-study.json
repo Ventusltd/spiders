@@ -1,0 +1,123 @@
+{
+  "schema": "ventus.electricity-ui-storage-study.v1",
+  "ownerConfirmedByUser": "Ventusltd/gb-electricity-ui",
+  "uiHead": "5b4533914bb2bcad7f5ea697af00faf67cf626cc",
+  "docs": [
+    "README.md",
+    "UI_CHARTS_MIGRATION_SCOPE.md",
+    "docs/CHARTS_UI_SCOPE_AUDIT_COPY_OLD_MAKE_NEW_PARQUETS.md"
+  ],
+  "sourceMappings": [
+    {
+      "sourceRepository": "Ventusltd/globalgrid2050",
+      "sourcePath": "uk_energy_tracking_v6/index.md",
+      "lastChangeCommit": "3320c873411f6802fb948991d8f459f969664096",
+      "sha256": "97bf2431f2a6c01c17f041d89c4171b99c7c1ad72ee1383f424aaf482caa2b11",
+      "destinationRepository": "Ventusltd/gb-electricity-ui",
+      "destinationPath": "proposed/cartridges/index.md",
+      "transferStatus": "planned_dependency_audit_required"
+    },
+    {
+      "sourceRepository": "Ventusltd/globalgrid2050",
+      "sourcePath": "uk_energy_tracking_v6/generation_history/index.md",
+      "lastChangeCommit": "6a648a90414acf7c838f7f9889a2e70df9e19207",
+      "sha256": "bd219e170753fdd7f22a5d6aadb0b9600cf9ba7f090227f2b10c4b54a3c08e98",
+      "destinationRepository": "Ventusltd/gb-electricity-ui",
+      "destinationPath": "proposed/cartridges/index.md",
+      "transferStatus": "planned_dependency_audit_required"
+    },
+    {
+      "sourceRepository": "Ventusltd/globalgrid2050",
+      "sourcePath": "uk_energy_tracking_v6/generation_history/control_generation_history.js",
+      "lastChangeCommit": "d26b8f784294fd32842ef75c7a07cc57cf3a9af1",
+      "sha256": "e19dec994ce1003cfd8810daa4b5411c381f347ba91dabf5e73cfd05d372576b",
+      "destinationRepository": "Ventusltd/gb-electricity-ui",
+      "destinationPath": "proposed/cartridges/control_generation_history.js",
+      "transferStatus": "planned_dependency_audit_required"
+    },
+    {
+      "sourceRepository": "Ventusltd/globalgrid2050",
+      "sourcePath": "uk_energy_tracking_v6/generation_history/control_generation_mwh_aggregates.js",
+      "lastChangeCommit": "18fa795e51c44167917b47da48435a0c51573c15",
+      "sha256": "c2724a6c45f6d4addcb1c3d90b5ed4d49c242077708020b24d93d92192cd65e9",
+      "destinationRepository": "Ventusltd/gb-electricity-ui",
+      "destinationPath": "proposed/cartridges/control_generation_mwh_aggregates.js",
+      "transferStatus": "planned_dependency_audit_required"
+    },
+    {
+      "sourceRepository": "Ventusltd/globalgrid2050",
+      "sourcePath": "uk_energy_tracking_v6/generation_history/control_solar_daily_mwh_chart.js",
+      "lastChangeCommit": "4292d4f98165aab64ea9c4e5c6969083ce8b148f",
+      "sha256": "d1392fa4306f343a193ae9c0ba00be345a14910a77fca0dc0bcf3a6d66621bf3",
+      "destinationRepository": "Ventusltd/gb-electricity-ui",
+      "destinationPath": "proposed/cartridges/control_solar_daily_mwh_chart.js",
+      "transferStatus": "planned_dependency_audit_required"
+    },
+    {
+      "sourceRepository": "Ventusltd/globalgrid2050",
+      "sourcePath": "uk_energy_tracking_v6/generation_history/load_generation_history_data.js",
+      "lastChangeCommit": "d78bce5ea9288e8da4fa20a3c3fff5ad91fde4d9",
+      "sha256": "438ff9029f80aefea75c2286acddd6c5296892b77ba9549ecfef27b5a4365329",
+      "destinationRepository": "Ventusltd/gb-electricity-ui",
+      "destinationPath": "proposed/cartridges/load_generation_history_data.js",
+      "transferStatus": "planned_dependency_audit_required"
+    },
+    {
+      "sourceRepository": "Ventusltd/globalgrid2050",
+      "sourcePath": "uk_energy_tracking_v6/generation_history/load_generation_mwh_aggregates.js",
+      "lastChangeCommit": "a975d47c55ee33eb02b33530d83bf85404499175",
+      "sha256": "ea286c964ca891939d6fb364de27f7155cd01e42912a1ba312c5fed24e4f2948",
+      "destinationRepository": "Ventusltd/gb-electricity-ui",
+      "destinationPath": "proposed/cartridges/load_generation_mwh_aggregates.js",
+      "transferStatus": "planned_dependency_audit_required"
+    },
+    {
+      "sourceRepository": "Ventusltd/globalgrid2050",
+      "sourcePath": "uk_energy_tracking_v6/generation_history/live-config.js",
+      "lastChangeCommit": "d78bce5ea9288e8da4fa20a3c3fff5ad91fde4d9",
+      "sha256": "721648b751cadfccb658fad86b771780e1189dbcc42f181f47c73040a3a8e823",
+      "destinationRepository": "Ventusltd/gb-electricity-ui",
+      "destinationPath": "proposed/cartridges/live-config.js",
+      "transferStatus": "planned_dependency_audit_required"
+    }
+  ],
+  "storage": {
+    "repository": "data-gb-electricity",
+    "head": "49691bcf2762b071b63b0c9604ea1342fd7f86d3",
+    "parquetFiles": 456,
+    "parquetBytes": 97944424,
+    "groups": {
+      "generation": {
+        "files": 272,
+        "bytes": 94732915
+      },
+      "prices": {
+        "files": 184,
+        "bytes": 3211509
+      }
+    },
+    "gitObjectSize": "count: 72\nsize: 949\nin-pack: 1717\npacks: 1\nsize-pack: 125907\nprune-packable: 0\ngarbage: 0\nsize-garbage: 0\n",
+    "scope": "Filesystem size and Git object inventory only; not a Parquet key/row/content audit or live data fetch"
+  },
+  "preserve": [
+    "V6season colours",
+    "high/low markers",
+    "negative-price values",
+    "date/settlement-period selectors",
+    "day/night views",
+    "fullscreen interaction",
+    "history scrolling"
+  ],
+  "dataOwners": {
+    "generationAndPrices": "Ventusltd/data-gb-electricity",
+    "flows": "Ventusltd/data-interconnectors",
+    "pvLive": "destination not yet confirmed; proposed namespace requires owner contract"
+  },
+  "limits": [
+    "Original routed pages are Jekyll index.md, not index.html source files.",
+    "Current gb-electricity-ui blank shells are not parity proof; labels explicitly say data wiring disabled.",
+    "Storage measurement is456Parquet files /97944424bytes at local49691bc, not latest origin/main size; no Parquet row audit performed.",
+    "Git size-pack125907KiB plus949KiB loose objects is all Git history, not current dataset alone.",
+    "Do not discard original UI until actual visual/value parity; source data must not be copied into UI owner."
+  ]
+}

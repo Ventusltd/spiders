@@ -23,6 +23,7 @@ class RoadmapProof(unittest.TestCase):
         row['status'] = 'accepted'
         self.assertTrue(validate(self.plan))
         row['status'] = 'linked'
+        row.pop('checkpoint', None)
         self.assertTrue(validate(self.plan))
 
 

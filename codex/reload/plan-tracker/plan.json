@@ -1,6 +1,6 @@
 {
   "schema": "spiders.build-plan.v1",
-  "updatedAt": "2026-09-05T19:47:45.873315+00:00",
+  "updatedAt": "2026-09-05T19:52:35.405105+00:00",
   "baselineRelease": {
     "generation": "202609051820",
     "sourceCommit": "faa66443a7754878f51b2cc5155a21692dbdaecf",
@@ -520,29 +520,29 @@
       "id": "N04",
       "change": "Phased interface and drawing readiness",
       "generation": "202609051940",
-      "status": "built",
+      "status": "tested",
       "sourceCommit": "2ac33167952f6c97313c6fb5b9257bbdb3ab0df5",
       "engineCommit": "cc985e2aebeaaa762523d82f6dcdc3015f40cdaf",
       "buildSha256": "1e3319e4ccca7099ab6cbc4dff618d2d3c4c1c8fb3c7f463c5abe9a367459568",
       "publicationCommit": "41907936437e5c6d920b7432c25ca7e1df9532a9",
-      "servedPublicationCommit": null,
-      "nextAction": "Published commit exists; await exact served bytes and live feature proof. Local tests remain separate.",
+      "servedPublicationCommit": "41907936437e5c6d920b7432c25ca7e1df9532a9",
+      "nextAction": "Retain scoped proof; address later observed Module Ready polling race separately in N07.",
       "requirementStatus": null,
-      "acceptanceScope": "Pending own served/live proof."
+      "acceptanceScope": "Exact served and live desktop/mobile readiness cases; GIS drawing remains unreported, no transfer to new full print/fleet acceptance."
     },
     {
       "id": "N05",
       "change": "Fit design tool header and frame to responsive viewport",
       "generation": "202609051945",
-      "status": "built",
+      "status": "tested",
       "sourceCommit": "fb6f5f36fe93526b7c0e9583bf30b36244d7bf5a",
       "engineCommit": "29dd49acc78d383c027b28b3de150b33145f882e",
       "buildSha256": "65664558a42e80f81f5aa6c07712f4510aadeaa6658dbe07f97448a17e304fb9",
       "publicationCommit": "ea4ed427b71e07b5b9dd6ee40191d026b9b5b0ca",
       "servedPublicationCommit": null,
-      "nextAction": "Published commit exists; await exact served bytes and live feature proof. Local tests remain separate.",
+      "nextAction": "Retain scoped proof; address later observed Module Ready polling race separately in N07.",
       "requirementStatus": null,
-      "acceptanceScope": "Pending own served/live proof."
+      "acceptanceScope": "Exact served and live desktop/mobile viewport cases; GIS drawing remains unreported, no transfer to new full print/fleet acceptance."
     }
   ],
   "nextFiftyRoadmap": "NEXT-50.json"

@@ -198,7 +198,7 @@
       "id": "build:ATLAS-13",
       "geometry": null,
       "properties": {
-        "label": "Layer lifecycle contract",
+        "label": "VENTUS Core layer plugin lifecycle",
         "repo_type": "build",
         "scope_type": "build",
         "status": "planned",

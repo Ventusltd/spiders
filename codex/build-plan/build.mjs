@@ -13,7 +13,9 @@ const sha=createHash('sha256').update(raw).digest('hex');
 await fs.mkdir(out,{recursive:true});
 let report={schema:'ventus.build-plan-run.v1',mode,planSha256:sha,checkedAt:new Date().toISOString(),ok:false,changes:[],scope:'Plan validation and declared graph compilation; no application release, source migration or API activation.'};
 try {
-  const plan=JSON.parse(raw), graph=compilePlan(plan);
+  const plan=JSON.parse(raw);
+  if(!/^\d{12}$/.test(plan.metadata?.revision))throw Error('Plan revision must be a UTC YYYYMMDDHHmm identifier');
+  const graph=compilePlan(plan);
   const products={'nodes.json':graph.nodes,'edges.json':graph.edges,'evidence.json':graph.evidence,'manifest.json':graph.manifest};
   report={...report,ok:true,builds:plan.features.length,nodes:graph.nodes.features.length,edges:graph.edges.edges.length};
   const lines=['# Modular build programme','',`Plan revision: ${plan.metadata.revision}. All 100 increments are planned; no release timestamp has been allocated.`, '', 'Canonical input: master-plan.geojson. Historical releases remain in ../reload/plan-tracker/.', '', 'Transfers require a destination owner and pinned workflow/script dependency closure. Collectors stay outside GlobalGrid2050. Weekly refresh is independent of observation resolution.', ''];

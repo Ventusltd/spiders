@@ -2,7 +2,7 @@
   "type": "FeatureCollection",
   "schema": "ventus.build-plan.v1",
   "metadata": {
-    "revision": "202609052048",
+    "revision": "202609052047",
     "requestedWindow": [
       "2026-04-05",
       "2026-09-05"
@@ -24,8 +24,7 @@
       "parquetBytes": 97944424,
       "scope": "Filesystem inventory; not data correctness proof"
     },
-    "priority": "Pipeline News and GridAtlas core reliability first. Finished V6 charts are a reference product awaiting data federation, not a new design task. Optional commercial discussion layers must not block core apps.",
-    "pluginBoundary": "Optional VENTUS Core host adapter in Atlas shell; owner apps and data remain separate. See PLUGIN-BOUNDARY.md. Existing initVentusMap is not assumed to be a plugin API."
+    "priority": "Pipeline News and GridAtlas core reliability first. Finished V6 charts are a reference product awaiting data federation, not a new design task. Optional commercial discussion layers must not block core apps."
   },
   "features": [
     {
@@ -2552,11 +2551,11 @@
       "geometry": null,
       "properties": {
         "app": "gridatlas",
-        "title": "VENTUS Core layer plugin lifecycle",
+        "title": "Layer lifecycle contract",
         "ownerRepository": "Ventusltd/gridatlas",
         "modulePath": "cartridges/layer-lifecycle/index.mjs",
         "pathStatus": "proposed; confirm owner naming before implementation",
-        "change": "Extract optional plugin mount/show/hide/dispose adapter in Atlas host, reusing existing isolated tool-layer lifecycle",
+        "change": "Define mount show hide dispose for optional tools",
         "issueClassification": "planned_increment_requires_baseline_reproduction",
         "dependsOn": [],
         "sourceFeeds": [],
@@ -2567,9 +2566,6 @@
           {
             "path": "evidence/history-coverage.json",
             "basis": "History-index plus inspected owner contracts and user requirements; reproduce issue before implementation"
-          },
-          {
-            "path": "PLUGIN-BOUNDARY.md"
           }
         ],
         "acceptance": {

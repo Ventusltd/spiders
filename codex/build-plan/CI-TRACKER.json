@@ -1,0 +1,37 @@
+{
+  "schema": "ventus.build-plan-ci-tracker.v1",
+  "scope": "Exact verified runs for first programme publication; later revisions require their own observations. No product acceptance inferred.",
+  "runs": [
+    {
+      "repository": "Ventusltd/spiders",
+      "commit": "c3a9453bde3bd4f4c5963affde1fea3ca28891fb",
+      "runId": 33991120868,
+      "workflow": "genome-spider",
+      "conclusion": "success",
+      "planBuilds": 100,
+      "planNodes": 234,
+      "planEdges": 331,
+      "genomeRepos": 19,
+      "genomeProof": "22/22",
+      "committedReceipt": "species/genome-spider/receipts/202609052048-crawl.json",
+      "receiptCommit": "af79782bbaf5e7e1e7994c2fbae03fa123d08eb4"
+    },
+    {
+      "repository": "Ventusltd/spiders",
+      "commit": "c3a9453bde3bd4f4c5963affde1fea3ca28891fb",
+      "runId": 33991120789,
+      "workflow": "Build context checkpoint",
+      "conclusion": "success"
+    },
+    {
+      "repository": "Ventusltd/spiders",
+      "commit": "c3a9453bde3bd4f4c5963affde1fea3ca28891fb",
+      "runId": 33991120628,
+      "workflow": "Pages",
+      "conclusion": "success"
+    }
+  ],
+  "offlineEvidence": "architecture-reload-20260905/master-100",
+  "browser": "viewer-live-c3a9453/results.json: twoChrome viewports, migration records visible, tampered graph refused",
+  "nextObservation": "Final priority/plugin revision CI must be recorded separately."
+}

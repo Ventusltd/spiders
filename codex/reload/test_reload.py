@@ -35,6 +35,14 @@ class ReloadProof(unittest.TestCase):
             self.assertEqual(observer.compare({"repositories": [second]}, {"repositories": [second]})["changed"], [])
             wrong = observer.inspect({**entry, "repo": "wrong-owner"}, root)
             self.assertTrue(wrong["errors"])
+            wrong_owner = observer.inspect({**entry, "origin": "https://github.com/other/fixture.git"}, root)
+            self.assertTrue(wrong_owner["errors"])
+
+    def test_origin_identity_includes_host_and_owner(self):
+        identity = observer.origin_identity
+        self.assertEqual(identity("https://github.com/Ventusltd/fixture.git"), identity("git@github.com:Ventusltd/fixture.git"))
+        self.assertNotEqual(identity("https://github.com/another-owner/fixture.git"), identity("https://github.com/Ventusltd/fixture.git"))
+        self.assertNotEqual(identity("https://elsewhere.invalid/Ventusltd/fixture.git"), identity("https://github.com/Ventusltd/fixture.git"))
 
     def test_missing_repository_is_an_error(self):
         with tempfile.TemporaryDirectory() as name:

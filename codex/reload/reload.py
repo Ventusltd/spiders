@@ -13,6 +13,7 @@ import os
 import subprocess
 import time
 import urllib.request
+import urllib.parse
 
 
 def digest(data):
@@ -27,6 +28,13 @@ def git(root, *args):
     return result.stdout.decode("utf8", "replace").strip()
 
 
+def origin_identity(remote):
+    if remote.startswith("git@github.com:"):
+        return "github.com/" + remote.split(":", 1)[1].rstrip("/").removesuffix(".git").lower()
+    parsed = urllib.parse.urlsplit(remote)
+    return (parsed.hostname or "").lower() + "/" + parsed.path.strip("/").removesuffix(".git").lower()
+
+
 def inspect(entry, home):
     root = (home / entry["path"]).resolve()
     row = {**entry, "absolutePath": str(root), "errors": []}
@@ -37,7 +45,8 @@ def inspect(entry, home):
         row["dirty"] = git(root, "status", "--porcelain=v1", "--untracked-files=normal")
         row["worktrees"] = git(root, "worktree", "list", "--porcelain")
         row["recentCommits"] = git(root, "log", "-5", "--format=%H %cI %s").splitlines()
-        if row["remote"].rstrip("/").removesuffix(".git").split("/")[-1] != entry["repo"]:
+        expected_origin = entry.get("origin", "https://github.com/Ventusltd/" + entry["repo"])
+        if origin_identity(row["remote"]) != origin_identity(expected_origin):
             row["errors"].append("Declared repository does not match origin")
         records = []
         for name in entry["anchors"]:

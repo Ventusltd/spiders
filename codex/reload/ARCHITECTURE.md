@@ -149,3 +149,10 @@ The adjacent handover completed at handover-202609051831. Independent endpoint t
 ## Expanded implementation ownership
 
 Subsequent explicit user authorization enabled the eight candidate increments and the new GIS/layout producer repositories. The earlier architecture-only scope above describes the initial review. The owner registry now includes 23 explicit working copies, including standalone `gis-sld-sandbox` and `layout-tool`. See the build-plan producer checkpoint and the plan tracker for current candidate status. Root application behavior, producer baselines, consumer composition, publication bytes and proof artifacts remain separately identified. The source/print coverage of Atlas does not automatically extend into isolated tool iframes.
+
+
+## Historical company context and assessment boundaries
+
+The user supplied a Ventus company profile explicitly described as four years out of date. The original statement is retained offline as `ventus-company-context-user-provided.json`; its experience, installed-capacity and customer figures are historical user-provided claims, not independently verified current marketing facts. Do not publish refreshed claims from that record.
+
+Its architectural relevance is application-specific assessment with source and assumption traceability. Keep geometry, electrical calculations, installation method, financial assessment, procurement/installation records and monitoring/warranty traceability as separate responsibilities with explicit handoffs. A result for one sector, voltage or construction method is not automatically a validated result for another. Link evidence to the source revision and assumptions used by that assessment.

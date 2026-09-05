@@ -1,0 +1,196 @@
+{
+  "schema": "ventus.energy-feed-study.v1",
+  "observedAt": "2026-09-05T20:39:09.890397+00:00",
+  "scope": "Read-only code/history, four official sources, GitHub workflow states and stubbed parser fixtures; no scheduling or live data collection activated.",
+  "anchors": [
+    {
+      "repository": "globalgrid2050",
+      "path": "scripts/fetch_pvlive_solar_candidate_v6.py",
+      "lastChangeCommit": "5c9586538f81a527c8f06f09563c5a723211e6e0",
+      "workingBytesSha256": "6c6f2cd38d565a93f6294dc4a4a8bac77d156d5f474b5ee32e074232e3f50455"
+    },
+    {
+      "repository": "globalgrid2050",
+      "path": "scripts/download_pvlive_solar_history.py",
+      "lastChangeCommit": "060d1046f6e9aef8828022d00354dea77822c4e1",
+      "workingBytesSha256": "32c220219d63338a57fa29bf0bcd48a11167f64476972c200cb5c44c93ac150c"
+    },
+    {
+      "repository": "globalgrid2050",
+      "path": ".github/workflows/elexon_generation_sources_weekly.yml",
+      "lastChangeCommit": "a0782f1ebce3467d1a5c1bec21260698d6c7ff5c",
+      "workingBytesSha256": "c84bdeabdb8011bd9bca6667beab718f8856047bf158e38e64ac8d54ccf9b062"
+    },
+    {
+      "repository": "globalgrid2050",
+      "path": ".github/workflows/step1_fetch_pvlive_solar_candidate_v6.yml",
+      "lastChangeCommit": "a0782f1ebce3467d1a5c1bec21260698d6c7ff5c",
+      "workingBytesSha256": "f3cc3a6848297ba0c8a50e7718ba98cfd630e6c33a9c18c311e1ae6d63a2f97d"
+    },
+    {
+      "repository": "data-gb-electricity",
+      "path": ".github/workflows/monthly_update.yml",
+      "lastChangeCommit": "fdd4790ed7286f3209d471c7ba615be865ee3d17",
+      "workingBytesSha256": "3b55d29158a8bc4978c094c3c5ef7465913317873102dae60da7dfc5553d3aeb"
+    },
+    {
+      "repository": "data-gb-electricity",
+      "path": "pipelines/monthly_growth_policy.py",
+      "lastChangeCommit": "fdd4790ed7286f3209d471c7ba615be865ee3d17",
+      "workingBytesSha256": "5963b92d943800b7f86a7cb7bb9e5279e9a225c42daee12f88a76d0f47215d39"
+    },
+    {
+      "repository": "data-gb-electricity",
+      "path": "pipelines/gb_calendar.py",
+      "lastChangeCommit": "fdd4790ed7286f3209d471c7ba615be865ee3d17",
+      "workingBytesSha256": "c8341c5f158e1d6e3843b1620fa28917d3baadafbbca379d35bc887f13e63c67"
+    },
+    {
+      "repository": "data-gb-electricity",
+      "path": "DATA_SOURCES.md",
+      "lastChangeCommit": "fdd4790ed7286f3209d471c7ba615be865ee3d17",
+      "workingBytesSha256": "90c6542418207adb4970e5cec2a28d7ee8bab4af1d70f3c76cf234ba4ae25244"
+    }
+  ],
+  "officialSources": [
+    {
+      "url": "https://developer.data.elexon.co.uk/",
+      "title": "Elexon Insights developer portal",
+      "finding": "Public Insights APIs require no API key; use governed by BMRS data licence and API terms. Do not import older BMRS/MSID key requirements into this API."
+    },
+    {
+      "url": "https://api.solar.sheffield.ac.uk/pvlive/gdocs",
+      "title": "PV_Live v4.1 user guide",
+      "finding": "Preferred hostname api.pvlive.uk; period30minutes; UTC fields; updated_gmt permits revision checks; default latest-only if bounds absent. Estimates exclude directly metered Solar BMUs. Preserve nulls and bounded requests."
+    },
+    {
+      "url": "https://www.solar.sheffield.ac.uk/pvlive/",
+      "title": "Sheffield Solar PV_Live",
+      "finding": "PV_Live attribution licence CC BY4.0. This data licence differs from the GPLv3 Python client software licence."
+    },
+    {
+      "url": "https://bmrs.elexon.co.uk/api-documentation/introduction",
+      "title": "Elexon Insights documentation",
+      "finding": "Published API data and documents require source acknowledgement according to BMRS data licence; retain terms URL and attribution in producer manifest."
+    }
+  ],
+  "findings": [
+    {
+      "id": "ENERGY-01",
+      "status": "confirmed_source_and_workflow",
+      "finding": "Monolith collector names weekly/daily do not imply automatic polling: inspected workflows expose workflow_dispatch only. Last schedule freeze commit a0782f1ebce3467d1a5c1bec21260698d6c7ff5c explicitly froze workflows to manual dispatch. GitHub state active means enabled for manual invocation, not scheduled."
+    },
+    {
+      "id": "ENERGY-02",
+      "status": "confirmed_source",
+      "finding": "Federated data-gb-electricity has monthly cron17 6 2 * *, closed-month gap filling, frozen existing months, explicit bounded repair. A weekly cron alone would still wait for closed months and therefore not deliver fresh within-month weeks."
+    },
+    {
+      "id": "ENERGY-03",
+      "status": "confirmed_fixture",
+      "finding": "Original PV daily parser drops dictionary0MW, accepts Infinity and accepts returned timestamp outside requested day. Stub-only fixture saved separately. Repair before enabling ingestion."
+    },
+    {
+      "id": "ENERGY-04",
+      "status": "confirmed_source_risk",
+      "finding": "PV daily aggregation averages returned values without complete interval/day validation. Wrong query aliases in fallback can receive latest-only records; independently reproduced wrong-day acceptance. Existing output must not be relabelled verified daily energy."
+    },
+    {
+      "id": "ENERGY-05",
+      "status": "confirmed_source_and_official_docs",
+      "finding": "PV legacy code uses old Sheffield hostname; official guide prefers api.pvlive.uk. Change endpoint contract in a new producer, keep original immutable."
+    },
+    {
+      "id": "ENERGY-06",
+      "status": "ownership_proposal",
+      "finding": "Elexon generation/prices stay data-gb-electricity; PVLive should be a separate dataset namespace in that producer or a designated PV owner once user chooses. No dedicated local PV producer was found in inspected checkouts. Pipeline/Atlas consume compact pinned manifests, never browser-fetch provider APIs."
+    },
+    {
+      "id": "ENERGY-07",
+      "status": "scope_contract",
+      "finding": "GB is not UK/NI. Provisional FUELINST, FUELHH and embedded PV estimates are distinct series; do not merge by technology label or double-count Solar BMUs."
+    }
+  ],
+  "weeklyArchitecture": {
+    "cadence": "One bounded weekly ingestion job per owner, proposed not activated",
+    "grain": "Retain source intervals independently: FUELINST provisional five-minute observations per existing source register; FUELHH and PV thirty-minute intervals. Weekly is collection cadence, not measurement grain.",
+    "recentLane": "Separate provisional recent-window partitions or revisioned snapshots for complete UTC weeks; preserve closed-month immutable historical lane. Explicit reconciliation promotes/revises by declared key, never silent overwrite.",
+    "keys": [
+      "provider/dataset/region/interval timestamp",
+      "source revision or published/updated timestamp retained separately"
+    ],
+    "aggregation": "Energy MWh=sum(valid interval-average MW ? duration_hours) only where semantics support interval averages. Do not integrate provisional point samples without a declared method. Mean power is duration-weighted over covered intervals; missing intervals remain missing. Publish expected/observed count, covered duration and incomplete status.",
+    "calendar": "UTC week boundaries with explicit half-open intervals; convert GB settlement periods using calendar helper, including46/48/50period DSTdays. UTC has48half-hour intervals per full day.",
+    "budgets": "Seven-day window plus explicit bounded revision lookback, finite retry/backoff and response bytes; last-known-good manifest survives provider outage; no synthetic fresh zero data.",
+    "rights": "Pin terms/attribution and source URL/retrieval date separately from code licence. No paid or authenticated provider calls initiated in this study.",
+    "proofs": [
+      "zero is not missing; nonfinite rejected",
+      "wrong-day and duplicate interval rejection",
+      "DST and partial-week coverage",
+      "revision replaces samekey accordingtoexplicitpolicy",
+      "outage retains old freshness timestamp",
+      "source units and price basis cannot be merged",
+      "manifest hash and actual served projection equality"
+    ]
+  },
+  "proposedPipelineReplacements": [
+    {
+      "replaceCandidate": "PIPELINE-CANDIDATE-18",
+      "title": "Weekly owner-manifest reader",
+      "feature": "Read Elexon/PV/market compact manifests with separate dataset scopes",
+      "displacedCandidateRetainedInBacklog": true,
+      "status": "proposed"
+    },
+    {
+      "replaceCandidate": "PIPELINE-CANDIDATE-25",
+      "title": "Weekly ingestion checkpoint receipt",
+      "feature": "Bound request counts, last-success/last-attempt and unchanged stale fallback",
+      "displacedCandidateRetainedInBacklog": true,
+      "status": "proposed"
+    },
+    {
+      "replaceCandidate": "PIPELINE-CANDIDATE-31",
+      "title": "PVLive interval validation cartridge",
+      "feature": "Repair zero/nonfinite/wrong-day parsing before federation",
+      "displacedCandidateRetainedInBacklog": true,
+      "status": "proposed"
+    },
+    {
+      "replaceCandidate": "PIPELINE-CANDIDATE-34",
+      "title": "Coverage-weighted energy rollup",
+      "feature": "Separate MW fromMWh and sourcegrain fromweeklycadence",
+      "displacedCandidateRetainedInBacklog": true,
+      "status": "proposed"
+    },
+    {
+      "replaceCandidate": "PIPELINE-CANDIDATE-35",
+      "title": "Feed freshness and revision panel",
+      "feature": "Expose stale/partial/revised states without synthetic current values",
+      "displacedCandidateRetainedInBacklog": true,
+      "status": "proposed"
+    },
+    {
+      "replaceCandidate": "PIPELINE-CANDIDATE-40",
+      "title": "Typed market instrument adapter",
+      "feature": "Display spot/futures,exchange,currency,unit,contract and date; parentcommodityfindings anchor",
+      "displacedCandidateRetainedInBacklog": true,
+      "status": "proposed"
+    },
+    {
+      "replaceCandidate": "PIPELINE-CANDIDATE-47",
+      "title": "Energy feed attribution/ownership panel",
+      "feature": "Keep provider licence and attribution plus producercommit accessible",
+      "displacedCandidateRetainedInBacklog": true,
+      "status": "proposed"
+    }
+  ],
+  "evidence": [
+    "energy-workflow-state.json",
+    "pvlive-parser-fixture.json"
+  ],
+  "limitations": [
+    "No complete existing Parquet audit executed; monthly source register warns controlled run proof is required.",
+    "API licence summary is provenance guidance, not legal advice or new rights grant.",
+    "Monthly API state active was read remotely; source cadence inspection from local checkout must be bound to exact shipping commit before implementation."
+  ]
+}

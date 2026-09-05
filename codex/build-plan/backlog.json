@@ -1,0 +1,103 @@
+{
+  "reason": "Seven candidates displaced by weekly-feed migration; retained for expansion",
+  "candidates": [
+    {
+      "id": "PIPELINE-CANDIDATE-18",
+      "title": "GeoJSON provenance panel",
+      "evidenceIds": [
+        "E05"
+      ],
+      "classification": "planned_capability",
+      "owner": "pipelinenews",
+      "proposedCartridge": "proposed/geojson-provenance-panel.mjs",
+      "change": "Show source dataset date and owning commit",
+      "acceptance": "Manifest mismatch refuses confidence claim",
+      "status": "proposed_not_implemented",
+      "generation": null
+    },
+    {
+      "id": "PIPELINE-CANDIDATE-25",
+      "title": "Request budget receipt",
+      "evidenceIds": [
+        "E08"
+      ],
+      "classification": "planned_regression",
+      "owner": "pipelinenews",
+      "proposedCartridge": "proposed/request-budget-receipt.mjs",
+      "change": "Report nine-request bounded collector actual outcomes",
+      "acceptance": "Timeout/retry cannot silently exceed budget",
+      "status": "proposed_not_implemented",
+      "generation": null
+    },
+    {
+      "id": "PIPELINE-CANDIDATE-31",
+      "title": "BTM opportunity labels",
+      "evidenceIds": [
+        "E06"
+      ],
+      "classification": "planned_capability",
+      "owner": "pipelinenews",
+      "proposedCartridge": "proposed/btm-opportunity-labels.mjs",
+      "change": "Separate SIC opportunity from verified electricity demand",
+      "acceptance": "No inferred MW claim from sector label",
+      "status": "proposed_not_implemented",
+      "generation": null
+    },
+    {
+      "id": "PIPELINE-CANDIDATE-34",
+      "title": "Price aggregation cartridge",
+      "evidenceIds": [
+        "E07"
+      ],
+      "classification": "planned_capability",
+      "owner": "pipelinenews",
+      "proposedCartridge": "proposed/price-aggregation-cartridge.mjs",
+      "change": "Expose normalized rollup inputs and interval weighting",
+      "acceptance": "Uneven interval and DST tests",
+      "status": "proposed_not_implemented",
+      "generation": null
+    },
+    {
+      "id": "PIPELINE-CANDIDATE-35",
+      "title": "Negative price share",
+      "evidenceIds": [
+        "E07"
+      ],
+      "classification": "planned_regression",
+      "owner": "pipelinenews",
+      "proposedCartridge": "proposed/negative-price-share.mjs",
+      "change": "Preserve denominator and missing-interval semantics",
+      "acceptance": "Negative fraction independent check",
+      "status": "proposed_not_implemented",
+      "generation": null
+    },
+    {
+      "id": "PIPELINE-CANDIDATE-40",
+      "title": "Session attribution receipt",
+      "evidenceIds": [
+        "E04"
+      ],
+      "classification": "planned_regression",
+      "owner": "pipelinenews",
+      "proposedCartridge": "proposed/session-attribution-receipt.mjs",
+      "change": "Record actual supplied actor/session or unrecorded",
+      "acceptance": "Missing session cannot reuse hardcoded author identity",
+      "status": "proposed_not_implemented",
+      "generation": null
+    },
+    {
+      "id": "PIPELINE-CANDIDATE-47",
+      "title": "Genome context projection",
+      "evidenceIds": [
+        "E11"
+      ],
+      "classification": "planned_capability",
+      "owner": "spiders",
+      "proposedCartridge": "proposed/genome-context-projection.mjs",
+      "change": "Expose Pipeline producer/consumer edges without copying datasets",
+      "acceptance": "Pinned owner graph and absent upstream explicitly unknown",
+      "status": "proposed_not_implemented",
+      "generation": null
+    }
+  ]
+}

@@ -1,20 +1,20 @@
-# genome-spider — CI runner.
+# genome-spider â€” CI runner.
 #
 # Command surface: this workflow is driven the same way the GridAtlas menu
-# bar issues verbs (crawl / populate / compose / verify — see
+# bar issues verbs (crawl / populate / compose / verify â€” see
 # gridatlas/atlas/modules/202609031958-menu-bar.js for the live menu this
 # is meant to be wired to later; that wiring is a separate, future change
 # and this workflow does not touch gridatlas).
 #
-#   crawl    — walk the estate, emit the genome and gridatlas's cartridge
+#   crawl    â€” walk the estate, emit the genome and gridatlas's cartridge
 #              lineage (gridatlas-lineage.json), commit whatever changed.
-#   verify   — run genome.proof.mjs against the genome already committed
+#   verify   â€” run genome.proof.mjs against the genome already committed
 #              here, without re-crawling. Commits nothing but a receipt.
-#   populate — declared, not implemented. Fails loudly with a receipt
+#   populate â€” declared, not implemented. Fails loudly with a receipt
 #              rather than reporting a fake success.
-#   compose  — declared, not implemented. Same as populate.
+#   compose  â€” declared, not implemented. Same as populate.
 #
-# Every run — whichever command, whatever the outcome — writes one
+# Every run â€” whichever command, whatever the outcome â€” writes one
 # append-only, timestamped receipt under species/genome-spider/receipts/
 # and updates receipts/LATEST.json, so a menu (or a human) always has
 # somewhere stable to read the outcome of the last run. See
@@ -22,18 +22,18 @@
 # how to trigger each command.
 #
 # Vaccines this workflow satisfies (Ventusltd/cvaa/vaccines/):
-#   202608301442-pinned-actions.md        — every `uses:` below is pinned
+#   202608301442-pinned-actions.md        â€” every `uses:` below is pinned
 #     to a 40-character commit SHA (reusing the same pins already used
 #     elsewhere in this estate: actions/checkout@11bd719... is v4.2.2,
 #     actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 is v4).
-#   202608301443-least-permissions.md     — an explicit `permissions:`
+#   202608301443-least-permissions.md     â€” an explicit `permissions:`
 #     block (contents: write, nothing else; write is used only to commit
 #     genome data and receipts back into this repo), timeout-minutes on
 #     the job, and workflow_dispatch present alongside `schedule:`.
-#   202608301323-no-per-release-workflows.md — one workflow file, not
+#   202608301323-no-per-release-workflows.md â€” one workflow file, not
 #     timestamped, not regenerated per run. Commands are an input, not a
 #     new file.
-#   202608301325-self-terminating-loops.md — the scheduled path always
+#   202608301325-self-terminating-loops.md â€” the scheduled path always
 #     resolves to `crawl`; crawl's commit step has an explicit
 #     nothing-to-commit exit-0 path (see "Commit if changed" step) instead
 #     of failing, or committing noise, when nothing is pending.
@@ -54,7 +54,7 @@ on:
           - compose
         default: crawl
   schedule:
-    # Daily. Schedule and push both always run `crawl` — only
+    # Daily. Schedule and push both always run `crawl` â€” only
     # workflow_dispatch can choose a different command (see "Resolve
     # command" below).
     - cron: '17 3 * * *'
@@ -63,6 +63,8 @@ on:
     paths:
       - 'species/genome-spider/**'
       - '.github/workflows/genome.yml'
+      - 'codex/build-plan/master-plan.geojson'
+      - 'codex/build-plan/*.mjs'
 
 permissions:
   contents: write
@@ -78,10 +80,10 @@ jobs:
     steps:
       # ---------------------------------------------------------------
       # Checkout: the spiders repo itself, plus every other repo
-      # genome-spider walks, all as siblings under one estate/ directory —
+      # genome-spider walks, all as siblings under one estate/ directory â€”
       # the same layout genome-spider expects locally (see
       # species/genome-spider/config/repos.json "root"). A repo that can't
-      # be checked out (private, renamed, gone) does not fail the job —
+      # be checked out (private, renamed, gone) does not fail the job â€”
       # spider.mjs already records that honestly in repos_skipped, which
       # is the point of that field.
       # ---------------------------------------------------------------
@@ -179,6 +181,22 @@ jobs:
             echo "value=crawl" >> "$GITHUB_OUTPUT"
           fi
 
+      - name: Validate and compose declared build-plan child cartridge
+        working-directory: estate/spiders
+        run: |
+          node --test codex/build-plan/federation.test.mjs
+          node codex/build-plan/build.mjs --apply
+
+      - name: Retain build-plan audit and graph
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: build-plan-${{ github.run_id }}
+          path: |
+            estate/spiders/codex/build-plan/reports
+            estate/spiders/codex/build-plan/data
+          if-no-files-found: warn
+
       - name: Run crawl (populate genome.json)
         if: steps.cmd.outputs.value == 'crawl'
         working-directory: estate/spiders/species/genome-spider
@@ -202,7 +220,7 @@ jobs:
           summary=$(grep -E '^[0-9]+/[0-9]+ checks passed$' /tmp/proof-output.txt | tail -1)
           echo "summary=${summary}" >> "$GITHUB_OUTPUT"
 
-      - name: Write receipt (populate / compose — not yet implemented)
+      - name: Write receipt (populate / compose â€” not yet implemented)
         if: steps.cmd.outputs.value == 'populate' || steps.cmd.outputs.value == 'compose'
         working-directory: estate/spiders/species/genome-spider
         run: |
@@ -233,11 +251,11 @@ jobs:
             --out-dir=receipts
 
       # -----------------------------------------------------------------
-      # Commit. Receipts are append-only — every run adds a new file, so
+      # Commit. Receipts are append-only â€” every run adds a new file, so
       # they are always staged. The genome data files are staged too, but
       # only actually committed if something besides generated_at changed
       # (that field is set fresh on every run and would otherwise force a
-      # commit every time — see README.md "Why genome.json's timestamp is
+      # commit every time â€” see README.md "Why genome.json's timestamp is
       # excluded from the change check"). This is the self-terminating
       # exit-0 path cvaa vaccine 202608301325 requires of a scheduled job:
       # nothing pending is a clean, quiet success, not a failure.
@@ -249,6 +267,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add species/genome-spider/data species/genome-spider/receipts
+          git add codex/build-plan/data codex/build-plan/versions codex/build-plan/CURRENT.json codex/build-plan/BUILD-PLAN.md
           if git diff --cached --quiet; then
             echo "No changes staged; nothing to commit."
             exit 0

@@ -94,6 +94,157 @@
       "completedWorkloadJobs": 23,
       "scope": "23 finite public-source lexical jobs, plus prepare/collector. No GPU or application correctness acceptance.",
       "evidence": "learning-drain-20260906/cloud-run.json"
+    },
+    {
+      "repository": "Ventusltd/gridatlas",
+      "commit": "ffd15b01b13c9616a4925ee0de8e756cca6b1e9e",
+      "runId": 34009247000,
+      "workflow": "202608312212 GridAtlas cartridge proof",
+      "status": "completed",
+      "conclusion": "success",
+      "pullRequest": 16,
+      "url": "https://github.com/Ventusltd/gridatlas/actions/runs/34009247000",
+      "scope": "Owner draft support only; no merge or public feature acceptance."
+    },
+    {
+      "repository": "Ventusltd/gridatlas",
+      "commit": "ffd15b01b13c9616a4925ee0de8e756cca6b1e9e",
+      "runId": 34009247020,
+      "workflow": "teleprint parse gate",
+      "status": "completed",
+      "conclusion": "success",
+      "pullRequest": 16,
+      "url": "https://github.com/Ventusltd/gridatlas/actions/runs/34009247020",
+      "scope": "Owner draft support only; no merge or public feature acceptance."
+    },
+    {
+      "repository": "Ventusltd/gridatlas",
+      "commit": "cc809cbbc107cefcd1fbeec4ffb57270a072d217",
+      "runId": 34010699882,
+      "workflow": "202608312212 GridAtlas cartridge proof",
+      "status": "completed",
+      "conclusion": "success",
+      "pullRequest": 17,
+      "url": "https://github.com/Ventusltd/gridatlas/actions/runs/34010699882",
+      "scope": "Owner draft support only; no merge or public feature acceptance."
+    },
+    {
+      "repository": "Ventusltd/gridatlas",
+      "commit": "cc809cbbc107cefcd1fbeec4ffb57270a072d217",
+      "runId": 34010699898,
+      "workflow": "teleprint parse gate",
+      "status": "completed",
+      "conclusion": "success",
+      "pullRequest": 17,
+      "url": "https://github.com/Ventusltd/gridatlas/actions/runs/34010699898",
+      "scope": "Owner draft support only; no merge or public feature acceptance."
+    },
+    {
+      "repository": "Ventusltd/gridatlas",
+      "commit": "17b3d414364e99ffe6b6b3fe5850e353d8ad1865",
+      "runId": 34012074766,
+      "workflow": "202608312212 GridAtlas cartridge proof",
+      "status": "completed",
+      "conclusion": "success",
+      "pullRequest": 18,
+      "url": "https://github.com/Ventusltd/gridatlas/actions/runs/34012074766",
+      "scope": "Required-four-cartridge contract draft; exact cartridge proof only, no new parse-gate run at this head. No app/current/manifest bytes changed or owner-main merge."
+    },
+    {
+      "repository": "Ventusltd/cable-trench-or-drill",
+      "commit": "86661790840c92ef5a1df47953061db87283b66a",
+      "runId": 34011801132,
+      "workflow": "Legacy Cable repair",
+      "status": "completed",
+      "conclusion": "success",
+      "pullRequest": 1,
+      "url": "https://github.com/Ventusltd/cable-trench-or-drill/actions/runs/34011801132",
+      "scope": "Owner draft support only; no merge or public feature acceptance."
+    },
+    {
+      "repository": "Ventusltd/gpu-drivers-for-global-grid",
+      "commit": "d8d15892bdae4e3793e8ea20ed1f6e01eb8097a1",
+      "runId": 34012866161,
+      "workflow": "claude lane \u2014 CPU/RAM bench",
+      "status": "completed",
+      "conclusion": "success",
+      "pullRequest": 2,
+      "url": "https://github.com/Ventusltd/gpu-drivers-for-global-grid/actions/runs/34012866161",
+      "scope": "Synthetic CLI rejection/accounting regressions and/or CPU smoke ladder only; no GPU shader execution or performance measurement in CI. Separate Intel xe-lpg hardware receipts are not RTX5070 measurements. Draft unmerged, no public feature count."
+    },
+    {
+      "repository": "Ventusltd/gpu-drivers-for-global-grid",
+      "commit": "34a84b51d7310b8cde9502579b699acd061ed3b0",
+      "runId": 34013493179,
+      "workflow": "GPU benchmark acceptance and accounting",
+      "status": "completed",
+      "conclusion": "success",
+      "pullRequest": 3,
+      "url": "https://github.com/Ventusltd/gpu-drivers-for-global-grid/actions/runs/34013493179",
+      "scope": "Synthetic CLI rejection/accounting regressions and/or CPU smoke ladder only; no GPU shader execution or performance measurement in CI. Separate Intel xe-lpg hardware receipts are not RTX5070 measurements. Draft unmerged, no public feature count."
+    },
+    {
+      "repository": "Ventusltd/gpu-drivers-for-global-grid",
+      "commit": "34a84b51d7310b8cde9502579b699acd061ed3b0",
+      "runId": 34013493185,
+      "workflow": "claude lane \u2014 CPU/RAM bench",
+      "status": "completed",
+      "conclusion": "success",
+      "pullRequest": 3,
+      "url": "https://github.com/Ventusltd/gpu-drivers-for-global-grid/actions/runs/34013493185",
+      "scope": "Synthetic CLI rejection/accounting regressions and/or CPU smoke ladder only; no GPU shader execution or performance measurement in CI. Separate Intel xe-lpg hardware receipts are not RTX5070 measurements. Draft unmerged, no public feature count."
+    },
+    {
+      "repository": "Ventusltd/testcode",
+      "commit": "e142b2bc61330f3756be20f5648e025004e59a80",
+      "runId": 34013085158,
+      "workflow": "testcode",
+      "status": "completed",
+      "conclusion": "failure",
+      "scope": "General estate remains failed: owner-main substation443448 exceeds368640 and four link-target checks fail. Scoped release acceptance does not waive these gates.",
+      "url": "https://github.com/Ventusltd/testcode/actions/runs/34013085158"
+    },
+    {
+      "repository": "Ventusltd/testcode",
+      "commit": "dc758822746ce22b1ad8471264b3b62b1179f9c1",
+      "runId": 34010198557,
+      "workflow": "Poly Zone engineering regression",
+      "status": "completed",
+      "conclusion": "failure",
+      "scope": "Rejected0353/0354 source: zoom-redraw race could overwrite editor/feedback. Unpublished; corrected0400/0401 separately accepted.",
+      "url": "https://github.com/Ventusltd/testcode/actions/runs/34010198557"
+    },
+    {
+      "repository": "Ventusltd/testcode",
+      "commit": "54ab70a4aebb33d45db5912d8baa0c8b3c8c70e6",
+      "runId": 34012615665,
+      "workflow": "Recoverable Atlas tool composition",
+      "status": "completed",
+      "conclusion": "success",
+      "scope": "CI succeeded only for its narrower scope;0447 acceptance REVOKED after missing parent layout initializer found. Historical bytes retained, corrected0503 replaces its feature slot.",
+      "url": "https://github.com/Ventusltd/testcode/actions/runs/34012615665"
+    },
+    {
+      "repository": "Ventusltd/testcode",
+      "commit": "d66ac93905c4cbeb5526ac840d650e7dd876e25f",
+      "runId": 34014494672,
+      "workflow": "Immediate polygon measurement visibility",
+      "status": "completed",
+      "conclusion": "success",
+      "scope": "Exact0537 source provenance and373 scoped engineering checks; combined with independent served/live receipts for acceptance.",
+      "url": "https://github.com/Ventusltd/testcode/actions/runs/34014494672",
+      "evidence": "recovery-20260906/poly0537-ci"
+    },
+    {
+      "repository": "Ventusltd/globalgrid2050",
+      "commit": "ddffebebe6134689e009846a3b5d829c7bd8b0e0",
+      "runId": 34014759333,
+      "workflow": "Deploy GlobalGrid2050 Pages",
+      "status": "completed",
+      "conclusion": "success",
+      "scope": "Exact final publication build/deploy and inherited verification completed successfully;33served files plus8hostdependencies match Git,373actual live checks pass.",
+      "url": "https://github.com/Ventusltd/globalgrid2050/actions/runs/34014759333",
+      "evidence": "recovery-20260906/poly0537-publication"
     }
   ],
   "offlineEvidence": "architecture-reload-20260905/master-100",
@@ -116,5 +267,98 @@
     "retainedLocalCompleted": 4,
     "localEvidence": "learning-drain-20260906/local-completion.json",
     "localEvidenceSha256": "d0ec02d24eb148ec58d609276ff774731ac55070f032ef51709b75c68c7f180c"
+  },
+  "recoveryCampaign": {
+    "updatedUTC": "2026-09-06T05:51:14.148319+00:00",
+    "acceptedOrPreviouslyRecordedFeatures": 41,
+    "preRecoveryFeatures": 6,
+    "newLiveVerifiedFeatures": 35,
+    "ledger": "campaigns/20260906-next30.md",
+    "latestAtlas": "https://globalgrid2050.com/testcode/202609060537/atlas/",
+    "latestPipeline": "https://globalgrid2050.com/testcode/202609060349/pipeline/",
+    "separateCable": "https://globalgrid2050.com/testcode/202609060432/cable/",
+    "finalSource": "d66ac93905c4cbeb5526ac840d650e7dd876e25f",
+    "finalPublication": "ddffebebe6134689e009846a3b5d829c7bd8b0e0",
+    "sourceCI": 34014494672,
+    "pagesCI": 34014759333,
+    "servedFiles": 33,
+    "historicalHostDependencies": 8,
+    "liveChecks": 373,
+    "revoked": [
+      "202609060447"
+    ],
+    "rejectedUnpublished": [
+      "202609060353",
+      "202609060354",
+      "202609060459"
+    ],
+    "ownerDrafts": [
+      {
+        "repository": "gridatlas",
+        "number": 16,
+        "url": "https://github.com/Ventusltd/gridatlas/pull/16",
+        "state": "open",
+        "draft": true,
+        "merged": false,
+        "head": "ffd15b01b13c9616a4925ee0de8e756cca6b1e9e",
+        "base": "main"
+      },
+      {
+        "repository": "gridatlas",
+        "number": 17,
+        "url": "https://github.com/Ventusltd/gridatlas/pull/17",
+        "state": "open",
+        "draft": true,
+        "merged": false,
+        "head": "cc809cbbc107cefcd1fbeec4ffb57270a072d217",
+        "base": "codex/owner-budget-20260906"
+      },
+      {
+        "repository": "gridatlas",
+        "number": 18,
+        "url": "https://github.com/Ventusltd/gridatlas/pull/18",
+        "state": "open",
+        "draft": true,
+        "merged": false,
+        "head": "17b3d414364e99ffe6b6b3fe5850e353d8ad1865",
+        "base": "codex/owner-links-20260906"
+      },
+      {
+        "repository": "cable-trench-or-drill",
+        "number": 1,
+        "url": "https://github.com/Ventusltd/cable-trench-or-drill/pull/1",
+        "state": "open",
+        "draft": true,
+        "merged": false,
+        "head": "86661790840c92ef5a1df47953061db87283b66a",
+        "base": "main"
+      },
+      {
+        "repository": "gpu-drivers-for-global-grid",
+        "number": 2,
+        "url": "https://github.com/Ventusltd/gpu-drivers-for-global-grid/pull/2",
+        "state": "open",
+        "draft": true,
+        "merged": false,
+        "head": "d8d15892bdae4e3793e8ea20ed1f6e01eb8097a1",
+        "base": "main"
+      },
+      {
+        "repository": "gpu-drivers-for-global-grid",
+        "number": 3,
+        "url": "https://github.com/Ventusltd/gpu-drivers-for-global-grid/pull/3",
+        "state": "open",
+        "draft": true,
+        "merged": false,
+        "head": "34a84b51d7310b8cde9502579b699acd061ed3b0",
+        "base": "main"
+      }
+    ],
+    "scope": "Scoped TestCode feature acceptance only; canonical100 planned increments,96review backlog, historical learning and GPU hardware measurements remain separate. Historical tracker fields and runs preserved.",
+    "limitations": [
+      "General estate owner budget and link-target gates remain failed.",
+      "GPU PR CI is synthetic/CPU only; actual local Intel xe-lpg measurements are not RTX5070 results.",
+      "WebKit page screenshot behavior is not equated with native-canvas or actual PDF rendering evidence."
+    ]
   }
 }

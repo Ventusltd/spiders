@@ -6,9 +6,9 @@ Read CI-TRACKER.json for the exact observed commits, run IDs and outcomes. The c
 
 The old hourly learning scheduler was stopped with its FINAL.json queue preserved. It completed 81 jobs; 27 remained. A finite cloud run regenerated models only from verified public commits, then executed those jobs. Run [34004616519](https://github.com/Ventusltd/gpu-drivers-for-global-grid/actions/runs/34004616519) completed all 23 public-source workload jobs, with no failures. Source fingerprints were checked against existing local baselines where applicable. All 24 artifacts were downloaded offline (about 1.66 MB compressed).
 
-Four jobs remain local because public reproduction was unavailable. The serial finish controller waits for the original 3.2 GiB launch reserve, pauses/terminates work below 2.5 GiB, and retains a 192 MiB worker cap. It is scheduled until 06:00 BST. Read learning-drain-20260906/local-status.json and local-completion.json if present; do not infer completion from the controller being alive. The generic learning monitor still points at the historical stopped run; this transfer checkpoint is authoritative for this finite queue.
+All four retained local jobs completed successfully; receipts are in learning-drain-20260906/local-completion.json. Peak worker memory was 34.18 MiB and the lowest observed free RAM was 3.932 GiB. The entire transferred queue is finished: 27 jobs, zero failures.
 
-Total completed study executions: 104 (81 local + 23 cloud), not 104 unique repositories. Four remain. The separate CPU/GPU controller's 18 completed batches are a different count; its remaining hourly measurements still need local memory. The 96-step engineering review scheduler is also separate and does not perform unimplemented reviews automatically.
+Total completed study executions: 108 (81 earlier + 23 cloud + 4 retained local), not 108 unique repositories. No learning jobs remain. The separate CPU/GPU benchmark controller and 96-step engineering review tracker are separate workloads. The generic learning monitor points at the historical stopped run; this completion checkpoint is authoritative for the finite queue.
 
 ## Earlier runner outcomes (historical)
 
@@ -18,7 +18,7 @@ Local controllers remain alive. At takeover the learning study had 81 completed 
 
 ## Next work in priority order
 
-1. Finish the four retained local jobs when RAM reaches 3.2 GiB. The prior 27-job queue was transferred, not restarted. Preserve its history and avoid duplicate cloud or hourly work.
+1. The 27-job transferred learning queue is complete. Preserve its receipts and avoid duplicate cloud or hourly work.
 2. Keep GridAtlas PR #15 unaccepted until its exact composed menu-control and cartridge-size failures are resolved and tested. Its six legacy guard tests do not substitute for the broader proof. Follow ATLAS-09/10 control requirements and ATLAS-50 release evidence boundaries.
 3. Under PIPELINE-48 continuity work, add tested crash recovery to the learning controller in gpu-drivers-for-global-grid. Current learning-night.py initializes its queue and counters in memory; it has no checkpoint resume option. Its resource-interrupted jobs are counted as failures and removed rather than requeued. Verify interrupted/restarted work is retained, finished work is not duplicated, receipts stay immutable and the original deadline survives. This is an observed code limitation, not a claim that tonight's 81 successful jobs were lost.
 4. Keep Pipeline coverage reconciliation (PIPELINE-01 onward) and current Atlas print completion ahead of optional layers. The separate ChatGPT session owns the electrification paper/dashboard; reconcile its publication evidence when supplied.

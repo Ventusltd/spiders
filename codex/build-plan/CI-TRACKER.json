@@ -83,22 +83,35 @@
       "conclusion": "success",
       "scope": "Build continuity and read-only repository survey; no application release acceptance.",
       "evidence": "session-takeover-20260906/runner-refresh/ci-34003003228.json"
+    },
+    {
+      "repository": "Ventusltd/gpu-drivers-for-global-grid",
+      "commit": "e76b1c553a44cd538e0822c81489cfe582d0a4e7",
+      "runId": 34004616519,
+      "workflow": "Finish pinned repository learning",
+      "status": "completed",
+      "conclusion": "success",
+      "completedWorkloadJobs": 23,
+      "scope": "23 finite public-source lexical jobs, plus prepare/collector. No GPU or application correctness acceptance.",
+      "evidence": "learning-drain-20260906/cloud-run.json"
     }
   ],
   "offlineEvidence": "architecture-reload-20260905/master-100",
   "browser": "viewer-final-live/results.json: desktop and phone Chrome pass; tampered graph refused; served-final.json verifies six served files against eadace4.",
   "nextObservation": "Observe new owner implementation commits separately.",
   "runnerCheckpoint": {
-    "checkedAt": "2026-09-06T01:06:43.610207+00:00",
-    "evidence": "session-takeover-20260906/runner-refresh/local-status.json",
-    "learningCompleted": 81,
-    "learningFailed": 0,
-    "learningQueued": 27,
-    "localState": "RAM reserve",
-    "cpuGpuReviewCompleted": 18,
-    "cpuGpuReviewFailed": 0,
-    "launchFreeRamGiB": 3.2,
-    "planAudit": "session-takeover-20260906/plan-audit",
-    "planTests": "9 passed; 100 builds, 234 nodes, 331 edges; no canonical change required"
+    "checkedAt": "2026-09-06T01:47:03.224654+00:00",
+    "originalLocalCompleted": 81,
+    "cloudCompleted": 23,
+    "totalCompletedStudyJobs": 104,
+    "remainingLocalJobs": 4,
+    "localFinishControllerPID": 22172,
+    "localLaunchFreeRamGiB": 3.2,
+    "localStopBelowGiB": 2.5,
+    "deadlineUTC": "2026-09-06T05:00:00Z",
+    "cloudEvidence": "learning-drain-20260906/cloud/learning-completion/SUMMARY.json",
+    "cloudEvidenceSha256": "fa45dbb0bd8b2005439c7da890419ca8859865d2a826dd954a01a3f639b359de",
+    "localQueue": "learning-drain-20260906/local-queue.json",
+    "status": "Cloud workload complete; four local-only model reuses waiting for RAM. Old hourly learning scheduler stopped; no added repeats."
   }
 }

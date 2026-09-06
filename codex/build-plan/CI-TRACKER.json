@@ -63,9 +63,42 @@
         "sld-sandbox proof: substation438867 exceeds368640"
       ],
       "scope": "Draft safety guard; no app release or merge. Existing composed app files unchanged."
+    },
+    {
+      "repository": "Ventusltd/spiders",
+      "commit": "dc76a933bb3a247651673e26e7d71ec781e06fa1",
+      "runId": 34003002002,
+      "workflow": "Build context checkpoint",
+      "status": "completed",
+      "conclusion": "success",
+      "scope": "Build continuity and read-only repository survey; no application release acceptance.",
+      "evidence": "session-takeover-20260906/runner-refresh/ci-34003002002.json"
+    },
+    {
+      "repository": "Ventusltd/spiders",
+      "commit": "dc76a933bb3a247651673e26e7d71ec781e06fa1",
+      "runId": 34003003228,
+      "workflow": "Bounded public estate survey",
+      "status": "completed",
+      "conclusion": "success",
+      "scope": "Build continuity and read-only repository survey; no application release acceptance.",
+      "evidence": "session-takeover-20260906/runner-refresh/ci-34003003228.json"
     }
   ],
   "offlineEvidence": "architecture-reload-20260905/master-100",
   "browser": "viewer-final-live/results.json: desktop and phone Chrome pass; tampered graph refused; served-final.json verifies six served files against eadace4.",
-  "nextObservation": "Observe new owner implementation commits separately."
+  "nextObservation": "Observe new owner implementation commits separately.",
+  "runnerCheckpoint": {
+    "checkedAt": "2026-09-06T01:06:43.610207+00:00",
+    "evidence": "session-takeover-20260906/runner-refresh/local-status.json",
+    "learningCompleted": 81,
+    "learningFailed": 0,
+    "learningQueued": 27,
+    "localState": "RAM reserve",
+    "cpuGpuReviewCompleted": 18,
+    "cpuGpuReviewFailed": 0,
+    "launchFreeRamGiB": 3.2,
+    "planAudit": "session-takeover-20260906/plan-audit",
+    "planTests": "9 passed; 100 builds, 234 nodes, 331 edges; no canonical change required"
+  }
 }

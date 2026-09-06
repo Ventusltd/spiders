@@ -6,13 +6,13 @@ The last scheduler record at 2026-09-06 02:24 UTC still has eight identity recei
 
 | Track | Review IDs | Current evidence to reconcile, not automatic completion |
 |---|---|---|
-| Release composition | R01-R12 | Atlas241 composition/token equivalence and strict payload guard under test; full gate remains required. |
-| Cable geometry | R13-R24 | Claude corridor and site-geometry views at GlobalGrid895cadcf observed; original reported app.js defect needs exact-source reproduction. |
-| GRID / SUBS controls | R25-R36 | Atlas228 scoped54/54 desktop/mobile controls checks; source714d873, publication63acce00, served28/28. |
-| Project deep links | R37-R48 | Berwick9873 completes in Atlas228 at desktop/mobile; Torness78.96km straight. Separate offshore highway-factor error has a draft correction. |
-| App-only PDF | R49-R60 | App print action and complete visible content still require dedicated review. |
+| Release composition | R01-R12 | Owner PR16 restores the payload budget without changing executable tokens. R01 review reproduced required-cartridge omissions accepted by two composition checks; owner17b3d41 adds an explicit contract and rejects12/12 actual command/omission fixtures. Full CI acceptance remains separate. |
+| Cable geometry | R13-R24 | Legacy /cable_geometry/ reproduced three syntax errors and three blank canvases on desktop/phone at source9d364a21. Owner8666179 restores syntax and a reachable Drawing View exit;30 actual browser checks plus14 existing owner tests pass. New0432 TestCode publication is separate from the working modular v7 Cable layer. |
+| GRID / SUBS controls | R25-R36 | Atlas0401 passed106 live desktop/phone/touch checks;0418 additionally passes Firefox/WebKit polygon interactions. Candidate0435 adds native keyboard collapse/expand, focus restoration and44px controls, with116 local checks; acceptance requires its exact CI and live receipt. |
+| Project deep links | R37-R48 | TestCode0300 corrects offshore highway-factor application. Owner draft PR17 (cc809cb) renders the actual measured transmission endpoint beyond40km without duplicate links; Bellrock/Berwick actual browser geometry checked. Owner main remains separate. |
+| App-only PDF | R49-R60 | Actual0418 File Print invokes Teleprinter app-render download, not the inherited window.print handler. Chromium/Firefox DPR1 and WebKit DPR3 phone/desktop downloads preserve the polygon; independently rendered PDF visibly retains measurements. Rejected driver assumption and exact entrypoint closure are recorded in TestCode160f406 sandbox/reports/202609060428-print-source-review.md. |
 | GIS SLD isolation | R61-R72 | Existing SLD proof fixtures being reconciled with current composition; independent failure behavior remains part of acceptance. |
-| Source print integrity | R73-R84 | CI dependency closure21b3e2a checked into TestCode; print-download dependency closure is a separate pending check. |
+| Source print integrity | R73-R84 | Actual0418 source download independently verifies56 complete resource bodies and all4 pinned executable cartridges, with exact polygon state. Browser discovery correctly remains incomplete: one local diagnostic404 and11 discovery warnings are disclosed. No claim that all dormant/server dependencies are captured; see TestCode160f406 review report. |
 | GPU evidence | R85-R96 | 108 study executions are not GPU correctness evidence; adapter/input attribution and GPU numerical validation remain separate. |
 
 Each track retains twelve phases: identity, entrypoints, dependencies, contracts, implementation trace, baseline, alternative explanation, negative fixture, boundaries, independent cross-check, minimal change, decision card. Attach hashed evidence for the selected commit before marking a phase verified. No elapsed time, publication count, or unrelated green CI substitutes for these criteria.

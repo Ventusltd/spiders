@@ -1,0 +1,1240 @@
+{
+  "schema": "ventus.precision-plan.v1",
+  "tasks": [
+    {
+      "id": "R01",
+      "group": "Release composition",
+      "owner": "gridatlas",
+      "question": "Does the current release gate reject removal of every required cartridge?",
+      "phase": "Pin identities",
+      "acceptance": "Record local HEAD, remote main, working-tree state and origin; do not silently equate local and shipped code.",
+      "timeboxMinutes": 5,
+      "dependsOn": [],
+      "priority": 1
+    },
+    {
+      "id": "R02",
+      "group": "Release composition",
+      "owner": "gridatlas",
+      "question": "Does the current release gate reject removal of every required cartridge?",
+      "phase": "Resolve entrypoints",
+      "acceptance": "Identify and read the complete actual entrypoint and manifest at the selected commit.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R01"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "R03",
+      "group": "Release composition",
+      "owner": "gridatlas",
+      "question": "Does the current release gate reject removal of every required cartridge?",
+      "phase": "Resolve dependencies",
+      "acceptance": "Account for the complete relevant import/workflow-script closure; unresolved dependencies block completion.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R02"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "R04",
+      "group": "Release composition",
+      "owner": "gridatlas",
+      "question": "Does the current release gate reject removal of every required cartridge?",
+      "phase": "Read contracts",
+      "acceptance": "Record intended inputs, outputs, invariants and applicable owner instructions.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R03"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "R05",
+      "group": "Release composition",
+      "owner": "gridatlas",
+      "question": "Does the current release gate reject removal of every required cartridge?",
+      "phase": "Trace implementation",
+      "acceptance": "Read complete relevant functions and document the behavior path with exact source locations.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R04"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "R06",
+      "group": "Release composition",
+      "owner": "gridatlas",
+      "question": "Does the current release gate reject removal of every required cartridge?",
+      "phase": "Establish baseline",
+      "acceptance": "Reproduce the behavior on the pinned unmodified implementation and retain actual evidence.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R05"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "R07",
+      "group": "Release composition",
+      "owner": "gridatlas",
+      "question": "Does the current release gate reject removal of every required cartridge?",
+      "phase": "Challenge hypothesis",
+      "acceptance": "Test the strongest alternative explanation, including environment and reviewer errors.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R06"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "R08",
+      "group": "Release composition",
+      "owner": "gridatlas",
+      "question": "Does the current release gate reject removal of every required cartridge?",
+      "phase": "Negative fixture",
+      "acceptance": "Construct a targeted failing input or missing-module case and show the check detects it.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R07"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "R09",
+      "group": "Release composition",
+      "owner": "gridatlas",
+      "question": "Does the current release gate reject removal of every required cartridge?",
+      "phase": "Boundary cases",
+      "acceptance": "Test scope-specific edge cases and independent plugin failure behavior.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R08"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "R10",
+      "group": "Release composition",
+      "owner": "gridatlas",
+      "question": "Does the current release gate reject removal of every required cartridge?",
+      "phase": "Cross-check evidence",
+      "acceptance": "Independently verify source identity, outputs and any measured numerical claims.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R09"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "R11",
+      "group": "Release composition",
+      "owner": "gridatlas",
+      "question": "Does the current release gate reject removal of every required cartridge?",
+      "phase": "Propose minimal change",
+      "acceptance": "Describe the smallest justified owner change, dependency effects and rollback; no untested deployment.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R10"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "R12",
+      "group": "Release composition",
+      "owner": "gridatlas",
+      "question": "Does the current release gate reject removal of every required cartridge?",
+      "phase": "Issue decision card",
+      "acceptance": "Provide a short evidence-backed conclusion with unresolved limits and links to the complete review packet.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R11"
+      ],
+      "priority": 1
+    },
+    {
+      "id": "R13",
+      "group": "Cable geometry",
+      "owner": "globalgrid2050",
+      "question": "What is the exact loading and behavior impact of the confirmed app.js syntax defect?",
+      "phase": "Pin identities",
+      "acceptance": "Record local HEAD, remote main, working-tree state and origin; do not silently equate local and shipped code.",
+      "timeboxMinutes": 5,
+      "dependsOn": [],
+      "priority": 2
+    },
+    {
+      "id": "R14",
+      "group": "Cable geometry",
+      "owner": "globalgrid2050",
+      "question": "What is the exact loading and behavior impact of the confirmed app.js syntax defect?",
+      "phase": "Resolve entrypoints",
+      "acceptance": "Identify and read the complete actual entrypoint and manifest at the selected commit.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R13"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "R15",
+      "group": "Cable geometry",
+      "owner": "globalgrid2050",
+      "question": "What is the exact loading and behavior impact of the confirmed app.js syntax defect?",
+      "phase": "Resolve dependencies",
+      "acceptance": "Account for the complete relevant import/workflow-script closure; unresolved dependencies block completion.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R14"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "R16",
+      "group": "Cable geometry",
+      "owner": "globalgrid2050",
+      "question": "What is the exact loading and behavior impact of the confirmed app.js syntax defect?",
+      "phase": "Read contracts",
+      "acceptance": "Record intended inputs, outputs, invariants and applicable owner instructions.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R15"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "R17",
+      "group": "Cable geometry",
+      "owner": "globalgrid2050",
+      "question": "What is the exact loading and behavior impact of the confirmed app.js syntax defect?",
+      "phase": "Trace implementation",
+      "acceptance": "Read complete relevant functions and document the behavior path with exact source locations.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R16"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "R18",
+      "group": "Cable geometry",
+      "owner": "globalgrid2050",
+      "question": "What is the exact loading and behavior impact of the confirmed app.js syntax defect?",
+      "phase": "Establish baseline",
+      "acceptance": "Reproduce the behavior on the pinned unmodified implementation and retain actual evidence.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R17"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "R19",
+      "group": "Cable geometry",
+      "owner": "globalgrid2050",
+      "question": "What is the exact loading and behavior impact of the confirmed app.js syntax defect?",
+      "phase": "Challenge hypothesis",
+      "acceptance": "Test the strongest alternative explanation, including environment and reviewer errors.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R18"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "R20",
+      "group": "Cable geometry",
+      "owner": "globalgrid2050",
+      "question": "What is the exact loading and behavior impact of the confirmed app.js syntax defect?",
+      "phase": "Negative fixture",
+      "acceptance": "Construct a targeted failing input or missing-module case and show the check detects it.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R19"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "R21",
+      "group": "Cable geometry",
+      "owner": "globalgrid2050",
+      "question": "What is the exact loading and behavior impact of the confirmed app.js syntax defect?",
+      "phase": "Boundary cases",
+      "acceptance": "Test scope-specific edge cases and independent plugin failure behavior.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R20"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "R22",
+      "group": "Cable geometry",
+      "owner": "globalgrid2050",
+      "question": "What is the exact loading and behavior impact of the confirmed app.js syntax defect?",
+      "phase": "Cross-check evidence",
+      "acceptance": "Independently verify source identity, outputs and any measured numerical claims.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R21"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "R23",
+      "group": "Cable geometry",
+      "owner": "globalgrid2050",
+      "question": "What is the exact loading and behavior impact of the confirmed app.js syntax defect?",
+      "phase": "Propose minimal change",
+      "acceptance": "Describe the smallest justified owner change, dependency effects and rollback; no untested deployment.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R22"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "R24",
+      "group": "Cable geometry",
+      "owner": "globalgrid2050",
+      "question": "What is the exact loading and behavior impact of the confirmed app.js syntax defect?",
+      "phase": "Issue decision card",
+      "acceptance": "Provide a short evidence-backed conclusion with unresolved limits and links to the complete review packet.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R23"
+      ],
+      "priority": 2
+    },
+    {
+      "id": "R25",
+      "group": "GRID / SUBS controls",
+      "owner": "gridatlas",
+      "question": "Do controls and minimised layers behave correctly across desktop and mobile?",
+      "phase": "Pin identities",
+      "acceptance": "Record local HEAD, remote main, working-tree state and origin; do not silently equate local and shipped code.",
+      "timeboxMinutes": 5,
+      "dependsOn": [],
+      "priority": 3
+    },
+    {
+      "id": "R26",
+      "group": "GRID / SUBS controls",
+      "owner": "gridatlas",
+      "question": "Do controls and minimised layers behave correctly across desktop and mobile?",
+      "phase": "Resolve entrypoints",
+      "acceptance": "Identify and read the complete actual entrypoint and manifest at the selected commit.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R25"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "R27",
+      "group": "GRID / SUBS controls",
+      "owner": "gridatlas",
+      "question": "Do controls and minimised layers behave correctly across desktop and mobile?",
+      "phase": "Resolve dependencies",
+      "acceptance": "Account for the complete relevant import/workflow-script closure; unresolved dependencies block completion.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R26"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "R28",
+      "group": "GRID / SUBS controls",
+      "owner": "gridatlas",
+      "question": "Do controls and minimised layers behave correctly across desktop and mobile?",
+      "phase": "Read contracts",
+      "acceptance": "Record intended inputs, outputs, invariants and applicable owner instructions.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R27"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "R29",
+      "group": "GRID / SUBS controls",
+      "owner": "gridatlas",
+      "question": "Do controls and minimised layers behave correctly across desktop and mobile?",
+      "phase": "Trace implementation",
+      "acceptance": "Read complete relevant functions and document the behavior path with exact source locations.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R28"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "R30",
+      "group": "GRID / SUBS controls",
+      "owner": "gridatlas",
+      "question": "Do controls and minimised layers behave correctly across desktop and mobile?",
+      "phase": "Establish baseline",
+      "acceptance": "Reproduce the behavior on the pinned unmodified implementation and retain actual evidence.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R29"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "R31",
+      "group": "GRID / SUBS controls",
+      "owner": "gridatlas",
+      "question": "Do controls and minimised layers behave correctly across desktop and mobile?",
+      "phase": "Challenge hypothesis",
+      "acceptance": "Test the strongest alternative explanation, including environment and reviewer errors.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R30"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "R32",
+      "group": "GRID / SUBS controls",
+      "owner": "gridatlas",
+      "question": "Do controls and minimised layers behave correctly across desktop and mobile?",
+      "phase": "Negative fixture",
+      "acceptance": "Construct a targeted failing input or missing-module case and show the check detects it.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R31"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "R33",
+      "group": "GRID / SUBS controls",
+      "owner": "gridatlas",
+      "question": "Do controls and minimised layers behave correctly across desktop and mobile?",
+      "phase": "Boundary cases",
+      "acceptance": "Test scope-specific edge cases and independent plugin failure behavior.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R32"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "R34",
+      "group": "GRID / SUBS controls",
+      "owner": "gridatlas",
+      "question": "Do controls and minimised layers behave correctly across desktop and mobile?",
+      "phase": "Cross-check evidence",
+      "acceptance": "Independently verify source identity, outputs and any measured numerical claims.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R33"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "R35",
+      "group": "GRID / SUBS controls",
+      "owner": "gridatlas",
+      "question": "Do controls and minimised layers behave correctly across desktop and mobile?",
+      "phase": "Propose minimal change",
+      "acceptance": "Describe the smallest justified owner change, dependency effects and rollback; no untested deployment.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R34"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "R36",
+      "group": "GRID / SUBS controls",
+      "owner": "gridatlas",
+      "question": "Do controls and minimised layers behave correctly across desktop and mobile?",
+      "phase": "Issue decision card",
+      "acceptance": "Provide a short evidence-backed conclusion with unresolved limits and links to the complete review packet.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R35"
+      ],
+      "priority": 3
+    },
+    {
+      "id": "R37",
+      "group": "Project deep links",
+      "owner": "ventus-grid-engine",
+      "question": "Does Pipeline News select the intended Atlas project and produce a visible outcome?",
+      "phase": "Pin identities",
+      "acceptance": "Record local HEAD, remote main, working-tree state and origin; do not silently equate local and shipped code.",
+      "timeboxMinutes": 5,
+      "dependsOn": [],
+      "priority": 4
+    },
+    {
+      "id": "R38",
+      "group": "Project deep links",
+      "owner": "ventus-grid-engine",
+      "question": "Does Pipeline News select the intended Atlas project and produce a visible outcome?",
+      "phase": "Resolve entrypoints",
+      "acceptance": "Identify and read the complete actual entrypoint and manifest at the selected commit.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R37"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "R39",
+      "group": "Project deep links",
+      "owner": "ventus-grid-engine",
+      "question": "Does Pipeline News select the intended Atlas project and produce a visible outcome?",
+      "phase": "Resolve dependencies",
+      "acceptance": "Account for the complete relevant import/workflow-script closure; unresolved dependencies block completion.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R38"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "R40",
+      "group": "Project deep links",
+      "owner": "ventus-grid-engine",
+      "question": "Does Pipeline News select the intended Atlas project and produce a visible outcome?",
+      "phase": "Read contracts",
+      "acceptance": "Record intended inputs, outputs, invariants and applicable owner instructions.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R39"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "R41",
+      "group": "Project deep links",
+      "owner": "ventus-grid-engine",
+      "question": "Does Pipeline News select the intended Atlas project and produce a visible outcome?",
+      "phase": "Trace implementation",
+      "acceptance": "Read complete relevant functions and document the behavior path with exact source locations.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R40"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "R42",
+      "group": "Project deep links",
+      "owner": "ventus-grid-engine",
+      "question": "Does Pipeline News select the intended Atlas project and produce a visible outcome?",
+      "phase": "Establish baseline",
+      "acceptance": "Reproduce the behavior on the pinned unmodified implementation and retain actual evidence.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R41"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "R43",
+      "group": "Project deep links",
+      "owner": "ventus-grid-engine",
+      "question": "Does Pipeline News select the intended Atlas project and produce a visible outcome?",
+      "phase": "Challenge hypothesis",
+      "acceptance": "Test the strongest alternative explanation, including environment and reviewer errors.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R42"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "R44",
+      "group": "Project deep links",
+      "owner": "ventus-grid-engine",
+      "question": "Does Pipeline News select the intended Atlas project and produce a visible outcome?",
+      "phase": "Negative fixture",
+      "acceptance": "Construct a targeted failing input or missing-module case and show the check detects it.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R43"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "R45",
+      "group": "Project deep links",
+      "owner": "ventus-grid-engine",
+      "question": "Does Pipeline News select the intended Atlas project and produce a visible outcome?",
+      "phase": "Boundary cases",
+      "acceptance": "Test scope-specific edge cases and independent plugin failure behavior.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R44"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "R46",
+      "group": "Project deep links",
+      "owner": "ventus-grid-engine",
+      "question": "Does Pipeline News select the intended Atlas project and produce a visible outcome?",
+      "phase": "Cross-check evidence",
+      "acceptance": "Independently verify source identity, outputs and any measured numerical claims.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R45"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "R47",
+      "group": "Project deep links",
+      "owner": "ventus-grid-engine",
+      "question": "Does Pipeline News select the intended Atlas project and produce a visible outcome?",
+      "phase": "Propose minimal change",
+      "acceptance": "Describe the smallest justified owner change, dependency effects and rollback; no untested deployment.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R46"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "R48",
+      "group": "Project deep links",
+      "owner": "ventus-grid-engine",
+      "question": "Does Pipeline News select the intended Atlas project and produce a visible outcome?",
+      "phase": "Issue decision card",
+      "acceptance": "Provide a short evidence-backed conclusion with unresolved limits and links to the complete review packet.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R47"
+      ],
+      "priority": 4
+    },
+    {
+      "id": "R49",
+      "group": "App-only PDF",
+      "owner": "teleprinter",
+      "question": "Does the real print action preserve visible app content without screen sharing?",
+      "phase": "Pin identities",
+      "acceptance": "Record local HEAD, remote main, working-tree state and origin; do not silently equate local and shipped code.",
+      "timeboxMinutes": 5,
+      "dependsOn": [],
+      "priority": 5
+    },
+    {
+      "id": "R50",
+      "group": "App-only PDF",
+      "owner": "teleprinter",
+      "question": "Does the real print action preserve visible app content without screen sharing?",
+      "phase": "Resolve entrypoints",
+      "acceptance": "Identify and read the complete actual entrypoint and manifest at the selected commit.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R49"
+      ],
+      "priority": 5
+    },
+    {
+      "id": "R51",
+      "group": "App-only PDF",
+      "owner": "teleprinter",
+      "question": "Does the real print action preserve visible app content without screen sharing?",
+      "phase": "Resolve dependencies",
+      "acceptance": "Account for the complete relevant import/workflow-script closure; unresolved dependencies block completion.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R50"
+      ],
+      "priority": 5
+    },
+    {
+      "id": "R52",
+      "group": "App-only PDF",
+      "owner": "teleprinter",
+      "question": "Does the real print action preserve visible app content without screen sharing?",
+      "phase": "Read contracts",
+      "acceptance": "Record intended inputs, outputs, invariants and applicable owner instructions.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R51"
+      ],
+      "priority": 5
+    },
+    {
+      "id": "R53",
+      "group": "App-only PDF",
+      "owner": "teleprinter",
+      "question": "Does the real print action preserve visible app content without screen sharing?",
+      "phase": "Trace implementation",
+      "acceptance": "Read complete relevant functions and document the behavior path with exact source locations.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R52"
+      ],
+      "priority": 5
+    },
+    {
+      "id": "R54",
+      "group": "App-only PDF",
+      "owner": "teleprinter",
+      "question": "Does the real print action preserve visible app content without screen sharing?",
+      "phase": "Establish baseline",
+      "acceptance": "Reproduce the behavior on the pinned unmodified implementation and retain actual evidence.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R53"
+      ],
+      "priority": 5
+    },
+    {
+      "id": "R55",
+      "group": "App-only PDF",
+      "owner": "teleprinter",
+      "question": "Does the real print action preserve visible app content without screen sharing?",
+      "phase": "Challenge hypothesis",
+      "acceptance": "Test the strongest alternative explanation, including environment and reviewer errors.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R54"
+      ],
+      "priority": 5
+    },
+    {
+      "id": "R56",
+      "group": "App-only PDF",
+      "owner": "teleprinter",
+      "question": "Does the real print action preserve visible app content without screen sharing?",
+      "phase": "Negative fixture",
+      "acceptance": "Construct a targeted failing input or missing-module case and show the check detects it.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R55"
+      ],
+      "priority": 5
+    },
+    {
+      "id": "R57",
+      "group": "App-only PDF",
+      "owner": "teleprinter",
+      "question": "Does the real print action preserve visible app content without screen sharing?",
+      "phase": "Boundary cases",
+      "acceptance": "Test scope-specific edge cases and independent plugin failure behavior.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R56"
+      ],
+      "priority": 5
+    },
+    {
+      "id": "R58",
+      "group": "App-only PDF",
+      "owner": "teleprinter",
+      "question": "Does the real print action preserve visible app content without screen sharing?",
+      "phase": "Cross-check evidence",
+      "acceptance": "Independently verify source identity, outputs and any measured numerical claims.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R57"
+      ],
+      "priority": 5
+    },
+    {
+      "id": "R59",
+      "group": "App-only PDF",
+      "owner": "teleprinter",
+      "question": "Does the real print action preserve visible app content without screen sharing?",
+      "phase": "Propose minimal change",
+      "acceptance": "Describe the smallest justified owner change, dependency effects and rollback; no untested deployment.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R58"
+      ],
+      "priority": 5
+    },
+    {
+      "id": "R60",
+      "group": "App-only PDF",
+      "owner": "teleprinter",
+      "question": "Does the real print action preserve visible app content without screen sharing?",
+      "phase": "Issue decision card",
+      "acceptance": "Provide a short evidence-backed conclusion with unresolved limits and links to the complete review packet.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R59"
+      ],
+      "priority": 5
+    },
+    {
+      "id": "R61",
+      "group": "GIS SLD isolation",
+      "owner": "gis-sld-sandbox",
+      "question": "Does the original sandbox retain its behavior as an independently failing Atlas layer?",
+      "phase": "Pin identities",
+      "acceptance": "Record local HEAD, remote main, working-tree state and origin; do not silently equate local and shipped code.",
+      "timeboxMinutes": 5,
+      "dependsOn": [],
+      "priority": 6
+    },
+    {
+      "id": "R62",
+      "group": "GIS SLD isolation",
+      "owner": "gis-sld-sandbox",
+      "question": "Does the original sandbox retain its behavior as an independently failing Atlas layer?",
+      "phase": "Resolve entrypoints",
+      "acceptance": "Identify and read the complete actual entrypoint and manifest at the selected commit.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R61"
+      ],
+      "priority": 6
+    },
+    {
+      "id": "R63",
+      "group": "GIS SLD isolation",
+      "owner": "gis-sld-sandbox",
+      "question": "Does the original sandbox retain its behavior as an independently failing Atlas layer?",
+      "phase": "Resolve dependencies",
+      "acceptance": "Account for the complete relevant import/workflow-script closure; unresolved dependencies block completion.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R62"
+      ],
+      "priority": 6
+    },
+    {
+      "id": "R64",
+      "group": "GIS SLD isolation",
+      "owner": "gis-sld-sandbox",
+      "question": "Does the original sandbox retain its behavior as an independently failing Atlas layer?",
+      "phase": "Read contracts",
+      "acceptance": "Record intended inputs, outputs, invariants and applicable owner instructions.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R63"
+      ],
+      "priority": 6
+    },
+    {
+      "id": "R65",
+      "group": "GIS SLD isolation",
+      "owner": "gis-sld-sandbox",
+      "question": "Does the original sandbox retain its behavior as an independently failing Atlas layer?",
+      "phase": "Trace implementation",
+      "acceptance": "Read complete relevant functions and document the behavior path with exact source locations.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R64"
+      ],
+      "priority": 6
+    },
+    {
+      "id": "R66",
+      "group": "GIS SLD isolation",
+      "owner": "gis-sld-sandbox",
+      "question": "Does the original sandbox retain its behavior as an independently failing Atlas layer?",
+      "phase": "Establish baseline",
+      "acceptance": "Reproduce the behavior on the pinned unmodified implementation and retain actual evidence.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R65"
+      ],
+      "priority": 6
+    },
+    {
+      "id": "R67",
+      "group": "GIS SLD isolation",
+      "owner": "gis-sld-sandbox",
+      "question": "Does the original sandbox retain its behavior as an independently failing Atlas layer?",
+      "phase": "Challenge hypothesis",
+      "acceptance": "Test the strongest alternative explanation, including environment and reviewer errors.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R66"
+      ],
+      "priority": 6
+    },
+    {
+      "id": "R68",
+      "group": "GIS SLD isolation",
+      "owner": "gis-sld-sandbox",
+      "question": "Does the original sandbox retain its behavior as an independently failing Atlas layer?",
+      "phase": "Negative fixture",
+      "acceptance": "Construct a targeted failing input or missing-module case and show the check detects it.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R67"
+      ],
+      "priority": 6
+    },
+    {
+      "id": "R69",
+      "group": "GIS SLD isolation",
+      "owner": "gis-sld-sandbox",
+      "question": "Does the original sandbox retain its behavior as an independently failing Atlas layer?",
+      "phase": "Boundary cases",
+      "acceptance": "Test scope-specific edge cases and independent plugin failure behavior.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R68"
+      ],
+      "priority": 6
+    },
+    {
+      "id": "R70",
+      "group": "GIS SLD isolation",
+      "owner": "gis-sld-sandbox",
+      "question": "Does the original sandbox retain its behavior as an independently failing Atlas layer?",
+      "phase": "Cross-check evidence",
+      "acceptance": "Independently verify source identity, outputs and any measured numerical claims.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R69"
+      ],
+      "priority": 6
+    },
+    {
+      "id": "R71",
+      "group": "GIS SLD isolation",
+      "owner": "gis-sld-sandbox",
+      "question": "Does the original sandbox retain its behavior as an independently failing Atlas layer?",
+      "phase": "Propose minimal change",
+      "acceptance": "Describe the smallest justified owner change, dependency effects and rollback; no untested deployment.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R70"
+      ],
+      "priority": 6
+    },
+    {
+      "id": "R72",
+      "group": "GIS SLD isolation",
+      "owner": "gis-sld-sandbox",
+      "question": "Does the original sandbox retain its behavior as an independently failing Atlas layer?",
+      "phase": "Issue decision card",
+      "acceptance": "Provide a short evidence-backed conclusion with unresolved limits and links to the complete review packet.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R71"
+      ],
+      "priority": 6
+    },
+    {
+      "id": "R73",
+      "group": "Source print integrity",
+      "owner": "testcode",
+      "question": "Does a source download contain the complete pinned dependency closure in the tested environment?",
+      "phase": "Pin identities",
+      "acceptance": "Record local HEAD, remote main, working-tree state and origin; do not silently equate local and shipped code.",
+      "timeboxMinutes": 5,
+      "dependsOn": [],
+      "priority": 7
+    },
+    {
+      "id": "R74",
+      "group": "Source print integrity",
+      "owner": "testcode",
+      "question": "Does a source download contain the complete pinned dependency closure in the tested environment?",
+      "phase": "Resolve entrypoints",
+      "acceptance": "Identify and read the complete actual entrypoint and manifest at the selected commit.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R73"
+      ],
+      "priority": 7
+    },
+    {
+      "id": "R75",
+      "group": "Source print integrity",
+      "owner": "testcode",
+      "question": "Does a source download contain the complete pinned dependency closure in the tested environment?",
+      "phase": "Resolve dependencies",
+      "acceptance": "Account for the complete relevant import/workflow-script closure; unresolved dependencies block completion.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R74"
+      ],
+      "priority": 7
+    },
+    {
+      "id": "R76",
+      "group": "Source print integrity",
+      "owner": "testcode",
+      "question": "Does a source download contain the complete pinned dependency closure in the tested environment?",
+      "phase": "Read contracts",
+      "acceptance": "Record intended inputs, outputs, invariants and applicable owner instructions.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R75"
+      ],
+      "priority": 7
+    },
+    {
+      "id": "R77",
+      "group": "Source print integrity",
+      "owner": "testcode",
+      "question": "Does a source download contain the complete pinned dependency closure in the tested environment?",
+      "phase": "Trace implementation",
+      "acceptance": "Read complete relevant functions and document the behavior path with exact source locations.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R76"
+      ],
+      "priority": 7
+    },
+    {
+      "id": "R78",
+      "group": "Source print integrity",
+      "owner": "testcode",
+      "question": "Does a source download contain the complete pinned dependency closure in the tested environment?",
+      "phase": "Establish baseline",
+      "acceptance": "Reproduce the behavior on the pinned unmodified implementation and retain actual evidence.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R77"
+      ],
+      "priority": 7
+    },
+    {
+      "id": "R79",
+      "group": "Source print integrity",
+      "owner": "testcode",
+      "question": "Does a source download contain the complete pinned dependency closure in the tested environment?",
+      "phase": "Challenge hypothesis",
+      "acceptance": "Test the strongest alternative explanation, including environment and reviewer errors.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R78"
+      ],
+      "priority": 7
+    },
+    {
+      "id": "R80",
+      "group": "Source print integrity",
+      "owner": "testcode",
+      "question": "Does a source download contain the complete pinned dependency closure in the tested environment?",
+      "phase": "Negative fixture",
+      "acceptance": "Construct a targeted failing input or missing-module case and show the check detects it.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R79"
+      ],
+      "priority": 7
+    },
+    {
+      "id": "R81",
+      "group": "Source print integrity",
+      "owner": "testcode",
+      "question": "Does a source download contain the complete pinned dependency closure in the tested environment?",
+      "phase": "Boundary cases",
+      "acceptance": "Test scope-specific edge cases and independent plugin failure behavior.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R80"
+      ],
+      "priority": 7
+    },
+    {
+      "id": "R82",
+      "group": "Source print integrity",
+      "owner": "testcode",
+      "question": "Does a source download contain the complete pinned dependency closure in the tested environment?",
+      "phase": "Cross-check evidence",
+      "acceptance": "Independently verify source identity, outputs and any measured numerical claims.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R81"
+      ],
+      "priority": 7
+    },
+    {
+      "id": "R83",
+      "group": "Source print integrity",
+      "owner": "testcode",
+      "question": "Does a source download contain the complete pinned dependency closure in the tested environment?",
+      "phase": "Propose minimal change",
+      "acceptance": "Describe the smallest justified owner change, dependency effects and rollback; no untested deployment.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R82"
+      ],
+      "priority": 7
+    },
+    {
+      "id": "R84",
+      "group": "Source print integrity",
+      "owner": "testcode",
+      "question": "Does a source download contain the complete pinned dependency closure in the tested environment?",
+      "phase": "Issue decision card",
+      "acceptance": "Provide a short evidence-backed conclusion with unresolved limits and links to the complete review packet.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R83"
+      ],
+      "priority": 7
+    },
+    {
+      "id": "R85",
+      "group": "GPU evidence",
+      "owner": "gpu-drivers-for-global-grid",
+      "question": "Are useful GPU results correct end-to-end and attributable to the actual adapter and input?",
+      "phase": "Pin identities",
+      "acceptance": "Record local HEAD, remote main, working-tree state and origin; do not silently equate local and shipped code.",
+      "timeboxMinutes": 5,
+      "dependsOn": [],
+      "priority": 8
+    },
+    {
+      "id": "R86",
+      "group": "GPU evidence",
+      "owner": "gpu-drivers-for-global-grid",
+      "question": "Are useful GPU results correct end-to-end and attributable to the actual adapter and input?",
+      "phase": "Resolve entrypoints",
+      "acceptance": "Identify and read the complete actual entrypoint and manifest at the selected commit.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R85"
+      ],
+      "priority": 8
+    },
+    {
+      "id": "R87",
+      "group": "GPU evidence",
+      "owner": "gpu-drivers-for-global-grid",
+      "question": "Are useful GPU results correct end-to-end and attributable to the actual adapter and input?",
+      "phase": "Resolve dependencies",
+      "acceptance": "Account for the complete relevant import/workflow-script closure; unresolved dependencies block completion.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R86"
+      ],
+      "priority": 8
+    },
+    {
+      "id": "R88",
+      "group": "GPU evidence",
+      "owner": "gpu-drivers-for-global-grid",
+      "question": "Are useful GPU results correct end-to-end and attributable to the actual adapter and input?",
+      "phase": "Read contracts",
+      "acceptance": "Record intended inputs, outputs, invariants and applicable owner instructions.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R87"
+      ],
+      "priority": 8
+    },
+    {
+      "id": "R89",
+      "group": "GPU evidence",
+      "owner": "gpu-drivers-for-global-grid",
+      "question": "Are useful GPU results correct end-to-end and attributable to the actual adapter and input?",
+      "phase": "Trace implementation",
+      "acceptance": "Read complete relevant functions and document the behavior path with exact source locations.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R88"
+      ],
+      "priority": 8
+    },
+    {
+      "id": "R90",
+      "group": "GPU evidence",
+      "owner": "gpu-drivers-for-global-grid",
+      "question": "Are useful GPU results correct end-to-end and attributable to the actual adapter and input?",
+      "phase": "Establish baseline",
+      "acceptance": "Reproduce the behavior on the pinned unmodified implementation and retain actual evidence.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R89"
+      ],
+      "priority": 8
+    },
+    {
+      "id": "R91",
+      "group": "GPU evidence",
+      "owner": "gpu-drivers-for-global-grid",
+      "question": "Are useful GPU results correct end-to-end and attributable to the actual adapter and input?",
+      "phase": "Challenge hypothesis",
+      "acceptance": "Test the strongest alternative explanation, including environment and reviewer errors.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R90"
+      ],
+      "priority": 8
+    },
+    {
+      "id": "R92",
+      "group": "GPU evidence",
+      "owner": "gpu-drivers-for-global-grid",
+      "question": "Are useful GPU results correct end-to-end and attributable to the actual adapter and input?",
+      "phase": "Negative fixture",
+      "acceptance": "Construct a targeted failing input or missing-module case and show the check detects it.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R91"
+      ],
+      "priority": 8
+    },
+    {
+      "id": "R93",
+      "group": "GPU evidence",
+      "owner": "gpu-drivers-for-global-grid",
+      "question": "Are useful GPU results correct end-to-end and attributable to the actual adapter and input?",
+      "phase": "Boundary cases",
+      "acceptance": "Test scope-specific edge cases and independent plugin failure behavior.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R92"
+      ],
+      "priority": 8
+    },
+    {
+      "id": "R94",
+      "group": "GPU evidence",
+      "owner": "gpu-drivers-for-global-grid",
+      "question": "Are useful GPU results correct end-to-end and attributable to the actual adapter and input?",
+      "phase": "Cross-check evidence",
+      "acceptance": "Independently verify source identity, outputs and any measured numerical claims.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R93"
+      ],
+      "priority": 8
+    },
+    {
+      "id": "R95",
+      "group": "GPU evidence",
+      "owner": "gpu-drivers-for-global-grid",
+      "question": "Are useful GPU results correct end-to-end and attributable to the actual adapter and input?",
+      "phase": "Propose minimal change",
+      "acceptance": "Describe the smallest justified owner change, dependency effects and rollback; no untested deployment.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R94"
+      ],
+      "priority": 8
+    },
+    {
+      "id": "R96",
+      "group": "GPU evidence",
+      "owner": "gpu-drivers-for-global-grid",
+      "question": "Are useful GPU results correct end-to-end and attributable to the actual adapter and input?",
+      "phase": "Issue decision card",
+      "acceptance": "Provide a short evidence-backed conclusion with unresolved limits and links to the complete review packet.",
+      "timeboxMinutes": 5,
+      "dependsOn": [
+        "R95"
+      ],
+      "priority": 8
+    }
+  ],
+  "hours": 8,
+  "scope": "96 five-minute planning units, not a promise of 96 completed engineering reviews. Carry unresolved work forward.",
+  "publicationScope": "Internal engineering review backlog absorbed from the public homepage at user request on 2026-09-06. Not live telemetry, app acceptance, or a count of running agents."
+}

@@ -359,6 +359,21 @@
       "General estate owner budget and link-target gates remain failed.",
       "GPU PR CI is synthetic/CPU only; actual local Intel xe-lpg measurements are not RTX5070 results.",
       "WebKit page screenshot behavior is not equated with native-canvas or actual PDF rendering evidence."
-    ]
+    ],
+    "independentFinalDeliveryAudit": {
+      "evidence": "recovery-20260906/delivery-links-final.json",
+      "sha256": "b725f20ec2f774337ed555a44a89b4cb4ebf5df7641e1a21f7fe72c1bb1ae512",
+      "checkedUTC": "2026-09-06T05:51:36.931310+00:00",
+      "inputLedgerCommit": "a13dbb31720d51139b7e51eab44cb83ab2de86ee",
+      "publicationCommit": "ddffebebe6134689e009846a3b5d829c7bd8b0e0",
+      "acceptedEntrypoints": 41,
+      "exactEntrypoints": 41,
+      "homepageExact": true,
+      "homepageSha256": "3da3d0681c718e5d0427f64b1366621c59d524b9f1b0e2146782ba510df6e90e",
+      "homepageInteractionEvidence": "recovery-20260906/homepage-final-entry/results.json",
+      "homepageInteractionSha256": "8cd57012eb23b837c1076d03d8f362a61639d7d60af1024a833ba30d224cd4c3",
+      "homepageNavigationAndDrawingChecks": 6,
+      "scope": "Independent direct-link/entrypoint byte audit and desktop/phone homepage navigation into final537; supplements existing373 release checks. Revoked447 excluded. Prior pre-final audit correctly failed stale homepage hash despite40 exact accepted entrypoints."
+    }
   }
 }

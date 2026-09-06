@@ -1,0 +1,117 @@
+name: Elements topology cartridge
+# Elements is the public name; spider_printer_v1 is the internal species.
+#
+# The cartridge used to be hand-drawn, and it went stale the day it was drawn:
+# by 6 September a third of the estate was missing from it and the map was still
+# believed. It is now generated, so this workflow exists to answer two separate
+# questions and report them separately:
+#
+#   1. Is the generator still correct? Offline, deterministic, no network.
+#   2. Has the estate moved past the committed cartridge? Needs the API, so a
+#      rate limit or an outage must not be reported as "the map is wrong".
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'spider_printer_v1/**'
+      - '.github/workflows/elements-topology.yml'
+  pull_request:
+  workflow_dispatch:
+  # The estate gains repositories faster than anyone remembers to redraw a map.
+  schedule:
+    - cron: '40 4 * * *'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: elements-topology
+  cancel-in-progress: false
+
+jobs:
+  generator:
+    name: Generator correctness (offline)
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Negative controls for the generator and the committed cartridge
+        working-directory: spider_printer_v1
+        run: python3 -B tools/test_build_topology.py
+      - name: The committed cartridge is valid JSON and internally consistent
+        working-directory: spider_printer_v1
+        run: |
+          python3 - <<'PY'
+          import json
+          d = json.load(open('data/topology.json', encoding='utf-8'))
+          ids = {n['id'] for n in d['nodes']}
+          assert d['nodes'], 'no nodes'
+          assert all(e['from'] in ids and e['to'] in ids for e in d['edges']), 'dangling edge'
+          assert isinstance(d['edgeTypes'], dict), 'edgeTypes must be keyed for the viewer'
+          assert d['canvas']['width'] == 3600, 'canvas must match the viewer mapPos divisor'
+          print(f"cartridge OK: {d['totals']['nodes']} nodes, {d['totals']['edges']} edges, "
+                f"generated {d['generated']['utc']}")
+          PY
+
+  estate-drift:
+    name: Has the estate moved past the cartridge?
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    # An API outage or a rate limit is not evidence that the map is stale, so
+    # this reports rather than gates. A real drift still shows as a red job.
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Rebuild from the GitHub API and compare against what is committed
+        working-directory: spider_printer_v1
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          set -uo pipefail
+          python3 -B tools/build_topology.py --api --out /tmp/fresh.json || {
+            echo "::warning::the estate could not be read from the API; drift not established"
+            exit 0
+          }
+          python3 - <<'PY'
+          import json, os, sys
+          fresh = json.load(open('/tmp/fresh.json', encoding='utf-8'))
+          current = json.load(open('data/topology.json', encoding='utf-8'))
+          # The generated block carries a timestamp and the scan source, which
+          # differ between a laptop run and an API run by design. Compare the
+          # subject, not the paperwork.
+          for d in (fresh, current):
+              d.pop('generated', None)
+          fresh_ids = {n['id'] for n in fresh['nodes']}
+          current_ids = {n['id'] for n in current['nodes']}
+          added, gone = sorted(fresh_ids - current_ids), sorted(current_ids - fresh_ids)
+          if added:
+              print('::warning::repositories in the estate but not on the map: ' + ', '.join(added))
+          if gone:
+              print('::warning::repositories on the map but not in the estate: ' + ', '.join(gone))
+          if fresh == current:
+              print('the map matches the estate')
+              sys.exit(0)
+          print(f"::error::the cartridge is out of date. Estate has {len(fresh_ids)} repositories "
+                f"and {len(fresh['edges'])} edges; the map has {len(current_ids)} and "
+                f"{len(current['edges'])}. Regenerate and commit a new version, adding a row to "
+                f"spider_printer_v1/VERSIONS.md and keeping the outgoing cartridge under "
+                f"data/superseded/.")
+          sys.exit(1)
+          PY
+      - name: Keep the freshly built cartridge as evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: elements-topology-${{ github.run_id }}
+          path: /tmp/fresh.json
+          if-no-files-found: ignore

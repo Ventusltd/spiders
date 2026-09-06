@@ -1,119 +1,1571 @@
 {
-  "schemaVersion": "0.1.1",
+  "schemaVersion": "0.2.0",
   "species": "spider_printer_v1",
-  "title": "GlobalGrid2050 Federation Network",
+  "title": "GlobalGrid2050 Elements",
   "methodState": "screening",
   "mapType": "topological_sld_not_geospatial",
-  "canvas": {"width": 4200, "height": 2600, "print": "A1 landscape"},
+  "generated": {
+    "utc": "2026-09-06T02:28:05+00:00",
+    "by": "spider_printer_v1/tools/build_topology.py",
+    "source": "local clones under GitHub: 30 distinct repositories deduplicated from 36 directories by origin remote",
+    "edgeRule": "An edge is a URL reference to another repository found in committed text. Nothing is inferred: no import parsing, no guessing, and no edge added to make the picture look connected."
+  },
+  "canvas": {
+    "width": 3600,
+    "height": 3000,
+    "sheet": {
+      "width": 1920,
+      "height": 1080
+    },
+    "map": {
+      "left": 360,
+      "top": 150,
+      "width": 1240,
+      "height": 880,
+      "scaleW": 1180,
+      "scaleH": 820
+    },
+    "node": {
+      "width": 150,
+      "height": 64
+    },
+    "print": {
+      "size": "A1",
+      "orientation": "landscape"
+    }
+  },
   "principles": [
-    "Declared data first",
-    "Unknown is a real state",
-    "Grey is better than fake green",
-    "No secrets on the map",
-    "Repository topology is screening-grade until audit receipts prove it"
+    "Nodes are the repositories that exist, not the ones that were drawn once.",
+    "An edge is evidence somebody wrote a link, with the count of times they wrote it.",
+    "Positions are computed from the layer assignment, so a diff means the estate moved.",
+    "A repository with no found references is drawn unconnected, because that is the evidence.",
+    "Every node is laid out inside the viewer's map area; the generator refuses to publish one the viewer would clip.",
+    "Screening-grade topology. It does not certify that the federation is correct."
   ],
   "layers": [
-    {"id": "data", "label": "Data repositories", "defaultOn": true},
-    {"id": "engines", "label": "Engines and topology tools", "defaultOn": true},
-    {"id": "apps", "label": "Applications and dashboards", "defaultOn": true},
-    {"id": "libs", "label": "Libraries and shared tools", "defaultOn": true},
-    {"id": "schemas", "label": "Standards, schemas and contracts", "defaultOn": true},
-    {"id": "infra", "label": "Infrastructure and platforms", "defaultOn": true},
-    {"id": "external", "label": "External authorities", "defaultOn": true},
-    {"id": "future", "label": "Future cartridges", "defaultOn": true}
+    {
+      "id": "data",
+      "label": "Data spines",
+      "colour": "#00ff88",
+      "kind": "data",
+      "defaultOn": true,
+      "count": 7
+    },
+    {
+      "id": "engines",
+      "label": "Engines",
+      "colour": "#bdb2ff",
+      "kind": "engine",
+      "defaultOn": true,
+      "count": 4
+    },
+    {
+      "id": "apps",
+      "label": "Applications",
+      "colour": "#61d7ff",
+      "kind": "appn",
+      "defaultOn": true,
+      "count": 2
+    },
+    {
+      "id": "tools",
+      "label": "Tools",
+      "colour": "#ffae00",
+      "kind": "lib",
+      "defaultOn": true,
+      "count": 6
+    },
+    {
+      "id": "observation",
+      "label": "Observation and audit",
+      "colour": "#ff8f8f",
+      "kind": "schema",
+      "defaultOn": true,
+      "count": 6
+    },
+    {
+      "id": "publication",
+      "label": "Publication",
+      "colour": "#4ad9c4",
+      "kind": "infra",
+      "defaultOn": true,
+      "count": 5
+    },
+    {
+      "id": "reference",
+      "label": "Reference edges",
+      "colour": "#61d7ff",
+      "kind": "edge",
+      "defaultOn": true,
+      "count": 164
+    }
   ],
   "edgeTypes": {
-    "raw_flow": {"label": "Data flow raw", "layer": "data", "colour": "#46ff63", "dash": ""},
-    "derived_flow": {"label": "Data flow derived", "layer": "data", "colour": "#3ee7ff", "dash": "8 8"},
-    "dependency": {"label": "Dependency / uses", "layer": "engines", "colour": "#3385ff", "dash": ""},
-    "provides": {"label": "Provides / exposes", "layer": "apps", "colour": "#b35cff", "dash": ""},
-    "federation": {"label": "Federation / discovery", "layer": "engines", "colour": "#ffb000", "dash": "12 8"},
-    "schema": {"label": "Schema / contract", "layer": "schemas", "colour": "#ff4b4b", "dash": ""},
-    "api": {"label": "API integration", "layer": "external", "colour": "#10e0c4", "dash": ""},
-    "reference": {"label": "Reference / documentation", "layer": "future", "colour": "#d8dde8", "dash": "4 7"}
+    "reference": {
+      "label": "URL reference in committed text",
+      "colour": "#61d7ff",
+      "layer": "reference",
+      "dash": ""
+    }
+  },
+  "totals": {
+    "nodes": 30,
+    "edges": 164,
+    "unconnected": 0,
+    "unconnectedIds": [],
+    "totalReferences": 5938,
+    "overlappingPairs": 0
   },
   "nodes": [
-    {"id": "data_uk_dno_and_tso", "label": "data_uk_dno_and_tso", "subtitle": "UK and Ireland DNO/TSO spine", "kind": "data", "layer": "data", "x": 360, "y": 300},
-    {"id": "data_gb_electricity", "label": "data-gb-electricity", "subtitle": "GB electricity time series", "kind": "data", "layer": "data", "x": 820, "y": 300},
-    {"id": "data_interconnectors", "label": "data-interconnectors", "subtitle": "Interconnector flows", "kind": "data", "layer": "data", "x": 1280, "y": 300},
-    {"id": "data_federation", "label": "data-federation-map", "subtitle": "Node and edge truth store", "kind": "data", "layer": "data", "x": 1740, "y": 300},
-    {"id": "globalgrid2050", "label": "globalgrid2050", "subtitle": "Retiring monolith / atlas source", "kind": "data", "layer": "data", "x": 2200, "y": 300},
-    {"id": "content_registry", "label": "registry_of_all_content", "subtitle": "Kernel file and dependency registry", "kind": "data", "layer": "data", "x": 2660, "y": 300},
-    {"id": "future_data", "label": "Future data cartridges", "subtitle": "Add new repo layers here", "kind": "future", "layer": "future", "x": 3300, "y": 300},
-    {"id": "etl", "label": "etl_pipeline", "subtitle": "Ingest and normalise", "kind": "engine", "layer": "engines", "x": 620, "y": 820},
-    {"id": "scanner", "label": "spider_scanner", "subtitle": "Federation discovery", "kind": "engine", "layer": "engines", "x": 1260, "y": 820},
-    {"id": "graph", "label": "graph_engine", "subtitle": "Relationship builder", "kind": "engine", "layer": "engines", "x": 1900, "y": 820},
-    {"id": "provenance", "label": "provenance_engine", "subtitle": "Lineage and receipts", "kind": "engine", "layer": "engines", "x": 2540, "y": 820},
-    {"id": "contracts", "label": "contract_validator", "subtitle": "Schema checks", "kind": "engine", "layer": "engines", "x": 3180, "y": 820},
-    {"id": "atlas", "label": "repd_grid_atlasv8", "subtitle": "Grid atlas / GIS", "kind": "app", "layer": "apps", "x": 360, "y": 1320},
-    {"id": "sld", "label": "sld_financial_sandbox", "subtitle": "SLD financial sandbox", "kind": "app", "layer": "apps", "x": 910, "y": 1320},
-    {"id": "bess", "label": "bess_sandbox", "subtitle": "BESS analysis", "kind": "app", "layer": "apps", "x": 1460, "y": 1320},
-    {"id": "energy_tracker", "label": "uk_energy_tracker", "subtitle": "UK tracker", "kind": "app", "layer": "apps", "x": 2010, "y": 1320},
-    {"id": "pv_live", "label": "pv_live_v6", "subtitle": "PV Live dashboard", "kind": "app", "layer": "apps", "x": 2560, "y": 1320},
-    {"id": "gridbot", "label": "gridbot", "subtitle": "AI grid assistant", "kind": "app", "layer": "apps", "x": 3110, "y": 1320},
-    {"id": "shared_utils", "label": "shared_utils", "subtitle": "Common utilities", "kind": "library", "layer": "libs", "x": 820, "y": 1760},
-    {"id": "geo_utils", "label": "geo_utils", "subtitle": "Geospatial utilities", "kind": "library", "layer": "libs", "x": 1400, "y": 1760},
-    {"id": "viz", "label": "viz_components", "subtitle": "Visual components", "kind": "library", "layer": "libs", "x": 1980, "y": 1760},
-    {"id": "api_clients", "label": "api_clients", "subtitle": "API clients", "kind": "library", "layer": "libs", "x": 2560, "y": 1760},
-    {"id": "data_contracts", "label": "data_contracts", "subtitle": "JSON schema", "kind": "schema", "layer": "schemas", "x": 720, "y": 2120},
-    {"id": "cim", "label": "cim_model", "subtitle": "CIM / CGMES", "kind": "schema", "layer": "schemas", "x": 1320, "y": 2120},
-    {"id": "prov", "label": "prov_model", "subtitle": "W3C PROV-O", "kind": "schema", "layer": "schemas", "x": 1920, "y": 2120},
-    {"id": "slsa", "label": "slsa_provenance", "subtitle": "SLSA / in-toto", "kind": "schema", "layer": "schemas", "x": 2520, "y": 2120},
-    {"id": "frictionless", "label": "frictionless", "subtitle": "Data Package", "kind": "schema", "layer": "schemas", "x": 3120, "y": 2120},
-    {"id": "github_actions", "label": "github_actions", "subtitle": "CI/CD workflows", "kind": "infra", "layer": "infra", "x": 760, "y": 2460},
-    {"id": "github_pages", "label": "github_pages", "subtitle": "Static hosting", "kind": "infra", "layer": "infra", "x": 1460, "y": 2460},
-    {"id": "duckdb", "label": "duckdb_engine", "subtitle": "SQL + spatial", "kind": "infra", "layer": "infra", "x": 2160, "y": 2460},
-    {"id": "storage", "label": "storage_backends", "subtitle": "Parquet / JSON / GeoJSON", "kind": "infra", "layer": "infra", "x": 2860, "y": 2460},
-    {"id": "neso", "label": "NESO", "subtitle": "National Energy System Operator", "kind": "external", "layer": "external", "x": 360, "y": 2940},
-    {"id": "ofgem", "label": "Ofgem", "subtitle": "GB regulator", "kind": "external", "layer": "external", "x": 820, "y": 2940},
-    {"id": "elexon", "label": "Elexon", "subtitle": "BMRS market data", "kind": "external", "layer": "external", "x": 1280, "y": 2940},
-    {"id": "uk_gov", "label": "UK Government", "subtitle": "DESNZ / ONS / OGL", "kind": "external", "layer": "external", "x": 1740, "y": 2940},
-    {"id": "dno_portals", "label": "DNO portals", "subtitle": "UKPN, SPEN, NGED, etc.", "kind": "external", "layer": "external", "x": 2200, "y": 2940},
-    {"id": "tso_portals", "label": "TSO portals", "subtitle": "NGET, SPT, SSEN-T", "kind": "external", "layer": "external", "x": 2660, "y": 2940},
-    {"id": "ireland", "label": "Ireland sources", "subtitle": "EirGrid, SONI, ESB, NIE", "kind": "external", "layer": "external", "x": 3120, "y": 2940}
+    {
+      "id": "cable-trench-or-drill",
+      "label": "cable-trench-or-drill",
+      "subtitle": "no description published",
+      "kind": "lib",
+      "layer": "tools",
+      "unclassified": false,
+      "x": 1990,
+      "y": 60
+    },
+    {
+      "id": "chatgpt-audits",
+      "label": "chatgpt-audits",
+      "subtitle": "no description published",
+      "kind": "schema",
+      "layer": "observation",
+      "unclassified": false,
+      "x": 2633,
+      "y": 60
+    },
+    {
+      "id": "claude",
+      "label": "claude",
+      "subtitle": "no description published",
+      "kind": "schema",
+      "layer": "observation",
+      "unclassified": false,
+      "x": 2633,
+      "y": 633
+    },
+    {
+      "id": "codex-chatgpt",
+      "label": "codex-chatgpt",
+      "subtitle": "no description published",
+      "kind": "schema",
+      "layer": "observation",
+      "unclassified": false,
+      "x": 2633,
+      "y": 1207
+    },
+    {
+      "id": "companies",
+      "label": "companies",
+      "subtitle": "no description published",
+      "kind": "lib",
+      "layer": "tools",
+      "unclassified": false,
+      "x": 1990,
+      "y": 633
+    },
+    {
+      "id": "cvaa",
+      "label": "cvaa",
+      "subtitle": "no description published",
+      "kind": "schema",
+      "layer": "observation",
+      "unclassified": false,
+      "x": 2633,
+      "y": 1780
+    },
+    {
+      "id": "data-centres-gb",
+      "label": "data-centres-gb",
+      "subtitle": "no description published",
+      "kind": "data",
+      "layer": "data",
+      "unclassified": false,
+      "x": 60,
+      "y": 60
+    },
+    {
+      "id": "data-federation-map-for-globalgrid2050-all-repos",
+      "label": "data-federation-map-for-globalgrid2050-all-repos",
+      "subtitle": "no description published",
+      "kind": "data",
+      "layer": "data",
+      "unclassified": false,
+      "x": 60,
+      "y": 538
+    },
+    {
+      "id": "data-gb-electricity",
+      "label": "data-gb-electricity",
+      "subtitle": "no description published",
+      "kind": "data",
+      "layer": "data",
+      "unclassified": false,
+      "x": 60,
+      "y": 1016
+    },
+    {
+      "id": "data-grid-gb",
+      "label": "data-grid-gb",
+      "subtitle": "no description published",
+      "kind": "data",
+      "layer": "data",
+      "unclassified": false,
+      "x": 60,
+      "y": 1493
+    },
+    {
+      "id": "data-gridatlas",
+      "label": "data-gridatlas",
+      "subtitle": "no description published",
+      "kind": "data",
+      "layer": "data",
+      "unclassified": false,
+      "x": 60,
+      "y": 1971
+    },
+    {
+      "id": "data-interconnectors",
+      "label": "data-interconnectors",
+      "subtitle": "no description published",
+      "kind": "data",
+      "layer": "data",
+      "unclassified": false,
+      "x": 60,
+      "y": 2449
+    },
+    {
+      "id": "gb-electricity-ui",
+      "label": "gb-electricity-ui",
+      "subtitle": "no description published",
+      "kind": "appn",
+      "layer": "apps",
+      "unclassified": true,
+      "x": 1347,
+      "y": 60
+    },
+    {
+      "id": "gemini",
+      "label": "gemini",
+      "subtitle": "no description published",
+      "kind": "schema",
+      "layer": "observation",
+      "unclassified": false,
+      "x": 2633,
+      "y": 2353
+    },
+    {
+      "id": "gis-sld-sandbox",
+      "label": "gis-sld-sandbox",
+      "subtitle": "no description published",
+      "kind": "lib",
+      "layer": "tools",
+      "unclassified": false,
+      "x": 1990,
+      "y": 1207
+    },
+    {
+      "id": "globalgrid2050",
+      "label": "globalgrid2050",
+      "subtitle": "no description published",
+      "kind": "infra",
+      "layer": "publication",
+      "unclassified": false,
+      "x": 3277,
+      "y": 60
+    },
+    {
+      "id": "globalgrid2050-homepage",
+      "label": "globalgrid2050-homepage",
+      "subtitle": "no description published",
+      "kind": "infra",
+      "layer": "publication",
+      "unclassified": false,
+      "x": 3277,
+      "y": 777
+    },
+    {
+      "id": "gpu-drivers-for-global-grid",
+      "label": "gpu-drivers-for-global-grid",
+      "subtitle": "no description published",
+      "kind": "engine",
+      "layer": "engines",
+      "unclassified": false,
+      "x": 703,
+      "y": 60
+    },
+    {
+      "id": "grid-distance-maths",
+      "label": "grid-distance-maths",
+      "subtitle": "no description published",
+      "kind": "engine",
+      "layer": "engines",
+      "unclassified": false,
+      "x": 703,
+      "y": 1016
+    },
+    {
+      "id": "gridatlas",
+      "label": "gridatlas",
+      "subtitle": "no description published",
+      "kind": "appn",
+      "layer": "apps",
+      "unclassified": true,
+      "x": 1347,
+      "y": 2927
+    },
+    {
+      "id": "layout-tool",
+      "label": "layout-tool",
+      "subtitle": "no description published",
+      "kind": "lib",
+      "layer": "tools",
+      "unclassified": false,
+      "x": 1990,
+      "y": 1780
+    },
+    {
+      "id": "linux-for-the-power-grid",
+      "label": "linux-for-the-power-grid",
+      "subtitle": "no description published",
+      "kind": "engine",
+      "layer": "engines",
+      "unclassified": false,
+      "x": 703,
+      "y": 1971
+    },
+    {
+      "id": "pipelinenews",
+      "label": "pipelinenews",
+      "subtitle": "no description published",
+      "kind": "infra",
+      "layer": "publication",
+      "unclassified": false,
+      "x": 3277,
+      "y": 1493
+    },
+    {
+      "id": "seed-data",
+      "label": "seed-data",
+      "subtitle": "no description published",
+      "kind": "data",
+      "layer": "data",
+      "unclassified": false,
+      "x": 60,
+      "y": 2927
+    },
+    {
+      "id": "spiders",
+      "label": "spiders",
+      "subtitle": "no description published",
+      "kind": "schema",
+      "layer": "observation",
+      "unclassified": false,
+      "x": 2633,
+      "y": 2927
+    },
+    {
+      "id": "studies",
+      "label": "studies",
+      "subtitle": "no description published",
+      "kind": "infra",
+      "layer": "publication",
+      "unclassified": false,
+      "x": 3277,
+      "y": 2210
+    },
+    {
+      "id": "teleprinter",
+      "label": "teleprinter",
+      "subtitle": "no description published",
+      "kind": "lib",
+      "layer": "tools",
+      "unclassified": false,
+      "x": 1990,
+      "y": 2353
+    },
+    {
+      "id": "testcode",
+      "label": "testcode",
+      "subtitle": "no description published",
+      "kind": "lib",
+      "layer": "tools",
+      "unclassified": false,
+      "x": 1990,
+      "y": 2927
+    },
+    {
+      "id": "ventus-grid-engine",
+      "label": "ventus-grid-engine",
+      "subtitle": "no description published",
+      "kind": "engine",
+      "layer": "engines",
+      "unclassified": false,
+      "x": 703,
+      "y": 2927
+    },
+    {
+      "id": "ventusltd.com",
+      "label": "ventusltd.com",
+      "subtitle": "no description published",
+      "kind": "infra",
+      "layer": "publication",
+      "unclassified": false,
+      "x": 3277,
+      "y": 2927
+    }
   ],
   "edges": [
-    {"from": "neso", "to": "data_uk_dno_and_tso", "type": "api"},
-    {"from": "ofgem", "to": "data_uk_dno_and_tso", "type": "api"},
-    {"from": "uk_gov", "to": "data_uk_dno_and_tso", "type": "api"},
-    {"from": "dno_portals", "to": "data_uk_dno_and_tso", "type": "api"},
-    {"from": "ireland", "to": "data_uk_dno_and_tso", "type": "api"},
-    {"from": "elexon", "to": "data_gb_electricity", "type": "api"},
-    {"from": "neso", "to": "data_federation", "type": "reference"},
-    {"from": "data_uk_dno_and_tso", "to": "etl", "type": "raw_flow"},
-    {"from": "data_gb_electricity", "to": "etl", "type": "raw_flow"},
-    {"from": "data_interconnectors", "to": "etl", "type": "raw_flow"},
-    {"from": "globalgrid2050", "to": "etl", "type": "raw_flow"},
-    {"from": "content_registry", "to": "scanner", "type": "federation"},
-    {"from": "data_federation", "to": "content_registry", "type": "federation"},
-    {"from": "content_registry", "to": "provenance", "type": "reference"},
-    {"from": "etl", "to": "duckdb", "type": "derived_flow"},
-    {"from": "duckdb", "to": "storage", "type": "derived_flow"},
-    {"from": "storage", "to": "atlas", "type": "derived_flow"},
-    {"from": "storage", "to": "sld", "type": "derived_flow"},
-    {"from": "storage", "to": "bess", "type": "derived_flow"},
-    {"from": "storage", "to": "energy_tracker", "type": "derived_flow"},
-    {"from": "storage", "to": "pv_live", "type": "derived_flow"},
-    {"from": "data_federation", "to": "scanner", "type": "federation"},
-    {"from": "scanner", "to": "graph", "type": "federation"},
-    {"from": "graph", "to": "provenance", "type": "federation"},
-    {"from": "provenance", "to": "contracts", "type": "schema"},
-    {"from": "contracts", "to": "data_contracts", "type": "schema"},
-    {"from": "contracts", "to": "cim", "type": "schema"},
-    {"from": "contracts", "to": "prov", "type": "schema"},
-    {"from": "contracts", "to": "slsa", "type": "schema"},
-    {"from": "contracts", "to": "frictionless", "type": "schema"},
-    {"from": "scanner", "to": "gridbot", "type": "provides"},
-    {"from": "graph", "to": "gridbot", "type": "provides"},
-    {"from": "shared_utils", "to": "atlas", "type": "dependency"},
-    {"from": "geo_utils", "to": "atlas", "type": "dependency"},
-    {"from": "viz", "to": "atlas", "type": "dependency"},
-    {"from": "api_clients", "to": "etl", "type": "dependency"},
-    {"from": "github_actions", "to": "provenance", "type": "dependency"},
-    {"from": "github_pages", "to": "atlas", "type": "dependency"},
-    {"from": "github_pages", "to": "sld", "type": "dependency"},
-    {"from": "future_data", "to": "etl", "type": "raw_flow"},
-    {"from": "future_data", "to": "scanner", "type": "federation"},
-    {"from": "future_data", "to": "future_data", "type": "reference"}
+    {
+      "from": "cable-trench-or-drill",
+      "to": "ventus-grid-engine",
+      "type": "reference",
+      "references": 2,
+      "evidence": "2 URL reference(s) to Ventusltd/ventus-grid-engine found in cable-trench-or-drill's committed text"
+    },
+    {
+      "from": "chatgpt-audits",
+      "to": "cvaa",
+      "type": "reference",
+      "references": 1,
+      "evidence": "1 URL reference(s) to Ventusltd/cvaa found in chatgpt-audits's committed text"
+    },
+    {
+      "from": "chatgpt-audits",
+      "to": "data-gridatlas",
+      "type": "reference",
+      "references": 1,
+      "evidence": "1 URL reference(s) to Ventusltd/data-gridatlas found in chatgpt-audits's committed text"
+    },
+    {
+      "from": "chatgpt-audits",
+      "to": "gridatlas",
+      "type": "reference",
+      "references": 23,
+      "evidence": "23 URL reference(s) to Ventusltd/gridatlas found in chatgpt-audits's committed text"
+    },
+    {
+      "from": "chatgpt-audits",
+      "to": "pipelinenews",
+      "type": "reference",
+      "references": 6,
+      "evidence": "6 URL reference(s) to Ventusltd/pipelinenews found in chatgpt-audits's committed text"
+    },
+    {
+      "from": "claude",
+      "to": "chatgpt-audits",
+      "type": "reference",
+      "references": 1,
+      "evidence": "1 URL reference(s) to Ventusltd/chatgpt-audits found in claude's committed text"
+    },
+    {
+      "from": "claude",
+      "to": "companies",
+      "type": "reference",
+      "references": 29,
+      "evidence": "29 URL reference(s) to Ventusltd/companies found in claude's committed text"
+    },
+    {
+      "from": "claude",
+      "to": "cvaa",
+      "type": "reference",
+      "references": 6,
+      "evidence": "6 URL reference(s) to Ventusltd/cvaa found in claude's committed text"
+    },
+    {
+      "from": "claude",
+      "to": "data-centres-gb",
+      "type": "reference",
+      "references": 7,
+      "evidence": "7 URL reference(s) to Ventusltd/data-centres-gb found in claude's committed text"
+    },
+    {
+      "from": "claude",
+      "to": "data-federation-map-for-globalgrid2050-all-repos",
+      "type": "reference",
+      "references": 2,
+      "evidence": "2 URL reference(s) to Ventusltd/data-federation-map-for-globalgrid2050-all-repos found in claude's committed text"
+    },
+    {
+      "from": "claude",
+      "to": "data-gb-electricity",
+      "type": "reference",
+      "references": 1,
+      "evidence": "1 URL reference(s) to Ventusltd/data-gb-electricity found in claude's committed text"
+    },
+    {
+      "from": "claude",
+      "to": "data-grid-gb",
+      "type": "reference",
+      "references": 1,
+      "evidence": "1 URL reference(s) to Ventusltd/data-grid-gb found in claude's committed text"
+    },
+    {
+      "from": "claude",
+      "to": "data-gridatlas",
+      "type": "reference",
+      "references": 29,
+      "evidence": "29 URL reference(s) to Ventusltd/data-gridatlas found in claude's committed text"
+    },
+    {
+      "from": "claude",
+      "to": "data-interconnectors",
+      "type": "reference",
+      "references": 3,
+      "evidence": "3 URL reference(s) to Ventusltd/data-interconnectors found in claude's committed text"
+    },
+    {
+      "from": "claude",
+      "to": "gb-electricity-ui",
+      "type": "reference",
+      "references": 1,
+      "evidence": "1 URL reference(s) to Ventusltd/gb-electricity-ui found in claude's committed text"
+    },
+    {
+      "from": "claude",
+      "to": "globalgrid2050",
+      "type": "reference",
+      "references": 7,
+      "evidence": "7 URL reference(s) to Ventusltd/globalgrid2050 found in claude's committed text"
+    },
+    {
+      "from": "claude",
+      "to": "globalgrid2050-homepage",
+      "type": "reference",
+      "references": 2,
+      "evidence": "2 URL reference(s) to Ventusltd/globalgrid2050-homepage found in claude's committed text"
+    },
+    {
+      "from": "claude",
+      "to": "gpu-drivers-for-global-grid",
+      "type": "reference",
+      "references": 1,
+      "evidence": "1 URL reference(s) to Ventusltd/gpu-drivers-for-global-grid found in claude's committed text"
+    },
+    {
+      "from": "claude",
+      "to": "grid-distance-maths",
+      "type": "reference",
+      "references": 1,
+      "evidence": "1 URL reference(s) to Ventusltd/grid-distance-maths found in claude's committed text"
+    },
+    {
+      "from": "claude",
+      "to": "gridatlas",
+      "type": "reference",
+      "references": 282,
+      "evidence": "282 URL reference(s) to Ventusltd/gridatlas found in claude's committed text"
+    },
+    {
+      "from": "claude",
+      "to": "pipelinenews",
+      "type": "reference",
+      "references": 35,
+      "evidence": "35 URL reference(s) to Ventusltd/pipelinenews found in claude's committed text"
+    },
+    {
+      "from": "claude",
+      "to": "spiders",
+      "type": "reference",
+      "references": 10,
+      "evidence": "10 URL reference(s) to Ventusltd/spiders found in claude's committed text"
+    },
+    {
+      "from": "claude",
+      "to": "teleprinter",
+      "type": "reference",
+      "references": 1,
+      "evidence": "1 URL reference(s) to Ventusltd/teleprinter found in claude's committed text"
+    },
+    {
+      "from": "claude",
+      "to": "testcode",
+      "type": "reference",
+      "references": 2,
+      "evidence": "2 URL reference(s) to Ventusltd/testcode found in claude's committed text"
+    },
+    {
+      "from": "claude",
+      "to": "ventus-grid-engine",
+      "type": "reference",
+      "references": 37,
+      "evidence": "37 URL reference(s) to Ventusltd/ventus-grid-engine found in claude's committed text"
+    },
+    {
+      "from": "codex-chatgpt",
+      "to": "chatgpt-audits",
+      "type": "reference",
+      "references": 4,
+      "evidence": "4 URL reference(s) to Ventusltd/chatgpt-audits found in codex-chatgpt's committed text"
+    },
+    {
+      "from": "codex-chatgpt",
+      "to": "claude",
+      "type": "reference",
+      "references": 7,
+      "evidence": "7 URL reference(s) to Ventusltd/claude found in codex-chatgpt's committed text"
+    },
+    {
+      "from": "codex-chatgpt",
+      "to": "companies",
+      "type": "reference",
+      "references": 6,
+      "evidence": "6 URL reference(s) to Ventusltd/companies found in codex-chatgpt's committed text"
+    },
+    {
+      "from": "codex-chatgpt",
+      "to": "cvaa",
+      "type": "reference",
+      "references": 24,
+      "evidence": "24 URL reference(s) to Ventusltd/cvaa found in codex-chatgpt's committed text"
+    },
+    {
+      "from": "codex-chatgpt",
+      "to": "data-centres-gb",
+      "type": "reference",
+      "references": 4,
+      "evidence": "4 URL reference(s) to Ventusltd/data-centres-gb found in codex-chatgpt's committed text"
+    },
+    {
+      "from": "codex-chatgpt",
+      "to": "data-federation-map-for-globalgrid2050-all-repos",
+      "type": "reference",
+      "references": 4,
+      "evidence": "4 URL reference(s) to Ventusltd/data-federation-map-for-globalgrid2050-all-repos found in codex-chatgpt's committed text"
+    },
+    {
+      "from": "codex-chatgpt",
+      "to": "data-gb-electricity",
+      "type": "reference",
+      "references": 4,
+      "evidence": "4 URL reference(s) to Ventusltd/data-gb-electricity found in codex-chatgpt's committed text"
+    },
+    {
+      "from": "codex-chatgpt",
+      "to": "data-grid-gb",
+      "type": "reference",
+      "references": 8,
+      "evidence": "8 URL reference(s) to Ventusltd/data-grid-gb found in codex-chatgpt's committed text"
+    },
+    {
+      "from": "codex-chatgpt",
+      "to": "data-gridatlas",
+      "type": "reference",
+      "references": 16,
+      "evidence": "16 URL reference(s) to Ventusltd/data-gridatlas found in codex-chatgpt's committed text"
+    },
+    {
+      "from": "codex-chatgpt",
+      "to": "data-interconnectors",
+      "type": "reference",
+      "references": 4,
+      "evidence": "4 URL reference(s) to Ventusltd/data-interconnectors found in codex-chatgpt's committed text"
+    },
+    {
+      "from": "codex-chatgpt",
+      "to": "gb-electricity-ui",
+      "type": "reference",
+      "references": 4,
+      "evidence": "4 URL reference(s) to Ventusltd/gb-electricity-ui found in codex-chatgpt's committed text"
+    },
+    {
+      "from": "codex-chatgpt",
+      "to": "gemini",
+      "type": "reference",
+      "references": 3,
+      "evidence": "3 URL reference(s) to Ventusltd/gemini found in codex-chatgpt's committed text"
+    },
+    {
+      "from": "codex-chatgpt",
+      "to": "globalgrid2050",
+      "type": "reference",
+      "references": 10,
+      "evidence": "10 URL reference(s) to Ventusltd/globalgrid2050 found in codex-chatgpt's committed text"
+    },
+    {
+      "from": "codex-chatgpt",
+      "to": "grid-distance-maths",
+      "type": "reference",
+      "references": 9,
+      "evidence": "9 URL reference(s) to Ventusltd/grid-distance-maths found in codex-chatgpt's committed text"
+    },
+    {
+      "from": "codex-chatgpt",
+      "to": "gridatlas",
+      "type": "reference",
+      "references": 32,
+      "evidence": "32 URL reference(s) to Ventusltd/gridatlas found in codex-chatgpt's committed text"
+    },
+    {
+      "from": "codex-chatgpt",
+      "to": "pipelinenews",
+      "type": "reference",
+      "references": 10,
+      "evidence": "10 URL reference(s) to Ventusltd/pipelinenews found in codex-chatgpt's committed text"
+    },
+    {
+      "from": "codex-chatgpt",
+      "to": "seed-data",
+      "type": "reference",
+      "references": 3,
+      "evidence": "3 URL reference(s) to Ventusltd/seed-data found in codex-chatgpt's committed text"
+    },
+    {
+      "from": "codex-chatgpt",
+      "to": "spiders",
+      "type": "reference",
+      "references": 4,
+      "evidence": "4 URL reference(s) to Ventusltd/spiders found in codex-chatgpt's committed text"
+    },
+    {
+      "from": "companies",
+      "to": "gridatlas",
+      "type": "reference",
+      "references": 11,
+      "evidence": "11 URL reference(s) to Ventusltd/gridatlas found in companies's committed text"
+    },
+    {
+      "from": "companies",
+      "to": "pipelinenews",
+      "type": "reference",
+      "references": 1,
+      "evidence": "1 URL reference(s) to Ventusltd/pipelinenews found in companies's committed text"
+    },
+    {
+      "from": "cvaa",
+      "to": "gridatlas",
+      "type": "reference",
+      "references": 6,
+      "evidence": "6 URL reference(s) to Ventusltd/gridatlas found in cvaa's committed text"
+    },
+    {
+      "from": "data-centres-gb",
+      "to": "data-federation-map-for-globalgrid2050-all-repos",
+      "type": "reference",
+      "references": 1,
+      "evidence": "1 URL reference(s) to Ventusltd/data-federation-map-for-globalgrid2050-all-repos found in data-centres-gb's committed text"
+    },
+    {
+      "from": "data-federation-map-for-globalgrid2050-all-repos",
+      "to": "data-centres-gb",
+      "type": "reference",
+      "references": 1,
+      "evidence": "1 URL reference(s) to Ventusltd/data-centres-gb found in data-federation-map-for-globalgrid2050-all-repos's committed text"
+    },
+    {
+      "from": "data-federation-map-for-globalgrid2050-all-repos",
+      "to": "data-gb-electricity",
+      "type": "reference",
+      "references": 1,
+      "evidence": "1 URL reference(s) to Ventusltd/data-gb-electricity found in data-federation-map-for-globalgrid2050-all-repos's committed text"
+    },
+    {
+      "from": "data-federation-map-for-globalgrid2050-all-repos",
+      "to": "gb-electricity-ui",
+      "type": "reference",
+      "references": 1,
+      "evidence": "1 URL reference(s) to Ventusltd/gb-electricity-ui found in data-federation-map-for-globalgrid2050-all-repos's committed text"
+    },
+    {
+      "from": "data-federation-map-for-globalgrid2050-all-repos",
+      "to": "globalgrid2050",
+      "type": "reference",
+      "references": 4,
+      "evidence": "4 URL reference(s) to Ventusltd/globalgrid2050 found in data-federation-map-for-globalgrid2050-all-repos's committed text"
+    },
+    {
+      "from": "data-gb-electricity",
+      "to": "globalgrid2050",
+      "type": "reference",
+      "references": 1,
+      "evidence": "1 URL reference(s) to Ventusltd/globalgrid2050 found in data-gb-electricity's committed text"
+    },
+    {
+      "from": "data-grid-gb",
+      "to": "data-gb-electricity",
+      "type": "reference",
+      "references": 1,
+      "evidence": "1 URL reference(s) to Ventusltd/data-gb-electricity found in data-grid-gb's committed text"
+    },
+    {
+      "from": "data-grid-gb",
+      "to": "gridatlas",
+      "type": "reference",
+      "references": 2,
+      "evidence": "2 URL reference(s) to Ventusltd/gridatlas found in data-grid-gb's committed text"
+    },
+    {
+      "from": "data-gridatlas",
+      "to": "globalgrid2050",
+      "type": "reference",
+      "references": 1,
+      "evidence": "1 URL reference(s) to Ventusltd/globalgrid2050 found in data-gridatlas's committed text"
+    },
+    {
+      "from": "data-gridatlas",
+      "to": "gridatlas",
+      "type": "reference",
+      "references": 6,
+      "evidence": "6 URL reference(s) to Ventusltd/gridatlas found in data-gridatlas's committed text"
+    },
+    {
+      "from": "data-interconnectors",
+      "to": "globalgrid2050",
+      "type": "reference",
+      "references": 1,
+      "evidence": "1 URL reference(s) to Ventusltd/globalgrid2050 found in data-interconnectors's committed text"
+    },
+    {
+      "from": "gb-electricity-ui",
+      "to": "data-gb-electricity",
+      "type": "reference",
+      "references": 3,
+      "evidence": "3 URL reference(s) to Ventusltd/data-gb-electricity found in gb-electricity-ui's committed text"
+    },
+    {
+      "from": "gb-electricity-ui",
+      "to": "data-interconnectors",
+      "type": "reference",
+      "references": 3,
+      "evidence": "3 URL reference(s) to Ventusltd/data-interconnectors found in gb-electricity-ui's committed text"
+    },
+    {
+      "from": "gb-electricity-ui",
+      "to": "globalgrid2050",
+      "type": "reference",
+      "references": 6,
+      "evidence": "6 URL reference(s) to Ventusltd/globalgrid2050 found in gb-electricity-ui's committed text"
+    },
+    {
+      "from": "globalgrid2050",
+      "to": "cable-trench-or-drill",
+      "type": "reference",
+      "references": 52,
+      "evidence": "52 URL reference(s) to Ventusltd/cable-trench-or-drill found in globalgrid2050's committed text"
+    },
+    {
+      "from": "globalgrid2050",
+      "to": "chatgpt-audits",
+      "type": "reference",
+      "references": 1,
+      "evidence": "1 URL reference(s) to Ventusltd/chatgpt-audits found in globalgrid2050's committed text"
+    },
+    {
+      "from": "globalgrid2050",
+      "to": "companies",
+      "type": "reference",
+      "references": 1,
+      "evidence": "1 URL reference(s) to Ventusltd/companies found in globalgrid2050's committed text"
+    },
+    {
+      "from": "globalgrid2050",
+      "to": "cvaa",
+      "type": "reference",
+      "references": 34,
+      "evidence": "34 URL reference(s) to Ventusltd/cvaa found in globalgrid2050's committed text"
+    },
+    {
+      "from": "globalgrid2050",
+      "to": "data-centres-gb",
+      "type": "reference",
+      "references": 257,
+      "evidence": "257 URL reference(s) to Ventusltd/data-centres-gb found in globalgrid2050's committed text"
+    },
+    {
+      "from": "globalgrid2050",
+      "to": "data-federation-map-for-globalgrid2050-all-repos",
+      "type": "reference",
+      "references": 321,
+      "evidence": "321 URL reference(s) to Ventusltd/data-federation-map-for-globalgrid2050-all-repos found in globalgrid2050's committed text"
+    },
+    {
+      "from": "globalgrid2050",
+      "to": "data-gb-electricity",
+      "type": "reference",
+      "references": 19,
+      "evidence": "19 URL reference(s) to Ventusltd/data-gb-electricity found in globalgrid2050's committed text"
+    },
+    {
+      "from": "globalgrid2050",
+      "to": "data-grid-gb",
+      "type": "reference",
+      "references": 2,
+      "evidence": "2 URL reference(s) to Ventusltd/data-grid-gb found in globalgrid2050's committed text"
+    },
+    {
+      "from": "globalgrid2050",
+      "to": "data-gridatlas",
+      "type": "reference",
+      "references": 34,
+      "evidence": "34 URL reference(s) to Ventusltd/data-gridatlas found in globalgrid2050's committed text"
+    },
+    {
+      "from": "globalgrid2050",
+      "to": "data-interconnectors",
+      "type": "reference",
+      "references": 1,
+      "evidence": "1 URL reference(s) to Ventusltd/data-interconnectors found in globalgrid2050's committed text"
+    },
+    {
+      "from": "globalgrid2050",
+      "to": "gb-electricity-ui",
+      "type": "reference",
+      "references": 1,
+      "evidence": "1 URL reference(s) to Ventusltd/gb-electricity-ui found in globalgrid2050's committed text"
+    },
+    {
+      "from": "globalgrid2050",
+      "to": "gis-sld-sandbox",
+      "type": "reference",
+      "references": 54,
+      "evidence": "54 URL reference(s) to Ventusltd/gis-sld-sandbox found in globalgrid2050's committed text"
+    },
+    {
+      "from": "globalgrid2050",
+      "to": "globalgrid2050-homepage",
+      "type": "reference",
+      "references": 5,
+      "evidence": "5 URL reference(s) to Ventusltd/globalgrid2050-homepage found in globalgrid2050's committed text"
+    },
+    {
+      "from": "globalgrid2050",
+      "to": "grid-distance-maths",
+      "type": "reference",
+      "references": 1,
+      "evidence": "1 URL reference(s) to Ventusltd/grid-distance-maths found in globalgrid2050's committed text"
+    },
+    {
+      "from": "globalgrid2050",
+      "to": "gridatlas",
+      "type": "reference",
+      "references": 1992,
+      "evidence": "1992 URL reference(s) to Ventusltd/gridatlas found in globalgrid2050's committed text"
+    },
+    {
+      "from": "globalgrid2050",
+      "to": "layout-tool",
+      "type": "reference",
+      "references": 63,
+      "evidence": "63 URL reference(s) to Ventusltd/layout-tool found in globalgrid2050's committed text"
+    },
+    {
+      "from": "globalgrid2050",
+      "to": "pipelinenews",
+      "type": "reference",
+      "references": 254,
+      "evidence": "254 URL reference(s) to Ventusltd/pipelinenews found in globalgrid2050's committed text"
+    },
+    {
+      "from": "globalgrid2050",
+      "to": "spiders",
+      "type": "reference",
+      "references": 172,
+      "evidence": "172 URL reference(s) to Ventusltd/spiders found in globalgrid2050's committed text"
+    },
+    {
+      "from": "globalgrid2050",
+      "to": "teleprinter",
+      "type": "reference",
+      "references": 98,
+      "evidence": "98 URL reference(s) to Ventusltd/teleprinter found in globalgrid2050's committed text"
+    },
+    {
+      "from": "globalgrid2050",
+      "to": "testcode",
+      "type": "reference",
+      "references": 312,
+      "evidence": "312 URL reference(s) to Ventusltd/testcode found in globalgrid2050's committed text"
+    },
+    {
+      "from": "globalgrid2050",
+      "to": "ventus-grid-engine",
+      "type": "reference",
+      "references": 412,
+      "evidence": "412 URL reference(s) to Ventusltd/ventus-grid-engine found in globalgrid2050's committed text"
+    },
+    {
+      "from": "globalgrid2050-homepage",
+      "to": "data-federation-map-for-globalgrid2050-all-repos",
+      "type": "reference",
+      "references": 2,
+      "evidence": "2 URL reference(s) to Ventusltd/data-federation-map-for-globalgrid2050-all-repos found in globalgrid2050-homepage's committed text"
+    },
+    {
+      "from": "globalgrid2050-homepage",
+      "to": "globalgrid2050",
+      "type": "reference",
+      "references": 2,
+      "evidence": "2 URL reference(s) to Ventusltd/globalgrid2050 found in globalgrid2050-homepage's committed text"
+    },
+    {
+      "from": "gridatlas",
+      "to": "companies",
+      "type": "reference",
+      "references": 1,
+      "evidence": "1 URL reference(s) to Ventusltd/companies found in gridatlas's committed text"
+    },
+    {
+      "from": "gridatlas",
+      "to": "cvaa",
+      "type": "reference",
+      "references": 13,
+      "evidence": "13 URL reference(s) to Ventusltd/cvaa found in gridatlas's committed text"
+    },
+    {
+      "from": "gridatlas",
+      "to": "data-centres-gb",
+      "type": "reference",
+      "references": 1,
+      "evidence": "1 URL reference(s) to Ventusltd/data-centres-gb found in gridatlas's committed text"
+    },
+    {
+      "from": "gridatlas",
+      "to": "data-grid-gb",
+      "type": "reference",
+      "references": 1,
+      "evidence": "1 URL reference(s) to Ventusltd/data-grid-gb found in gridatlas's committed text"
+    },
+    {
+      "from": "gridatlas",
+      "to": "data-gridatlas",
+      "type": "reference",
+      "references": 16,
+      "evidence": "16 URL reference(s) to Ventusltd/data-gridatlas found in gridatlas's committed text"
+    },
+    {
+      "from": "gridatlas",
+      "to": "globalgrid2050",
+      "type": "reference",
+      "references": 10,
+      "evidence": "10 URL reference(s) to Ventusltd/globalgrid2050 found in gridatlas's committed text"
+    },
+    {
+      "from": "gridatlas",
+      "to": "pipelinenews",
+      "type": "reference",
+      "references": 19,
+      "evidence": "19 URL reference(s) to Ventusltd/pipelinenews found in gridatlas's committed text"
+    },
+    {
+      "from": "gridatlas",
+      "to": "spiders",
+      "type": "reference",
+      "references": 1,
+      "evidence": "1 URL reference(s) to Ventusltd/spiders found in gridatlas's committed text"
+    },
+    {
+      "from": "linux-for-the-power-grid",
+      "to": "chatgpt-audits",
+      "type": "reference",
+      "references": 6,
+      "evidence": "6 URL reference(s) to Ventusltd/chatgpt-audits found in linux-for-the-power-grid's committed text"
+    },
+    {
+      "from": "linux-for-the-power-grid",
+      "to": "claude",
+      "type": "reference",
+      "references": 8,
+      "evidence": "8 URL reference(s) to Ventusltd/claude found in linux-for-the-power-grid's committed text"
+    },
+    {
+      "from": "linux-for-the-power-grid",
+      "to": "codex-chatgpt",
+      "type": "reference",
+      "references": 5,
+      "evidence": "5 URL reference(s) to Ventusltd/codex-chatgpt found in linux-for-the-power-grid's committed text"
+    },
+    {
+      "from": "linux-for-the-power-grid",
+      "to": "companies",
+      "type": "reference",
+      "references": 6,
+      "evidence": "6 URL reference(s) to Ventusltd/companies found in linux-for-the-power-grid's committed text"
+    },
+    {
+      "from": "linux-for-the-power-grid",
+      "to": "cvaa",
+      "type": "reference",
+      "references": 10,
+      "evidence": "10 URL reference(s) to Ventusltd/cvaa found in linux-for-the-power-grid's committed text"
+    },
+    {
+      "from": "linux-for-the-power-grid",
+      "to": "data-centres-gb",
+      "type": "reference",
+      "references": 9,
+      "evidence": "9 URL reference(s) to Ventusltd/data-centres-gb found in linux-for-the-power-grid's committed text"
+    },
+    {
+      "from": "linux-for-the-power-grid",
+      "to": "data-federation-map-for-globalgrid2050-all-repos",
+      "type": "reference",
+      "references": 10,
+      "evidence": "10 URL reference(s) to Ventusltd/data-federation-map-for-globalgrid2050-all-repos found in linux-for-the-power-grid's committed text"
+    },
+    {
+      "from": "linux-for-the-power-grid",
+      "to": "data-gb-electricity",
+      "type": "reference",
+      "references": 7,
+      "evidence": "7 URL reference(s) to Ventusltd/data-gb-electricity found in linux-for-the-power-grid's committed text"
+    },
+    {
+      "from": "linux-for-the-power-grid",
+      "to": "data-grid-gb",
+      "type": "reference",
+      "references": 16,
+      "evidence": "16 URL reference(s) to Ventusltd/data-grid-gb found in linux-for-the-power-grid's committed text"
+    },
+    {
+      "from": "linux-for-the-power-grid",
+      "to": "data-gridatlas",
+      "type": "reference",
+      "references": 6,
+      "evidence": "6 URL reference(s) to Ventusltd/data-gridatlas found in linux-for-the-power-grid's committed text"
+    },
+    {
+      "from": "linux-for-the-power-grid",
+      "to": "data-interconnectors",
+      "type": "reference",
+      "references": 6,
+      "evidence": "6 URL reference(s) to Ventusltd/data-interconnectors found in linux-for-the-power-grid's committed text"
+    },
+    {
+      "from": "linux-for-the-power-grid",
+      "to": "gb-electricity-ui",
+      "type": "reference",
+      "references": 9,
+      "evidence": "9 URL reference(s) to Ventusltd/gb-electricity-ui found in linux-for-the-power-grid's committed text"
+    },
+    {
+      "from": "linux-for-the-power-grid",
+      "to": "gemini",
+      "type": "reference",
+      "references": 6,
+      "evidence": "6 URL reference(s) to Ventusltd/gemini found in linux-for-the-power-grid's committed text"
+    },
+    {
+      "from": "linux-for-the-power-grid",
+      "to": "globalgrid2050",
+      "type": "reference",
+      "references": 29,
+      "evidence": "29 URL reference(s) to Ventusltd/globalgrid2050 found in linux-for-the-power-grid's committed text"
+    },
+    {
+      "from": "linux-for-the-power-grid",
+      "to": "globalgrid2050-homepage",
+      "type": "reference",
+      "references": 9,
+      "evidence": "9 URL reference(s) to Ventusltd/globalgrid2050-homepage found in linux-for-the-power-grid's committed text"
+    },
+    {
+      "from": "linux-for-the-power-grid",
+      "to": "grid-distance-maths",
+      "type": "reference",
+      "references": 14,
+      "evidence": "14 URL reference(s) to Ventusltd/grid-distance-maths found in linux-for-the-power-grid's committed text"
+    },
+    {
+      "from": "linux-for-the-power-grid",
+      "to": "gridatlas",
+      "type": "reference",
+      "references": 53,
+      "evidence": "53 URL reference(s) to Ventusltd/gridatlas found in linux-for-the-power-grid's committed text"
+    },
+    {
+      "from": "linux-for-the-power-grid",
+      "to": "pipelinenews",
+      "type": "reference",
+      "references": 49,
+      "evidence": "49 URL reference(s) to Ventusltd/pipelinenews found in linux-for-the-power-grid's committed text"
+    },
+    {
+      "from": "linux-for-the-power-grid",
+      "to": "seed-data",
+      "type": "reference",
+      "references": 6,
+      "evidence": "6 URL reference(s) to Ventusltd/seed-data found in linux-for-the-power-grid's committed text"
+    },
+    {
+      "from": "linux-for-the-power-grid",
+      "to": "spiders",
+      "type": "reference",
+      "references": 12,
+      "evidence": "12 URL reference(s) to Ventusltd/spiders found in linux-for-the-power-grid's committed text"
+    },
+    {
+      "from": "linux-for-the-power-grid",
+      "to": "studies",
+      "type": "reference",
+      "references": 3,
+      "evidence": "3 URL reference(s) to Ventusltd/studies found in linux-for-the-power-grid's committed text"
+    },
+    {
+      "from": "linux-for-the-power-grid",
+      "to": "teleprinter",
+      "type": "reference",
+      "references": 59,
+      "evidence": "59 URL reference(s) to Ventusltd/teleprinter found in linux-for-the-power-grid's committed text"
+    },
+    {
+      "from": "linux-for-the-power-grid",
+      "to": "testcode",
+      "type": "reference",
+      "references": 15,
+      "evidence": "15 URL reference(s) to Ventusltd/testcode found in linux-for-the-power-grid's committed text"
+    },
+    {
+      "from": "linux-for-the-power-grid",
+      "to": "ventus-grid-engine",
+      "type": "reference",
+      "references": 33,
+      "evidence": "33 URL reference(s) to Ventusltd/ventus-grid-engine found in linux-for-the-power-grid's committed text"
+    },
+    {
+      "from": "linux-for-the-power-grid",
+      "to": "ventusltd.com",
+      "type": "reference",
+      "references": 3,
+      "evidence": "3 URL reference(s) to Ventusltd/ventusltd.com found in linux-for-the-power-grid's committed text"
+    },
+    {
+      "from": "pipelinenews",
+      "to": "companies",
+      "type": "reference",
+      "references": 2,
+      "evidence": "2 URL reference(s) to Ventusltd/companies found in pipelinenews's committed text"
+    },
+    {
+      "from": "pipelinenews",
+      "to": "data-centres-gb",
+      "type": "reference",
+      "references": 14,
+      "evidence": "14 URL reference(s) to Ventusltd/data-centres-gb found in pipelinenews's committed text"
+    },
+    {
+      "from": "pipelinenews",
+      "to": "data-federation-map-for-globalgrid2050-all-repos",
+      "type": "reference",
+      "references": 1,
+      "evidence": "1 URL reference(s) to Ventusltd/data-federation-map-for-globalgrid2050-all-repos found in pipelinenews's committed text"
+    },
+    {
+      "from": "pipelinenews",
+      "to": "data-gb-electricity",
+      "type": "reference",
+      "references": 1,
+      "evidence": "1 URL reference(s) to Ventusltd/data-gb-electricity found in pipelinenews's committed text"
+    },
+    {
+      "from": "pipelinenews",
+      "to": "globalgrid2050",
+      "type": "reference",
+      "references": 5,
+      "evidence": "5 URL reference(s) to Ventusltd/globalgrid2050 found in pipelinenews's committed text"
+    },
+    {
+      "from": "pipelinenews",
+      "to": "gridatlas",
+      "type": "reference",
+      "references": 83,
+      "evidence": "83 URL reference(s) to Ventusltd/gridatlas found in pipelinenews's committed text"
+    },
+    {
+      "from": "pipelinenews",
+      "to": "spiders",
+      "type": "reference",
+      "references": 1,
+      "evidence": "1 URL reference(s) to Ventusltd/spiders found in pipelinenews's committed text"
+    },
+    {
+      "from": "pipelinenews",
+      "to": "ventus-grid-engine",
+      "type": "reference",
+      "references": 3,
+      "evidence": "3 URL reference(s) to Ventusltd/ventus-grid-engine found in pipelinenews's committed text"
+    },
+    {
+      "from": "seed-data",
+      "to": "data-centres-gb",
+      "type": "reference",
+      "references": 1,
+      "evidence": "1 URL reference(s) to Ventusltd/data-centres-gb found in seed-data's committed text"
+    },
+    {
+      "from": "seed-data",
+      "to": "data-federation-map-for-globalgrid2050-all-repos",
+      "type": "reference",
+      "references": 1,
+      "evidence": "1 URL reference(s) to Ventusltd/data-federation-map-for-globalgrid2050-all-repos found in seed-data's committed text"
+    },
+    {
+      "from": "seed-data",
+      "to": "data-gb-electricity",
+      "type": "reference",
+      "references": 1,
+      "evidence": "1 URL reference(s) to Ventusltd/data-gb-electricity found in seed-data's committed text"
+    },
+    {
+      "from": "seed-data",
+      "to": "data-interconnectors",
+      "type": "reference",
+      "references": 1,
+      "evidence": "1 URL reference(s) to Ventusltd/data-interconnectors found in seed-data's committed text"
+    },
+    {
+      "from": "seed-data",
+      "to": "gb-electricity-ui",
+      "type": "reference",
+      "references": 1,
+      "evidence": "1 URL reference(s) to Ventusltd/gb-electricity-ui found in seed-data's committed text"
+    },
+    {
+      "from": "seed-data",
+      "to": "globalgrid2050",
+      "type": "reference",
+      "references": 2,
+      "evidence": "2 URL reference(s) to Ventusltd/globalgrid2050 found in seed-data's committed text"
+    },
+    {
+      "from": "seed-data",
+      "to": "spiders",
+      "type": "reference",
+      "references": 1,
+      "evidence": "1 URL reference(s) to Ventusltd/spiders found in seed-data's committed text"
+    },
+    {
+      "from": "spiders",
+      "to": "cvaa",
+      "type": "reference",
+      "references": 7,
+      "evidence": "7 URL reference(s) to Ventusltd/cvaa found in spiders's committed text"
+    },
+    {
+      "from": "spiders",
+      "to": "data-federation-map-for-globalgrid2050-all-repos",
+      "type": "reference",
+      "references": 8,
+      "evidence": "8 URL reference(s) to Ventusltd/data-federation-map-for-globalgrid2050-all-repos found in spiders's committed text"
+    },
+    {
+      "from": "spiders",
+      "to": "data-gb-electricity",
+      "type": "reference",
+      "references": 1,
+      "evidence": "1 URL reference(s) to Ventusltd/data-gb-electricity found in spiders's committed text"
+    },
+    {
+      "from": "spiders",
+      "to": "data-grid-gb",
+      "type": "reference",
+      "references": 2,
+      "evidence": "2 URL reference(s) to Ventusltd/data-grid-gb found in spiders's committed text"
+    },
+    {
+      "from": "spiders",
+      "to": "data-interconnectors",
+      "type": "reference",
+      "references": 1,
+      "evidence": "1 URL reference(s) to Ventusltd/data-interconnectors found in spiders's committed text"
+    },
+    {
+      "from": "spiders",
+      "to": "globalgrid2050",
+      "type": "reference",
+      "references": 13,
+      "evidence": "13 URL reference(s) to Ventusltd/globalgrid2050 found in spiders's committed text"
+    },
+    {
+      "from": "spiders",
+      "to": "gpu-drivers-for-global-grid",
+      "type": "reference",
+      "references": 7,
+      "evidence": "7 URL reference(s) to Ventusltd/gpu-drivers-for-global-grid found in spiders's committed text"
+    },
+    {
+      "from": "spiders",
+      "to": "grid-distance-maths",
+      "type": "reference",
+      "references": 2,
+      "evidence": "2 URL reference(s) to Ventusltd/grid-distance-maths found in spiders's committed text"
+    },
+    {
+      "from": "spiders",
+      "to": "gridatlas",
+      "type": "reference",
+      "references": 84,
+      "evidence": "84 URL reference(s) to Ventusltd/gridatlas found in spiders's committed text"
+    },
+    {
+      "from": "spiders",
+      "to": "pipelinenews",
+      "type": "reference",
+      "references": 2,
+      "evidence": "2 URL reference(s) to Ventusltd/pipelinenews found in spiders's committed text"
+    },
+    {
+      "from": "spiders",
+      "to": "testcode",
+      "type": "reference",
+      "references": 8,
+      "evidence": "8 URL reference(s) to Ventusltd/testcode found in spiders's committed text"
+    },
+    {
+      "from": "spiders",
+      "to": "ventus-grid-engine",
+      "type": "reference",
+      "references": 8,
+      "evidence": "8 URL reference(s) to Ventusltd/ventus-grid-engine found in spiders's committed text"
+    },
+    {
+      "from": "teleprinter",
+      "to": "gridatlas",
+      "type": "reference",
+      "references": 32,
+      "evidence": "32 URL reference(s) to Ventusltd/gridatlas found in teleprinter's committed text"
+    },
+    {
+      "from": "teleprinter",
+      "to": "ventus-grid-engine",
+      "type": "reference",
+      "references": 2,
+      "evidence": "2 URL reference(s) to Ventusltd/ventus-grid-engine found in teleprinter's committed text"
+    },
+    {
+      "from": "testcode",
+      "to": "cvaa",
+      "type": "reference",
+      "references": 11,
+      "evidence": "11 URL reference(s) to Ventusltd/cvaa found in testcode's committed text"
+    },
+    {
+      "from": "testcode",
+      "to": "data-federation-map-for-globalgrid2050-all-repos",
+      "type": "reference",
+      "references": 23,
+      "evidence": "23 URL reference(s) to Ventusltd/data-federation-map-for-globalgrid2050-all-repos found in testcode's committed text"
+    },
+    {
+      "from": "testcode",
+      "to": "data-gridatlas",
+      "type": "reference",
+      "references": 11,
+      "evidence": "11 URL reference(s) to Ventusltd/data-gridatlas found in testcode's committed text"
+    },
+    {
+      "from": "testcode",
+      "to": "globalgrid2050",
+      "type": "reference",
+      "references": 11,
+      "evidence": "11 URL reference(s) to Ventusltd/globalgrid2050 found in testcode's committed text"
+    },
+    {
+      "from": "testcode",
+      "to": "gridatlas",
+      "type": "reference",
+      "references": 75,
+      "evidence": "75 URL reference(s) to Ventusltd/gridatlas found in testcode's committed text"
+    },
+    {
+      "from": "testcode",
+      "to": "pipelinenews",
+      "type": "reference",
+      "references": 11,
+      "evidence": "11 URL reference(s) to Ventusltd/pipelinenews found in testcode's committed text"
+    },
+    {
+      "from": "testcode",
+      "to": "spiders",
+      "type": "reference",
+      "references": 22,
+      "evidence": "22 URL reference(s) to Ventusltd/spiders found in testcode's committed text"
+    },
+    {
+      "from": "testcode",
+      "to": "teleprinter",
+      "type": "reference",
+      "references": 14,
+      "evidence": "14 URL reference(s) to Ventusltd/teleprinter found in testcode's committed text"
+    },
+    {
+      "from": "testcode",
+      "to": "ventus-grid-engine",
+      "type": "reference",
+      "references": 100,
+      "evidence": "100 URL reference(s) to Ventusltd/ventus-grid-engine found in testcode's committed text"
+    },
+    {
+      "from": "ventus-grid-engine",
+      "to": "cvaa",
+      "type": "reference",
+      "references": 1,
+      "evidence": "1 URL reference(s) to Ventusltd/cvaa found in ventus-grid-engine's committed text"
+    },
+    {
+      "from": "ventus-grid-engine",
+      "to": "data-centres-gb",
+      "type": "reference",
+      "references": 1,
+      "evidence": "1 URL reference(s) to Ventusltd/data-centres-gb found in ventus-grid-engine's committed text"
+    },
+    {
+      "from": "ventus-grid-engine",
+      "to": "data-federation-map-for-globalgrid2050-all-repos",
+      "type": "reference",
+      "references": 3,
+      "evidence": "3 URL reference(s) to Ventusltd/data-federation-map-for-globalgrid2050-all-repos found in ventus-grid-engine's committed text"
+    },
+    {
+      "from": "ventus-grid-engine",
+      "to": "data-grid-gb",
+      "type": "reference",
+      "references": 1,
+      "evidence": "1 URL reference(s) to Ventusltd/data-grid-gb found in ventus-grid-engine's committed text"
+    },
+    {
+      "from": "ventus-grid-engine",
+      "to": "globalgrid2050",
+      "type": "reference",
+      "references": 35,
+      "evidence": "35 URL reference(s) to Ventusltd/globalgrid2050 found in ventus-grid-engine's committed text"
+    },
+    {
+      "from": "ventus-grid-engine",
+      "to": "globalgrid2050-homepage",
+      "type": "reference",
+      "references": 1,
+      "evidence": "1 URL reference(s) to Ventusltd/globalgrid2050-homepage found in ventus-grid-engine's committed text"
+    },
+    {
+      "from": "ventus-grid-engine",
+      "to": "grid-distance-maths",
+      "type": "reference",
+      "references": 4,
+      "evidence": "4 URL reference(s) to Ventusltd/grid-distance-maths found in ventus-grid-engine's committed text"
+    },
+    {
+      "from": "ventus-grid-engine",
+      "to": "gridatlas",
+      "type": "reference",
+      "references": 61,
+      "evidence": "61 URL reference(s) to Ventusltd/gridatlas found in ventus-grid-engine's committed text"
+    },
+    {
+      "from": "ventus-grid-engine",
+      "to": "pipelinenews",
+      "type": "reference",
+      "references": 16,
+      "evidence": "16 URL reference(s) to Ventusltd/pipelinenews found in ventus-grid-engine's committed text"
+    },
+    {
+      "from": "ventus-grid-engine",
+      "to": "spiders",
+      "type": "reference",
+      "references": 4,
+      "evidence": "4 URL reference(s) to Ventusltd/spiders found in ventus-grid-engine's committed text"
+    }
   ]
 }

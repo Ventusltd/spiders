@@ -100,18 +100,21 @@
   "browser": "viewer-final-live/results.json: desktop and phone Chrome pass; tampered graph refused; served-final.json verifies six served files against eadace4.",
   "nextObservation": "Observe new owner implementation commits separately.",
   "runnerCheckpoint": {
-    "checkedAt": "2026-09-06T01:47:03.224654+00:00",
+    "checkedAt": "2026-09-06T01:50:32.506791+00:00",
     "originalLocalCompleted": 81,
     "cloudCompleted": 23,
-    "totalCompletedStudyJobs": 104,
-    "remainingLocalJobs": 4,
-    "localFinishControllerPID": 22172,
+    "totalCompletedStudyJobs": 108,
+    "remainingLocalJobs": 0,
+    "localFinishControllerPID": null,
     "localLaunchFreeRamGiB": 3.2,
     "localStopBelowGiB": 2.5,
     "deadlineUTC": "2026-09-06T05:00:00Z",
     "cloudEvidence": "learning-drain-20260906/cloud/learning-completion/SUMMARY.json",
     "cloudEvidenceSha256": "fa45dbb0bd8b2005439c7da890419ca8859865d2a826dd954a01a3f639b359de",
     "localQueue": "learning-drain-20260906/local-queue.json",
-    "status": "Cloud workload complete; four local-only model reuses waiting for RAM. Old hourly learning scheduler stopped; no added repeats."
+    "status": "Complete: all 27 transferred jobs finished, 23 cloud and 4 local, zero failures. Old hourly scheduler stopped; no added repeats.",
+    "retainedLocalCompleted": 4,
+    "localEvidence": "learning-drain-20260906/local-completion.json",
+    "localEvidenceSha256": "d0ec02d24eb148ec58d609276ff774731ac55070f032ef51709b75c68c7f180c"
   }
 }

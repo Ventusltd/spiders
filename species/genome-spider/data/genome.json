@@ -1,6 +1,6 @@
 {
   "schema": "genome-spider.genome.v1",
-  "generated_at": "2026-09-06T07:53:12.122Z",
+  "generated_at": "2026-09-07T08:15:44.669Z",
   "generator": "spiders/species/genome-spider/spider.mjs",
   "estate_root": "/home/runner/work/spiders/spiders/estate",
   "repos_configured": 19,
@@ -29,17 +29,17 @@
   "scan_limits": [
     {
       "repo": "globalgrid2050",
-      "files_considered": 6968,
-      "files_scanned": 347,
-      "bytes_scanned": 25748445,
-      "files_capped_out": 6621,
+      "files_considered": 7336,
+      "files_scanned": 349,
+      "bytes_scanned": 25692116,
+      "files_capped_out": 6987,
       "cartridge_logical_groups_kept_latest_only": 189
     },
     {
       "repo": "gridatlas",
-      "files_considered": 493,
-      "files_scanned": 377,
-      "bytes_scanned": 10165042,
+      "files_considered": 505,
+      "files_scanned": 386,
+      "bytes_scanned": 10278068,
       "files_capped_out": 1,
       "cartridge_logical_groups_kept_latest_only": 11
     },
@@ -55,7 +55,7 @@
       "repo": "spiders",
       "files_considered": 49,
       "files_scanned": 48,
-      "bytes_scanned": 1777053,
+      "bytes_scanned": 1806573,
       "files_capped_out": 1,
       "cartridge_logical_groups_kept_latest_only": 0
     }
@@ -127,10 +127,10 @@
         "date": "2026-09-03T01:17:30+01:00"
       },
       "last_commit": {
-        "sha": "127d5cf681a053086d9e114b916f3af3f3e43e40",
-        "date": "2026-09-06T07:18:31Z"
+        "sha": "8ca75c80d74740491e7163903154ac6fc231e7f0",
+        "date": "2026-09-07T08:13:50Z"
       },
-      "commit_count": 242,
+      "commit_count": 246,
       "top_revised_files": [
         {
           "path": "sessions/202609030120-cicd-spider/02-runner-health.md",
@@ -5635,10 +5635,10 @@
         "date": "2026-03-12T16:26:24Z"
       },
       "last_commit": {
-        "sha": "ddffebebe6134689e009846a3b5d829c7bd8b0e0",
-        "date": "2026-09-06T06:45:07+01:00"
+        "sha": "0ca3e893da2d02acef6bc5ea48b9abde6ed76a01",
+        "date": "2026-09-06T15:15:40+01:00"
       },
-      "commit_count": 4653,
+      "commit_count": 4682,
       "top_revised_files": [
         {
           "path": "REPO_STRUCTURE.txt",
@@ -5646,7 +5646,7 @@
         },
         {
           "path": "index.html",
-          "commits": 294
+          "commits": 302
         },
         {
           "path": "uk_energy_tracking_v5/grid_frequency_history.csv",
@@ -6176,6 +6176,27 @@
         "date": "2026-06-18T22:14:14Z"
       },
       "commit_count": 2,
+      "top_revised_files": [],
+      "rag": "green",
+      "status_reason": "",
+      "importance_score": 0.4
+    },
+    {
+      "id": "Ventusltd/globalgrid2050::.github/workflows/atlas-oracle.yml",
+      "kind": "workflow",
+      "label": "atlas-oracle.yml",
+      "repo": "globalgrid2050",
+      "path": ".github/workflows/atlas-oracle.yml",
+      "purpose": "",
+      "first_commit": {
+        "sha": "37b9276ee97d5720cedaa2962e6f701b97a9cb9b",
+        "date": "2026-09-06T14:24:57+01:00"
+      },
+      "last_commit": {
+        "sha": "37b9276ee97d5720cedaa2962e6f701b97a9cb9b",
+        "date": "2026-09-06T14:24:57+01:00"
+      },
+      "commit_count": 1,
       "top_revised_files": [],
       "rag": "green",
       "status_reason": "",
@@ -6754,10 +6775,10 @@
         "date": "2026-03-21T20:13:33Z"
       },
       "last_commit": {
-        "sha": "6a2af6197d30c48ba9b4744a2a59146697b36576",
-        "date": "2026-09-06T02:52:20+01:00"
+        "sha": "0ca3e893da2d02acef6bc5ea48b9abde6ed76a01",
+        "date": "2026-09-06T15:15:40+01:00"
       },
-      "commit_count": 28,
+      "commit_count": 30,
       "top_revised_files": [],
       "rag": "green",
       "status_reason": "",
@@ -8438,6 +8459,27 @@
       "importance_score": 0.4
     },
     {
+      "id": "Ventusltd/globalgrid2050::.github/workflows/homepage-catalogue.yml",
+      "kind": "workflow",
+      "label": "homepage-catalogue.yml",
+      "repo": "globalgrid2050",
+      "path": ".github/workflows/homepage-catalogue.yml",
+      "purpose": "",
+      "first_commit": {
+        "sha": "f5a9028cd77f6ab3ac2e1c73cdcd0ccb5966bb9f",
+        "date": "2026-09-06T15:13:13+01:00"
+      },
+      "last_commit": {
+        "sha": "f5a9028cd77f6ab3ac2e1c73cdcd0ccb5966bb9f",
+        "date": "2026-09-06T15:13:13+01:00"
+      },
+      "commit_count": 1,
+      "top_revised_files": [],
+      "rag": "green",
+      "status_reason": "",
+      "importance_score": 0.4
+    },
+    {
       "id": "Ventusltd/globalgrid2050::.github/workflows/homepage-restore-point-check.yml",
       "kind": "workflow",
       "label": "homepage-restore-point-check.yml",
@@ -8554,10 +8596,10 @@
         "date": "2026-03-21T21:12:12Z"
       },
       "last_commit": {
-        "sha": "ebe024e04f40aea1ddebccb90bde9c3c55df0486",
-        "date": "2026-08-30T13:12:36+01:00"
+        "sha": "d64e73f374396099658e337c9cb9ef4c8a8de45f",
+        "date": "2026-09-06T13:28:55+01:00"
       },
-      "commit_count": 5,
+      "commit_count": 6,
       "top_revised_files": [],
       "rag": "green",
       "status_reason": "",
@@ -12040,10 +12082,10 @@
         "date": "2026-03-12T16:27:58Z"
       },
       "last_commit": {
-        "sha": "ddffebebe6134689e009846a3b5d829c7bd8b0e0",
-        "date": "2026-09-06T06:45:07+01:00"
+        "sha": "f5a9028cd77f6ab3ac2e1c73cdcd0ccb5966bb9f",
+        "date": "2026-09-06T15:13:13+01:00"
       },
-      "commit_count": 294,
+      "commit_count": 302,
       "top_revised_files": [],
       "rag": "green",
       "status_reason": "",
@@ -13228,10 +13270,10 @@
         "date": "2026-08-29T07:10:33+01:00"
       },
       "last_commit": {
-        "sha": "66b445b908005bcf3cb542de6bbd47090d855e76",
-        "date": "2026-09-06T04:01:28+01:00"
+        "sha": "c5b474e360a736c1bb1206399b6da2a81a5a6afb",
+        "date": "2026-09-07T04:46:28+01:00"
       },
-      "commit_count": 361,
+      "commit_count": 371,
       "top_revised_files": [
         {
           "path": "atlas/current.json",
@@ -13370,6 +13412,27 @@
         "date": "2026-09-04T04:46:10+01:00"
       },
       "commit_count": 10,
+      "top_revised_files": [],
+      "rag": "green",
+      "status_reason": "",
+      "importance_score": 0.4
+    },
+    {
+      "id": "Ventusltd/gridatlas::.github/workflows/offshore-coordinate-reconcile.yml",
+      "kind": "workflow",
+      "label": "offshore-coordinate-reconcile.yml",
+      "repo": "gridatlas",
+      "path": ".github/workflows/offshore-coordinate-reconcile.yml",
+      "purpose": "",
+      "first_commit": {
+        "sha": "98dd908954c4c9bc21dac97346f7d71d9b201a27",
+        "date": "2026-09-07T04:37:24+01:00"
+      },
+      "last_commit": {
+        "sha": "98dd908954c4c9bc21dac97346f7d71d9b201a27",
+        "date": "2026-09-07T04:37:24+01:00"
+      },
+      "commit_count": 1,
       "top_revised_files": [],
       "rag": "green",
       "status_reason": "",
@@ -13578,6 +13641,48 @@
       "last_commit": {
         "sha": "8384ebe9a5bdfb023a166776024bb6e70a3fdcc7",
         "date": "2026-09-02T00:15:41+01:00"
+      },
+      "commit_count": 1,
+      "top_revised_files": [],
+      "rag": "green",
+      "status_reason": "",
+      "importance_score": 0.4
+    },
+    {
+      "id": "Ventusltd/gridatlas::atlas/data/interconnector-endpoints.json",
+      "kind": "data-product",
+      "label": "interconnector-endpoints.json",
+      "repo": "gridatlas",
+      "path": "atlas/data/interconnector-endpoints.json",
+      "purpose": "",
+      "first_commit": {
+        "sha": "0eab5c2f3832a1a2126390f8319a89bdbf13f623",
+        "date": "2026-09-07T04:44:00+01:00"
+      },
+      "last_commit": {
+        "sha": "c5b474e360a736c1bb1206399b6da2a81a5a6afb",
+        "date": "2026-09-07T04:46:28+01:00"
+      },
+      "commit_count": 2,
+      "top_revised_files": [],
+      "rag": "green",
+      "status_reason": "",
+      "importance_score": 0.4
+    },
+    {
+      "id": "Ventusltd/gridatlas::atlas/data/offshore-coordinates.json",
+      "kind": "data-product",
+      "label": "offshore-coordinates.json",
+      "repo": "gridatlas",
+      "path": "atlas/data/offshore-coordinates.json",
+      "purpose": "",
+      "first_commit": {
+        "sha": "98dd908954c4c9bc21dac97346f7d71d9b201a27",
+        "date": "2026-09-07T04:37:24+01:00"
+      },
+      "last_commit": {
+        "sha": "98dd908954c4c9bc21dac97346f7d71d9b201a27",
+        "date": "2026-09-07T04:37:24+01:00"
       },
       "commit_count": 1,
       "top_revised_files": [],
@@ -18815,6 +18920,27 @@
       "importance_score": 0.2
     },
     {
+      "id": "Ventusltd/gridatlas::atlas/manifests/202609062358-composition.json",
+      "kind": "manifest",
+      "label": "202609062358-composition.json",
+      "repo": "gridatlas",
+      "path": "atlas/manifests/202609062358-composition.json",
+      "purpose": "",
+      "first_commit": {
+        "sha": "c4a39f87b1e8b4883f8a32302e4029712f97078f",
+        "date": "2026-09-07T00:58:49+01:00"
+      },
+      "last_commit": {
+        "sha": "c4a39f87b1e8b4883f8a32302e4029712f97078f",
+        "date": "2026-09-07T00:58:49+01:00"
+      },
+      "commit_count": 1,
+      "top_revised_files": [],
+      "rag": "green",
+      "status_reason": "",
+      "importance_score": 0.4
+    },
+    {
       "id": "Ventusltd/gridatlas::atlas/modules/202609011950-substation-lookup.js",
       "kind": "module",
       "label": "202609011950-substation-lookup.js",
@@ -19080,6 +19206,69 @@
       "last_commit": {
         "sha": "2a3a7e8d8377a217bafa0e23ddac148bd528171d",
         "date": "2026-09-05T14:31:06+01:00"
+      },
+      "commit_count": 1,
+      "top_revised_files": [],
+      "rag": "green",
+      "status_reason": "",
+      "importance_score": 0.4
+    },
+    {
+      "id": "Ventusltd/gridatlas::atlas/v/202609062246/index.html",
+      "kind": "entry-point",
+      "label": "index.html",
+      "repo": "gridatlas",
+      "path": "atlas/v/202609062246/index.html",
+      "purpose": "",
+      "first_commit": {
+        "sha": "2c944489a9d6aaf8f84716b2d90034e5d03a2daf",
+        "date": "2026-09-06T23:58:04+01:00"
+      },
+      "last_commit": {
+        "sha": "b09ee3b640c0449ff0d83f1db08d1e256483f99e",
+        "date": "2026-09-07T00:01:51+01:00"
+      },
+      "commit_count": 2,
+      "top_revised_files": [],
+      "rag": "green",
+      "status_reason": "",
+      "importance_score": 0.4
+    },
+    {
+      "id": "Ventusltd/gridatlas::atlas/v/202609062343/index.html",
+      "kind": "entry-point",
+      "label": "index.html",
+      "repo": "gridatlas",
+      "path": "atlas/v/202609062343/index.html",
+      "purpose": "",
+      "first_commit": {
+        "sha": "397498365492d6cbcae5657cb29cc06da230d723",
+        "date": "2026-09-07T00:44:23+01:00"
+      },
+      "last_commit": {
+        "sha": "397498365492d6cbcae5657cb29cc06da230d723",
+        "date": "2026-09-07T00:44:23+01:00"
+      },
+      "commit_count": 1,
+      "top_revised_files": [],
+      "rag": "green",
+      "status_reason": "",
+      "importance_score": 0.4
+    },
+    {
+      "id": "Ventusltd/gridatlas::atlas/v/202609062358/index.html",
+      "kind": "entry-point",
+      "label": "index.html",
+      "repo": "gridatlas",
+      "path": "atlas/v/202609062358/index.html",
+      "purpose": "",
+      "first_commit": {
+        "sha": "c4a39f87b1e8b4883f8a32302e4029712f97078f",
+        "date": "2026-09-07T00:58:49+01:00"
+      },
+      "last_commit": {
+        "sha": "c4a39f87b1e8b4883f8a32302e4029712f97078f",
+        "date": "2026-09-07T00:58:49+01:00"
       },
       "commit_count": 1,
       "top_revised_files": [],
@@ -19437,6 +19626,48 @@
       "last_commit": {
         "sha": "df146c64f5d602cead8109b079a6e40aa0185809",
         "date": "2026-08-30T16:46:02+01:00"
+      },
+      "commit_count": 1,
+      "top_revised_files": [],
+      "rag": "green",
+      "status_reason": "",
+      "importance_score": 0.4
+    },
+    {
+      "id": "Ventusltd/gridatlas::tools/interconnectors/fetch_far_end_converters.py",
+      "kind": "tool-script",
+      "label": "fetch_far_end_converters.py",
+      "repo": "gridatlas",
+      "path": "tools/interconnectors/fetch_far_end_converters.py",
+      "purpose": "",
+      "first_commit": {
+        "sha": "0eab5c2f3832a1a2126390f8319a89bdbf13f623",
+        "date": "2026-09-07T04:44:00+01:00"
+      },
+      "last_commit": {
+        "sha": "c5b474e360a736c1bb1206399b6da2a81a5a6afb",
+        "date": "2026-09-07T04:46:28+01:00"
+      },
+      "commit_count": 2,
+      "top_revised_files": [],
+      "rag": "green",
+      "status_reason": "",
+      "importance_score": 0.4
+    },
+    {
+      "id": "Ventusltd/gridatlas::tools/offshore/reconcile_offshore_coordinates.py",
+      "kind": "tool-script",
+      "label": "reconcile_offshore_coordinates.py",
+      "repo": "gridatlas",
+      "path": "tools/offshore/reconcile_offshore_coordinates.py",
+      "purpose": "",
+      "first_commit": {
+        "sha": "98dd908954c4c9bc21dac97346f7d71d9b201a27",
+        "date": "2026-09-07T04:37:24+01:00"
+      },
+      "last_commit": {
+        "sha": "98dd908954c4c9bc21dac97346f7d71d9b201a27",
+        "date": "2026-09-07T04:37:24+01:00"
       },
       "commit_count": 1,
       "top_revised_files": [],
@@ -21230,19 +21461,19 @@
       "importance_score": 0.4
     },
     {
-      "id": "Ventusltd/gridatlas::atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+      "id": "Ventusltd/gridatlas::atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
       "kind": "cartridge",
-      "label": "202609060259-substation-intelligence-v9-63.js",
+      "label": "202609062358-substation-intelligence-v9-63.js",
       "repo": "gridatlas",
-      "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+      "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
       "purpose": "",
       "first_commit": {
-        "sha": "66b445b908005bcf3cb542de6bbd47090d855e76",
-        "date": "2026-09-06T04:01:28+01:00"
+        "sha": "c4a39f87b1e8b4883f8a32302e4029712f97078f",
+        "date": "2026-09-07T00:58:49+01:00"
       },
       "last_commit": {
-        "sha": "66b445b908005bcf3cb542de6bbd47090d855e76",
-        "date": "2026-09-06T04:01:28+01:00"
+        "sha": "c4a39f87b1e8b4883f8a32302e4029712f97078f",
+        "date": "2026-09-07T00:58:49+01:00"
       },
       "commit_count": 1,
       "top_revised_files": [],
@@ -21283,10 +21514,10 @@
         "date": "2026-08-24T11:39:30+01:00"
       },
       "last_commit": {
-        "sha": "66bb873a9f78de3cfe051982e82074e0c2eaa64a",
-        "date": "2026-09-06T07:07:58Z"
+        "sha": "bf5e87b73705cab7e3c2b5574a548965bf928fbf",
+        "date": "2026-09-07T04:41:46Z"
       },
-      "commit_count": 472,
+      "commit_count": 478,
       "top_revised_files": [
         {
           "path": "docs/coordination/BOARD.md",
@@ -21317,7 +21548,7 @@
           "commits": 12
         },
         {
-          "path": "atman/202608262014-build-pages.py",
+          "path": "discovery/products/bbc-rss.json",
           "commits": 10
         }
       ],
@@ -25831,10 +26062,10 @@
         "date": "2026-07-04T07:34:47+01:00"
       },
       "last_commit": {
-        "sha": "8ab8b2b6b3b071e19a0d9e6266058826b65eccc3",
-        "date": "2026-09-06T06:56:10+01:00"
+        "sha": "41b198d7fca58509e9229be40b5d3ab021ae6e8d",
+        "date": "2026-09-06T07:53:15Z"
       },
-      "commit_count": 160,
+      "commit_count": 161,
       "top_revised_files": [
         {
           "path": "codex/build-plan/campaigns/20260906-next30.md",
@@ -25849,24 +26080,24 @@
           "commits": 14
         },
         {
-          "path": "codex/build-plan/CI-TRACKER.json",
-          "commits": 9
-        },
-        {
-          "path": "codex/reload/BUILD-PLAN.md",
-          "commits": 9
-        },
-        {
           "path": "species/genome-spider/data/edges.json",
-          "commits": 8
+          "commits": 9
         },
         {
           "path": "species/genome-spider/data/genome.json",
-          "commits": 8
+          "commits": 9
         },
         {
           "path": "species/genome-spider/data/gridatlas-lineage.json",
-          "commits": 8
+          "commits": 9
+        },
+        {
+          "path": "species/genome-spider/data/manifest.json",
+          "commits": 9
+        },
+        {
+          "path": "codex/build-plan/CI-TRACKER.json",
+          "commits": 9
         }
       ],
       "rag": "amber",
@@ -26431,10 +26662,10 @@
         "date": "2026-09-04T22:35:07+01:00"
       },
       "last_commit": {
-        "sha": "e37b8daefc1ba385e4ca2b9d3acf0f47da635e8d",
-        "date": "2026-09-05T20:52:06Z"
+        "sha": "41b198d7fca58509e9229be40b5d3ab021ae6e8d",
+        "date": "2026-09-06T07:53:15Z"
       },
-      "commit_count": 8,
+      "commit_count": 9,
       "top_revised_files": [],
       "rag": "green",
       "status_reason": "",
@@ -26452,10 +26683,10 @@
         "date": "2026-09-04T22:35:07+01:00"
       },
       "last_commit": {
-        "sha": "e37b8daefc1ba385e4ca2b9d3acf0f47da635e8d",
-        "date": "2026-09-05T20:52:06Z"
+        "sha": "41b198d7fca58509e9229be40b5d3ab021ae6e8d",
+        "date": "2026-09-06T07:53:15Z"
       },
-      "commit_count": 8,
+      "commit_count": 9,
       "top_revised_files": [],
       "rag": "green",
       "status_reason": "",
@@ -26473,10 +26704,10 @@
         "date": "2026-09-04T22:35:07+01:00"
       },
       "last_commit": {
-        "sha": "e37b8daefc1ba385e4ca2b9d3acf0f47da635e8d",
-        "date": "2026-09-05T20:52:06Z"
+        "sha": "41b198d7fca58509e9229be40b5d3ab021ae6e8d",
+        "date": "2026-09-06T07:53:15Z"
       },
-      "commit_count": 8,
+      "commit_count": 9,
       "top_revised_files": [],
       "rag": "green",
       "status_reason": "",
@@ -26494,10 +26725,10 @@
         "date": "2026-09-04T22:35:07+01:00"
       },
       "last_commit": {
-        "sha": "af79782bbaf5e7e1e7994c2fbae03fa123d08eb4",
-        "date": "2026-09-05T20:48:50Z"
+        "sha": "41b198d7fca58509e9229be40b5d3ab021ae6e8d",
+        "date": "2026-09-06T07:53:15Z"
       },
-      "commit_count": 6,
+      "commit_count": 7,
       "top_revised_files": [],
       "rag": "grey",
       "status_reason": "stub node — edge target outside the content-scanned set",
@@ -33582,6 +33813,32 @@
       "to": "external/actions/checkout",
       "type": "pinned-action",
       "evidence": {
+        "file": ".github/workflows/atlas-oracle.yml",
+        "line": 25,
+        "pattern": "uses: owner/repo@sha",
+        "snippet": "- uses: actions/checkout@v4"
+      },
+      "pinned": false,
+      "pin": "v4"
+    },
+    {
+      "from": "Ventusltd/globalgrid2050",
+      "to": "external/actions/setup-node",
+      "type": "pinned-action",
+      "evidence": {
+        "file": ".github/workflows/atlas-oracle.yml",
+        "line": 28,
+        "pattern": "uses: owner/repo@sha",
+        "snippet": "- uses: actions/setup-node@v4"
+      },
+      "pinned": false,
+      "pin": "v4"
+    },
+    {
+      "from": "Ventusltd/globalgrid2050",
+      "to": "external/actions/checkout",
+      "type": "pinned-action",
+      "evidence": {
         "file": ".github/workflows/audit_generation_data_coverage_v6.yml",
         "line": 17,
         "pattern": "uses: owner/repo@sha",
@@ -34246,7 +34503,7 @@
       "type": "pinned-action",
       "evidence": {
         "file": ".github/workflows/deploy-pages.yml",
-        "line": 89,
+        "line": 102,
         "pattern": "uses: owner/repo@sha",
         "snippet": "uses: actions/checkout@v4"
       },
@@ -34259,7 +34516,7 @@
       "type": "pinned-action",
       "evidence": {
         "file": ".github/workflows/deploy-pages.yml",
-        "line": 109,
+        "line": 122,
         "pattern": "uses: owner/repo@sha",
         "snippet": "uses: actions/configure-pages@v5"
       },
@@ -34272,7 +34529,7 @@
       "type": "pinned-action",
       "evidence": {
         "file": ".github/workflows/deploy-pages.yml",
-        "line": 111,
+        "line": 124,
         "pattern": "uses: owner/repo@sha",
         "snippet": "uses: actions/jekyll-build-pages@v1"
       },
@@ -34285,7 +34542,7 @@
       "type": "pinned-action",
       "evidence": {
         "file": ".github/workflows/deploy-pages.yml",
-        "line": 116,
+        "line": 129,
         "pattern": "uses: owner/repo@sha",
         "snippet": "uses: actions/upload-pages-artifact@v3"
       },
@@ -34298,7 +34555,7 @@
       "type": "pinned-action",
       "evidence": {
         "file": ".github/workflows/deploy-pages.yml",
-        "line": 129,
+        "line": 142,
         "pattern": "uses: owner/repo@sha",
         "snippet": "uses: actions/deploy-pages@v4"
       },
@@ -34311,7 +34568,7 @@
       "type": "pinned-action",
       "evidence": {
         "file": ".github/workflows/deploy-pages.yml",
-        "line": 137,
+        "line": 150,
         "pattern": "uses: owner/repo@sha",
         "snippet": "uses: actions/checkout@v4"
       },
@@ -34324,7 +34581,7 @@
       "type": "pinned-action",
       "evidence": {
         "file": ".github/workflows/deploy-pages.yml",
-        "line": 142,
+        "line": 155,
         "pattern": "uses: owner/repo@sha",
         "snippet": "uses: actions/setup-node@v4"
       },
@@ -36416,6 +36673,32 @@
       "to": "external/actions/checkout",
       "type": "pinned-action",
       "evidence": {
+        "file": ".github/workflows/homepage-catalogue.yml",
+        "line": 26,
+        "pattern": "uses: owner/repo@sha",
+        "snippet": "- uses: actions/checkout@v4"
+      },
+      "pinned": false,
+      "pin": "v4"
+    },
+    {
+      "from": "Ventusltd/globalgrid2050",
+      "to": "external/actions/setup-python",
+      "type": "pinned-action",
+      "evidence": {
+        "file": ".github/workflows/homepage-catalogue.yml",
+        "line": 30,
+        "pattern": "uses: owner/repo@sha",
+        "snippet": "- uses: actions/setup-python@v5"
+      },
+      "pinned": false,
+      "pin": "v5"
+    },
+    {
+      "from": "Ventusltd/globalgrid2050",
+      "to": "external/actions/checkout",
+      "type": "pinned-action",
+      "evidence": {
         "file": ".github/workflows/homepage-restore-point-check.yml",
         "line": 14,
         "pattern": "uses: owner/repo@sha",
@@ -36521,7 +36804,7 @@
       "type": "pinned-action",
       "evidence": {
         "file": ".github/workflows/jekyll-gh-pages.yml",
-        "line": 31,
+        "line": 38,
         "pattern": "uses: owner/repo@sha",
         "snippet": "uses: actions/checkout@v4"
       },
@@ -36534,7 +36817,7 @@
       "type": "pinned-action",
       "evidence": {
         "file": ".github/workflows/jekyll-gh-pages.yml",
-        "line": 33,
+        "line": 40,
         "pattern": "uses: owner/repo@sha",
         "snippet": "uses: actions/configure-pages@v5"
       },
@@ -36547,7 +36830,7 @@
       "type": "pinned-action",
       "evidence": {
         "file": ".github/workflows/jekyll-gh-pages.yml",
-        "line": 35,
+        "line": 42,
         "pattern": "uses: owner/repo@sha",
         "snippet": "uses: actions/jekyll-build-pages@v1"
       },
@@ -36560,7 +36843,7 @@
       "type": "pinned-action",
       "evidence": {
         "file": ".github/workflows/jekyll-gh-pages.yml",
-        "line": 40,
+        "line": 47,
         "pattern": "uses: owner/repo@sha",
         "snippet": "uses: actions/upload-pages-artifact@v3"
       },
@@ -36573,7 +36856,7 @@
       "type": "pinned-action",
       "evidence": {
         "file": ".github/workflows/jekyll-gh-pages.yml",
-        "line": 51,
+        "line": 58,
         "pattern": "uses: owner/repo@sha",
         "snippet": "uses: actions/deploy-pages@v4"
       },
@@ -39456,6 +39739,82 @@
         "line": 110,
         "pattern": "checkout repository:",
         "snippet": "repository: Ventusltd/pipelinenews"
+      }
+    },
+    {
+      "from": "Ventusltd/gridatlas",
+      "to": "external/actions/checkout",
+      "type": "pinned-action",
+      "evidence": {
+        "file": ".github/workflows/offshore-coordinate-reconcile.yml",
+        "line": 46,
+        "pattern": "uses: owner/repo@sha",
+        "snippet": "uses: actions/checkout@v4"
+      },
+      "pinned": false,
+      "pin": "v4"
+    },
+    {
+      "from": "Ventusltd/gridatlas",
+      "to": "external/actions/checkout",
+      "type": "pinned-action",
+      "evidence": {
+        "file": ".github/workflows/offshore-coordinate-reconcile.yml",
+        "line": 54,
+        "pattern": "uses: owner/repo@sha",
+        "snippet": "uses: actions/checkout@v4"
+      },
+      "pinned": false,
+      "pin": "v4"
+    },
+    {
+      "from": "Ventusltd/gridatlas",
+      "to": "external/actions/checkout",
+      "type": "pinned-action",
+      "evidence": {
+        "file": ".github/workflows/offshore-coordinate-reconcile.yml",
+        "line": 60,
+        "pattern": "uses: owner/repo@sha",
+        "snippet": "uses: actions/checkout@v4"
+      },
+      "pinned": false,
+      "pin": "v4"
+    },
+    {
+      "from": "Ventusltd/gridatlas",
+      "to": "external/actions/setup-python",
+      "type": "pinned-action",
+      "evidence": {
+        "file": ".github/workflows/offshore-coordinate-reconcile.yml",
+        "line": 64,
+        "pattern": "uses: owner/repo@sha",
+        "snippet": ""
+      },
+      "pinned": false,
+      "pin": "v5"
+    },
+    {
+      "from": "Ventusltd/gridatlas",
+      "to": "external/actions/upload-artifact",
+      "type": "pinned-action",
+      "evidence": {
+        "file": ".github/workflows/offshore-coordinate-reconcile.yml",
+        "line": 114,
+        "pattern": "uses: owner/repo@sha",
+        "snippet": "uses: actions/upload-artifact@v4"
+      },
+      "pinned": false,
+      "pin": "v4"
+    },
+    {
+      "from": "Ventusltd/gridatlas",
+      "to": "Ventusltd/globalgrid2050",
+      "type": "workflow-checkout",
+      "evidence": {
+        "file": ".github/workflows/offshore-coordinate-reconcile.yml",
+        "line": 56,
+        "pattern": "checkout repository:",
+        "snippet": "repository: Ventusltd/globalgrid2050"
       }
     },
     {
@@ -56789,6 +57148,72 @@
       }
     },
     {
+      "from": "Ventusltd/gridatlas::atlas/manifests/202609062358-composition.json",
+      "to": "Ventusltd/gridatlas::ui/cartridges/202608301825-streaming-parquet-bridge-v9-5.mjs",
+      "type": "manifest-path",
+      "evidence": {
+        "file": "atlas/manifests/202609062358-composition.json",
+        "line": 0,
+        "pattern": "json:\"contract\"",
+        "snippet": "/cartridges/0/contract = \"../ui/cartridges/202608301825-streaming-parquet-bridge-v9-5.mjs\""
+      }
+    },
+    {
+      "from": "Ventusltd/gridatlas::atlas/manifests/202609062358-composition.json",
+      "to": "Ventusltd/gridatlas::ui/cartridges/202609040337-global-gazetteer-flyto-v9-106.mjs",
+      "type": "manifest-path",
+      "evidence": {
+        "file": "atlas/manifests/202609062358-composition.json",
+        "line": 0,
+        "pattern": "json:\"contract\"",
+        "snippet": "/cartridges/1/contract = \"../ui/cartridges/202609040337-global-gazetteer-flyto-v9-106.mjs\""
+      }
+    },
+    {
+      "from": "Ventusltd/gridatlas::atlas/manifests/202609062358-composition.json",
+      "to": "Ventusltd/gridatlas::tools/proofs/fixtures/202609010002-original-sld-finance.json",
+      "type": "manifest-path",
+      "evidence": {
+        "file": "atlas/manifests/202609062358-composition.json",
+        "line": 0,
+        "pattern": "json:\"oracle\"",
+        "snippet": "/cartridges/2/finance_port/oracle = \"tools/proofs/fixtures/202609010002-original-sld-finance.json\""
+      }
+    },
+    {
+      "from": "Ventusltd/gridatlas::atlas/manifests/202609062358-composition.json",
+      "to": "Ventusltd/gridatlas::tools/proofs/202609012214-data-contract-parity.proof.mjs",
+      "type": "manifest-path",
+      "evidence": {
+        "file": "atlas/manifests/202609062358-composition.json",
+        "line": 0,
+        "pattern": "json:\"proof\"",
+        "snippet": "/cartridges/3/data_source/corrected_at/proof = \"tools/proofs/202609012214-data-contract-parity.proof.mjs\""
+      }
+    },
+    {
+      "from": "Ventusltd/gridatlas::atlas/manifests/202609062358-composition.json",
+      "to": "Ventusltd/gridatlas::tools/proofs/teleprint-evidence.browser.mjs",
+      "type": "manifest-path",
+      "evidence": {
+        "file": "atlas/manifests/202609062358-composition.json",
+        "line": 0,
+        "pattern": "json:\"proof\"",
+        "snippet": "/acceptance/proof = \"tools/proofs/teleprint-evidence.browser.mjs\""
+      }
+    },
+    {
+      "from": "Ventusltd/gridatlas::atlas/manifests/202609062358-composition.json",
+      "to": "Ventusltd/gridatlas::atlas/releases/202608300453-atlas-v9/202608292126-pre-snapped-config-adapter.js",
+      "type": "manifest-path",
+      "evidence": {
+        "file": "atlas/manifests/202609062358-composition.json",
+        "line": 0,
+        "pattern": "json:\"path\"",
+        "snippet": "/source_pattern/path = \"atlas/releases/202608300453-atlas-v9/202608292126-pre-snapped-config-adapter.js\""
+      }
+    },
+    {
       "from": "Ventusltd/gridatlas::atlas/parts/202609012350-substation-intelligence-seed-parts.json",
       "to": "Ventusltd/gridatlas::atlas/releases/202608300453-atlas-v9/ventus-corev8engine.js",
       "type": "manifest-path",
@@ -63263,17 +63688,6 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/491/properties/label = \"index.html\""
-      }
-    },
-    {
-      "from": "Ventusltd/spiders::species/genome-spider/data/nodes.json",
-      "to": "Ventusltd/spiders::index.html",
-      "type": "manifest-path",
-      "evidence": {
-        "file": "species/genome-spider/data/nodes.json",
-        "line": 0,
-        "pattern": "json:\"label\"",
         "snippet": "/features/492/properties/label = \"index.html\""
       }
     },
@@ -63296,7 +63710,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/517/properties/label = \"index.html\""
+        "snippet": "/features/494/properties/label = \"index.html\""
       }
     },
     {
@@ -63307,7 +63721,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/523/properties/label = \"index.html\""
+        "snippet": "/features/518/properties/label = \"index.html\""
       }
     },
     {
@@ -63406,7 +63820,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/558/properties/label = \"index.html\""
+        "snippet": "/features/532/properties/label = \"index.html\""
       }
     },
     {
@@ -63417,7 +63831,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/600/properties/label = \"index.html\""
+        "snippet": "/features/533/properties/label = \"index.html\""
       }
     },
     {
@@ -63428,7 +63842,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/601/properties/label = \"index.html\""
+        "snippet": "/features/534/properties/label = \"index.html\""
       }
     },
     {
@@ -63439,7 +63853,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/851/properties/label = \"index.html\""
+        "snippet": "/features/535/properties/label = \"index.html\""
       }
     },
     {
@@ -63450,7 +63864,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/852/properties/label = \"index.html\""
+        "snippet": "/features/536/properties/label = \"index.html\""
       }
     },
     {
@@ -63461,7 +63875,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/853/properties/label = \"index.html\""
+        "snippet": "/features/537/properties/label = \"index.html\""
       }
     },
     {
@@ -63472,7 +63886,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/854/properties/label = \"index.html\""
+        "snippet": "/features/538/properties/label = \"index.html\""
       }
     },
     {
@@ -63483,7 +63897,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/855/properties/label = \"index.html\""
+        "snippet": "/features/539/properties/label = \"index.html\""
       }
     },
     {
@@ -63494,7 +63908,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/856/properties/label = \"index.html\""
+        "snippet": "/features/540/properties/label = \"index.html\""
       }
     },
     {
@@ -63505,7 +63919,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/857/properties/label = \"index.html\""
+        "snippet": "/features/541/properties/label = \"index.html\""
       }
     },
     {
@@ -63516,7 +63930,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/858/properties/label = \"index.html\""
+        "snippet": "/features/542/properties/label = \"index.html\""
       }
     },
     {
@@ -63527,7 +63941,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/859/properties/label = \"index.html\""
+        "snippet": "/features/543/properties/label = \"index.html\""
       }
     },
     {
@@ -63538,7 +63952,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/860/properties/label = \"index.html\""
+        "snippet": "/features/544/properties/label = \"index.html\""
       }
     },
     {
@@ -63549,7 +63963,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/863/properties/label = \"index.html\""
+        "snippet": "/features/545/properties/label = \"index.html\""
       }
     },
     {
@@ -63560,7 +63974,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/956/properties/label = \"index.html\""
+        "snippet": "/features/546/properties/label = \"index.html\""
       }
     },
     {
@@ -63571,7 +63985,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/1024/properties/label = \"index.html\""
+        "snippet": "/features/547/properties/label = \"index.html\""
       }
     },
     {
@@ -63582,7 +63996,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/1025/properties/label = \"index.html\""
+        "snippet": "/features/548/properties/label = \"index.html\""
       }
     },
     {
@@ -63593,7 +64007,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/1026/properties/label = \"index.html\""
+        "snippet": "/features/549/properties/label = \"index.html\""
       }
     },
     {
@@ -63604,7 +64018,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/1027/properties/label = \"index.html\""
+        "snippet": "/features/550/properties/label = \"index.html\""
       }
     },
     {
@@ -63615,7 +64029,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/1028/properties/label = \"index.html\""
+        "snippet": "/features/551/properties/label = \"index.html\""
       }
     },
     {
@@ -63626,7 +64040,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/1029/properties/label = \"index.html\""
+        "snippet": "/features/552/properties/label = \"index.html\""
       }
     },
     {
@@ -63637,7 +64051,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/1030/properties/label = \"index.html\""
+        "snippet": "/features/579/properties/label = \"index.html\""
       }
     },
     {
@@ -63648,7 +64062,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/1031/properties/label = \"index.html\""
+        "snippet": "/features/621/properties/label = \"index.html\""
       }
     },
     {
@@ -63659,7 +64073,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/1049/properties/label = \"index.html\""
+        "snippet": "/features/622/properties/label = \"index.html\""
       }
     },
     {
@@ -63670,7 +64084,238 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/1127/properties/label = \"index.html\""
+        "snippet": "/features/875/properties/label = \"index.html\""
+      }
+    },
+    {
+      "from": "Ventusltd/spiders::species/genome-spider/data/nodes.json",
+      "to": "Ventusltd/spiders::index.html",
+      "type": "manifest-path",
+      "evidence": {
+        "file": "species/genome-spider/data/nodes.json",
+        "line": 0,
+        "pattern": "json:\"label\"",
+        "snippet": "/features/876/properties/label = \"index.html\""
+      }
+    },
+    {
+      "from": "Ventusltd/spiders::species/genome-spider/data/nodes.json",
+      "to": "Ventusltd/spiders::index.html",
+      "type": "manifest-path",
+      "evidence": {
+        "file": "species/genome-spider/data/nodes.json",
+        "line": 0,
+        "pattern": "json:\"label\"",
+        "snippet": "/features/877/properties/label = \"index.html\""
+      }
+    },
+    {
+      "from": "Ventusltd/spiders::species/genome-spider/data/nodes.json",
+      "to": "Ventusltd/spiders::index.html",
+      "type": "manifest-path",
+      "evidence": {
+        "file": "species/genome-spider/data/nodes.json",
+        "line": 0,
+        "pattern": "json:\"label\"",
+        "snippet": "/features/878/properties/label = \"index.html\""
+      }
+    },
+    {
+      "from": "Ventusltd/spiders::species/genome-spider/data/nodes.json",
+      "to": "Ventusltd/spiders::index.html",
+      "type": "manifest-path",
+      "evidence": {
+        "file": "species/genome-spider/data/nodes.json",
+        "line": 0,
+        "pattern": "json:\"label\"",
+        "snippet": "/features/879/properties/label = \"index.html\""
+      }
+    },
+    {
+      "from": "Ventusltd/spiders::species/genome-spider/data/nodes.json",
+      "to": "Ventusltd/spiders::index.html",
+      "type": "manifest-path",
+      "evidence": {
+        "file": "species/genome-spider/data/nodes.json",
+        "line": 0,
+        "pattern": "json:\"label\"",
+        "snippet": "/features/880/properties/label = \"index.html\""
+      }
+    },
+    {
+      "from": "Ventusltd/spiders::species/genome-spider/data/nodes.json",
+      "to": "Ventusltd/spiders::index.html",
+      "type": "manifest-path",
+      "evidence": {
+        "file": "species/genome-spider/data/nodes.json",
+        "line": 0,
+        "pattern": "json:\"label\"",
+        "snippet": "/features/881/properties/label = \"index.html\""
+      }
+    },
+    {
+      "from": "Ventusltd/spiders::species/genome-spider/data/nodes.json",
+      "to": "Ventusltd/spiders::index.html",
+      "type": "manifest-path",
+      "evidence": {
+        "file": "species/genome-spider/data/nodes.json",
+        "line": 0,
+        "pattern": "json:\"label\"",
+        "snippet": "/features/882/properties/label = \"index.html\""
+      }
+    },
+    {
+      "from": "Ventusltd/spiders::species/genome-spider/data/nodes.json",
+      "to": "Ventusltd/spiders::index.html",
+      "type": "manifest-path",
+      "evidence": {
+        "file": "species/genome-spider/data/nodes.json",
+        "line": 0,
+        "pattern": "json:\"label\"",
+        "snippet": "/features/883/properties/label = \"index.html\""
+      }
+    },
+    {
+      "from": "Ventusltd/spiders::species/genome-spider/data/nodes.json",
+      "to": "Ventusltd/spiders::index.html",
+      "type": "manifest-path",
+      "evidence": {
+        "file": "species/genome-spider/data/nodes.json",
+        "line": 0,
+        "pattern": "json:\"label\"",
+        "snippet": "/features/884/properties/label = \"index.html\""
+      }
+    },
+    {
+      "from": "Ventusltd/spiders::species/genome-spider/data/nodes.json",
+      "to": "Ventusltd/spiders::index.html",
+      "type": "manifest-path",
+      "evidence": {
+        "file": "species/genome-spider/data/nodes.json",
+        "line": 0,
+        "pattern": "json:\"label\"",
+        "snippet": "/features/887/properties/label = \"index.html\""
+      }
+    },
+    {
+      "from": "Ventusltd/spiders::species/genome-spider/data/nodes.json",
+      "to": "Ventusltd/spiders::index.html",
+      "type": "manifest-path",
+      "evidence": {
+        "file": "species/genome-spider/data/nodes.json",
+        "line": 0,
+        "pattern": "json:\"label\"",
+        "snippet": "/features/980/properties/label = \"index.html\""
+      }
+    },
+    {
+      "from": "Ventusltd/spiders::species/genome-spider/data/nodes.json",
+      "to": "Ventusltd/spiders::index.html",
+      "type": "manifest-path",
+      "evidence": {
+        "file": "species/genome-spider/data/nodes.json",
+        "line": 0,
+        "pattern": "json:\"label\"",
+        "snippet": "/features/1050/properties/label = \"index.html\""
+      }
+    },
+    {
+      "from": "Ventusltd/spiders::species/genome-spider/data/nodes.json",
+      "to": "Ventusltd/spiders::index.html",
+      "type": "manifest-path",
+      "evidence": {
+        "file": "species/genome-spider/data/nodes.json",
+        "line": 0,
+        "pattern": "json:\"label\"",
+        "snippet": "/features/1051/properties/label = \"index.html\""
+      }
+    },
+    {
+      "from": "Ventusltd/spiders::species/genome-spider/data/nodes.json",
+      "to": "Ventusltd/spiders::index.html",
+      "type": "manifest-path",
+      "evidence": {
+        "file": "species/genome-spider/data/nodes.json",
+        "line": 0,
+        "pattern": "json:\"label\"",
+        "snippet": "/features/1052/properties/label = \"index.html\""
+      }
+    },
+    {
+      "from": "Ventusltd/spiders::species/genome-spider/data/nodes.json",
+      "to": "Ventusltd/spiders::index.html",
+      "type": "manifest-path",
+      "evidence": {
+        "file": "species/genome-spider/data/nodes.json",
+        "line": 0,
+        "pattern": "json:\"label\"",
+        "snippet": "/features/1053/properties/label = \"index.html\""
+      }
+    },
+    {
+      "from": "Ventusltd/spiders::species/genome-spider/data/nodes.json",
+      "to": "Ventusltd/spiders::index.html",
+      "type": "manifest-path",
+      "evidence": {
+        "file": "species/genome-spider/data/nodes.json",
+        "line": 0,
+        "pattern": "json:\"label\"",
+        "snippet": "/features/1054/properties/label = \"index.html\""
+      }
+    },
+    {
+      "from": "Ventusltd/spiders::species/genome-spider/data/nodes.json",
+      "to": "Ventusltd/spiders::index.html",
+      "type": "manifest-path",
+      "evidence": {
+        "file": "species/genome-spider/data/nodes.json",
+        "line": 0,
+        "pattern": "json:\"label\"",
+        "snippet": "/features/1055/properties/label = \"index.html\""
+      }
+    },
+    {
+      "from": "Ventusltd/spiders::species/genome-spider/data/nodes.json",
+      "to": "Ventusltd/spiders::index.html",
+      "type": "manifest-path",
+      "evidence": {
+        "file": "species/genome-spider/data/nodes.json",
+        "line": 0,
+        "pattern": "json:\"label\"",
+        "snippet": "/features/1056/properties/label = \"index.html\""
+      }
+    },
+    {
+      "from": "Ventusltd/spiders::species/genome-spider/data/nodes.json",
+      "to": "Ventusltd/spiders::index.html",
+      "type": "manifest-path",
+      "evidence": {
+        "file": "species/genome-spider/data/nodes.json",
+        "line": 0,
+        "pattern": "json:\"label\"",
+        "snippet": "/features/1057/properties/label = \"index.html\""
+      }
+    },
+    {
+      "from": "Ventusltd/spiders::species/genome-spider/data/nodes.json",
+      "to": "Ventusltd/spiders::index.html",
+      "type": "manifest-path",
+      "evidence": {
+        "file": "species/genome-spider/data/nodes.json",
+        "line": 0,
+        "pattern": "json:\"label\"",
+        "snippet": "/features/1075/properties/label = \"index.html\""
+      }
+    },
+    {
+      "from": "Ventusltd/spiders::species/genome-spider/data/nodes.json",
+      "to": "Ventusltd/spiders::index.html",
+      "type": "manifest-path",
+      "evidence": {
+        "file": "species/genome-spider/data/nodes.json",
+        "line": 0,
+        "pattern": "json:\"label\"",
+        "snippet": "/features/1153/properties/label = \"index.html\""
       }
     },
     {
@@ -63681,7 +64326,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"child_manifest\"",
-        "snippet": "/features/1177/properties/child_manifest = \"../../../codex/build-plan/data/manifest.json\""
+        "snippet": "/features/1203/properties/child_manifest = \"../../../codex/build-plan/data/manifest.json\""
       }
     },
     {
@@ -63692,7 +64337,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/1185/properties/label = \"edges.json\""
+        "snippet": "/features/1213/properties/label = \"edges.json\""
       }
     },
     {
@@ -63703,7 +64348,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/1187/properties/label = \"manifest.json\""
+        "snippet": "/features/1215/properties/label = \"manifest.json\""
       }
     },
     {
@@ -63714,7 +64359,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/1189/properties/label = \"index.html\""
+        "snippet": "/features/1217/properties/label = \"index.html\""
       }
     },
     {
@@ -63725,7 +64370,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/1200/properties/label = \"index.html\""
+        "snippet": "/features/1228/properties/label = \"index.html\""
       }
     },
     {
@@ -63736,7 +64381,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/1201/properties/label = \"index.html\""
+        "snippet": "/features/1229/properties/label = \"index.html\""
       }
     },
     {
@@ -63747,7 +64392,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/1202/properties/label = \"edges.json\""
+        "snippet": "/features/1230/properties/label = \"edges.json\""
       }
     },
     {
@@ -63758,7 +64403,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/1203/properties/label = \"gridatlas-lineage.json\""
+        "snippet": "/features/1231/properties/label = \"gridatlas-lineage.json\""
       }
     },
     {
@@ -63769,7 +64414,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/1204/properties/label = \"manifest.json\""
+        "snippet": "/features/1232/properties/label = \"manifest.json\""
       }
     },
     {
@@ -63780,7 +64425,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/1208/properties/label = \"index.html\""
+        "snippet": "/features/1236/properties/label = \"index.html\""
       }
     },
     {
@@ -63791,7 +64436,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/1209/properties/label = \"edges.json\""
+        "snippet": "/features/1237/properties/label = \"edges.json\""
       }
     },
     {
@@ -63802,7 +64447,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/1211/properties/label = \"index.html\""
+        "snippet": "/features/1239/properties/label = \"index.html\""
       }
     },
     {
@@ -63813,7 +64458,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/1215/properties/label = \"index.html\""
+        "snippet": "/features/1245/properties/label = \"index.html\""
       }
     },
     {
@@ -63824,7 +64469,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/1237/properties/label = \"index.html\""
+        "snippet": "/features/1276/properties/label = \"index.html\""
       }
     },
     {
@@ -63835,7 +64480,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/1238/properties/label = \"index.html\""
+        "snippet": "/features/1277/properties/label = \"index.html\""
       }
     },
     {
@@ -63846,7 +64491,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/1274/properties/label = \"edges.json\""
+        "snippet": "/features/1321/properties/label = \"edges.json\""
       }
     },
     {
@@ -63857,7 +64502,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/1275/properties/label = \"manifest.json\""
+        "snippet": "/features/1322/properties/label = \"manifest.json\""
       }
     },
     {
@@ -63868,7 +64513,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/1277/properties/label = \"edges.json\""
+        "snippet": "/features/1324/properties/label = \"edges.json\""
       }
     },
     {
@@ -63879,7 +64524,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/1279/properties/label = \"manifest.json\""
+        "snippet": "/features/1326/properties/label = \"manifest.json\""
       }
     },
     {
@@ -65098,8 +65743,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 1627,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 1662,
             "hash": "36ba3e77237b67ee"
           },
           {
@@ -65208,8 +65853,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 1731,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 1766,
             "hash": "d25f9e5dd6ac7cc7"
           },
           {
@@ -65275,8 +65920,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 1719,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 1754,
             "hash": "17c4a36f42dd15f3"
           },
           {
@@ -65980,8 +66625,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 1661,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 1696,
             "hash": "47a2cb69d8e9cde3"
           },
           {
@@ -66047,8 +66692,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 1687,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 1722,
             "hash": "24d9457f7ef90d24"
           },
           {
@@ -66084,8 +66729,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 8292,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 8332,
             "hash": "9b4248fab3f80225"
           },
           {
@@ -66145,20 +66790,20 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 1907,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 1942,
             "hash": "6b3578d4980fc2af"
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 3418,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 3453,
             "hash": "c5a844bc39b0921f"
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 3701,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 3736,
             "hash": "3b01895dac7155c5"
           },
           {
@@ -66287,8 +66932,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 1980,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 2015,
             "hash": "13befccf67abd3c3"
           },
           {
@@ -66422,8 +67067,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 8305,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 8345,
             "hash": "4c1a4a7d8d9aaf13"
           }
         ],
@@ -66447,8 +67092,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 1827,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 1862,
             "hash": "b84d34f6744dbab1"
           },
           {
@@ -66484,8 +67129,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 1835,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 1870,
             "hash": "1289882cf20848dd"
           },
           {
@@ -66521,8 +67166,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 1894,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 1929,
             "hash": "2b66c5c0268951d4"
           },
           {
@@ -66558,8 +67203,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 1926,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 1961,
             "hash": "9997079451270530"
           },
           {
@@ -66595,8 +67240,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 1940,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 1975,
             "hash": "9711f2fed69ab842"
           },
           {
@@ -66656,26 +67301,26 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 1993,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 2028,
             "hash": "eed59d339bcaac7f"
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 2616,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 2651,
             "hash": "7ddba26fe18eba8b"
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 3506,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 3541,
             "hash": "c2b308561f13edfd"
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 3786,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 3821,
             "hash": "2e3f4ef7afece244"
           },
           {
@@ -67131,8 +67776,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 2208,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 2243,
             "hash": "262773d7a9470652"
           },
           {
@@ -67180,20 +67825,20 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 2219,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 2254,
             "hash": "1e8f66656be04917"
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 3456,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 3491,
             "hash": "a6db1d1506283d7c"
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 3731,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 3766,
             "hash": "bfc4ed553aa89c1c"
           },
           {
@@ -67229,8 +67874,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 2256,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 2291,
             "hash": "9926f3d7f9d6c420"
           },
           {
@@ -67260,8 +67905,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 2267,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 2302,
             "hash": "ae70bb2faae56470"
           },
           {
@@ -67291,8 +67936,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 2287,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 2322,
             "hash": "58f83b2aa06d3e91"
           },
           {
@@ -67322,8 +67967,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 2415,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 2450,
             "hash": "db818a9a8f201e71"
           },
           {
@@ -67353,8 +67998,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 1874,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 1909,
             "hash": "9e40ab984dfda9ab"
           },
           {
@@ -67384,8 +68029,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 1954,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 1989,
             "hash": "c0284974cf206f10"
           },
           {
@@ -67415,8 +68060,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 2581,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 2616,
             "hash": "c6ae7ac211a232d7"
           },
           {
@@ -67446,8 +68091,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 2592,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 2627,
             "hash": "35bbc2b159fd3087"
           },
           {
@@ -67483,8 +68128,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 2871,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 2906,
             "hash": "c4e666d8e440921d"
           }
         ],
@@ -67508,8 +68153,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 2873,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 2908,
             "hash": "cf85efed22840b1d"
           }
         ],
@@ -67533,8 +68178,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 2900,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 2935,
             "hash": "1d0359af530a7663"
           }
         ],
@@ -67558,8 +68203,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 3000,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 3035,
             "hash": "3b754e25bc39ce43"
           }
         ],
@@ -67583,8 +68228,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 3017,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 3052,
             "hash": "fdec6f0a6ca4b177"
           }
         ],
@@ -67608,8 +68253,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 3085,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 3120,
             "hash": "dbaf495769585a7d"
           }
         ],
@@ -67633,8 +68278,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 3253,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 3288,
             "hash": "d8af478c748b904e"
           }
         ],
@@ -67652,8 +68297,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 3387,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 3422,
             "hash": "ee3f9f506746d0c7"
           }
         ],
@@ -67671,8 +68316,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 3394,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 3429,
             "hash": "63bf7224b0270db1"
           }
         ],
@@ -67690,8 +68335,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 3404,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 3439,
             "hash": "886a472c07274f55"
           }
         ],
@@ -67709,8 +68354,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 3726,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 3761,
             "hash": "ed3317e525c98bf1"
           }
         ],
@@ -67728,8 +68373,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 3811,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 3846,
             "hash": "abf3e6408632459e"
           }
         ],
@@ -67747,8 +68392,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 3818,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 3853,
             "hash": "ddf57c7371beb061"
           },
           {
@@ -67772,8 +68417,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 3900,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 3935,
             "hash": "f20494c8ab72abd6"
           }
         ],
@@ -67791,8 +68436,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 3060,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 3095,
             "hash": "2cafeb184db3cf07"
           }
         ],
@@ -67810,8 +68455,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 6331,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 6371,
             "hash": "c3c6b256304de923"
           }
         ],
@@ -67829,8 +68474,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 6338,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 6378,
             "hash": "96e8bc0d30b08bbe"
           }
         ],
@@ -67848,8 +68493,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 6366,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 6406,
             "hash": "3cac7c11e8c8376c"
           }
         ],
@@ -67867,8 +68512,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 6375,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 6415,
             "hash": "54a5256b343dc223"
           }
         ],
@@ -67886,8 +68531,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 6396,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 6436,
             "hash": "d31f7eb5f6f3c765"
           }
         ],
@@ -67905,8 +68550,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 6413,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 6453,
             "hash": "407de86b638f9220"
           }
         ],
@@ -67924,8 +68569,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 6426,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 6466,
             "hash": "4c66f38a1e455ce4"
           }
         ],
@@ -67973,8 +68618,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 6449,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 6489,
             "hash": "5d1a98e119eda16d"
           }
         ],
@@ -68028,8 +68673,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 6464,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 6504,
             "hash": "d221cf569365a987"
           }
         ],
@@ -68077,8 +68722,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 6518,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 6558,
             "hash": "903e1b977f6a7666"
           }
         ],
@@ -68096,8 +68741,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 6525,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 6565,
             "hash": "c8b020bf03b908fa"
           }
         ],
@@ -68115,8 +68760,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 6531,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 6571,
             "hash": "6c034e32a5a75fdf"
           }
         ],
@@ -68134,8 +68779,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 6537,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 6577,
             "hash": "ead8eb43d2daa563"
           }
         ],
@@ -68153,8 +68798,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 6546,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 6586,
             "hash": "86c78f3012ef8951"
           }
         ],
@@ -68172,8 +68817,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 6557,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 6597,
             "hash": "37f8dbc6612ff527"
           }
         ],
@@ -68191,8 +68836,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 6588,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 6628,
             "hash": "82d9b32a7d574968"
           }
         ],
@@ -68312,20 +68957,20 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 5961,
-            "hash": "0e28e87bcd41dcf2"
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 5996,
+            "hash": "14b453bc81daaed4"
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 6626,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 6666,
             "hash": "c7781a1c9fe062a7"
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 8136,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 8176,
             "hash": "4c461edcaaa1fa3d"
           }
         ],
@@ -68343,8 +68988,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 4041,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 4076,
             "hash": "27bd17e0e0974e3a"
           }
         ],
@@ -68362,8 +69007,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 4045,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 4080,
             "hash": "0abb6cab704095a6"
           }
         ],
@@ -68381,8 +69026,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 4058,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 4093,
             "hash": "46a052cca3763bdf"
           }
         ],
@@ -68400,8 +69045,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 4065,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 4100,
             "hash": "5873678ccc6c34d6"
           }
         ],
@@ -68419,8 +69064,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 4078,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 4113,
             "hash": "8539499887aa08b6"
           }
         ],
@@ -68438,8 +69083,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 4095,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 4130,
             "hash": "439cb5bb2b4a4208"
           }
         ],
@@ -68457,8 +69102,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 4280,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 4315,
             "hash": "e78ccc49eb459503"
           },
           {
@@ -68621,12 +69266,12 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 4336,
-            "hash": "ef513e615c8d51d6"
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 4371,
+            "hash": "89e1b56e6cdcc14a"
           }
         ],
-        "agree": true
+        "agree": false
       },
       {
         "name": "array",
@@ -68640,8 +69285,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 4385,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 4420,
             "hash": "5a85b3450ba02924"
           }
         ],
@@ -68659,8 +69304,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 4389,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 4424,
             "hash": "3990fde74ca51b9d"
           }
         ],
@@ -68678,8 +69323,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 4393,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 4428,
             "hash": "62edd0ef4f077d1e"
           }
         ],
@@ -68697,8 +69342,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 4401,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 4436,
             "hash": "606de79280eacfeb"
           }
         ],
@@ -68716,8 +69361,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 4415,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 4450,
             "hash": "f0c785e3ee49dcb1"
           }
         ],
@@ -68735,8 +69380,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 4421,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 4456,
             "hash": "6adf831c302e3753"
           }
         ],
@@ -68754,8 +69399,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 4455,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 4490,
             "hash": "377ad38bfa8d09d8"
           }
         ],
@@ -68773,8 +69418,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 4475,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 4510,
             "hash": "87ed0c9f543dfabe"
           }
         ],
@@ -68792,8 +69437,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 4701,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 4736,
             "hash": "efe8a5b0ea200e75"
           }
         ],
@@ -68811,8 +69456,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 4719,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 4754,
             "hash": "29dc9da03a91b546"
           }
         ],
@@ -68830,8 +69475,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 4733,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 4768,
             "hash": "59612c9eb338aa5c"
           }
         ],
@@ -68849,8 +69494,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 4748,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 4783,
             "hash": "fc7a47badaf367b0"
           }
         ],
@@ -68868,8 +69513,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 4761,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 4796,
             "hash": "fc6598869f6ce5fd"
           }
         ],
@@ -68887,8 +69532,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 4782,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 4817,
             "hash": "b7135721f946da54"
           }
         ],
@@ -68906,8 +69551,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 4795,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 4830,
             "hash": "89b32b19436a56c9"
           }
         ],
@@ -68925,8 +69570,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 4898,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 4933,
             "hash": "b522b4899d9c53d3"
           }
         ],
@@ -68944,8 +69589,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 4955,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 4990,
             "hash": "f385af875e390e43"
           }
         ],
@@ -68963,8 +69608,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 5091,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 5126,
             "hash": "2a28a4a36cad9ff4"
           }
         ],
@@ -68982,8 +69627,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 5131,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 5166,
             "hash": "276f6aef45d67340"
           }
         ],
@@ -69001,8 +69646,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 5136,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 5171,
             "hash": "65f34b22301ccee4"
           }
         ],
@@ -69020,8 +69665,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 5152,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 5187,
             "hash": "316e5fde261e8169"
           }
         ],
@@ -69039,8 +69684,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 5167,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 5202,
             "hash": "84a0bbcb48278077"
           }
         ],
@@ -69058,8 +69703,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 5172,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 5207,
             "hash": "77001d5e84fdf7e9"
           }
         ],
@@ -69077,8 +69722,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 5192,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 5227,
             "hash": "f36c0c0eeeba5c25"
           }
         ],
@@ -69096,8 +69741,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 5311,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 5346,
             "hash": "9a646cbab01cf06b"
           }
         ],
@@ -69115,8 +69760,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 5332,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 5367,
             "hash": "0f73794aa2ae8dfb"
           }
         ],
@@ -69134,8 +69779,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 5341,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 5376,
             "hash": "d6363a4863373a3e"
           }
         ],
@@ -69153,8 +69798,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 5348,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 5383,
             "hash": "2ba7d24f328a51c4"
           }
         ],
@@ -69172,8 +69817,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 5396,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 5431,
             "hash": "f4125d37a294b605"
           }
         ],
@@ -69191,8 +69836,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 5424,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 5459,
             "hash": "032517c37362d2ce"
           }
         ],
@@ -69210,8 +69855,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 5434,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 5469,
             "hash": "8cf84e0ed27d0ddd"
           }
         ],
@@ -69229,8 +69874,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 5453,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 5488,
             "hash": "16d66d5f80c1222d"
           }
         ],
@@ -69248,8 +69893,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 5512,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 5547,
             "hash": "c3400d47024b3b72"
           }
         ],
@@ -69267,8 +69912,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 5520,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 5555,
             "hash": "d673053b75fe8d4d"
           }
         ],
@@ -69286,8 +69931,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 5601,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 5636,
             "hash": "ef3a64ec965a29fd"
           }
         ],
@@ -69305,8 +69950,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 5623,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 5658,
             "hash": "713dfc4733405b44"
           }
         ],
@@ -69324,8 +69969,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 5630,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 5665,
             "hash": "3b1ae528a0d078e7"
           }
         ],
@@ -69343,8 +69988,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 5664,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 5699,
             "hash": "e3a541ac4e4da04c"
           }
         ],
@@ -69362,8 +70007,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 5706,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 5741,
             "hash": "789c804a4c9b6a61"
           }
         ],
@@ -69381,8 +70026,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 5733,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 5768,
             "hash": "a4f3f1a24bef0092"
           }
         ],
@@ -69400,8 +70045,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 5742,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 5777,
             "hash": "4f31ab129c506d8a"
           }
         ],
@@ -69449,8 +70094,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 5804,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 5839,
             "hash": "feabf849ae4201a5"
           }
         ],
@@ -69468,8 +70113,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 5813,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 5848,
             "hash": "bd82236c040180b3"
           }
         ],
@@ -69487,8 +70132,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 5835,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 5870,
             "hash": "a27d668f694e8e10"
           }
         ],
@@ -69506,8 +70151,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 5868,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 5903,
             "hash": "e8ab9691dbddcf8c"
           }
         ],
@@ -69525,8 +70170,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 6066,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 6106,
             "hash": "05967bfab5a27f81"
           }
         ],
@@ -69556,8 +70201,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 6084,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 6124,
             "hash": "d89203beb3fa2154"
           }
         ],
@@ -69575,8 +70220,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 6157,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 6197,
             "hash": "eb9aa8b00b997a29"
           }
         ],
@@ -69594,8 +70239,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 6170,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 6210,
             "hash": "c3c33f5ab1bb59d6"
           }
         ],
@@ -69613,8 +70258,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 6188,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 6228,
             "hash": "a4d9d325b92709bc"
           }
         ],
@@ -69686,8 +70331,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 7066,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 7106,
             "hash": "a82091fba5754cd8"
           }
         ],
@@ -69759,8 +70404,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 7073,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 7113,
             "hash": "d6800e76e2e61b46"
           }
         ],
@@ -69832,8 +70477,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 7089,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 7129,
             "hash": "31daaa11c7e7ca4c"
           }
         ],
@@ -69905,8 +70550,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 7285,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 7325,
             "hash": "d05ed6744525ec22"
           }
         ],
@@ -69978,8 +70623,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 7347,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 7387,
             "hash": "29de60b1ea0548f4"
           }
         ],
@@ -70051,8 +70696,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 7360,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 7400,
             "hash": "c92a4e544fb4d300"
           }
         ],
@@ -70124,8 +70769,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 7366,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 7406,
             "hash": "2f7df13c691b25f6"
           }
         ],
@@ -70197,8 +70842,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 7380,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 7420,
             "hash": "9284eb5dc929e6f6"
           }
         ],
@@ -70270,8 +70915,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 7465,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 7505,
             "hash": "341db8e1defd7356"
           }
         ],
@@ -70343,8 +70988,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 7580,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 7620,
             "hash": "c34354ceb105db6a"
           }
         ],
@@ -70416,8 +71061,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 7586,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 7626,
             "hash": "0ebc68cd4cc28756"
           }
         ],
@@ -70489,8 +71134,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 7611,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 7651,
             "hash": "04f0bf8a4ced65ec"
           }
         ],
@@ -70562,8 +71207,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 7643,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 7683,
             "hash": "dd73b81b33feb03b"
           }
         ],
@@ -70635,8 +71280,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 7694,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 7734,
             "hash": "2d3bcb0acafcb6fb"
           }
         ],
@@ -70708,8 +71353,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 7876,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 7916,
             "hash": "30f62991c430ee82"
           }
         ],
@@ -70781,8 +71426,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 7891,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 7931,
             "hash": "2038e4b2e9ab854f"
           }
         ],
@@ -70854,8 +71499,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 7976,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 8016,
             "hash": "169c134c247c5eca"
           }
         ],
@@ -70927,8 +71572,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 7984,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 8024,
             "hash": "313223ccfd5ef0fa"
           }
         ],
@@ -71000,8 +71645,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 8051,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 8091,
             "hash": "d38e724694ed5d0d"
           }
         ],
@@ -71073,8 +71718,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 8077,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 8117,
             "hash": "b63dd108c27c9ab4"
           }
         ],
@@ -71146,8 +71791,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 8091,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 8131,
             "hash": "2e7f302d6ec5a286"
           }
         ],
@@ -71219,8 +71864,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 8107,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 8147,
             "hash": "a1c011b92c598173"
           }
         ],
@@ -71352,14 +71997,14 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 8125,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 8165,
             "hash": "5db2204274fcc31b"
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 7915,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 7955,
             "hash": "f1c451d7ffa093b3"
           }
         ],
@@ -71449,8 +72094,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 7645,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 7685,
             "hash": "9ed116ceed341e58"
           }
         ],
@@ -77689,8 +78334,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 8436,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 8476,
             "hash": "1e9436636491c6b0"
           }
         ],
@@ -77726,7 +78371,7 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
             "line": 36,
             "hash": "eb00af8819a4dd2d"
           }
@@ -77763,7 +78408,7 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
             "line": 49,
             "hash": "438217ba43824f11"
           }
@@ -77800,7 +78445,7 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
             "line": 53,
             "hash": "710dcf501cd30b40"
           }
@@ -77837,7 +78482,7 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
             "line": 74,
             "hash": "95374bc38597a8db"
           },
@@ -77880,7 +78525,7 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
             "line": 142,
             "hash": "f1e1a75b7793b594"
           }
@@ -77917,7 +78562,7 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
             "line": 151,
             "hash": "01252398e835bfed"
           }
@@ -77954,7 +78599,7 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
             "line": 163,
             "hash": "25611fa90dc71b3a"
           }
@@ -77991,7 +78636,7 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
             "line": 180,
             "hash": "eb085d4dea942168"
           }
@@ -78028,7 +78673,7 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
             "line": 210,
             "hash": "598d61a25765ba65"
           }
@@ -78065,7 +78710,7 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
             "line": 249,
             "hash": "d26564b7d9953648"
           }
@@ -78102,7 +78747,7 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
             "line": 254,
             "hash": "01cbe617bf9e9475"
           }
@@ -78139,7 +78784,7 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
             "line": 268,
             "hash": "332c12df993c0922"
           }
@@ -78176,7 +78821,7 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
             "line": 275,
             "hash": "75c2548ac6e7f6e0"
           }
@@ -78213,7 +78858,7 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
             "line": 291,
             "hash": "0c89d38dca901695"
           }
@@ -78250,7 +78895,7 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
             "line": 319,
             "hash": "8d2871b5f051f00a"
           }
@@ -78287,7 +78932,7 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
             "line": 330,
             "hash": "49a2ef71c18612bb"
           }
@@ -78324,7 +78969,7 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
             "line": 370,
             "hash": "c77e6e947bad6a2c"
           }
@@ -78361,7 +79006,7 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
             "line": 391,
             "hash": "777a1f21a6745d9d"
           }
@@ -78398,7 +79043,7 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
             "line": 405,
             "hash": "76ac76c05f344716"
           }
@@ -78435,7 +79080,7 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
             "line": 425,
             "hash": "0b013b47e466eba2"
           }
@@ -78472,7 +79117,7 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
             "line": 434,
             "hash": "477d16edd02cbbb6"
           }
@@ -78509,7 +79154,7 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
             "line": 470,
             "hash": "6691a4e35f2debb5"
           }
@@ -78546,7 +79191,7 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
             "line": 485,
             "hash": "e83d134b7db1922e"
           }
@@ -78583,7 +79228,7 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
             "line": 492,
             "hash": "e1d28d31be714209"
           }
@@ -78620,7 +79265,7 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
             "line": 506,
             "hash": "1c7eca52945e3fba"
           }
@@ -78657,7 +79302,7 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
             "line": 554,
             "hash": "1c836dfb1c339e83"
           }
@@ -78694,7 +79339,7 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
             "line": 563,
             "hash": "12b1e2fb90b6bc03"
           }
@@ -78731,7 +79376,7 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
             "line": 568,
             "hash": "30121eacb364b9b9"
           }
@@ -78768,7 +79413,7 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
             "line": 573,
             "hash": "031aab65e03d726a"
           }
@@ -78805,7 +79450,7 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
             "line": 587,
             "hash": "d22031a21b02e4d5"
           }
@@ -78842,7 +79487,7 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
             "line": 613,
             "hash": "3500bcc3a1ff74fc"
           }
@@ -78879,7 +79524,7 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
             "line": 676,
             "hash": "6c1618bc8d32e985"
           }
@@ -78916,7 +79561,7 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
             "line": 710,
             "hash": "40f47dae39680946"
           }
@@ -78953,7 +79598,7 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
             "line": 721,
             "hash": "fdb1bff28a8a6b55"
           }
@@ -78990,7 +79635,7 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
             "line": 735,
             "hash": "bde2d934be313a4c"
           }
@@ -79027,7 +79672,7 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
             "line": 781,
             "hash": "8fdd6832f471e71c"
           }
@@ -79064,7 +79709,7 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
             "line": 796,
             "hash": "5b94c11c4ac3dbbb"
           }
@@ -79101,7 +79746,7 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
             "line": 797,
             "hash": "ecf530ca17311df1"
           }
@@ -79138,7 +79783,7 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
             "line": 802,
             "hash": "d898991c620e1a0c"
           }
@@ -79175,7 +79820,7 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
             "line": 813,
             "hash": "a3ba107131a7dc1a"
           }
@@ -79212,7 +79857,7 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
             "line": 826,
             "hash": "78b5c9dde3c02fc5"
           }
@@ -79249,7 +79894,7 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
             "line": 832,
             "hash": "2fe91bdd75536edf"
           }
@@ -79286,9 +79931,9 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
             "line": 852,
-            "hash": "4babf38cad1e5775"
+            "hash": "44e5e5b465e4fffe"
           },
           {
             "repo": "ventus-grid-engine",
@@ -79329,8 +79974,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 896,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 931,
             "hash": "e4e289eb4e944d35"
           }
         ],
@@ -79366,8 +80011,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 921,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 956,
             "hash": "c4afa39720f6c7db"
           }
         ],
@@ -79403,8 +80048,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 939,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 974,
             "hash": "fb3024744b153b72"
           }
         ],
@@ -79440,8 +80085,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 975,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 1010,
             "hash": "568936526d4363a2"
           }
         ],
@@ -79477,8 +80122,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 989,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 1024,
             "hash": "54f57cef4b564656"
           }
         ],
@@ -79514,8 +80159,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 1023,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 1058,
             "hash": "fb49eb66a67f832a"
           }
         ],
@@ -79551,8 +80196,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 1033,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 1068,
             "hash": "eaabd9a98ee26a31"
           }
         ],
@@ -79588,8 +80233,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 1143,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 1178,
             "hash": "b56c1325f89253d3"
           }
         ],
@@ -79625,8 +80270,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 1157,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 1192,
             "hash": "9b07a3b77bf3a0da"
           }
         ],
@@ -79662,8 +80307,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 1159,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 1194,
             "hash": "de20fba70fc5eaae"
           }
         ],
@@ -79699,8 +80344,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 1249,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 1284,
             "hash": "a24cd3ddfc1a1d74"
           }
         ],
@@ -79736,8 +80381,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 1278,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 1313,
             "hash": "e1098955d55dcf1c"
           }
         ],
@@ -79773,7 +80418,7 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
             "line": 741,
             "hash": "fb78c68277f1fefd"
           }
@@ -79804,8 +80449,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 1179,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 1214,
             "hash": "1495823807324657"
           }
         ],
@@ -79835,8 +80480,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 1187,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 1222,
             "hash": "275ef0ef91b26f45"
           }
         ],
@@ -79866,8 +80511,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 1206,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 1241,
             "hash": "fa8a399b161aa54f"
           }
         ],
@@ -79897,8 +80542,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 1213,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 1248,
             "hash": "df81e7666d0806ac"
           }
         ],
@@ -79928,8 +80573,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 1224,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 1259,
             "hash": "fa960d13c3f59336"
           }
         ],
@@ -79959,8 +80604,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 1238,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 1273,
             "hash": "3ea76384363ab3a1"
           }
         ],
@@ -81120,7 +81765,7 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
             "line": 305,
             "hash": "0dad283ff677673e"
           }
@@ -81139,8 +81784,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 1496,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 1531,
             "hash": "78f70ff951182ac1"
           }
         ],
@@ -81158,8 +81803,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 1498,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 1533,
             "hash": "b492a946f95b9751"
           }
         ],
@@ -81177,8 +81822,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 1515,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 1550,
             "hash": "9426cfd568c24063"
           }
         ],
@@ -83620,14 +84265,14 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
             "line": 58,
             "value": "6378.137"
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 1624,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 1659,
             "value": "6378.137"
           },
           {
@@ -83732,8 +84377,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 2579,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 2614,
             "value": "9999"
           },
           {
@@ -83769,8 +84414,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 2841,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 2876,
             "value": "100"
           }
         ],
@@ -83788,8 +84433,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 6262,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 6302,
             "value": "25"
           }
         ],
@@ -83807,8 +84452,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 4247,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 4282,
             "value": "1.245"
           },
           {
@@ -83838,8 +84483,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 4248,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 4283,
             "value": "1.13"
           },
           {
@@ -83869,8 +84514,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 4249,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 4284,
             "value": "1"
           },
           {
@@ -83900,8 +84545,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 4346,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 4381,
             "value": "60"
           }
         ],
@@ -83919,8 +84564,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 4347,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 4382,
             "value": "3"
           }
         ],
@@ -83938,8 +84583,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 4348,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 4383,
             "value": "63"
           }
         ],
@@ -84017,14 +84662,14 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 4349,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 4384,
             "value": "160"
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 8075,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 8115,
             "value": "80"
           }
         ],
@@ -84096,8 +84741,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 7059,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 7099,
             "value": "10000"
           }
         ],
@@ -84169,8 +84814,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 7555,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 7595,
             "value": "400"
           }
         ],
@@ -84242,8 +84887,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 7557,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 7597,
             "value": "20000"
           },
           {
@@ -84321,8 +84966,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 7576,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 7616,
             "value": "4000"
           }
         ],
@@ -84758,7 +85403,7 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
             "line": 63,
             "value": "22"
           }
@@ -84795,7 +85440,7 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
             "line": 64,
             "value": "16"
           }
@@ -84832,7 +85477,7 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
             "line": 68,
             "value": "220"
           }
@@ -84869,7 +85514,7 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
             "line": 69,
             "value": "100"
           }
@@ -84906,7 +85551,7 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
             "line": 71,
             "value": "24"
           },
@@ -84949,7 +85594,7 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
             "line": 72,
             "value": "0.337"
           }
@@ -84986,7 +85631,7 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
             "line": 482,
             "value": "1"
           }
@@ -85049,7 +85694,7 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
             "line": 67,
             "value": "10"
           }
@@ -85190,14 +85835,14 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 4349,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 4384,
             "value": "160"
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 8075,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 8115,
             "value": "80"
           }
         ]
@@ -85272,8 +85917,8 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 7557,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 7597,
             "value": "20000"
           },
           {
@@ -85324,7 +85969,7 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
             "line": 63,
             "value": "22"
           }
@@ -85364,7 +86009,7 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
             "line": 64,
             "value": "16"
           }
@@ -85623,6 +86268,12 @@
           },
           {
             "repo": "gridatlas",
+            "path": "tools/interconnectors/fetch_far_end_converters.py",
+            "line": 87,
+            "value": "6371.0088"
+          },
+          {
+            "repo": "gridatlas",
             "path": "tools/overnight/steps/202609012350-owner-boundary.mjs",
             "line": 166,
             "value": "6378.137"
@@ -85731,20 +86382,20 @@
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
             "line": 58,
             "value": "6378.137"
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 1613,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 1648,
             "value": "6378.137"
           },
           {
             "repo": "gridatlas",
-            "path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
-            "line": 1624,
+            "path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
+            "line": 1659,
             "value": "6378.137"
           },
           {
@@ -85916,18 +86567,18 @@
         "repo": "gridatlas",
         "dir": "atlas/manifests",
         "logical_name": "composition.json",
-        "count": 76,
+        "count": 77,
         "first_path": "atlas/manifests/202608301522-composition.json",
-        "last_path": "atlas/manifests/202609060259-composition.json",
+        "last_path": "atlas/manifests/202609062358-composition.json",
         "method": "filename-timestamp-prefix, not a git commit date"
       },
       {
         "repo": "gridatlas",
         "dir": "atlas/cartridges",
         "logical_name": "substation-intelligence-v9-63.js",
-        "count": 59,
+        "count": 62,
         "first_path": "atlas/cartridges/202609012045-substation-intelligence-v9-63.js",
-        "last_path": "atlas/cartridges/202609060259-substation-intelligence-v9-63.js",
+        "last_path": "atlas/cartridges/202609062358-substation-intelligence-v9-63.js",
         "method": "filename-timestamp-prefix, not a git commit date"
       },
       {
@@ -86030,6 +86681,15 @@
         "method": "filename-timestamp-prefix, not a git commit date"
       },
       {
+        "repo": "spiders",
+        "dir": "species/genome-spider/receipts",
+        "logical_name": "crawl.json",
+        "count": 8,
+        "first_path": "species/genome-spider/receipts/202609042137-crawl.json",
+        "last_path": "species/genome-spider/receipts/202609060753-crawl.json",
+        "method": "filename-timestamp-prefix, not a git commit date"
+      },
+      {
         "repo": "claude",
         "dir": "lanes",
         "logical_name": "codex.json",
@@ -86108,15 +86768,6 @@
         "count": 7,
         "first_path": "ui/cartridges/202608272130-sector-intelligence.mjs",
         "last_path": "ui/cartridges/202609010719-sector-intelligence.mjs",
-        "method": "filename-timestamp-prefix, not a git commit date"
-      },
-      {
-        "repo": "spiders",
-        "dir": "species/genome-spider/receipts",
-        "logical_name": "crawl.json",
-        "count": 7,
-        "first_path": "species/genome-spider/receipts/202609042137-crawl.json",
-        "last_path": "species/genome-spider/receipts/202609052052-crawl.json",
         "method": "filename-timestamp-prefix, not a git commit date"
       },
       {

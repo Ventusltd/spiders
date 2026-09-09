@@ -1,28 +1,28 @@
 {
   "schema": "genome-spider.gridatlas-lineage.v1",
-  "generated_at": "2026-09-08T08:03:12.354Z",
+  "generated_at": "2026-09-09T08:07:22.426Z",
   "generator": "spiders/species/genome-spider/lineage.mjs",
   "repo": "Ventusltd/gridatlas",
-  "compositions_available_on_disk": 85,
-  "generations_walked": 3,
+  "compositions_available_on_disk": 88,
+  "generations_walked": 6,
   "max_generations": 15,
-  "note": "Focused on the current composition and its parent_generation ancestry, capped at 15 generations (85 exist on disk in this checkout). Nodes are scoped per generation on purpose — the same cartridge id appearing in two generations is two distinct nodes, because the lineage between them is exactly what this graph exists to show.",
+  "note": "Focused on the current composition and its parent_generation ancestry, capped at 15 generations (88 exist on disk in this checkout). Nodes are scoped per generation on purpose — the same cartridge id appearing in two generations is two distinct nodes, because the lineage between them is exactly what this graph exists to show.",
   "nodes": [
     {
-      "id": "composition:202609080430",
-      "label": "composition 202609080430",
+      "id": "composition:202609080850",
+      "label": "composition 202609080850",
       "type": "composition",
       "rag": "green",
       "reason": "An interconnector arrival. Pipeline News' INTERCONNECTORS tab sends interconnector=<BMRS> with a label anchor; the project lane hands over, the interconnectors module frames the span and opens a card with each converter measured within its own search budget. Nothing is measured from the sea.",
-      "gh": "https://github.com/Ventusltd/gridatlas/blob/main/atlas/manifests/202609080430-composition.json",
+      "gh": "https://github.com/Ventusltd/gridatlas/blob/main/atlas/manifests/202609080850-composition.json",
       "ext": null,
       "first_commit": {
-        "sha": "d475608c51c4e7d42b4feb2b0dcb616c6d0b735d",
-        "date": "2026-09-08T05:22:17+01:00"
+        "sha": "b4227c5010db186c6f8764d180ae0976b3d760d2",
+        "date": "2026-09-08T09:52:58+01:00"
       },
       "last_commit": {
-        "sha": "d475608c51c4e7d42b4feb2b0dcb616c6d0b735d",
-        "date": "2026-09-08T05:22:17+01:00"
+        "sha": "b4227c5010db186c6f8764d180ae0976b3d760d2",
+        "date": "2026-09-08T09:52:58+01:00"
       },
       "commit_count": 1
     },
@@ -63,20 +63,20 @@
       "commit_count": 1
     },
     {
-      "id": "cartridge:sld-sandbox@202609080430",
-      "label": "sld-sandbox 202609080430",
+      "id": "cartridge:sld-sandbox@202609080850",
+      "label": "sld-sandbox 202609080850",
       "type": "cartridge",
       "rag": "green",
-      "reason": "v9.151 script slot=replace-script",
-      "gh": "https://github.com/Ventusltd/gridatlas/blob/main/atlas/cartridges/202609080430-sld-sandbox-v9-8.js",
+      "reason": "v9.154 script slot=replace-script",
+      "gh": "https://github.com/Ventusltd/gridatlas/blob/main/atlas/cartridges/202609080850-sld-sandbox-v9-8.js",
       "ext": null,
       "first_commit": {
-        "sha": "d475608c51c4e7d42b4feb2b0dcb616c6d0b735d",
-        "date": "2026-09-08T05:22:17+01:00"
+        "sha": "b4227c5010db186c6f8764d180ae0976b3d760d2",
+        "date": "2026-09-08T09:52:58+01:00"
       },
       "last_commit": {
-        "sha": "d475608c51c4e7d42b4feb2b0dcb616c6d0b735d",
-        "date": "2026-09-08T05:22:17+01:00"
+        "sha": "b4227c5010db186c6f8764d180ae0976b3d760d2",
+        "date": "2026-09-08T09:52:58+01:00"
       },
       "commit_count": 1
     },
@@ -95,6 +95,114 @@
       "last_commit": {
         "sha": "c4a39f87b1e8b4883f8a32302e4029712f97078f",
         "date": "2026-09-07T00:58:49+01:00"
+      },
+      "commit_count": 1
+    },
+    {
+      "id": "composition:202609080846",
+      "label": "composition 202609080846",
+      "type": "composition",
+      "rag": "grey",
+      "reason": "An interconnector arrival. Pipeline News' INTERCONNECTORS tab sends interconnector=<BMRS> with a label anchor; the project lane hands over, the interconnectors module frames the span and opens a card with each converter measured within its own search budget. Nothing is measured from the sea.",
+      "gh": "https://github.com/Ventusltd/gridatlas/blob/main/atlas/manifests/202609080846-composition.json",
+      "ext": null,
+      "first_commit": {
+        "sha": "b4b1d22f7da1128511f28d5e01b316a389dd33d3",
+        "date": "2026-09-08T09:48:41+01:00"
+      },
+      "last_commit": {
+        "sha": "b4b1d22f7da1128511f28d5e01b316a389dd33d3",
+        "date": "2026-09-08T09:48:41+01:00"
+      },
+      "commit_count": 1
+    },
+    {
+      "id": "cartridge:sld-sandbox@202609080846",
+      "label": "sld-sandbox 202609080846",
+      "type": "cartridge",
+      "rag": "grey",
+      "reason": "v9.153 script slot=replace-script",
+      "gh": "https://github.com/Ventusltd/gridatlas/blob/main/atlas/cartridges/202609080846-sld-sandbox-v9-8.js",
+      "ext": null,
+      "first_commit": {
+        "sha": "b4b1d22f7da1128511f28d5e01b316a389dd33d3",
+        "date": "2026-09-08T09:48:41+01:00"
+      },
+      "last_commit": {
+        "sha": "b4b1d22f7da1128511f28d5e01b316a389dd33d3",
+        "date": "2026-09-08T09:48:41+01:00"
+      },
+      "commit_count": 1
+    },
+    {
+      "id": "composition:202609080837",
+      "label": "composition 202609080837",
+      "type": "composition",
+      "rag": "grey",
+      "reason": "An interconnector arrival. Pipeline News' INTERCONNECTORS tab sends interconnector=<BMRS> with a label anchor; the project lane hands over, the interconnectors module frames the span and opens a card with each converter measured within its own search budget. Nothing is measured from the sea.",
+      "gh": "https://github.com/Ventusltd/gridatlas/blob/main/atlas/manifests/202609080837-composition.json",
+      "ext": null,
+      "first_commit": {
+        "sha": "b84e8b2ff9c3a4f7948a7923528b84786ea8db2d",
+        "date": "2026-09-08T09:43:59+01:00"
+      },
+      "last_commit": {
+        "sha": "b84e8b2ff9c3a4f7948a7923528b84786ea8db2d",
+        "date": "2026-09-08T09:43:59+01:00"
+      },
+      "commit_count": 1
+    },
+    {
+      "id": "cartridge:sld-sandbox@202609080837",
+      "label": "sld-sandbox 202609080837",
+      "type": "cartridge",
+      "rag": "grey",
+      "reason": "v9.152 script slot=replace-script",
+      "gh": "https://github.com/Ventusltd/gridatlas/blob/main/atlas/cartridges/202609080837-sld-sandbox-v9-8.js",
+      "ext": null,
+      "first_commit": {
+        "sha": "b84e8b2ff9c3a4f7948a7923528b84786ea8db2d",
+        "date": "2026-09-08T09:43:59+01:00"
+      },
+      "last_commit": {
+        "sha": "b84e8b2ff9c3a4f7948a7923528b84786ea8db2d",
+        "date": "2026-09-08T09:43:59+01:00"
+      },
+      "commit_count": 1
+    },
+    {
+      "id": "composition:202609080430",
+      "label": "composition 202609080430",
+      "type": "composition",
+      "rag": "grey",
+      "reason": "An interconnector arrival. Pipeline News' INTERCONNECTORS tab sends interconnector=<BMRS> with a label anchor; the project lane hands over, the interconnectors module frames the span and opens a card with each converter measured within its own search budget. Nothing is measured from the sea.",
+      "gh": "https://github.com/Ventusltd/gridatlas/blob/main/atlas/manifests/202609080430-composition.json",
+      "ext": null,
+      "first_commit": {
+        "sha": "d475608c51c4e7d42b4feb2b0dcb616c6d0b735d",
+        "date": "2026-09-08T05:22:17+01:00"
+      },
+      "last_commit": {
+        "sha": "d475608c51c4e7d42b4feb2b0dcb616c6d0b735d",
+        "date": "2026-09-08T05:22:17+01:00"
+      },
+      "commit_count": 1
+    },
+    {
+      "id": "cartridge:sld-sandbox@202609080430",
+      "label": "sld-sandbox 202609080430",
+      "type": "cartridge",
+      "rag": "grey",
+      "reason": "v9.151 script slot=replace-script",
+      "gh": "https://github.com/Ventusltd/gridatlas/blob/main/atlas/cartridges/202609080430-sld-sandbox-v9-8.js",
+      "ext": null,
+      "first_commit": {
+        "sha": "d475608c51c4e7d42b4feb2b0dcb616c6d0b735d",
+        "date": "2026-09-08T05:22:17+01:00"
+      },
+      "last_commit": {
+        "sha": "d475608c51c4e7d42b4feb2b0dcb616c6d0b735d",
+        "date": "2026-09-08T05:22:17+01:00"
       },
       "commit_count": 1
     },
@@ -184,6 +292,171 @@
     }
   ],
   "edges": [
+    {
+      "from": "composition:202609080850",
+      "to": "composition:202609080846",
+      "type": "supersedes",
+      "evidence": {
+        "file": "atlas/manifests/202609080850-composition.json",
+        "line": 0,
+        "pattern": "json:\"parent_generation\"",
+        "snippet": "parent_generation = \"202609080846\""
+      }
+    },
+    {
+      "from": "composition:202609080850",
+      "to": "cartridge:streaming-parquet-bridge@202609041945",
+      "type": "composed_of",
+      "evidence": {
+        "file": "atlas/manifests/202609080850-composition.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (cartridges[])",
+        "snippet": "streaming-parquet-bridge: path=./cartridges/202609041945-streaming-parquet-bridge-v9-5.js, sha256=4a6b594f7705bc4d..."
+      }
+    },
+    {
+      "from": "composition:202609080850",
+      "to": "cartridge:uk-gazetteer-flyto@202609071213",
+      "type": "composed_of",
+      "evidence": {
+        "file": "atlas/manifests/202609080850-composition.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (cartridges[])",
+        "snippet": "uk-gazetteer-flyto: path=./cartridges/202609071213-place-global-search-v9-5.js, sha256=15f324e5c2790508..."
+      }
+    },
+    {
+      "from": "composition:202609080850",
+      "to": "cartridge:sld-sandbox@202609080850",
+      "type": "composed_of",
+      "evidence": {
+        "file": "atlas/manifests/202609080850-composition.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (cartridges[])",
+        "snippet": "sld-sandbox: path=./cartridges/202609080850-sld-sandbox-v9-8.js, sha256=5d2b383ffd409e13..."
+      }
+    },
+    {
+      "from": "composition:202609080850",
+      "to": "cartridge:substation-intelligence@202609062358",
+      "type": "composed_of",
+      "evidence": {
+        "file": "atlas/manifests/202609080850-composition.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (cartridges[])",
+        "snippet": "substation-intelligence: path=./cartridges/202609062358-substation-intelligence-v9-63.js, sha256=d94b0de50deddac7..."
+      }
+    },
+    {
+      "from": "composition:202609080846",
+      "to": "composition:202609080837",
+      "type": "supersedes",
+      "evidence": {
+        "file": "atlas/manifests/202609080846-composition.json",
+        "line": 0,
+        "pattern": "json:\"parent_generation\"",
+        "snippet": "parent_generation = \"202609080837\""
+      }
+    },
+    {
+      "from": "composition:202609080846",
+      "to": "cartridge:streaming-parquet-bridge@202609041945",
+      "type": "composed_of",
+      "evidence": {
+        "file": "atlas/manifests/202609080846-composition.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (cartridges[])",
+        "snippet": "streaming-parquet-bridge: path=./cartridges/202609041945-streaming-parquet-bridge-v9-5.js, sha256=4a6b594f7705bc4d..."
+      }
+    },
+    {
+      "from": "composition:202609080846",
+      "to": "cartridge:uk-gazetteer-flyto@202609071213",
+      "type": "composed_of",
+      "evidence": {
+        "file": "atlas/manifests/202609080846-composition.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (cartridges[])",
+        "snippet": "uk-gazetteer-flyto: path=./cartridges/202609071213-place-global-search-v9-5.js, sha256=15f324e5c2790508..."
+      }
+    },
+    {
+      "from": "composition:202609080846",
+      "to": "cartridge:sld-sandbox@202609080846",
+      "type": "composed_of",
+      "evidence": {
+        "file": "atlas/manifests/202609080846-composition.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (cartridges[])",
+        "snippet": "sld-sandbox: path=./cartridges/202609080846-sld-sandbox-v9-8.js, sha256=33d0e47051bf29dd..."
+      }
+    },
+    {
+      "from": "composition:202609080846",
+      "to": "cartridge:substation-intelligence@202609062358",
+      "type": "composed_of",
+      "evidence": {
+        "file": "atlas/manifests/202609080846-composition.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (cartridges[])",
+        "snippet": "substation-intelligence: path=./cartridges/202609062358-substation-intelligence-v9-63.js, sha256=d94b0de50deddac7..."
+      }
+    },
+    {
+      "from": "composition:202609080837",
+      "to": "composition:202609080430",
+      "type": "supersedes",
+      "evidence": {
+        "file": "atlas/manifests/202609080837-composition.json",
+        "line": 0,
+        "pattern": "json:\"parent_generation\"",
+        "snippet": "parent_generation = \"202609080430\""
+      }
+    },
+    {
+      "from": "composition:202609080837",
+      "to": "cartridge:streaming-parquet-bridge@202609041945",
+      "type": "composed_of",
+      "evidence": {
+        "file": "atlas/manifests/202609080837-composition.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (cartridges[])",
+        "snippet": "streaming-parquet-bridge: path=./cartridges/202609041945-streaming-parquet-bridge-v9-5.js, sha256=4a6b594f7705bc4d..."
+      }
+    },
+    {
+      "from": "composition:202609080837",
+      "to": "cartridge:uk-gazetteer-flyto@202609071213",
+      "type": "composed_of",
+      "evidence": {
+        "file": "atlas/manifests/202609080837-composition.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (cartridges[])",
+        "snippet": "uk-gazetteer-flyto: path=./cartridges/202609071213-place-global-search-v9-5.js, sha256=15f324e5c2790508..."
+      }
+    },
+    {
+      "from": "composition:202609080837",
+      "to": "cartridge:sld-sandbox@202609080837",
+      "type": "composed_of",
+      "evidence": {
+        "file": "atlas/manifests/202609080837-composition.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (cartridges[])",
+        "snippet": "sld-sandbox: path=./cartridges/202609080837-sld-sandbox-v9-8.js, sha256=ef67e9994c059df3..."
+      }
+    },
+    {
+      "from": "composition:202609080837",
+      "to": "cartridge:substation-intelligence@202609062358",
+      "type": "composed_of",
+      "evidence": {
+        "file": "atlas/manifests/202609080837-composition.json",
+        "line": 0,
+        "pattern": "json:\"path\"+\"sha256\" (cartridges[])",
+        "snippet": "substation-intelligence: path=./cartridges/202609062358-substation-intelligence-v9-63.js, sha256=d94b0de50deddac7..."
+      }
+    },
     {
       "from": "composition:202609080430",
       "to": "composition:202609080030",

@@ -1,6 +1,6 @@
 {
   "schema": "genome-spider.genome.v1",
-  "generated_at": "2026-09-10T08:06:45.800Z",
+  "generated_at": "2026-09-11T08:01:50.228Z",
   "generator": "spiders/species/genome-spider/spider.mjs",
   "estate_root": "/home/runner/work/spiders/spiders/estate",
   "repos_configured": 19,
@@ -31,15 +31,15 @@
       "repo": "globalgrid2050",
       "files_considered": 7853,
       "files_scanned": 350,
-      "bytes_scanned": 25702421,
+      "bytes_scanned": 25702588,
       "files_capped_out": 7503,
       "cartridge_logical_groups_kept_latest_only": 189
     },
     {
       "repo": "gridatlas",
-      "files_considered": 549,
-      "files_scanned": 417,
-      "bytes_scanned": 12922529,
+      "files_considered": 551,
+      "files_scanned": 419,
+      "bytes_scanned": 12936201,
       "files_capped_out": 1,
       "cartridge_logical_groups_kept_latest_only": 11
     },
@@ -55,7 +55,7 @@
       "repo": "spiders",
       "files_considered": 49,
       "files_scanned": 48,
-      "bytes_scanned": 1608130,
+      "bytes_scanned": 1608307,
       "files_capped_out": 1,
       "cartridge_logical_groups_kept_latest_only": 0
     }
@@ -127,10 +127,10 @@
         "date": "2026-09-03T01:17:30+01:00"
       },
       "last_commit": {
-        "sha": "8073002f958fe08e7fdc8d4a0de079bf84d75cf5",
-        "date": "2026-09-10T08:04:51Z"
+        "sha": "392328956d0e412b3aca68b9971dba91f3f75f78",
+        "date": "2026-09-11T07:28:00Z"
       },
-      "commit_count": 255,
+      "commit_count": 257,
       "top_revised_files": [
         {
           "path": "sessions/202609030120-cicd-spider/02-runner-health.md",
@@ -162,7 +162,7 @@
         },
         {
           "path": "docs/boards/estate-link-crawl.md",
-          "commits": 8
+          "commits": 9
         }
       ],
       "rag": "amber",
@@ -5635,10 +5635,10 @@
         "date": "2026-03-12T16:26:24Z"
       },
       "last_commit": {
-        "sha": "bbdedab1eb8ad8dfe211ca9d935f7510c6c56521",
-        "date": "2026-09-08T23:30:12+01:00"
+        "sha": "6928cffdc3428a06f8e53f341b3893c63814c494",
+        "date": "2026-09-10T11:06:01+01:00"
       },
-      "commit_count": 4700,
+      "commit_count": 4704,
       "top_revised_files": [
         {
           "path": "REPO_STRUCTURE.txt",
@@ -5646,7 +5646,7 @@
         },
         {
           "path": "index.html",
-          "commits": 305
+          "commits": 307
         },
         {
           "path": "uk_energy_tracking_v5/grid_frequency_history.csv",
@@ -12103,10 +12103,10 @@
         "date": "2026-03-12T16:27:58Z"
       },
       "last_commit": {
-        "sha": "bbdedab1eb8ad8dfe211ca9d935f7510c6c56521",
-        "date": "2026-09-08T23:30:12+01:00"
+        "sha": "6928cffdc3428a06f8e53f341b3893c63814c494",
+        "date": "2026-09-10T11:06:01+01:00"
       },
-      "commit_count": 305,
+      "commit_count": 307,
       "top_revised_files": [],
       "rag": "green",
       "status_reason": "",
@@ -13291,10 +13291,10 @@
         "date": "2026-08-29T07:10:33+01:00"
       },
       "last_commit": {
-        "sha": "b4227c5010db186c6f8764d180ae0976b3d760d2",
-        "date": "2026-09-08T09:52:58+01:00"
+        "sha": "19588c2dbae435c826e48d6cdd271c7fe64e0d54",
+        "date": "2026-09-11T04:21:06+01:00"
       },
-      "commit_count": 394,
+      "commit_count": 396,
       "top_revised_files": [
         {
           "path": "atlas/current.json",
@@ -19361,6 +19361,48 @@
       "importance_score": 0.4
     },
     {
+      "id": "Ventusltd/gridatlas::atlas/testcode/202609110242/index.html",
+      "kind": "entry-point",
+      "label": "index.html",
+      "repo": "gridatlas",
+      "path": "atlas/testcode/202609110242/index.html",
+      "purpose": "",
+      "first_commit": {
+        "sha": "19588c2dbae435c826e48d6cdd271c7fe64e0d54",
+        "date": "2026-09-11T04:21:06+01:00"
+      },
+      "last_commit": {
+        "sha": "19588c2dbae435c826e48d6cdd271c7fe64e0d54",
+        "date": "2026-09-11T04:21:06+01:00"
+      },
+      "commit_count": 1,
+      "top_revised_files": [],
+      "rag": "green",
+      "status_reason": "",
+      "importance_score": 0.4
+    },
+    {
+      "id": "Ventusltd/gridatlas::atlas/testcode/202609110310/index.html",
+      "kind": "entry-point",
+      "label": "index.html",
+      "repo": "gridatlas",
+      "path": "atlas/testcode/202609110310/index.html",
+      "purpose": "",
+      "first_commit": {
+        "sha": "7e2295f28fefd1fbf31468212be58c5643fd4392",
+        "date": "2026-09-11T03:11:46+01:00"
+      },
+      "last_commit": {
+        "sha": "7e2295f28fefd1fbf31468212be58c5643fd4392",
+        "date": "2026-09-11T03:11:46+01:00"
+      },
+      "commit_count": 1,
+      "top_revised_files": [],
+      "rag": "green",
+      "status_reason": "",
+      "importance_score": 0.4
+    },
+    {
       "id": "Ventusltd/gridatlas::atlas/v/202609012141/index.html",
       "kind": "entry-point",
       "label": "index.html",
@@ -22186,14 +22228,18 @@
         "date": "2026-08-24T11:39:30+01:00"
       },
       "last_commit": {
-        "sha": "3926a8a850ae7bcd1e8599d1d4cb15977071a032",
-        "date": "2026-09-10T04:48:15Z"
+        "sha": "6ab1ad7f32c497a8cfd9ef2cc10c0579807aafa7",
+        "date": "2026-09-11T04:40:47Z"
       },
-      "commit_count": 494,
+      "commit_count": 499,
       "top_revised_files": [
         {
           "path": "docs/coordination/BOARD.md",
           "commits": 81
+        },
+        {
+          "path": "discovery/products/bbc-rss.json",
+          "commits": 29
         },
         {
           "path": "README.md",
@@ -22206,10 +22252,6 @@
         {
           "path": "tools/publication/test_pages_release_classifier.py",
           "commits": 25
-        },
-        {
-          "path": "discovery/products/bbc-rss.json",
-          "commits": 24
         },
         {
           "path": "tools/publication/pages_release_classifier.py",
@@ -26734,10 +26776,10 @@
         "date": "2026-07-04T07:34:47+01:00"
       },
       "last_commit": {
-        "sha": "0f734cb322f825853c75d814cb7fd3cf2ad0cd8a",
-        "date": "2026-09-09T08:07:22Z"
+        "sha": "b35f9b538528dc3b1e3f64dc9687c037d12d7ee3",
+        "date": "2026-09-10T08:06:46Z"
       },
-      "commit_count": 165,
+      "commit_count": 166,
       "top_revised_files": [
         {
           "path": "codex/build-plan/campaigns/20260906-next30.md",
@@ -26753,23 +26795,23 @@
         },
         {
           "path": "species/genome-spider/data/edges.json",
-          "commits": 12
+          "commits": 13
         },
         {
           "path": "species/genome-spider/data/genome.json",
-          "commits": 12
+          "commits": 13
         },
         {
           "path": "species/genome-spider/data/gridatlas-lineage.json",
-          "commits": 12
+          "commits": 13
         },
         {
           "path": "species/genome-spider/data/manifest.json",
-          "commits": 12
+          "commits": 13
         },
         {
           "path": "species/genome-spider/receipts/LATEST.json",
-          "commits": 11
+          "commits": 12
         }
       ],
       "rag": "amber",
@@ -27334,10 +27376,10 @@
         "date": "2026-09-04T22:35:07+01:00"
       },
       "last_commit": {
-        "sha": "0f734cb322f825853c75d814cb7fd3cf2ad0cd8a",
-        "date": "2026-09-09T08:07:22Z"
+        "sha": "b35f9b538528dc3b1e3f64dc9687c037d12d7ee3",
+        "date": "2026-09-10T08:06:46Z"
       },
-      "commit_count": 12,
+      "commit_count": 13,
       "top_revised_files": [],
       "rag": "green",
       "status_reason": "",
@@ -27355,10 +27397,10 @@
         "date": "2026-09-04T22:35:07+01:00"
       },
       "last_commit": {
-        "sha": "0f734cb322f825853c75d814cb7fd3cf2ad0cd8a",
-        "date": "2026-09-09T08:07:22Z"
+        "sha": "b35f9b538528dc3b1e3f64dc9687c037d12d7ee3",
+        "date": "2026-09-10T08:06:46Z"
       },
-      "commit_count": 12,
+      "commit_count": 13,
       "top_revised_files": [],
       "rag": "green",
       "status_reason": "",
@@ -27376,10 +27418,10 @@
         "date": "2026-09-04T22:35:07+01:00"
       },
       "last_commit": {
-        "sha": "0f734cb322f825853c75d814cb7fd3cf2ad0cd8a",
-        "date": "2026-09-09T08:07:22Z"
+        "sha": "b35f9b538528dc3b1e3f64dc9687c037d12d7ee3",
+        "date": "2026-09-10T08:06:46Z"
       },
-      "commit_count": 12,
+      "commit_count": 13,
       "top_revised_files": [],
       "rag": "green",
       "status_reason": "",
@@ -88462,9 +88504,9 @@
         "repo": "spiders",
         "dir": "species/genome-spider/receipts",
         "logical_name": "crawl.json",
-        "count": 11,
+        "count": 12,
         "first_path": "species/genome-spider/receipts/202609042137-crawl.json",
-        "last_path": "species/genome-spider/receipts/202609090807-crawl.json",
+        "last_path": "species/genome-spider/receipts/202609100806-crawl.json",
         "method": "filename-timestamp-prefix, not a git commit date"
       },
       {

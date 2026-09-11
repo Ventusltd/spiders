@@ -1,6 +1,6 @@
 {
   "schema": "genome-spider.gridatlas-lineage.v1",
-  "generated_at": "2026-09-10T08:06:46.135Z",
+  "generated_at": "2026-09-11T08:01:50.629Z",
   "generator": "spiders/species/genome-spider/lineage.mjs",
   "repo": "Ventusltd/gridatlas",
   "compositions_available_on_disk": 88,

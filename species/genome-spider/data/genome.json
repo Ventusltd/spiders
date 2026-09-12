@@ -1,6 +1,6 @@
 {
   "schema": "genome-spider.genome.v1",
-  "generated_at": "2026-09-11T08:01:50.228Z",
+  "generated_at": "2026-09-12T07:54:34.848Z",
   "generator": "spiders/species/genome-spider/spider.mjs",
   "estate_root": "/home/runner/work/spiders/spiders/estate",
   "repos_configured": 19,
@@ -37,9 +37,9 @@
     },
     {
       "repo": "gridatlas",
-      "files_considered": 551,
-      "files_scanned": 419,
-      "bytes_scanned": 12936201,
+      "files_considered": 555,
+      "files_scanned": 423,
+      "bytes_scanned": 12945173,
       "files_capped_out": 1,
       "cartridge_logical_groups_kept_latest_only": 11
     },
@@ -55,7 +55,7 @@
       "repo": "spiders",
       "files_considered": 49,
       "files_scanned": 48,
-      "bytes_scanned": 1608307,
+      "bytes_scanned": 1609352,
       "files_capped_out": 1,
       "cartridge_logical_groups_kept_latest_only": 0
     }
@@ -127,10 +127,10 @@
         "date": "2026-09-03T01:17:30+01:00"
       },
       "last_commit": {
-        "sha": "392328956d0e412b3aca68b9971dba91f3f75f78",
-        "date": "2026-09-11T07:28:00Z"
+        "sha": "091160a467eb88455bc07517bcb8d4d35ef8c0bb",
+        "date": "2026-09-12T07:20:05Z"
       },
-      "commit_count": 257,
+      "commit_count": 260,
       "top_revised_files": [
         {
           "path": "sessions/202609030120-cicd-spider/02-runner-health.md",
@@ -157,12 +157,12 @@
           "commits": 11
         },
         {
-          "path": "sessions/202609050125-carry-on-handover/02-LANE-BOARD.md",
+          "path": "docs/boards/estate-link-crawl.md",
           "commits": 10
         },
         {
-          "path": "docs/boards/estate-link-crawl.md",
-          "commits": 9
+          "path": "sessions/202609050125-carry-on-handover/02-LANE-BOARD.md",
+          "commits": 10
         }
       ],
       "rag": "amber",
@@ -13291,10 +13291,10 @@
         "date": "2026-08-29T07:10:33+01:00"
       },
       "last_commit": {
-        "sha": "19588c2dbae435c826e48d6cdd271c7fe64e0d54",
-        "date": "2026-09-11T04:21:06+01:00"
+        "sha": "ece848117a6d21b7fccb232557194877698c48a9",
+        "date": "2026-09-11T11:24:22+01:00"
       },
-      "commit_count": 396,
+      "commit_count": 398,
       "top_revised_files": [
         {
           "path": "atlas/current.json",
@@ -19403,6 +19403,90 @@
       "importance_score": 0.4
     },
     {
+      "id": "Ventusltd/gridatlas::atlas/testcode/202609110849/index.html",
+      "kind": "entry-point",
+      "label": "index.html",
+      "repo": "gridatlas",
+      "path": "atlas/testcode/202609110849/index.html",
+      "purpose": "",
+      "first_commit": {
+        "sha": "2ffc777d84419e88bcac5be84d095108e22c8b48",
+        "date": "2026-09-11T10:03:17+01:00"
+      },
+      "last_commit": {
+        "sha": "2ffc777d84419e88bcac5be84d095108e22c8b48",
+        "date": "2026-09-11T10:03:17+01:00"
+      },
+      "commit_count": 1,
+      "top_revised_files": [],
+      "rag": "green",
+      "status_reason": "",
+      "importance_score": 0.4
+    },
+    {
+      "id": "Ventusltd/gridatlas::atlas/testcode/202609110849/manifest.json",
+      "kind": "manifest",
+      "label": "manifest.json",
+      "repo": "gridatlas",
+      "path": "atlas/testcode/202609110849/manifest.json",
+      "purpose": "",
+      "first_commit": {
+        "sha": "2ffc777d84419e88bcac5be84d095108e22c8b48",
+        "date": "2026-09-11T10:03:17+01:00"
+      },
+      "last_commit": {
+        "sha": "2ffc777d84419e88bcac5be84d095108e22c8b48",
+        "date": "2026-09-11T10:03:17+01:00"
+      },
+      "commit_count": 1,
+      "top_revised_files": [],
+      "rag": "green",
+      "status_reason": "",
+      "importance_score": 0.4
+    },
+    {
+      "id": "Ventusltd/gridatlas::atlas/testcode/202609111007/index.html",
+      "kind": "entry-point",
+      "label": "index.html",
+      "repo": "gridatlas",
+      "path": "atlas/testcode/202609111007/index.html",
+      "purpose": "",
+      "first_commit": {
+        "sha": "ece848117a6d21b7fccb232557194877698c48a9",
+        "date": "2026-09-11T11:24:22+01:00"
+      },
+      "last_commit": {
+        "sha": "ece848117a6d21b7fccb232557194877698c48a9",
+        "date": "2026-09-11T11:24:22+01:00"
+      },
+      "commit_count": 1,
+      "top_revised_files": [],
+      "rag": "green",
+      "status_reason": "",
+      "importance_score": 0.4
+    },
+    {
+      "id": "Ventusltd/gridatlas::atlas/testcode/202609111007/manifest.json",
+      "kind": "manifest",
+      "label": "manifest.json",
+      "repo": "gridatlas",
+      "path": "atlas/testcode/202609111007/manifest.json",
+      "purpose": "",
+      "first_commit": {
+        "sha": "ece848117a6d21b7fccb232557194877698c48a9",
+        "date": "2026-09-11T11:24:22+01:00"
+      },
+      "last_commit": {
+        "sha": "ece848117a6d21b7fccb232557194877698c48a9",
+        "date": "2026-09-11T11:24:22+01:00"
+      },
+      "commit_count": 1,
+      "top_revised_files": [],
+      "rag": "green",
+      "status_reason": "",
+      "importance_score": 0.4
+    },
+    {
       "id": "Ventusltd/gridatlas::atlas/v/202609012141/index.html",
       "kind": "entry-point",
       "label": "index.html",
@@ -22228,10 +22312,10 @@
         "date": "2026-08-24T11:39:30+01:00"
       },
       "last_commit": {
-        "sha": "6ab1ad7f32c497a8cfd9ef2cc10c0579807aafa7",
-        "date": "2026-09-11T04:40:47Z"
+        "sha": "d12c3988fe90b10be49bfa1d3380f29ba68db32b",
+        "date": "2026-09-12T07:10:00Z"
       },
-      "commit_count": 499,
+      "commit_count": 504,
       "top_revised_files": [
         {
           "path": "docs/coordination/BOARD.md",
@@ -22239,7 +22323,7 @@
         },
         {
           "path": "discovery/products/bbc-rss.json",
-          "commits": 29
+          "commits": 34
         },
         {
           "path": "README.md",
@@ -26776,10 +26860,10 @@
         "date": "2026-07-04T07:34:47+01:00"
       },
       "last_commit": {
-        "sha": "b35f9b538528dc3b1e3f64dc9687c037d12d7ee3",
-        "date": "2026-09-10T08:06:46Z"
+        "sha": "9463020a14a8abce674faeb3ff25c0d057538200",
+        "date": "2026-09-11T08:01:50Z"
       },
-      "commit_count": 166,
+      "commit_count": 167,
       "top_revised_files": [
         {
           "path": "codex/build-plan/campaigns/20260906-next30.md",
@@ -26790,28 +26874,28 @@
           "commits": 22
         },
         {
+          "path": "species/genome-spider/data/edges.json",
+          "commits": 14
+        },
+        {
+          "path": "species/genome-spider/data/genome.json",
+          "commits": 14
+        },
+        {
+          "path": "species/genome-spider/data/gridatlas-lineage.json",
+          "commits": 14
+        },
+        {
+          "path": "species/genome-spider/data/manifest.json",
+          "commits": 14
+        },
+        {
           "path": "codex/reload/plan-tracker/NEXT-50.json",
           "commits": 14
         },
         {
-          "path": "species/genome-spider/data/edges.json",
-          "commits": 13
-        },
-        {
-          "path": "species/genome-spider/data/genome.json",
-          "commits": 13
-        },
-        {
-          "path": "species/genome-spider/data/gridatlas-lineage.json",
-          "commits": 13
-        },
-        {
-          "path": "species/genome-spider/data/manifest.json",
-          "commits": 13
-        },
-        {
           "path": "species/genome-spider/receipts/LATEST.json",
-          "commits": 12
+          "commits": 13
         }
       ],
       "rag": "amber",
@@ -27376,10 +27460,10 @@
         "date": "2026-09-04T22:35:07+01:00"
       },
       "last_commit": {
-        "sha": "b35f9b538528dc3b1e3f64dc9687c037d12d7ee3",
-        "date": "2026-09-10T08:06:46Z"
+        "sha": "9463020a14a8abce674faeb3ff25c0d057538200",
+        "date": "2026-09-11T08:01:50Z"
       },
-      "commit_count": 13,
+      "commit_count": 14,
       "top_revised_files": [],
       "rag": "green",
       "status_reason": "",
@@ -27397,10 +27481,10 @@
         "date": "2026-09-04T22:35:07+01:00"
       },
       "last_commit": {
-        "sha": "b35f9b538528dc3b1e3f64dc9687c037d12d7ee3",
-        "date": "2026-09-10T08:06:46Z"
+        "sha": "9463020a14a8abce674faeb3ff25c0d057538200",
+        "date": "2026-09-11T08:01:50Z"
       },
-      "commit_count": 13,
+      "commit_count": 14,
       "top_revised_files": [],
       "rag": "green",
       "status_reason": "",
@@ -27418,10 +27502,10 @@
         "date": "2026-09-04T22:35:07+01:00"
       },
       "last_commit": {
-        "sha": "b35f9b538528dc3b1e3f64dc9687c037d12d7ee3",
-        "date": "2026-09-10T08:06:46Z"
+        "sha": "9463020a14a8abce674faeb3ff25c0d057538200",
+        "date": "2026-09-11T08:01:50Z"
       },
-      "commit_count": 13,
+      "commit_count": 14,
       "top_revised_files": [],
       "rag": "green",
       "status_reason": "",
@@ -27439,10 +27523,10 @@
         "date": "2026-09-04T22:35:07+01:00"
       },
       "last_commit": {
-        "sha": "0f734cb322f825853c75d814cb7fd3cf2ad0cd8a",
-        "date": "2026-09-09T08:07:22Z"
+        "sha": "9463020a14a8abce674faeb3ff25c0d057538200",
+        "date": "2026-09-11T08:01:50Z"
       },
-      "commit_count": 10,
+      "commit_count": 11,
       "top_revised_files": [],
       "rag": "grey",
       "status_reason": "stub node — edge target outside the content-scanned set",
@@ -65849,7 +65933,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/925/properties/label = \"index.html\""
+        "snippet": "/features/923/properties/label = \"index.html\""
       }
     },
     {
@@ -65860,7 +65944,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/1023/properties/label = \"index.html\""
+        "snippet": "/features/924/properties/label = \"index.html\""
       }
     },
     {
@@ -65871,7 +65955,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/1093/properties/label = \"index.html\""
+        "snippet": "/features/927/properties/label = \"index.html\""
       }
     },
     {
@@ -65882,7 +65966,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/1094/properties/label = \"index.html\""
+        "snippet": "/features/1025/properties/label = \"index.html\""
       }
     },
     {
@@ -65959,7 +66043,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/1118/properties/label = \"index.html\""
+        "snippet": "/features/1101/properties/label = \"index.html\""
       }
     },
     {
@@ -65970,7 +66054,29 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/1196/properties/label = \"index.html\""
+        "snippet": "/features/1102/properties/label = \"index.html\""
+      }
+    },
+    {
+      "from": "Ventusltd/spiders::species/genome-spider/data/nodes.json",
+      "to": "Ventusltd/spiders::index.html",
+      "type": "manifest-path",
+      "evidence": {
+        "file": "species/genome-spider/data/nodes.json",
+        "line": 0,
+        "pattern": "json:\"label\"",
+        "snippet": "/features/1120/properties/label = \"index.html\""
+      }
+    },
+    {
+      "from": "Ventusltd/spiders::species/genome-spider/data/nodes.json",
+      "to": "Ventusltd/spiders::index.html",
+      "type": "manifest-path",
+      "evidence": {
+        "file": "species/genome-spider/data/nodes.json",
+        "line": 0,
+        "pattern": "json:\"label\"",
+        "snippet": "/features/1198/properties/label = \"index.html\""
       }
     },
     {
@@ -65981,7 +66087,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"child_manifest\"",
-        "snippet": "/features/1246/properties/child_manifest = \"../../../codex/build-plan/data/manifest.json\""
+        "snippet": "/features/1248/properties/child_manifest = \"../../../codex/build-plan/data/manifest.json\""
       }
     },
     {
@@ -65992,7 +66098,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/1256/properties/label = \"edges.json\""
+        "snippet": "/features/1258/properties/label = \"edges.json\""
       }
     },
     {
@@ -66003,7 +66109,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/1258/properties/label = \"manifest.json\""
+        "snippet": "/features/1260/properties/label = \"manifest.json\""
       }
     },
     {
@@ -66014,7 +66120,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/1260/properties/label = \"index.html\""
+        "snippet": "/features/1262/properties/label = \"index.html\""
       }
     },
     {
@@ -66025,7 +66131,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/1271/properties/label = \"index.html\""
+        "snippet": "/features/1273/properties/label = \"index.html\""
       }
     },
     {
@@ -66036,7 +66142,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/1272/properties/label = \"index.html\""
+        "snippet": "/features/1274/properties/label = \"index.html\""
       }
     },
     {
@@ -66047,7 +66153,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/1273/properties/label = \"edges.json\""
+        "snippet": "/features/1275/properties/label = \"edges.json\""
       }
     },
     {
@@ -66058,7 +66164,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/1274/properties/label = \"gridatlas-lineage.json\""
+        "snippet": "/features/1276/properties/label = \"gridatlas-lineage.json\""
       }
     },
     {
@@ -66069,7 +66175,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/1275/properties/label = \"manifest.json\""
+        "snippet": "/features/1277/properties/label = \"manifest.json\""
       }
     },
     {
@@ -66080,7 +66186,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/1279/properties/label = \"index.html\""
+        "snippet": "/features/1281/properties/label = \"index.html\""
       }
     },
     {
@@ -66091,7 +66197,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/1280/properties/label = \"edges.json\""
+        "snippet": "/features/1282/properties/label = \"edges.json\""
       }
     },
     {
@@ -66102,7 +66208,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/1282/properties/label = \"index.html\""
+        "snippet": "/features/1284/properties/label = \"index.html\""
       }
     },
     {
@@ -66113,7 +66219,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/1288/properties/label = \"index.html\""
+        "snippet": "/features/1290/properties/label = \"index.html\""
       }
     },
     {
@@ -66124,7 +66230,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/1319/properties/label = \"index.html\""
+        "snippet": "/features/1321/properties/label = \"index.html\""
       }
     },
     {
@@ -66135,7 +66241,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/1320/properties/label = \"index.html\""
+        "snippet": "/features/1322/properties/label = \"index.html\""
       }
     },
     {
@@ -66146,7 +66252,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/1364/properties/label = \"edges.json\""
+        "snippet": "/features/1366/properties/label = \"edges.json\""
       }
     },
     {
@@ -66157,7 +66263,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/1365/properties/label = \"manifest.json\""
+        "snippet": "/features/1367/properties/label = \"manifest.json\""
       }
     },
     {
@@ -66168,7 +66274,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/1367/properties/label = \"edges.json\""
+        "snippet": "/features/1369/properties/label = \"edges.json\""
       }
     },
     {
@@ -66179,7 +66285,7 @@
         "file": "species/genome-spider/data/nodes.json",
         "line": 0,
         "pattern": "json:\"label\"",
-        "snippet": "/features/1369/properties/label = \"manifest.json\""
+        "snippet": "/features/1371/properties/label = \"manifest.json\""
       }
     },
     {
@@ -88504,9 +88610,9 @@
         "repo": "spiders",
         "dir": "species/genome-spider/receipts",
         "logical_name": "crawl.json",
-        "count": 12,
+        "count": 13,
         "first_path": "species/genome-spider/receipts/202609042137-crawl.json",
-        "last_path": "species/genome-spider/receipts/202609100806-crawl.json",
+        "last_path": "species/genome-spider/receipts/202609110801-crawl.json",
         "method": "filename-timestamp-prefix, not a git commit date"
       },
       {

@@ -1,6 +1,6 @@
 {
   "schema_version": "atlas-cartridge-v0.2",
-  "generated_utc": "2026-09-11T08:01:50.228Z",
+  "generated_utc": "2026-09-12T07:54:34.848Z",
   "public_title": "Ventus estate genome",
   "public_strapline": "Repositories, internal units and the dependencies genome-spider could evidence between them",
   "scope": {
@@ -10,8 +10,8 @@
     "parent_manifest": null
   },
   "counts": {
-    "nodes": 1375,
-    "edges": 3243,
+    "nodes": 1379,
+    "edges": 3245,
     "sectors": 0
   },
   "key_law_status": "SCREENING_GRADE_NOT_CERTIFICATION",

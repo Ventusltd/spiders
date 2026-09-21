@@ -1,11 +1,11 @@
 {
- "generated_utc": "2026-09-14T15:02:14Z",
+ "generated_utc": "2026-09-21T12:47:10Z",
  "source": "maya-hunter.mjs",
  "note": "A Maya card for every dead end (leaf) in every registered graph: what it is, its function, its purpose, its relationships, and its reason for existing. The dashboard reads this to explain a leaf and offer a next click.",
  "counts": {
   "graphs": 16,
-  "nodes": 1583,
-  "deadEnds": 899
+  "nodes": 1730,
+  "deadEnds": 921
  },
  "perGraph": [
   {
@@ -32,7 +32,7 @@
   },
   {
    "id": "genome-spider",
-   "error": "https://ventusltd.github.io/ventus-grid-engine/spider/data/genome-spider.json 404"
+   "skipped": "not a node graph"
   },
   {
    "id": "gridatlas-lineage",
@@ -49,8 +49,8 @@
   {
    "id": "periodic-table",
    "title": "Inventory",
-   "nodes": 248,
-   "deadEnds": 51
+   "nodes": 377,
+   "deadEnds": 60
   },
   {
    "id": "proof-of-work",
@@ -61,7 +61,7 @@
   {
    "id": "structure",
    "title": "Structure",
-   "nodes": 122,
+   "nodes": 127,
    "deadEnds": 51
   },
   {
@@ -79,8 +79,8 @@
   {
    "id": "random",
    "title": "Sampling",
-   "nodes": 163,
-   "deadEnds": 163
+   "nodes": 176,
+   "deadEnds": 176
   },
   {
    "id": "generated-apps",
@@ -154,7 +154,7 @@
    "genome-spider output": {
     "label": "genome-spider output",
     "type": "graph",
-    "rag": "grey",
+    "rag": "green",
     "function": "part of the estate",
     "purpose": "part of how the estate is read and checked",
     "relationships": [
@@ -872,22 +872,6 @@
     },
     "backTo": "#511 distanceKm"
    },
-   "gridatlas": {
-    "label": "gridatlas",
-    "type": "repo",
-    "rag": "green",
-    "function": "a code repository",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [
-     "classified under #511 distanceKm (with 7 siblings)"
-    ],
-    "reason": "A repo recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://ventusltd.github.io/gridatlas/"
-    },
-    "backTo": "#511 distanceKm"
-   },
    "code-generator": {
     "label": "code-generator",
     "type": "repo",
@@ -901,22 +885,6 @@
     "next": {
      "label": "Read the source",
      "href": "https://github.com/Ventusltd/code-generator"
-    },
-    "backTo": "#511 distanceKm"
-   },
-   "globalgrid2050": {
-    "label": "globalgrid2050",
-    "type": "repo",
-    "rag": "green",
-    "function": "a code repository",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [
-     "classified under #511 distanceKm (with 7 siblings)"
-    ],
-    "reason": "A repo recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://globalgrid2050.com/"
     },
     "backTo": "#511 distanceKm"
    },
@@ -936,6 +904,38 @@
     },
     "backTo": "#511 distanceKm"
    },
+   "gridatlas": {
+    "label": "gridatlas",
+    "type": "repo",
+    "rag": "green",
+    "function": "a code repository",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [
+     "classified under #511 distanceKm (with 7 siblings)"
+    ],
+    "reason": "A repo recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://ventusltd.github.io/gridatlas/"
+    },
+    "backTo": "#511 distanceKm"
+   },
+   "globalgrid2050": {
+    "label": "globalgrid2050",
+    "type": "repo",
+    "rag": "green",
+    "function": "a code repository",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [
+     "classified under #511 distanceKm (with 7 siblings)"
+    ],
+    "reason": "A repo recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://globalgrid2050.com/"
+    },
+    "backTo": "#511 distanceKm"
+   },
    "ventus-grid-engine": {
     "label": "ventus-grid-engine",
     "type": "repo",
@@ -951,6 +951,38 @@
      "href": "https://ventusltd.github.io/ventus-grid-engine/"
     },
     "backTo": "#511 distanceKm"
+   },
+   "spiders": {
+    "label": "spiders",
+    "type": "repo",
+    "rag": "green",
+    "function": "a code repository",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [
+     "classified under #8850 (anonymous) (with 4 siblings)"
+    ],
+    "reason": "A repo recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://ventusltd.github.io/spiders/"
+    },
+    "backTo": "#8850 (anonymous)"
+   },
+   "grid-distance-maths": {
+    "label": "grid-distance-maths",
+    "type": "repo",
+    "rag": "green",
+    "function": "a code repository",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [
+     "classified under #8770 initialBearingDeg (with 7 siblings)"
+    ],
+    "reason": "A repo recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://ventusltd.github.io/grid-distance-maths/"
+    },
+    "backTo": "#8770 initialBearingDeg"
    },
    "companies": {
     "label": "companies",
@@ -1016,22 +1048,6 @@
     },
     "backTo": "#975 sha256"
    },
-   "grid-distance-maths": {
-    "label": "grid-distance-maths",
-    "type": "repo",
-    "rag": "green",
-    "function": "a code repository",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [
-     "classified under #8770 initialBearingDeg (with 7 siblings)"
-    ],
-    "reason": "A repo recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://ventusltd.github.io/grid-distance-maths/"
-    },
-    "backTo": "#8770 initialBearingDeg"
-   },
    "youengineer-code-review": {
     "label": "youengineer-code-review",
     "type": "repo",
@@ -1047,22 +1063,6 @@
      "href": "https://ventusltd.github.io/youengineer-code-review/"
     },
     "backTo": "#5168 escapeHTML"
-   },
-   "spiders": {
-    "label": "spiders",
-    "type": "repo",
-    "rag": "green",
-    "function": "a code repository",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [
-     "classified under #8850 (anonymous) (with 4 siblings)"
-    ],
-    "reason": "A repo recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://ventusltd.github.io/spiders/"
-    },
-    "backTo": "#8850 (anonymous)"
    },
    "engine/v9-geodesy.js": {
     "label": "engine/v9-geodesy.js",
@@ -1095,22 +1095,6 @@
      "href": "https://ventusltd.github.io/ventus-grid-engine/?graph=engine-graph&focus=gridatlas%20202609011950-geodesy.js"
     },
     "backTo": "#511 distanceKm"
-   },
-   "engine/v9-nearest-search.js": {
-    "label": "engine/v9-nearest-search.js",
-    "type": "engine canonical",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [
-     "classified under #80352 nearest (with 3 siblings)"
-    ],
-    "reason": "A engine canonical recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://ventusltd.github.io/ventus-grid-engine/?graph=engine-graph&focus=engine%2Fv9-nearest-search.js"
-    },
-    "backTo": "#80352 nearest"
    },
    "ventus-corev8engine.js haversine()": {
     "label": "ventus-corev8engine.js haversine()",
@@ -1224,22 +1208,6 @@
     },
     "backTo": "#5633 updateMeasureDisplay"
    },
-   "ventus-corev8engine.js doRadiusAreaMeasure (Impl C)": {
-    "label": "ventus-corev8engine.js doRadiusAreaMeasure (Impl C)",
-    "type": "engine fragment",
-    "rag": "amber",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [
-     "classified under #5639 doRadiusAreaMeasure (with 5 siblings)"
-    ],
-    "reason": "A engine fragment recorded because it exists in the code; not yet settled.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://ventusltd.github.io/ventus-grid-engine/?graph=engine-graph&focus=ventus-corev8engine.js%20doRadiusAreaMeasure%20(Impl%20C)"
-    },
-    "backTo": "#5639 doRadiusAreaMeasure"
-   },
    "ventus-corev8engine.js createGeoJSONCircle": {
     "label": "ventus-corev8engine.js createGeoJSONCircle",
     "type": "engine fragment",
@@ -1255,22 +1223,6 @@
      "href": "https://ventusltd.github.io/ventus-grid-engine/?graph=engine-graph&focus=ventus-corev8engine.js%20createGeoJSONCircle"
     },
     "backTo": "#5653 (anonymous)"
-   },
-   "gridatlas 202609011950-substation-lookup.js": {
-    "label": "gridatlas 202609011950-substation-lookup.js",
-    "type": "engine fragment",
-    "rag": "amber",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [
-     "classified under #8946 normalise (with 6 siblings)"
-    ],
-    "reason": "A engine fragment recorded because it exists in the code; not yet settled.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://ventusltd.github.io/ventus-grid-engine/?graph=engine-graph&focus=gridatlas%20202609011950-substation-lookup.js"
-    },
-    "backTo": "#8946 normalise"
    },
    "engine/network-topology.js": {
     "label": "engine/network-topology.js",
@@ -1400,21 +1352,53 @@
     },
     "backTo": "#8838 forCable"
    },
-   "deeplink/contract.js": {
-    "label": "deeplink/contract.js",
+   "engine/v9-nearest-search.js": {
+    "label": "engine/v9-nearest-search.js",
     "type": "engine canonical",
     "rag": "green",
     "function": "part of the estate",
     "purpose": "part of how the estate is read and checked",
     "relationships": [
-     "classified under #8401 layerIdForBucket (with 5 siblings)"
+     "classified under #8946 normalise (with 6 siblings)"
     ],
     "reason": "A engine canonical recorded because it exists in the code; in good standing.",
     "next": {
      "label": "Open the reference",
-     "href": "https://ventusltd.github.io/ventus-grid-engine/?graph=engine-graph&focus=deeplink%2Fcontract.js"
+     "href": "https://ventusltd.github.io/ventus-grid-engine/?graph=engine-graph&focus=engine%2Fv9-nearest-search.js"
     },
-    "backTo": "#8401 layerIdForBucket"
+    "backTo": "#8946 normalise"
+   },
+   "gridatlas 202609011950-substation-lookup.js": {
+    "label": "gridatlas 202609011950-substation-lookup.js",
+    "type": "engine fragment",
+    "rag": "amber",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [
+     "classified under #8946 normalise (with 6 siblings)"
+    ],
+    "reason": "A engine fragment recorded because it exists in the code; not yet settled.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://ventusltd.github.io/ventus-grid-engine/?graph=engine-graph&focus=gridatlas%20202609011950-substation-lookup.js"
+    },
+    "backTo": "#8946 normalise"
+   },
+   "ventus-corev8engine.js doRadiusAreaMeasure (Impl C)": {
+    "label": "ventus-corev8engine.js doRadiusAreaMeasure (Impl C)",
+    "type": "engine fragment",
+    "rag": "amber",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [
+     "classified under #5639 doRadiusAreaMeasure (with 5 siblings)"
+    ],
+    "reason": "A engine fragment recorded because it exists in the code; not yet settled.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://ventusltd.github.io/ventus-grid-engine/?graph=engine-graph&focus=ventus-corev8engine.js%20doRadiusAreaMeasure%20(Impl%20C)"
+    },
+    "backTo": "#5639 doRadiusAreaMeasure"
    },
    "sld-sandbox-technology-buckets.js LAYER_ID_FOR_BUCKET": {
     "label": "sld-sandbox-technology-buckets.js LAYER_ID_FOR_BUCKET",
@@ -1423,14 +1407,30 @@
     "function": "part of the estate",
     "purpose": "part of how the estate is read and checked",
     "relationships": [
-     "classified under #8401 layerIdForBucket (with 5 siblings)"
+     "classified under #59692 (anonymous) (with 2 siblings)"
     ],
     "reason": "A engine fragment recorded because it exists in the code; not yet settled.",
     "next": {
      "label": "Open the reference",
      "href": "https://ventusltd.github.io/ventus-grid-engine/?graph=engine-graph&focus=sld-sandbox-technology-buckets.js%20LAYER_ID_FOR_BUCKET"
     },
-    "backTo": "#8401 layerIdForBucket"
+    "backTo": "#59692 (anonymous)"
+   },
+   "deeplink/contract.js": {
+    "label": "deeplink/contract.js",
+    "type": "engine canonical",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [
+     "classified under #59692 (anonymous) (with 2 siblings)"
+    ],
+    "reason": "A engine canonical recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://ventusltd.github.io/ventus-grid-engine/?graph=engine-graph&focus=deeplink%2Fcontract.js"
+    },
+    "backTo": "#59692 (anonymous)"
    },
    "engine/diversified-demand.js": {
     "label": "engine/diversified-demand.js",
@@ -1882,6 +1882,22 @@
     },
     "backTo": "Connections and capacity"
    },
+   "testcode": {
+    "label": "testcode",
+    "type": "repo",
+    "rag": "green",
+    "function": "a code repository",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [
+     "classified under Sp · streaming-parquet-bridge (with 5 siblings)"
+    ],
+    "reason": "A repo recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Read the source",
+     "href": "https://github.com/Ventusltd/testcode"
+    },
+    "backTo": "Sp · streaming-parquet-bridge"
+   },
    "gridatlas": {
     "label": "gridatlas",
     "type": "repo",
@@ -1889,7 +1905,7 @@
     "function": "a code repository",
     "purpose": "part of how the estate is read and checked",
     "relationships": [
-     "classified under Sp · streaming-parquet-bridge (with 6 siblings)"
+     "classified under Sp · streaming-parquet-bridge (with 5 siblings)"
     ],
     "reason": "A repo recorded because it exists in the code; in good standing.",
     "next": {
@@ -1905,28 +1921,12 @@
     "function": "a code repository",
     "purpose": "part of how the estate is read and checked",
     "relationships": [
-     "classified under Sp · streaming-parquet-bridge (with 6 siblings)"
+     "classified under Sp · streaming-parquet-bridge (with 5 siblings)"
     ],
     "reason": "A repo recorded because it exists in the code; in good standing.",
     "next": {
      "label": "Read the source",
      "href": "https://github.com/Ventusltd/globalgrid2050"
-    },
-    "backTo": "Sp · streaming-parquet-bridge"
-   },
-   "testcode": {
-    "label": "testcode",
-    "type": "repo",
-    "rag": "green",
-    "function": "a code repository",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [
-     "classified under Sp · streaming-parquet-bridge (with 6 siblings)"
-    ],
-    "reason": "A repo recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Read the source",
-     "href": "https://github.com/Ventusltd/testcode"
     },
     "backTo": "Sp · streaming-parquet-bridge"
    },
@@ -2065,7 +2065,7 @@
     "function": "a code repository",
     "purpose": "part of how the estate is read and checked",
     "relationships": [
-     "classified under Dt · The MAP button (deep-link contract) (with 9 siblings)"
+     "classified under Dt · The MAP button (deep-link contract) (with 13 siblings)"
     ],
     "reason": "A repo recorded because it exists in the code; in good standing.",
     "next": {
@@ -2081,7 +2081,7 @@
     "function": "a code repository",
     "purpose": "part of how the estate is read and checked",
     "relationships": [
-     "classified under Dt · The MAP button (deep-link contract) (with 9 siblings)"
+     "classified under Dt · The MAP button (deep-link contract) (with 13 siblings)"
     ],
     "reason": "A repo recorded because it exists in the code; in good standing.",
     "next": {
@@ -2097,7 +2097,7 @@
     "function": "a code repository",
     "purpose": "part of how the estate is read and checked",
     "relationships": [
-     "classified under Ps · Place search and arrival (with 6 siblings)"
+     "classified under Ps · Place search and arrival (with 7 siblings)"
     ],
     "reason": "A repo recorded because it exists in the code; in good standing.",
     "next": {
@@ -2145,7 +2145,7 @@
     "function": "a code repository",
     "purpose": "part of how the estate is read and checked",
     "relationships": [
-     "classified under St · Solar electrical topology (text engine) (with 5 siblings)"
+     "classified under St · Solar electrical topology (text engine) (with 7 siblings)"
     ],
     "reason": "A repo recorded because it exists in the code; in good standing.",
     "next": {
@@ -2161,7 +2161,7 @@
     "function": "a code repository",
     "purpose": "part of how the estate is read and checked",
     "relationships": [
-     "classified under Pn · Pipeline News app (with 13 siblings)"
+     "classified under Pn · Pipeline News app (with 14 siblings)"
     ],
     "reason": "A repo recorded because it exists in the code; in good standing.",
     "next": {
@@ -2177,7 +2177,7 @@
     "function": "a code repository",
     "purpose": "part of how the estate is read and checked",
     "relationships": [
-     "classified under Pn · Pipeline News app (with 13 siblings)"
+     "classified under Pn · Pipeline News app (with 14 siblings)"
     ],
     "reason": "A repo recorded because it exists in the code; in good standing.",
     "next": {
@@ -2193,7 +2193,7 @@
     "function": "a code repository",
     "purpose": "part of how the estate is read and checked",
     "relationships": [
-     "classified under Pn · Pipeline News app (with 13 siblings)"
+     "classified under Pn · Pipeline News app (with 14 siblings)"
     ],
     "reason": "A repo recorded because it exists in the code; in good standing.",
     "next": {
@@ -2209,7 +2209,7 @@
     "function": "a code repository",
     "purpose": "part of how the estate is read and checked",
     "relationships": [
-     "classified under Tp · Teleprinter controls (with 7 siblings)"
+     "classified under Tp · Teleprinter controls (with 9 siblings)"
     ],
     "reason": "A repo recorded because it exists in the code; in good standing.",
     "next": {
@@ -2241,7 +2241,7 @@
     "function": "a code repository",
     "purpose": "part of how the estate is read and checked",
     "relationships": [
-     "classified under Pr · Proofs and checks (with 6 siblings)"
+     "classified under Pr · Proofs and checks (with 7 siblings)"
     ],
     "reason": "A repo recorded because it exists in the code; in good standing.",
     "next": {
@@ -2257,7 +2257,7 @@
     "function": "a code repository",
     "purpose": "part of how the estate is read and checked",
     "relationships": [
-     "classified under Pr · Proofs and checks (with 6 siblings)"
+     "classified under Pr · Proofs and checks (with 7 siblings)"
     ],
     "reason": "A repo recorded because it exists in the code; in good standing.",
     "next": {
@@ -2273,7 +2273,7 @@
     "function": "a code repository",
     "purpose": "part of how the estate is read and checked",
     "relationships": [
-     "classified under Gn · Genome and spiders (with 7 siblings)"
+     "classified under Gn · Genome and spiders (with 9 siblings)"
     ],
     "reason": "A repo recorded because it exists in the code; in good standing.",
     "next": {
@@ -2409,6 +2409,150 @@
      "href": "https://github.com/Ventusltd/grid-distance-maths"
     },
     "backTo": "x776 · Geodesy"
+   },
+   "star-solar-star": {
+    "label": "star-solar-star",
+    "type": "repo",
+    "rag": "green",
+    "function": "a code repository",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [
+     "classified under x913 · Build sun (with 0 siblings)"
+    ],
+    "reason": "A repo recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Read the source",
+     "href": "https://github.com/Ventusltd/star-solar-star"
+    },
+    "backTo": "x913 · Build sun"
+   },
+   "star-quantum-twin": {
+    "label": "star-quantum-twin",
+    "type": "repo",
+    "rag": "green",
+    "function": "a code repository",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [
+     "classified under x923 · Build state (with 5 siblings)"
+    ],
+    "reason": "A repo recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Read the source",
+     "href": "https://github.com/Ventusltd/star-quantum-twin"
+    },
+    "backTo": "x923 · Build state"
+   },
+   "star-sector-star": {
+    "label": "star-sector-star",
+    "type": "repo",
+    "rag": "green",
+    "function": "a code repository",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [
+     "classified under x933 · Build (with 1 siblings)"
+    ],
+    "reason": "A repo recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Read the source",
+     "href": "https://github.com/Ventusltd/star-sector-star"
+    },
+    "backTo": "x933 · Build"
+   },
+   "galaxies-wafers": {
+    "label": "galaxies-wafers",
+    "type": "repo",
+    "rag": "green",
+    "function": "a code repository",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [
+     "classified under x956 · App (with 7 siblings)"
+    ],
+    "reason": "A repo recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Read the source",
+     "href": "https://github.com/Ventusltd/galaxies-wafers"
+    },
+    "backTo": "x956 · App"
+   },
+   "star-electron-star": {
+    "label": "star-electron-star",
+    "type": "repo",
+    "rag": "green",
+    "function": "a code repository",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [
+     "classified under x956 · App (with 7 siblings)"
+    ],
+    "reason": "A repo recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Read the source",
+     "href": "https://github.com/Ventusltd/star-electron-star"
+    },
+    "backTo": "x956 · App"
+   },
+   "particle-physics-drawing-engine": {
+    "label": "particle-physics-drawing-engine",
+    "type": "repo",
+    "rag": "green",
+    "function": "a code repository",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [
+     "classified under x1130 · Particles (with 0 siblings)"
+    ],
+    "reason": "A repo recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Read the source",
+     "href": "https://github.com/Ventusltd/particle-physics-drawing-engine"
+    },
+    "backTo": "x1130 · Particles"
+   },
+   "kuiper-belt": {
+    "label": "kuiper-belt",
+    "type": "repo",
+    "rag": "green",
+    "function": "a code repository",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [
+     "classified under x1159 · Count lines (with 0 siblings)"
+    ],
+    "reason": "A repo recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Read the source",
+     "href": "https://github.com/Ventusltd/kuiper-belt"
+    },
+    "backTo": "x1159 · Count lines"
+   },
+   "cosmic": {
+    "label": "cosmic",
+    "type": "repo",
+    "rag": "green",
+    "function": "a code repository",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [
+     "classified under x1161 · Index (with 7 siblings)"
+    ],
+    "reason": "A repo recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Read the source",
+     "href": "https://github.com/Ventusltd/cosmic"
+    },
+    "backTo": "x1161 · Index"
+   },
+   "faraday": {
+    "label": "faraday",
+    "type": "repo",
+    "rag": "green",
+    "function": "a code repository",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [
+     "classified under x1218 · Cells (with 0 siblings)"
+    ],
+    "reason": "A repo recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Read the source",
+     "href": "https://github.com/Ventusltd/faraday"
+    },
+    "backTo": "x1218 · Cells"
    }
   },
   "proof-of-work": {
@@ -2629,7 +2773,7 @@
     "function": "a code repository",
     "purpose": "part of how the estate is read and checked",
     "relationships": [
-     "classified under globalgrid2050 architecture development (with 26 siblings)"
+     "classified under globalgrid2050 architecture development (with 31 siblings)"
     ],
     "reason": "A repo recorded because it exists in the code; in good standing.",
     "next": {
@@ -2645,7 +2789,7 @@
     "function": "a code repository",
     "purpose": "part of how the estate is read and checked",
     "relationships": [
-     "classified under globalgrid2050 architecture development (with 26 siblings)"
+     "classified under globalgrid2050 architecture development (with 31 siblings)"
     ],
     "reason": "A repo recorded because it exists in the code; in good standing.",
     "next": {
@@ -2938,7 +3082,7 @@
     "purpose": "turns coordinates into real distances and bearings",
     "relationships": [
      "classified under Geodesy and distance (with 5 siblings)",
-     "used by x690",
+     "used by x690, x1022, x1026",
      "proven to work with Cc, Dd, El, Fc, Ga, Gc"
     ],
     "reason": "One form of Nearest substation search; first written 2026-09-04, lives in code-generator, ventus-grid-engine, 2 functions inside.",
@@ -3107,6 +3251,7 @@
     "purpose": "part of how the estate is read and checked",
     "relationships": [
      "classified under Connections and capacity (with 6 siblings)",
+     "used by x1267",
      "proven to work with Cc, El, Fc, Ga, Gc, Gg"
     ],
     "reason": "One form of Diversified demand; first written 2026-09-06, lives in ventus-grid-engine, 7 functions inside.",
@@ -3357,10 +3502,10 @@
     "purpose": "a map layer the reader can turn on",
     "relationships": [
      "classified under Map layers (with 12 siblings)",
-     "used by Cg, Pr, x342, x548",
+     "used by Dt, Cg, Pr, x342",
      "proven to work with Pr, Dt, Pn, A, D, Io"
     ],
-    "reason": "One form of Data centres and offtakers data tools; first written 2026-06-09, lives in companies, gridatlas, code-generator, data-centres-gb, data-gb-electricity, globalgrid2050, data-interconnectors, data-grid-gb, data-gridatlas, 321 functions inside.",
+    "reason": "One form of Data centres and offtakers data tools; first written 2026-06-09, lives in companies, code-generator, gridatlas, data-centres-gb, data-gb-electricity, globalgrid2050, data-interconnectors, data-grid-gb, data-gridatlas, 321 functions inside.",
     "next": {
      "label": "See it on the periodic table",
      "href": "https://ventusltd.github.io/stars/table.html?block=Dc"
@@ -3390,7 +3535,7 @@
     "function": "an engine module that does one job",
     "purpose": "part of how the estate is read and checked",
     "relationships": [
-     "classified under ventus-grid-engine (with 42 siblings)"
+     "classified under ventus-grid-engine (with 41 siblings)"
     ],
     "reason": "A module recorded because it exists in the code; in good standing.",
     "next": {
@@ -3406,7 +3551,7 @@
     "function": "an engine module that does one job",
     "purpose": "part of how the estate is read and checked",
     "relationships": [
-     "classified under ventus-grid-engine (with 42 siblings)"
+     "classified under ventus-grid-engine (with 41 siblings)"
     ],
     "reason": "A module recorded because it exists in the code; in good standing.",
     "next": {
@@ -3422,7 +3567,7 @@
     "function": "an engine module that does one job",
     "purpose": "part of how the estate is read and checked",
     "relationships": [
-     "classified under ventus-grid-engine (with 42 siblings)"
+     "classified under ventus-grid-engine (with 41 siblings)"
     ],
     "reason": "A module recorded because it exists in the code; in good standing.",
     "next": {
@@ -3438,7 +3583,7 @@
     "function": "an engine module that does one job",
     "purpose": "part of how the estate is read and checked",
     "relationships": [
-     "classified under ventus-grid-engine (with 42 siblings)"
+     "classified under ventus-grid-engine (with 41 siblings)"
     ],
     "reason": "A module recorded because it exists in the code; in good standing.",
     "next": {
@@ -3454,7 +3599,7 @@
     "function": "an engine module that does one job",
     "purpose": "part of how the estate is read and checked",
     "relationships": [
-     "classified under ventus-grid-engine (with 42 siblings)"
+     "classified under ventus-grid-engine (with 41 siblings)"
     ],
     "reason": "A module recorded because it exists in the code; in good standing.",
     "next": {
@@ -5540,7 +5685,7 @@
     "function": "Finds the nearest substations and lines to a point, the search the atlas runs on every click.",
     "purpose": "turns coordinates into real distances and bearings",
     "relationships": [
-     "used by x690",
+     "used by x690, x1022, x1026",
      "proven to work with Cc, Dd, El, Fc, Ga, Gc"
     ],
     "reason": "One form of Nearest substation search; first written 2026-09-04, lives in code-generator, ventus-grid-engine, 2 functions inside.",
@@ -5664,6 +5809,7 @@
     "function": "Demand after allowing for loads that do not peak together.",
     "purpose": "works something out from numbers",
     "relationships": [
+     "used by x1267",
      "proven to work with Cc, El, Fc, Ga, Gc, Gg"
     ],
     "reason": "One form of Diversified demand; first written 2026-09-06, lives in ventus-grid-engine, 7 functions inside.",
@@ -5763,9 +5909,9 @@
     "relationships": [
      "depends on Pr, Cg",
      "used by St, x619, x652",
-     "proven to work with Ps, Dt, Ug, Si, Ss, Ra"
+     "proven to work with Ps, Dt, Si, Ug, Ss, Pr"
     ],
-    "reason": "One form of streaming-parquet-bridge; first written 2026-08-29, lives in gridatlas, code-generator, globalgrid2050, testcode, ventus-grid-engine, 32 functions inside.",
+    "reason": "One form of streaming-parquet-bridge; first written 2026-08-29, lives in code-generator, testcode, gridatlas, globalgrid2050, 30 functions inside.",
     "next": {
      "label": "See it on the periodic table",
      "href": "https://ventusltd.github.io/stars/table.html?block=Sp"
@@ -5780,9 +5926,9 @@
     "purpose": "a plug-in part of the map every project is seen on",
     "relationships": [
      "depends on St, Tp, Pr, Gn",
-     "proven to work with Ps, Dt, Sp, Si, Ss, Ra"
+     "proven to work with Dt, Ps, Sp, Si, Ss, Pr"
     ],
-    "reason": "One form of uk-gazetteer-flyto; first written 2026-08-29, lives in gridatlas, code-generator, globalgrid2050, testcode, ventus-grid-engine, 50 functions inside.",
+    "reason": "One form of uk-gazetteer-flyto; first written 2026-08-29, lives in code-generator, testcode, gridatlas, globalgrid2050, ventus-grid-engine, 52 functions inside.",
     "next": {
      "label": "See it on the periodic table",
      "href": "https://ventusltd.github.io/stars/table.html?block=Ug"
@@ -5798,9 +5944,9 @@
     "relationships": [
      "depends on Pr, St, Tp, Gn",
      "used by Ps, Ra, Cg, Sb",
-     "proven to work with Dt, Ps, Si, Sp, Ug"
+     "proven to work with Dt, Ps, Si, Sp, Ug, Ra"
     ],
-    "reason": "One form of sld-sandbox; first written 2026-08-29, lives in claude, gridatlas, code-generator, globalgrid2050, testcode, ventus-grid-engine, grid-distance-maths, 698 functions inside.",
+    "reason": "One form of sld-sandbox; first written 2026-08-29, lives in claude, code-generator, testcode, gridatlas, globalgrid2050, ventus-grid-engine, grid-distance-maths, 643 functions inside.",
     "next": {
      "label": "See it on the periodic table",
      "href": "https://ventusltd.github.io/stars/table.html?block=Ss"
@@ -5815,10 +5961,10 @@
     "purpose": "a plug-in part of the map every project is seen on",
     "relationships": [
      "depends on Pr, St, Tp, Gn",
-     "used by Ra, Cg, St, Pn",
-     "proven to work with Ps, Dt, Ra, Sp, Ss, Ug"
+     "used by Ps, Ra, Cg, Sb",
+     "proven to work with Ps, Ra, Dt, Ss, Sp, Ug"
     ],
-    "reason": "One form of substation-intelligence; first written 2026-03-29, lives in gridatlas, code-generator, globalgrid2050, testcode, youengineer-code-review, ventus-grid-engine, teleprinter, spiders, 663 functions inside.",
+    "reason": "One form of substation-intelligence; first written 2026-03-29, lives in code-generator, testcode, gridatlas, globalgrid2050, youengineer-code-review, ventus-grid-engine, teleprinter, spiders, 727 functions inside.",
     "next": {
      "label": "See it on the periodic table",
      "href": "https://ventusltd.github.io/stars/table.html?block=Si"
@@ -5996,11 +6142,11 @@
     "function": "The contract every MAP link obeys, so a link always arrives on the right feature.",
     "purpose": "holds everything in place",
     "relationships": [
-     "depends on St, Tp, Pr, Gn",
-     "used by Cg, x406",
-     "proven to work with Pn, Pr, Ps, Dc, Sp, Ug"
+     "depends on Ps, Pr, Gp, St",
+     "used by Cg, St, Pn, Pr",
+     "proven to work with Pn, Pr, Ps, Dc, Gn, Sp"
     ],
-    "reason": "One form of The MAP button (deep-link contract); first written 2026-06-08, lives in chatgpt-audits, gridatlas, code-generator, globalgrid2050, claude, companies, data-gridatlas, pipelinenews, data-grid-gb, ventus-grid-engine, testcode, 131 functions inside.",
+    "reason": "One form of The MAP button (deep-link contract); first written 2026-06-08, lives in chatgpt-audits, code-generator, gridatlas, globalgrid2050, claude, companies, data-gridatlas, pipelinenews, data-grid-gb, ventus-grid-engine, testcode, galaxies-wafers, star-electron-star, 237 functions inside.",
     "next": {
      "label": "See it on the periodic table",
      "href": "https://ventusltd.github.io/stars/table.html?block=Dt"
@@ -9551,8 +9697,22 @@
    }
   },
   "random": {
-   "#5439 title": {
-    "label": "#5439 title",
+   "#5440 panel": {
+    "label": "#5440 panel",
+    "type": "electron",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A electron recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "#6554 centre": {
+    "label": "#6554 centre",
     "type": "electron",
     "rag": "green",
     "function": "part of the estate",
@@ -9579,464 +9739,56 @@
     },
     "backTo": null
    },
-   "#6652 megawatts": {
-    "label": "#6652 megawatts",
-    "type": "vedic",
+   "#3366 rowObject": {
+    "label": "#3366 rowObject",
+    "type": "electron",
     "rag": "green",
     "function": "part of the estate",
-    "purpose": "holds information the platform reads and writes",
+    "purpose": "part of how the estate is read and checked",
     "relationships": [],
-    "reason": "A vedic recorded because it exists in the code; in good standing.",
+    "reason": "A electron recorded because it exists in the code; in good standing.",
     "next": {
      "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
     },
     "backTo": null
    },
-   "#3610 globalgrid2050/onChange": {
-    "label": "#3610 globalgrid2050/onChange",
+   "#766 geometry": {
+    "label": "#766 geometry",
+    "type": "electron",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A electron recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "#4034 captureGeometry": {
+    "label": "#4034 captureGeometry",
+    "type": "electron",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A electron recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "#1524 globalgrid2050/promise": {
+    "label": "#1524 globalgrid2050/promise",
     "type": "soul",
     "rag": "green",
     "function": "part of the estate",
     "purpose": "part of how the estate is read and checked",
     "relationships": [],
     "reason": "A soul recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
-    },
-    "backTo": null
-   },
-   "#3800 signalLabel": {
-    "label": "#3800 signalLabel",
-    "type": "electron",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A electron recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
-    },
-    "backTo": null
-   },
-   "repo chatgpt-audits": {
-    "label": "repo chatgpt-audits",
-    "type": "magnetar",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A magnetar recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
-    },
-    "backTo": null
-   },
-   "Ss(202609080850)": {
-    "label": "Ss(202609080850)",
-    "type": "chemistry",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A chemistry recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://ventusltd.github.io/stars/table.html?block=Ss"
-    },
-    "backTo": null
-   },
-   "#4942 sourceId": {
-    "label": "#4942 sourceId",
-    "type": "vedic",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "holds information the platform reads and writes",
-    "relationships": [],
-    "reason": "A vedic recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
-    },
-    "backTo": null
-   },
-   "Ss(202609050354)": {
-    "label": "Ss(202609050354)",
-    "type": "chemistry",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A chemistry recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://ventusltd.github.io/stars/table.html?block=Ss"
-    },
-    "backTo": null
-   },
-   "Pp power_plants": {
-    "label": "Pp power_plants",
-    "type": "vedic",
-    "rag": "green",
-    "function": "A data layer drawn on the GridAtlas map.",
-    "purpose": "a map layer the reader can turn on",
-    "relationships": [
-     "proven to work with A, D, Io, R, Ra, Dc"
-    ],
-    "reason": "One form of Power plants; first written 2026-03-28, lives in globalgrid2050, 1 functions inside.",
-    "next": {
-     "label": "See it on the periodic table",
-     "href": "https://ventusltd.github.io/stars/table.html?block=Pp"
-    },
-    "backTo": null
-   },
-   "#3792 setGaugeUniverseV9_2": {
-    "label": "#3792 setGaugeUniverseV9_2",
-    "type": "electron",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A electron recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
-    },
-    "backTo": null
-   },
-   "#3799 indexNewsItems": {
-    "label": "#3799 indexNewsItems",
-    "type": "vedic",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "holds information the platform reads and writes",
-    "relationships": [],
-    "reason": "A vedic recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
-    },
-    "backTo": null
-   },
-   "Ss(202609040337)": {
-    "label": "Ss(202609040337)",
-    "type": "chemistry",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A chemistry recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://ventusltd.github.io/stars/table.html?block=Ss"
-    },
-    "backTo": null
-   },
-   "#1220 initMap": {
-    "label": "#1220 initMap",
-    "type": "electron",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A electron recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
-    },
-    "backTo": null
-   },
-   "Ss(202609050238)": {
-    "label": "Ss(202609050238)",
-    "type": "chemistry",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A chemistry recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://ventusltd.github.io/stars/table.html?block=Ss"
-    },
-    "backTo": null
-   },
-   "#5440 panel": {
-    "label": "#5440 panel",
-    "type": "electron",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A electron recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
-    },
-    "backTo": null
-   },
-   "#8552 compute": {
-    "label": "#8552 compute",
-    "type": "vedic",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "works something out from numbers",
-    "relationships": [],
-    "reason": "A vedic recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
-    },
-    "backTo": null
-   },
-   "#1524 pipelinenews/promise": {
-    "label": "#1524 pipelinenews/promise",
-    "type": "soul",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A soul recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
-    },
-    "backTo": null
-   },
-   "Si(202609051329)": {
-    "label": "Si(202609051329)",
-    "type": "chemistry",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A chemistry recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://ventusltd.github.io/stars/table.html?block=Si"
-    },
-    "backTo": null
-   },
-   "#15 globalgrid2050/renderStats": {
-    "label": "#15 globalgrid2050/renderStats",
-    "type": "soul",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A soul recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
-    },
-    "backTo": null
-   },
-   "#6974 log_message": {
-    "label": "#6974 log_message",
-    "type": "vedic",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "moves the map or the view",
-    "relationships": [],
-    "reason": "A vedic recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
-    },
-    "backTo": null
-   },
-   "#3384 globalgrid2050/promise": {
-    "label": "#3384 globalgrid2050/promise",
-    "type": "soul",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A soul recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
-    },
-    "backTo": null
-   },
-   "#4076 reset": {
-    "label": "#4076 reset",
-    "type": "electron",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A electron recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
-    },
-    "backTo": null
-   },
-   "#3840 drawRegional": {
-    "label": "#3840 drawRegional",
-    "type": "vedic",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "holds information the platform reads and writes",
-    "relationships": [],
-    "reason": "A vedic recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
-    },
-    "backTo": null
-   },
-   "#15 testcode/renderStats": {
-    "label": "#15 testcode/renderStats",
-    "type": "soul",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A soul recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
-    },
-    "backTo": null
-   },
-   "#4569 success": {
-    "label": "#4569 success",
-    "type": "vedic",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "holds information the platform reads and writes",
-    "relationships": [],
-    "reason": "A vedic recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
-    },
-    "backTo": null
-   },
-   "#1179 computeStats": {
-    "label": "#1179 computeStats",
-    "type": "electron",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A electron recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
-    },
-    "backTo": null
-   },
-   "#3801 signalForProjectV9_2": {
-    "label": "#3801 signalForProjectV9_2",
-    "type": "electron",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A electron recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
-    },
-    "backTo": null
-   },
-   "repo v11": {
-    "label": "repo v11",
-    "type": "magnetar",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A magnetar recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
-    },
-    "backTo": null
-   },
-   "#5 normaliseIntegerFields": {
-    "label": "#5 normaliseIntegerFields",
-    "type": "electron",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A electron recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
-    },
-    "backTo": null
-   },
-   "#3790 formatLargestV9_2": {
-    "label": "#3790 formatLargestV9_2",
-    "type": "electron",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A electron recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
-    },
-    "backTo": null
-   },
-   "Structure": {
-    "label": "Structure",
-    "type": "vedic",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A vedic recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
-    },
-    "backTo": null
-   },
-   "Ss(202609080837)": {
-    "label": "Ss(202609080837)",
-    "type": "chemistry",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A chemistry recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://ventusltd.github.io/stars/table.html?block=Ss"
-    },
-    "backTo": null
-   },
-   "repo gb-electricity-ui": {
-    "label": "repo gb-electricity-ui",
-    "type": "electron",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A electron recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
-    },
-    "backTo": null
-   },
-   "repo claude": {
-    "label": "repo claude",
-    "type": "electron",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A electron recorded because it exists in the code; in good standing.",
     "next": {
      "label": "Open the reference",
      "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
@@ -10060,36 +9812,8 @@
     },
     "backTo": null
    },
-   "Gr grid_275kv": {
-    "label": "Gr grid_275kv",
-    "type": "vedic",
-    "rag": "green",
-    "function": "A data layer drawn on the GridAtlas map.",
-    "purpose": "a map layer the reader can turn on",
-    "relationships": [],
-    "reason": "One form of Grid 275 kV; first written unknown, lives in the estate.",
-    "next": {
-     "label": "See it on the periodic table",
-     "href": "https://ventusltd.github.io/stars/table.html?block=Gr"
-    },
-    "backTo": null
-   },
-   "Si(202609031316)": {
-    "label": "Si(202609031316)",
-    "type": "chemistry",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A chemistry recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://ventusltd.github.io/stars/table.html?block=Si"
-    },
-    "backTo": null
-   },
-   "#1470 invariant": {
-    "label": "#1470 invariant",
+   "#1219 toggleAtlasV8GridLayer": {
+    "label": "#1219 toggleAtlasV8GridLayer",
     "type": "vedic",
     "rag": "green",
     "function": "part of the estate",
@@ -10102,386 +9826,22 @@
     },
     "backTo": null
    },
-   "#8471 edit": {
-    "label": "#8471 edit",
-    "type": "electron",
+   "repo teleprinter": {
+    "label": "repo teleprinter",
+    "type": "magnetar",
     "rag": "green",
     "function": "part of the estate",
     "purpose": "part of how the estate is read and checked",
     "relationships": [],
-    "reason": "A electron recorded because it exists in the code; in good standing.",
+    "reason": "A magnetar recorded because it exists in the code; in good standing.",
     "next": {
      "label": "Open the reference",
      "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
     },
     "backTo": null
    },
-   "#8436 overlap": {
-    "label": "#8436 overlap",
-    "type": "electron",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A electron recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
-    },
-    "backTo": null
-   },
-   "#4364 schedule": {
-    "label": "#4364 schedule",
-    "type": "electron",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A electron recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
-    },
-    "backTo": null
-   },
-   "Si(202609012045)": {
-    "label": "Si(202609012045)",
-    "type": "chemistry",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A chemistry recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://ventusltd.github.io/stars/table.html?block=Si"
-    },
-    "backTo": null
-   },
-   "#4272 preparePage": {
-    "label": "#4272 preparePage",
-    "type": "vedic",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "holds information the platform reads and writes",
-    "relationships": [],
-    "reason": "A vedic recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
-    },
-    "backTo": null
-   },
-   "#6554 centre": {
-    "label": "#6554 centre",
-    "type": "electron",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A electron recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
-    },
-    "backTo": null
-   },
-   "Ss(202609040403)": {
-    "label": "Ss(202609040403)",
-    "type": "chemistry",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A chemistry recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://ventusltd.github.io/stars/table.html?block=Ss"
-    },
-    "backTo": null
-   },
-   "#1222 showPopup": {
-    "label": "#1222 showPopup",
-    "type": "electron",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A electron recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
-    },
-    "backTo": null
-   },
-   "#1793 _zoneDrawCalcArea": {
-    "label": "#1793 _zoneDrawCalcArea",
-    "type": "vedic",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "works something out from numbers",
-    "relationships": [],
-    "reason": "A vedic recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
-    },
-    "backTo": null
-   },
-   "#3616 cleanText": {
-    "label": "#3616 cleanText",
-    "type": "vedic",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "holds information the platform reads and writes",
-    "relationships": [],
-    "reason": "A vedic recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
-    },
-    "backTo": null
-   },
-   "#1532 buildAtlasV9DeepLink": {
-    "label": "#1532 buildAtlasV9DeepLink",
-    "type": "electron",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A electron recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
-    },
-    "backTo": null
-   },
-   "#4674 encode": {
-    "label": "#4674 encode",
-    "type": "electron",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A electron recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
-    },
-    "backTo": null
-   },
-   "#4621 graph": {
-    "label": "#4621 graph",
-    "type": "vedic",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "holds information the platform reads and writes",
-    "relationships": [],
-    "reason": "A vedic recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
-    },
-    "backTo": null
-   },
-   "#7851 available": {
-    "label": "#7851 available",
-    "type": "vedic",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "holds information the platform reads and writes",
-    "relationships": [],
-    "reason": "A vedic recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
-    },
-    "backTo": null
-   },
-   "#1524 globalgrid2050/promise": {
-    "label": "#1524 globalgrid2050/promise",
-    "type": "soul",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A soul recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
-    },
-    "backTo": null
-   },
-   "Si(202609032041)": {
-    "label": "Si(202609032041)",
-    "type": "chemistry",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A chemistry recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://ventusltd.github.io/stars/table.html?block=Si"
-    },
-    "backTo": null
-   },
-   "#2138 files": {
-    "label": "#2138 files",
-    "type": "vedic",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "holds information the platform reads and writes",
-    "relationships": [],
-    "reason": "A vedic recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
-    },
-    "backTo": null
-   },
-   "Ss(202609032315)": {
-    "label": "Ss(202609032315)",
-    "type": "chemistry",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A chemistry recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://ventusltd.github.io/stars/table.html?block=Ss"
-    },
-    "backTo": null
-   },
-   "#4312 readText": {
-    "label": "#4312 readText",
-    "type": "vedic",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "holds information the platform reads and writes",
-    "relationships": [],
-    "reason": "A vedic recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
-    },
-    "backTo": null
-   },
-   "#4320 gitBlob": {
-    "label": "#4320 gitBlob",
-    "type": "vedic",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "holds information the platform reads and writes",
-    "relationships": [],
-    "reason": "A vedic recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
-    },
-    "backTo": null
-   },
-   "Ss(202609041244)": {
-    "label": "Ss(202609041244)",
-    "type": "chemistry",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A chemistry recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://ventusltd.github.io/stars/table.html?block=Ss"
-    },
-    "backTo": null
-   },
-   "#5547 writeText": {
-    "label": "#5547 writeText",
-    "type": "vedic",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "holds information the platform reads and writes",
-    "relationships": [],
-    "reason": "A vedic recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
-    },
-    "backTo": null
-   },
-   "#5889 authority": {
-    "label": "#5889 authority",
-    "type": "vedic",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "holds information the platform reads and writes",
-    "relationships": [],
-    "reason": "A vedic recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
-    },
-    "backTo": null
-   },
-   "#3880 repdUpdatedTimestamp": {
-    "label": "#3880 repdUpdatedTimestamp",
-    "type": "electron",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A electron recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
-    },
-    "backTo": null
-   },
-   "#1241 updateArrayRotationDisplay": {
-    "label": "#1241 updateArrayRotationDisplay",
-    "type": "vedic",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "holds information the platform reads and writes",
-    "relationships": [],
-    "reason": "A vedic recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
-    },
-    "backTo": null
-   },
-   "#3827 renderNews": {
-    "label": "#3827 renderNews",
-    "type": "electron",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A electron recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
-    },
-    "backTo": null
-   },
-   "Si(202609031751)": {
-    "label": "Si(202609031751)",
-    "type": "chemistry",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A chemistry recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://ventusltd.github.io/stars/table.html?block=Si"
-    },
-    "backTo": null
-   },
-   "#21 drawBend": {
-    "label": "#21 drawBend",
+   "#1687 visible": {
+    "label": "#1687 visible",
     "type": "electron",
     "rag": "green",
     "function": "part of the estate",
@@ -10508,8 +9868,22 @@
     },
     "backTo": null
    },
-   "#3610 gridatlas/onChange": {
-    "label": "#3610 gridatlas/onChange",
+   "#3880 repdUpdatedTimestamp": {
+    "label": "#3880 repdUpdatedTimestamp",
+    "type": "vedic",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "holds information the platform reads and writes",
+    "relationships": [],
+    "reason": "A vedic recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
+    },
+    "backTo": null
+   },
+   "#1524 pipelinenews/promise": {
+    "label": "#1524 pipelinenews/promise",
     "type": "soul",
     "rag": "green",
     "function": "part of the estate",
@@ -10522,22 +9896,8 @@
     },
     "backTo": null
    },
-   "#1822 createGeoJSONCircle": {
-    "label": "#1822 createGeoJSONCircle",
-    "type": "electron",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A electron recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
-    },
-    "backTo": null
-   },
-   "Si(202609041956)": {
-    "label": "Si(202609041956)",
+   "Si(202609051556)": {
+    "label": "Si(202609051556)",
     "type": "chemistry",
     "rag": "green",
     "function": "part of the estate",
@@ -10550,22 +9910,8 @@
     },
     "backTo": null
    },
-   "#1476 invariant": {
-    "label": "#1476 invariant",
-    "type": "vedic",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "holds information the platform reads and writes",
-    "relationships": [],
-    "reason": "A vedic recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
-    },
-    "backTo": null
-   },
-   "#3406 provisional": {
-    "label": "#3406 provisional",
+   "#4870 savePdf": {
+    "label": "#4870 savePdf",
     "type": "electron",
     "rag": "green",
     "function": "part of the estate",
@@ -10578,8 +9924,8 @@
     },
     "backTo": null
    },
-   "#4114 mountMapControlsLayout": {
-    "label": "#4114 mountMapControlsLayout",
+   "repo gridatlas": {
+    "label": "repo gridatlas",
     "type": "electron",
     "rag": "green",
     "function": "part of the estate",
@@ -10592,238 +9938,182 @@
     },
     "backTo": null
    },
-   "#3812 indexNewsItems": {
-    "label": "#3812 indexNewsItems",
-    "type": "vedic",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "holds information the platform reads and writes",
-    "relationships": [],
-    "reason": "A vedic recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
-    },
-    "backTo": null
-   },
-   "#346 fetcher": {
-    "label": "#346 fetcher",
-    "type": "vedic",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "moves data from one place to another",
-    "relationships": [],
-    "reason": "A vedic recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
-    },
-    "backTo": null
-   },
-   "Ss(202609071005)": {
-    "label": "Ss(202609071005)",
-    "type": "chemistry",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A chemistry recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://ventusltd.github.io/stars/table.html?block=Ss"
-    },
-    "backTo": null
-   },
-   "#3725 deepFreeze": {
-    "label": "#3725 deepFreeze",
-    "type": "vedic",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "holds information the platform reads and writes",
-    "relationships": [],
-    "reason": "A vedic recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
-    },
-    "backTo": null
-   },
-   "#1 clampInteger": {
-    "label": "#1 clampInteger",
-    "type": "vedic",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "holds information the platform reads and writes",
-    "relationships": [],
-    "reason": "A vedic recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
-    },
-    "backTo": null
-   },
-   "Rp REPD_PAGE": {
-    "label": "Rp REPD_PAGE",
-    "type": "vedic",
-    "rag": "green",
-    "function": "A value globalgrid2050 architecture development must agree on. 2 different values are in use; which is true is a decision.",
-    "purpose": "a value the whole platform must agree on",
-    "relationships": [],
-    "reason": "One form of Repd page; first written unknown, lives in the estate.",
-    "next": {
-     "label": "See it on the periodic table",
-     "href": "https://ventusltd.github.io/stars/table.html?block=Rp"
-    },
-    "backTo": null
-   },
-   "#3262 startCableRouteMode": {
-    "label": "#3262 startCableRouteMode",
-    "type": "electron",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A electron recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
-    },
-    "backTo": null
-   },
-   "#1469 select": {
-    "label": "#1469 select",
-    "type": "electron",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A electron recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
-    },
-    "backTo": null
-   },
-   "#14 renderIssues": {
-    "label": "#14 renderIssues",
-    "type": "vedic",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "holds information the platform reads and writes",
-    "relationships": [],
-    "reason": "A vedic recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
-    },
-    "backTo": null
-   },
-   "Ss(202609031751)": {
-    "label": "Ss(202609031751)",
-    "type": "chemistry",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A chemistry recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://ventusltd.github.io/stars/table.html?block=Ss"
-    },
-    "backTo": null
-   },
-   "Ss": {
-    "label": "Ss",
-    "type": "chemistry",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A chemistry recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://ventusltd.github.io/stars/table.html?block=Ss"
-    },
-    "backTo": null
-   },
-   "Si(202609031809)": {
-    "label": "Si(202609031809)",
-    "type": "chemistry",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A chemistry recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://ventusltd.github.io/stars/table.html?block=Si"
-    },
-    "backTo": null
-   },
-   "#1465 validateAsset": {
-    "label": "#1465 validateAsset",
-    "type": "vedic",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "holds information the platform reads and writes",
-    "relationships": [],
-    "reason": "A vedic recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
-    },
-    "backTo": null
-   },
-   "#3805 validPayload": {
-    "label": "#3805 validPayload",
-    "type": "vedic",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "holds information the platform reads and writes",
-    "relationships": [],
-    "reason": "A vedic recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
-    },
-    "backTo": null
-   },
-   "#5324 element": {
-    "label": "#5324 element",
-    "type": "electron",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A electron recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
-    },
-    "backTo": null
-   },
-   "Si(202609032005)": {
-    "label": "Si(202609032005)",
-    "type": "chemistry",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A chemistry recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://ventusltd.github.io/stars/table.html?block=Si"
-    },
-    "backTo": null
-   },
-   "#43 cable-trench-or-drill/onChange": {
-    "label": "#43 cable-trench-or-drill/onChange",
+   "#3384 globalgrid2050/promise": {
+    "label": "#3384 globalgrid2050/promise",
     "type": "soul",
     "rag": "green",
     "function": "part of the estate",
     "purpose": "part of how the estate is read and checked",
     "relationships": [],
     "reason": "A soul recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "#3707 loadCanonicalProjectsV9_1": {
+    "label": "#3707 loadCanonicalProjectsV9_1",
+    "type": "electron",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A electron recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "#1179 computeStats": {
+    "label": "#1179 computeStats",
+    "type": "electron",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A electron recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "#1470 invariant": {
+    "label": "#1470 invariant",
+    "type": "vedic",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "holds information the platform reads and writes",
+    "relationships": [],
+    "reason": "A vedic recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
+    },
+    "backTo": null
+   },
+   "#3790 formatLargestV9_2": {
+    "label": "#3790 formatLargestV9_2",
+    "type": "vedic",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "holds information the platform reads and writes",
+    "relationships": [],
+    "reason": "A vedic recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
+    },
+    "backTo": null
+   },
+   "#1201 renderFinanceWarnings": {
+    "label": "#1201 renderFinanceWarnings",
+    "type": "electron",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A electron recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "Ss(202609030234)": {
+    "label": "Ss(202609030234)",
+    "type": "chemistry",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A chemistry recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://ventusltd.github.io/stars/table.html?block=Ss"
+    },
+    "backTo": null
+   },
+   "#1677 selectTechnology": {
+    "label": "#1677 selectTechnology",
+    "type": "vedic",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "holds information the platform reads and writes",
+    "relationships": [],
+    "reason": "A vedic recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
+    },
+    "backTo": null
+   },
+   "#5909 projects": {
+    "label": "#5909 projects",
+    "type": "electron",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A electron recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "#1431 modules": {
+    "label": "#1431 modules",
+    "type": "electron",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A electron recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "#3263 finishCableRouteMode": {
+    "label": "#3263 finishCableRouteMode",
+    "type": "vedic",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "moves the map or the view",
+    "relationships": [],
+    "reason": "A vedic recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
+    },
+    "backTo": null
+   },
+   "#411 cartridges": {
+    "label": "#411 cartridges",
+    "type": "vedic",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "holds information the platform reads and writes",
+    "relationships": [],
+    "reason": "A vedic recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
+    },
+    "backTo": null
+   },
+   "#3265 addCableRouteWaypoint": {
+    "label": "#3265 addCableRouteWaypoint",
+    "type": "electron",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A electron recorded because it exists in the code; in good standing.",
     "next": {
      "label": "Open the reference",
      "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
@@ -10844,8 +10134,22 @@
     },
     "backTo": null
    },
-   "#8299 writeSourceCodeBundle": {
-    "label": "#8299 writeSourceCodeBundle",
+   "#3764 hasValidatedModel": {
+    "label": "#3764 hasValidatedModel",
+    "type": "vedic",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "holds information the platform reads and writes",
+    "relationships": [],
+    "reason": "A vedic recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
+    },
+    "backTo": null
+   },
+   "#4317 readText": {
+    "label": "#4317 readText",
     "type": "electron",
     "rag": "green",
     "function": "part of the estate",
@@ -10858,78 +10162,8 @@
     },
     "backTo": null
    },
-   "#537 query": {
-    "label": "#537 query",
-    "type": "electron",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A electron recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
-    },
-    "backTo": null
-   },
-   "#1817 doRadiusAreaMeasure": {
-    "label": "#1817 doRadiusAreaMeasure",
-    "type": "electron",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A electron recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
-    },
-    "backTo": null
-   },
-   "Si(202609062358)": {
-    "label": "Si(202609062358)",
-    "type": "chemistry",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A chemistry recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://ventusltd.github.io/stars/table.html?block=Si"
-    },
-    "backTo": null
-   },
-   "#1233 recalcAll": {
-    "label": "#1233 recalcAll",
-    "type": "electron",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A electron recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
-    },
-    "backTo": null
-   },
-   "#2966 composition": {
-    "label": "#2966 composition",
-    "type": "electron",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A electron recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
-    },
-    "backTo": null
-   },
-   "#15 layout-tool/renderStats": {
-    "label": "#15 layout-tool/renderStats",
+   "#3610 globalgrid2050/onChange": {
+    "label": "#3610 globalgrid2050/onChange",
     "type": "soul",
     "rag": "green",
     "function": "part of the estate",
@@ -10939,62 +10173,6 @@
     "next": {
      "label": "Open the reference",
      "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
-    },
-    "backTo": null
-   },
-   "#5253 evidence": {
-    "label": "#5253 evidence",
-    "type": "vedic",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "holds information the platform reads and writes",
-    "relationships": [],
-    "reason": "A vedic recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
-    },
-    "backTo": null
-   },
-   "#3418 fitToStatedCapacity": {
-    "label": "#3418 fitToStatedCapacity",
-    "type": "vedic",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "works something out from numbers",
-    "relationships": [],
-    "reason": "A vedic recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
-    },
-    "backTo": null
-   },
-   "#1463 installStyles": {
-    "label": "#1463 installStyles",
-    "type": "vedic",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "holds information the platform reads and writes",
-    "relationships": [],
-    "reason": "A vedic recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
-    },
-    "backTo": null
-   },
-   "#1684 clearWider": {
-    "label": "#1684 clearWider",
-    "type": "vedic",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "holds information the platform reads and writes",
-    "relationships": [],
-    "reason": "A vedic recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
     },
     "backTo": null
    },
@@ -11012,6 +10190,34 @@
     },
     "backTo": null
    },
+   "#3610 gridatlas/onChange": {
+    "label": "#3610 gridatlas/onChange",
+    "type": "soul",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A soul recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "Ss(202609042123)": {
+    "label": "Ss(202609042123)",
+    "type": "chemistry",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A chemistry recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://ventusltd.github.io/stars/table.html?block=Ss"
+    },
+    "backTo": null
+   },
    "#1175 getCentralInverterDcMwdc": {
     "label": "#1175 getCentralInverterDcMwdc",
     "type": "vedic",
@@ -11026,8 +10232,22 @@
     },
     "backTo": null
    },
-   "#8398 tool": {
-    "label": "#8398 tool",
+   "Si(202609031751)": {
+    "label": "Si(202609031751)",
+    "type": "chemistry",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A chemistry recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://ventusltd.github.io/stars/table.html?block=Si"
+    },
+    "backTo": null
+   },
+   "#3406 provisional": {
+    "label": "#3406 provisional",
     "type": "electron",
     "rag": "green",
     "function": "part of the estate",
@@ -11040,8 +10260,386 @@
     },
     "backTo": null
    },
-   "#1201 renderFinanceWarnings": {
-    "label": "#1201 renderFinanceWarnings",
+   "#8398 tool": {
+    "label": "#8398 tool",
+    "type": "vedic",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "holds information the platform reads and writes",
+    "relationships": [],
+    "reason": "A vedic recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
+    },
+    "backTo": null
+   },
+   "#3969 decodePngPixels": {
+    "label": "#3969 decodePngPixels",
+    "type": "vedic",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "holds information the platform reads and writes",
+    "relationships": [],
+    "reason": "A vedic recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
+    },
+    "backTo": null
+   },
+   "#980 cells": {
+    "label": "#980 cells",
+    "type": "electron",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A electron recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "#1464 sha256Hex": {
+    "label": "#1464 sha256Hex",
+    "type": "vedic",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "holds information the platform reads and writes",
+    "relationships": [],
+    "reason": "A vedic recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
+    },
+    "backTo": null
+   },
+   "#4364 schedule": {
+    "label": "#4364 schedule",
+    "type": "vedic",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "holds information the platform reads and writes",
+    "relationships": [],
+    "reason": "A vedic recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
+    },
+    "backTo": null
+   },
+   "#1209 intVal": {
+    "label": "#1209 intVal",
+    "type": "electron",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A electron recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "Ss(202609032012)": {
+    "label": "Ss(202609032012)",
+    "type": "chemistry",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A chemistry recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://ventusltd.github.io/stars/table.html?block=Ss"
+    },
+    "backTo": null
+   },
+   "#10 lookupOD": {
+    "label": "#10 lookupOD",
+    "type": "electron",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A electron recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "#1792 _zoneDrawCirclePoints": {
+    "label": "#1792 _zoneDrawCirclePoints",
+    "type": "electron",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A electron recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "repo cvaa": {
+    "label": "repo cvaa",
+    "type": "electron",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A electron recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "#15 testcode/renderStats": {
+    "label": "#15 testcode/renderStats",
+    "type": "soul",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A soul recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "#3869 updateResultSummary": {
+    "label": "#3869 updateResultSummary",
+    "type": "electron",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A electron recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "#1199 computeFinance": {
+    "label": "#1199 computeFinance",
+    "type": "electron",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A electron recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "Si(202609051624)": {
+    "label": "Si(202609051624)",
+    "type": "chemistry",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A chemistry recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://ventusltd.github.io/stars/table.html?block=Si"
+    },
+    "backTo": null
+   },
+   "#8351 assess": {
+    "label": "#8351 assess",
+    "type": "electron",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A electron recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "#352 sweep": {
+    "label": "#352 sweep",
+    "type": "vedic",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "holds information the platform reads and writes",
+    "relationships": [],
+    "reason": "A vedic recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
+    },
+    "backTo": null
+   },
+   "#1535 invariant": {
+    "label": "#1535 invariant",
+    "type": "electron",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A electron recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "#3839 regionalRows": {
+    "label": "#3839 regionalRows",
+    "type": "electron",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A electron recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "#1542 select": {
+    "label": "#1542 select",
+    "type": "electron",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A electron recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "#1200 renderFinance": {
+    "label": "#1200 renderFinance",
+    "type": "vedic",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "holds information the platform reads and writes",
+    "relationships": [],
+    "reason": "A vedic recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
+    },
+    "backTo": null
+   },
+   "#1483 displayDate": {
+    "label": "#1483 displayDate",
+    "type": "electron",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A electron recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "#3411 consistency": {
+    "label": "#3411 consistency",
+    "type": "vedic",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "holds information the platform reads and writes",
+    "relationships": [],
+    "reason": "A vedic recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
+    },
+    "backTo": null
+   },
+   "Si(202609040021)": {
+    "label": "Si(202609040021)",
+    "type": "chemistry",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A chemistry recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://ventusltd.github.io/stars/table.html?block=Si"
+    },
+    "backTo": null
+   },
+   "#1233 recalcAll": {
+    "label": "#1233 recalcAll",
+    "type": "vedic",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "works something out from numbers",
+    "relationships": [],
+    "reason": "A vedic recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
+    },
+    "backTo": null
+   },
+   "#1465 validateAsset": {
+    "label": "#1465 validateAsset",
+    "type": "electron",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A electron recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "repo v11": {
+    "label": "repo v11",
+    "type": "magnetar",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A magnetar recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "#15 globalgrid2050/renderStats": {
+    "label": "#15 globalgrid2050/renderStats",
+    "type": "soul",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A soul recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "#3748 hasValidatedModel": {
+    "label": "#3748 hasValidatedModel",
     "type": "vedic",
     "rag": "green",
     "function": "part of the estate",
@@ -11068,8 +10666,754 @@
     },
     "backTo": null
    },
-   "Ss(202609012141)": {
-    "label": "Ss(202609012141)",
+   "#6 getInputs": {
+    "label": "#6 getInputs",
+    "type": "electron",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A electron recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "#4316 readJson": {
+    "label": "#4316 readJson",
+    "type": "electron",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A electron recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "repo gb-electricity-ui": {
+    "label": "repo gb-electricity-ui",
+    "type": "magnetar",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A magnetar recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "#4052 globalgrid2050/handle": {
+    "label": "#4052 globalgrid2050/handle",
+    "type": "soul",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A soul recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "#1211 setText": {
+    "label": "#1211 setText",
+    "type": "electron",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A electron recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "#4466 words": {
+    "label": "#4466 words",
+    "type": "electron",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A electron recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "#4315 readText": {
+    "label": "#4315 readText",
+    "type": "vedic",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "holds information the platform reads and writes",
+    "relationships": [],
+    "reason": "A vedic recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
+    },
+    "backTo": null
+   },
+   "Si(202609020006)": {
+    "label": "Si(202609020006)",
+    "type": "chemistry",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A chemistry recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://ventusltd.github.io/stars/table.html?block=Si"
+    },
+    "backTo": null
+   },
+   "Ss(202609031751)": {
+    "label": "Ss(202609031751)",
+    "type": "chemistry",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A chemistry recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://ventusltd.github.io/stars/table.html?block=Ss"
+    },
+    "backTo": null
+   },
+   "#3571 network": {
+    "label": "#3571 network",
+    "type": "electron",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A electron recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "#3734 fetchJson": {
+    "label": "#3734 fetchJson",
+    "type": "vedic",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "moves data from one place to another",
+    "relationships": [],
+    "reason": "A vedic recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
+    },
+    "backTo": null
+   },
+   "#8299 writeSourceCodeBundle": {
+    "label": "#8299 writeSourceCodeBundle",
+    "type": "vedic",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "holds information the platform reads and writes",
+    "relationships": [],
+    "reason": "A vedic recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
+    },
+    "backTo": null
+   },
+   "#1817 doRadiusAreaMeasure": {
+    "label": "#1817 doRadiusAreaMeasure",
+    "type": "electron",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A electron recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "#7945 notify": {
+    "label": "#7945 notify",
+    "type": "electron",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A electron recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "Ss(202609051540)": {
+    "label": "Ss(202609051540)",
+    "type": "chemistry",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A chemistry recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://ventusltd.github.io/stars/table.html?block=Ss"
+    },
+    "backTo": null
+   },
+   "#15 cable-trench-or-drill/renderStats": {
+    "label": "#15 cable-trench-or-drill/renderStats",
+    "type": "soul",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A soul recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "#4942 sourceId": {
+    "label": "#4942 sourceId",
+    "type": "electron",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A electron recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "Si(202609042123)": {
+    "label": "Si(202609042123)",
+    "type": "chemistry",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A chemistry recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://ventusltd.github.io/stars/table.html?block=Si"
+    },
+    "backTo": null
+   },
+   "#4035 assertStableGeometry": {
+    "label": "#4035 assertStableGeometry",
+    "type": "electron",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A electron recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "#8209 body": {
+    "label": "#8209 body",
+    "type": "vedic",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "holds information the platform reads and writes",
+    "relationships": [],
+    "reason": "A vedic recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
+    },
+    "backTo": null
+   },
+   "#3412 stringStats": {
+    "label": "#3412 stringStats",
+    "type": "electron",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A electron recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "#20 drawTrench": {
+    "label": "#20 drawTrench",
+    "type": "vedic",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "holds information the platform reads and writes",
+    "relationships": [],
+    "reason": "A vedic recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
+    },
+    "backTo": null
+   },
+   "#21 drawBend": {
+    "label": "#21 drawBend",
+    "type": "vedic",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "holds information the platform reads and writes",
+    "relationships": [],
+    "reason": "A vedic recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
+    },
+    "backTo": null
+   },
+   "#3848 renderNews": {
+    "label": "#3848 renderNews",
+    "type": "electron",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A electron recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "Ss(202609030128)": {
+    "label": "Ss(202609030128)",
+    "type": "chemistry",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A chemistry recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://ventusltd.github.io/stars/table.html?block=Ss"
+    },
+    "backTo": null
+   },
+   "Ss(202609032213)": {
+    "label": "Ss(202609032213)",
+    "type": "chemistry",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A chemistry recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://ventusltd.github.io/stars/table.html?block=Ss"
+    },
+    "backTo": null
+   },
+   "Ss(202609030109)": {
+    "label": "Ss(202609030109)",
+    "type": "chemistry",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A chemistry recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://ventusltd.github.io/stars/table.html?block=Ss"
+    },
+    "backTo": null
+   },
+   "repo data-grid-gb": {
+    "label": "repo data-grid-gb",
+    "type": "magnetar",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A magnetar recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "#1240 updateExportCableLengthDisplay": {
+    "label": "#1240 updateExportCableLengthDisplay",
+    "type": "vedic",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "holds information the platform reads and writes",
+    "relationships": [],
+    "reason": "A vedic recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
+    },
+    "backTo": null
+   },
+   "#8492 isRetiredReceiver": {
+    "label": "#8492 isRetiredReceiver",
+    "type": "electron",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A electron recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "Dt deeplink (the MAP button)": {
+    "label": "Dt deeplink (the MAP button)",
+    "type": "vedic",
+    "rag": "green",
+    "function": "The contract every MAP link obeys, so a link always arrives on the right feature.",
+    "purpose": "holds everything in place",
+    "relationships": [
+     "depends on Ps, Pr, Gp, St",
+     "used by Cg, St, Pn, Pr",
+     "proven to work with Pn, Pr, Ps, Dc, Gn, Sp"
+    ],
+    "reason": "One form of The MAP button (deep-link contract); first written 2026-06-08, lives in chatgpt-audits, code-generator, gridatlas, globalgrid2050, claude, companies, data-gridatlas, pipelinenews, data-grid-gb, ventus-grid-engine, testcode, galaxies-wafers, star-electron-star, 237 functions inside.",
+    "next": {
+     "label": "See it on the periodic table",
+     "href": "https://ventusltd.github.io/stars/table.html?block=Dt"
+    },
+    "backTo": null
+   },
+   "#1504 csvCell": {
+    "label": "#1504 csvCell",
+    "type": "electron",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A electron recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "#6652 megawatts": {
+    "label": "#6652 megawatts",
+    "type": "vedic",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "holds information the platform reads and writes",
+    "relationships": [],
+    "reason": "A vedic recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
+    },
+    "backTo": null
+   },
+   "#1811 updateMeasureDisplay": {
+    "label": "#1811 updateMeasureDisplay",
+    "type": "electron",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A electron recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "L LIMIT": {
+    "label": "L LIMIT",
+    "type": "vedic",
+    "rag": "green",
+    "function": "A value globalgrid2050 architecture development must agree on. 2 different values are in use; which is true is a decision.",
+    "purpose": "a value the whole platform must agree on",
+    "relationships": [],
+    "reason": "One form of Limit; first written unknown, lives in the estate.",
+    "next": {
+     "label": "See it on the periodic table",
+     "href": "https://ventusltd.github.io/stars/table.html?block=L"
+    },
+    "backTo": null
+   },
+   "#3804 renderNews": {
+    "label": "#3804 renderNews",
+    "type": "vedic",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "holds information the platform reads and writes",
+    "relationships": [],
+    "reason": "A vedic recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
+    },
+    "backTo": null
+   },
+   "#4402 category": {
+    "label": "#4402 category",
+    "type": "vedic",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "holds information the platform reads and writes",
+    "relationships": [],
+    "reason": "A vedic recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
+    },
+    "backTo": null
+   },
+   "repo spiders": {
+    "label": "repo spiders",
+    "type": "magnetar",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A magnetar recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "repo data-gridatlas": {
+    "label": "repo data-gridatlas",
+    "type": "magnetar",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A magnetar recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "repo youengineer-code-review": {
+    "label": "repo youengineer-code-review",
+    "type": "electron",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A electron recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "#22 buildSnapshot": {
+    "label": "#22 buildSnapshot",
+    "type": "electron",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A electron recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "Si(202609062343)": {
+    "label": "Si(202609062343)",
+    "type": "chemistry",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A chemistry recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://ventusltd.github.io/stars/table.html?block=Si"
+    },
+    "backTo": null
+   },
+   "#3706 fetchJson": {
+    "label": "#3706 fetchJson",
+    "type": "vedic",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "moves data from one place to another",
+    "relationships": [],
+    "reason": "A vedic recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
+    },
+    "backTo": null
+   },
+   "Si(202609040134)": {
+    "label": "Si(202609040134)",
+    "type": "chemistry",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A chemistry recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://ventusltd.github.io/stars/table.html?block=Si"
+    },
+    "backTo": null
+   },
+   "#5726 counts": {
+    "label": "#5726 counts",
+    "type": "electron",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A electron recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "#3405 ready": {
+    "label": "#3405 ready",
+    "type": "electron",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A electron recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "#1822 createGeoJSONCircle": {
+    "label": "#1822 createGeoJSONCircle",
+    "type": "electron",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A electron recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "#6847 cell": {
+    "label": "#6847 cell",
+    "type": "electron",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A electron recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "#8579 drawLegend": {
+    "label": "#8579 drawLegend",
+    "type": "vedic",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "holds information the platform reads and writes",
+    "relationships": [],
+    "reason": "A vedic recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
+    },
+    "backTo": null
+   },
+   "#4674 encode": {
+    "label": "#4674 encode",
+    "type": "electron",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A electron recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "repo globalgrid2050": {
+    "label": "repo globalgrid2050",
+    "type": "electron",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A electron recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "repo chatgpt-audits": {
+    "label": "repo chatgpt-audits",
+    "type": "magnetar",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A magnetar recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "#3855 drawProjectTable": {
+    "label": "#3855 drawProjectTable",
+    "type": "electron",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A electron recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "Ss(202609040403)": {
+    "label": "Ss(202609040403)",
     "type": "chemistry",
     "rag": "green",
     "function": "part of the estate",
@@ -11096,8 +11440,8 @@
     },
     "backTo": null
    },
-   "#3573 published": {
-    "label": "#3573 published",
+   "repo gridmachine1": {
+    "label": "repo gridmachine1",
     "type": "electron",
     "rag": "green",
     "function": "part of the estate",
@@ -11110,8 +11454,22 @@
     },
     "backTo": null
    },
-   "#1567 select": {
-    "label": "#1567 select",
+   "#4313 readJson": {
+    "label": "#4313 readJson",
+    "type": "electron",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A electron recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "#3813 signalForProjectV9_5_1": {
+    "label": "#3813 signalForProjectV9_5_1",
     "type": "vedic",
     "rag": "green",
     "function": "part of the estate",
@@ -11124,50 +11482,8 @@
     },
     "backTo": null
    },
-   "#4646 relation": {
-    "label": "#4646 relation",
-    "type": "electron",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A electron recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
-    },
-    "backTo": null
-   },
-   "#3706 fetchJson": {
-    "label": "#3706 fetchJson",
-    "type": "electron",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A electron recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
-    },
-    "backTo": null
-   },
-   "#4538 nearest": {
-    "label": "#4538 nearest",
-    "type": "electron",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A electron recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
-    },
-    "backTo": null
-   },
-   "Ss(202609070913)": {
-    "label": "Ss(202609070913)",
+   "Ss": {
+    "label": "Ss",
     "type": "chemistry",
     "rag": "green",
     "function": "part of the estate",
@@ -11180,22 +11496,8 @@
     },
     "backTo": null
    },
-   "L LIMIT": {
-    "label": "L LIMIT",
-    "type": "vedic",
-    "rag": "green",
-    "function": "A value globalgrid2050 architecture development must agree on. 2 different values are in use; which is true is a decision.",
-    "purpose": "a value the whole platform must agree on",
-    "relationships": [],
-    "reason": "One form of Limit; first written unknown, lives in the estate.",
-    "next": {
-     "label": "See it on the periodic table",
-     "href": "https://ventusltd.github.io/stars/table.html?block=L"
-    },
-    "backTo": null
-   },
-   "#401 head_sha": {
-    "label": "#401 head_sha",
+   "#4340 passed": {
+    "label": "#4340 passed",
     "type": "vedic",
     "rag": "green",
     "function": "part of the estate",
@@ -11208,96 +11510,66 @@
     },
     "backTo": null
    },
-   "#4843 envelope": {
-    "label": "#4843 envelope",
+   "Ro route-obstacles.js": {
+    "label": "Ro route-obstacles.js",
     "type": "vedic",
     "rag": "green",
-    "function": "part of the estate",
-    "purpose": "works something out from numbers",
-    "relationships": [],
-    "reason": "A vedic recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
-    },
-    "backTo": null
-   },
-   "Ss(202609072329)": {
-    "label": "Ss(202609072329)",
-    "type": "chemistry",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A chemistry recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://ventusltd.github.io/stars/table.html?block=Ss"
-    },
-    "backTo": null
-   },
-   "repo gridatlas": {
-    "label": "repo gridatlas",
-    "type": "magnetar",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A magnetar recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
-    },
-    "backTo": null
-   },
-   "#1240 updateExportCableLengthDisplay": {
-    "label": "#1240 updateExportCableLengthDisplay",
-    "type": "electron",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A electron recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
-    },
-    "backTo": null
-   },
-   "Ss sld-sandbox": {
-    "label": "Ss sld-sandbox",
-    "type": "vedic",
-    "rag": "green",
-    "function": "A plug-in part of the GridAtlas map.",
-    "purpose": "a plug-in part of the map every project is seen on",
+    "function": "Roads, rails, rivers and buildings a route must cross.",
+    "purpose": "moves the map or the view",
     "relationships": [
-     "depends on Pr, St, Tp, Gn",
-     "used by Ps, Ra, Cg, Sb",
-     "proven to work with Dt, Ps, Si, Sp, Ug"
+     "proven to work with Cc, Dd, El, Fc, Ga, Gc"
     ],
-    "reason": "One form of sld-sandbox; first written 2026-08-29, lives in claude, gridatlas, code-generator, globalgrid2050, testcode, ventus-grid-engine, grid-distance-maths, 698 functions inside.",
+    "reason": "One form of Route obstacles; first written 2026-09-06, lives in ventus-grid-engine, 4 functions inside.",
     "next": {
      "label": "See it on the periodic table",
+     "href": "https://ventusltd.github.io/stars/table.html?block=Ro"
+    },
+    "backTo": null
+   },
+   "#1468 renderRows": {
+    "label": "#1468 renderRows",
+    "type": "electron",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A electron recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "Ss(202609031809)": {
+    "label": "Ss(202609031809)",
+    "type": "chemistry",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A chemistry recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
      "href": "https://ventusltd.github.io/stars/table.html?block=Ss"
     },
     "backTo": null
    },
-   "#1504 csvCell": {
-    "label": "#1504 csvCell",
-    "type": "vedic",
+   "#5403 nativeFetch": {
+    "label": "#5403 nativeFetch",
+    "type": "electron",
     "rag": "green",
     "function": "part of the estate",
-    "purpose": "holds information the platform reads and writes",
+    "purpose": "part of how the estate is read and checked",
     "relationships": [],
-    "reason": "A vedic recorded because it exists in the code; in good standing.",
+    "reason": "A electron recorded because it exists in the code; in good standing.",
     "next": {
      "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
     },
     "backTo": null
    },
-   "Si(202609050249)": {
-    "label": "Si(202609050249)",
+   "Si(202609040219)": {
+    "label": "Si(202609040219)",
     "type": "chemistry",
     "rag": "green",
     "function": "part of the estate",
@@ -11307,20 +11579,6 @@
     "next": {
      "label": "Open the reference",
      "href": "https://ventusltd.github.io/stars/table.html?block=Si"
-    },
-    "backTo": null
-   },
-   "#20 drawTrench": {
-    "label": "#20 drawTrench",
-    "type": "electron",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A electron recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
     },
     "backTo": null
    },
@@ -11330,418 +11588,6 @@
     "rag": "green",
     "function": "part of the estate",
     "purpose": "moves data from one place to another",
-    "relationships": [],
-    "reason": "A vedic recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
-    },
-    "backTo": null
-   },
-   "#1680 presentSummary": {
-    "label": "#1680 presentSummary",
-    "type": "vedic",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "holds information the platform reads and writes",
-    "relationships": [],
-    "reason": "A vedic recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
-    },
-    "backTo": null
-   },
-   "Ss(202609070857)": {
-    "label": "Ss(202609070857)",
-    "type": "chemistry",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A chemistry recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://ventusltd.github.io/stars/table.html?block=Ss"
-    },
-    "backTo": null
-   },
-   "#4281 layoutSnapshot": {
-    "label": "#4281 layoutSnapshot",
-    "type": "electron",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A electron recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
-    },
-    "backTo": null
-   },
-   "#3793 updateGaugesV9_2": {
-    "label": "#3793 updateGaugesV9_2",
-    "type": "vedic",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "holds information the platform reads and writes",
-    "relationships": [],
-    "reason": "A vedic recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
-    },
-    "backTo": null
-   },
-   "Si(202609040134)": {
-    "label": "Si(202609040134)",
-    "type": "chemistry",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A chemistry recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://ventusltd.github.io/stars/table.html?block=Si"
-    },
-    "backTo": null
-   },
-   "#3820 renderNews": {
-    "label": "#3820 renderNews",
-    "type": "vedic",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "holds information the platform reads and writes",
-    "relationships": [],
-    "reason": "A vedic recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
-    },
-    "backTo": null
-   },
-   "Ss(202609040219)": {
-    "label": "Ss(202609040219)",
-    "type": "chemistry",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A chemistry recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://ventusltd.github.io/stars/table.html?block=Ss"
-    },
-    "backTo": null
-   },
-   "A airports": {
-    "label": "A airports",
-    "type": "vedic",
-    "rag": "green",
-    "function": "A data layer drawn on the GridAtlas map.",
-    "purpose": "a map layer the reader can turn on",
-    "relationships": [
-     "proven to work with D, Io, Pp, R, Ra, Dc"
-    ],
-    "reason": "One form of Airports; first written 2026-03-27, lives in globalgrid2050, 1 functions inside.",
-    "next": {
-     "label": "See it on the periodic table",
-     "href": "https://ventusltd.github.io/stars/table.html?block=A"
-    },
-    "backTo": null
-   },
-   "#3748 hasValidatedModel": {
-    "label": "#3748 hasValidatedModel",
-    "type": "vedic",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "holds information the platform reads and writes",
-    "relationships": [],
-    "reason": "A vedic recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
-    },
-    "backTo": null
-   },
-   "Si(202609030156)": {
-    "label": "Si(202609030156)",
-    "type": "chemistry",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A chemistry recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://ventusltd.github.io/stars/table.html?block=Si"
-    },
-    "backTo": null
-   },
-   "#5246 finding": {
-    "label": "#5246 finding",
-    "type": "electron",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A electron recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
-    },
-    "backTo": null
-   },
-   "#4318 readJson": {
-    "label": "#4318 readJson",
-    "type": "vedic",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "holds information the platform reads and writes",
-    "relationships": [],
-    "reason": "A vedic recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
-    },
-    "backTo": null
-   },
-   "#3789 formatCapacityV9_2": {
-    "label": "#3789 formatCapacityV9_2",
-    "type": "vedic",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "works something out from numbers",
-    "relationships": [],
-    "reason": "A vedic recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
-    },
-    "backTo": null
-   },
-   "Ss(202609040021)": {
-    "label": "Ss(202609040021)",
-    "type": "chemistry",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A chemistry recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://ventusltd.github.io/stars/table.html?block=Ss"
-    },
-    "backTo": null
-   },
-   "#980 cells": {
-    "label": "#980 cells",
-    "type": "electron",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A electron recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
-    },
-    "backTo": null
-   },
-   "#8538 quote": {
-    "label": "#8538 quote",
-    "type": "electron",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A electron recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
-    },
-    "backTo": null
-   },
-   "#1533 selfTest": {
-    "label": "#1533 selfTest",
-    "type": "electron",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A electron recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
-    },
-    "backTo": null
-   },
-   "G1 grid_132kv": {
-    "label": "G1 grid_132kv",
-    "type": "vedic",
-    "rag": "green",
-    "function": "A data layer drawn on the GridAtlas map.",
-    "purpose": "a map layer the reader can turn on",
-    "relationships": [],
-    "reason": "One form of Grid 132 kV; first written unknown, lives in the estate.",
-    "next": {
-     "label": "See it on the periodic table",
-     "href": "https://ventusltd.github.io/stars/table.html?block=G1"
-    },
-    "backTo": null
-   },
-   "#7945 notify": {
-    "label": "#7945 notify",
-    "type": "vedic",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "holds information the platform reads and writes",
-    "relationships": [],
-    "reason": "A vedic recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
-    },
-    "backTo": null
-   },
-   "T TECHNOLOGIES": {
-    "label": "T TECHNOLOGIES",
-    "type": "vedic",
-    "rag": "green",
-    "function": "A value globalgrid2050 architecture development must agree on. 4 different values are in use; which is true is a decision.",
-    "purpose": "a value the whole platform must agree on",
-    "relationships": [],
-    "reason": "One form of Technologies; first written unknown, lives in the estate.",
-    "next": {
-     "label": "See it on the periodic table",
-     "href": "https://ventusltd.github.io/stars/table.html?block=T"
-    },
-    "backTo": null
-   },
-   "#3403 scope": {
-    "label": "#3403 scope",
-    "type": "electron",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A electron recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
-    },
-    "backTo": null
-   },
-   "Hr HIT_RADIUS_EDGE_PX": {
-    "label": "Hr HIT_RADIUS_EDGE_PX",
-    "type": "vedic",
-    "rag": "green",
-    "function": "A value globalgrid2050 architecture development must agree on. 2 different values are in use; which is true is a decision.",
-    "purpose": "a value the whole platform must agree on",
-    "relationships": [],
-    "reason": "One form of Hit radius edge px; first written unknown, lives in the estate.",
-    "next": {
-     "label": "See it on the periodic table",
-     "href": "https://ventusltd.github.io/stars/table.html?block=Hr"
-    },
-    "backTo": null
-   },
-   "#3413 centralStats": {
-    "label": "#3413 centralStats",
-    "type": "vedic",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "holds information the platform reads and writes",
-    "relationships": [],
-    "reason": "A vedic recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
-    },
-    "backTo": null
-   },
-   "#5909 projects": {
-    "label": "#5909 projects",
-    "type": "vedic",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "holds information the platform reads and writes",
-    "relationships": [],
-    "reason": "A vedic recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
-    },
-    "backTo": null
-   },
-   "#4052 globalgrid2050/handle": {
-    "label": "#4052 globalgrid2050/handle",
-    "type": "soul",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [],
-    "reason": "A soul recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
-    },
-    "backTo": null
-   },
-   "#4315 readText": {
-    "label": "#4315 readText",
-    "type": "vedic",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "holds information the platform reads and writes",
-    "relationships": [],
-    "reason": "A vedic recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
-    },
-    "backTo": null
-   },
-   "#6 getInputs": {
-    "label": "#6 getInputs",
-    "type": "vedic",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "holds information the platform reads and writes",
-    "relationships": [],
-    "reason": "A vedic recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
-    },
-    "backTo": null
-   },
-   "Si substation-intelligence": {
-    "label": "Si substation-intelligence",
-    "type": "vedic",
-    "rag": "green",
-    "function": "A plug-in part of the GridAtlas map.",
-    "purpose": "a plug-in part of the map every project is seen on",
-    "relationships": [
-     "depends on Pr, St, Tp, Gn",
-     "used by Ra, Cg, St, Pn",
-     "proven to work with Ps, Dt, Ra, Sp, Ss, Ug"
-    ],
-    "reason": "One form of substation-intelligence; first written 2026-03-29, lives in gridatlas, code-generator, globalgrid2050, testcode, youengineer-code-review, ventus-grid-engine, teleprinter, spiders, 663 functions inside.",
-    "next": {
-     "label": "See it on the periodic table",
-     "href": "https://ventusltd.github.io/stars/table.html?block=Si"
-    },
-    "backTo": null
-   },
-   "#3411 consistency": {
-    "label": "#3411 consistency",
-    "type": "vedic",
-    "rag": "green",
-    "function": "part of the estate",
-    "purpose": "holds information the platform reads and writes",
     "relationships": [],
     "reason": "A vedic recorded because it exists in the code; in good standing.",
     "next": {
@@ -11764,8 +11610,36 @@
     },
     "backTo": null
    },
-   "#4035 assertStableGeometry": {
-    "label": "#4035 assertStableGeometry",
+   "Movement": {
+    "label": "Movement",
+    "type": "vedic",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A vedic recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
+    },
+    "backTo": null
+   },
+   "Si(202609030137)": {
+    "label": "Si(202609030137)",
+    "type": "chemistry",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A chemistry recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://ventusltd.github.io/stars/table.html?block=Si"
+    },
+    "backTo": null
+   },
+   "#1476 invariant": {
+    "label": "#1476 invariant",
     "type": "electron",
     "rag": "green",
     "function": "part of the estate",
@@ -11778,22 +11652,36 @@
     },
     "backTo": null
    },
-   "#3869 updateResultSummary": {
-    "label": "#3869 updateResultSummary",
-    "type": "vedic",
+   "#8099 mount": {
+    "label": "#8099 mount",
+    "type": "electron",
     "rag": "green",
     "function": "part of the estate",
-    "purpose": "holds information the platform reads and writes",
+    "purpose": "part of how the estate is read and checked",
     "relationships": [],
-    "reason": "A vedic recorded because it exists in the code; in good standing.",
+    "reason": "A electron recorded because it exists in the code; in good standing.",
     "next": {
      "label": "Open the reference",
-     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
     },
     "backTo": null
    },
-   "#766 geometry": {
-    "label": "#766 geometry",
+   "repo star-maker": {
+    "label": "repo star-maker",
+    "type": "magnetar",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A magnetar recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "#2141 scripts": {
+    "label": "#2141 scripts",
     "type": "electron",
     "rag": "green",
     "function": "part of the estate",
@@ -11820,8 +11708,50 @@
     },
     "backTo": null
    },
-   "#3360 sharedDuckDBRuntime": {
-    "label": "#3360 sharedDuckDBRuntime",
+   "Ss(202609030116)": {
+    "label": "Ss(202609030116)",
+    "type": "chemistry",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A chemistry recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://ventusltd.github.io/stars/table.html?block=Ss"
+    },
+    "backTo": null
+   },
+   "G2 grid_220kv": {
+    "label": "G2 grid_220kv",
+    "type": "vedic",
+    "rag": "green",
+    "function": "A data layer drawn on the GridAtlas map.",
+    "purpose": "a map layer the reader can turn on",
+    "relationships": [],
+    "reason": "One form of Grid 220 kV; first written unknown, lives in the estate.",
+    "next": {
+     "label": "See it on the periodic table",
+     "href": "https://ventusltd.github.io/stars/table.html?block=G2"
+    },
+    "backTo": null
+   },
+   "#8630 getLayerConfig": {
+    "label": "#8630 getLayerConfig",
+    "type": "vedic",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "holds information the platform reads and writes",
+    "relationships": [],
+    "reason": "A vedic recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
+    },
+    "backTo": null
+   },
+   "#3823 canonicalItem": {
+    "label": "#3823 canonicalItem",
     "type": "electron",
     "rag": "green",
     "function": "part of the estate",
@@ -11834,8 +11764,36 @@
     },
     "backTo": null
    },
-   "#8630 getLayerConfig": {
-    "label": "#8630 getLayerConfig",
+   "#8445 distance": {
+    "label": "#8445 distance",
+    "type": "vedic",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "works something out from numbers",
+    "relationships": [],
+    "reason": "A vedic recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
+    },
+    "backTo": null
+   },
+   "#3262 startCableRouteMode": {
+    "label": "#3262 startCableRouteMode",
+    "type": "vedic",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "moves the map or the view",
+    "relationships": [],
+    "reason": "A vedic recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
+    },
+    "backTo": null
+   },
+   "#1686 carried": {
+    "label": "#1686 carried",
     "type": "electron",
     "rag": "green",
     "function": "part of the estate",
@@ -11845,6 +11803,374 @@
     "next": {
      "label": "Open the reference",
      "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "#1676 writeDeepLink": {
+    "label": "#1676 writeDeepLink",
+    "type": "vedic",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "moves the map or the view",
+    "relationships": [],
+    "reason": "A vedic recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
+    },
+    "backTo": null
+   },
+   "repo pipelinenews": {
+    "label": "repo pipelinenews",
+    "type": "magnetar",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A magnetar recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "Pp power_plants": {
+    "label": "Pp power_plants",
+    "type": "vedic",
+    "rag": "green",
+    "function": "A data layer drawn on the GridAtlas map.",
+    "purpose": "a map layer the reader can turn on",
+    "relationships": [
+     "proven to work with A, D, Io, R, Ra, Dc"
+    ],
+    "reason": "One form of Power plants; first written 2026-03-28, lives in globalgrid2050, 1 functions inside.",
+    "next": {
+     "label": "See it on the periodic table",
+     "href": "https://ventusltd.github.io/stars/table.html?block=Pp"
+    },
+    "backTo": null
+   },
+   "#8297 header": {
+    "label": "#8297 header",
+    "type": "electron",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A electron recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "Si": {
+    "label": "Si",
+    "type": "chemistry",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A chemistry recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://ventusltd.github.io/stars/table.html?block=Si"
+    },
+    "backTo": null
+   },
+   "Si(202609041250)": {
+    "label": "Si(202609041250)",
+    "type": "chemistry",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A chemistry recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://ventusltd.github.io/stars/table.html?block=Si"
+    },
+    "backTo": null
+   },
+   "#5914 repoUrl": {
+    "label": "#5914 repoUrl",
+    "type": "electron",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A electron recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "#3413 centralStats": {
+    "label": "#3413 centralStats",
+    "type": "vedic",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "holds information the platform reads and writes",
+    "relationships": [],
+    "reason": "A vedic recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
+    },
+    "backTo": null
+   },
+   "Ss(202609050354)": {
+    "label": "Ss(202609050354)",
+    "type": "chemistry",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A chemistry recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://ventusltd.github.io/stars/table.html?block=Ss"
+    },
+    "backTo": null
+   },
+   "Si(202609051503)": {
+    "label": "Si(202609051503)",
+    "type": "chemistry",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A chemistry recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://ventusltd.github.io/stars/table.html?block=Si"
+    },
+    "backTo": null
+   },
+   "#7335 child": {
+    "label": "#7335 child",
+    "type": "vedic",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "holds information the platform reads and writes",
+    "relationships": [],
+    "reason": "A vedic recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
+    },
+    "backTo": null
+   },
+   "#3786 setGaugeUniverseV9_1": {
+    "label": "#3786 setGaugeUniverseV9_1",
+    "type": "electron",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A electron recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "Ss(202609041954)": {
+    "label": "Ss(202609041954)",
+    "type": "chemistry",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A chemistry recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://ventusltd.github.io/stars/table.html?block=Ss"
+    },
+    "backTo": null
+   },
+   "substation-intelligence: SyntaxError: Invalid or unexpected token": {
+    "label": "substation-intelligence: SyntaxError: Invalid or unexpected token",
+    "type": "chemistry",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A chemistry recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/star-maker/blob/main/stars/00225794c628.json"
+    },
+    "backTo": null
+   },
+   "#4093 dispose": {
+    "label": "#4093 dispose",
+    "type": "electron",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A electron recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "Ss(202609032222)": {
+    "label": "Ss(202609032222)",
+    "type": "chemistry",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A chemistry recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://ventusltd.github.io/stars/table.html?block=Ss"
+    },
+    "backTo": null
+   },
+   "#3832 queryMatches": {
+    "label": "#3832 queryMatches",
+    "type": "vedic",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "holds information the platform reads and writes",
+    "relationships": [],
+    "reason": "A vedic recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
+    },
+    "backTo": null
+   },
+   "Si(202609051529)": {
+    "label": "Si(202609051529)",
+    "type": "chemistry",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A chemistry recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://ventusltd.github.io/stars/table.html?block=Si"
+    },
+    "backTo": null
+   },
+   "#4076 reset": {
+    "label": "#4076 reset",
+    "type": "vedic",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "holds information the platform reads and writes",
+    "relationships": [],
+    "reason": "A vedic recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
+    },
+    "backTo": null
+   },
+   "Gg geo-geojson.js": {
+    "label": "Gg geo-geojson.js",
+    "type": "vedic",
+    "rag": "green",
+    "function": "Reading and writing GeoJSON features without losing coordinates.",
+    "purpose": "turns coordinates into real distances and bearings",
+    "relationships": [
+     "proven to work with Cc, Dd, El, Fc, Ga, Gc"
+    ],
+    "reason": "One form of GeoJSON helpers; first written 2026-09-04, lives in ventus-grid-engine, 1 functions inside.",
+    "next": {
+     "label": "See it on the periodic table",
+     "href": "https://ventusltd.github.io/stars/table.html?block=Gg"
+    },
+    "backTo": null
+   },
+   "#1666 bindWiderFleet": {
+    "label": "#1666 bindWiderFleet",
+    "type": "vedic",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "holds information the platform reads and writes",
+    "relationships": [],
+    "reason": "A vedic recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
+    },
+    "backTo": null
+   },
+   "#3616 cleanText": {
+    "label": "#3616 cleanText",
+    "type": "electron",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A electron recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "#3805 validPayload": {
+    "label": "#3805 validPayload",
+    "type": "electron",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A electron recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "#8552 compute": {
+    "label": "#8552 compute",
+    "type": "vedic",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "works something out from numbers",
+    "relationships": [],
+    "reason": "A vedic recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
+    },
+    "backTo": null
+   },
+   "#3615 array": {
+    "label": "#3615 array",
+    "type": "electron",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [],
+    "reason": "A electron recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/RANDOM.md"
+    },
+    "backTo": null
+   },
+   "#5547 writeText": {
+    "label": "#5547 writeText",
+    "type": "vedic",
+    "rag": "green",
+    "function": "part of the estate",
+    "purpose": "holds information the platform reads and writes",
+    "relationships": [],
+    "reason": "A vedic recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://github.com/Ventusltd/stars/blob/main/reports/CLASSIFICATION.md"
     },
     "backTo": null
    }
@@ -11891,10 +12217,10 @@
     "relationships": [
      "classified under Substation finder on a map (with 9 siblings)",
      "depends on Pr, St, Tp, Gn",
-     "used by Ra, Cg, St, Pn",
-     "proven to work with Ps, Dt, Ra, Sp, Ss, Ug"
+     "used by Ps, Ra, Cg, Sb",
+     "proven to work with Ps, Ra, Dt, Ss, Sp, Ug"
     ],
-    "reason": "One form of substation-intelligence; first written 2026-03-29, lives in gridatlas, code-generator, globalgrid2050, testcode, youengineer-code-review, ventus-grid-engine, teleprinter, spiders, 663 functions inside.",
+    "reason": "One form of substation-intelligence; first written 2026-03-29, lives in code-generator, testcode, gridatlas, globalgrid2050, youengineer-code-review, ventus-grid-engine, teleprinter, spiders, 727 functions inside.",
     "next": {
      "label": "See it on the periodic table",
      "href": "https://ventusltd.github.io/stars/table.html?block=Si"
@@ -11909,7 +12235,7 @@
     "purpose": "turns coordinates into real distances and bearings",
     "relationships": [
      "classified under Substation finder on a map (with 9 siblings)",
-     "used by x690",
+     "used by x690, x1022, x1026",
      "proven to work with Cc, Dd, El, Fc, Ga, Gc"
     ],
     "reason": "One form of Nearest substation search; first written 2026-09-04, lives in code-generator, ventus-grid-engine, 2 functions inside.",
@@ -11928,9 +12254,9 @@
     "relationships": [
      "classified under Substation finder on a map (with 9 siblings)",
      "depends on St, Tp, Pr, Gn",
-     "proven to work with Ps, Dt, Sp, Si, Ss, Ra"
+     "proven to work with Dt, Ps, Sp, Si, Ss, Pr"
     ],
-    "reason": "One form of uk-gazetteer-flyto; first written 2026-08-29, lives in gridatlas, code-generator, globalgrid2050, testcode, ventus-grid-engine, 50 functions inside.",
+    "reason": "One form of uk-gazetteer-flyto; first written 2026-08-29, lives in code-generator, testcode, gridatlas, globalgrid2050, ventus-grid-engine, 52 functions inside.",
     "next": {
      "label": "See it on the periodic table",
      "href": "https://ventusltd.github.io/stars/table.html?block=Ug"
@@ -11945,11 +12271,11 @@
     "purpose": "part of how the estate is read and checked",
     "relationships": [
      "classified under Substation finder on a map (with 9 siblings)",
-     "depends on Ss, Wf",
-     "used by Cg",
-     "proven to work with Dt, Sp, Ug, Si, Ss, Pr"
+     "depends on Ss, Si, Wf",
+     "used by Dt, Cg, x907, x939",
+     "proven to work with Dt, Sp, Si, Ss, Ug, Pr"
     ],
-    "reason": "One form of Place search and arrival; first written 2026-08-03, lives in gridatlas, code-generator, pipelinenews, globalgrid2050, testcode, 41 functions inside.",
+    "reason": "One form of Place search and arrival; first written 2026-08-03, lives in code-generator, gridatlas, pipelinenews, testcode, globalgrid2050, 41 functions inside.",
     "next": {
      "label": "See it on the periodic table",
      "href": "https://ventusltd.github.io/stars/table.html?block=Ps"
@@ -11964,11 +12290,11 @@
     "purpose": "part of how the estate is read and checked",
     "relationships": [
      "classified under Substation finder on a map (with 9 siblings)",
-     "depends on St, Tp, Pr, Gn",
-     "used by Cg, x406",
-     "proven to work with Pn, Pr, Ps, Dc, Sp, Ug"
+     "depends on Ps, Pr, Gp, St",
+     "used by Cg, St, Pn, Pr",
+     "proven to work with Pn, Pr, Ps, Dc, Gn, Sp"
     ],
-    "reason": "One form of The MAP button (deep-link contract); first written 2026-06-08, lives in chatgpt-audits, gridatlas, code-generator, globalgrid2050, claude, companies, data-gridatlas, pipelinenews, data-grid-gb, ventus-grid-engine, testcode, 131 functions inside.",
+    "reason": "One form of The MAP button (deep-link contract); first written 2026-06-08, lives in chatgpt-audits, code-generator, gridatlas, globalgrid2050, claude, companies, data-gridatlas, pipelinenews, data-grid-gb, ventus-grid-engine, testcode, galaxies-wafers, star-electron-star, 237 functions inside.",
     "next": {
      "label": "See it on the periodic table",
      "href": "https://ventusltd.github.io/stars/table.html?block=Dt"
@@ -12000,10 +12326,10 @@
     "relationships": [
      "classified under Substation finder on a map (with 9 siblings)",
      "depends on Pr, St, Tp, Gn",
-     "used by Ra, Cg, St, Pn",
-     "proven to work with Ps, Dt, Ra, Sp, Ss, Ug"
+     "used by Ps, Ra, Cg, Sb",
+     "proven to work with Ps, Ra, Dt, Ss, Sp, Ug"
     ],
-    "reason": "One form of substation-intelligence; first written 2026-03-29, lives in gridatlas, code-generator, globalgrid2050, testcode, youengineer-code-review, ventus-grid-engine, teleprinter, spiders, 663 functions inside.",
+    "reason": "One form of substation-intelligence; first written 2026-03-29, lives in code-generator, testcode, gridatlas, globalgrid2050, youengineer-code-review, ventus-grid-engine, teleprinter, spiders, 727 functions inside.",
     "next": {
      "label": "See it on the periodic table",
      "href": "https://ventusltd.github.io/stars/table.html?block=Si"
@@ -12018,7 +12344,7 @@
     "purpose": "turns coordinates into real distances and bearings",
     "relationships": [
      "classified under Substation finder on a map (with 9 siblings)",
-     "used by x690",
+     "used by x690, x1022, x1026",
      "proven to work with Cc, Dd, El, Fc, Ga, Gc"
     ],
     "reason": "One form of Nearest substation search; first written 2026-09-04, lives in code-generator, ventus-grid-engine, 2 functions inside.",
@@ -12036,7 +12362,7 @@
     "purpose": "turns coordinates into real distances and bearings",
     "relationships": [
      "classified under Substation finder on a map (with 9 siblings)",
-     "used by x690",
+     "used by x690, x1022, x1026",
      "proven to work with Cc, Dd, El, Fc, Ga, Gc"
     ],
     "reason": "One form of Nearest substation search; first written 2026-09-04, lives in code-generator, ventus-grid-engine, 2 functions inside.",
@@ -12054,7 +12380,7 @@
     "purpose": "turns coordinates into real distances and bearings",
     "relationships": [
      "classified under Substation finder on a map (with 9 siblings)",
-     "used by x690",
+     "used by x690, x1022, x1026",
      "proven to work with Cc, Dd, El, Fc, Ga, Gc"
     ],
     "reason": "One form of Nearest substation search; first written 2026-09-04, lives in code-generator, ventus-grid-engine, 2 functions inside.",
@@ -12866,6 +13192,54 @@
     },
     "backTo": "What everything leans on"
    },
+   "fmt · family 5175": {
+    "label": "fmt · family 5175",
+    "type": "foundation",
+    "rag": "green",
+    "function": "a foundation other code is built on",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [
+     "classified under What everything leans on (with 19 siblings)"
+    ],
+    "reason": "A foundation recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://ventusltd.github.io/stars/code.html?family=5175"
+    },
+    "backTo": "What everything leans on"
+   },
+   "fmt · family 7992": {
+    "label": "fmt · family 7992",
+    "type": "foundation",
+    "rag": "green",
+    "function": "a foundation other code is built on",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [
+     "classified under What everything leans on (with 19 siblings)"
+    ],
+    "reason": "A foundation recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://ventusltd.github.io/stars/code.html?family=7992"
+    },
+    "backTo": "What everything leans on"
+   },
+   "state · family 134305": {
+    "label": "state · family 134305",
+    "type": "foundation",
+    "rag": "green",
+    "function": "a foundation other code is built on",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [
+     "classified under What everything leans on (with 19 siblings)"
+    ],
+    "reason": "A foundation recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://ventusltd.github.io/stars/code.html?family=134305"
+    },
+    "backTo": "What everything leans on"
+   },
    "invariant · family 72282": {
     "label": "invariant · family 72282",
     "type": "foundation",
@@ -12879,22 +13253,6 @@
     "next": {
      "label": "Open the reference",
      "href": "https://ventusltd.github.io/stars/code.html?family=72282"
-    },
-    "backTo": "What everything leans on"
-   },
-   "invariant · family 1586": {
-    "label": "invariant · family 1586",
-    "type": "foundation",
-    "rag": "green",
-    "function": "a foundation other code is built on",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [
-     "classified under What everything leans on (with 19 siblings)"
-    ],
-    "reason": "A foundation recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://ventusltd.github.io/stars/code.html?family=1586"
     },
     "backTo": "What everything leans on"
    },
@@ -12914,8 +13272,8 @@
     },
     "backTo": "What everything leans on"
    },
-   "link · family 129814": {
-    "label": "link · family 129814",
+   "esc · family 130715": {
+    "label": "esc · family 130715",
     "type": "foundation",
     "rag": "green",
     "function": "a foundation other code is built on",
@@ -12926,12 +13284,12 @@
     "reason": "A foundation recorded because it exists in the code; in good standing.",
     "next": {
      "label": "Open the reference",
-     "href": "https://ventusltd.github.io/stars/code.html?family=129814"
+     "href": "https://ventusltd.github.io/stars/code.html?family=130715"
     },
     "backTo": "What everything leans on"
    },
-   "invariant · family 1600": {
-    "label": "invariant · family 1600",
+   "invariant · family 1586": {
+    "label": "invariant · family 1586",
     "type": "foundation",
     "rag": "green",
     "function": "a foundation other code is built on",
@@ -12942,103 +13300,7 @@
     "reason": "A foundation recorded because it exists in the code; in good standing.",
     "next": {
      "label": "Open the reference",
-     "href": "https://ventusltd.github.io/stars/code.html?family=1600"
-    },
-    "backTo": "What everything leans on"
-   },
-   "invariant · family 1679": {
-    "label": "invariant · family 1679",
-    "type": "foundation",
-    "rag": "green",
-    "function": "a foundation other code is built on",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [
-     "classified under What everything leans on (with 19 siblings)"
-    ],
-    "reason": "A foundation recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://ventusltd.github.io/stars/code.html?family=1679"
-    },
-    "backTo": "What everything leans on"
-   },
-   "assert · family 77688": {
-    "label": "assert · family 77688",
-    "type": "foundation",
-    "rag": "green",
-    "function": "a foundation other code is built on",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [
-     "classified under What everything leans on (with 19 siblings)"
-    ],
-    "reason": "A foundation recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://ventusltd.github.io/stars/code.html?family=77688"
-    },
-    "backTo": "What everything leans on"
-   },
-   "assert · family 70873": {
-    "label": "assert · family 70873",
-    "type": "foundation",
-    "rag": "green",
-    "function": "a foundation other code is built on",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [
-     "classified under What everything leans on (with 19 siblings)"
-    ],
-    "reason": "A foundation recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://ventusltd.github.io/stars/code.html?family=70873"
-    },
-    "backTo": "What everything leans on"
-   },
-   "escapeHtml · family 1598": {
-    "label": "escapeHtml · family 1598",
-    "type": "foundation",
-    "rag": "green",
-    "function": "a foundation other code is built on",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [
-     "classified under What everything leans on (with 19 siblings)"
-    ],
-    "reason": "A foundation recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://ventusltd.github.io/stars/code.html?family=1598"
-    },
-    "backTo": "What everything leans on"
-   },
-   "escapeHtml · family 3412": {
-    "label": "escapeHtml · family 3412",
-    "type": "foundation",
-    "rag": "green",
-    "function": "a foundation other code is built on",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [
-     "classified under What everything leans on (with 19 siblings)"
-    ],
-    "reason": "A foundation recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://ventusltd.github.io/stars/code.html?family=3412"
-    },
-    "backTo": "What everything leans on"
-   },
-   "byId · family 76405": {
-    "label": "byId · family 76405",
-    "type": "foundation",
-    "rag": "green",
-    "function": "a foundation other code is built on",
-    "purpose": "part of how the estate is read and checked",
-    "relationships": [
-     "classified under What everything leans on (with 19 siblings)"
-    ],
-    "reason": "A foundation recorded because it exists in the code; in good standing.",
-    "next": {
-     "label": "Open the reference",
-     "href": "https://ventusltd.github.io/stars/code.html?family=76405"
+     "href": "https://ventusltd.github.io/stars/code.html?family=1586"
     },
     "backTo": "What everything leans on"
    },
@@ -13074,8 +13336,8 @@
     },
     "backTo": "What everything leans on"
    },
-   "escapeHtml · family 1289": {
-    "label": "escapeHtml · family 1289",
+   "link · family 129814": {
+    "label": "link · family 129814",
     "type": "foundation",
     "rag": "green",
     "function": "a foundation other code is built on",
@@ -13086,12 +13348,12 @@
     "reason": "A foundation recorded because it exists in the code; in good standing.",
     "next": {
      "label": "Open the reference",
-     "href": "https://ventusltd.github.io/stars/code.html?family=1289"
+     "href": "https://ventusltd.github.io/stars/code.html?family=129814"
     },
     "backTo": "What everything leans on"
    },
-   "query · family 70861": {
-    "label": "query · family 70861",
+   "link · family 130047": {
+    "label": "link · family 130047",
     "type": "foundation",
     "rag": "green",
     "function": "a foundation other code is built on",
@@ -13102,12 +13364,12 @@
     "reason": "A foundation recorded because it exists in the code; in good standing.",
     "next": {
      "label": "Open the reference",
-     "href": "https://ventusltd.github.io/stars/code.html?family=70861"
+     "href": "https://ventusltd.github.io/stars/code.html?family=130047"
     },
     "backTo": "What everything leans on"
    },
-   "query · family 70974": {
-    "label": "query · family 70974",
+   "el · family 1317": {
+    "label": "el · family 1317",
     "type": "foundation",
     "rag": "green",
     "function": "a foundation other code is built on",
@@ -13118,7 +13380,55 @@
     "reason": "A foundation recorded because it exists in the code; in good standing.",
     "next": {
      "label": "Open the reference",
-     "href": "https://ventusltd.github.io/stars/code.html?family=70974"
+     "href": "https://ventusltd.github.io/stars/code.html?family=1317"
+    },
+    "backTo": "What everything leans on"
+   },
+   "el · family 1686": {
+    "label": "el · family 1686",
+    "type": "foundation",
+    "rag": "green",
+    "function": "a foundation other code is built on",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [
+     "classified under What everything leans on (with 19 siblings)"
+    ],
+    "reason": "A foundation recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://ventusltd.github.io/stars/code.html?family=1686"
+    },
+    "backTo": "What everything leans on"
+   },
+   "fmt · family 77548": {
+    "label": "fmt · family 77548",
+    "type": "foundation",
+    "rag": "green",
+    "function": "a foundation other code is built on",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [
+     "classified under What everything leans on (with 19 siblings)"
+    ],
+    "reason": "A foundation recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://ventusltd.github.io/stars/code.html?family=77548"
+    },
+    "backTo": "What everything leans on"
+   },
+   "el · family 129751": {
+    "label": "el · family 129751",
+    "type": "foundation",
+    "rag": "green",
+    "function": "a foundation other code is built on",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [
+     "classified under What everything leans on (with 19 siblings)"
+    ],
+    "reason": "A foundation recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://ventusltd.github.io/stars/code.html?family=129751"
     },
     "backTo": "What everything leans on"
    },
@@ -13138,8 +13448,8 @@
     },
     "backTo": "What everything leans on"
    },
-   "query · family 531": {
-    "label": "query · family 531",
+   "state · family 32733": {
+    "label": "state · family 32733",
     "type": "foundation",
     "rag": "green",
     "function": "a foundation other code is built on",
@@ -13150,12 +13460,12 @@
     "reason": "A foundation recorded because it exists in the code; in good standing.",
     "next": {
      "label": "Open the reference",
-     "href": "https://ventusltd.github.io/stars/code.html?family=531"
+     "href": "https://ventusltd.github.io/stars/code.html?family=32733"
     },
     "backTo": "What everything leans on"
    },
-   "sha256 · family 975": {
-    "label": "sha256 · family 975",
+   "invariant · family 1600": {
+    "label": "invariant · family 1600",
     "type": "foundation",
     "rag": "green",
     "function": "a foundation other code is built on",
@@ -13166,7 +13476,23 @@
     "reason": "A foundation recorded because it exists in the code; in good standing.",
     "next": {
      "label": "Open the reference",
-     "href": "https://ventusltd.github.io/stars/code.html?family=975"
+     "href": "https://ventusltd.github.io/stars/code.html?family=1600"
+    },
+    "backTo": "What everything leans on"
+   },
+   "invariant · family 1679": {
+    "label": "invariant · family 1679",
+    "type": "foundation",
+    "rag": "green",
+    "function": "a foundation other code is built on",
+    "purpose": "part of how the estate is read and checked",
+    "relationships": [
+     "classified under What everything leans on (with 19 siblings)"
+    ],
+    "reason": "A foundation recorded because it exists in the code; in good standing.",
+    "next": {
+     "label": "Open the reference",
+     "href": "https://ventusltd.github.io/stars/code.html?family=1679"
     },
     "backTo": "What everything leans on"
    }
@@ -13372,11 +13698,11 @@
     "purpose": "a check that keeps published figures honest",
     "relationships": [
      "classified under d013 · block:Gn · open (with 0 siblings)",
-     "depends on St, Pn, Em",
+     "depends on Dt, St, Pn, Em",
      "used by Ug, Ss, Si, Dt",
-     "proven to work with Pr, Dt, Pn"
+     "proven to work with Dt, Pr, Pn"
     ],
-    "reason": "One form of Genome and spiders; first written 2026-07-03, lives in claude, data-federation-map-for-globalgrid2050-all-repos, spiders, ventus-grid-engine, globalgrid2050, 177 functions inside.",
+    "reason": "One form of Genome and spiders; first written 2026-07-03, lives in claude, data-federation-map-for-globalgrid2050-all-repos, spiders, testcode, globalgrid2050, ventus-grid-engine, galaxies-wafers, 311 functions inside.",
     "next": {
      "label": "See it on the periodic table",
      "href": "https://ventusltd.github.io/stars/table.html?block=Gn"
@@ -13410,9 +13736,9 @@
      "classified under d015 · block:Ss · open (with 2 siblings)",
      "depends on Pr, St, Tp, Gn",
      "used by Ps, Ra, Cg, Sb",
-     "proven to work with Dt, Ps, Si, Sp, Ug"
+     "proven to work with Dt, Ps, Si, Sp, Ug, Ra"
     ],
-    "reason": "One form of sld-sandbox; first written 2026-08-29, lives in claude, gridatlas, code-generator, globalgrid2050, testcode, ventus-grid-engine, grid-distance-maths, 698 functions inside.",
+    "reason": "One form of sld-sandbox; first written 2026-08-29, lives in claude, code-generator, testcode, gridatlas, globalgrid2050, ventus-grid-engine, grid-distance-maths, 643 functions inside.",
     "next": {
      "label": "See it on the periodic table",
      "href": "https://ventusltd.github.io/stars/table.html?block=Ss"

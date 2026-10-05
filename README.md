@@ -44,3 +44,8 @@ Ventus is a **cables and connectivity** company, and the clue is in the name. Wh
 The five engines: **substation finder within a radius**, **interconnector subsea link**, **offshore export cable to its onshore connection**, **400 kV overhead line and transmission connection**, and **132 kV distribution**. The first and fourth work today and are protected by their own passing receipts.
 
 **The spiders read the same cables.** Network-topology views draw from the voltage layers that the engines measure against: verified 2026-09-07 as OpenStreetMap extracts carrying 4,106 features at 400 kV, 2,935 at 275 kV, 126 at 220 kV, 6,227 at 132 kV, 1,171 at 66 kV and 5,800 substations. Attribution under the Open Database Licence travels with any rendering or export, on the artefact itself.
+
+## Public diary
+
+- [5 October 2026: Learn the Kuiper and connected projects](docs/diary/2026-10-05-learn-the-kuiper.md)
+- [Public project links and source revisions](https://github.com/Ventusltd/kuiper-belt/blob/main/diary/2026-10-05-public-links.json)

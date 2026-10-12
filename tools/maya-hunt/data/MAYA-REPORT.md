@@ -1,8 +1,8 @@
 # Maya cards — dead ends hunted and explained
 
-Generated 2026-10-05T14:36:24Z by maya-hunter.mjs.
+Generated 2026-10-12T15:23:05Z by maya-hunter.mjs.
 
-**919 dead ends** across 16 graphs (1970 nodes total) each now carry a Maya card.
+**914 dead ends** across 16 graphs (1965 nodes total) each now carry a Maya card.
 
 | graph | title | nodes | dead ends |
 |---|---|---|---|
@@ -18,7 +18,7 @@ Generated 2026-10-05T14:36:24Z by maya-hunter.mjs.
 | structure | Structure | 133 | 51 |
 | chemistry | Compatibility | 125 | 125 |
 | vedic | Classification | 305 | 305 |
-| random | Sampling | 164 | 164 |
+| random | Sampling | 159 | 159 |
 | generated-apps | Applications | 14 | 12 |
 | sense | Assessment | 142 | 69 |
 | decisions | Decisions | 37 | 19 |

@@ -94,7 +94,7 @@ function items(rootId,rows,kind) {
     } else {
       const tag=r.declared_tag||'Unlabelled GitHub comment';
       card.append(link(tag+' · '+utc(r.utc),r.url));
-      card.append(el('div',r.excerpt,'meta'));
+      card.append(el('div','Public GitHub comment; body intentionally not copied; agent runtime status unknown.','meta'));
     }
     root.append(card);
   }
@@ -133,6 +133,31 @@ function joins(data) {
   reg.append(el('p','Receiver manifest pinned at '+shortSha(j.spider_receiver.manifest_commit)+
     '. Source graph registrations checked; public served bytes not independently checked.','label'));
   root.append(reg);
+  const cvaa=j.cvaa;
+  const block=el('div');block.append(el('h3','CVAA vaccines and exact-head audit'));
+  if (!cvaa) {
+    block.append(el('p','CVAA evidence unavailable. No protection or green status inferred.','note'));
+  } else {
+    const vaccine=el('div',null,'item');
+    vaccine.append(link('Pinned observed-before-asserted vaccine',cvaa.vaccine_url),
+      el('span',' · '+cvaa.vaccine.status+' · registry SHA '+shortSha(cvaa.source_commit),'label'));
+    vaccine.append(el('div','Policy reference only: a vaccine existing in a verified registry does not mean Spider executed its antibody.','meta'));
+    block.append(vaccine);
+    const registry=el('div',null,'item');
+    registry.append(link('CVAA vaccines.lock at pinned head',cvaa.registry_url));
+    block.append(registry);
+    const audit=el('div',null,'item');
+    const result=cvaa.audit;
+    const title='CVAA full-history audit PR #'+result.pr+': '+result.status;
+    audit.append(link(title,result.run_url||result.pr_url),
+      el('div','Exact reviewed head '+shortSha(result.pr_head_sha)+
+        ' · '+utc(result.run_updated_utc)+
+        ' · conclusion '+String(result.workflow_conclusion||'not observed'),'meta'));
+    if(result.status!=='PASSED_AT_HEAD')audit.append(el('p','No overall CVAA green acceptance is claimed.','note'));
+    audit.append(el('p','Consumer vaccine execution in Spider: '+result.consumer_inoculation+'.','meta'));
+    block.append(audit);
+  }
+  root.append(block);
 }
 function routes(data) {
   const root=$('routes');root.replaceChildren();
@@ -153,6 +178,7 @@ async function load() {
        !Array.isArray(data.pulls) || !Array.isArray(data.messages) || !data.joins)
       throw Error('Invalid Spider data contract; refused to chart.');
     status.textContent='Evidence window starts '+data.window_start_utc+' · latest recorded event '+utc(data.latest_event_utc)+
+      ' · collector observed '+utc(data.observed_at_utc)+' · rendered '+utc(new Date().toISOString())+
       ' · collection is scheduled; this display does not poll GitHub live.';
     metrics(data);chart(data);items('prs',data.pulls,'pr');items('messages',data.messages,'message');
     joins(data);routes(data);

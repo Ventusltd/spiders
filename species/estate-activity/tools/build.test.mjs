@@ -85,7 +85,7 @@ test('full mocked crawl links exact repo SHA, Stars source and Kuiper measuremen
     } else if(url.includes('/spider/manifest.json')) {
       payload={graphs:[{id:'periodic-table',path:'https://ventusltd.github.io/stars/blocks/graph.json'}]};
     } else if(url.includes('/vaccines.lock')) {
-      payload={['202609261425-observed-before-asserted.md']:'73092bd1e497c22ba348bf55ccfce8f37b1103f4d7accd7c67e02445bd1068c6'};
+      payload={['202609261425-observed-before-asserted.md']:'19010486c40033079d62599947777e50993f0da01b2792f48ad512765e7ce9a7'};
     } else if(url.includes('/vaccines/202609261425-observed-before-asserted.md')) {
       payload='test CVAA vaccine fixture';
     } else if(url.includes('/cosmos/standing.tsv')) {

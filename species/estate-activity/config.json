@@ -1,0 +1,100 @@
+{
+  "schema": "estate-activity.config.v1",
+  "owner": "Ventusltd",
+  "lookback_days": 7,
+  "max_commit_pages": 3,
+  "repos": [
+    "spiders",
+    "neural-link-between-agents",
+    "globalgrid2050",
+    "gridatlas",
+    "pipelinenews",
+    "stars",
+    "star-maker",
+    "kuiper-belt",
+    "ventus-grid-engine",
+    "cosmic",
+    "cvaa",
+    "testcode",
+    "star-quantum-twin",
+    "star-solar-star",
+    "time-stone"
+  ],
+  "pr_repos": [
+    "neural-link-between-agents",
+    "globalgrid2050",
+    "spiders"
+  ],
+  "links": [
+    {
+      "id": "activity",
+      "name": "Activity Spider",
+      "url": "https://ventusltd.github.io/spiders/species/estate-activity/",
+      "kind": "spider",
+      "relation": "own view"
+    },
+    {
+      "id": "printer",
+      "name": "Elements / Spider Printer",
+      "url": "https://ventusltd.github.io/spiders/spider_printer_v1/",
+      "kind": "spider",
+      "relation": "navigation"
+    },
+    {
+      "id": "genome",
+      "name": "Genome Spider",
+      "url": "https://ventusltd.github.io/spiders/species/genome-spider/",
+      "kind": "spider",
+      "relation": "navigation"
+    },
+    {
+      "id": "receiver",
+      "name": "Spider graph receiver",
+      "url": "https://ventusltd.github.io/ventus-grid-engine/?graph=overview",
+      "kind": "spider",
+      "relation": "navigation"
+    },
+    {
+      "id": "periodic",
+      "name": "Stars periodic table",
+      "url": "https://ventusltd.github.io/stars/table.html",
+      "kind": "periodic",
+      "relation": "published application"
+    },
+    {
+      "id": "periodic-graph",
+      "name": "Periodic Table in Spider",
+      "url": "https://ventusltd.github.io/ventus-grid-engine/?graph=periodic-table",
+      "kind": "periodic",
+      "relation": "manifest-registered graph"
+    },
+    {
+      "id": "reuse",
+      "name": "Stars reuse graph",
+      "url": "https://ventusltd.github.io/ventus-grid-engine/?graph=modular",
+      "kind": "periodic",
+      "relation": "manifest-registered graph"
+    },
+    {
+      "id": "audit",
+      "name": "Stars proof-of-work",
+      "url": "https://ventusltd.github.io/ventus-grid-engine/?graph=proof-of-work",
+      "kind": "periodic",
+      "relation": "manifest-registered graph"
+    },
+    {
+      "id": "kuiper",
+      "name": "Kuiper Belt",
+      "url": "https://ventusltd.github.io/kuiper-belt/",
+      "kind": "kuiper",
+      "relation": "published application"
+    },
+    {
+      "id": "agents",
+      "name": "Neural-link coordination",
+      "url": "https://github.com/Ventusltd/neural-link-between-agents/issues/30",
+      "kind": "agent",
+      "relation": "coordination inbox"
+    }
+  ]
+}

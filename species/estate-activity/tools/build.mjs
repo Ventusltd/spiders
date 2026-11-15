@@ -267,6 +267,19 @@ export async function main() {
   const config = JSON.parse(await readFile(path.join(ROOT, 'config.json'), 'utf8'));
   const snapshot = await collect(config, token);
   const output = path.join(ROOT, 'data', 'activity.json');
+  // A rerun with identical observed facts should not create a new Git commit solely
+  // because the clock advanced. The latest successful check still has an Actions run.
+  let previous = null;
+  try { previous = JSON.parse(await readFile(output,'utf8')); }
+  catch (error) { if (error.code !== 'ENOENT') throw error; }
+  const facts = value => {
+    const copy = {...value}; delete copy.observed_at_utc;
+    return JSON.stringify(copy);
+  };
+  if (previous && facts(previous) === facts(snapshot)) {
+    console.log('No material GitHub activity change; retaining last successful snapshot.');
+    return;
+  }
   const serialised = JSON.stringify(snapshot, null, 2) + '\n';
   await mkdir(path.dirname(output), {recursive: true});
   await writeFile(output, serialised, 'utf8');

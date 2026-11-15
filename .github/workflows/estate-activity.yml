@@ -8,10 +8,12 @@ on:
     branches: [main]
     paths:
       - 'species/estate-activity/**'
+      - '!species/estate-activity/data/**'
       - '.github/workflows/estate-activity.yml'
   pull_request:
     paths:
       - 'species/estate-activity/**'
+      - '!species/estate-activity/data/**'
       - '.github/workflows/estate-activity.yml'
       - 'index.html'
 

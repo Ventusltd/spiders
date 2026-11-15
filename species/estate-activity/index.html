@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Estate Activity Spider | Ventus</title>
+<style>
+:root{color-scheme:dark;--bg:#081018;--ink:#e5f6ff;--muted:#93adbd;--line:#234555;--cyan:#4bd6ff;--green:#46e8a4;--amber:#ffca69}
+*{box-sizing:border-box}
+body{margin:0;padding:clamp(12px,3vw,28px);background:linear-gradient(135deg,#0d2026,#081018 42%);color:var(--ink);font:14px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:1300px;margin:auto}
+header{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;flex-wrap:wrap}
+h1{font-size:clamp(24px,4vw,38px);line-height:1.15;margin:4px 0}
+h2{font-size:18px;margin:0 0 8px}
+p{color:var(--muted);margin:8px 0}
+a{color:var(--cyan);text-decoration:none}
+a:hover,a:focus-visible{text-decoration:underline}
+.ey{color:var(--cyan);text-transform:uppercase;letter-spacing:.18em;font-size:11px;font-weight:700}
+nav{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}
+nav a,.pill{border:1px solid var(--line);padding:8px 12px;border-radius:999px;background:#10252f;color:var(--ink)}
+nav a:hover{border-color:var(--cyan)}
+section{background:#0a1b25;border:1px solid var(--line);border-radius:14px;padding:16px;margin:14px 0;min-width:0}
+.summary{display:grid;grid-template-columns:repeat(auto-fit,minmax(155px,1fr));gap:10px;margin-top:16px}
+.metric{background:#0c2732;border:1px solid var(--line);padding:14px;border-radius:11px}
+.metric b{font:600 clamp(24px,3vw,32px)/1.2 ui-monospace,monospace;display:block;color:var(--green)}
+.metric span{color:var(--muted);font-size:12px}
+.note{color:var(--amber)}
+.routes{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:9px}
+.route{display:block;border:1px solid var(--line);padding:12px;border-radius:10px}
+.route strong{display:block}
+.route small{color:var(--muted)}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;min-width:760px}
+th,td{padding:9px 10px;text-align:left;border-bottom:1px solid #1a3643;vertical-align:middle}
+th{color:var(--muted);font-size:12px;font-weight:600}
+td.reponame{white-space:nowrap;font-weight:600}
+code{font:12px ui-monospace,SFMono-Regular,monospace;color:var(--cyan)}
+.spark{width:100%;min-width:150px;max-width:300px;height:34px;display:block}
+.label{color:var(--muted);font-size:11px}
+.item{padding:12px 0;border-bottom:1px solid #234555}
+.item:last-child{border-bottom:0}
+.item .meta{font-size:12px;color:var(--muted)}
+.item strong{font-weight:600}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:14px}
+ul{padding-left:21px}
+li{margin:7px 0}
+#status{min-height:20px}
+@media(max-width:520px){body{font-size:13px}section{padding:12px}.summary{grid-template-columns:repeat(2,minmax(0,1fr))}nav a{padding:8px}table{min-width:660px}}
+</style>
+</head>
+<body>
+<main>
+<header>
+<div>
+<div class="ey">Ventus · GlobalGrid2050 · Spider species</div>
+<h1>Estate Activity Spider</h1>
+<p>Public Git commits, agent coordination receipts, Stars and Kuiper snapshots — crosslinked, not conflated.</p>
+</div>
+<a class="pill" href="../../">Spider species home</a>
+</header>
+<nav aria-label="Live estate routes">
+<a href="https://ventusltd.github.io/stars/table.html">Stars periodic table</a>
+<a href="https://ventusltd.github.io/ventus-grid-engine/?graph=periodic-table">Periodic table in Spider</a>
+<a href="https://ventusltd.github.io/kuiper-belt/">Kuiper Belt</a>
+<a href="https://ventusltd.github.io/ventus-grid-engine/?graph=overview">Spider receiver</a>
+<a href="https://github.com/Ventusltd/neural-link-between-agents/issues/30">Agent coordination</a>
+</nav>
+<p id="status" role="status">Loading the latest committed Spider measurement…</p>
+<div id="metrics" class="summary"></div>
+<section>
+<h2>Estate observations by day (UTC)</h2>
+<p>Bars count public commits on each repository's default branch in the seven-day window, not merged PR commits, message counts or a claim that an agent is running. Capped counts display ≥.</p>
+<div id="chart" class="scroll"><p>Waiting for the first successful Spider scan.</p></div>
+</section>
+<div class="two">
+<section><h2>Recent open pull requests</h2><p>PR last-update timestamps and exact head commits. Draft status is retained.</p><div id="prs">Waiting for snapshot.</div></section>
+<section><h2>Neural-link messages</h2><p>These are public GitHub comments. Agent labels are self-declared, not authentication or proof of a running session.</p><div id="messages">Waiting for snapshot.</div></section>
+</div>
+<section><h2>Joined evidence</h2><p>Kuiper and Stars run independently; a pinned SHA behind a more recent Git head indicates scan lag, not necessarily a defect. A registered graph does not prove Pages served bytes.</p><div id="joins">Waiting for snapshot.</div></section>
+<section><h2>Open the tools</h2><div id="routes" class="routes">
+<a class="route" href="https://ventusltd.github.io/stars/code.html"><strong>Stars code report</strong><small>Permanent code family identities</small></a>
+<a class="route" href="https://ventusltd.github.io/spiders/spider_printer_v1/"><strong>Elements topology</strong><small>Repository/reference view</small></a>
+<a class="route" href="https://ventusltd.github.io/kuiper-belt/"><strong>Kuiper estate</strong><small>Measured code and commit orbits</small></a>
+</div></section>
+<section><h2>Reading the evidence</h2><p id="limits">This Spider is an observation and navigation tool, not a CI acceptance, engineering verification, legal licence clearance or publication authorisation.</p>
+<p><a href="https://github.com/Ventusltd/spiders/tree/main/species/estate-activity">Source and collection method</a> · <a href="https://github.com/Ventusltd/spiders/actions/workflows/estate-activity.yml">Collection history and failures</a></p></section>
+</main>
+<script type="module" src="./app.mjs"></script>
+</body>
+</html>

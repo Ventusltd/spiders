@@ -1,0 +1,75 @@
+name: Estate activity Spider
+# Scheduled observer ONLY. Never calls a release writer or changes an external repo.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '7 */3 * * *'
+  push:
+    branches: [main]
+    paths:
+      - 'species/estate-activity/**'
+      - '!species/estate-activity/data/**'
+      - '.github/workflows/estate-activity.yml'
+  pull_request:
+    paths:
+      - 'species/estate-activity/**'
+      - '!species/estate-activity/data/**'
+      - '.github/workflows/estate-activity.yml'
+      - 'index.html'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: estate-activity-spider
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    name: Offline schema and negative controls
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v4.2.0
+        with:
+          node-version: '22'
+      - name: Check crawler and renderer syntax
+        run: |
+          node --check species/estate-activity/tools/build.mjs
+          node --check species/estate-activity/app.mjs
+      - name: Run read-only negative/identity tests
+        run: node --test species/estate-activity/tools/build.test.mjs
+
+  observe:
+    name: Bounded public GitHub scan and Spider-only data update
+    needs: verify
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v4.2.0
+        with:
+          node-version: '22'
+      - name: Read public Git heads, PRs, agent comments and pinned graph registries
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node species/estate-activity/tools/build.mjs
+      - name: Commit ONLY Spider activity data if it changed
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -- species/estate-activity/data/activity.json
+          if git diff --cached --quiet; then
+            echo "No material activity change; no new commit."
+            exit 0
+          fi
+          git commit -m "activity-spider: refresh measured estate links and activity"
+          git pull --rebase origin main
+          git push origin HEAD:main

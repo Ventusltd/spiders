@@ -95,6 +95,20 @@
       "url": "https://github.com/Ventusltd/neural-link-between-agents/issues/30",
       "kind": "agent",
       "relation": "coordination inbox"
+    },
+    {
+      "id": "cvaa",
+      "name": "CVAA vaccine registry",
+      "url": "https://github.com/Ventusltd/cvaa/tree/main/vaccines",
+      "kind": "vaccine",
+      "relation": "pinned policy and audit evidence"
+    },
+    {
+      "id": "cvaa-audit",
+      "name": "CVAA full-history CI runs",
+      "url": "https://github.com/Ventusltd/cvaa/actions",
+      "kind": "vaccine",
+      "relation": "actual execution outcomes (may fail)"
     }
   ]
 }

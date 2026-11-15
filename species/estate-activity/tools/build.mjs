@@ -1,6 +1,7 @@
 // Estate Activity Spider: read-only observation of GitHub; no external repository writes.
 // No model classification, inferred code dependencies or invented releases.
 import {readFile, mkdir, writeFile} from 'node:fs/promises';
+import {createHash} from 'node:crypto';
 import path from 'node:path';
 import {fileURLToPath, pathToFileURL} from 'node:url';
 
@@ -123,7 +124,41 @@ export async function crawlRepo(name, labels, pages, token, fetcher = fetch) {
     if (rows.length < 100) break;
     if (page === pages) capped = true;
   }
+  // Preserve exact default-branch HEAD even for quiet repos without commits in the last seven days.
+  if (!commits.length) {
+    const head = await api('/repos/' + OWNER + '/' + name + '/commits?per_page=1', token, fetcher);
+    if (!Array.isArray(head) || !head[0]) throw Error('repository HEAD unavailable for ' + name);
+    commits = head;
+  }
   return summarizeCommits(name, commits, labels, capped);
+}
+
+export function assessCvaaAudit(pr, runs) {
+  if (!/^[a-f0-9]{40}$/i.test(pr?.head?.sha ?? '')) throw Error('CVAA audit PR lacks exact HEAD');
+  if (!Array.isArray(runs)) throw Error('CVAA Actions run list missing');
+  const sameHead = runs.filter(r => r.head_sha === pr.head.sha &&
+    r.name === '202608301447 Self-test and full-history fleet audit')
+    .sort((a, b) => String(b.created_at).localeCompare(String(a.created_at)));
+  const latest = sameHead[0] ?? null;
+  return {
+    type:'cvaa-full-history-audit', pr: pr.number,
+    pr_url: pr.html_url, pr_head_sha: pr.head.sha, pr_state: pr.state,
+    status: !latest ? 'NOT_OBSERVED' : latest.status !== 'completed' ? 'RUNNING' :
+      latest.conclusion === 'success' ? 'PASSED_AT_HEAD' : latest.conclusion === 'failure' ? 'FAILED_AT_HEAD' : 'INCOMPLETE',
+    run_id:latest?.id ?? null, run_url:latest?.html_url ?? null,
+    workflow_name:latest?.name ?? null, workflow_head_sha:latest?.head_sha ?? null,
+    workflow_conclusion:latest?.conclusion ?? null, run_updated_utc:latest?.updated_at ?? null,
+    coverage:'exact PR head; workflow job conclusion, not historical full estate certification',
+    consumer_inoculation:'NOT_OBSERVED'
+  };
+}
+
+export function verifyVaccineLock(lock, fileName, bytes) {
+  const expected = lock?.[fileName];
+  if (!/^[a-f0-9]{64}$/i.test(expected ?? '')) throw Error('CVAA lock missing pinned vaccine SHA256');
+  const actual = createHash('sha256').update(bytes,'utf8').digest('hex');
+  return {name:fileName, expected_sha256:expected, actual_sha256:actual,
+    status:actual === expected ? 'LOCK_MATCH' : 'PROVENANCE_CONFLICT'};
 }
 
 function isoMax(values) {
@@ -155,6 +190,16 @@ export async function collect(config, token, now = new Date(), fetcher = fetch) 
   const starsSource = JSON.parse(await raw('stars', pinnedSha('stars'),
     'modular/source.json', token, fetcher));
   if (!Array.isArray(starsSource.repositories)) throw Error('Stars catalogue missing pinned repositories');
+  const cvaaSha=pinnedSha('cvaa');
+  if (!cvaaSha) throw Error('CVAA HEAD unobserved; do not infer vaccine coverage');
+  const vaccineName='202609261425-observed-before-asserted.md';
+  const cvaaLock=JSON.parse(await raw('cvaa',cvaaSha,'vaccines.lock',token,fetcher));
+  const vaccineText=await raw('cvaa',cvaaSha,'vaccines/'+vaccineName,token,fetcher);
+  const vaccine=verifyVaccineLock(cvaaLock,vaccineName,vaccineText);
+  if (vaccine.status !== 'LOCK_MATCH') throw Error('CVAA vaccine bytes do not match pinned lock; refusing publication');
+  const cvaaPr=await api('/repos/'+OWNER+'/cvaa/pulls/2',token,fetcher);
+  const runResponse=await api('/repos/'+OWNER+'/cvaa/actions/runs?per_page=35',token,fetcher);
+  const cvaaAudit=assessCvaaAudit(cvaaPr,runResponse.workflow_runs);
   const kuiperPins = [...standing].map(([name, row]) => ({repo: OWNER + '/' + name, sha_prefix: row.sha_prefix}));
   const starsPins = starsSource.repositories.map(p => ({repo: p.repo, sha: p.commit}));
   const inspected = new Set(repos.map(r => r.repo));
@@ -164,7 +209,11 @@ export async function collect(config, token, now = new Date(), fetcher = fetch) 
       pinned_rows: standing.size, comparisons: comparePinned(repos, kuiperPins.filter(p => inspected.has(p.repo)))},
     stars: {source_commit: pinnedSha('stars'), file: 'modular/source.json',
       source_generated_utc: starsSource.generated_utc ?? null, pinned_rows: starsPins.length,
-      comparisons: comparePinned(repos, starsPins.filter(p => inspected.has(p.repo)))}
+      comparisons: comparePinned(repos, starsPins.filter(p => inspected.has(p.repo)))},
+    cvaa:{source_commit:cvaaSha, vaccine_registry:'vaccines.lock', vaccine,
+      vaccine_url:'https://github.com/'+OWNER+'/cvaa/blob/'+cvaaSha+'/vaccines/'+vaccineName,
+      registry_url:'https://github.com/'+OWNER+'/cvaa/blob/'+cvaaSha+'/vaccines.lock',
+      relationship:'POLICY_REFERENCE_ONLY', audit:cvaaAudit}
   };
   const pulls = [];
   for (const name of config.pr_repos) {
@@ -182,14 +231,18 @@ export async function collect(config, token, now = new Date(), fetcher = fetch) 
   if (!Array.isArray(comments)) throw Error('invalid agent comment response');
   const messages = comments.filter(x => isoDay(x.created_at) >= days[0]).slice(0, 35).map(c => {
     const tag = /^\s*\[([^\]\n]{3,100})\]/.exec(c.body ?? '');
-    return {id: c.id, url: c.html_url, issue_url: c.issue_url, utc: c.created_at,
-      declared_tag: tag ? tag[1] : null, // self-declared label, NOT authenticated agent identity
-      excerpt: String(c.body ?? '').replace(/\s+/g, ' ').slice(0, 190)};
+    const safeTag=/^(?:CHATGPT\s+)?AGENT\s+[A-Za-z0-9-]{1,8}\b/i.exec(tag?.[1] ?? '');
+    return {id:c.id,url:c.html_url,issue_url:c.issue_url,utc:c.created_at,
+      declared_tag:safeTag ? safeTag[0] : null,
+      record_type:'MESSAGE_RECORDED', agent_runtime_status:'UNKNOWN'};
+    // Do not republish public comment bodies: they may contain inadvertently disclosed private details.
   });
   const events = repos.flatMap(r => r.recent.map(c => c.utc))
     .concat(pulls.map(x => x.updated_utc), messages.map(x => x.utc));
   return {schema:'estate-activity-spider.v1', owner: OWNER,
     observation: 'public GitHub default-branch commits, open PR head snapshots and public issue comments; not individual agent process telemetry',
+    observed_at_utc:new Date(now).toISOString(),
+    coverage:{repos_requested:config.repos.length,repos_scanned:repos.length,repo_errors:0},
     window_start_utc: days[0] + 'T00:00:00Z', day_labels: days,
     latest_event_utc: isoMax(events),
     count_rule: '7 UTC calendar days; commit counts may be lower bounds if the API page cap is reached',
@@ -197,10 +250,14 @@ export async function collect(config, token, now = new Date(), fetcher = fetch) 
     sources: {github:'GitHub REST API, public repos, exact commits and comment URLs',
       stars:'stars/modular/source.json at pinned stars HEAD',
       kuiper:'kuiper-belt/cosmos/standing.tsv at pinned Kuiper HEAD',
-      spider:'ventus-grid-engine/spider/manifest.json at pinned receiver HEAD'},
+      spider:'ventus-grid-engine/spider/manifest.json at pinned receiver HEAD',
+      cvaa:'CVAA vaccines.lock and observed-before-asserted vaccine at pinned CVAA HEAD; exact PR #2 audit run'},
     qualifications: ['Navigation links are not measured code dependencies.',
       'GitHub account comments and their self-declared agent tags do not establish live agent status.',
       'Registered graph URLs are not independently verified served HTTP bytes.',
+      'A pinned CVAA vaccine is policy reference; it does not mean Spider executed the inoculation.',
+      'CVAA failing audit at an exact PR head remains failed, even if other individual tests passed.',
+      'Public agent comment bodies are intentionally not copied into the activity snapshot.',
       'A Kuiper or Stars pin behind a newer commit is expected between independent scans, not proof of a defect.']};
 }
 

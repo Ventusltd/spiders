@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {dayLabels, isoDay, summarizeCommits, parseStanding, comparePinned, deriveRegistry, collect} from './build.mjs';
+import {dayLabels, isoDay, summarizeCommits, parseStanding, comparePinned, deriveRegistry, assessCvaaAudit, verifyVaccineLock, collect} from './build.mjs';
 
 const SHA_A = 'a'.repeat(40);
 const SHA_B = 'b'.repeat(40);
@@ -56,7 +56,7 @@ test('Kuiper measured rows and Spider manifest links require actual evidence', (
 test('full mocked crawl links exact repo SHA, Stars source and Kuiper measurements, not agent status', async () => {
   const commits = {
     stars:SHA_A, 'kuiper-belt':SHA_B, 'ventus-grid-engine':SHA_C,
-    'neural-link-between-agents':SHA_D
+    'neural-link-between-agents':SHA_D, cvaa:'e'.repeat(40)
   };
   const config={schema:'estate-activity.config.v1', owner:'Ventusltd', lookback_days:7,
     max_commit_pages:1, repos:Object.keys(commits),pr_repos:['neural-link-between-agents'],links:[]};
@@ -68,6 +68,12 @@ test('full mocked crawl links exact repo SHA, Stars source and Kuiper measuremen
       const repo=url.split('/repos/Ventusltd/')[1].split('/')[0];
       payload=[{sha:commits[repo],html_url:'https://github.com/Ventusltd/'+repo+'/commit/'+commits[repo],
         commit:{committer:{date:'2026-11-15T10:00:00Z'},message:'Verified public commit'}}];
+    } else if(url.includes('/cvaa/pulls/2')) {
+      payload={number:2,state:'open',html_url:'https://github.com/Ventusltd/cvaa/pull/2',head:{sha:'f'.repeat(40)}};
+    } else if(url.includes('/cvaa/actions/runs?')) {
+      payload={workflow_runs:[{id:42,name:'202608301447 Self-test and full-history fleet audit',
+        head_sha:'f'.repeat(40),created_at:'2026-11-15T10:00:00Z',updated_at:'2026-11-15T10:10:00Z',
+        status:'completed',conclusion:'failure',html_url:'https://github.com/Ventusltd/cvaa/actions/runs/42'}]};
     } else if(url.includes('/pulls?')) {
       payload=[{number:35,title:'Research',draft:true,html_url:'https://github.com/Ventusltd/neural-link-between-agents/pull/35',
         head:{sha:SHA_D},updated_at:'2026-11-15T11:00:00Z'}];
@@ -78,6 +84,10 @@ test('full mocked crawl links exact repo SHA, Stars source and Kuiper measuremen
         body:'[AGENT 7] A comment, not proof of a running process'}];
     } else if(url.includes('/spider/manifest.json')) {
       payload={graphs:[{id:'periodic-table',path:'https://ventusltd.github.io/stars/blocks/graph.json'}]};
+    } else if(url.includes('/vaccines.lock')) {
+      payload={['202609261425-observed-before-asserted.md']:'73092bd1e497c22ba348bf55ccfce8f37b1103f4d7accd7c67e02445bd1068c6'};
+    } else if(url.includes('/vaccines/202609261425-observed-before-asserted.md')) {
+      payload='test CVAA vaccine fixture';
     } else if(url.includes('/cosmos/standing.tsv')) {
       payload='# repo\thead\thead_unix\nstars\t'+SHA_A.slice(0,12)+'\t1794745000\n';
     } else if(url.includes('/modular/source.json')) {
@@ -89,14 +99,20 @@ test('full mocked crawl links exact repo SHA, Stars source and Kuiper measuremen
       text:async()=>typeof payload==='string'?payload:JSON.stringify(payload)};
   }
   const result=await collect(config,'mock-token',new Date(when),fakeFetch);
-  assert.equal(result.repos.length,4);
+  assert.equal(result.repos.length,5);
   assert.equal(result.pulls.length,1);
   assert.equal(result.messages[0].declared_tag,'AGENT 7');
   assert.match(result.observation,/not individual agent process telemetry/);
   assert.equal(result.joins.kuiper.comparisons[0].status,'aligned');
   assert.equal(result.joins.stars.comparisons[1].status,'lagging');
   assert.equal(result.joins.spider_receiver.registrations[0].registered,true);
-  assert.ok(calls.length>=7);
+  assert.equal(result.joins.cvaa.audit.status,'FAILED_AT_HEAD');
+  assert.equal(result.joins.cvaa.relationship,'POLICY_REFERENCE_ONLY');
+  assert.equal(result.joins.cvaa.vaccine.status,'LOCK_MATCH');
+  assert.ok(!('excerpt' in result.messages[0]));
+  assert.equal(result.messages[0].agent_runtime_status,'UNKNOWN');
+  assert.equal(result.coverage.repos_requested,5);
+  assert.ok(calls.length>=12);
 });
 
 test('upstream HTTP failure aborts rather than publishing a fictitious empty graph', async () => {

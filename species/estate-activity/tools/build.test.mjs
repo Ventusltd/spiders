@@ -121,3 +121,48 @@ test('upstream HTTP failure aborts rather than publishing a fictitious empty gra
   await assert.rejects(collect(config,'mock',new Date(when),
     async()=>({ok:false,status:403})),/HTTP 403/);
 });
+
+
+test('E2-CVAA-01: green workflow on SHA-A does not certify changed SHA-B', () => {
+  const pr={number:2,state:'open',head:{sha:SHA_B},html_url:'https://github.com/Ventusltd/cvaa/pull/2'};
+  const prior=[{name:'202608301447 Self-test and full-history fleet audit',head_sha:SHA_A,
+    created_at:'2026-11-15T10:00:00Z',status:'completed',conclusion:'success',id:8}];
+  const result=assessCvaaAudit(pr,prior);
+  assert.equal(result.status,'NOT_OBSERVED');
+  assert.equal(result.run_id,null);
+  assert.equal(result.consumer_inoculation,'NOT_OBSERVED');
+});
+
+test('E2-CVAA-02: a vaccine policy without valid pinned digest is rejected', () => {
+  const name='202609261425-observed-before-asserted.md';
+  assert.throws(()=>verifyVaccineLock({},name,'contents'),/missing pinned vaccine/);
+  const bad=verifyVaccineLock({[name]:'a'.repeat(64)},name,'contents');
+  assert.equal(bad.status,'PROVENANCE_CONFLICT');
+});
+
+test('E2-CVAA-03: newest exact-head full audit failure overrides a green subset or older pass', () => {
+  const pr={number:2,state:'open',head:{sha:SHA_A},html_url:'https://github.com/Ventusltd/cvaa/pull/2'};
+  const runs=[
+    {name:'202608301447 Self-test and full-history fleet audit',head_sha:SHA_A,
+      created_at:'2026-11-15T10:01:00Z',status:'completed',conclusion:'success',id:10},
+    {name:'202608301447 Self-test and full-history fleet audit',head_sha:SHA_A,
+      created_at:'2026-11-15T10:03:00Z',status:'completed',conclusion:'failure',id:12},
+    {name:'Selected tests passing',head_sha:SHA_A,created_at:'2026-11-15T10:04:00Z',
+      status:'completed',conclusion:'success',id:13}
+  ];
+  const result=assessCvaaAudit(pr,runs);
+  assert.equal(result.status,'FAILED_AT_HEAD');
+  assert.equal(result.run_id,12);
+});
+
+test('E2-CVAA-08: public comment declaring an agent does not establish its live process', async () => {
+  const pr={number:2,state:'open',head:{sha:SHA_A},html_url:'https://github.com/Ventusltd/cvaa/pull/2'};
+  assert.equal(assessCvaaAudit(pr,[]).status,'NOT_OBSERVED');
+  assert.notEqual(assessCvaaAudit(pr,[{name:'irrelevant',head_sha:SHA_A,conclusion:'success'}]).status,'PASSED_AT_HEAD');
+});
+
+test('E2-CVAA-05: no repositories in configuration cannot be reported as fleet success', async () => {
+  await assert.rejects(collect({schema:'estate-activity.config.v1',owner:'Ventusltd',
+    lookback_days:7,max_commit_pages:1,repos:[],pr_repos:[]},'token',
+    new Date(when),async()=>({ok:true,json:async()=>[]})),/invalid bounded config/);
+});

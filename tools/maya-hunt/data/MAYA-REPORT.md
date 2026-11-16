@@ -1,8 +1,8 @@
 # Maya cards — dead ends hunted and explained
 
-Generated 2026-11-09T16:16:32Z by maya-hunter.mjs.
+Generated 2026-11-16T15:43:40Z by maya-hunter.mjs.
 
-**926 dead ends** across 16 graphs (2054 nodes total) each now carry a Maya card.
+**936 dead ends** across 16 graphs (2101 nodes total) each now carry a Maya card.
 
 | graph | title | nodes | dead ends |
 |---|---|---|---|
@@ -13,12 +13,12 @@ Generated 2026-11-09T16:16:32Z by maya-hunter.mjs.
 | genome-spider |  | - | not a node graph |
 | gridatlas-lineage | GridAtlas cartridge lineage | 16 | 10 |
 | modular | Reuse | 298 | 46 |
-| periodic-table | Inventory | 695 | 69 |
+| periodic-table | Inventory | 732 | 69 |
 | proof-of-work | Audit | 40 | 13 |
 | structure | Structure | 136 | 51 |
 | chemistry | Compatibility | 125 | 125 |
 | vedic | Classification | 305 | 305 |
-| random | Sampling | 169 | 169 |
+| random | Sampling | 179 | 179 |
 | generated-apps | Applications | 14 | 12 |
 | sense | Assessment | 142 | 69 |
 | decisions | Decisions | 37 | 19 |

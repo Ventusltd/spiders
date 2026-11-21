@@ -2,7 +2,7 @@
   "schema": "estate-activity-spider.v1",
   "owner": "Ventusltd",
   "observation": "public GitHub default-branch commits, open PR head snapshots and public issue comments; not individual agent process telemetry",
-  "observed_at_utc": "2026-11-21T02:09:00.074Z",
+  "observed_at_utc": "2026-11-21T10:54:16.034Z",
   "coverage": {
     "repos_requested": 15,
     "repos_scanned": 15,
@@ -18,16 +18,16 @@
     "2026-11-20",
     "2026-11-21"
   ],
-  "latest_event_utc": "2026-11-21T01:22:45Z",
+  "latest_event_utc": "2026-11-21T09:37:05Z",
   "count_rule": "7 UTC calendar days; commit counts may be lower bounds if the API page cap is reached",
   "repos": [
     {
       "repo": "Ventusltd/spiders",
       "url": "https://github.com/Ventusltd/spiders",
-      "head_sha": "fc991a1b485e8791a4c1f427c73d1eeda5435681",
-      "head_commit_url": "https://github.com/Ventusltd/spiders/commit/fc991a1b485e8791a4c1f427c73d1eeda5435681",
-      "head_commit_utc": "2026-11-20T20:04:36Z",
-      "sample_count": 17,
+      "head_sha": "2b688c79f465dd45ed86ab97ce2a7c4c752f68bc",
+      "head_commit_url": "https://github.com/Ventusltd/spiders/commit/2b688c79f465dd45ed86ab97ce2a7c4c752f68bc",
+      "head_commit_utc": "2026-11-21T02:09:12Z",
+      "sample_count": 18,
       "count_is_lower_bound": false,
       "day_counts": [
         {
@@ -56,10 +56,16 @@
         },
         {
           "day": "2026-11-21",
-          "count": 0
+          "count": 1
         }
       ],
       "recent": [
+        {
+          "sha": "2b688c79f465dd45ed86ab97ce2a7c4c752f68bc",
+          "url": "https://github.com/Ventusltd/spiders/commit/2b688c79f465dd45ed86ab97ce2a7c4c752f68bc",
+          "utc": "2026-11-21T02:09:12Z",
+          "message": "activity-spider: refresh measured estate links and activity"
+        },
         {
           "sha": "fc991a1b485e8791a4c1f427c73d1eeda5435681",
           "url": "https://github.com/Ventusltd/spiders/commit/fc991a1b485e8791a4c1f427c73d1eeda5435681",
@@ -82,12 +88,6 @@
           "sha": "12f7988c4668b04775f50b0a46366e511f65d855",
           "url": "https://github.com/Ventusltd/spiders/commit/12f7988c4668b04775f50b0a46366e511f65d855",
           "utc": "2026-11-19T20:29:05Z",
-          "message": "activity-spider: refresh measured estate links and activity"
-        },
-        {
-          "sha": "eae0db5a4b8cc9a794f7ceeb859a333913c676fc",
-          "url": "https://github.com/Ventusltd/spiders/commit/eae0db5a4b8cc9a794f7ceeb859a333913c676fc",
-          "utc": "2026-11-19T11:30:33Z",
           "message": "activity-spider: refresh measured estate links and activity"
         }
       ]
@@ -355,10 +355,10 @@
     {
       "repo": "Ventusltd/stars",
       "url": "https://github.com/Ventusltd/stars",
-      "head_sha": "488b0b3e5d09921e5b22dbc88d6ff6196cfc9d20",
-      "head_commit_url": "https://github.com/Ventusltd/stars/commit/488b0b3e5d09921e5b22dbc88d6ff6196cfc9d20",
-      "head_commit_utc": "2026-11-20T21:33:33Z",
-      "sample_count": 57,
+      "head_sha": "1f7dfa4f6683d93cde35b2fcee18476e6ae8ddf9",
+      "head_commit_url": "https://github.com/Ventusltd/stars/commit/1f7dfa4f6683d93cde35b2fcee18476e6ae8ddf9",
+      "head_commit_utc": "2026-11-21T02:50:24Z",
+      "sample_count": 60,
       "count_is_lower_bound": false,
       "day_counts": [
         {
@@ -387,10 +387,28 @@
         },
         {
           "day": "2026-11-21",
-          "count": 0
+          "count": 3
         }
       ],
       "recent": [
+        {
+          "sha": "1f7dfa4f6683d93cde35b2fcee18476e6ae8ddf9",
+          "url": "https://github.com/Ventusltd/stars/commit/1f7dfa4f6683d93cde35b2fcee18476e6ae8ddf9",
+          "utc": "2026-11-21T02:50:24Z",
+          "message": "Reports from star-maker f65c2f3 (4228 test results)"
+        },
+        {
+          "sha": "27fb082cd5ad2b1f3c3c564d8d7bdfea3b21f3f2",
+          "url": "https://github.com/Ventusltd/stars/commit/27fb082cd5ad2b1f3c3c564d8d7bdfea3b21f3f2",
+          "utc": "2026-11-21T02:49:41Z",
+          "message": "Modular star 2026-11-21T02:49Z"
+        },
+        {
+          "sha": "627620b827c21f4720bf403faefae6df53656b3c",
+          "url": "https://github.com/Ventusltd/stars/commit/627620b827c21f4720bf403faefae6df53656b3c",
+          "utc": "2026-11-21T02:35:23Z",
+          "message": "Reports from star-maker f65c2f3 (4228 test results)"
+        },
         {
           "sha": "488b0b3e5d09921e5b22dbc88d6ff6196cfc9d20",
           "url": "https://github.com/Ventusltd/stars/commit/488b0b3e5d09921e5b22dbc88d6ff6196cfc9d20",
@@ -402,24 +420,6 @@
           "url": "https://github.com/Ventusltd/stars/commit/bb019980ceb32d0931b57229e1675fdb791f8ec7",
           "utc": "2026-11-20T21:32:37Z",
           "message": "Modular star 2026-11-20T21:32Z"
-        },
-        {
-          "sha": "7a9b6bc0d0da82abad801daff911bc04c64a7100",
-          "url": "https://github.com/Ventusltd/stars/commit/7a9b6bc0d0da82abad801daff911bc04c64a7100",
-          "utc": "2026-11-20T20:34:52Z",
-          "message": "Reports from star-maker f65c2f3 (4228 test results)"
-        },
-        {
-          "sha": "4f914e821d47266ad577239931f25ac43af49571",
-          "url": "https://github.com/Ventusltd/stars/commit/4f914e821d47266ad577239931f25ac43af49571",
-          "utc": "2026-11-20T13:35:46Z",
-          "message": "Reports from star-maker f65c2f3 (4228 test results)"
-        },
-        {
-          "sha": "6a721eb34e93cb44295792b8301fe18cb26f2604",
-          "url": "https://github.com/Ventusltd/stars/commit/6a721eb34e93cb44295792b8301fe18cb26f2604",
-          "utc": "2026-11-20T13:34:43Z",
-          "message": "Modular star 2026-11-20T13:34Z"
         }
       ]
     },
@@ -473,10 +473,10 @@
     {
       "repo": "Ventusltd/kuiper-belt",
       "url": "https://github.com/Ventusltd/kuiper-belt",
-      "head_sha": "3f8a38ada3e527279f85a6b54780e22da609cfd0",
-      "head_commit_url": "https://github.com/Ventusltd/kuiper-belt/commit/3f8a38ada3e527279f85a6b54780e22da609cfd0",
-      "head_commit_utc": "2026-11-20T20:31:14Z",
-      "sample_count": 12,
+      "head_sha": "902c626aa3ce9176412e5d6e60c041b68bdc089d",
+      "head_commit_url": "https://github.com/Ventusltd/kuiper-belt/commit/902c626aa3ce9176412e5d6e60c041b68bdc089d",
+      "head_commit_utc": "2026-11-21T07:21:39Z",
+      "sample_count": 13,
       "count_is_lower_bound": false,
       "day_counts": [
         {
@@ -505,10 +505,16 @@
         },
         {
           "day": "2026-11-21",
-          "count": 0
+          "count": 1
         }
       ],
       "recent": [
+        {
+          "sha": "902c626aa3ce9176412e5d6e60c041b68bdc089d",
+          "url": "https://github.com/Ventusltd/kuiper-belt/commit/902c626aa3ce9176412e5d6e60c041b68bdc089d",
+          "utc": "2026-11-21T07:21:39Z",
+          "message": "engine: lines standing and the wafer grown, measured by GitHub Actions"
+        },
         {
           "sha": "3f8a38ada3e527279f85a6b54780e22da609cfd0",
           "url": "https://github.com/Ventusltd/kuiper-belt/commit/3f8a38ada3e527279f85a6b54780e22da609cfd0",
@@ -532,22 +538,16 @@
           "url": "https://github.com/Ventusltd/kuiper-belt/commit/31977135a7ba0a219f1ea70b3057d2e5e90ddb0d",
           "utc": "2026-11-19T07:36:03Z",
           "message": "engine: lines standing and the wafer grown, measured by GitHub Actions"
-        },
-        {
-          "sha": "0d521b07c2c837a10d5de152fa4c6d080f7c49c2",
-          "url": "https://github.com/Ventusltd/kuiper-belt/commit/0d521b07c2c837a10d5de152fa4c6d080f7c49c2",
-          "utc": "2026-11-18T20:41:01Z",
-          "message": "engine: lines standing and the wafer grown, measured by GitHub Actions"
         }
       ]
     },
     {
       "repo": "Ventusltd/ventus-grid-engine",
       "url": "https://github.com/Ventusltd/ventus-grid-engine",
-      "head_sha": "c2f16a8fa5db775d36350b04b626ecee41f7ae68",
-      "head_commit_url": "https://github.com/Ventusltd/ventus-grid-engine/commit/c2f16a8fa5db775d36350b04b626ecee41f7ae68",
-      "head_commit_utc": "2026-11-21T01:22:45Z",
-      "sample_count": 24,
+      "head_sha": "192c4ad3f49266c8be3aca6e04aa228c0c5e04a5",
+      "head_commit_url": "https://github.com/Ventusltd/ventus-grid-engine/commit/192c4ad3f49266c8be3aca6e04aa228c0c5e04a5",
+      "head_commit_utc": "2026-11-21T09:37:05Z",
+      "sample_count": 25,
       "count_is_lower_bound": false,
       "day_counts": [
         {
@@ -576,10 +576,16 @@
         },
         {
           "day": "2026-11-21",
-          "count": 1
+          "count": 2
         }
       ],
       "recent": [
+        {
+          "sha": "192c4ad3f49266c8be3aca6e04aa228c0c5e04a5",
+          "url": "https://github.com/Ventusltd/ventus-grid-engine/commit/192c4ad3f49266c8be3aca6e04aa228c0c5e04a5",
+          "utc": "2026-11-21T09:37:05Z",
+          "message": "spider: manifest updated from registries (2026-11-21T09:37Z)"
+        },
         {
           "sha": "c2f16a8fa5db775d36350b04b626ecee41f7ae68",
           "url": "https://github.com/Ventusltd/ventus-grid-engine/commit/c2f16a8fa5db775d36350b04b626ecee41f7ae68",
@@ -603,12 +609,6 @@
           "url": "https://github.com/Ventusltd/ventus-grid-engine/commit/ebc8e842dbf868532d018d11e1be2a7298892691",
           "utc": "2026-11-20T02:59:22Z",
           "message": "spider: manifest updated from registries (2026-11-20T02:59Z)"
-        },
-        {
-          "sha": "a36e92781e2f858d9432779601dd5d6afed53cf9",
-          "url": "https://github.com/Ventusltd/ventus-grid-engine/commit/a36e92781e2f858d9432779601dd5d6afed53cf9",
-          "utc": "2026-11-19T21:23:01Z",
-          "message": "spider: manifest updated from registries (2026-11-19T21:23Z)"
         }
       ]
     },
@@ -868,10 +868,10 @@
     {
       "repo": "Ventusltd/time-stone",
       "url": "https://github.com/Ventusltd/time-stone",
-      "head_sha": "22f72934ba6cdfb82ace3a9ba311e319221a1903",
-      "head_commit_url": "https://github.com/Ventusltd/time-stone/commit/22f72934ba6cdfb82ace3a9ba311e319221a1903",
-      "head_commit_utc": "2026-11-20T21:18:33Z",
-      "sample_count": 19,
+      "head_sha": "f1f4f920fea5d468877ad604264ddd660f1f327d",
+      "head_commit_url": "https://github.com/Ventusltd/time-stone/commit/f1f4f920fea5d468877ad604264ddd660f1f327d",
+      "head_commit_utc": "2026-11-21T02:33:09Z",
+      "sample_count": 20,
       "count_is_lower_bound": false,
       "day_counts": [
         {
@@ -900,10 +900,16 @@
         },
         {
           "day": "2026-11-21",
-          "count": 0
+          "count": 1
         }
       ],
       "recent": [
+        {
+          "sha": "f1f4f920fea5d468877ad604264ddd660f1f327d",
+          "url": "https://github.com/Ventusltd/time-stone/commit/f1f4f920fea5d468877ad604264ddd660f1f327d",
+          "utc": "2026-11-21T02:33:09Z",
+          "message": "watch: what changed"
+        },
         {
           "sha": "22f72934ba6cdfb82ace3a9ba311e319221a1903",
           "url": "https://github.com/Ventusltd/time-stone/commit/22f72934ba6cdfb82ace3a9ba311e319221a1903",
@@ -926,12 +932,6 @@
           "sha": "5131e5d35b32121fc27db8e4849bd09ad9951cca",
           "url": "https://github.com/Ventusltd/time-stone/commit/5131e5d35b32121fc27db8e4849bd09ad9951cca",
           "utc": "2026-11-19T22:17:58Z",
-          "message": "watch: what changed"
-        },
-        {
-          "sha": "a36713c1490b0d6ed97045acf980d39c661190fb",
-          "url": "https://github.com/Ventusltd/time-stone/commit/a36713c1490b0d6ed97045acf980d39c661190fb",
-          "utc": "2026-11-19T13:32:32Z",
           "message": "watch: what changed"
         }
       ]
@@ -1798,7 +1798,7 @@
   ],
   "joins": {
     "spider_receiver": {
-      "manifest_commit": "c2f16a8fa5db775d36350b04b626ecee41f7ae68",
+      "manifest_commit": "192c4ad3f49266c8be3aca6e04aa228c0c5e04a5",
       "registrations": [
         {
           "id": "periodic-table",
@@ -1831,7 +1831,7 @@
       ]
     },
     "kuiper": {
-      "source_commit": "3f8a38ada3e527279f85a6b54780e22da609cfd0",
+      "source_commit": "902c626aa3ce9176412e5d6e60c041b68bdc089d",
       "file": "cosmos/standing.tsv",
       "pinned_rows": 82,
       "comparisons": [
@@ -1861,8 +1861,8 @@
         },
         {
           "repo": "Ventusltd/kuiper-belt",
-          "pinned_sha": "b7fba3568745",
-          "observed_sha": "3f8a38ada3e527279f85a6b54780e22da609cfd0",
+          "pinned_sha": "3f8a38ada3e5",
+          "observed_sha": "902c626aa3ce9176412e5d6e60c041b68bdc089d",
           "status": "lagging"
         },
         {
@@ -1879,8 +1879,8 @@
         },
         {
           "repo": "Ventusltd/spiders",
-          "pinned_sha": "fc991a1b485e",
-          "observed_sha": "fc991a1b485e8791a4c1f427c73d1eeda5435681",
+          "pinned_sha": "2b688c79f465",
+          "observed_sha": "2b688c79f465dd45ed86ab97ce2a7c4c752f68bc",
           "status": "aligned"
         },
         {
@@ -1903,9 +1903,9 @@
         },
         {
           "repo": "Ventusltd/stars",
-          "pinned_sha": "4f914e821d47",
-          "observed_sha": "488b0b3e5d09921e5b22dbc88d6ff6196cfc9d20",
-          "status": "lagging"
+          "pinned_sha": "1f7dfa4f6683",
+          "observed_sha": "1f7dfa4f6683d93cde35b2fcee18476e6ae8ddf9",
+          "status": "aligned"
         },
         {
           "repo": "Ventusltd/testcode",
@@ -1915,22 +1915,22 @@
         },
         {
           "repo": "Ventusltd/time-stone",
-          "pinned_sha": "614f65889372",
-          "observed_sha": "22f72934ba6cdfb82ace3a9ba311e319221a1903",
-          "status": "lagging"
+          "pinned_sha": "f1f4f920fea5",
+          "observed_sha": "f1f4f920fea5d468877ad604264ddd660f1f327d",
+          "status": "aligned"
         },
         {
           "repo": "Ventusltd/ventus-grid-engine",
-          "pinned_sha": "6594c4f01377",
-          "observed_sha": "c2f16a8fa5db775d36350b04b626ecee41f7ae68",
+          "pinned_sha": "c2f16a8fa5db",
+          "observed_sha": "192c4ad3f49266c8be3aca6e04aa228c0c5e04a5",
           "status": "lagging"
         }
       ]
     },
     "stars": {
-      "source_commit": "488b0b3e5d09921e5b22dbc88d6ff6196cfc9d20",
+      "source_commit": "1f7dfa4f6683d93cde35b2fcee18476e6ae8ddf9",
       "file": "modular/source.json",
-      "source_generated_utc": "2026-11-20T21:30:32.219Z",
+      "source_generated_utc": "2026-11-21T02:47:32.575Z",
       "pinned_rows": 92,
       "comparisons": [
         {
@@ -1960,8 +1960,8 @@
         {
           "repo": "Ventusltd/kuiper-belt",
           "pinned_sha": "3f8a38ada3e527279f85a6b54780e22da609cfd0",
-          "observed_sha": "3f8a38ada3e527279f85a6b54780e22da609cfd0",
-          "status": "aligned"
+          "observed_sha": "902c626aa3ce9176412e5d6e60c041b68bdc089d",
+          "status": "lagging"
         },
         {
           "repo": "Ventusltd/neural-link-between-agents",
@@ -1977,8 +1977,8 @@
         },
         {
           "repo": "Ventusltd/spiders",
-          "pinned_sha": "fc991a1b485e8791a4c1f427c73d1eeda5435681",
-          "observed_sha": "fc991a1b485e8791a4c1f427c73d1eeda5435681",
+          "pinned_sha": "2b688c79f465dd45ed86ab97ce2a7c4c752f68bc",
+          "observed_sha": "2b688c79f465dd45ed86ab97ce2a7c4c752f68bc",
           "status": "aligned"
         },
         {
@@ -2007,14 +2007,14 @@
         },
         {
           "repo": "Ventusltd/time-stone",
-          "pinned_sha": "22f72934ba6cdfb82ace3a9ba311e319221a1903",
-          "observed_sha": "22f72934ba6cdfb82ace3a9ba311e319221a1903",
+          "pinned_sha": "f1f4f920fea5d468877ad604264ddd660f1f327d",
+          "observed_sha": "f1f4f920fea5d468877ad604264ddd660f1f327d",
           "status": "aligned"
         },
         {
           "repo": "Ventusltd/ventus-grid-engine",
-          "pinned_sha": "6594c4f0137715d8a0e529f76e37edf7c53c7527",
-          "observed_sha": "c2f16a8fa5db775d36350b04b626ecee41f7ae68",
+          "pinned_sha": "c2f16a8fa5db775d36350b04b626ecee41f7ae68",
+          "observed_sha": "192c4ad3f49266c8be3aca6e04aa228c0c5e04a5",
           "status": "lagging"
         }
       ]

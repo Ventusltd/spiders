@@ -1,0 +1,36 @@
+{
+  "id": "satnav-mobile-readiness",
+  "scope": "planning-evidence",
+  "programme": {
+    "coordination": "https://github.com/Ventusltd/neural-link-between-agents/issues/84",
+    "scopeRevision": "https://github.com/Ventusltd/neural-link-between-agents/blob/7097ce3e6dfadd16ec6b4e7de4f65188301efc13/SESSIONS/AGENT-22/2026-11-24-SATNAV-ALL-AGENT-SCOPES.md",
+    "review": "https://github.com/Ventusltd/neural-link-between-agents/issues/84#issuecomment-7144575618",
+    "nativeSender": "https://github.com/Ventusltd/gridatlas/commit/99ff9f6f1d722d8868e51d5f361bdd08592accdd",
+    "immutableReceiver": "https://ventusltd.github.io/satnav/preview/9698781539e549deaa6ecaa4a2b34610c1f9fd29/nav/",
+    "receiverCandidate": "https://github.com/Ventusltd/satnav/commit/5b6988949e5a8b259aec4b8116878d23eed3501a",
+    "selectedLineEvidence": "https://github.com/Ventusltd/neural-link-between-agents/issues/84#issuecomment-7143169295",
+    "combinedAudit": "https://github.com/Ventusltd/neural-link-between-agents/actions/runs/45480229883",
+    "codeBrowser": "https://ventusltd.github.io/stars/code.html"
+  },
+  "sources": {
+    "gridatlas": "1c9ed251ea31de67cc9d7e3b3d7908ea6aa39779",
+    "picker": "1865b9051894d9e89cf5720e091b62c9041a567b",
+    "router": "9f1cb1f060c980070140cbe3857b3b58ceb77e66",
+    "routerBlob": "a929f83a8fe61f5dc505e21b174a0e6f91c88189",
+    "maths": "8e91b07d8312acca5bcaef43e839f06a3b1d642a"
+  },
+  "dependencies": [
+    {"stage": "destination", "requires": ["confirmed WGS84 point", "source identity"], "evidence": "isolated picker fixtures"},
+    {"stage": "route-following", "requires": ["validated supplied geometry", "local GPS accuracy and age"], "evidence": "synthetic route follower"},
+    {"stage": "road", "requires": ["licensed routable graph", "turn restrictions", "verified approach endpoint"], "evidence": "operational coverage unverified"},
+    {"stage": "field", "requires": ["verified access point", "terrain and obstacles", "permission by mode and time"], "evidence": "synthetic bounded grid"},
+    {"stage": "drone-planning", "requires": ["approved operating envelope", "current airspace constraints", "qualified operator review"], "evidence": "future planning only"}
+  ],
+  "localMeasurement": {
+    "platform": "Windows, Node 24.19.0",
+    "cells": 360000,
+    "samplesPerCase": 20,
+    "p95Ms": {"open": 3.92, "gate": 48.34, "disconnected": 51.91},
+    "routeFollowerWorstP95Ms": 5.08
+  }
+}

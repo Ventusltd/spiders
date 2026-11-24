@@ -1,0 +1,38 @@
+name: SatNav readiness evidence
+on:
+  pull_request:
+    paths:
+      - 'species/seer-spider/satnav/**'
+      - '.github/workflows/satnav-readiness.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  synthetic:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - id: source
+        run: |
+          node -e 'console.log("router=" + require("./species/seer-spider/satnav/cartridge.json").sources.router)' >> "$GITHUB_OUTPUT"
+      - uses: actions/checkout@v4
+        with:
+          repository: Ventusltd/satnav
+          ref: ${{ steps.source.outputs.router }}
+          path: .satnav-source
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: |
+          expected=$(node -p 'require("./species/seer-spider/satnav/cartridge.json").sources.routerBlob')
+          test "$(git hash-object .satnav-source/src/router/grid-search.mjs)" = "$expected"
+          node species/seer-spider/satnav/benchmark.mjs .satnav-source/src/router/grid-search.mjs > route-evidence.json
+          cat route-evidence.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: satnav-synthetic-route-evidence
+          path: route-evidence.json

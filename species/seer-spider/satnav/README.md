@@ -1,5 +1,13 @@
 # Mobile SatNav readiness
 
+## Programme evidence
+
+The cartridge links the native GridAtlas sender candidate, immutable compass receiver, selected-line evidence and independent audit to Scope Revision 2. The review records each result and its scope. The source pins and desktop benchmark below are historical planning evidence for later route generation. [Neural Link review](https://github.com/Ventusltd/neural-link-between-agents/issues/84#issuecomment-7144575618)
+
+Use Genome Spider to inspect selected files and dependency evidence. Stars provides function source and links to files and lines at indexed commits. [Genome Spider](https://ventusltd.github.io/ventus-grid-engine/?graph=genome-spider) · [Stars Code Report](https://ventusltd.github.io/stars/code.html)
+
+## Benchmark baseline
+
 GridAtlas generation 202611222343 exposes place lookup and map selection. The SatNav picker candidate confirms a signed WGS84 destination using fixtures, and the published P1 preview supplies straight-line bearing and distance. Electrical connectivity describes conductors and assets. Routing needs a different graph with traversable edges, verified entry points, restrictions and coverage for each mode.
 
 ## Maths and performance

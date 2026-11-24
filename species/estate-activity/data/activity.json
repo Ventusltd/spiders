@@ -2,38 +2,34 @@
   "schema": "estate-activity-spider.v1",
   "owner": "Ventusltd",
   "observation": "public GitHub default-branch commits, open PR head snapshots and public issue comments; not individual agent process telemetry",
-  "observed_at_utc": "2026-11-23T12:20:49.778Z",
+  "observed_at_utc": "2026-11-24T02:09:13.496Z",
   "coverage": {
     "repos_requested": 15,
     "repos_scanned": 15,
     "repo_errors": 0
   },
-  "window_start_utc": "2026-11-17T00:00:00Z",
+  "window_start_utc": "2026-11-18T00:00:00Z",
   "day_labels": [
-    "2026-11-17",
     "2026-11-18",
     "2026-11-19",
     "2026-11-20",
     "2026-11-21",
     "2026-11-22",
-    "2026-11-23"
+    "2026-11-23",
+    "2026-11-24"
   ],
-  "latest_event_utc": "2026-11-23T12:20:21Z",
+  "latest_event_utc": "2026-11-24T00:02:03Z",
   "count_rule": "7 UTC calendar days; commit counts may be lower bounds if the API page cap is reached",
   "repos": [
     {
       "repo": "Ventusltd/spiders",
       "url": "https://github.com/Ventusltd/spiders",
-      "head_sha": "609802c23a5cbb8603045b2b6593f62d54aee779",
-      "head_commit_url": "https://github.com/Ventusltd/spiders/commit/609802c23a5cbb8603045b2b6593f62d54aee779",
-      "head_commit_utc": "2026-11-23T01:36:42Z",
+      "head_sha": "0cb6de778596b6b18bc1709dff288bc5dbca534f",
+      "head_commit_url": "https://github.com/Ventusltd/spiders/commit/0cb6de778596b6b18bc1709dff288bc5dbca534f",
+      "head_commit_utc": "2026-11-23T18:05:43Z",
       "sample_count": 18,
       "count_is_lower_bound": false,
       "day_counts": [
-        {
-          "day": "2026-11-17",
-          "count": 2
-        },
         {
           "day": "2026-11-18",
           "count": 3
@@ -56,10 +52,26 @@
         },
         {
           "day": "2026-11-23",
-          "count": 1
+          "count": 3
+        },
+        {
+          "day": "2026-11-24",
+          "count": 0
         }
       ],
       "recent": [
+        {
+          "sha": "0cb6de778596b6b18bc1709dff288bc5dbca534f",
+          "url": "https://github.com/Ventusltd/spiders/commit/0cb6de778596b6b18bc1709dff288bc5dbca534f",
+          "utc": "2026-11-23T18:05:43Z",
+          "message": "maya-hunt: reassign dead-end cards (2026-11-23T18:05:43Z)"
+        },
+        {
+          "sha": "dc17af81aafb301a08be349f338551b0b85dd7c0",
+          "url": "https://github.com/Ventusltd/spiders/commit/dc17af81aafb301a08be349f338551b0b85dd7c0",
+          "utc": "2026-11-23T12:21:03Z",
+          "message": "activity-spider: refresh measured estate links and activity"
+        },
         {
           "sha": "609802c23a5cbb8603045b2b6593f62d54aee779",
           "url": "https://github.com/Ventusltd/spiders/commit/609802c23a5cbb8603045b2b6593f62d54aee779",
@@ -77,34 +89,18 @@
           "url": "https://github.com/Ventusltd/spiders/commit/e7f1afb60545c5f9ed5106a9afad109d7a88b81a",
           "utc": "2026-11-22T11:10:56Z",
           "message": "activity-spider: refresh measured estate links and activity"
-        },
-        {
-          "sha": "3c04ddf49a7f0ad078a8936b88f219ade03c2cf7",
-          "url": "https://github.com/Ventusltd/spiders/commit/3c04ddf49a7f0ad078a8936b88f219ade03c2cf7",
-          "utc": "2026-11-22T01:12:32Z",
-          "message": "activity-spider: refresh measured estate links and activity"
-        },
-        {
-          "sha": "88ea55d29392fadd2670d3dc84e1331f9c9a7db2",
-          "url": "https://github.com/Ventusltd/spiders/commit/88ea55d29392fadd2670d3dc84e1331f9c9a7db2",
-          "utc": "2026-11-21T19:08:01Z",
-          "message": "activity-spider: refresh measured estate links and activity"
         }
       ]
     },
     {
       "repo": "Ventusltd/neural-link-between-agents",
       "url": "https://github.com/Ventusltd/neural-link-between-agents",
-      "head_sha": "a199967d92d03e2a20d6f252318b0563175ee7fe",
-      "head_commit_url": "https://github.com/Ventusltd/neural-link-between-agents/commit/a199967d92d03e2a20d6f252318b0563175ee7fe",
-      "head_commit_utc": "2026-11-20T18:03:24Z",
-      "sample_count": 57,
+      "head_sha": "fde0bed2c17695f0513d2bafce770fed4abb185e",
+      "head_commit_url": "https://github.com/Ventusltd/neural-link-between-agents/commit/fde0bed2c17695f0513d2bafce770fed4abb185e",
+      "head_commit_utc": "2026-11-23T12:34:09Z",
+      "sample_count": 44,
       "count_is_lower_bound": false,
       "day_counts": [
-        {
-          "day": "2026-11-17",
-          "count": 16
-        },
         {
           "day": "2026-11-18",
           "count": 38
@@ -127,10 +123,32 @@
         },
         {
           "day": "2026-11-23",
+          "count": 3
+        },
+        {
+          "day": "2026-11-24",
           "count": 0
         }
       ],
       "recent": [
+        {
+          "sha": "fde0bed2c17695f0513d2bafce770fed4abb185e",
+          "url": "https://github.com/Ventusltd/neural-link-between-agents/commit/fde0bed2c17695f0513d2bafce770fed4abb185e",
+          "utc": "2026-11-23T12:34:09Z",
+          "message": "Record three-lane PipelineNews cockpit integration study and REPD/SCADA visual audit"
+        },
+        {
+          "sha": "ecb75adf322e65a6bc55d3638c005ebdecbe787d",
+          "url": "https://github.com/Ventusltd/neural-link-between-agents/commit/ecb75adf322e65a6bc55d3638c005ebdecbe787d",
+          "utc": "2026-11-23T12:31:49Z",
+          "message": "Expand REPD native skin contract with GridAtlas SCADA reference and discipline palette audit"
+        },
+        {
+          "sha": "2bf0b87a07a1466e42699ecbfd2b30f38a949b63",
+          "url": "https://github.com/Ventusltd/neural-link-between-agents/commit/2bf0b87a07a1466e42699ecbfd2b30f38a949b63",
+          "utc": "2026-11-23T12:28:35Z",
+          "message": "Document native REPD cockpit skin parity in a read-only reference MJS contract"
+        },
         {
           "sha": "a199967d92d03e2a20d6f252318b0563175ee7fe",
           "url": "https://github.com/Ventusltd/neural-link-between-agents/commit/a199967d92d03e2a20d6f252318b0563175ee7fe",
@@ -142,40 +160,18 @@
           "url": "https://github.com/Ventusltd/neural-link-between-agents/commit/594735f77be819918278bbc11ec07cff49e5851a",
           "utc": "2026-11-19T16:39:00Z",
           "message": "Merge pull request #78 from Ventusltd/diary/20261119-pipeline-news-v956"
-        },
-        {
-          "sha": "2747fc2130c0d473800d43ebe773f2ddd95a1a49",
-          "url": "https://github.com/Ventusltd/neural-link-between-agents/commit/2747fc2130c0d473800d43ebe773f2ddd95a1a49",
-          "utc": "2026-11-19T16:37:26Z",
-          "message": "Record V9.56 publication and correct GridAtlas approval status"
-        },
-        {
-          "sha": "b327ede176aa738b792142f499157654eb9399cb",
-          "url": "https://github.com/Ventusltd/neural-link-between-agents/commit/b327ede176aa738b792142f499157654eb9399cb",
-          "utc": "2026-11-18T09:25:53Z",
-          "message": "Preserve GridAtlas V9.192/V9.193 Journey beta code before owner rollback"
-        },
-        {
-          "sha": "7c274813407981229300a69cca48af623a6d0ff8",
-          "url": "https://github.com/Ventusltd/neural-link-between-agents/commit/7c274813407981229300a69cca48af623a6d0ff8",
-          "utc": "2026-11-18T07:34:03Z",
-          "message": "Merge pull request #77 from Ventusltd/scope/five-release-accepted-20261118"
         }
       ]
     },
     {
       "repo": "Ventusltd/globalgrid2050",
       "url": "https://github.com/Ventusltd/globalgrid2050",
-      "head_sha": "51aebaae5e0b4e2b8335588c8a215540b6e006b6",
-      "head_commit_url": "https://github.com/Ventusltd/globalgrid2050/commit/51aebaae5e0b4e2b8335588c8a215540b6e006b6",
-      "head_commit_utc": "2026-11-23T09:55:01Z",
-      "sample_count": 300,
-      "count_is_lower_bound": true,
+      "head_sha": "bd5e4448cbc016751622267290f24aef2c746e7f",
+      "head_commit_url": "https://github.com/Ventusltd/globalgrid2050/commit/bd5e4448cbc016751622267290f24aef2c746e7f",
+      "head_commit_utc": "2026-11-23T22:53:44Z",
+      "sample_count": 271,
+      "count_is_lower_bound": false,
       "day_counts": [
-        {
-          "day": "2026-11-17",
-          "count": 95
-        },
         {
           "day": "2026-11-18",
           "count": 58
@@ -198,39 +194,43 @@
         },
         {
           "day": "2026-11-23",
-          "count": 1
+          "count": 67
+        },
+        {
+          "day": "2026-11-24",
+          "count": 0
         }
       ],
       "recent": [
         {
-          "sha": "51aebaae5e0b4e2b8335588c8a215540b6e006b6",
-          "url": "https://github.com/Ventusltd/globalgrid2050/commit/51aebaae5e0b4e2b8335588c8a215540b6e006b6",
-          "utc": "2026-11-23T09:55:01Z",
-          "message": "Keep V9.73 public checks compatible with newer canonical GridAtlas VICINITY"
+          "sha": "bd5e4448cbc016751622267290f24aef2c746e7f",
+          "url": "https://github.com/Ventusltd/globalgrid2050/commit/bd5e4448cbc016751622267290f24aef2c746e7f",
+          "utc": "2026-11-23T22:53:44Z",
+          "message": "Promote V9.76 mobile REPD homepage SHA-256 bundle"
         },
         {
-          "sha": "9b7fc2e598a19d5d794baa4d9add2546d75f899a",
-          "url": "https://github.com/Ventusltd/globalgrid2050/commit/9b7fc2e598a19d5d794baa4d9add2546d75f899a",
-          "utc": "2026-11-22T23:52:16Z",
-          "message": "Pin PipelineNews V9.73 homepage owner and public/rollback verification"
+          "sha": "9d8da8d2aaab44a6c79b2a1d8fc6d14570325f34",
+          "url": "https://github.com/Ventusltd/globalgrid2050/commit/9d8da8d2aaab44a6c79b2a1d8fc6d14570325f34",
+          "utc": "2026-11-23T22:52:22Z",
+          "message": "Add independent public SHA256 V9.76 mobile REPD and historical rollback acceptance"
         },
         {
-          "sha": "477e8fa8ec4986c1b525f5c29e5b11decee991fa",
-          "url": "https://github.com/Ventusltd/globalgrid2050/commit/477e8fa8ec4986c1b525f5c29e5b11decee991fa",
-          "utc": "2026-11-22T23:47:47Z",
-          "message": "PipelineNews V9.73: Operator, Status and Region capacity reports"
+          "sha": "135b2af284321a94f13e9b8cb623e657fea679e8",
+          "url": "https://github.com/Ventusltd/globalgrid2050/commit/135b2af284321a94f13e9b8cb623e657fea679e8",
+          "utc": "2026-11-23T22:52:02Z",
+          "message": "Keep historical V9.74 public verifier valid under newer V9.76 homepage pin"
         },
         {
-          "sha": "77f41560f72c5b2b415e98e076bbd8d2032ee3c4",
-          "url": "https://github.com/Ventusltd/globalgrid2050/commit/77f41560f72c5b2b415e98e076bbd8d2032ee3c4",
-          "utc": "2026-11-22T22:47:16Z",
-          "message": "Pin accepted PipelineNews V9.72 homepage bundle and verify served A4/VICINITY bytes"
+          "sha": "e49ce1d97e32ce4d48f5ad20c6b8f61fd8d69474",
+          "url": "https://github.com/Ventusltd/globalgrid2050/commit/e49ce1d97e32ce4d48f5ad20c6b8f61fd8d69474",
+          "utc": "2026-11-23T22:51:59Z",
+          "message": "Keep independent V9.75 public rollback verifier current with V9.76 homepage pin"
         },
         {
-          "sha": "384de6d2789ba5947613728ec348ed2fe50a3384",
-          "url": "https://github.com/Ventusltd/globalgrid2050/commit/384de6d2789ba5947613728ec348ed2fe50a3384",
-          "utc": "2026-11-22T22:41:42Z",
-          "message": "Candidate V9.72: A4 and PDF follow exact REPD VICINITY MAP; immutable no-truncation CI"
+          "sha": "7e83acdddb3956cf0e065fb7e5e2bc5e9f5b8d9b",
+          "url": "https://github.com/Ventusltd/globalgrid2050/commit/7e83acdddb3956cf0e065fb7e5e2bc5e9f5b8d9b",
+          "utc": "2026-11-23T22:51:17Z",
+          "message": "Pin immutable V9.76 mobile REPD homepage owner bundle by SHA-256"
         }
       ]
     },
@@ -243,10 +243,6 @@
       "sample_count": 152,
       "count_is_lower_bound": false,
       "day_counts": [
-        {
-          "day": "2026-11-17",
-          "count": 0
-        },
         {
           "day": "2026-11-18",
           "count": 108
@@ -269,6 +265,10 @@
         },
         {
           "day": "2026-11-23",
+          "count": 0
+        },
+        {
+          "day": "2026-11-24",
           "count": 0
         }
       ],
@@ -308,16 +308,12 @@
     {
       "repo": "Ventusltd/pipelinenews",
       "url": "https://github.com/Ventusltd/pipelinenews",
-      "head_sha": "3e3eedec7364fcf3f14958b2c4a65ef432f5ac64",
-      "head_commit_url": "https://github.com/Ventusltd/pipelinenews/commit/3e3eedec7364fcf3f14958b2c4a65ef432f5ac64",
-      "head_commit_utc": "2026-11-23T07:32:39Z",
-      "sample_count": 9,
+      "head_sha": "c96498b92efee6a6bf693f7aff2528c9431515c9",
+      "head_commit_url": "https://github.com/Ventusltd/pipelinenews/commit/c96498b92efee6a6bf693f7aff2528c9431515c9",
+      "head_commit_utc": "2026-11-23T20:11:56Z",
+      "sample_count": 10,
       "count_is_lower_bound": false,
       "day_counts": [
-        {
-          "day": "2026-11-17",
-          "count": 0
-        },
         {
           "day": "2026-11-18",
           "count": 0
@@ -340,10 +336,20 @@
         },
         {
           "day": "2026-11-23",
-          "count": 1
+          "count": 2
+        },
+        {
+          "day": "2026-11-24",
+          "count": 0
         }
       ],
       "recent": [
+        {
+          "sha": "c96498b92efee6a6bf693f7aff2528c9431515c9",
+          "url": "https://github.com/Ventusltd/pipelinenews/commit/c96498b92efee6a6bf693f7aff2528c9431515c9",
+          "utc": "2026-11-23T20:11:56Z",
+          "message": "Refresh BBC RSS metadata and source health [skip ci]"
+        },
         {
           "sha": "3e3eedec7364fcf3f14958b2c4a65ef432f5ac64",
           "url": "https://github.com/Ventusltd/pipelinenews/commit/3e3eedec7364fcf3f14958b2c4a65ef432f5ac64",
@@ -367,28 +373,18 @@
           "url": "https://github.com/Ventusltd/pipelinenews/commit/92c4b0ccaec12bacbeb0b596a9d3b0e66a213a43",
           "utc": "2026-11-22T09:44:59Z",
           "message": "Refresh BBC RSS metadata and source health [skip ci]"
-        },
-        {
-          "sha": "1ba835875777a69d3a1a7a2936f31ea605232f1f",
-          "url": "https://github.com/Ventusltd/pipelinenews/commit/1ba835875777a69d3a1a7a2936f31ea605232f1f",
-          "utc": "2026-11-22T02:13:04Z",
-          "message": "Refresh BBC RSS metadata and source health [skip ci]"
         }
       ]
     },
     {
       "repo": "Ventusltd/stars",
       "url": "https://github.com/Ventusltd/stars",
-      "head_sha": "f73aeebddf340e53737e5cf413f183b8bec4489a",
-      "head_commit_url": "https://github.com/Ventusltd/stars/commit/f73aeebddf340e53737e5cf413f183b8bec4489a",
-      "head_commit_utc": "2026-11-23T11:15:40Z",
-      "sample_count": 62,
+      "head_sha": "23741a97ec24dcf3c34454057d215862d62c4ba6",
+      "head_commit_url": "https://github.com/Ventusltd/stars/commit/23741a97ec24dcf3c34454057d215862d62c4ba6",
+      "head_commit_utc": "2026-11-23T22:57:11Z",
+      "sample_count": 56,
       "count_is_lower_bound": false,
       "day_counts": [
-        {
-          "day": "2026-11-17",
-          "count": 9
-        },
         {
           "day": "2026-11-18",
           "count": 9
@@ -411,10 +407,32 @@
         },
         {
           "day": "2026-11-23",
-          "count": 5
+          "count": 8
+        },
+        {
+          "day": "2026-11-24",
+          "count": 0
         }
       ],
       "recent": [
+        {
+          "sha": "23741a97ec24dcf3c34454057d215862d62c4ba6",
+          "url": "https://github.com/Ventusltd/stars/commit/23741a97ec24dcf3c34454057d215862d62c4ba6",
+          "utc": "2026-11-23T22:57:11Z",
+          "message": "Reports from star-maker f65c2f3 (4228 test results)"
+        },
+        {
+          "sha": "f2c6434cba182664212c15689b6f6cc953fc6af8",
+          "url": "https://github.com/Ventusltd/stars/commit/f2c6434cba182664212c15689b6f6cc953fc6af8",
+          "utc": "2026-11-23T22:56:12Z",
+          "message": "Modular star 2026-11-23T22:56Z"
+        },
+        {
+          "sha": "dfc38b6df52fd627ab5cfca55d1c1aa216c82999",
+          "url": "https://github.com/Ventusltd/stars/commit/dfc38b6df52fd627ab5cfca55d1c1aa216c82999",
+          "utc": "2026-11-23T15:01:50Z",
+          "message": "Reports from star-maker f65c2f3 (4228 test results)"
+        },
         {
           "sha": "f73aeebddf340e53737e5cf413f183b8bec4489a",
           "url": "https://github.com/Ventusltd/stars/commit/f73aeebddf340e53737e5cf413f183b8bec4489a",
@@ -426,24 +444,6 @@
           "url": "https://github.com/Ventusltd/stars/commit/9e4354f85df2a4cc4dc404d7e7aa1b427ca5a0c3",
           "utc": "2026-11-23T11:14:46Z",
           "message": "Modular star 2026-11-23T11:14Z"
-        },
-        {
-          "sha": "5e9a3c3372606b4067f5182a5ea4dd4fa0028c23",
-          "url": "https://github.com/Ventusltd/stars/commit/5e9a3c3372606b4067f5182a5ea4dd4fa0028c23",
-          "utc": "2026-11-23T03:49:59Z",
-          "message": "Reports from star-maker f65c2f3 (4228 test results)"
-        },
-        {
-          "sha": "c7bfb09393ba2431c7bb6edaa99288915ea42eec",
-          "url": "https://github.com/Ventusltd/stars/commit/c7bfb09393ba2431c7bb6edaa99288915ea42eec",
-          "utc": "2026-11-23T02:00:53Z",
-          "message": "Reports from star-maker f65c2f3 (4228 test results)"
-        },
-        {
-          "sha": "7bb1389ddfcfbff8ae58c54ec7943e8c052380da",
-          "url": "https://github.com/Ventusltd/stars/commit/7bb1389ddfcfbff8ae58c54ec7943e8c052380da",
-          "utc": "2026-11-23T01:59:54Z",
-          "message": "Modular star 2026-11-23T01:59Z"
         }
       ]
     },
@@ -456,10 +456,6 @@
       "sample_count": 0,
       "count_is_lower_bound": false,
       "day_counts": [
-        {
-          "day": "2026-11-17",
-          "count": 0
-        },
         {
           "day": "2026-11-18",
           "count": 0
@@ -483,6 +479,10 @@
         {
           "day": "2026-11-23",
           "count": 0
+        },
+        {
+          "day": "2026-11-24",
+          "count": 0
         }
       ],
       "recent": [
@@ -497,16 +497,12 @@
     {
       "repo": "Ventusltd/kuiper-belt",
       "url": "https://github.com/Ventusltd/kuiper-belt",
-      "head_sha": "c5a84aefa8905d0bc159ac1a866044d171da1af0",
-      "head_commit_url": "https://github.com/Ventusltd/kuiper-belt/commit/c5a84aefa8905d0bc159ac1a866044d171da1af0",
-      "head_commit_utc": "2026-11-23T07:51:34Z",
-      "sample_count": 13,
+      "head_sha": "4faf528effcd1b4b882bc6b419f843ab59a4a922",
+      "head_commit_url": "https://github.com/Ventusltd/kuiper-belt/commit/4faf528effcd1b4b882bc6b419f843ab59a4a922",
+      "head_commit_utc": "2026-11-24T00:02:03Z",
+      "sample_count": 12,
       "count_is_lower_bound": false,
       "day_counts": [
-        {
-          "day": "2026-11-17",
-          "count": 2
-        },
         {
           "day": "2026-11-18",
           "count": 2
@@ -530,9 +526,19 @@
         {
           "day": "2026-11-23",
           "count": 1
+        },
+        {
+          "day": "2026-11-24",
+          "count": 1
         }
       ],
       "recent": [
+        {
+          "sha": "4faf528effcd1b4b882bc6b419f843ab59a4a922",
+          "url": "https://github.com/Ventusltd/kuiper-belt/commit/4faf528effcd1b4b882bc6b419f843ab59a4a922",
+          "utc": "2026-11-24T00:02:03Z",
+          "message": "engine: lines standing and the wafer grown, measured by GitHub Actions"
+        },
         {
           "sha": "c5a84aefa8905d0bc159ac1a866044d171da1af0",
           "url": "https://github.com/Ventusltd/kuiper-belt/commit/c5a84aefa8905d0bc159ac1a866044d171da1af0",
@@ -556,12 +562,6 @@
           "url": "https://github.com/Ventusltd/kuiper-belt/commit/d8c65f23d828e5dd087ec63ef5848d1b71bed3f3",
           "utc": "2026-11-21T19:25:27Z",
           "message": "engine: lines standing and the wafer grown, measured by GitHub Actions"
-        },
-        {
-          "sha": "902c626aa3ce9176412e5d6e60c041b68bdc089d",
-          "url": "https://github.com/Ventusltd/kuiper-belt/commit/902c626aa3ce9176412e5d6e60c041b68bdc089d",
-          "utc": "2026-11-21T07:21:39Z",
-          "message": "engine: lines standing and the wafer grown, measured by GitHub Actions"
         }
       ]
     },
@@ -571,13 +571,9 @@
       "head_sha": "7c2a7b42905674fdcd3aa4bb50af14bc352a7747",
       "head_commit_url": "https://github.com/Ventusltd/ventus-grid-engine/commit/7c2a7b42905674fdcd3aa4bb50af14bc352a7747",
       "head_commit_utc": "2026-11-21T17:21:02Z",
-      "sample_count": 15,
+      "sample_count": 12,
       "count_is_lower_bound": false,
       "day_counts": [
-        {
-          "day": "2026-11-17",
-          "count": 3
-        },
         {
           "day": "2026-11-18",
           "count": 3
@@ -600,6 +596,10 @@
         },
         {
           "day": "2026-11-23",
+          "count": 0
+        },
+        {
+          "day": "2026-11-24",
           "count": 0
         }
       ],
@@ -646,10 +646,6 @@
       "count_is_lower_bound": false,
       "day_counts": [
         {
-          "day": "2026-11-17",
-          "count": 0
-        },
-        {
           "day": "2026-11-18",
           "count": 0
         },
@@ -671,6 +667,10 @@
         },
         {
           "day": "2026-11-23",
+          "count": 0
+        },
+        {
+          "day": "2026-11-24",
           "count": 0
         }
       ],
@@ -693,10 +693,6 @@
       "count_is_lower_bound": false,
       "day_counts": [
         {
-          "day": "2026-11-17",
-          "count": 0
-        },
-        {
           "day": "2026-11-18",
           "count": 0
         },
@@ -718,6 +714,10 @@
         },
         {
           "day": "2026-11-23",
+          "count": 0
+        },
+        {
+          "day": "2026-11-24",
           "count": 0
         }
       ],
@@ -740,10 +740,6 @@
       "count_is_lower_bound": false,
       "day_counts": [
         {
-          "day": "2026-11-17",
-          "count": 0
-        },
-        {
           "day": "2026-11-18",
           "count": 0
         },
@@ -765,6 +761,10 @@
         },
         {
           "day": "2026-11-23",
+          "count": 0
+        },
+        {
+          "day": "2026-11-24",
           "count": 0
         }
       ],
@@ -787,10 +787,6 @@
       "count_is_lower_bound": false,
       "day_counts": [
         {
-          "day": "2026-11-17",
-          "count": 0
-        },
-        {
           "day": "2026-11-18",
           "count": 0
         },
@@ -812,6 +808,10 @@
         },
         {
           "day": "2026-11-23",
+          "count": 0
+        },
+        {
+          "day": "2026-11-24",
           "count": 0
         }
       ],
@@ -830,13 +830,9 @@
       "head_sha": "0c3bb6d87cc1b61e207f8616b815c72cdf61619a",
       "head_commit_url": "https://github.com/Ventusltd/star-solar-star/commit/0c3bb6d87cc1b61e207f8616b815c72cdf61619a",
       "head_commit_utc": "2026-11-18T10:39:57Z",
-      "sample_count": 2,
+      "sample_count": 1,
       "count_is_lower_bound": false,
       "day_counts": [
-        {
-          "day": "2026-11-17",
-          "count": 1
-        },
         {
           "day": "2026-11-18",
           "count": 1
@@ -860,6 +856,10 @@
         {
           "day": "2026-11-23",
           "count": 0
+        },
+        {
+          "day": "2026-11-24",
+          "count": 0
         }
       ],
       "recent": [
@@ -868,28 +868,18 @@
           "url": "https://github.com/Ventusltd/star-solar-star/commit/0c3bb6d87cc1b61e207f8616b815c72cdf61619a",
           "utc": "2026-11-18T10:39:57Z",
           "message": "data: update Sun Star 2026-11-17"
-        },
-        {
-          "sha": "0b50eafb67fb8fff07cf219dfe84293eeea8e5d0",
-          "url": "https://github.com/Ventusltd/star-solar-star/commit/0b50eafb67fb8fff07cf219dfe84293eeea8e5d0",
-          "utc": "2026-11-17T11:04:30Z",
-          "message": "data: update Sun Star 2026-11-16"
         }
       ]
     },
     {
       "repo": "Ventusltd/time-stone",
       "url": "https://github.com/Ventusltd/time-stone",
-      "head_sha": "9c6d4e0e57ad9693fb23fa0c9b28a7f51743ef9e",
-      "head_commit_url": "https://github.com/Ventusltd/time-stone/commit/9c6d4e0e57ad9693fb23fa0c9b28a7f51743ef9e",
-      "head_commit_utc": "2026-11-23T03:48:14Z",
-      "sample_count": 20,
+      "head_sha": "3a355638cf2d0404ba265a15a80528e950c7fea0",
+      "head_commit_url": "https://github.com/Ventusltd/time-stone/commit/3a355638cf2d0404ba265a15a80528e950c7fea0",
+      "head_commit_utc": "2026-11-23T14:58:04Z",
+      "sample_count": 18,
       "count_is_lower_bound": false,
       "day_counts": [
-        {
-          "day": "2026-11-17",
-          "count": 3
-        },
         {
           "day": "2026-11-18",
           "count": 3
@@ -912,10 +902,20 @@
         },
         {
           "day": "2026-11-23",
-          "count": 1
+          "count": 2
+        },
+        {
+          "day": "2026-11-24",
+          "count": 0
         }
       ],
       "recent": [
+        {
+          "sha": "3a355638cf2d0404ba265a15a80528e950c7fea0",
+          "url": "https://github.com/Ventusltd/time-stone/commit/3a355638cf2d0404ba265a15a80528e950c7fea0",
+          "utc": "2026-11-23T14:58:04Z",
+          "message": "watch: what changed"
+        },
         {
           "sha": "9c6d4e0e57ad9693fb23fa0c9b28a7f51743ef9e",
           "url": "https://github.com/Ventusltd/time-stone/commit/9c6d4e0e57ad9693fb23fa0c9b28a7f51743ef9e",
@@ -939,12 +939,6 @@
           "url": "https://github.com/Ventusltd/time-stone/commit/f8f40ebc3420d0e9664eceb5a13c10a8d8621786",
           "utc": "2026-11-22T08:12:34Z",
           "message": "watch: what changed"
-        },
-        {
-          "sha": "881013765bf8ae177c613dad229a62fb6d7dbf42",
-          "url": "https://github.com/Ventusltd/time-stone/commit/881013765bf8ae177c613dad229a62fb6d7dbf42",
-          "utc": "2026-11-22T00:29:08Z",
-          "message": "watch: what changed"
         }
       ]
     }
@@ -952,12 +946,21 @@
   "pulls": [
     {
       "repo": "Ventusltd/globalgrid2050",
+      "number": 228,
+      "title": "DRAFT: REPD-native visual skin for Grid, Data Centres, Offtakers and Prices",
+      "url": "https://github.com/Ventusltd/globalgrid2050/pull/228",
+      "draft": true,
+      "head_sha": "876f99a6f68eebb2a204a9b654aa357956a83176",
+      "updated_utc": "2026-11-23T12:37:49Z"
+    },
+    {
+      "repo": "Ventusltd/globalgrid2050",
       "number": 225,
       "title": "REPD Intelligence — monthly, quarterly and annual reports + button UI (draft)",
       "url": "https://github.com/Ventusltd/globalgrid2050/pull/225",
       "draft": true,
       "head_sha": "820fa64bbe1d0c41bc2fd0992aff16a63f1bcc42",
-      "updated_utc": "2026-11-22T23:47:03Z"
+      "updated_utc": "2026-11-23T12:20:54Z"
     },
     {
       "repo": "Ventusltd/globalgrid2050",
@@ -1502,6 +1505,195 @@
   ],
   "messages": [
     {
+      "id": 7116569352,
+      "url": "https://github.com/Ventusltd/neural-link-between-agents/issues/83#issuecomment-7116569352",
+      "issue_url": "https://api.github.com/repos/Ventusltd/neural-link-between-agents/issues/83",
+      "utc": "2026-11-23T23:07:00Z",
+      "declared_tag": null,
+      "record_type": "MESSAGE_RECORDED",
+      "agent_runtime_status": "UNKNOWN"
+    },
+    {
+      "id": 7115983509,
+      "url": "https://github.com/Ventusltd/neural-link-between-agents/issues/83#issuecomment-7115983509",
+      "issue_url": "https://api.github.com/repos/Ventusltd/neural-link-between-agents/issues/83",
+      "utc": "2026-11-23T22:37:27Z",
+      "declared_tag": null,
+      "record_type": "MESSAGE_RECORDED",
+      "agent_runtime_status": "UNKNOWN"
+    },
+    {
+      "id": 7115594730,
+      "url": "https://github.com/Ventusltd/neural-link-between-agents/issues/81#issuecomment-7115594730",
+      "issue_url": "https://api.github.com/repos/Ventusltd/neural-link-between-agents/issues/81",
+      "utc": "2026-11-23T22:18:43Z",
+      "declared_tag": null,
+      "record_type": "MESSAGE_RECORDED",
+      "agent_runtime_status": "UNKNOWN"
+    },
+    {
+      "id": 7115525237,
+      "url": "https://github.com/Ventusltd/neural-link-between-agents/issues/81#issuecomment-7115525237",
+      "issue_url": "https://api.github.com/repos/Ventusltd/neural-link-between-agents/issues/81",
+      "utc": "2026-11-23T22:15:26Z",
+      "declared_tag": null,
+      "record_type": "MESSAGE_RECORDED",
+      "agent_runtime_status": "UNKNOWN"
+    },
+    {
+      "id": 7107820768,
+      "url": "https://github.com/Ventusltd/neural-link-between-agents/issues/83#issuecomment-7107820768",
+      "issue_url": "https://api.github.com/repos/Ventusltd/neural-link-between-agents/issues/83",
+      "utc": "2026-11-23T16:53:05Z",
+      "declared_tag": null,
+      "record_type": "MESSAGE_RECORDED",
+      "agent_runtime_status": "UNKNOWN"
+    },
+    {
+      "id": 7107681404,
+      "url": "https://github.com/Ventusltd/neural-link-between-agents/issues/83#issuecomment-7107681404",
+      "issue_url": "https://api.github.com/repos/Ventusltd/neural-link-between-agents/issues/83",
+      "utc": "2026-11-23T16:47:42Z",
+      "declared_tag": null,
+      "record_type": "MESSAGE_RECORDED",
+      "agent_runtime_status": "UNKNOWN"
+    },
+    {
+      "id": 7107020354,
+      "url": "https://github.com/Ventusltd/neural-link-between-agents/issues/83#issuecomment-7107020354",
+      "issue_url": "https://api.github.com/repos/Ventusltd/neural-link-between-agents/issues/83",
+      "utc": "2026-11-23T16:21:54Z",
+      "declared_tag": null,
+      "record_type": "MESSAGE_RECORDED",
+      "agent_runtime_status": "UNKNOWN"
+    },
+    {
+      "id": 7106187185,
+      "url": "https://github.com/Ventusltd/neural-link-between-agents/issues/83#issuecomment-7106187185",
+      "issue_url": "https://api.github.com/repos/Ventusltd/neural-link-between-agents/issues/83",
+      "utc": "2026-11-23T15:50:21Z",
+      "declared_tag": null,
+      "record_type": "MESSAGE_RECORDED",
+      "agent_runtime_status": "UNKNOWN"
+    },
+    {
+      "id": 7103804864,
+      "url": "https://github.com/Ventusltd/neural-link-between-agents/issues/83#issuecomment-7103804864",
+      "issue_url": "https://api.github.com/repos/Ventusltd/neural-link-between-agents/issues/83",
+      "utc": "2026-11-23T14:18:41Z",
+      "declared_tag": null,
+      "record_type": "MESSAGE_RECORDED",
+      "agent_runtime_status": "UNKNOWN"
+    },
+    {
+      "id": 7103756657,
+      "url": "https://github.com/Ventusltd/neural-link-between-agents/issues/83#issuecomment-7103756657",
+      "issue_url": "https://api.github.com/repos/Ventusltd/neural-link-between-agents/issues/83",
+      "utc": "2026-11-23T14:16:49Z",
+      "declared_tag": null,
+      "record_type": "MESSAGE_RECORDED",
+      "agent_runtime_status": "UNKNOWN"
+    },
+    {
+      "id": 7101930838,
+      "url": "https://github.com/Ventusltd/neural-link-between-agents/issues/83#issuecomment-7101930838",
+      "issue_url": "https://api.github.com/repos/Ventusltd/neural-link-between-agents/issues/83",
+      "utc": "2026-11-23T13:00:35Z",
+      "declared_tag": null,
+      "record_type": "MESSAGE_RECORDED",
+      "agent_runtime_status": "UNKNOWN"
+    },
+    {
+      "id": 7101878245,
+      "url": "https://github.com/Ventusltd/neural-link-between-agents/issues/83#issuecomment-7101878245",
+      "issue_url": "https://api.github.com/repos/Ventusltd/neural-link-between-agents/issues/83",
+      "utc": "2026-11-23T12:58:21Z",
+      "declared_tag": null,
+      "record_type": "MESSAGE_RECORDED",
+      "agent_runtime_status": "UNKNOWN"
+    },
+    {
+      "id": 7101713670,
+      "url": "https://github.com/Ventusltd/neural-link-between-agents/issues/83#issuecomment-7101713670",
+      "issue_url": "https://api.github.com/repos/Ventusltd/neural-link-between-agents/issues/83",
+      "utc": "2026-11-23T12:51:02Z",
+      "declared_tag": null,
+      "record_type": "MESSAGE_RECORDED",
+      "agent_runtime_status": "UNKNOWN"
+    },
+    {
+      "id": 7101635575,
+      "url": "https://github.com/Ventusltd/neural-link-between-agents/issues/83#issuecomment-7101635575",
+      "issue_url": "https://api.github.com/repos/Ventusltd/neural-link-between-agents/issues/83",
+      "utc": "2026-11-23T12:47:47Z",
+      "declared_tag": null,
+      "record_type": "MESSAGE_RECORDED",
+      "agent_runtime_status": "UNKNOWN"
+    },
+    {
+      "id": 7101585475,
+      "url": "https://github.com/Ventusltd/neural-link-between-agents/issues/83#issuecomment-7101585475",
+      "issue_url": "https://api.github.com/repos/Ventusltd/neural-link-between-agents/issues/83",
+      "utc": "2026-11-23T12:45:34Z",
+      "declared_tag": null,
+      "record_type": "MESSAGE_RECORDED",
+      "agent_runtime_status": "UNKNOWN"
+    },
+    {
+      "id": 7101420059,
+      "url": "https://github.com/Ventusltd/neural-link-between-agents/issues/83#issuecomment-7101420059",
+      "issue_url": "https://api.github.com/repos/Ventusltd/neural-link-between-agents/issues/83",
+      "utc": "2026-11-23T12:38:38Z",
+      "declared_tag": null,
+      "record_type": "MESSAGE_RECORDED",
+      "agent_runtime_status": "UNKNOWN"
+    },
+    {
+      "id": 7101405815,
+      "url": "https://github.com/Ventusltd/neural-link-between-agents/issues/83#issuecomment-7101405815",
+      "issue_url": "https://api.github.com/repos/Ventusltd/neural-link-between-agents/issues/83",
+      "utc": "2026-11-23T12:38:09Z",
+      "declared_tag": null,
+      "record_type": "MESSAGE_RECORDED",
+      "agent_runtime_status": "UNKNOWN"
+    },
+    {
+      "id": 7101314496,
+      "url": "https://github.com/Ventusltd/neural-link-between-agents/issues/83#issuecomment-7101314496",
+      "issue_url": "https://api.github.com/repos/Ventusltd/neural-link-between-agents/issues/83",
+      "utc": "2026-11-23T12:34:58Z",
+      "declared_tag": null,
+      "record_type": "MESSAGE_RECORDED",
+      "agent_runtime_status": "UNKNOWN"
+    },
+    {
+      "id": 7101304348,
+      "url": "https://github.com/Ventusltd/neural-link-between-agents/issues/83#issuecomment-7101304348",
+      "issue_url": "https://api.github.com/repos/Ventusltd/neural-link-between-agents/issues/83",
+      "utc": "2026-11-23T12:34:37Z",
+      "declared_tag": null,
+      "record_type": "MESSAGE_RECORDED",
+      "agent_runtime_status": "UNKNOWN"
+    },
+    {
+      "id": 7101253371,
+      "url": "https://github.com/Ventusltd/neural-link-between-agents/issues/83#issuecomment-7101253371",
+      "issue_url": "https://api.github.com/repos/Ventusltd/neural-link-between-agents/issues/83",
+      "utc": "2026-11-23T12:32:48Z",
+      "declared_tag": null,
+      "record_type": "MESSAGE_RECORDED",
+      "agent_runtime_status": "UNKNOWN"
+    },
+    {
+      "id": 7101233235,
+      "url": "https://github.com/Ventusltd/neural-link-between-agents/issues/83#issuecomment-7101233235",
+      "issue_url": "https://api.github.com/repos/Ventusltd/neural-link-between-agents/issues/83",
+      "utc": "2026-11-23T12:32:06Z",
+      "declared_tag": null,
+      "record_type": "MESSAGE_RECORDED",
+      "agent_runtime_status": "UNKNOWN"
+    },
+    {
       "id": 7100898595,
       "url": "https://github.com/Ventusltd/neural-link-between-agents/issues/83#issuecomment-7100898595",
       "issue_url": "https://api.github.com/repos/Ventusltd/neural-link-between-agents/issues/83",
@@ -1626,195 +1818,6 @@
       "declared_tag": null,
       "record_type": "MESSAGE_RECORDED",
       "agent_runtime_status": "UNKNOWN"
-    },
-    {
-      "id": 7087776702,
-      "url": "https://github.com/Ventusltd/neural-link-between-agents/issues/83#issuecomment-7087776702",
-      "issue_url": "https://api.github.com/repos/Ventusltd/neural-link-between-agents/issues/83",
-      "utc": "2026-11-22T23:42:43Z",
-      "declared_tag": null,
-      "record_type": "MESSAGE_RECORDED",
-      "agent_runtime_status": "UNKNOWN"
-    },
-    {
-      "id": 7087729732,
-      "url": "https://github.com/Ventusltd/neural-link-between-agents/issues/82#issuecomment-7087729732",
-      "issue_url": "https://api.github.com/repos/Ventusltd/neural-link-between-agents/issues/82",
-      "utc": "2026-11-22T23:38:56Z",
-      "declared_tag": null,
-      "record_type": "MESSAGE_RECORDED",
-      "agent_runtime_status": "UNKNOWN"
-    },
-    {
-      "id": 7087689477,
-      "url": "https://github.com/Ventusltd/neural-link-between-agents/issues/81#issuecomment-7087689477",
-      "issue_url": "https://api.github.com/repos/Ventusltd/neural-link-between-agents/issues/81",
-      "utc": "2026-11-22T23:35:42Z",
-      "declared_tag": null,
-      "record_type": "MESSAGE_RECORDED",
-      "agent_runtime_status": "UNKNOWN"
-    },
-    {
-      "id": 7087672564,
-      "url": "https://github.com/Ventusltd/neural-link-between-agents/issues/81#issuecomment-7087672564",
-      "issue_url": "https://api.github.com/repos/Ventusltd/neural-link-between-agents/issues/81",
-      "utc": "2026-11-22T23:34:21Z",
-      "declared_tag": null,
-      "record_type": "MESSAGE_RECORDED",
-      "agent_runtime_status": "UNKNOWN"
-    },
-    {
-      "id": 7087631340,
-      "url": "https://github.com/Ventusltd/neural-link-between-agents/issues/81#issuecomment-7087631340",
-      "issue_url": "https://api.github.com/repos/Ventusltd/neural-link-between-agents/issues/81",
-      "utc": "2026-11-22T23:31:02Z",
-      "declared_tag": null,
-      "record_type": "MESSAGE_RECORDED",
-      "agent_runtime_status": "UNKNOWN"
-    },
-    {
-      "id": 7087211460,
-      "url": "https://github.com/Ventusltd/neural-link-between-agents/issues/81#issuecomment-7087211460",
-      "issue_url": "https://api.github.com/repos/Ventusltd/neural-link-between-agents/issues/81",
-      "utc": "2026-11-22T22:58:03Z",
-      "declared_tag": null,
-      "record_type": "MESSAGE_RECORDED",
-      "agent_runtime_status": "UNKNOWN"
-    },
-    {
-      "id": 7087093540,
-      "url": "https://github.com/Ventusltd/neural-link-between-agents/issues/81#issuecomment-7087093540",
-      "issue_url": "https://api.github.com/repos/Ventusltd/neural-link-between-agents/issues/81",
-      "utc": "2026-11-22T22:48:26Z",
-      "declared_tag": null,
-      "record_type": "MESSAGE_RECORDED",
-      "agent_runtime_status": "UNKNOWN"
-    },
-    {
-      "id": 7086886984,
-      "url": "https://github.com/Ventusltd/neural-link-between-agents/issues/81#issuecomment-7086886984",
-      "issue_url": "https://api.github.com/repos/Ventusltd/neural-link-between-agents/issues/81",
-      "utc": "2026-11-22T22:31:59Z",
-      "declared_tag": null,
-      "record_type": "MESSAGE_RECORDED",
-      "agent_runtime_status": "UNKNOWN"
-    },
-    {
-      "id": 7086813930,
-      "url": "https://github.com/Ventusltd/neural-link-between-agents/issues/81#issuecomment-7086813930",
-      "issue_url": "https://api.github.com/repos/Ventusltd/neural-link-between-agents/issues/81",
-      "utc": "2026-11-22T22:26:08Z",
-      "declared_tag": null,
-      "record_type": "MESSAGE_RECORDED",
-      "agent_runtime_status": "UNKNOWN"
-    },
-    {
-      "id": 7080991798,
-      "url": "https://github.com/Ventusltd/neural-link-between-agents/issues/79#issuecomment-7080991798",
-      "issue_url": "https://api.github.com/repos/Ventusltd/neural-link-between-agents/issues/79",
-      "utc": "2026-11-22T15:02:09Z",
-      "declared_tag": null,
-      "record_type": "MESSAGE_RECORDED",
-      "agent_runtime_status": "UNKNOWN"
-    },
-    {
-      "id": 7080648727,
-      "url": "https://github.com/Ventusltd/neural-link-between-agents/issues/79#issuecomment-7080648727",
-      "issue_url": "https://api.github.com/repos/Ventusltd/neural-link-between-agents/issues/79",
-      "utc": "2026-11-22T14:34:45Z",
-      "declared_tag": "AGENT REPD-V9",
-      "record_type": "MESSAGE_RECORDED",
-      "agent_runtime_status": "UNKNOWN"
-    },
-    {
-      "id": 7080610689,
-      "url": "https://github.com/Ventusltd/neural-link-between-agents/issues/79#issuecomment-7080610689",
-      "issue_url": "https://api.github.com/repos/Ventusltd/neural-link-between-agents/issues/79",
-      "utc": "2026-11-22T14:31:42Z",
-      "declared_tag": "AGENT REPD-V9",
-      "record_type": "MESSAGE_RECORDED",
-      "agent_runtime_status": "UNKNOWN"
-    },
-    {
-      "id": 7080271539,
-      "url": "https://github.com/Ventusltd/neural-link-between-agents/issues/79#issuecomment-7080271539",
-      "issue_url": "https://api.github.com/repos/Ventusltd/neural-link-between-agents/issues/79",
-      "utc": "2026-11-22T14:04:29Z",
-      "declared_tag": null,
-      "record_type": "MESSAGE_RECORDED",
-      "agent_runtime_status": "UNKNOWN"
-    },
-    {
-      "id": 7080264321,
-      "url": "https://github.com/Ventusltd/neural-link-between-agents/issues/79#issuecomment-7080264321",
-      "issue_url": "https://api.github.com/repos/Ventusltd/neural-link-between-agents/issues/79",
-      "utc": "2026-11-22T14:03:55Z",
-      "declared_tag": null,
-      "record_type": "MESSAGE_RECORDED",
-      "agent_runtime_status": "UNKNOWN"
-    },
-    {
-      "id": 7080014921,
-      "url": "https://github.com/Ventusltd/neural-link-between-agents/issues/79#issuecomment-7080014921",
-      "issue_url": "https://api.github.com/repos/Ventusltd/neural-link-between-agents/issues/79",
-      "utc": "2026-11-22T13:43:24Z",
-      "declared_tag": null,
-      "record_type": "MESSAGE_RECORDED",
-      "agent_runtime_status": "UNKNOWN"
-    },
-    {
-      "id": 7079767003,
-      "url": "https://github.com/Ventusltd/neural-link-between-agents/issues/80#issuecomment-7079767003",
-      "issue_url": "https://api.github.com/repos/Ventusltd/neural-link-between-agents/issues/80",
-      "utc": "2026-11-22T13:22:48Z",
-      "declared_tag": null,
-      "record_type": "MESSAGE_RECORDED",
-      "agent_runtime_status": "UNKNOWN"
-    },
-    {
-      "id": 7079766392,
-      "url": "https://github.com/Ventusltd/neural-link-between-agents/issues/79#issuecomment-7079766392",
-      "issue_url": "https://api.github.com/repos/Ventusltd/neural-link-between-agents/issues/79",
-      "utc": "2026-11-22T13:22:45Z",
-      "declared_tag": null,
-      "record_type": "MESSAGE_RECORDED",
-      "agent_runtime_status": "UNKNOWN"
-    },
-    {
-      "id": 7079649596,
-      "url": "https://github.com/Ventusltd/neural-link-between-agents/issues/80#issuecomment-7079649596",
-      "issue_url": "https://api.github.com/repos/Ventusltd/neural-link-between-agents/issues/80",
-      "utc": "2026-11-22T13:12:58Z",
-      "declared_tag": null,
-      "record_type": "MESSAGE_RECORDED",
-      "agent_runtime_status": "UNKNOWN"
-    },
-    {
-      "id": 7079649217,
-      "url": "https://github.com/Ventusltd/neural-link-between-agents/issues/79#issuecomment-7079649217",
-      "issue_url": "https://api.github.com/repos/Ventusltd/neural-link-between-agents/issues/79",
-      "utc": "2026-11-22T13:12:56Z",
-      "declared_tag": null,
-      "record_type": "MESSAGE_RECORDED",
-      "agent_runtime_status": "UNKNOWN"
-    },
-    {
-      "id": 7079552352,
-      "url": "https://github.com/Ventusltd/neural-link-between-agents/issues/80#issuecomment-7079552352",
-      "issue_url": "https://api.github.com/repos/Ventusltd/neural-link-between-agents/issues/80",
-      "utc": "2026-11-22T13:04:43Z",
-      "declared_tag": null,
-      "record_type": "MESSAGE_RECORDED",
-      "agent_runtime_status": "UNKNOWN"
-    },
-    {
-      "id": 7079551923,
-      "url": "https://github.com/Ventusltd/neural-link-between-agents/issues/79#issuecomment-7079551923",
-      "issue_url": "https://api.github.com/repos/Ventusltd/neural-link-between-agents/issues/79",
-      "utc": "2026-11-22T13:04:41Z",
-      "declared_tag": null,
-      "record_type": "MESSAGE_RECORDED",
-      "agent_runtime_status": "UNKNOWN"
     }
   ],
   "joins": {
@@ -1852,7 +1855,7 @@
       ]
     },
     "kuiper": {
-      "source_commit": "c5a84aefa8905d0bc159ac1a866044d171da1af0",
+      "source_commit": "4faf528effcd1b4b882bc6b419f843ab59a4a922",
       "file": "cosmos/standing.tsv",
       "pinned_rows": 82,
       "comparisons": [
@@ -1870,9 +1873,9 @@
         },
         {
           "repo": "Ventusltd/globalgrid2050",
-          "pinned_sha": "9b7fc2e598a1",
-          "observed_sha": "51aebaae5e0b4e2b8335588c8a215540b6e006b6",
-          "status": "lagging"
+          "pinned_sha": "bd5e4448cbc0",
+          "observed_sha": "bd5e4448cbc016751622267290f24aef2c746e7f",
+          "status": "aligned"
         },
         {
           "repo": "Ventusltd/gridatlas",
@@ -1882,26 +1885,26 @@
         },
         {
           "repo": "Ventusltd/kuiper-belt",
-          "pinned_sha": "448476333c36",
-          "observed_sha": "c5a84aefa8905d0bc159ac1a866044d171da1af0",
+          "pinned_sha": "c5a84aefa890",
+          "observed_sha": "4faf528effcd1b4b882bc6b419f843ab59a4a922",
           "status": "lagging"
         },
         {
           "repo": "Ventusltd/neural-link-between-agents",
-          "pinned_sha": "a199967d92d0",
-          "observed_sha": "a199967d92d03e2a20d6f252318b0563175ee7fe",
+          "pinned_sha": "fde0bed2c176",
+          "observed_sha": "fde0bed2c17695f0513d2bafce770fed4abb185e",
           "status": "aligned"
         },
         {
           "repo": "Ventusltd/pipelinenews",
-          "pinned_sha": "3e3eedec7364",
-          "observed_sha": "3e3eedec7364fcf3f14958b2c4a65ef432f5ac64",
+          "pinned_sha": "c96498b92efe",
+          "observed_sha": "c96498b92efee6a6bf693f7aff2528c9431515c9",
           "status": "aligned"
         },
         {
           "repo": "Ventusltd/spiders",
-          "pinned_sha": "609802c23a5c",
-          "observed_sha": "609802c23a5cbb8603045b2b6593f62d54aee779",
+          "pinned_sha": "0cb6de778596",
+          "observed_sha": "0cb6de778596b6b18bc1709dff288bc5dbca534f",
           "status": "aligned"
         },
         {
@@ -1924,9 +1927,9 @@
         },
         {
           "repo": "Ventusltd/stars",
-          "pinned_sha": "5e9a3c337260",
-          "observed_sha": "f73aeebddf340e53737e5cf413f183b8bec4489a",
-          "status": "lagging"
+          "pinned_sha": "23741a97ec24",
+          "observed_sha": "23741a97ec24dcf3c34454057d215862d62c4ba6",
+          "status": "aligned"
         },
         {
           "repo": "Ventusltd/testcode",
@@ -1936,8 +1939,8 @@
         },
         {
           "repo": "Ventusltd/time-stone",
-          "pinned_sha": "9c6d4e0e57ad",
-          "observed_sha": "9c6d4e0e57ad9693fb23fa0c9b28a7f51743ef9e",
+          "pinned_sha": "3a355638cf2d",
+          "observed_sha": "3a355638cf2d0404ba265a15a80528e950c7fea0",
           "status": "aligned"
         },
         {
@@ -1949,9 +1952,9 @@
       ]
     },
     "stars": {
-      "source_commit": "f73aeebddf340e53737e5cf413f183b8bec4489a",
+      "source_commit": "23741a97ec24dcf3c34454057d215862d62c4ba6",
       "file": "modular/source.json",
-      "source_generated_utc": "2026-11-23T11:12:13.192Z",
+      "source_generated_utc": "2026-11-23T22:53:54.449Z",
       "pinned_rows": 92,
       "comparisons": [
         {
@@ -1968,8 +1971,8 @@
         },
         {
           "repo": "Ventusltd/globalgrid2050",
-          "pinned_sha": "51aebaae5e0b4e2b8335588c8a215540b6e006b6",
-          "observed_sha": "51aebaae5e0b4e2b8335588c8a215540b6e006b6",
+          "pinned_sha": "bd5e4448cbc016751622267290f24aef2c746e7f",
+          "observed_sha": "bd5e4448cbc016751622267290f24aef2c746e7f",
           "status": "aligned"
         },
         {
@@ -1981,25 +1984,25 @@
         {
           "repo": "Ventusltd/kuiper-belt",
           "pinned_sha": "c5a84aefa8905d0bc159ac1a866044d171da1af0",
-          "observed_sha": "c5a84aefa8905d0bc159ac1a866044d171da1af0",
-          "status": "aligned"
+          "observed_sha": "4faf528effcd1b4b882bc6b419f843ab59a4a922",
+          "status": "lagging"
         },
         {
           "repo": "Ventusltd/neural-link-between-agents",
-          "pinned_sha": "a199967d92d03e2a20d6f252318b0563175ee7fe",
-          "observed_sha": "a199967d92d03e2a20d6f252318b0563175ee7fe",
+          "pinned_sha": "fde0bed2c17695f0513d2bafce770fed4abb185e",
+          "observed_sha": "fde0bed2c17695f0513d2bafce770fed4abb185e",
           "status": "aligned"
         },
         {
           "repo": "Ventusltd/pipelinenews",
-          "pinned_sha": "3e3eedec7364fcf3f14958b2c4a65ef432f5ac64",
-          "observed_sha": "3e3eedec7364fcf3f14958b2c4a65ef432f5ac64",
+          "pinned_sha": "c96498b92efee6a6bf693f7aff2528c9431515c9",
+          "observed_sha": "c96498b92efee6a6bf693f7aff2528c9431515c9",
           "status": "aligned"
         },
         {
           "repo": "Ventusltd/spiders",
-          "pinned_sha": "609802c23a5cbb8603045b2b6593f62d54aee779",
-          "observed_sha": "609802c23a5cbb8603045b2b6593f62d54aee779",
+          "pinned_sha": "0cb6de778596b6b18bc1709dff288bc5dbca534f",
+          "observed_sha": "0cb6de778596b6b18bc1709dff288bc5dbca534f",
           "status": "aligned"
         },
         {
@@ -2028,8 +2031,8 @@
         },
         {
           "repo": "Ventusltd/time-stone",
-          "pinned_sha": "9c6d4e0e57ad9693fb23fa0c9b28a7f51743ef9e",
-          "observed_sha": "9c6d4e0e57ad9693fb23fa0c9b28a7f51743ef9e",
+          "pinned_sha": "3a355638cf2d0404ba265a15a80528e950c7fea0",
+          "observed_sha": "3a355638cf2d0404ba265a15a80528e950c7fea0",
           "status": "aligned"
         },
         {

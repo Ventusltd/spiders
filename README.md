@@ -49,3 +49,7 @@ The five engines: **substation finder within a radius**, **interconnector subsea
 
 - [5 October 2026: Learn the Kuiper and connected projects](docs/diary/2026-10-05-learn-the-kuiper.md)
 - [Public project links and source revisions](https://github.com/Ventusltd/kuiper-belt/blob/main/diary/2026-10-05-public-links.json)
+
+## SEED kernel-level intellectual instruments
+
+[Verified reciprocal reference index](docs/SEED_KERNEL_LINKS.md) — GridAtlas, SEED, CVAA, COSMIC and Neural Link preserve the same seven-step build doctrine. Links record documentary relationships; a refreshed Spider Printer observation and executable dependency proof are separate matters.

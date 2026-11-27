@@ -38,3 +38,16 @@ The selective-loading mechanism is a candidate foundational seed with bounded re
 ## Next use
 
 When investigating a rare capability, traverse from the reference application to SEED for its intellectual contract, CVAA for reproducibility, COSMIC for complementary selective-access techniques, and Neural Link for coordination. Return to exact source and proofs when required. Do not use this graph as a substitute for a working demonstration.
+
+## Economical discovery and creation
+
+The next-stage kit preserves the earlier measurements and adds a tested railway layer and a higher-order comparison of captured application states. Permanent STARS identities link the selected code and observed outcomes. The references below lead to executable tests and their bounds.
+
+| Repository | Work and evidence |
+| --- | --- |
+| SEED | [Executable kit and 28 preserved contracts](https://github.com/Ventusltd/seed-data/tree/f8a3743787998a1d4336a9bdde3d35f3679e4255/experiments/economical-seeds) ? [Next-stage report](https://github.com/Ventusltd/seed-data/blob/f8a3743787998a1d4336a9bdde3d35f3679e4255/experiments/economical-seeds/NEXT_STAGE.md) |
+| CVAA | [Pinned resource and identity regression gates](https://github.com/Ventusltd/cvaa/tree/a8eef6edc103981b4db501eeeccf194249bb394c/tools/seed-regression) |
+| COSMIC | [Exact ordinal mechanism and malformed-sector refusal](https://github.com/Ventusltd/cosmic/blob/main/README.md#exact-ordinal-evidence) |
+| NEURAL | [Research evidence and handoff](https://github.com/Ventusltd/neural-link-between-agents/issues/104) |
+
+These links preserve documentary provenance. Runtime dependency evidence stays with each instrument.

@@ -45,7 +45,7 @@ The next-stage kit preserves the earlier measurements and adds a tested railway 
 
 | Repository | Work and evidence |
 | --- | --- |
-| SEED | [Executable kit and 28 preserved contracts](https://github.com/Ventusltd/seed-data/tree/f8a3743787998a1d4336a9bdde3d35f3679e4255/experiments/economical-seeds) ? [Next-stage report](https://github.com/Ventusltd/seed-data/blob/f8a3743787998a1d4336a9bdde3d35f3679e4255/experiments/economical-seeds/NEXT_STAGE.md) |
+| SEED | [Executable kit and 28 preserved contracts](https://github.com/Ventusltd/seed-data/tree/153c1159ff58edcb8be5f598c2c78d13c85b6afd/experiments/economical-seeds) ? [Next-stage report](https://github.com/Ventusltd/seed-data/blob/153c1159ff58edcb8be5f598c2c78d13c85b6afd/experiments/economical-seeds/NEXT_STAGE.md) ? [VEDIC candidate](https://github.com/Ventusltd/seed-data/blob/153c1159ff58edcb8be5f598c2c78d13c85b6afd/experiments/economical-seeds/VEDIC_CANDIDATE.md) |
 | CVAA | [Pinned resource and identity regression gates](https://github.com/Ventusltd/cvaa/tree/a8eef6edc103981b4db501eeeccf194249bb394c/tools/seed-regression) |
 | COSMIC | [Exact ordinal mechanism and malformed-sector refusal](https://github.com/Ventusltd/cosmic/blob/main/README.md#exact-ordinal-evidence) |
 | NEURAL | [Research evidence and handoff](https://github.com/Ventusltd/neural-link-between-agents/issues/104) |

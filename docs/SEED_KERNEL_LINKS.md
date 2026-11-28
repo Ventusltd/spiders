@@ -57,3 +57,7 @@ These links preserve documentary provenance. Runtime dependency evidence stays w
 The SEED cable-route trial uses pinned crossing and electrical instruments to screen declared options. Its independent control was cheaper under the measured fixture. A separate fixed-point probe preserves exact ordinal distinctions at a float32 boundary. [Application, measurements and provenance](https://github.com/Ventusltd/seed-data/blob/b0f98b8d0b874f78a4bab4ed5b6bc6c0a84ac8b4/experiments/economical-seeds/next-invention/README.md) ? [Passing regression run](https://github.com/Ventusltd/seed-data/actions/runs/46085296239)
 
 VEDIC has an independently reviewed [FIND CAPABILITY draft](https://github.com/Ventusltd/vedic-/pull/39). [Neural Link evidence](https://github.com/Ventusltd/neural-link-between-agents/issues/87#issuecomment-7230549323)
+
+## Reduce work behind a verified contract
+
+The projected cable screener reduces repeated numerical-path work while retaining upstream source checks. The linked study also records COSMIC and Kuiper address widths, and a synthetic implementation of LEI-04 evidence sufficiency. [Pinned reduction evidence and reproduction](https://github.com/Ventusltd/seed-data/tree/8e9a5a13630fb3061a2ab97c5c205ac888a528ea/experiments/economical-seeds/next-invention/reduction)
